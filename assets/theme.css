@@ -1,0 +1,209 @@
+/*===============================================================
+
+	root
+
+===============================================================*/
+
+:root {
+  --color-black: 52,43,43;
+  --color-primary: 198,68,70;
+  --color-border: 245,245,245;
+  --color-gray: 175,175,175;
+  --margin: 30px;
+  --margin-section: calc(var(--margin)*5);
+  --margin-l: calc(var(--margin)*2);
+  --margin-s: calc(var(--margin)/2);
+  --margin-xs: 5px;
+  --font-xl: 2rem;
+  --font-l: 1.5rem;
+  --font-m: 1.25rem;
+  --font-s: .75rem;
+  --width-max: 80vw;
+  --width-min: 680px;
+}
+
+/*===============================================================
+
+	basic DOM
+
+===============================================================*/
+
+body,
+html {
+  font-size: 16px;
+  line-height: 1.75;
+  font-family: "游ゴシック体", 'YuGothic', '游ゴシック', 'Yu Gothic', 'Helvetica Neue','Lucida Grande','Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3',Meiryo,'メイリオ',sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: rgb(var(--color-black));
+}
+
+* {
+  box-sizing: border-box;
+}
+
+div {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link, .customer a {
+  font-size: 1rem !important;
+}
+
+
+/*===============================================================
+
+	content Block
+
+===============================================================*/
+
+.shopify-section {
+  /*padding-left: var(--margin);
+  padding-right: var(--margin);*/
+}
+
+.contents-wrapper .page-width {
+  padding: 0 var(--margin);
+}
+
+[class="_image-wrapper"] {
+  
+}
+
+body,
+.color-background-1,
+.color-background-2,
+.color-inverse,
+.color-accent-1,
+.color-accent-2 {
+  color: rgba(var(--color-foreground), 1);
+}
+
+/*===============================================================
+
+	section header
+
+===============================================================*/
+
+.contents-wrapper .section-header,
+.contents-wrapper .header {
+  width: 100%;
+}
+
+.contents-wrapper .section-header a {
+  padding: 0;
+  display: inline-block;
+}
+
+contents-.contents-wrapper .header:not(.drawer-menu).page-width {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.contents-wrapper .header__heading {
+  
+}
+
+.contents-wrapper .header--middle-left .header__heading-link,
+.contents-wrapper .header--top-left .header__heading-link {
+  margin-left: 0;
+}
+
+.contents-wrapper .header:not(.header--top-center) *>.header__search, .header--top-center>.header__search {
+  display: none;
+}
+
+.contents-wrapper .header__icon--cart {
+  margin-right: 0;
+}
+
+/*===============================================================
+
+	section footer
+
+===============================================================*/
+
+.contents-wrapper .footer {
+  padding-top: var(--margin-section);
+  padding-bottom: var(--margin-section);
+}
+
+/*  footer content
+---------------------------------------------------------------*/
+
+.contents-wrapper .footer__content-top .grid > .grid__item {
+  width: 100%;
+}
+
+.contents-wrapper .footer-block__image-wrapper {
+  max-width: 100%;
+  box-shadow: none;
+  border: none;
+}
+
+/*  copyright
+---------------------------------------------------------------*/
+
+.contents-wrapper .footer__content-bottom {
+  padding-top: 0;
+  border-top: none;
+}
+
+.contents-wrapper .footer__copyright {
+  margin: 0;
+  font-size: 1rem;
+}
+
+
+
+
+.grid-collection {
+  /*display: none;*/
+}
+
+#boxContent .grid-collection > * {
+  padding: 20px;
+  text-align: center;
+  background-color: #eee;
+}
+
+#boxContent .grid-collection > :nth-child(even) {
+  background-color: #fff;
+}
+
+#boxContent .grid-collection a {
+  text-decoration: none;
+}
+
+#boxContent .grid-collection .grid-product > .Polaris-Link > div  {
+  padding: 0 !important;
+}
+
+#boxContent .grid-collection .grid-product > .Polaris-Link + div {
+  margin-top: 20px;
+  padding: 0 !important;
+}
+
+#boxContent .grid-collection .grid-product > .Polaris-Link + div  .Polaris-Link {
+  margin-top: 20px;
+  padding: 0 !important;
+}
+
+#boxContent .grid-collection .grid-product > .Polaris-Link img  {
+  width: 100% !important;
+  max-width: 100%;
+  height: auto;
+  max-height: none !important;
+}
+
+#boxContent .grid-collection .jXLjZO {
+  display: block;
+  padding: 0;
+  width: 100%;
+}
+
+.huckleberry-subscription-list-color {
+  background-color: #eee;
+}
