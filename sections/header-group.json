@@ -2,6 +2,12 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
+    "bb2a087f-7e24-4e97-8d52-391d4bdb3fed": {
+      "type": "header-postage",
+      "settings": {
+        "header-postage": ""
+      }
+    },
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
@@ -42,6 +48,7 @@
     }
   },
   "order": [
+    "bb2a087f-7e24-4e97-8d52-391d4bdb3fed",
     "announcement-bar",
     "header"
   ]
