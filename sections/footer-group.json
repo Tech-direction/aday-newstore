@@ -4,6 +4,27 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "0dbc67c5-7650-49fc-b6a4-e95d044607e3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo.svg",
+            "image_width": 100,
+            "alignment": "center"
+          }
+        },
+        "ea4febf9-7a27-478b-ab90-9e4b0812e3fc": {
+          "type": "link_list",
+          "settings": {
+            "heading": "",
+            "menu": "footer-nav"
+          }
+        }
+      },
+      "block_order": [
+        "0dbc67c5-7650-49fc-b6a4-e95d044607e3",
+        "ea4febf9-7a27-478b-ab90-9e4b0812e3fc"
+      ],
       "settings": {
         "color_scheme": "background-1",
         "newsletter_enable": false,
