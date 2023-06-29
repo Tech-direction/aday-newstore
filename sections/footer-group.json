@@ -9,7 +9,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/logo.svg",
-            "image_width": 100,
+            "image_width": 380,
             "alignment": "center"
           }
         },
