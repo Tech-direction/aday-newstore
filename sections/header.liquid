@@ -169,9 +169,7 @@
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when 'announcement' -%}
-          <div class="section-block-inner">
             <div class="header-postage">{{ block.settings.header-postage-text1 }}<sapn class="emphasis">{{ block.settings.header-postage-text2 }}</sapn></div>
-          </div>
       {%- endcase -%}
     {%- endfor -%}
     
