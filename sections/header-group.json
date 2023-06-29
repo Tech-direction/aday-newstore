@@ -5,8 +5,8 @@
     "bb2a087f-7e24-4e97-8d52-391d4bdb3fed": {
       "type": "header-postage",
       "settings": {
-        "header-postage-text1": "5,000円以上の購入または店頭受取で",
-        "header-postage-text2": "送料無料テスト"
+        "header-postage-text3": "",
+        "header-postage-text4": ""
       }
     },
     "announcement-bar": {
@@ -33,6 +33,18 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "e4ca1f66-fc63-4029-a267-5858bf4803c5": {
+          "type": "announcement",
+          "settings": {
+            "header-postage-text1": "5,000円以上の購入または店頭受取で",
+            "header-postage-text2": "送料無料"
+          }
+        }
+      },
+      "block_order": [
+        "e4ca1f66-fc63-4029-a267-5858bf4803c5"
+      ],
       "settings": {
         "logo_position": "middle-left",
         "menu": "global-nav",
