@@ -1,8 +1,11 @@
-{{ section.settings.header-postage-text1 }}<sapn>{{ section.settings.header-postage-text2 }}</sapn>
+<div class="section-block-inner">
+  <div class="header-postage">{{ section.settings.header-postage-text1 }}<sapn class="emphasis">{{ section.settings.header-postage-text2 }}</sapn></div>
+</div>
 
 {% schema %}
   {
     "name": "ヘッダー：送料無料エリア",
+    "class": "section-block header-postage-section",
     "settings": [
       {
         "type": "text",
@@ -12,7 +15,7 @@
       {
         "type": "text",
         "id": "header-postage-text2",
-        "label": "囲み"
+        "label": "囲みテキスト"
       }
     ],
     "blocks": [

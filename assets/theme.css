@@ -7,8 +7,9 @@
 :root {
   --color-black: 52,43,43;
   --color-primary: 198,68,70;
-  --color-border: 245,245,245;
-  --color-gray: 175,175,175;
+  --color-gray: 245,245,245;
+  --color-border: 175,175,175;
+  --border-radius: 20px;
   --margin: 30px;
   --margin-section: calc(var(--margin)*5);
   --margin-l: calc(var(--margin)*2);
@@ -42,16 +43,18 @@ html {
   box-sizing: border-box;
 }
 
-div {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .link, .customer a {
   font-size: 1rem !important;
 }
 
+.contents-wrapper img {
+  width: 100%;
+}
+
+.contents-wrapper a {
+  text-decoration: none;
+  transition: .3s ease;
+}
 
 /*===============================================================
 
@@ -62,6 +65,11 @@ div {
 .shopify-section {
   /*padding-left: var(--margin);
   padding-right: var(--margin);*/
+}
+
+.contents-wrapper .section-block .section-block-inner {
+  padding-left: var(--margin);
+  padding-right: var(--margin);
 }
 
 .contents-wrapper .page-width {
@@ -97,7 +105,7 @@ body,
   display: inline-block;
 }
 
-contents-.contents-wrapper .header:not(.drawer-menu).page-width {
+.contents-wrapper .header:not(.drawer-menu).page-width {
   padding-left: 0;
   padding-right: 0;
 }
@@ -111,12 +119,40 @@ contents-.contents-wrapper .header:not(.drawer-menu).page-width {
   margin-left: 0;
 }
 
-.contents-wrapper .header:not(.header--top-center) *>.header__search, .header--top-center>.header__search {
+.contents-wrapper .header:not(.header--top-center) * > .header__search,
+.contents-wrapper .header--top-center > .header__search {
   display: none;
 }
 
 .contents-wrapper .header__icon--cart {
   margin-right: 0;
+}
+
+
+/*  postage
+---------------------------------------------------------------*/
+
+.contents-wrapper .header-postage {
+  padding: var(--margin-s);
+  line-height: 1;
+  font-weight: bold;
+  font-size: .875em;
+  vertical-align: middle;
+  color: rgb(var(--color-primary));
+  background-color: rgb(var(--color-gray));
+  border-bottom-left-radius: calc(var(--border-radius)/2);
+  border-bottom-right-radius: calc(var(--border-radius)/2);
+  display: inline-block;
+  position: absolute;
+  right: var(--margin);
+}
+
+.contents-wrapper .header-postage .emphasis {
+  margin-left: var(--margin-xs);
+  padding: var(--margin-xs);
+  color: #fff;
+  background-color: rgb(var(--color-primary));
+  display: inline-block;
 }
 
 /*===============================================================
@@ -130,6 +166,10 @@ contents-.contents-wrapper .header:not(.drawer-menu).page-width {
   padding-bottom: var(--margin-section);
 }
 
+.contents-wrapper .footer__content-top .grid {
+  gap: var(--margin);
+}
+
 /*  footer content
 ---------------------------------------------------------------*/
 
@@ -139,14 +179,58 @@ contents-.contents-wrapper .header:not(.drawer-menu).page-width {
 
 .contents-wrapper .footer-block__image-wrapper {
   max-width: 100%;
+  margin-bottom: 0 !important;
   box-shadow: none;
   border: none;
 }
 
+/*  footer nav
+---------------------------------------------------------------*/
+.contents-wrapper .footer-block--menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--margin);
+}
+
+.contents-wrapper .footer-block--menu ul > * {
+  margin: 0 !important;
+}
+
+.contents-wrapper .footer-block--menu ul a {
+  padding: 0;
+  display: inline-block;
+}
+
+.contents-wrapper .footer-block--menu ul a:hover {
+  text-decoration: none !important;
+}
+
+/*  footer social nav
+---------------------------------------------------------------*/
+.contents-wrapper .footer__list-social {
+  gap: var(--margin);
+}
+
+.contents-wrapper .footer__list-social .list-social__link {
+  padding: .75em;
+  border-radius: 10em;
+  background-color: #fff;
+}
+
+.contents-wrapper .footer__list-social .list-social__link:hover {
+  opacity: .5;
+}
+
+.contents-wrapper .footer__list-social .list-social__link:hover .icon {
+  transform: scale(1);
+}
+
+
 /*  copyright
 ---------------------------------------------------------------*/
-
 .contents-wrapper .footer__content-bottom {
+  margin-top: var(--margin);
   padding-top: 0;
   border-top: none;
 }
@@ -155,6 +239,9 @@ contents-.contents-wrapper .header:not(.drawer-menu).page-width {
   margin: 0;
   font-size: 1rem;
 }
+
+
+
 
 
 
