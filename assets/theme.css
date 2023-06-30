@@ -47,10 +47,6 @@ html {
   font-size: 1rem !important;
 }
 
-.contents-wrapper img {
-  width: 100%;
-}
-
 .contents-wrapper a {
   text-decoration: none;
   transition: .3s ease;
@@ -147,7 +143,7 @@ body,
 .contents-wrapper .header__inline-menu .list-menu {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--margin);
+  gap: var(--margin-s) var(--margin);
 }
 
 .contents-wrapper .header--middle-left .header__heading-link,
@@ -165,6 +161,16 @@ body,
 
 .contents-wrapper .header__icon--cart {
   margin-right: 0;
+}
+
+.contents-wrapper .header__icons {
+  gap: var(--margin-s);
+}
+
+.contents-wrapper .header__icons a {
+  padding: .75em;
+  border-radius: 10em;
+  background-color: rgb(var(--color-gray));
 }
 
 
