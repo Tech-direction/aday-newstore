@@ -104,6 +104,7 @@ body,
 
 .contents-wrapper .header {
   width: 100vw;
+  max-width: none;
   margin: 0;
   padding: var(--margin-l) var(--margin) var(--margin) !important;
   position: relative;
