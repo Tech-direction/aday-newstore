@@ -232,24 +232,26 @@
       }, {
         "type": "header",
         "content": "t:sections.all.padding.section_padding_heading"
-      }, {
-        "type": "range",
-        "id": "padding_top",
-        "min": 0,
-        "max": 100,
-        "step": 4,
-        "unit": "px",
-        "label": "t:sections.all.padding.padding_top",
-        "default": 36
-      }, {
-        "type": "range",
-        "id": "padding_bottom",
-        "min": 0,
-        "max": 100,
-        "step": 4,
-        "unit": "px",
-        "label": "t:sections.all.padding.padding_bottom",
-        "default": 36
+      },  {
+        "type": "select",
+        "id": "box_gap",
+        "default": "default",
+        "label": "カラム間の余白",
+        "options": [
+          {
+            "value": "none",
+            "label": "余白なし"
+          }, {
+            "value": "s",
+            "label": "狭い"
+          }, {
+            "value": "default",
+            "label": "標準"
+          }, {
+            "value": "l",
+            "label": "広い"
+          }
+        ]
       }
     ],
     "presets": [
