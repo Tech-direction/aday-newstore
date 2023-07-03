@@ -54,8 +54,7 @@
         "show_date": true,
         "show_author": false,
         "show_view_all": true,
-        "padding_top": 0,
-        "padding_bottom": 0
+        "box_gap": "default"
       }
     },
     "361c01ec-b4ce-4a50-9bc5-26515e1e190d": {
@@ -136,8 +135,7 @@
         "enable_quick_add": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "box_gap": "l"
       }
     }
   },
