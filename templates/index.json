@@ -39,11 +39,13 @@
         "show_text_below": false
       }
     },
-    "94d9c274-9001-4ce6-8b9c-e7d45fe54f2d": {
-      "type": "featured-blog",
+    "ef1e9a68-7a62-4287-8199-03faca0c8b77": {
+      "type": "featured-blog-top",
       "settings": {
-        "heading": "コーヒー豆知識",
-        "heading_size": "h1",
+        "section_heading": "コーヒー豆知識",
+        "heading_size": "x",
+        "section_sub_heading": "coffee journal",
+        "change_box_layout": false,
         "blog": "coffee-journal",
         "post_limit": 4,
         "columns_desktop": 4,
@@ -91,6 +93,7 @@
       ],
       "settings": {
         "section_heading": "今月のオススメ商品",
+        "heading_size": "x",
         "section_sub_heading": "RECOMMEND ITEM",
         "change_box_layout": false,
         "product": "brazil",
@@ -140,7 +143,7 @@
   },
   "order": [
     "image_banner",
-    "94d9c274-9001-4ce6-8b9c-e7d45fe54f2d",
+    "ef1e9a68-7a62-4287-8199-03faca0c8b77",
     "361c01ec-b4ce-4a50-9bc5-26515e1e190d",
     "f86325b7-9ef5-4459-acbc-f77ebaa74e38"
   ]
