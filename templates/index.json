@@ -71,11 +71,6 @@
             "heading_size": "h1"
           }
         },
-        "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-2": {
-          "type": "price",
-          "settings": {
-          }
-        },
         "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-3": {
           "type": "variant_picker",
           "settings": {
@@ -97,7 +92,6 @@
       "block_order": [
         "477d0fe1-c52f-40d2-be7d-929ab26b5dd1",
         "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-1",
-        "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-2",
         "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-3",
         "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-4",
         "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-5"
