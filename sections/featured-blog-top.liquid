@@ -52,6 +52,12 @@
       </div>
     {%- endunless -%}
     {%- if section.settings.blog != blank and section.settings.blog.articles_count > 0 -%}
+
+      {% assign grid_gap = ""  %}
+      {% if section.settings.box_gap != "default" %}
+        {% assign grid_gap = 'grid-space-' | append: section.settings.box_gap %}
+      {% endif %}
+      
       <slider-component class="slider-mobile-gutter{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         <ul
           id="Slider-{{ section.id }}"
