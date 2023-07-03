@@ -59,7 +59,7 @@
 
     {% assign grid_gap = ""  %}
     {% if section.settings.box_gap != "default" %}
-      {% assign grid_gap = 'grid-space-' | append: 'section.settings.box_gap' %}
+      {% assign grid_gap = 'grid-space-' | append: section.settings.box_gap %}
     {% endif %}
     
 
