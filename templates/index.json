@@ -69,7 +69,7 @@
         "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-3": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "button"
+            "picker_type": "dropdown"
           }
         },
         "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-4": {
