@@ -479,9 +479,7 @@
       <div class="card__content">
         <div class="card__information">
           <h3 class="card__heading card__heading--placeholder{% if settings.card_style == 'standard' %} h5{% endif %}">
-            <a role="link" aria-disabled="true" class="full-unstyled-link">
-              {{ 'onboarding.product_title' | t }}
-            </a>
+            {{ 'onboarding.product_title' | t }}
           </h3>
           <div class="card-information">
             {%- if show_vendor -%}
