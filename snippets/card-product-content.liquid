@@ -299,6 +299,13 @@
                   product_form_id: product_form_id,
                   section_id: section.id
                 -%}
+
+  {%- render 'price',
+                    product: product,
+                    use_variant: true,
+                    show_badges: true,
+                    price_class: 'price--large'
+                  -%}
   
           </div>
         </div>
