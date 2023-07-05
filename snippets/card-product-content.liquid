@@ -286,14 +286,13 @@
                   </div>
                 </div>
 
-  {{ card_product | json }}
 
   {% for value in product.options_by_name['weight'].values %}
     {{ value }}
 {% endfor %}
 
   {% render 'product-variant-picker',
-                  product: product,
+                  product: card_product,
                   block: block,
                   product_form_id: product_form_id,
                   update_url: false
@@ -302,7 +301,7 @@
   
               {%- render 'buy-buttons',
                   block: block,
-                  product: product,
+                  product: card_product,
                   product_form_id: product_form_id,
                   section_id: section.id
                 -%}
