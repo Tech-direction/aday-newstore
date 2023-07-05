@@ -286,10 +286,9 @@
                   </div>
                 </div>
 
-{{ card_product | json }}
   
   {% render 'product-variant-picker',
-                  product: card_product,
+                  product: card_product.handle,
                   block: block,
                   product_form_id: card_product.id,
                   update_url: false
