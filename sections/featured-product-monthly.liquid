@@ -303,6 +303,8 @@
                   update_url: false
                 %}
               {%- when 'buy_buttons' -%}
+              {{ product_form_id }}
+              {{ section.id }}
                 {%- render 'buy-buttons',
                   block: block,
                   product: product,
