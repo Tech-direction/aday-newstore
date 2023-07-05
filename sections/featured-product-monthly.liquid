@@ -309,6 +309,8 @@
                   product_form_id: product_form_id,
                   section_id: section.id
                 -%}
+
+              {{ product | json }}
               {%- when 'custom_liquid' -%}
                 {{ block.settings.custom_liquid }}
               {%- when 'rating' -%}
