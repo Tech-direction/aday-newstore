@@ -21,6 +21,7 @@
       {% endif %}
       {{ block.shopify_attributes }}
     >
+    {{ product.options_with_values | json }}
       {%- for option in product.options_with_values -%}
         <fieldset class="js product-form__input">
           <legend class="form__label">{{ option.name }}</legend>
