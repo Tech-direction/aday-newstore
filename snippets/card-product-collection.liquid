@@ -202,7 +202,7 @@
 
             {%- assign product_form_id = 'product-form-' | append: section_id | append: '-' | append: card_product.id -%
 
-  {{ section_id | t }}
+  {{ section_id | json }}
 
             {% render 'product-variant-picker-collection',
               product: card_product,
