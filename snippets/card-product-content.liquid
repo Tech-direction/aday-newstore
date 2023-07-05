@@ -286,6 +286,7 @@
                   </div>
                 </div>
 
+  {{ product | json }}
 
   {% for value in product.options_by_name['weight'].values %}
     {{ value }}
