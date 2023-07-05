@@ -256,7 +256,7 @@
                   {% endif %}
                   step="{{ card_product.selected_or_first_available_variant.quantity_rule.increment }}"
                   value="{{ card_product.selected_or_first_available_variant.quantity_rule.min }}"
-                  form="{{ card_product }}"
+                  form="{{ product_form_id }}"
                 >
                 <button class="quantity__button no-js-hidden" name="plus" type="button">
                   <span class="visually-hidden">
