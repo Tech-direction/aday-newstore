@@ -286,9 +286,10 @@
                   </div>
                 </div>
 
+{{ product | json }}
   
   {% render 'product-variant-picker',
-                  product: card_product.handle,
+                  product: card_product,
                   block: block,
                   product_form_id: card_product.id,
                   update_url: false
@@ -297,7 +298,7 @@
   
               {%- render 'buy-buttons',
                   block: block,
-                  product: card_product.handle,
+                  product: card_product,
                   product_form_id: product_form_id,
                   section_id: section.id
                 -%}
