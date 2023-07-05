@@ -231,7 +231,7 @@
                   <quantity-input class="quantity">
                     <button class="quantity__button no-js-hidden" name="minus" type="button">
                       <span class="visually-hidden">
-                        {{- 'products.product.quantity.decrease' | t: product: product.title | escape -}}
+                        {{- 'products.product.quantity.decrease' | t: product: card_product.title | escape -}}
                       </span>
                       {% render 'icon-minus' %}
                     </button>
@@ -241,37 +241,37 @@
                       name="quantity"
                       id="Quantity-{{ section.id }}"
                       data-cart-quantity="{{ cart_qty }}"
-                      data-min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
-                      min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
-                      {% if product.selected_or_first_available_variant.quantity_rule.max != null %}
-                        data-max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
-                        max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
+                      data-min="{{ card_product.selected_or_first_available_variant.quantity_rule.min }}"
+                      min="{{ card_product.selected_or_first_available_variant.quantity_rule.min }}"
+                      {% if card_product.selected_or_first_available_variant.quantity_rule.max != null %}
+                        data-max="{{ card_product.selected_or_first_available_variant.quantity_rule.max }}"
+                        max="{{ card_product.selected_or_first_available_variant.quantity_rule.max }}"
                       {% endif %}
-                      step="{{ product.selected_or_first_available_variant.quantity_rule.increment }}"
-                      value="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
-                      form="{{ product_form_id }}"
+                      step="{{ card_product.selected_or_first_available_variant.quantity_rule.increment }}"
+                      value="{{ card_product.selected_or_first_available_variant.quantity_rule.min }}"
+                      form="{{ card_product }}"
                     >
                     <button class="quantity__button no-js-hidden" name="plus" type="button">
                       <span class="visually-hidden">
-                        {{- 'products.product.quantity.increase' | t: product: product.title | escape -}}
+                        {{- 'products.product.quantity.increase' | t: product: card_product.title | escape -}}
                       </span>
                       {% render 'icon-plus' %}
                     </button>
                   </quantity-input>
                   <div class="quantity__rules caption no-js-hidden">
-                    {%- if product.selected_or_first_available_variant.quantity_rule.increment > 1 -%}
+                    {%- if card_product.selected_or_first_available_variant.quantity_rule.increment > 1 -%}
                       <span class="divider">
                         {{-
                           'products.product.quantity.multiples_of'
-                          | t: quantity: product.selected_or_first_available_variant.quantity_rule.increment
+                          | t: quantity: card_product.selected_or_first_available_variant.quantity_rule.increment
                         -}}
                       </span>
                     {%- endif -%}
-                    {%- if product.selected_or_first_available_variant.quantity_rule.min > 1 -%}
+                    {%- if card_product.selected_or_first_available_variant.quantity_rule.min > 1 -%}
                       <span class="divider">
                         {{-
                           'products.product.quantity.minimum_of'
-                          | t: quantity: product.selected_or_first_available_variant.quantity_rule.min
+                          | t: quantity: card_product.selected_or_first_available_variant.quantity_rule.min
                         -}}
                       </span>
                     {%- endif -%}
@@ -279,7 +279,7 @@
                       <span class="divider">
                         {{-
                           'products.product.quantity.maximum_of'
-                          | t: quantity: product.selected_or_first_available_variant.quantity_rule.max
+                          | t: quantity: card_product.selected_or_first_available_variant.quantity_rule.max
                         -}}
                       </span>
                     {%- endif -%}
