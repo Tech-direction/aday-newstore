@@ -14,8 +14,6 @@
     block: block
   %}
 {% endcomment %}
-
-{{ product | json }}
 {%- liquid
   assign variants_available_arr = product.variants | map: 'available'
   assign variants_option1_arr = product.variants | map: 'option1'
