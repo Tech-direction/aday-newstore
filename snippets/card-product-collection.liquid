@@ -287,8 +287,8 @@
                   </div>
                 </div>
 
-  {%- assign product_form_id = 'product-form-' | append: section.id -%}
-  {%- assign product_form_id = product_form_id | append: '-' | append: card_product.id  -%}
+  {%- assign product_form_id = 'product-form-' | append: section.id | append: '-test-' | append: card_product.id -%}
+  
   
   {% render 'product-variant-picker-collection',
                   product: card_product,
