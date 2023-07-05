@@ -12,7 +12,7 @@
 
 {%- unless product.has_only_default_variant -%}
 
-  {{ product.variants | json  }}
+  {{ product.variants.option2 | json  }}
   
   {%- if block.settings.picker_type == 'button' -%}
     <variant-radios
