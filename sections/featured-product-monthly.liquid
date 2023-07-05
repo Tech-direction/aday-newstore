@@ -296,7 +296,6 @@
                 {% assign share_url = product.selected_variant.url | default: product.url | prepend: request.origin %}
                 {% render 'share-button', block: block, share_link: share_url %}
               {%- when 'variant_picker' -%}
-              {{ product_form_id | t }}
                 {% render 'product-variant-picker',
                   product: product,
                   block: block,
