@@ -20,7 +20,7 @@
   Usage:
   {% render 'card-product-content', show_vendor: section.settings.show_vendor %}
 {% endcomment %}
-
+{{ 'onboarding.product_title' | t }}
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 
 {%- if card_product and card_product != empty -%}
@@ -287,8 +287,7 @@
                   </div>
                 </div>
 
-  {%- assign product_form_id = 'product-form-' | append: section.id -%}
-  {%- assign product_form_id = product_form_id | append: '-' | append: forloop_id  -%}
+  
   
   {% render 'product-variant-picker-collection',
                   product: card_product,
