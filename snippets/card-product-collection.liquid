@@ -200,7 +200,7 @@
               add quantity/variant/cart_buttonn block
             {% endcomment %}
   
-            {%- assign product_form_id = 'product-form-' | append: section.id | append: '-test-' | append: card_product.id -%}
+            {%- assign product_form_id = 'product-form-' | append: section.id | append: '-' | append: card_product.id -%}
             <div
               id="Quantity-Form-{{ product_form_id }}"
               class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
