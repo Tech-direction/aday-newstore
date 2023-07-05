@@ -11,6 +11,9 @@
 {% endcomment %}
 
 {%- unless product.has_only_default_variant -%}
+
+  {{ product.variants }}
+  
   {%- if block.settings.picker_type == 'button' -%}
     <variant-radios
       id="variant-radios-{{ section.id }}"
