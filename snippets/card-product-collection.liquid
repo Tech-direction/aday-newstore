@@ -199,6 +199,13 @@
             {% comment %}
               add quantity/variant/cart_buttonn block
             {% endcomment %}
+
+            {% render 'product-variant-picker-collection',
+              product: card_product,
+              block: block,
+              product_form_id: product_form_id,
+              update_url: false
+            %}
   
             {%- assign product_form_id = 'product-form-' | append: section.id | append: '-' | append: card_product.id -%}
             <div
@@ -292,14 +299,6 @@
                 {%- endif -%}
               </div>
             </div>
-
-  
-            {% render 'product-variant-picker-collection',
-              product: card_product,
-              block: block,
-              product_form_id: product_form_id,
-              update_url: false
-            %}
 
             {%- render 'buy-buttons',
               block: block,
