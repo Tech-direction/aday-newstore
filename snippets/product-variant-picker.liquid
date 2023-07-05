@@ -8,8 +8,9 @@
   - update_url: {Boolean} whether or not to update url when changing variants. If false, the url isn't updated. Default: true (optional).
   Usage:
   {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
-  {{ product_form_id | json }}
 {% endcomment %}
+
+{{ product_form_id }}
 {%- unless product.has_only_default_variant -%}
   {%- if block.settings.picker_type == 'button' -%}
     <variant-radios
