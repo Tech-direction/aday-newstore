@@ -201,9 +201,7 @@
             {% endcomment %}
 
 
-  {%- assign product_form_id = 'product-form-' | append: section_id -%}
-
-
+            {%- assign product_form_id = section_id -%}
 
             {% render 'product-variant-picker-collection',
               product: card_product,
