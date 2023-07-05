@@ -286,6 +286,11 @@
                   </div>
                 </div>
 
+
+  {% for value in product.options_by_name['カラー'].values %}
+    {{ value }}
+{% endfor %}
+
   {% render 'product-variant-picker',
                   product: product,
                   block: block,
