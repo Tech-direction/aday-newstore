@@ -156,6 +156,18 @@
                 </a>
               {%- endif -%}
             </div>
+          {%- when 'subscription_feature' -%}
+            <ul class="grid subscription-feature-list">
+                {%- if settings.grid_item_1_heading != blank -%}
+                  <li class="grid__item feature__item">
+                    <figure>{{ settings.grid_item_1_img | image_tag:
+                        class: 'subscription-feature-media-1',
+                        preload: true
+                      }}</figure>
+                    <p class="heading">{{ settings.grid_item_1_heading }}</p>
+                  </li>
+                {% endif %}
+            </ul>
 
         {%- endcase -%}
       {%- endfor -%}
