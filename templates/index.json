@@ -45,7 +45,7 @@
         "section_heading": "コーヒー豆知識",
         "heading_size": "l",
         "section_sub_heading": "COFFEE JOURNAL",
-        "change_box_layout": false,
+        "change_box_layout": true,
         "blog": "coffee-journal",
         "post_limit": 4,
         "columns_desktop": 4,
