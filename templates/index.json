@@ -66,6 +66,11 @@
             "heading_size": "h1"
           }
         },
+        "6e040199-d0e7-4ac9-81be-b29248b875ca": {
+          "type": "price",
+          "settings": {
+          }
+        },
         "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-3": {
           "type": "variant_picker",
           "settings": {
@@ -82,19 +87,14 @@
           "settings": {
             "show_dynamic_checkout": true
           }
-        },
-        "6e040199-d0e7-4ac9-81be-b29248b875ca": {
-          "type": "price",
-          "settings": {
-          }
         }
       },
       "block_order": [
         "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-1",
+        "6e040199-d0e7-4ac9-81be-b29248b875ca",
         "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-3",
         "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-4",
-        "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-5",
-        "6e040199-d0e7-4ac9-81be-b29248b875ca"
+        "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-5"
       ],
       "settings": {
         "section_heading": "今月のオススメ商品",
