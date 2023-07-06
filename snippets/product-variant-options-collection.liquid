@@ -12,7 +12,8 @@
     product: product,
     option: option,
     block: block,
-    block_picker_type: block_picker_type
+    block_picker_type: block_picker_type,
+    option_name: option_name
   %}
 {% endcomment %}
 {%- liquid
@@ -23,6 +24,8 @@
 
   assign product_form_id = 'product-form-' | append: section.id
 -%}
+
+{{ option.values | json }}
 
 {%- for value in option.values -%}
   {%- liquid
@@ -46,7 +49,7 @@
     endfor
   -%}
 
-  {{ option.values | json }}
+  
 
   {%- if block_picker_type == 'button' -%}
     <input
