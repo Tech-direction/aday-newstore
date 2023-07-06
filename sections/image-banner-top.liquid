@@ -156,14 +156,7 @@
                 </a>
               {%- endif -%}
             </div>
-          {%- when 'grid' -%}
-          <ul class="grid">
-            {%- if block.settings.grid_item_1_heading != blank -%}
-                <li>
-                  {{- block.settings.button_label_1 | escape -}}
-                </li>
-              {%- endif -%}
-          </div>
+
         {%- endcase -%}
       {%- endfor -%}
     </div>
