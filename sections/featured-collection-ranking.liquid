@@ -35,9 +35,13 @@
   endif
 -%}
 
-<div class="section_heading{% if section.settings.change_box_layout !=blank %} type-reverse{% endif %}">
-  <h2 class="heading type-vertical{% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %}" data-sub_heading="{{ section.settings.section_sub_heading }}">{{ section.settings.section_heading }}</h2>
-  <div class="color-{{ section.settings.color_scheme }} isolate gradient">
+<div class="section-heading-wrapper{% if section.settings.change_box_layout !=blank %} type-reverse{% endif %}">
+  {% if section.settings.section_heading !=blank %}
+  <div class="heading__item">
+    <h2 class="heading type-vertical{% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %}" data-sub_heading="{{ section.settings.section_sub_heading }}">{{ section.settings.section_heading }}</h2>
+  </div>
+  {% endif %}
+  <div class="color-{{ section.settings.color_scheme }} isolate gradient content__item">
     <div class="collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
       <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
         {%- if section.settings.description != blank
