@@ -17,14 +17,6 @@
             "text_style": "body"
           }
         },
-        "template--19717718147380__d5fac027-1d6c-4527-b96a-703316269413-16886631200b887bea-3": {
-          "type": "grid",
-          "settings": {
-            "grid_item_1_heading": "全国送料無料",
-            "grid_item_2_heading": "ずーっと5%オフ",
-            "grid_item_3_heading": "いつでも解約OK"
-          }
-        },
         "template--19717718147380__d5fac027-1d6c-4527-b96a-703316269413-16886631200b887bea-2": {
           "type": "buttons",
           "settings": {
@@ -40,7 +32,6 @@
       "block_order": [
         "template--19717718147380__d5fac027-1d6c-4527-b96a-703316269413-16886631200b887bea-0",
         "template--19717718147380__d5fac027-1d6c-4527-b96a-703316269413-16886631200b887bea-1",
-        "template--19717718147380__d5fac027-1d6c-4527-b96a-703316269413-16886631200b887bea-3",
         "template--19717718147380__d5fac027-1d6c-4527-b96a-703316269413-16886631200b887bea-2"
       ],
       "settings": {
