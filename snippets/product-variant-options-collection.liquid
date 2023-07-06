@@ -25,6 +25,7 @@
   assign product_form_id = 'product-form-' | append: section.id
 -%}
 
+{{ variants_available_arr | json }}
 
 {%- for value in option.values -%}
   {%- liquid
