@@ -46,7 +46,7 @@
     endfor
   -%}
 
-  {{ option | json }}
+  {{ value | json }}
 
   {%- if block_picker_type == 'button' -%}
     <input
