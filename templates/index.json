@@ -121,7 +121,7 @@
         "section_heading": "人気豆ランキング",
         "heading_size": "l",
         "section_sub_heading": "RANKING COFFEE",
-        "change_box_layout": false,
+        "change_box_layout": true,
         "description": "",
         "show_description": false,
         "description_style": "body",
