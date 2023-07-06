@@ -6,14 +6,14 @@
         "template--19717718147380__d5fac027-1d6c-4527-b96a-703316269413-16886631200b887bea-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
+            "heading": "焙煎屋がお届けする、コーヒー定期便",
+            "heading_size": "h0"
           }
         },
         "template--19717718147380__d5fac027-1d6c-4527-b96a-703316269413-16886631200b887bea-1": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text": "あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、",
             "text_style": "body"
           }
         },
