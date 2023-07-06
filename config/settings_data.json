@@ -1,5 +1,11 @@
 {
   "current": {
+    "grid_item_1_img": "shopify:\/\/shop_images\/subscription_img_1.svg",
+    "grid_item_1_heading": "全国送料無料",
+    "grid_item_2_img": "shopify:\/\/shop_images\/subscription_img_2.svg",
+    "grid_item_2_heading": "ずーっと5%オフ",
+    "grid_item_3_img": "shopify:\/\/shop_images\/subscription_img_3.svg",
+    "grid_item_3_heading": "いつでも解約OK",
     "logo": "shopify:\/\/shop_images\/aday-logo.svg",
     "logo_width": 380,
     "type_header_font": "assistant_n4",
