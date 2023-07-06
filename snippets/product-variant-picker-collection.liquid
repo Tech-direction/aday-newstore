@@ -44,6 +44,7 @@
       {% endif %}
       {{ block.shopify_attributes }}
     >
+    {{ product.options_with_values | json }}
       {%- for option in product.options_with_values -%}
         <div class="product-form__input product-form__input--dropdown">
           <label class="form__label" for="Option-{{ product_form_id }}-{{ forloop.index0 }}">
