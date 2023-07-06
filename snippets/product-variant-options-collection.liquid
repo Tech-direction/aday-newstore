@@ -25,7 +25,7 @@
   assign product_form_id = 'product-form-' | append: section.id
 -%}
 
-{{ option.values | json }}
+{{ option_name | t }}
 
 {%- for value in option.values -%}
   {%- liquid
