@@ -45,7 +45,7 @@
     >
       {%- for option in product.options_with_values -%}
         <div class="product-form__input product-form__input--dropdown">
-          <div class="select-wrappert">
+          <div class="select_wrappert">
             {%  if option.name == 'weight' %}<span class="select_label">グラム数：</span>{% elsif option.name == 'grind' %}<span class="select_label">豆の状態：</span>{% endif %}
             <div class="select">
               <select
