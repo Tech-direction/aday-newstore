@@ -79,7 +79,7 @@
       {% if option_disabled -%}
         {{- 'products.product.value_unavailable' | t: option_value: value -}}
       {%- else -%}
-        {{- value -}}{% if option_name == 'weight' %}  /  {{ price | money }} {% endif %}
+        {{- value -}}{% if option_name == 'weight' %}  /  {{ option.price | money }} {% endif %}
       {%- endif %}
     </option>
   {%- endif -%}
