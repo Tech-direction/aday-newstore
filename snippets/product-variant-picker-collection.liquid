@@ -25,7 +25,6 @@
     >
       {%- for option in product.options_with_values -%}
         <fieldset class="js product-form__input">
-          <legend class="form__label">{{ option.name }}</legend>
           {% render 'product-variant-options-collection', product: product, option: option, block: block, block_picker_type: 'dropdown',  option_name:option.name %}
         </fieldset>
       {%- endfor -%}
@@ -47,9 +46,6 @@
     {{ product.options_with_values | json }}
       {%- for option in product.options_with_values -%}
         <div class="product-form__input product-form__input--dropdown">
-          <label class="form__label" for="Option-{{ product_form_id }}-{{ forloop.index0 }}">
-            {{ option.name }}
-          </label>
           <div class="select">
             <select
               id="Option-{{ product_form_id }}-{{ forloop.index0 }}"
