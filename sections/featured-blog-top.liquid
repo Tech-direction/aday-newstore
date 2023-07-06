@@ -28,7 +28,15 @@
     assign posts_displayed = section.settings.post_limit
   endif
 -%}
-<div class="blog color-{{ section.settings.color_scheme }} gradient{% if section.settings.heading == blank %} no-heading{% endif %}">
+
+<div class="section-heading-wrapper{% if section.settings.change_box_layout !=blank %} type-reverse{% endif %}">
+  {% if section.settings.section_heading !=blank %}
+  <div class="heading__item">
+    <h2 class="heading type-vertical{% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %}" data-sub_heading="{{ section.settings.section_sub_heading }}">{{ section.settings.section_heading }}</h2>
+  </div>
+  {% endif %}
+  
+  <div class="blog color-{{ section.settings.color_scheme }} gradient{% if section.settings.heading == blank %} no-heading{% endif %}">
   <div class="page-width-desktop isolate{% if posts_displayed < 3 %} page-width-tablet{% endif %} section-{{ section.id }}-padding">
     {%- unless section.settings.heading == blank -%}
       <div class="title-wrapper-with-link{% if posts_displayed > 2 %} title-wrapper--self-padded-tablet-down{% else %} title-wrapper--self-padded-mobile{% endif %} title-wrapper--no-top-margin">
@@ -147,6 +155,8 @@
   </div>
 </div>
 
+</div>
+  
 {% schema %}
   {
     "name": "ブログ（トップ用）",
@@ -171,11 +181,11 @@
             "value": "m",
             "label": "t:sections.all.heading_size.options__2.label"
           }, {
-            "value": "x",
+            "value": "l",
             "label": "t:sections.all.heading_size.options__3.label"
           }
         ],
-        "default": "x",
+        "default": "l",
         "label": "t:sections.all.heading_size.label"
       },
       {
