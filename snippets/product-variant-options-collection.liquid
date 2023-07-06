@@ -46,6 +46,8 @@
     endfor
   -%}
 
+  {{ option | json }}
+
   {%- if block_picker_type == 'button' -%}
     <input
       type="radio"
@@ -74,7 +76,7 @@
       {% if option_disabled -%}
         {{- 'products.product.value_unavailable' | t: option_value: value -}}
       {%- else -%}
-        {{- value -}} / {% render 'price', product: product %}
+        {{- value -}} /  {{ price | money }}
       {%- endif %}
     </option>
   {%- endif -%}
