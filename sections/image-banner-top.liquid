@@ -160,10 +160,18 @@
             <ul class="grid subscription-feature-list">
                 {%- if settings.grid_item_1_heading != blank -%}
                   <li class="grid__item feature__item">
-                    <figure>{{ settings.grid_item_1_img | image_tag:
-                        class: 'subscription-feature-media-1',
-                        preload: true
-                      }}</figure>
+                    <figure>{{ settings.grid_item_1_img | image_tag: class: 'subscription-feature-media-1', preload: true }}</figure>
+
+{{ settings.grid_item_1_img | image_url: width: 600 | image_tag:
+                  class: 'header__heading-logo',
+                  widths: widths,
+                  height: logo_height,
+                  width: settings.logo_width,
+                  alt: logo_alt,
+                  sizes: sizes,
+                  preload: true
+                }}
+                    
                     <p class="heading">{{ settings.grid_item_1_heading }}</p>
                   </li>
                 {% endif %}
