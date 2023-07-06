@@ -8,6 +8,53 @@
     "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
+    "name": "定期購買特徴",
+    "settings": [
+      {
+        "type": "header",
+        "content": "カラム１"
+      },
+      {
+        "type": "image_picker",
+        "id": "grid_item_1_img",
+        "label": "画像"
+      },
+      {
+        "type": "text",
+        "id": "grid_item_1_heading",
+        "label": "見出し"
+      },
+      {
+        "type": "header",
+        "content": "カラム2"
+      },
+      {
+        "type": "image_picker",
+        "id": "grid_item_2_img",
+        "label": "画像"
+      },
+      {
+        "type": "text",
+        "id": "grid_item_2_heading",
+        "label": "見出し"
+      },
+      {
+        "type": "header",
+        "content": "カラム3"
+      },
+      {
+        "type": "image_picker",
+        "id": "grid_item_3_img",
+        "label": "画像"
+      },
+      {
+        "type": "text",
+        "id": "grid_item_3_heading",
+        "label": "見出し"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.logo.name",
     "settings": [
       {
