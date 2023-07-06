@@ -167,6 +167,24 @@
                     <p class="heading">{{ settings.grid_item_1_heading }}</p>
                   </li>
                 {% endif %}
+                {%- if settings.grid_item_2_heading != blank -%}
+                  <li class="grid__item feature__item">
+                    <figure>{{ settings.grid_item_2_img | image_tag:
+                        class: 'subscription-feature-media-2',
+                        preload: true
+                      }}</figure>
+                    <p class="heading">{{ settings.grid_item_2_heading }}</p>
+                  </li>
+                {% endif %}
+                {%- if settings.grid_item_3_heading != blank -%}
+                  <li class="grid__item feature__item">
+                    <figure>{{ settings.grid_item_3_img | image_tag:
+                        class: 'subscription-feature-media-3',
+                        preload: true
+                      }}</figure>
+                    <p class="heading">{{ settings.grid_item_3_heading }}</p>
+                  </li>
+                {% endif %}
             </ul>
 
         {%- endcase -%}
