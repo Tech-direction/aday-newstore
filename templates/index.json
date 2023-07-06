@@ -17,6 +17,11 @@
             "text_style": "body"
           }
         },
+        "665f5e99-d971-4963-a8bd-ddbe7dafdcd4": {
+          "type": "subscription_feature",
+          "settings": {
+          }
+        },
         "template--19717718147380__d5fac027-1d6c-4527-b96a-703316269413-16886631200b887bea-2": {
           "type": "buttons",
           "settings": {
@@ -32,6 +37,7 @@
       "block_order": [
         "template--19717718147380__d5fac027-1d6c-4527-b96a-703316269413-16886631200b887bea-0",
         "template--19717718147380__d5fac027-1d6c-4527-b96a-703316269413-16886631200b887bea-1",
+        "665f5e99-d971-4963-a8bd-ddbe7dafdcd4",
         "template--19717718147380__d5fac027-1d6c-4527-b96a-703316269413-16886631200b887bea-2"
       ],
       "settings": {
