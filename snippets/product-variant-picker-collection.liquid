@@ -45,16 +45,19 @@
     >
       {%- for option in product.options_with_values -%}
         <div class="product-form__input product-form__input--dropdown">
-          <div class="select">
-            <select
-              id="Option-{{ product_form_id }}-{{ forloop.index0 }}"
-              class="select__select"
-              name="options[{{ option.name | escape }}]"
-              form="{{ product_form_id }}"
-            >
-              {% render 'product-variant-options-collection', product: product, option: option, block: block, block_picker_type: 'dropdown',  option_name:option.name %}
-            </select>
-            {% render 'icon-caret' %}
+          <div class="select-wrappert">
+            {%  if option_name == 'weight' %}<span class="select_label">グラム数：</span>{% elsif option_name == 'grind' %}<span class="select_label">豆の状態：</span>{% endif %}
+            <div class="select">
+              <select
+                id="Option-{{ product_form_id }}-{{ forloop.index0 }}"
+                class="select__select"
+                name="options[{{ option.name | escape }}]"
+                form="{{ product_form_id }}"
+              >
+                {% render 'product-variant-options-collection', product: product, option: option, block: block, block_picker_type: 'dropdown',  option_name:option.name %}
+              </select>
+              {% render 'icon-caret' %}
+            </div>
           </div>
         </div>
       {%- endfor -%}
