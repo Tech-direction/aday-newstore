@@ -43,7 +43,6 @@
       {% endif %}
       {{ block.shopify_attributes }}
     >
-    {{ product.options_with_values | json }}
       {%- for option in product.options_with_values -%}
         <div class="product-form__input product-form__input--dropdown">
           <div class="select">
