@@ -54,7 +54,16 @@
   >
 {%- endif -%}
 
+
 <section class="color-{{ section.settings.color_scheme }} {% if section.settings.secondary_background %}background-secondary{% else %}gradient{% endif %}">
+
+  <div class="section-heading-wrapper{% if section.settings.change_box_layout !=blank %} type-reverse{% endif %}">
+  {% if section.settings.section_heading !=blank %}
+  <div class="heading__item">
+    <h2 class="heading type-vertical{% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %}" data-sub_heading="{{ section.settings.section_sub_heading }}">{{ section.settings.section_heading }}</h2>
+  </div>
+  {% endif %}
+  
   <div class="page-width section-{{ section.id }}-padding{% if section.settings.secondary_background %} isolate{% endif %}">
     <div class="featured-product product product--{{ section.settings.media_size }} grid grid--1-col gradient color-{{ section.settings.color_scheme }} product--{{ section.settings.media_position }}{% if section.settings.secondary_background == false %} isolate{% endif %} {% if product.media.size > 0 or section.settings.product == blank %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
       <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
@@ -440,6 +449,8 @@
       {%- endif -%}
     </div>
     {% render 'product-media-modal', product: product, variant_images: media_to_render %}
+  </div>
+
   </div>
 </section>
 
