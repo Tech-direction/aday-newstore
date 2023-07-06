@@ -1,21 +1,36 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "d5fac027-1d6c-4527-b96a-703316269413": {
+      "type": "image-banner-top",
       "blocks": {
-        "heading": {
+        "template--19717718147380__d5fac027-1d6c-4527-b96a-703316269413-16886631200b887bea-0": {
           "type": "heading",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
+            "heading": "Image banner",
+            "heading_size": "h1"
           }
         },
-        "button": {
+        "template--19717718147380__d5fac027-1d6c-4527-b96a-703316269413-16886631200b887bea-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--19717718147380__d5fac027-1d6c-4527-b96a-703316269413-16886631200b887bea-3": {
+          "type": "grid",
+          "settings": {
+            "grid_item_1_heading": "全国送料無料",
+            "grid_item_2_heading": "ずーっと5%オフ",
+            "grid_item_3_heading": "いつでも解約OK"
+          }
+        },
+        "template--19717718147380__d5fac027-1d6c-4527-b96a-703316269413-16886631200b887bea-2": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
+            "button_label_1": "【コーヒー定期便】を詳しく見る",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -23,20 +38,22 @@
         }
       },
       "block_order": [
-        "heading",
-        "button"
+        "template--19717718147380__d5fac027-1d6c-4527-b96a-703316269413-16886631200b887bea-0",
+        "template--19717718147380__d5fac027-1d6c-4527-b96a-703316269413-16886631200b887bea-1",
+        "template--19717718147380__d5fac027-1d6c-4527-b96a-703316269413-16886631200b887bea-3",
+        "template--19717718147380__d5fac027-1d6c-4527-b96a-703316269413-16886631200b887bea-2"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
         "desktop_content_alignment": "center",
-        "color_scheme": "inverse",
+        "color_scheme": "",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
     "ef1e9a68-7a62-4287-8199-03faca0c8b77": {
@@ -146,7 +163,7 @@
     }
   },
   "order": [
-    "image_banner",
+    "d5fac027-1d6c-4527-b96a-703316269413",
     "ef1e9a68-7a62-4287-8199-03faca0c8b77",
     "361c01ec-b4ce-4a50-9bc5-26515e1e190d",
     "f86325b7-9ef5-4459-acbc-f77ebaa74e38"
