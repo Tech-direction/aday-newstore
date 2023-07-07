@@ -30,6 +30,7 @@
         "e4ca1f66-fc63-4029-a267-5858bf4803c5": {
           "type": "announcement",
           "settings": {
+            "header-postage-img": "shopify:\/\/shop_images\/postage_img.svg",
             "header-postage-text1": "5,000円以上の購入または店頭受取で",
             "header-postage-text2": "送料無料"
           }
