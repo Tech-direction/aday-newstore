@@ -33,7 +33,7 @@ body,
 html {
   font-size: 16px;
   line-height: 1.75;
-  font-family: "游ゴシック体", 'YuGothic', '游ゴシック', 'Yu Gothic', 'Helvetica Neue','Lucida Grande','Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3',Meiryo,'メイリオ',sans-serif;
+  font-family: 'zen-kaku-gothic-new', 'Helvetica Neue', 'Lucida Grande', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'Meiryo', 'メイリオ', 'sans-serif';
   font-weight: 400;
   letter-spacing: 0;
   color: rgb(var(--color-black));
@@ -49,7 +49,7 @@ html {
 
 .contents-wrapper a {
   text-decoration: none;
-  transition: .3s ease;
+  transition: all var(--duration-long) ease;
 }
 
 .contents-wrapper a:hover {
@@ -109,7 +109,13 @@ html {
 .contents-wrapper .quantity {
   width: 100%;
   max-width: none !important;
+}
+
+.contents-wrapper .select-wrapper,
+.contents-wrapper .quantity {
+  border: 1px solid rgb(var(--color-border));
   background-color: #fff;
+  transition: all var(--duration-long) ease;
 }
 
 .contents-wrapper variant-selects select,
@@ -117,14 +123,21 @@ html {
   font-size: 1rem;
 }
 
+.contents-wrapper .field:before,
+.contents-wrapper .select:before,
+.contents-wrapper .customer,
+.contents-wrapper .field:before,
+.contents-wrapper .customer select:before,
+.contents-wrapper .localization-form__select:before,
 .contents-wrapper .field:after,
 .contents-wrapper .select:after,
 .contents-wrapper .customer .field:after,
 .contents-wrapper .customer select:after,
 .contents-wrapper .localization-form__select:after,
 .contents-wrapper .quantity:after {
-  box-shadow: 0 0 0 var(--inputs-border-width) rgba(var(--color-border), var(--inputs-border-opacity));
+  display: none;
 }
+
 
 
 /*  focus
@@ -136,14 +149,27 @@ html {
   box-shadow: none;
 }
 
-.contents-wrapper .select__select:focus,
+.contents-wrapper .select-wrapper:has(select:focus),
+.contents-wrapper .quantity:has(input:focus),
+.contents-wrapper .quantity:has(button:focus) {
+  box-shadow: 0 0 0 calc(0.01rem + var(--inputs-border-width)) rgba(var(--color-black));
+}
+
+.contents-wrapper .quantity input:focus,
+.contents-wrapper .quantity button:focus {
+  border: 0;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+/*.contents-wrapper .select__select:focus,
 .contents-wrapper .quantity:focus {
   box-shadow: 0 0 0 calc(0.01rem + var(--inputs-border-width)) rgba(var(--color-black))
 }
 
 .contents-wrapper .select:hover.select:after {
   box-shadow: 0 0 0 var(--inputs-border-width) rgba(var(--color-black), var(--inputs-border-opacity));
-}
+}*/
 
 
 /*  select
@@ -151,13 +177,17 @@ html {
 
 .contents-wrapper .select-wrapper {
   height: 3.5rem;
-  border: 1px solid rgb(var(--color-border));
   background-color: #fff;
   position: relative;
 }
 
 .contents-wrapper .select-wrapper .select_label {
+  font-size: var(--font-s);
+  letter-spacing: 0;
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1rem;
 }
 
 .contents-wrapper .select-wrapper .select {
@@ -169,6 +199,8 @@ html {
 .contents-wrapper .select select {
   width: 100%;
   height: 100%;
+  padding-left: 5rem;
+  background-color: transparent;
 }
 
 .contents-wrapper .select .icon-caret,
@@ -228,6 +260,11 @@ body,
 .color-accent-2 {
   color: rgba(var(--color-foreground), 1);
 }
+
+.contents-wrapper .section {
+  padding-top: var(--margin-section);
+}
+
 
 /*===============================================================
 
@@ -410,6 +447,23 @@ body,
   padding: 0;
 }
 
+.contents-wrapper.top .section-header .header-wrapper,
+.contents-wrapper.top .section-header .header {
+  transition: all var(--duration-long) ease;
+}
+
+/*  toppage design
+---------------------------------------------------------------*/
+
+.contents-wrapper.top .section-header:not(.scrolled-past-header) {
+  position: absolute;
+}
+
+.contents-wrapper.top .section-header:not(.scrolled-past-header) .header-wrapper,
+.contents-wrapper.top .section-header:not(.scrolled-past-header) .header {
+  background-color: transparent;
+}
+
 /*  header nav
 ---------------------------------------------------------------*/
 
@@ -467,6 +521,11 @@ body,
   overflow: hidden;
 }
 
+.contents-wrapper .header__icon {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
 .contents-wrapper .header__icons a .visually-hidden {
   display: none;
 }
@@ -481,13 +540,17 @@ body,
   transform: scale(2) !important;
 }
 
+.contents-wrapper.top .section-header:not(.scrolled-past-header) .header__icons a {
+  background-color: #fff;
+}
+
 /*  postage
 ---------------------------------------------------------------*/
 
 .contents-wrapper .header-postage {
   padding: calc(var(--margin-s) + .5em) 1em .5em;
   line-height: 1;
-  font-weight: bold;
+  font-weight: 500;
   font-size: .875em;
   vertical-align: middle;
   color: rgb(var(--color-primary));
@@ -500,6 +563,17 @@ body,
   right: var(--margin);
 }
 
+.contents-wrapper .header-postage .postage-icon {
+  margin: 0 var(--margin-xs) 0 0;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.contents-wrapper .header-postage .postage-icon img {
+  width: auto;
+  height: 20px;
+}
+
 .contents-wrapper .header-postage .emphasis {
   margin-left: var(--margin-xs);
   padding: var(--margin-xs);
@@ -508,12 +582,20 @@ body,
   display: inline-block;
 }
 
+.contents-wrapper.top .section-header:not(.scrolled-past-header) .header-postage {
+  background-color: #fff;
+}
+
 
 /*===============================================================
 
 	section footer
 
 ===============================================================*/
+
+.contents-wrapper .shopify-section-group-footer-group {
+  margin-top: var(--margin-section);
+}
 
 .contents-wrapper .footer {
   padding-top: var(--margin-section);
@@ -567,7 +649,7 @@ body,
 }
 
 .contents-wrapper .footer__list-social .list-social__link {
-  padding: .75em;
+  padding: .85em;
   border-radius: 10em;
   background-color: #fff;
 }
@@ -617,6 +699,8 @@ body,
   content:attr(data-sub_heading);
   font-size: var(--font-m);
   color: rgb(var(--color-primary));
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
   letter-spacing: 1px;
   display: block;
 }
@@ -631,6 +715,88 @@ body,
 
 .contents-wrapper .section-heading-wrapper.type-reverse .content__item {
   order: 1;
+}
+
+/*===============================================================
+
+	billboard
+
+===============================================================*/
+
+.contents-wrapper.top .section-billboard {
+  height: 100svh;
+  padding: var(--margin-s) var(--margin-s) 15svh;
+}
+
+.contents-wrapper.top .section-billboard .banner--medium:not(.banner--adapt) {
+  height: 100%;
+  min-height: auto;
+}
+
+.contents-wrapper.top .section-billboard .content-container > * + * {
+  margin-top: var(--margin);
+}
+
+.contents-wrapper.top .section-billboard .banner__content {
+  text-align: left;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.contents-wrapper.top .section-billboard .content-container {
+  max-width: 580px;
+  min-width: auto;
+  margin-bottom: calc( (15svh - var(--margin-s))*-1 );
+  padding: 0;
+  background-color: transparent;
+}
+
+.contents-wrapper.top .section-billboard .banner__content .heading,
+.contents-wrapper.top .section-billboard .banner__content .banner__text {
+  color: #fff;
+  text-align: left;
+  mix-blend-mode: difference;
+}
+
+
+
+/*===============================================================
+
+	subscription feature list
+
+===============================================================*/
+
+.contents-wrapper .subscription-feature-list {
+  background-color: transparent;
+  gap: var(--margin-s);
+}
+
+.contents-wrapper .subscription-feature-list .feature__item {
+  width: calc((100% - var(--margin-s) * 2)/3);
+  padding: var(--margin);
+  color: #fff;
+  font-weight: 500;
+  border-radius: var(--border-radius-box);
+  background-color: rgb(var(--color-primary));
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contents-wrapper .subscription-feature-list .feature__item > * {
+  width: 100%;
+  margin: 0;
+}
+
+.contents-wrapper .subscription-feature-list .feature__item [class^="subscription-feature-media-"] {
+  width: auto;
+  height: 64px;
+  display: inline-block;
+}
+
+.contents-wrapper .subscription-feature-list .feature__item .heading {
+  text-align: center !important;
+  mix-blend-mode: normal !important;
 }
 
 
