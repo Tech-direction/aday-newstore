@@ -170,6 +170,7 @@
       {%- case block.type -%}
         {%- when 'announcement' -%}
             <div class="header-postage">
+              {{ settings.header-postage-img }}
               {%- if settings.header-postage-img != blank -%}
                     <figure class="postage-icon">{{ settings.header-postage-img | image_url: width: 600 | image_tag:
                                       class: 'subscription-feature-media-1',
