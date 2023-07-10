@@ -63,7 +63,7 @@
         "change_box_layout": true,
         "blog": "coffee-journal",
         "post_limit": 4,
-        "columns_desktop": 4,
+        "columns_desktop": 1,
         "color_scheme": "",
         "show_image": true,
         "show_date": true,
