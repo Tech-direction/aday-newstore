@@ -128,9 +128,9 @@
             {% render 'share-button', block: block, share_link: share_url %}
           </div>
 
-        {%- when 'excerpt' -%} 
+        {%- when 'excerpt' -%}
           {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
-                <p class="article-card__excerpt rte-width">
+                <p class="article-template__excerpt rte-width">
                   {%- if article.excerpt.size > 0 -%}
                     {{ article.excerpt | strip_html | truncatewords: 30 }}
                   {%- else -%}
