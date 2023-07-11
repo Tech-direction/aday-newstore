@@ -30,6 +30,8 @@
         <div class="page-width page-width--narrow">
           {% render block %}
         </div>
+
+      {% comment %}
       {%- when 'featured_image' -%}
         {%- if article.image -%}
           <div
@@ -64,6 +66,7 @@
             </div>
           </div>
         {%- endif -%}
+      {% endcomment %}
 
       {%- when 'title' -%}
         <header
