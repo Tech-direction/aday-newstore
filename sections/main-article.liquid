@@ -1,36 +1,40 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 
-{{  section.blocks | t}}
 
-<div class="section-heading-wrapper section-container content-header page-width{% if section.blocks.change_box_layout !=blank %} type-reverse{% endif %}">
-  {% if section.blocks.section_heading !=blank %}
-  <div class="heading__item">
-    <h2 class="heading type-vertical{% if section.blocks.heading_size !="default" %} size-{{ section.blocks.heading_size }} {% endif %}" data-sub_heading="{{ section.blocks.section_sub_heading }}">{{ section.blocks.section_heading }}</h2>
-  </div>
-  {% endif %}
-  {%- if article.image -%}
-  <div class="content__item section-image">
-    <div class="section__media media"><img
-          srcset="
-            {% if article.image.width >= 350 %}{{ article.image | image_url: width: 350 }} 350w,{% endif %}
-            {% if article.image.width >= 750 %}{{ article.image | image_url: width: 750 }} 750w,{% endif %}
-            {% if article.image.width >= 1100 %}{{ article.image | image_url: width: 1100 }} 1100w,{% endif %}
-            {% if article.image.width >= 1500 %}{{ article.image | image_url: width: 1500 }} 1500w,{% endif %}
-            {% if article.image.width >= 2200 %}{{ article.image | image_url: width: 2200 }} 2200w,{% endif %}
-            {% if article.image.width >= 3000 %}{{ article.image | image_url: width: 3000 }} 3000w,{% endif %}
-            {{ article.image | image_url }} {{ article.image.width }}w
-          "
-          sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw"
-          src="{{ article.image | image_url: width: 1100 }}"
-          loading="eager"
-          fetchpriority="high"
-          width="{{ article.image.width }}"
-          height="{{ article.image.height }}"
-          alt="{{ article.image.alt | escape }}"
-        ></div>
-  </div>
-    {% endif %}
-</div>
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+    {%- when 'header' -%}
+    <div class="section-heading-wrapper section-container content-header page-width{% if block.change_box_layout !=blank %} type-reverse{% endif %}">
+      {% if block.section_heading !=blank %}
+      <div class="heading__item">
+        <h2 class="heading type-vertical{% if block.heading_size !="default" %} size-{{ block.heading_size }} {% endif %}" data-sub_heading="{{ block.section_sub_heading }}">{{ block.section_heading }}</h2>
+      </div>
+      {% endif %}
+      {%- if article.image -%}
+      <div class="content__item section-image">
+        <div class="section__media media"><img
+              srcset="
+                {% if article.image.width >= 350 %}{{ article.image | image_url: width: 350 }} 350w,{% endif %}
+                {% if article.image.width >= 750 %}{{ article.image | image_url: width: 750 }} 750w,{% endif %}
+                {% if article.image.width >= 1100 %}{{ article.image | image_url: width: 1100 }} 1100w,{% endif %}
+                {% if article.image.width >= 1500 %}{{ article.image | image_url: width: 1500 }} 1500w,{% endif %}
+                {% if article.image.width >= 2200 %}{{ article.image | image_url: width: 2200 }} 2200w,{% endif %}
+                {% if article.image.width >= 3000 %}{{ article.image | image_url: width: 3000 }} 3000w,{% endif %}
+                {{ article.image | image_url }} {{ article.image.width }}w
+              "
+              sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw"
+              src="{{ article.image | image_url: width: 1100 }}"
+              loading="eager"
+              fetchpriority="high"
+              width="{{ article.image.width }}"
+              height="{{ article.image.height }}"
+              alt="{{ article.image.alt | escape }}"
+            ></div>
+      </div>
+        {% endif %}
+    </div>
+  {%- endcase -%}
+{% endfor %}
 
 <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
   {%- for block in section.blocks -%}
