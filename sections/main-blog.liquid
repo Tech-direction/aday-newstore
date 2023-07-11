@@ -21,7 +21,7 @@
   {% assign grid_gap = 'grid--gap-' | append: section.settings.box_gap %}
 {% endif %}
 {% if section.settings.content_max_width != "default" %}
-  {% assign content_size = 'content-size-' | append: section.settings.content_size %}
+  {% assign content_size = 'content-size-' | append: section.settings.content_max_width %}
 {% endif %}
 
 
