@@ -17,12 +17,12 @@
 {%- endstyle -%}
 
 {%- paginate blog.articles by 6 -%}
-  <div class="main-blog page-width section-{{ section.id }}-padding grid grid--2-col-desktop grid--gap-l ">
+  <div class="main-blog page-width section-{{ section.id }}-padding content-size-m">
     {% comment %}}<h1 class="title--primary{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
       {{ blog.title | escape }}
     </h1>{% endcomment %}
 
-    <div class="blog-articles article-list{% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
+    <div class="blog-articles grid grid--2-col-desktop grid--gap-l article-list{% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
       {%- for article in blog.articles -%}
         <div
           class="blog-articles__article article grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -147,7 +147,27 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
-    }
+    }, {
+        "type": "select",
+        "id": "box_gap",
+        "default": "default",
+        "label": "余白の広さ",
+        "options": [
+          {
+            "value": "none",
+            "label": "余白なし"
+          }, {
+            "value": "s",
+            "label": "狭い"
+          }, {
+            "value": "default",
+            "label": "標準"
+          }, {
+            "value": "l",
+            "label": "広い"
+          }
+        ]
+      }
   ]
 }
 {% endschema %}
