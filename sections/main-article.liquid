@@ -4,10 +4,10 @@
 {%- for block in section.blocks -%}
   {%- case block.type -%}
     {%- when 'header' -%}
-    <div class="section-heading-wrapper section-container content-header page-width{% if block.change_box_layout !=blank %} type-reverse{% endif %}">
-      {% if block.section_heading !=blank %}
+    <div class="section-heading-wrapper section-container content-header page-width{% if block.settings.change_box_layout !=blank %} type-reverse{% endif %}">
+      {% if block.settings.section_heading !=blank %}
       <div class="heading__item">
-        <h2 class="heading type-vertical{% if block.heading_size !="default" %} size-{{ block.heading_size }} {% endif %}" data-sub_heading="{{ block.section_sub_heading }}">{{ block.section_heading }}</h2>
+        <h2 class="heading type-vertical{% if block.settings.heading_size !="default" %} size-{{ block.settings.heading_size }} {% endif %}" data-sub_heading="{{ block.settings.section_sub_heading }}">{{ block.settings.section_heading }}</h2>
       </div>
       {% endif %}
       {%- if article.image -%}
