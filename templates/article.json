@@ -25,12 +25,6 @@
             "blog_show_author": false
           }
         },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        },
         "content": {
           "type": "content",
           "settings": {
@@ -41,7 +35,6 @@
         "f493baa9-a791-46ff-8967-806ed3c1f988",
         "featured_image",
         "title",
-        "share",
         "content"
       ],
       "settings": {
