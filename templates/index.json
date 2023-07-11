@@ -134,7 +134,7 @@
       "type": "featured-collection-ranking",
       "settings": {
         "section_heading": "人気豆ランキング",
-        "heading_size": "l",
+        "heading_size": "xl",
         "section_sub_heading": "RANKING COFFEE",
         "change_box_layout": true,
         "description": "",
