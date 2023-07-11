@@ -45,6 +45,7 @@
         "content"
       ],
       "settings": {
+        "content_max_width": "m"
       }
     }
   },
