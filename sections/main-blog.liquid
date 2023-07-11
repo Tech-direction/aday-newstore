@@ -16,15 +16,21 @@
   }
 {%- endstyle -%}
 
+
+{% if section.settings.box_gap != "default" %}
+  {% assign grid_gap = 'grid--gap-' | append: section.settings.box_gap %}
+{% endif %}
+{% if section.settings.content_max_width != "default" %}
+  {% assign content_size = 'content-size-' | append: section.settings.box_gap %}
+{% endif %}
+
+
+
 {%- paginate blog.articles by 6 -%}
-  <div class="main-blog page-width section-{{ section.id }}-padding content-size-m">
+  <div class="main-blog page-width section-{{ section.id }}-padding {{ content_size }}">
     {% comment %}}<h1 class="title--primary{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
       {{ blog.title | escape }}
     </h1>{% endcomment %}
-
-    {% if section.settings.box_gap != "default" %}
-      {% assign grid_gap = 'grid--gap-' | append: section.settings.box_gap %}
-    {% endif %}
     
     <div class="blog-articles grid grid--2-col-desktop {{ grid_gap }} article-list{% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
       {%- for article in blog.articles -%}
