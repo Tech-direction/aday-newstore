@@ -41,7 +41,7 @@
   {% assign content_size = 'content-size-' | append: section.settings.content_max_width %}
 {% endif %}
 
-<div class="page-width　article-wrapper {{ content_size }}">
+<div class="page-width article-wrapper {{ content_size }}">
   <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
