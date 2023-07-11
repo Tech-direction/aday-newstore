@@ -127,6 +127,17 @@
             {% assign share_url = request.origin | append: article.url %}
             {% render 'share-button', block: block, share_link: share_url %}
           </div>
+
+        {%- when 'excerpt' -%}
+          {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
+                <p class="article-card__excerpt rte-width">
+                  {%- if article.excerpt.size > 0 -%}
+                    {{ article.excerpt | strip_html | truncatewords: 30 }}
+                  {%- else -%}
+                    {{ article.content | strip_html | truncatewords: 30 }}
+                  {%- endif -%}
+                </p>
+              {%- endif -%}
       {%- endcase -%}
     {%- endfor -%}
   
