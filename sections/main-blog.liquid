@@ -147,27 +147,32 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
-    }, {
-        "type": "select",
-        "id": "box_gap",
-        "default": "default",
-        "label": "余白の広さ",
-        "options": [
-          {
-            "value": "none",
-            "label": "余白なし"
-          }, {
-            "value": "s",
-            "label": "狭い"
-          }, {
-            "value": "default",
-            "label": "標準"
-          }, {
-            "value": "l",
-            "label": "広い"
-          }
-        ]
-      }
+    }, 
+   {
+      "type": "header",
+      "content": "カラム間の余白"
+    },
+    {
+      "type": "select",
+      "id": "box_gap",
+      "default": "default",
+      "label": "余白の広さ",
+      "options": [
+        {
+          "value": "none",
+          "label": "余白なし"
+        }, {
+          "value": "s",
+          "label": "狭い"
+        }, {
+          "value": "default",
+          "label": "標準"
+        }, {
+          "value": "l",
+          "label": "広い"
+        }
+      ]
+    }
   ]
 }
 {% endschema %}
