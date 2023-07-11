@@ -6,7 +6,7 @@
     <h2 class="heading type-vertical{% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %}" data-sub_heading="{{ section.settings.section_sub_heading }}">{{ section.settings.section_heading }}</h2>
   </div>
   {% endif %}
-  {%- if section.settings.image != blank -%}
+
   <div class="content__item section-image">
     <div class="section__media media"><img
                 srcset="
@@ -27,7 +27,6 @@
                 alt="{{ article.image.alt | escape }}"
               ></div>
   </div>
-  {% endif %}
 </div>
 
 <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
