@@ -1,5 +1,7 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 
+{{  section.blocks | json}}
+
 <div class="section-heading-wrapper section-container content-header page-width{% if section.blocks.change_box_layout !=blank %} type-reverse{% endif %}">
   {% if section.blocks.section_heading !=blank %}
   <div class="heading__item">
