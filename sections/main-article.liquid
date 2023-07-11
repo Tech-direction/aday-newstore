@@ -7,7 +7,7 @@
     <div class="section-heading-wrapper section-container content-header page-width{% if block.settings.change_box_layout !=blank %} type-reverse{% endif %}">
       {% if block.settings.section_heading !=blank %}
       <div class="heading__item">
-        <h2 class="heading type-vertical{% if block.settings.heading_size !="default" %} size-{{ block.settings.heading_size }} {% endif %}" data-sub_heading="{{ block.settings.section_sub_heading }}">{{ block.settings.section_heading }}</h2>
+        <p class="heading type-vertical{% if block.settings.heading_size !="default" %} size-{{ block.settings.heading_size }} {% endif %}" data-sub_heading="{{ block.settings.section_sub_heading }}">{{ block.settings.section_heading }}</p>
       </div>
       {% endif %}
       {%- if article.image -%}
