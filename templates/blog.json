@@ -21,7 +21,7 @@
         "show_date": true,
         "show_author": false,
         "content_max_width": "s",
-        "box_gap": "section"
+        "box_gap": "xl"
       }
     }
   },
