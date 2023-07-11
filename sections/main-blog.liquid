@@ -26,7 +26,7 @@
       {% assign grid_gap = 'grid--gap-' | append: section.settings.box_gap %}
     {% endif %}
     
-    <div class="blog-articles grid grid--2-col-desktop grid--gap-l article-list{% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
+    <div class="blog-articles grid grid--2-col-desktop {{ grid_gap }} article-list{% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
       {%- for article in blog.articles -%}
         <div
           class="blog-articles__article article grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
