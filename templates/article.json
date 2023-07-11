@@ -3,6 +3,15 @@
     "main": {
       "type": "main-article",
       "blocks": {
+        "f493baa9-a791-46ff-8967-806ed3c1f988": {
+          "type": "header",
+          "settings": {
+            "section_heading": "コーヒー豆知識",
+            "heading_size": "l",
+            "section_sub_heading": "COFFEE JOURNAL",
+            "change_box_layout": false
+          }
+        },
         "featured_image": {
           "type": "featured_image",
           "settings": {
@@ -29,6 +38,7 @@
         }
       },
       "block_order": [
+        "f493baa9-a791-46ff-8967-806ed3c1f988",
         "featured_image",
         "title",
         "share",
