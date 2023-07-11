@@ -58,7 +58,7 @@
       "type": "featured-blog-top",
       "settings": {
         "section_heading": "コーヒー豆知識",
-        "heading_size": "l",
+        "heading_size": "xl",
         "section_sub_heading": "COFFEE JOURNAL",
         "change_box_layout": true,
         "blog": "coffee-journal",
@@ -113,7 +113,7 @@
       ],
       "settings": {
         "section_heading": "今月のオススメ商品",
-        "heading_size": "l",
+        "heading_size": "xl",
         "section_sub_heading": "RECOMMEND ITEM",
         "change_box_layout": false,
         "product": "brazil",
