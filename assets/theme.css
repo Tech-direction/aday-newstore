@@ -1581,12 +1581,6 @@ body,
 
 
 @media screen and (max-width: 749px) {
-  .contents-wrapper .customer .table td:before {
-    width: 7em;
-    color: rgb(var(--color-black));
-    font-size: 1rem;
-    flex: none;
-  }
    .contents-wrapper .customer .table tbody tr {
     border: 0;
   }
@@ -1596,6 +1590,15 @@ body,
   }
   .contents-wrapper .customer .table td {
     padding: 0;
+  }
+  .contents-wrapper .customer .table td:before {
+    width: 7em;
+    color: rgb(var(--color-black));
+    font-size: 1rem;
+    flex: none;
+  }
+  .contents-wrapper .customer .table td > * {
+    flex: 1;
   }
   .contents-wrapper .customer .table td + td,
   .contents-wrapper .customer .table tr > :first-child {
