@@ -1488,8 +1488,9 @@ body,
   bottom: 0;
 }
 
-.contents-wrapper .customer .table .button {
+.contents-wrapper .customer .table td .button {
   height: auto;
+  margin: 0 0 0 1em;
   font-size: var(--font-s);
   border: 0;
 }
