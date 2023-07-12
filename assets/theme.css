@@ -1600,7 +1600,7 @@ body,
     padding-top: 1em;
   }
   .contents-wrapper .customer .table tfoot td {
-    padding: 1em 0 0;
+    padding: 1em 0 0 !important;
   }
   .contents-wrapper .customer .table tr > :last-child {
     padding-bottom:1em;
