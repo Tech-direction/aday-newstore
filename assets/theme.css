@@ -215,11 +215,12 @@ html {
 .contents-wrapper ol,
 .contents-wrapper ul {
   padding: 0;
-	list-style: none;
+  list-style: none;
 }
 
 .contents-wrapper li {
-	text-align: left;
+  text-align: left;
+  font-size: 1rem;
   position: relative;
 }
 
@@ -231,10 +232,6 @@ html {
 -----------------------------------------------------*/
 .contents-wrapper .list.type-disc li {
   padding-left: 1em;
-}
-
-.contents-wrapper .list.type-disc li + li {
-  margin-top: .5em;
 }
 
 .contents-wrapper .list.type-disc li:before {
