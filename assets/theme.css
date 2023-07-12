@@ -1605,11 +1605,23 @@ body,
   .contents-wrapper .customer .table tr > :last-child {
     padding-bottom:1em;
   }
-  .contents-wrapper .customer .table td.total,
-  .contents-wrapper .customer .table tfoot {
+  .contents-wrapper .customer .table td.total {
     margin-top: 1em;
     padding-bottom: 0;
     border-top: 1px solid rgb(var(--color-border));
+  }
+  .contents-wrapper .customer .table tfoot {
+    margin-top: 1em;
+    position: relative;
+  }
+  .contents-wrapper .customer .table tfoot:after {
+    content: ' ';
+    width: 100%;
+    border-bottom: 1px solid rgb(var(--color-border));
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
   }
 }
 
