@@ -72,8 +72,10 @@
                     </td>
                     {% endcomment %}
                     <td headers="RowOrder ColumnDate" role="cell" data-label="{{ 'customer.orders.date' | t }}" class="data">
-                      {{ order.created_at | time_tag: format: 'date' }}
-                      <a href="{{ order.customer_url }}" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}" class="button">詳しく見る</a>
+                        <div class="item_header">
+                          {{ order.created_at | time_tag: format: 'date' }}
+                          <a href="{{ order.customer_url }}" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}" class="button">詳しく見る</a>
+                        </div>
                     </td>
                     <td
                       headers="RowOrder ColumnPayment"
