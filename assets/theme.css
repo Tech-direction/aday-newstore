@@ -1018,6 +1018,7 @@ body,
 
 .contents-wrapper .section-heading-wrapper .content__item {
   width: calc(100% - var(--margin-section));
+  max-width: var(--width-max-m);
   order: 0;
   flex: 1;
 }
