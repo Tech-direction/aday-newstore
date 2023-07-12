@@ -1628,6 +1628,9 @@ body,
     left: 0;
     top: 0;
   }
+  .contents-wrapper .customer .table .item_title {
+    text-align: left;
+  }
 }
 
 /*  login
