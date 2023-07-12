@@ -214,6 +214,7 @@ html {
 
 .contents-wrapper ol,
 .contents-wrapper ul {
+  margin: 0;
   padding: 0;
   list-style: none;
 }
