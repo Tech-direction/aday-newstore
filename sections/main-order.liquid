@@ -282,7 +282,7 @@
                   role="cell"
                   data-label="{{ 'customer.order.shipping' | t }} ({{ shipping_method.title }})"
                 >
-                  {{ shipping_method.price | money }}
+                  <span>{{ shipping_method.price | money }}</span>
                 </td>
               </tr>
             {%- endfor -%}
@@ -297,7 +297,7 @@
                   role="cell"
                   data-label="{{ 'customer.order.tax' | t }} ({{ tax_line.title }} {{ tax_line.rate | times: 100 }}%)"
                 >
-                  {{ tax_line.price | money }}
+                  <span>{{ tax_line.price | money }}</span>
                 </td>
               </tr>
             {%- endfor -%}
@@ -305,7 +305,7 @@
               <tr role="row">
                 <td id="RowDuties" role="rowheader" scope="row" colspan="4">{{ 'customer.order.total_duties' | t }}</td>
                 <td headers="RowDuties" role="cell" data-label="{{ 'customer.order.total_duties' | t }}">
-                  {{ order.total_duties | money }}
+                  <span>{{ order.total_duties | money }}</span>
                 </td>
               </tr>
             {%- endif -%}
@@ -320,7 +320,7 @@
                   colspan="2"
                   data-label="{{ 'customer.order.total_refunded' | t }}"
                 >
-                  -{{ order.total_refunded_amount | money_with_currency }}
+                 <span> -{{ order.total_refunded_amount | money_with_currency }}</span>
                 </td>
               </tr>
             {%- endif -%}
