@@ -208,7 +208,7 @@
                   role="cell"
                   data-label="{{ 'customer.order.quantity' | t }}"
                 >
-                  {{ line_item.quantity }}
+                  <span>{{ line_item.quantity }}</span>
                 </td>
                 <td
                   headers="Row{{ line_item.key }} ColumnTotal"
@@ -231,7 +231,7 @@
                       </dd>
                     </dl>
                   {%- else -%}
-                    {{ line_item.original_line_price | money }}
+                    <span>{{ line_item.original_line_price | money }}</span>
                   {%- endif -%}
                 </td>
               </tr>
@@ -243,7 +243,7 @@
                 {{ 'customer.order.subtotal' | t }}
               </td>
               <td headers="RowSubtotal" role="cell" data-label="{{ 'customer.order.subtotal' | t }}">
-                {{ order.line_items_subtotal_price | money }}
+                <span>{{ order.line_items_subtotal_price | money }}</span>
               </td>
             </tr>
             {%- if order.cart_level_discount_applications != blank -%}
