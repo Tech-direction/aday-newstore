@@ -1473,7 +1473,6 @@ body,
   position: relative;
 }
 
-
 .contents-wrapper .customer thead:after,
 .contents-wrapper .customer tfoot:before {
   display: none;
@@ -1487,6 +1486,11 @@ body,
   position: absolute;
   left: 0;
   bottom: 0;
+}
+
+.contents-wrapper .customer .table .button {
+  height: auto;
+  font-size: var(--font-s);
 }
 
 /*  login
