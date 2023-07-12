@@ -1597,8 +1597,13 @@ body,
   .contents-wrapper .customer .table td + td {
     padding-top: 1em;
   }
-  .contents-wrapper .customer .table td.total {
-    margin-top: 1em;
+  .contents-wrapper .customer .table tr > :first-child {
+    padding-top:1em;
+  }
+  .contents-wrapper .customer .table tr > :last-child {
+    padding-bottom:1em;
+  }
+  .contents-wrapper .customer .table td.total 
     border-top: 1px solid rgb(var(--color-border));
   }
 }
