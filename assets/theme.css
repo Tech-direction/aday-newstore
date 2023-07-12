@@ -1487,7 +1487,8 @@ body,
   display: none;
 }
 
-.contents-wrapper .customer tr:after {
+.contents-wrapper .customer thead tr:after,
+.contents-wrapper .customer tbody tr:after {
   content: ' ';
   width: 100%;
   border-bottom: 1px solid rgb(var(--color-border));
@@ -1505,6 +1506,16 @@ body,
   font-size: var(--font-s) !important;
   border: 0;
 }
+
+.contents-wrapper .customer .table tfoot td {
+  padding: 0 1em;
+}
+
+.contents-wrapper .customer .table tfoot tr + tr td  {
+  padding-top: 1em;
+}
+
+
 
 @media screen and (max-width: 749px) {
   .contents-wrapper .customer .table td:before {
