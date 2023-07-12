@@ -45,7 +45,22 @@
     <div class="content__item">
       <div class="customer_block">
         <div class="customer_order_data">
-          
+          <ul>
+            <li>
+              <span class="label">注文日</span>
+              {{ order.created_at | time_tag: format: 'date' }}
+            </li>
+            <li>
+              <span class="label">{{ 'customer.order.billing_address' | t }}</span>
+              {{ order.billing_address | format_address }}
+              <span>{{ order.financial_status_label }}</pan>
+            </li>
+            <li>
+              <span class="label">{{ 'customer.order.shipping_address' | t }}</span>
+              {{ order.shipping_address | format_address }}
+              <span>{{ order.fulfillment_status_label }}</pan>
+            </li>
+          </ul>
         </div>
         <table role="table" class="order-details table">
           <caption class="visually-hidden">
@@ -338,7 +353,7 @@
       </div>
     </div>
 
-    
+    {% comment %}
     <div>
       <div>
         <h2>{{ 'customer.order.billing_address' | t }}</h2>
@@ -357,7 +372,7 @@
         {{ order.shipping_address | format_address }}
       </div>
     </div>
-    
+    {% endcomment %}
                           
   </div>
 </div>
