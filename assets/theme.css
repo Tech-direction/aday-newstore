@@ -1626,7 +1626,7 @@ body,
   .contents-wrapper .customer .table tr > :last-child {
     padding-bottom:1em;
   }
-  .contents-wrapper .customer .table td.total {
+  .contents-wrapper .customer .table td.cell_total {
     margin-top: 1em;
     padding-bottom: 0;
     border-top: 1px solid rgb(var(--color-border));
@@ -1681,7 +1681,7 @@ body,
   align-items: flex-start;
 }
 
-.contents-wrapper .customer .customer_order_data .data {
+.contents-wrapper .customer .customer_order_data .cell_data {
   width: 100%;
   flex: auto;
 }
