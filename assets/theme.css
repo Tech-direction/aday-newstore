@@ -1446,6 +1446,21 @@ body,
   margin: var(--margin) 0 0;
 }
 
+/*  table
+---------------------------------------------------------------*/
+
+.contents-wrapper .customer .table {
+  font-size: 1rem;
+  background-color: #fff;
+  box-shadow: none;
+}
+
+.contents-wrapper .customer .table th {
+  font-size: 1rem;
+}
+
+
+
 
 /*  login
 ---------------------------------------------------------------*/
