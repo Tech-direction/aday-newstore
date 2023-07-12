@@ -1491,7 +1491,7 @@ body,
 .contents-wrapper .customer .table td .button {
   height: auto;
   margin: 0 0 0 1em;
-  font-size: var(--font-s);
+  font-size: var(--font-s)　!important;
   border: 0;
 }
 
