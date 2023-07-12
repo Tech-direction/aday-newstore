@@ -1654,6 +1654,18 @@ body,
   font-size: 1rem;
 }
 
+.contents-wrapper .customer .customer_order_data .label {
+  padding: .5em;
+  font-weight: 500;
+  line-height: 1;
+  background-color: #fff;
+}
+
+.contents-wrapper .customer .customer_order_data li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--margin-s);
+}
 
 /*  login
 ---------------------------------------------------------------*/
