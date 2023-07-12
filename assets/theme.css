@@ -1674,6 +1674,12 @@ body,
   flex: auto;
 }
 
+.contents-wrapper .customer .customer_order_data .status {
+  padding: 1em;
+  line-height: 1;
+  background-color: #fff;
+}
+
 /*  login
 ---------------------------------------------------------------*/
 .contents-wrapper .customer.login .customer_block {
