@@ -206,6 +206,66 @@ html {
   background-color: rgb(var(--color-primary));
 }
 
+/*===============================================================
+
+	list
+
+===============================================================*/
+
+.contents-wrapper ol,
+.contents-wrapper ul {
+  padding: 0;
+	list-style: none;
+}
+
+.contents-wrapper li {
+	text-align: left;
+  position: relative;
+}
+
+.contents-wrapper * + .list {
+  margin-top: 1.75em;
+}
+
+/* disc
+-----------------------------------------------------*/
+.contents-wrapper .list.type-disc li {
+  padding-left: 1em;
+}
+
+.contents-wrapper .list.type-disc li + li {
+  margin-top: .5em;
+}
+
+.contents-wrapper .list.type-disc li:before {
+  content: '';
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: #222;
+  display: inline-block;
+  position: absolute;
+  top: .7em;
+  left: 0;
+}
+
+/* num
+-----------------------------------------------------*/
+.contents-wrapper .list.type-num {
+  counter-reset: count;
+}
+
+.contents-wrapper .list.type-num > li {
+  padding-left: 2em;
+}
+
+.contents-wrapper .list.type-num > li:before {
+  counter-increment: count;
+  content: '('counter(count)')';
+  position: absolute;
+  left: 0;
+}
+
 
 /*===============================================================
 
@@ -1513,6 +1573,11 @@ body,
 
 .contents-wrapper .customer .table tfoot td {
   padding: 1em 1em 0;
+}
+
+.contents-wrapper .customer .table .properties {
+  font-size: 1rem;
+  
 }
 
 
