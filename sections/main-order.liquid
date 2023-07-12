@@ -82,12 +82,12 @@
                             {{ line_item.variant.title }}
                           </li>
                         {%- endunless -%}
-                        </ul>
                         {%- unless line_item.selling_plan_allocation == null -%}
-                          <span>
+                          <li>
                             {{ line_item.selling_plan_allocation.selling_plan.name }}
-                          </span>
+                          </li>
                         {%- endunless -%}
+                        </ul>
                         {%- if property_size != 0 -%}
                           {%- for property in line_item.properties -%}
                             {% assign property_first_char = property.first | slice: 0 %}
