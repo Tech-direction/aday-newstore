@@ -1647,6 +1647,7 @@ body,
   font-size: 1rem;
   display: flex;
   flex-wrap: wrap;
+  gap: var(--margin-s) var(--margin);
 }
 
 .contents-wrapper .customer .customer_order_data p {
