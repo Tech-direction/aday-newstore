@@ -1578,6 +1578,10 @@ body,
   padding: 1em 1em 0;
 }
 
+.contents-wrapper .customer .table .item_header {
+  font-weight: 500;
+}
+
 .contents-wrapper .customer .table .properties {
   width: 100%;
   font-size: 1rem;
