@@ -1467,7 +1467,19 @@ body,
   box-shadow: none;
 }
 
+.contents-wrapper .customer tr {
+  position: relative;
+}
 
+.contents-wrapper .customer tr:after {
+  content: ' ';
+  height: 0.1rem;
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  background: rgb(var(--color-border));
+}
 
 /*  login
 ---------------------------------------------------------------*/
