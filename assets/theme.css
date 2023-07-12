@@ -1491,6 +1491,7 @@ body,
 .contents-wrapper .customer .table .button {
   height: auto;
   font-size: var(--font-s);
+  border: 0;
 }
 
 /*  login
