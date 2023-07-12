@@ -67,7 +67,7 @@
                   scope="row"
                   data-label="{{ 'customer.order.product' | t }}"
                 >
-                  <div>
+                  <div class="item_title">
                     {%- if line_item.url != blank -%}
                       <a href="{{ line_item.url }}">{{ line_item.title }}</a>
                     {%- else -%}
