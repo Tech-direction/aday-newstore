@@ -1677,6 +1677,7 @@ body,
 .contents-wrapper .customer .customer_order_data .status {
   padding: 1em;
   line-height: 1;
+  font-size: var(--font-s);
   font-weight: 500;
   color: #fff;
   background-color: rgb(var(--color-primary));
