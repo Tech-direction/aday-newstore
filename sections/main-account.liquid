@@ -73,7 +73,7 @@
                     {% endcomment %}
                     <td headers="RowOrder ColumnDate" role="cell" data-label="{{ 'customer.orders.date' | t }}" class="cell_data">
                         <div class="item_header">
-                          {{ order.created_at | date: "%Y年%m月%d日 %H：%M" }}
+                          {{ order.created_at | date: "%Y年%m月%d日 %H:%M" }}
                           <a href="{{ order.customer_url }}" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}" class="button">詳しく見る</a>
                         </div>
                     </td>
