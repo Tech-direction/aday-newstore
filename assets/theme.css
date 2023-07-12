@@ -958,7 +958,7 @@ body,
 }
 
 .contents-wrapper .section-heading-wrapper .heading {
-  margin: -1rem 0 0;
+  margin: -.5rem 0 0;
   writing-mode: vertical-rl;
   letter-spacing: -.25em;
 }
