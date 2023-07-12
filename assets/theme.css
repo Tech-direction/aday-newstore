@@ -1681,7 +1681,7 @@ body,
   align-items: flex-start;
 }
 
-.contents-wrapper .customer .customer_order_data .cell_data {
+.contents-wrapper .customer .customer_order_data .data {
   width: 100%;
   flex: auto;
 }
