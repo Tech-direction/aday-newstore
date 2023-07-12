@@ -1597,7 +1597,7 @@ body,
     font-size: 1rem;
     flex: none;
   }
-  .contents-wrapper .customer .table td > * {
+  .contents-wrapper .customer .table td > *:not(.button) {
     flex: 1;
   }
   .contents-wrapper .customer .table td + td,
