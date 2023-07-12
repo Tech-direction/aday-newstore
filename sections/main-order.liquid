@@ -76,11 +76,13 @@
                     {%- assign property_size = line_item.properties | size -%}
                     {%- unless line_item.selling_plan_allocation == null and property_size == 0 -%}
                       <div class="properties">
+                        <ul class="list type-disc">
                         {%- unless line_item.product.has_only_default_variant -%}
-                          <span>
+                          <li>
                             {{ line_item.variant.title }}
-                          </span>
+                          </li>
                         {%- endunless -%}
+                        </ul>
                         {%- unless line_item.selling_plan_allocation == null -%}
                           <span>
                             {{ line_item.selling_plan_allocation.selling_plan.name }}
