@@ -44,6 +44,9 @@
 {{ order.created_at | time_tag: format: 'date' }}
     <div class="content__item">
       <div class="customer_block">
+        <div class="customer_order_data">
+          
+        </div>
         <table role="table" class="order-details table">
           <caption class="visually-hidden">
             {{ 'customer.order.title' | t: name: order.name }}
@@ -335,7 +338,7 @@
       </div>
     </div>
 
-    {% comment %}
+    
     <div>
       <div>
         <h2>{{ 'customer.order.billing_address' | t }}</h2>
@@ -354,7 +357,7 @@
         {{ order.shipping_address | format_address }}
       </div>
     </div>
-    {% endcomment %}
+    
                           
   </div>
 </div>
