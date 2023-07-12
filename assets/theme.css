@@ -1583,6 +1583,14 @@ body,
   margin-top: 0;
 }
 
+.contents-wrapper .customer .table .fulfillment {
+  margin-top: 1rem;
+  padding: 0.5em;
+  font-size: var(--font-s);
+  line-height: 1;
+  border: 1px solid rgb(var(--color-border));
+  background-color: rgb(var(--color-gray));
+}
 
 @media screen and (max-width: 749px) {
    .contents-wrapper .customer .table tbody tr {
