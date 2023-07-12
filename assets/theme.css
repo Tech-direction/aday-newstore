@@ -157,7 +157,8 @@ html {
 .contents-wrapper .button,
 .contents-wrapper .btn,
 .contents-wrapper .shopify-payment-button__button {
-  min-height: calc(3.5rem + var(--buttons-border-width) * 2);
+  height: 3.5rem;
+  min-height: none;
   margin-bottom: 0;
   font-size: 1rem;
   border-radius: 4px;
