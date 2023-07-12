@@ -127,7 +127,7 @@ html {
 
 .contents-wrapper a,
 .contents-wrapper .underlined-link,
-.contents-wrapper .customer a {
+.contents-wrapper .customer a:not(.button) {
   color: rgb(var(--color-black));
   text-decoration: none;
   transition: all var(--duration-long) ease;
