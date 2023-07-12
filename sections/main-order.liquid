@@ -52,8 +52,7 @@
             <li>
               <span class="label">請求先</span>
               {{ order.billing_address | format_address }}
-              <span class="status {{ order.financial_status }}">
-              {{ order.financial_status_label }}</span>
+              <span class="status {{ order.financial_status }}">{{ order.financial_status_label }}</span>
             </li>
             <li>
               <span class="label">配送先</span>
