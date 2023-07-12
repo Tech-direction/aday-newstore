@@ -1632,7 +1632,7 @@ body,
     left: 0;
     top: 0;
   }
-  .contents-wrapper .customer .table .item_title {
+  .contents-wrapper .customer .table .item_header {
     text-align: left;
   }
 }
