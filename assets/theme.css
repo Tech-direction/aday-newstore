@@ -1499,6 +1499,13 @@ body,
   border: 0;
 }
 
+@media screen and (max-width: 749px) {
+  .customer td::before {
+    color: rgb(var(--color-black));
+    font-size: 1rem;
+  }
+}
+
 /*  login
 ---------------------------------------------------------------*/
 .contents-wrapper .customer.login .customer_block {
