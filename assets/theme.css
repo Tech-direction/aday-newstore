@@ -1510,6 +1510,12 @@ body,
   .contents-wrapper .customer tr:after {
     display: none;
   }
+  .contents-wrapper .customer .table td {
+    padding: 0;
+  }
+  .contents-wrapper .customer .table td + td {
+    padding-top: 1em;
+  }
 }
 
 /*  login
