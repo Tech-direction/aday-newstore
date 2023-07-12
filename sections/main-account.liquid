@@ -45,7 +45,7 @@
               </caption>
               <thead role="rowgroup">
                 <tr role="row">
-                  <th id="ColumnOrder" scope="col" role="columnheader">{{ 'customer.orders.order_number' | t }}</th>
+                  {% comment %}<th id="ColumnOrder" scope="col" role="columnheader">{{ 'customer.orders.order_number' | t }}</th>{% endcomment %}
                   <th id="ColumnDate" scope="col" role="columnheader">{{ 'customer.orders.date' | t }}</th>
                   <th id="ColumnPayment" scope="col" role="columnheader">{{ 'customer.orders.payment_status' | t }}</th>
                   <th id="ColumnFulfillment" scope="col" role="columnheader">
@@ -56,6 +56,7 @@
               </thead>
               <tbody role="rowgroup">
                   <tr role="row">
+                    {% comment %}
                     <td
                       id="RowOrder"
                       role="cell"
@@ -69,6 +70,7 @@
                         {{ order.name }}
                       </a>
                     </td>
+                    {% endcomment %}
                     <td headers="RowOrder ColumnDate" role="cell" data-label="{{ 'customer.orders.date' | t }}">
                       {{ order.created_at | time_tag: format: 'date' }}
                     </td>
