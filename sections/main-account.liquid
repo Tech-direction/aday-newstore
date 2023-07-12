@@ -71,7 +71,7 @@
                       </a>
                     </td>
                     {% endcomment %}
-                    <td headers="RowOrder ColumnDate" role="cell" data-label="{{ 'customer.orders.date' | t }}">
+                    <td headers="RowOrder ColumnDate" role="cell" data-label="{{ 'customer.orders.date' | t }}" class="data">
                       {{ order.created_at | time_tag: format: 'date' }}
                       <a href="{{ order.customer_url }}" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}" class="button">詳しく見る</a>
                     </td>
@@ -79,6 +79,7 @@
                       headers="RowOrder ColumnPayment"
                       role="cell"
                       data-label="{{ 'customer.orders.payment_status' | t }}"
+                      class="payment"
                     >
                       {{ order.financial_status_label }}
                     </td>
@@ -86,10 +87,11 @@
                       headers="RowOrder ColumnFulfillment"
                       role="cell"
                       data-label="{{ 'customer.orders.fulfillment_status' | t }}"
+                      class="fulfillment"
                     >
                       {{ order.fulfillment_status_label }}
                     </td>
-                    <td headers="RowOrder ColumnTotal" role="cell" data-label="{{ 'customer.orders.total' | t }}">
+                    <td headers="RowOrder ColumnTotal" role="cell" data-label="{{ 'customer.orders.total' | t }}" class="total">
                       {{ order.total_net_amount | money_with_currency }}
                     </td>
                   </tr>
