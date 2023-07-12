@@ -51,23 +51,6 @@ html {
   box-sizing: border-box;
 }
 
-.link, .customer a {
-  font-size: 1rem !important;
-}
-
-.contents-wrapper a {
-  text-decoration: none;
-  transition: all var(--duration-long) ease;
-}
-
-.contents-wrapper a:hover {
-  opacity: .5 !important;
-}
-
-.contents-wrapper a:hover > .icon {
-  transform: scale(1) !important;
-}
-
 .contents-wrapper .movie {
 	position: relative;
 }
@@ -131,6 +114,41 @@ html {
   font-size: var(--font-xl);
 }
 
+/*  anchor
+---------------------------------------------------------------*/
+
+.link, .customer a {
+  font-size: 1rem !important;
+}
+
+.contents-wrapper a {
+  text-decoration: none;
+  transition: all var(--duration-long) ease;
+}
+
+.contents-wrapper a:hover {
+  opacity: .5 !important;
+}
+
+.contents-wrapper a:hover > .icon {
+  transform: scale(1) !important;
+}
+
+.contents-wrapper .link.animate-arrow {
+  width: fit-content;
+  padding-bottom: .5em;
+  font-weight: 500;
+  border-bottom: 1px solid rgb(var(--color-black));
+}
+
+.contents-wrapper .link.animate-arrow .icon-wrap {
+  margin-left: 4em;
+  margin-right: 0;
+}
+
+.contents-wrapper .link.animate-arrow .icon-wrap svg {
+  transform: rotate(-180deg);
+}
 
 /*===============================================================
 
@@ -138,6 +156,7 @@ html {
 
 ===============================================================*/
 
+.contents-wrapper button,
 .contents-wrapper .button,
 .contents-wrapper .shopify-payment-button__button {
   min-height: calc(3.5rem + var(--buttons-border-width) * 2);
@@ -155,7 +174,11 @@ html {
 .contents-wrapper .button:after,
 .contents-wrapper .shopify-challenge__button:after,
 .contents-wrapper .customer button:after,
-.contents-wrapper .shopify-payment-button__button--unbranded:after {
+.contents-wrapper .shopify-payment-button__button--unbranded:after,
+.contents-wrapper .button:not([disabled]):hover::after,
+.contents-wrapper .shopify-challenge__button:hover::after,
+.contents-wrapper .customer button:hover::after,
+.contents-wrapper .shopify-payment-button__button--unbranded:hover::after  {
   box-shadow: none;
 }
 
@@ -163,33 +186,40 @@ html {
   max-width: none;
 }
 
+
 /*===============================================================
 
 	form item
 
 ===============================================================*/
 
-.contents-wrapper .select,
-.contents-wrapper .quantity {
+.contents-wrapper .field__input,
+.contents-wrapper .contents-wrapper .select__select,
+.contents-wrapper .quantity,
+.contents-wrapper .customer .field input,
+.contents-wrapper .customer select {
   width: 100%;
   max-width: none !important;
+  height: 3.5rem;
+  min-height: auto !important;
+}
+
+.contents-wrapper variant-selects select,
+.contents-wrapper .product__item .product-form__quantity .quantity input,
+.contents-wrapper .field input {
+  font-size: 1rem;
 }
 
 .contents-wrapper .select-wrapper,
-.contents-wrapper .quantity {
+.contents-wrapper .quantity,
+.contents-wrapper .field {
   border: 1px solid rgb(var(--color-border));
   background-color: #fff;
   transition: all var(--duration-long) ease;
 }
 
-.contents-wrapper variant-selects select,
-.contents-wrapper .product__item .product-form__quantity .quantity input {
-  font-size: 1rem;
-}
-
 .contents-wrapper .field:before,
 .contents-wrapper .select:before,
-.contents-wrapper .customer,
 .contents-wrapper .field:before,
 .contents-wrapper .customer select:before,
 .contents-wrapper .localization-form__select:before,
@@ -207,10 +237,15 @@ html {
 }
 
 
-/*  focus
+/*  focus common
 ---------------------------------------------------------------*/
 
-.contents-wrapper *:focus-visible {
+.contents-wrapper *:focus-visible,
+.contents-wrapper .field__input:focus,
+.contents-wrapper .select__select:focus,
+.contents-wrapper .customer .field input:focus,
+.contents-wrapper .customer select:focus,
+.contents-wrapper .localization-form__select:focus.localization-form__select:after {
   outline: none;
   outline-offset: 0;
   box-shadow: none;
@@ -218,7 +253,8 @@ html {
 
 .contents-wrapper .select-wrapper:has(select:focus),
 .contents-wrapper .quantity:has(input:focus),
-.contents-wrapper .quantity:has(button:focus) {
+.contents-wrapper .quantity:has(button:focus),
+.contents-wrapper .field:has(input:focus) {
   box-shadow: 0 0 0 calc(0.01rem + var(--inputs-border-width)) rgba(var(--color-black));
 }
 
@@ -237,6 +273,51 @@ html {
 .contents-wrapper .select:hover.select:after {
   box-shadow: 0 0 0 var(--inputs-border-width) rgba(var(--color-black), var(--inputs-border-opacity));
 }*/
+
+
+/*  field
+---------------------------------------------------------------*/
+
+.contents-wrapper .content-for-layout .field {
+  margin: 0;
+}
+
+.contents-wrapper .field input {
+  padding: 1em;
+}
+
+.contents-wrapper .field input:focus,
+.contents-wrapper .field__input:focus,
+.contents-wrapper .field__input:not(:placeholder-shown),
+.contents-wrapper .field__input:-webkit-autofill, .customer .field input:focus, .customer .field input:not(:placeholder-shown),
+.contents-wrapper .customer .field input:-webkit-autofill {
+  padding: 1.5em 1em .5em;
+}
+
+.contents-wrapper .field__label,
+.contents-wrapper .customer .field label {
+  font-size: 1rem;
+  line-height: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1em !important;
+}
+
+.contents-wrapper .field + .field {
+  margin-top: var(--margin);
+}
+
+.contents-wrapper .field__input:focus ~ .field__label,
+.contents-wrapper .field__input:not(:placeholder-shown) ~ .field__label,
+.contents-wrapper .field__input:-webkit-autofill ~ .field__label,
+.contents-wrapper .customer .field input:focus ~ label,
+.contents-wrapper .customer .field input:not(:placeholder-shown) ~ label,
+.contents-wrapper .customer .field input:-webkit-autofill ~ label {
+  top: .5em;
+  transform: none;
+}
+
+
 
 
 /*  select
@@ -1158,7 +1239,7 @@ body,
 
 .contents-wrapper .article-wrapper .article-template__excerpt {
   margin-top: var(--margin-l);
-  font-size: var(--font-l);
+  font-size: var(--font-m);
   font-weight: 500;
 }
 
@@ -1217,7 +1298,14 @@ body,
   font-size: var(--font-m);
 }
 
+.contents-wrapper .article-wrapper .article-template__back:last-child {
+  margin-top: var(--margin-l);
+  margin-bottom: 0;
+}
 
+.contents-wrapper .article-wrapper .article-template__back:last-child .link {
+  margin-left: auto;
+}
 
 /*===============================================================
 
@@ -1317,9 +1405,15 @@ body,
 
 
 
+/*===============================================================
 
+	customer
 
+===============================================================*/
 
+.contents-wrapper .customer:not(.account):not(.order).content-size-s {
+  max-width: var(--width-max-xs);
+}
 
 
 
