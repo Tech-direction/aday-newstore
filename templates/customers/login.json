@@ -3,7 +3,7 @@
     "main": {
       "type": "main-login",
       "settings": {
-        "heading_size": "l",
+        "heading_size": "xl",
         "padding_top": 0,
         "padding_bottom": 0
       }
