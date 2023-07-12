@@ -25,8 +25,8 @@
     <a href="{{ routes.account_url }}">{{ 'customer.account.return' | t }}</a>
   </div>{% endcomment %}
 
-  <div>
-    <div>
+  <div class="section-heading-wrapper section-container  page-width  type-reverse">
+    <div class="heading__item">
       <h2>{{ 'customer.order.title' | t: name: order.name }}</h2>
       {%- assign order_date = order.created_at | time_tag: format: 'date_at_time' -%}
       <p>{{ 'customer.order.date_html' | t: date: order_date }}</p>
@@ -35,7 +35,9 @@
         <p>{{ 'customer.order.cancelled_html' | t: date: cancelled_at }}</p>
         <p>{{ 'customer.order.cancelled_reason' | t: reason: order.cancel_reason_label }}</p>
       {%- endif -%}
+    </div>
 
+    <div class="content__item">
       <table role="table" class="order-details">
         <caption class="visually-hidden">
           {{ 'customer.order.title' | t: name: order.name }}
@@ -323,6 +325,8 @@
         </tfoot>
       </table>
     </div>
+
+    {% comment %}
     <div>
       <div>
         <h2>{{ 'customer.order.billing_address' | t }}</h2>
@@ -341,6 +345,8 @@
         {{ order.shipping_address | format_address }}
       </div>
     </div>
+    {% endcomment %}
+                          
   </div>
 </div>
 
