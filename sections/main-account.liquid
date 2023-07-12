@@ -55,7 +55,6 @@
                 </tr>
               </thead>
               <tbody role="rowgroup">
-                {%- for order in customer.orders -%}
                   <tr role="row">
                     <td
                       id="RowOrder"
@@ -91,7 +90,6 @@
                       {{ order.total_net_amount | money_with_currency }}
                     </td>
                   </tr>
-                {%- endfor -%}
               </tbody>
             </table>
           </div>
