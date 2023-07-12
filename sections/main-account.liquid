@@ -36,6 +36,14 @@
     <div class="content__item">
       {% paginate customer.orders by 20 %}
         {%- if customer.orders.size > 0 -%}
+
+          {%- for order in customer.orders -%}
+          <div class="customer_block">
+
+          </div>
+          {% endfor %}
+
+      {% comment %}
           <table role="table" class="order-history">
             <caption class="visually-hidden">
               {{ 'customer.orders.title' | t }}
@@ -91,8 +99,10 @@
               {%- endfor -%}
             </tbody>
           </table>
+        {% endcomment %}
         {%- else -%}
           <p>{{ 'customer.orders.none' | t }}</p>
+
         {%- endif -%}
 
         {%- if paginate.pages > 1 -%}
