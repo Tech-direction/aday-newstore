@@ -146,9 +146,6 @@ html {
   margin-right: 0;
 }
 
-.contents-wrapper .link.animate-arrow .icon-wrap svg {
-  transform: rotate(-180deg);
-}
 
 /*===============================================================
 
@@ -158,11 +155,13 @@ html {
 
 .contents-wrapper button,
 .contents-wrapper .button,
+.contents-wrapper .btn,
 .contents-wrapper .shopify-payment-button__button {
   min-height: calc(3.5rem + var(--buttons-border-width) * 2);
   margin-bottom: 0;
   font-size: 1rem;
   border-radius: 4px;
+  transition: all var(--duration-long) ease;
 }
 
 .contents-wrapper .button:before,
@@ -184,6 +183,16 @@ html {
 
 .contents-wrapper .product-form__buttons {
   max-width: none;
+}
+
+.contents-wrapper button:hover,
+.contents-wrapper .button:hover,
+.contents-wrapper .btn:hover {
+  opacity: .5;
+}
+
+.contents-wrapper .button.type-primary {
+  background-color: rgb(var(--color-primary));
 }
 
 
@@ -1307,6 +1316,10 @@ body,
   margin-left: auto;
 }
 
+.contents-wrapper .article-template__link .link.animate-arrow .icon-wrap svg {
+  transform: rotate(-180deg);
+}
+
 /*===============================================================
 
 	collection contents
@@ -1415,13 +1428,46 @@ body,
   max-width: var(--width-max-xs);
 }
 
+.contents-wrapper .customer_block {
+  padding: var(--margin-l);
+  border-radius: var(--border-radius-box);
+  background-color: rgb(var(--color-gray));
+}
+
+.contents-wrapper .customer form {
+  margin: 0;
+}
+
+.contents-wrapper .customer .button {
+  margin: var(--margin) 0 0;
+}
 
 
+/*  login
+---------------------------------------------------------------*/
+.contents-wrapper .customer.login .customer_block {
+  margin-top: var(--margin-l);
+}
 
+.contents-wrapper .customer.login a {
+  display: inline-block;
+}
 
+.contents-wrapper .customer.login .customer_block_footer {
+  margin-top: var(--margin);
+  text-align: right;
+}
 
+.contents-wrapper .customer.login .recover {
+  margin-left: auto;
+  font-size: var(--font-s) !important;
+  display: block;
+}
 
-
+.contents-wrapper .customer.login .cancel {
+  margin: 1rem auto 0;
+  display: block;
+}
 
 
 
