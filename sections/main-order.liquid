@@ -51,12 +51,12 @@
               {{ order.created_at | time_tag: format: 'date' }}
             </li>
             <li>
-              <span class="label">{{ 'customer.order.billing_address' | t }}</span>
+              <span class="label">請求先</span>
               {{ order.billing_address | format_address }}
               <span>{{ order.financial_status_label }}</pan>
             </li>
             <li>
-              <span class="label">{{ 'customer.order.shipping_address' | t }}</span>
+              <span class="label">配送先</span>
               {{ order.shipping_address | format_address }}
               <span>{{ order.fulfillment_status_label }}</pan>
             </li>
