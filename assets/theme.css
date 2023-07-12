@@ -1588,7 +1588,8 @@ body,
    .contents-wrapper .customer .table tbody tr {
     border: 0;
   }
-  .contents-wrapper .customer tr:after {
+  .contents-wrapper .customer tr:after,
+  .contents-wrapper .customer .table tbody > :last-child:after {
     display: none;
   }
   .contents-wrapper .customer .table td {
