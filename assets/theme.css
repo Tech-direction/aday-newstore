@@ -1433,7 +1433,7 @@ body,
 }
 
 .contents-wrapper .customer_block {
-  padding: var(--margin-l);
+  padding: var(--margin);
   border-radius: var(--border-radius-box);
   background-color: rgb(var(--color-gray));
 }
@@ -1449,6 +1449,8 @@ body,
 .contents-wrapper .customer .button {
   margin: var(--margin) 0 0;
 }
+
+
 
 /*  table
 ---------------------------------------------------------------*/
@@ -1528,6 +1530,7 @@ body,
 ---------------------------------------------------------------*/
 .contents-wrapper .customer.login .customer_block {
   margin-top: var(--margin-l);
+  padding: var(--margin-l);
 }
 
 .contents-wrapper .customer.login a {
@@ -1554,9 +1557,6 @@ body,
 /*  account
 ---------------------------------------------------------------*/
 
-.customer.account .customer_block {
-  padding: var(--margin);
-}
 
 
 .grid-collection {
