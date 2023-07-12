@@ -71,6 +71,7 @@
     {{ 'customer.login_page.title' | t }}
   </h1>
   <div>
+    <div class="customer_block">
     {%- if recover_success == true -%}
       <h3 class="form__message" tabindex="-1" autofocus>
         <svg aria-hidden="true" focusable="false" viewBox="0 0 13 13">
@@ -140,14 +141,17 @@
       <button class="button type-primary">
         {{ 'customer.login_page.sign_in' | t }}
       </button>
-
     {%- endform -%}
+   </div>
+    <div class="">
+      <a href="{{ routes.account_register_url }}" class="create_account">
+        {{ 'customer.login_page.create_account' | t }}
+      </a>
+    </div>
   </div>
 
 
-     <a href="{{ routes.account_register_url }}" class="create_account">
-        {{ 'customer.login_page.create_account' | t }}
-      </a>
+     
 
   {%- if shop.checkout.guest_login -%}
     <div>
