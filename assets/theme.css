@@ -1489,8 +1489,10 @@ body,
 }
 
 .contents-wrapper .customer .table td .button {
+  min-width: auto;
   height: auto;
   margin: 0 0 0 1em;
+  padding: 1em;
   font-size: var(--font-s) !important;
   border: 0;
 }
