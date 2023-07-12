@@ -1683,7 +1683,7 @@ body,
 }
 
 .contents-wrapper .customer .customer_order_data .status.paid {
-  background-color: rgb(var(--color-gray));
+  background-color: rgb(var(--color-border));
 }
 
 /*  login
