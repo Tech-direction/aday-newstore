@@ -1019,6 +1019,7 @@ body,
 .contents-wrapper .section-heading-wrapper .content__item {
   width: calc(100% - var(--margin-section));
   max-width: calc(var(--width-max-m) - var(--margin) * 2);
+  margin-right: auto;
   order: 0;
   flex: 1;
 }
@@ -1075,6 +1076,8 @@ body,
 }
 
 .contents-wrapper .section-heading-wrapper.type-reverse .content__item {
+  margin-right: 0;
+  margin-left: auto;
   order: 1;
 }
 
