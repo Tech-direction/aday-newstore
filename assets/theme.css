@@ -1604,6 +1604,7 @@ body,
     padding-bottom:1em;
   }
   .contents-wrapper .customer .table td.total {
+    margin-top: 1em;
     border-top: 1px solid rgb(var(--color-border));
   }
 }
