@@ -1466,6 +1466,7 @@ body,
 .contents-wrapper .customer .table td {
   padding: 1em;
   font-size: 1rem;
+  vertical-align: middle;
 }
 
 .contents-wrapper .customer .table a {
