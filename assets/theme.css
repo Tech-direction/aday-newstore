@@ -158,7 +158,7 @@ html {
 .contents-wrapper .btn,
 .contents-wrapper .shopify-payment-button__button {
   height: 3.5rem;
-  min-height: none;
+  min-height: auto;
   margin-bottom: 0;
   font-size: 1rem;
   color: #fff;
