@@ -161,6 +161,7 @@ html {
   min-height: none;
   margin-bottom: 0;
   font-size: 1rem;
+  color: #fff;
   border-radius: 4px;
   background-color: rgb(var(--color-black));
   transition: all var(--duration-long) ease;
