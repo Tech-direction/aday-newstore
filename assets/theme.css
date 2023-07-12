@@ -1453,6 +1453,7 @@ body,
 
 .contents-wrapper .customer .table {
   font-size: 1rem;
+  border: var(--margin) solid transparent;
   background-color: #fff;
   box-shadow: none;
 }
