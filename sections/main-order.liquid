@@ -31,6 +31,7 @@
   <div class="section-heading-wrapper section-container  page-width  type-reverse">
     <div class="heading__item">
       <h1 class="heading type-vertical size-xl" data-sub_heading="ORDERS">{{ 'customer.order.title' | t: name: order.name }}</h1>
+      {% comment %}
       {%- assign order_date = order.created_at | time_tag: format: 'date_at_time' -%}
       <p>{{ 'customer.order.date_html' | t: date: order_date }}</p>
       {%- if order.cancelled -%}
@@ -38,6 +39,7 @@
         <p>{{ 'customer.order.cancelled_html' | t: date: cancelled_at }}</p>
         <p>{{ 'customer.order.cancelled_reason' | t: reason: order.cancel_reason_label }}</p>
       {%- endif -%}
+      {% endcomment %}
     </div>
 
     <div class="content__item">
