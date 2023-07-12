@@ -1571,6 +1571,7 @@ body,
   margin: 0 0 0 1em;
   padding: 1em;
   font-size: var(--font-s) !important;
+  letter-spacing: 0;
   border: 0;
 }
 
@@ -1585,6 +1586,7 @@ body,
 .contents-wrapper .customer .table .properties {
   width: 100%;
   font-size: 1rem;
+  font-weight: 400;
 }
 
 .contents-wrapper .customer .table .properties .list {
