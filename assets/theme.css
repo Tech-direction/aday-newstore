@@ -239,13 +239,13 @@ html {
 
 .contents-wrapper .list.type-disc li:before {
   content: '';
-  width: 0.5em;
-  height: 0.5em;
+  width: .5em;
+  height: .5em;
   border-radius: 50%;
-  background-color: #222;
+  background-color: rgb(var(--color-black));
   display: inline-block;
   position: absolute;
-  top: .7em;
+  top: .6em;
   left: 0;
 }
 
