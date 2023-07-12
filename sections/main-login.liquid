@@ -14,7 +14,7 @@
   }
 {%- endstyle -%}
 
-<div class="customer login section-{{ section.id }}-padding">
+<div class="customer login section-{{ section.id }}-padding page-width content-size-s">
   <h1 id="recover" tabindex="-1" class="heading{% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %}">
     {{ 'customer.recover_password.title' | t }}
   </h1>
@@ -132,20 +132,22 @@
           </label>
         </div>
 
-        <a href="#recover">
+        <a href="#recover" class="recover">
           {{ 'customer.login_page.forgot_password' | t }}
         </a>
       {%- endif -%}
 
-      <button>
+      <button class="button type-primary">
         {{ 'customer.login_page.sign_in' | t }}
       </button>
 
-      <a href="{{ routes.account_register_url }}">
-        {{ 'customer.login_page.create_account' | t }}
-      </a>
     {%- endform -%}
   </div>
+
+
+     <a href="{{ routes.account_register_url }}" class="create_account">
+        {{ 'customer.login_page.create_account' | t }}
+      </a>
 
   {%- if shop.checkout.guest_login -%}
     <div>
