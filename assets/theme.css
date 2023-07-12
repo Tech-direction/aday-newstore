@@ -191,6 +191,7 @@ html {
 .contents-wrapper button:hover,
 .contents-wrapper .button:hover,
 .contents-wrapper .btn:hover {
+  color: #fff;
   opacity: .5;
 }
 
