@@ -1508,13 +1508,8 @@ body,
 }
 
 .contents-wrapper .customer .table tfoot td {
-  padding: 0 1em;
+  padding: 1em 1em 0;
 }
-
-.contents-wrapper .customer .table tfoot tr + tr td  {
-  padding-top: 1em;
-}
-
 
 
 @media screen and (max-width: 749px) {
