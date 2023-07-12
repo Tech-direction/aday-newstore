@@ -1677,7 +1677,13 @@ body,
 .contents-wrapper .customer .customer_order_data .status {
   padding: 1em;
   line-height: 1;
-  background-color: #fff;
+  font-weight: 500;
+  color: #fff;
+  background-color: rgb(var(--color-primary));
+}
+
+.contents-wrapper .customer .customer_order_data .status.paid {
+  background-color: rgb(var(--color-gray));
 }
 
 /*  login
