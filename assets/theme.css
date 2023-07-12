@@ -1504,6 +1504,9 @@ body,
     color: rgb(var(--color-black));
     font-size: 1rem;
   }
+  .contents-wrapper .customer tr:after {
+    display: none;
+  }
 }
 
 /*  login
