@@ -1500,7 +1500,7 @@ body,
 }
 
 @media screen and (max-width: 749px) {
-  .customer td::before {
+  .contents-wrapper .customer .table td:before {
     color: rgb(var(--color-black));
     font-size: 1rem;
   }
