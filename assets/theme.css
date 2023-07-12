@@ -1603,7 +1603,7 @@ body,
   .contents-wrapper .customer .table tr > :last-child {
     padding-bottom:1em;
   }
-  .contents-wrapper .customer .table td.total 
+  .contents-wrapper .customer .table td.total {
     border-top: 1px solid rgb(var(--color-border));
   }
 }
