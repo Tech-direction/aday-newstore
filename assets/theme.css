@@ -1641,6 +1641,9 @@ body,
 ---------------------------------------------------------------*/
 
 .contents-wrapper .customer .customer_order_data {
+  width: 100%;
+  margin-bottom: var(--margin);
+  padding: 0;
   font-size: 1rem;
   display: flex;
   flex-wrap: wrap;
@@ -1650,6 +1653,7 @@ body,
   margin: 0;
   font-size: 1rem;
 }
+
 
 /*  login
 ---------------------------------------------------------------*/
