@@ -162,6 +162,7 @@ html {
   margin-bottom: 0;
   font-size: 1rem;
   border-radius: 4px;
+  background-color: rgb(var(--color-black));
   transition: all var(--duration-long) ease;
 }
 
@@ -1460,6 +1461,9 @@ body,
   font-size: 1rem;
 }
 
+.contents-wrapper .customer .table a {
+  box-shadow: none;
+}
 
 
 
