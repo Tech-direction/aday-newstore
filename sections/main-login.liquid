@@ -23,6 +23,7 @@
       {{ 'customer.recover_password.subtext' | t }}
     </p>
 
+    <div class="customer_block">
     {%- form 'recover_customer_password' -%}
       {% assign recover_success = form.posted_successfully? %}
       <div class="field">
@@ -65,6 +66,7 @@
         {{ 'customer.login_page.cancel' | t }}
       </a>
     {%- endform -%}
+    </div>
   </div>
 
   <h1 id="login" tabindex="-1" class="heading{% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %}">
