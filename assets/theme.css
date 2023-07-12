@@ -1504,6 +1504,9 @@ body,
     color: rgb(var(--color-black));
     font-size: 1rem;
   }
+   .contents-wrapper .customer .table tbody tr {
+    border: 0;
+  }
   .contents-wrapper .customer tr:after {
     display: none;
   }
