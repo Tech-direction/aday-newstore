@@ -1592,11 +1592,12 @@ body,
   .contents-wrapper .customer .table tbody > :last-child:after {
     display: none;
   }
-  .contents-wrapper .customer .table td {
+  .contents-wrapper .customer .table td,
+  .contents-wrapper .customer .table tfoot td {
     padding: 0;
   }
   .contents-wrapper .customer .table td + td {
-    padding-top: 1em;
+    padding-top: 1em !important;
   }
   .contents-wrapper .customer .table tr > :first-child {
     padding-top:1em;
@@ -1604,7 +1605,8 @@ body,
   .contents-wrapper .customer .table tr > :last-child {
     padding-bottom:1em;
   }
-  .contents-wrapper .customer .table td.total {
+  .contents-wrapper .customer .table td.total,
+  .contents-wrapper .customer .table tfoot{
     margin-top: 1em;
     padding-bottom: 0;
     border-top: 1px solid rgb(var(--color-border));
