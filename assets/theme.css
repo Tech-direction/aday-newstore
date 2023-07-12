@@ -1455,6 +1455,8 @@ body,
 .contents-wrapper .customer .table {
   font-size: 1rem;
   border: var(--margin) solid transparent;
+  border-collapse: separate;
+  border-spacing: 0;
   background-color: #fff;
   box-shadow: none;
 }
