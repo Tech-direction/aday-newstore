@@ -32,7 +32,7 @@
       {{ blog.title | escape }}
     </h1>{% endcomment %}
     
-    <div class="blog-articles grid grid--2-col-desktop {{ grid_gap }} article-list{% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
+    <div class="blog-articles grid grid--2-col-desktop grid--2-col-tablet {{ grid_gap }} article-list{% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
       {%- for article in blog.articles -%}
         <div
           class="blog-articles__article article grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
