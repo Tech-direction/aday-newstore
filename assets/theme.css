@@ -1217,6 +1217,8 @@ body,
 }
 
 .contents-wrapper .page-menu .list-menu {
+  border-radius: 10em;
+  background-color: rgb(var(--color-primary));
   display: flex;
 }
 
