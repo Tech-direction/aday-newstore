@@ -45,13 +45,13 @@
           <tbody role="rowgroup">
               <tr role="row">  
                     <td headers="RowOrder ColumnName" role="cell" data-label="お名前" class="cell_name">
-                      <span>{{ customer | json }}</span>
+                      <span>{{customer.name}}</span>
                     </td>
                     <td headers="RowOrder ColumnAccount" role="cell" data-label="メールアドレス" class="cell_account">
-                      <span>支払い済</span>
+                      <span>{{customer.email}}</span>
                     </td>
                     <td headers="RowOrder ColumnBirth" role="cell" data-label="生年月日" class="cell_birth">
-                      <span>未発送</span>
+                      <span>{{customer.email}}</span>
                     </td>
                   </tr>
               </tbody>
