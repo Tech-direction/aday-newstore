@@ -1213,10 +1213,13 @@ body,
 
 .contents-wrapper .page-menu {
   margin-bottom: var(--margin-section);
-  text-align: center;
 }
 
 .contents-wrapper .page-menu .list-menu {
+  width: calc(var(--width-max-xs) - var(--margin)*2);
+  margin: 0 auto;
+  font-size: var(--font-m);
+  font-weight: 500;
   border-radius: 10em;
   background-color: rgb(var(--color-primary));
   display: flex;
