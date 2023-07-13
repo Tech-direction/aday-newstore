@@ -40,6 +40,24 @@
 
     <div class="content__item">
 
+      <div class="customer_block">
+        <table role="table" class="customer-account table">
+          <tbody role="rowgroup">
+              <tr role="row">  
+                    <td headers="RowOrder ColumnName" role="cell" data-label="お名前" class="cell_name">
+                      <span>{{ customer | json }}</span>
+                    </td>
+                    <td headers="RowOrder ColumnAccount" role="cell" data-label="メールアドレス" class="cell_account">
+                      <span>支払い済</span>
+                    </td>
+                    <td headers="RowOrder ColumnBirth" role="cell" data-label="生年月日" class="cell_birth">
+                      <span>未発送</span>
+                    </td>
+                  </tr>
+              </tbody>
+        </table>
+      </div>
+
       <div data-address>
         <button
           type="button"
