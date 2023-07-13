@@ -1226,7 +1226,7 @@ body,
 }
 
 .contents-wrapper .page-menu .list-menu a {
-  padding: 1em 0;
+  padding: .5em 0;
   font-size: var(--font-m);
   font-weight: 500;
   color: #fff;
