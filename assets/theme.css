@@ -1218,12 +1218,17 @@ body,
 .contents-wrapper .page-menu .list-menu {
   width: calc(var(--width-max-xs) - var(--margin)*2);
   margin: 0 auto;
-  font-size: var(--font-m);
-  font-weight: 500;
   border-radius: 10em;
   background-color: rgb(var(--color-primary));
   display: flex;
   justify-content: center;
+  gap: var(--margin-l);
+}
+
+.contents-wrapper .page-menu .list-menu a {
+  padding: 1em 0 ;
+  font-size: var(--font-m);
+  font-weight: 500;
 }
 
 /*===============================================================
