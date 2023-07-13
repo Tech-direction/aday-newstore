@@ -1663,11 +1663,15 @@ body,
 }
 
 .contents-wrapper .customer .table.customer-account td:before {
-    content: attr(data-label);
-    width: 7em;
-    color: rgb(var(--color-black));
-    font-size: 1rem;
-    flex: none;
+  content: attr(data-label);
+  width: 7em;
+  color: rgb(var(--color-black));
+  font-size: 1rem;
+  flex: none;
+}
+
+.contents-wrapper .customer .table.customer-account td>*:not(.button) {
+  flex: 1;
 }
 
 @media screen and (max-width: 749px) {
