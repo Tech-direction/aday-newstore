@@ -1560,8 +1560,6 @@ body,
   text-align: right;
 }
 
-
-
 /*  table
 ---------------------------------------------------------------*/
 
@@ -1644,6 +1642,10 @@ body,
   line-height: 1;
   border: 1px solid rgb(var(--color-border));
   background-color: rgb(var(--color-gray));
+}
+
+.contents-wrapper .customer .table.customer-account {
+  border-top: 1px solid rgb(var(--color-border));
 }
 
 @media screen and (max-width: 749px) {
