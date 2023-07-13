@@ -1545,6 +1545,10 @@ body,
   vertical-align: middle;
 }
 
+.contents-wrapper .customer .table th {
+  padding-top: 0;
+}
+
 .contents-wrapper .customer .table a {
   box-shadow: none;
 }
