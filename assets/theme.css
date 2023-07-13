@@ -1070,7 +1070,7 @@ body,
 /*  reverse
 ---------------------------------------------------------------*/
 
-.contents-wrapper .section-heading-wrapper.type-reverse .heading {
+.contents-wrapper .section-heading-wrapper.type-reverse .heading__item .heading {
   writing-mode: vertical-lr;
   order: 0;
 }
