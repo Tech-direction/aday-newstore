@@ -29,52 +29,51 @@
       {% endif %}
     </div>
     <div class="grid__item">
-      <ul class="grid grid--3-col-desktop grid--gap-s subscription-feature-list">
-          {%- if settings.grid_item_1_heading != blank -%}
-            <li class="grid__item feature__item">
-              <figure>{{ settings.grid_item_1_img | image_url: width: 600 | image_tag:
-                                class: 'subscription-feature-media-1',
-                                widths: widths,
-                                height: logo_height,
-                                width: settings.logo_width,
-                                alt: logo_alt,
-                                sizes: sizes,
-                                preload: true
-                              }}
-              </figure>
-              <p class="heading">{{ settings.grid_item_1_heading }}</p>
-            </li>
-          {% endif %}
-          {%- if settings.grid_item_2_heading != blank -%}
-            <li class="grid__item feature__item">
-              <figure>{{ settings.grid_item_2_img | image_url: width: 600 | image_tag:
-                                class: 'subscription-feature-media-2',
-                                widths: widths,
-                                height: logo_height,
-                                width: settings.logo_width,
-                                alt: logo_alt,
-                                sizes: sizes,
-                                preload: true
-                              }}
-              </figure>
-              <p class="heading">{{ settings.grid_item_2_heading }}</p>
-            </li>
-          {% endif %}
-          {%- if settings.grid_item_3_heading != blank -%}
-            <li class="grid__item feature__item">
-              <figure>{{ settings.grid_item_3_img | image_url: width: 600 | image_tag:
-                                class: 'subscription-feature-media-3',
-                                widths: widths,
-                                height: logo_height,
-                                width: settings.logo_width,
-                                alt: logo_alt,
-                                sizes: sizes,
-                                preload: true
-                              }}
-              </figure>
-              <p class="heading">{{ settings.grid_item_3_heading }}</p>
-            </li>
-          {% endif %}
+      <ul
+        class="multicolumn-list contains-content-container grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop{% if show_mobile_slider %} slider slider--mobile grid--peek{% endif %}"
+        id="Slider-{{ section.id }}"
+        role="list"
+      >
+        {%- liquid
+          assign highest_ratio = 0
+          for block in section.blocks
+            if block.settings.image.aspect_ratio > highest_ratio
+              assign highest_ratio = block.settings.image.aspect_ratio
+            endif
+          endfor
+        -%}
+        {%- for block in section.blocks -%}
+          {%- assign empty_column = '' -%}
+          {%- if block.settings.image == blank
+            and block.settings.title == blank
+            and block.settings.text == blank
+            and block.settings.link_label == blank
+          -%}
+            {%- assign empty_column = ' multicolumn-list__item--empty' -%}
+          {%- endif -%}
+
+          <li
+            id="Slide-{{ section.id }}-{{ forloop.index }}"
+            class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            {{ block.shopify_attributes }}
+            {% if settings.animations_reveal_on_scroll %}
+              data-cascade
+              style="--animation-order: {{ forloop.index }};"
+            {% endif %}
+          >
+            {%- if block.settings.link_label != blank -%}
+                  <a
+                    class="link"
+                    {% if block.settings.link == blank %}
+                      role="link" aria-disabled="true"
+                    {% else %}
+                      href="{{ block.settings.link }}"
+                    {% endif %}
+                  >
+                    {{- block.settings.link_label | escape -}}</a>
+                {%- endif -%}
+          </li>
+        {%- endfor -%}
       </ul>
     </div>
   </div>
