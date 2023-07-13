@@ -1657,7 +1657,8 @@ body,
 }
 
 .contents-wrapper .customer .table.customer-account tbody > :last-child:after {
-  border-bottom: 1px solid rgb(var(--color-border)) !important;
+  border-bottom: solid;
+  display: block !important;
 }
 
 @media screen and (max-width: 749px) {
