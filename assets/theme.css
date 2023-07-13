@@ -215,6 +215,12 @@ html {
   background-color: rgb(var(--color-primary));
 }
 
+.contents-wrapper * + button,
+.contents-wrapper * + .button,
+.contents-wrapper * + .btn {
+  margin-top: var(--margin-l);
+}
+
 /*===============================================================
 
 	list
