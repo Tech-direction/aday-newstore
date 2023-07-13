@@ -24,6 +24,16 @@
         "button-link": "https:\/\/aday-new-store.myshopify.com\/apps\/subscription\/bundler?b=19eec2f0-6f06-4690-b5cf-9e7af50b8c12"
       }
     },
+    "8ea36c2b-cf70-4588-8cab-8479b9def8dd": {
+      "type": "collection-beens-section",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/asairi01_b38ba458-dd59-4291-83e1-71fb6de9f5d2.jpg",
+        "section_heading": "<p>焙煎屋がお届けする、<br\/>コーヒー豆についての見出し<\/p>",
+        "heading_size": "xl",
+        "section_sub_heading": "COFFEE BEANS",
+        "description": "<p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、<\/p>"
+      }
+    },
     "main": {
       "type": "main-list-collections",
       "settings": {
@@ -38,6 +48,7 @@
   "order": [
     "f70a0cc6-0eca-46fd-91b2-cd193c00ac1c",
     "b466eac5-a569-47e9-9d52-c4968c8089ef",
+    "8ea36c2b-cf70-4588-8cab-8479b9def8dd",
     "main"
   ]
 }
