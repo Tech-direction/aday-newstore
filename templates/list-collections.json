@@ -26,6 +26,42 @@
     },
     "8ea36c2b-cf70-4588-8cab-8479b9def8dd": {
       "type": "collection-beens-section",
+      "blocks": {
+        "1f70d9b9-b476-4ad6-8431-7b67f7e47934": {
+          "type": "column",
+          "settings": {
+            "link_label": "ブレンド豆",
+            "link": "#blend"
+          }
+        },
+        "4cf82d1c-6955-492b-a7f2-14f9b32792a4": {
+          "type": "column",
+          "settings": {
+            "link_label": "アフリカのコーヒー豆",
+            "link": "#african"
+          }
+        },
+        "6d91e6e3-aa8b-4c6c-990c-e972bf788172": {
+          "type": "column",
+          "settings": {
+            "link_label": "中米のコーヒー豆",
+            "link": "#central_american"
+          }
+        },
+        "0ca8a33e-6c8e-4c64-aab7-b25ee22037de": {
+          "type": "column",
+          "settings": {
+            "link_label": "南米のコーヒー豆",
+            "link": "#south_american"
+          }
+        }
+      },
+      "block_order": [
+        "1f70d9b9-b476-4ad6-8431-7b67f7e47934",
+        "4cf82d1c-6955-492b-a7f2-14f9b32792a4",
+        "6d91e6e3-aa8b-4c6c-990c-e972bf788172",
+        "0ca8a33e-6c8e-4c64-aab7-b25ee22037de"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/asairi01_b38ba458-dd59-4291-83e1-71fb6de9f5d2.jpg",
         "section_heading": "<p>焙煎屋がお届けする、<br\/>コーヒー豆についての見出し<\/p>",
