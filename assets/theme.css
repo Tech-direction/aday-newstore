@@ -1226,9 +1226,11 @@ body,
 }
 
 .contents-wrapper .page-menu .list-menu a {
-  padding: 1em 0 ;
+  padding: 1em 0;
   font-size: var(--font-m);
   font-weight: 500;
+  color: #fff;
+  display: inline-block;
 }
 
 /*===============================================================
