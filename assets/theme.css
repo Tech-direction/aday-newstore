@@ -1528,7 +1528,7 @@ body,
 ===============================================================*/
 
 .contents-wrapper .customer:not(.account):not(.order) {
-  max-width: none;
+  max-width: var(--width-max);
 }
 
 .contents-wrapper .customer:not(.account):not(.order).content-size-s {
