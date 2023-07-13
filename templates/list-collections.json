@@ -84,6 +84,7 @@
       "type": "featured-collection-been",
       "settings": {
         "image": "shopify:\/\/shop_images\/chumon08.jpg",
+        "section_id": "blend",
         "section_heading": "ブレンド豆",
         "heading_size": "xl",
         "section_sub_heading": "BLEND COFFEE BEANS",
