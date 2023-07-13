@@ -1652,7 +1652,7 @@ body,
   border-bottom-style: dashed;
 }
 
-.contents-wrapper .customer .table.customer-account tbody > :last-child td {
+.contents-wrapper .customer .table.customer-account tbody > :last-child {
   border-bottom-style: solid;
 }
 
