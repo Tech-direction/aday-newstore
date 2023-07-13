@@ -1031,7 +1031,7 @@ body,
   letter-spacing: -.25em;
 }
 
-.contents-wrapper .section-heading-wrapper .heading:before {
+.contents-wrapper .section-heading-wrapper .heading__item .heading:before {
   content:attr(data-sub_heading);
   margin-top: .75rem;
   font-size: var(--font-m);
