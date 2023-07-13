@@ -1549,7 +1549,12 @@ body,
 .contents-wrapper .collection-section-image {
   height: 480px;
   border-radius: var(--border-radius-box);
+  overflow: hidden;
   position: relative;
+}
+
+.contents-wrapper .collection-section-image .media {
+  height: 100%;
 }
 
 .contents-wrapper .collection-section-image .media img {
