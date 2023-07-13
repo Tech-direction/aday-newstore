@@ -1657,7 +1657,7 @@ body,
 }
 
 .contents-wrapper .customer .table.customer-account tbody > :last-child:after {
-  border-bottom: solid;
+  border-bottom-style: solid;
   display: block !important;
 }
 
