@@ -1527,6 +1527,10 @@ body,
 
 ===============================================================*/
 
+.contents-wrapper .customer:not(.account):not(.order) {
+  max-width: none;
+}
+
 .contents-wrapper .customer:not(.account):not(.order).content-size-s {
   max-width: var(--width-max-xs);
 }
@@ -1553,6 +1557,7 @@ body,
   margin-top: var(--margin);
   text-align: right;
 }
+
 
 
 /*  table
@@ -1766,7 +1771,7 @@ body,
 }
 
 
-/*  account
+/*  address
 ---------------------------------------------------------------*/
 
 
