@@ -521,7 +521,7 @@ body,
 ===============================================================*/
 
 .contents-wrapper .grid {
-  margin: 0;
+  margin: 0 auto;
 }
 
 .contents-wrapper .grid {
