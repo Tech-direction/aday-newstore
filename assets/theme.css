@@ -1024,7 +1024,7 @@ body,
   flex: 1;
 }
 
-.contents-wrapper .section-heading-wrapper .heading {
+.contents-wrapper .section-heading-wrapper .heading__item .heading {
   margin: -.5rem 0 0;
   writing-mode: vertical-rl;
   letter-spacing: -.25em;
