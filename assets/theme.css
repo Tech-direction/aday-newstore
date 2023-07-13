@@ -1547,6 +1547,10 @@ body,
   margin-top: var(--margin-s);
 }
 
+.contents-wrapper .heading + .customer_block {
+  margin-top: var(--margin);
+}
+
 .contents-wrapper .customer form {
   margin: 0;
 }
