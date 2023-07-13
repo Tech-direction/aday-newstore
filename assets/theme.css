@@ -1212,7 +1212,7 @@ body,
 ===============================================================*/
 
 .contents-wrapper .page-menu {
-  margin-bottom: var(--margine-section);
+  margin-bottom: var(--margin-section);
   text-align: center;
 }
 
@@ -1220,6 +1220,7 @@ body,
   border-radius: 10em;
   background-color: rgb(var(--color-primary));
   display: flex;
+  justify-content: center;
 }
 
 /*===============================================================
