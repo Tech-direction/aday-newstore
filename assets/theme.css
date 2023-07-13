@@ -119,6 +119,10 @@ html {
   font-size: var(--font-xl);
 }
 
+.contents-wrapper .heading > p {
+  margin: 0;
+}
+
 /*  anchor
 ---------------------------------------------------------------*/
 
