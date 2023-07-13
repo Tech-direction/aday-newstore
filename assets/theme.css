@@ -473,15 +473,18 @@ html {
   padding: 0 var(--margin);
 }
 
-.contents-wrapper .page-width.content-size-m {
+.contents-wrapper .page-width.content-size-m,
+.contents-wrapper .grid.content-size-m {
   max-width: var(--width-max-m);
 }
 
-.contents-wrapper .page-width.content-size-s {
+.contents-wrapper .page-width.content-size-s,
+.contents-wrapper .grid.content-size-s {
   max-width: var(--width-max-s);
 }
 
-.contents-wrapper .page-width.content-size-xs {
+.contents-wrapper .page-width.content-size-xs,
+.contents-wrapper .grid.content-size-xs {
   max-width: var(--width-max-xs);
 }
 
