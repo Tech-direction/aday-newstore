@@ -522,9 +522,6 @@ body,
 
 .contents-wrapper .grid {
   margin: 0 auto;
-}
-
-.contents-wrapper .grid {
   gap: var(--margin);
 }
 
@@ -542,6 +539,10 @@ body,
 
 .contents-wrapper .grid.grid--gap-xl {
   gap: var(--margin-section);
+}
+
+.contents-wrapper .grid.valign-middle {
+  align-items: center;
 }
 
 .contents-wrapper .grid .grid__item {
