@@ -1529,6 +1529,7 @@ body,
 
 .contents-wrapper .customer:not(.account):not(.order) {
   max-width: var(--width-max);
+  text-align: unset;
 }
 
 .contents-wrapper .customer:not(.account):not(.order).content-size-s {
