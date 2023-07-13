@@ -51,6 +51,10 @@ html {
   box-sizing: border-box;
 }
 
+.contents-wrapper p {
+  margin-bottom: 0;
+}
+
 .contents-wrapper .movie {
 	position: relative;
 }
