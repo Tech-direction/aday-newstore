@@ -1548,6 +1548,7 @@ body,
 
 .contents-wrapper .collection-section-image {
   height: 480px;
+  margin-bottom: var(--margin-l);
   border-radius: var(--border-radius-box);
   overflow: hidden;
   position: relative;
