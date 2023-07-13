@@ -1652,6 +1652,10 @@ body,
   border-bottom-style: dashed;
 }
 
+.contents-wrapper .customer .table.customer-account tbody > :last-child td {
+  border-bottom-style: solid;
+}
+
 @media screen and (max-width: 749px) {
    .contents-wrapper .customer .table tbody tr {
     border: 0;
