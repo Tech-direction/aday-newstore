@@ -1543,6 +1543,23 @@ body,
   background-color: rgb(var(--color-primary));
 }
 
+/*  collection page
+---------------------------------------------------------------*/
+
+.contents-wrapper .collection-section-image {
+  height: 480px;
+  border-radius: var(--border-radius-box);
+  position: relative;
+}
+
+.contents-wrapper .section-heading-wrapper .section-image img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 
 /*===============================================================
