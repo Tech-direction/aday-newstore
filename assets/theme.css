@@ -1650,6 +1650,7 @@ body,
 
 .contents-wrapper .customer .table.customer-account tbody > :first-child td {
   border-top: 1px solid rgb(var(--color-border));
+  display: flex;
 }
 
 .contents-wrapper .customer .table.customer-account tbody tr:after {
@@ -1659,6 +1660,14 @@ body,
 .contents-wrapper .customer .table.customer-account tbody > :last-child:after {
   border-bottom-style: solid;
   display: block !important;
+}
+
+.contents-wrapper .customer .table.customer-account td:before {
+    content: attr(data-label);
+    width: 7em;
+    color: rgb(var(--color-black));
+    font-size: 1rem;
+    flex: none;
 }
 
 @media screen and (max-width: 749px) {
