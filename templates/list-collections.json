@@ -1,1 +1,30 @@
-{"sections":{"main":{"type":"main-list-collections","settings":{"title":"Collections","sort":"alphabetical","image_ratio":"square","columns_desktop":3,"columns_mobile":"2"}}},"order":["main"]}
+{
+  "sections": {
+    "f70a0cc6-0eca-46fd-91b2-cd193c00ac1c": {
+      "type": "main-section-header",
+      "settings": {
+        "section_heading": "オンラインショップ",
+        "heading_size": "xl",
+        "section_sub_heading": "ONLINESHOP",
+        "change_box_layout": false,
+        "description": "",
+        "show_description": false,
+        "image": "shopify:\/\/shop_images\/trial_kiji12.jpg"
+      }
+    },
+    "main": {
+      "type": "main-list-collections",
+      "settings": {
+        "title": "Collections",
+        "sort": "alphabetical",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "columns_mobile": "2"
+      }
+    }
+  },
+  "order": [
+    "f70a0cc6-0eca-46fd-91b2-cd193c00ac1c",
+    "main"
+  ]
+}
