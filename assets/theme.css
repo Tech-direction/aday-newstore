@@ -1520,6 +1520,10 @@ body,
   margin: var(--margin) 0 0;
 }
 
+.contents-wrapper .customer .customer_block_footer {
+  margin-top: var(--margin);
+  text-align: right;
+}
 
 
 /*  table
@@ -1715,11 +1719,6 @@ body,
 
 .contents-wrapper .customer.login a {
   display: inline-block;
-}
-
-.contents-wrapper .customer.login .customer_block_footer {
-  margin-top: var(--margin);
-  text-align: right;
 }
 
 .contents-wrapper .customer.login .recover {
