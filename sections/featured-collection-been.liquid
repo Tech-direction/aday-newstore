@@ -35,34 +35,24 @@
   endif
 -%}
 
-<div class="section-heading-wrapper section-container page-width{% if section.settings.change_box_layout !=blank %} type-reverse{% endif %}">
+<div class="collection-section-been-wrapper section-container{% if section.settings.change_box_layout !=blank %} type-reverse{% endif %}">
+
+<div class="page-width content-size-m">
+  
   {% if section.settings.section_heading !=blank %}
   <div class="heading__item">
-    <h2 class="heading type-vertical{% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %}" data-sub_heading="{{ section.settings.section_sub_heading }}">{{ section.settings.section_heading }}</h2>
+    <h2 class="heading type-sub_heading{% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %}" data-sub_heading="{{ section.settings.section_sub_heading }}">{{ section.settings.section_heading }}</h2>
+    {{ section.settings.description }}
   </div>
   {% endif %}
   <div class="color-{{ section.settings.color_scheme }} isolate gradient content__item">
     <div class="collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
-      <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
-        {%- if section.settings.description != blank
-   or section.settings.show_description
-   and section.settings.collection.description != empty
-   -%}
-          <div class="collection__description {{ section.settings.description_style }} rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-            {%- if section.settings.show_description -%}
-              {{ section.settings.collection.description }}
-            {%- else -%}
-              {{ section.settings.description -}}
-            {%- endif %}
-          </div>
-        {%- endif -%}
-      </div>
+      
   
       {% assign grid_gap = ""  %}
       {% if section.settings.box_gap != "default" %}
         {% assign grid_gap = 'grid--gap-' | append: section.settings.box_gap %}
       {% endif %}
-      
   
       <slider-component class="slider-mobile-gutter{% if section.settings.full_width %} slider-component-full-width{% endif %}{% if show_mobile_slider == false %} page-width{% endif %}{% if show_desktop_slider == false and section.settings.full_width == false %} page-width-desktop{% endif %}{% if show_desktop_slider %} slider-component-desktop{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         <ul
@@ -78,7 +68,7 @@
               data-cascade
               style="--animation-order: {{ forloop.index }};"
               {% endif %}>
-              {% render 'card-product-collection'
+              {% render 'card-product'
                , card_product: product,
                media_aspect_ratio: section.settings.image_ratio,
                image_shape: section.settings.image_shape,
@@ -98,7 +88,7 @@
                 style="--animation-order: {{ forloop.index }};"
                 {% endif %}>
                 {%- assign placeholder_image = 'product-apparel-' | append: forloop.rindex -%}
-                {% render 'card-product-collection'
+                {% render 'card-product'
                  , show_vendor: section.settings.show_vendor,
                  placeholder_image: placeholder_image %}
               </li>
@@ -150,6 +140,8 @@
       {%- endif -%}
     </div>
   </div>
+
+</div>div>
 </div>
 
 {% schema %}
