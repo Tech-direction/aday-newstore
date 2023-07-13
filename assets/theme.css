@@ -222,7 +222,7 @@ html {
 .contents-wrapper * + button,
 .contents-wrapper * + .button,
 .contents-wrapper * + .btn {
-  margin-top: var(--margin-m);
+  margin-top: var(--margin);
 }
 
 /*===============================================================
