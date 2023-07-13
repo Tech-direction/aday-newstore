@@ -1644,7 +1644,7 @@ body,
   background-color: rgb(var(--color-gray));
 }
 
-.contents-wrapper .customer .table.customer-account {
+.contents-wrapper .customer .table.customer-account tbody > :first-child td {
   border-top: 1px solid rgb(var(--color-border));
 }
 
