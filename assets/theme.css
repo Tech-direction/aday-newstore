@@ -1964,6 +1964,7 @@ body,
 .contents-wrapper .customer .address-list .grid__item .button {
   width: fit-content;
   margin: var(--margin) auto 0;
+  display: block;
 }
 
 .contents-wrapper .customer .address-list .grid__item .address_delete {
