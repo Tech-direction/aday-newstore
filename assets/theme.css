@@ -1982,7 +1982,9 @@ body,
   right: var(--margin-s);
 }
 
-
+.contents-wrapper .customer .address-list .grid__item [aria-expanded="true"] {
+  display: none;
+}
 
 
 
