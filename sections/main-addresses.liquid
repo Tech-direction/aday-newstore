@@ -226,6 +226,7 @@
                   <h2>{{ 'customer.addresses.default' | t }}</h2>
                 {%- endif -%}
               {% endcomment %}
+            {{ address | json }}
               {{ address | format_address }}
               <button
                 type="button"
