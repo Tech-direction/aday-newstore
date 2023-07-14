@@ -226,6 +226,12 @@ html {
   margin-top: var(--margin);
 }
 
+.contents-wrapper button.type-ghost,
+.contents-wrapper .button.type-ghost,
+.contents-wrapper .btn.type-ghost {
+  border: 1px solid rgb(var(--color-border));
+}
+
 /*===============================================================
 
 	list
@@ -1951,6 +1957,11 @@ body,
 .contents-wrapper .customer .address-list .grid__item .table {
   border: 0;
   background-color: transparent;
+}
+
+.contents-wrapper .customer .address-list .grid__item .button {
+  width: fit-content;
+  margin: var(--margin) auto 0;
 }
 
 .contents-wrapper .customer .address-list .grid__item .address_delete {
