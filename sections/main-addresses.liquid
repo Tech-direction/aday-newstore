@@ -221,9 +221,11 @@
           </li>
           {%- for address in customer.addresses -%}
             <li data-address class="grid__item">
-              {%- if address == customer.default_address -%}
-                <h2>{{ 'customer.addresses.default' | t }}</h2>
-              {%- endif -%}
+              {% comment %}
+                {%- if address == customer.default_address -%}
+                  <h2>{{ 'customer.addresses.default' | t }}</h2>
+                {%- endif -%}
+              {% endcomment %}
               {{ address | format_address }}
               <button
                 type="button"
