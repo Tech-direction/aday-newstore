@@ -174,7 +174,7 @@ html {
 
 ===============================================================*/
 
-.contents-wrapper button,
+/*.contents-wrapper button,*/
 .contents-wrapper .button,
 .contents-wrapper .btn,
 .contents-wrapper .shopify-payment-button__button {
@@ -210,7 +210,7 @@ html {
   max-width: none;
 }
 
-.contents-wrapper button:hover,
+/*.contents-wrapper button:hover,*/
 .contents-wrapper .button:hover,
 .contents-wrapper .btn:hover {
   color: #fff;
@@ -221,7 +221,7 @@ html {
   background-color: rgb(var(--color-primary));
 }
 
-.contents-wrapper * + button,
+/*.contents-wrapper * + button,*/
 .contents-wrapper * + .button,
 .contents-wrapper * + .btn {
   margin-top: var(--margin);
