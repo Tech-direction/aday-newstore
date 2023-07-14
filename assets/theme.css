@@ -507,8 +507,9 @@ html {
   max-width: var(--width-max-xs) !important;
 }
 
+.contents-wrapper .page-width-desktop,
 .contents-wrapper .page-width .page-width {
-  padding: 0;
+  padding: 0 ;
 }
 
 [class="_image-wrapper"] {
@@ -526,10 +527,6 @@ body,
 
 .contents-wrapper .section {
   padding-top: var(--margin-section);
-}
-
-.contents-wrapper .page-width-desktop {
-  padding: 0;
 }
 
 
