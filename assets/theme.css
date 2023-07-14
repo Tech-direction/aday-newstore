@@ -1936,6 +1936,7 @@ body,
   padding: var(--margin);
   border-radius: var(--border-radius-box);
   border: 1px solid rgb(var(--color-border));
+  background-color: #fff;
 }
 
 .contents-wrapper .customer .address-list .grid__item.add_address {
