@@ -41,6 +41,22 @@
   
   {% if section.settings.section_heading !=blank %}
   <div class="heading__item">
+  {%- if section.settings.image != blank -%}
+    <div class="section-image collection-section-image">
+      <div class="section__media media">{{
+          section.settings.image
+          | image_url: width: 3840
+          | image_tag:
+            loading: 'lazy',
+            width: section.settings.image.width,
+            height: image_height,
+            class: image_class,
+            sizes: sizes,
+            widths: widths
+        }}</div>
+    </div>
+    {% endif %}
+    
     <h2 class="heading type-sub_heading{% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %}" data-sub_heading="{{ section.settings.section_sub_heading }}">{{ section.settings.section_heading }}</h2>
     {{ section.settings.description }}
   </div>
