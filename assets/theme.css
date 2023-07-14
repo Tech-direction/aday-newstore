@@ -1942,6 +1942,10 @@ body,
   border-style: dashed;
 }
 
+.contents-wrapper .customer .address-list .grid__item .table {
+  border: 0;
+}
+
 
 .grid-collection {
   /*display: none;*/
