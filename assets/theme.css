@@ -1994,7 +1994,7 @@ body,
   display: none;
 }
 
-.contents-wrapper .customer .address-list .grid__item {
+.contents-wrapper .customer .address-list .grid__item form {
   margin-top: var(--margin);
 }
 
