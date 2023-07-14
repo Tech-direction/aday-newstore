@@ -1957,6 +1957,8 @@ body,
   border-radius: 10em;
   background-color: #fff;
   position: absolute;
+  top: var(--margin-s);
+  right: var(--margin-s);
 }
 
 
