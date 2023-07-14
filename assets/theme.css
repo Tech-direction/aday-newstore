@@ -1933,10 +1933,14 @@ body,
 ---------------------------------------------------------------*/
 
 .contents-wrapper .customer .address-list .grid__item {
+  padding: var(--margin);
+  border-radius: var(--border-radius-box);
   border: 1px solid rgb(var(--color-border));
 }
 
-
+.contents-wrapper .customer .address-list .grid__item.add_address {
+  border-style: dashed;
+}
 
 
 .grid-collection {
