@@ -226,9 +226,8 @@
                 {%- if address == customer.default_address -%}
                   <h2>{{ 'customer.addresses.default' | t }}</h2>
                 {%- endif -%}
+                {{ address | format_address }}
               {% endcomment %}
-            {{ address | json }}
-
               <table role="table" class="customer-account table">
                 <tbody role="rowgroup">
                     <tr role="row">  
@@ -260,7 +259,7 @@
               </table>
 
             
-              {{ address | format_address }}
+              
               <button
                 type="button"
                 id="EditFormButton_{{ address.id }}"
