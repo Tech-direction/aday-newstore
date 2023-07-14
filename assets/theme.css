@@ -1969,7 +1969,7 @@ body,
 
 .contents-wrapper .customer .address-list .grid__item .address_edit {
   margin-top: var(--margin-s);
-  font-sixe: var(--font-s);
+  font-size: var(--font-s);
 }
 
 .contents-wrapper .customer .address-list .grid__item .address_delete {
