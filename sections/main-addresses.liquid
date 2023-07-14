@@ -221,7 +221,7 @@
             </div>
           </li>
           {%- for address in customer.addresses -%}
-            <li data-address class="grid__item address__item {%- if address == customer.default_address -%}default{% endif %}">
+            <li data-address class="grid__item address__item a {%- if address == customer.default_address -%}default{% endif %}">
               {% comment %}
                 {%- if address == customer.default_address -%}
                   <h2>{{ 'customer.addresses.default' | t }}</h2>
