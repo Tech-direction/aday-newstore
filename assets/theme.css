@@ -1932,6 +1932,11 @@ body,
 /*  address
 ---------------------------------------------------------------*/
 
+.contents-wrapper .customer .address-list .grid__item {
+  border: 1px solid rgb(var(--color-border));
+}
+
+
 
 
 .grid-collection {
