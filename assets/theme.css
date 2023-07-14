@@ -241,6 +241,7 @@ html {
   width: fit-content;
   height: auto;
   margin: var(--margin-s) auto 0 ;
+  display: block;
 }
 
 
