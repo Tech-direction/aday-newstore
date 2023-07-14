@@ -227,6 +227,28 @@
                 {%- endif -%}
               {% endcomment %}
             {{ address | json }}
+
+              <table role="table" class="customer-account table">
+                <tbody role="rowgroup">
+                    <tr role="row">  
+                      <td headers="RowOrder ColumnName" role="cell" data-label="お名前" class="cell_name">
+                        <span>{{ address.last_name }} {{ address.first_name }}</span>
+                      </td>
+                    </tr>
+                    <tr role="row">  
+                      <td headers="RowOrder ColumnAddress" role="cell" data-label="住所" class="cell_address">
+                        <span>{{ address.province | format_address }}</span>
+                      </td>
+                    </tr>
+                    <tr role="row">  
+                      <td headers="RowOrder ColumnBirth" role="cell" data-label="生年月日" class="cell_birth">
+                        <span>okabe@sureworks.jp</span>
+                      </td>
+                    </tr>
+                </tbody>
+              </table>
+
+            
               {{ address | format_address }}
               <button
                 type="button"
