@@ -1939,6 +1939,10 @@ body,
   background-color: #fff;
 }
 
+.contents-wrapper .customer .address-list .grid__item.default {
+  background-color: rgb(var(--color-gray));
+}
+
 .contents-wrapper .customer .address-list .grid__item.add_address {
   border-style: dashed;
 }
