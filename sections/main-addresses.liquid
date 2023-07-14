@@ -236,16 +236,25 @@
                       </td>
                     </tr>
                     <tr role="row">  
-                      <td headers="RowOrder ColumnCountry" role="cell" data-label="国" class="cell_country">
+                      <td headers="RowOrder ColumnCountry" role="cell" data-label="国/地域" class="cell_country">
                         <span>{{ address.country }}</span>
                       </td>
                     </tr>
                     <tr role="row">  
                       <td headers="RowOrder ColumnAddress" role="cell" data-label="住所" class="cell_address">
-                        <span>{{ address.zip }} {{ address.province }}</span>
+                        <span>{{ address.zip }} {{ address.province }} {{ address.city }} {{ address.address1 }} {{ address.address2 }}</span>
                       </td>
                     </tr>
-                    
+                    <tr role="row">  
+                      <td headers="RowOrder ColumnCompany" role="cell" data-label="会社" class="cell_company">
+                        <span>{{ address.company }}</span>
+                      </td>
+                    </tr>
+                    <tr role="row">  
+                      <td headers="RowOrder ColumnPhone" role="cell" data-label="電話番号" class="cell_phone">
+                        <span>{{ address.phone }}</span>
+                      </td>
+                    </tr>
                 </tbody>
               </table>
 
