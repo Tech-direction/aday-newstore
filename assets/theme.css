@@ -230,6 +230,7 @@ html {
 .contents-wrapper .button.type-ghost,
 .contents-wrapper .btn.type-ghost {
   border: 1px solid rgb(var(--color-border));
+  background-color: #fff;
 }
 
 /*===============================================================
