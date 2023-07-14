@@ -530,7 +530,7 @@ html {
 
 .contents-wrapper .page-width-desktop,
 .contents-wrapper .page-width .page-width {
-  padding: 0 ;
+  padding: 0  !important;
 }
 
 [class="_image-wrapper"] {
