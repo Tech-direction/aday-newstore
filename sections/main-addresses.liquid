@@ -221,13 +221,14 @@
             </div>
           </li>
           {%- for address in customer.addresses -%}
-            <li data-address class="grid__item address__item">
+            <li data-address class="grid__item address__item{%- if address == customer.default_address -%} default{% endif %}}">
               {% comment %}
                 {%- if address == customer.default_address -%}
                   <h2>{{ 'customer.addresses.default' | t }}</h2>
                 {%- endif -%}
                 {{ address | format_address }}
               {% endcomment %}
+            
               <table role="table" class="customer-account table">
                 <tbody role="rowgroup">
                     <tr role="row">  
