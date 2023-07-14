@@ -1972,7 +1972,7 @@ body,
 .contents-wrapper .customer .address-list .grid__item .address_label {
   width: fit-content;
   margin-right: auto;
-  padding: .25em .5em
+  padding: .25em .5em;
   font-size: 1rem;
   line-height: 1;
   color: #fff;
