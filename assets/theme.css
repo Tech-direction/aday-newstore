@@ -240,8 +240,9 @@ html {
 .contents-wrapper .btn.cancel {
   width: fit-content;
   height: auto;
-  margin: var(--margin-s) auto 0;
+  margin: var(--margin-s) auto 0 ;
 }
+
 
 /*===============================================================
 
