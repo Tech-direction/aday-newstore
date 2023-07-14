@@ -277,7 +277,7 @@
                 data-confirm-message="{{ 'customer.addresses.delete_confirm' | t }}"
                 class="delete"     
               >
-                {{ 'customer.addresses.delete' | t }}
+                {% comment %}{{ 'customer.addresses.delete' | t }}{% endcomment %}
               </button>
             
               <div id="EditAddress_{{ address.id }}">
