@@ -878,7 +878,7 @@ body,
 ---------------------------------------------------------------*/
 
 .contents-wrapper .header-postage {
-  padding: calc(var(--margin-s) + .5em) 1em .5em;
+  padding: var(--margin-s)  1em .5em;
   line-height: 1;
   font-weight: 500;
   font-size: .875em;
