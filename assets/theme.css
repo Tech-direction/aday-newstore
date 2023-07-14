@@ -1949,6 +1949,10 @@ body,
 /*  address
 ---------------------------------------------------------------*/
 
+.contents-wrapper .customer .section-address {
+  margin-top: var(--margin-section);
+}
+
 .contents-wrapper .customer .address-list .grid__item {
   padding: var(--margin);
   border-radius: var(--border-radius-box);
