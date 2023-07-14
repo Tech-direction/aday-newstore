@@ -1937,6 +1937,7 @@ body,
   border-radius: var(--border-radius-box);
   border: 1px solid rgb(var(--color-border));
   background-color: #fff;
+  position: relative;
 }
 
 .contents-wrapper .customer .address-list .grid__item.default {
@@ -1952,10 +1953,16 @@ body,
   background-color: transparent;
 }
 
-
-.grid-collection {
-  /*display: none;*/
+.contents-wrapper .customer .address-list .grid__item .delete {
+  border-radius: 10em;
+  background-color: #fff;
+  position: absolute;
 }
+
+
+
+
+
 
 #boxContent .grid-collection > * {
   padding: 20px;
