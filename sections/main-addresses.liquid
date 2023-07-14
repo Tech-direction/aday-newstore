@@ -267,7 +267,7 @@
                 aria-controls="EditAddress_{{ address.id }}"
                 aria-expanded="false"
                 data-address-id="{{ address.id }}"
-                class="address_edit"            
+                class="button address_edit"            
               >
                 {{ 'customer.addresses.edit' | t }}
               </button>
@@ -416,7 +416,7 @@
                     </label>
                   </div>
                   <div>
-                    <button>{{ 'customer.addresses.update' | t }}</button>
+                    <button class="button">{{ 'customer.addresses.update' | t }}</button>
                     <button type="reset">{{ 'customer.addresses.cancel' | t }}</button>
                   </div>
                 {%- endform -%}
