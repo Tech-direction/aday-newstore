@@ -235,9 +235,7 @@ html {
   background-color: #fff;
 }
 
-.contents-wrapper button.cancel,
-.contents-wrapper .button.cancel,
-.contents-wrapper .btn.cancel {
+.contents-wrapper .cancel {
   width: fit-content;
   height: auto;
   margin: var(--margin-s) auto 0 ;
