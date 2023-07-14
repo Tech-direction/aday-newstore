@@ -183,6 +183,7 @@ html {
   margin-bottom: 0;
   font-size: 1rem;
   color: #fff;
+  font-weight: 500;
   border-radius: 4px;
   background-color: rgb(var(--color-black));
   transition: all var(--duration-long) ease;
@@ -1968,6 +1969,7 @@ body,
 }
 
 .contents-wrapper .customer .address-list .grid__item .address_edit {
+  height: 3em;
   margin-top: var(--margin-s);
   font-size: var(--font-s);
 }
