@@ -1969,6 +1969,15 @@ body,
   background-color: rgb(var(--color-gray));
 }
 
+.contents-wrapper .customer .address-list .grid__item .address_label {
+  width: fit-content;
+  margin-right: auto;
+  font-size: 1rem;
+  line-height: 1;
+  color: #fff;
+  background-color: rgb(var(--color-border));
+}
+
 .contents-wrapper .customer .address-list .grid__item.add_address {
   border-style: dashed;
 }
