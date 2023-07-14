@@ -74,8 +74,8 @@
           </div>
       </div>
   
-      <ul role="list">
-        <li>
+      <ul role="list grid grid--2-col-desktop">
+        <li class="grid__item">
           <div data-address>
             <button
               type="button"
@@ -219,7 +219,7 @@
           </div>
         </li>
         {%- for address in customer.addresses -%}
-          <li data-address>
+          <li data-address class="grid__item">
             {%- if address == customer.default_address -%}
               <h2>{{ 'customer.addresses.default' | t }}</h2>
             {%- endif -%}
