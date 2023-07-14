@@ -1967,6 +1967,11 @@ body,
   display: block;
 }
 
+.contents-wrapper .customer .address-list .grid__item .address_edit {
+  margin-top: var(--margin-s);
+  font-sixe: var(--font-s);
+}
+
 .contents-wrapper .customer .address-list .grid__item .address_delete {
   border-radius: 10em;
   background-color: #fff;
