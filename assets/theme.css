@@ -1950,7 +1950,11 @@ body,
 ---------------------------------------------------------------*/
 
 .contents-wrapper .customer .section-address {
-  margin-top: var(--margin-section);
+  margin-top: var(--margin-l);
+}
+
+.contents-wrapper .customer .address-list {
+  margin-top: var(--margin);
 }
 
 .contents-wrapper .customer .address-list .grid__item {
