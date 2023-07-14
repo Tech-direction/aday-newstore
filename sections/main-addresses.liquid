@@ -229,7 +229,7 @@
                 {%- endif -%}
                 {{ address | format_address }}
               {% endcomment %}
-              <h3 class="address_label">{%- if address == customer.default_address -%}デフォルト{% else %}住所{{ address_count }}{% assign address_count = address_count | plus: 1 %}{% endif %}</h3>
+              <h3 class="address_label">{%- if address == customer.default_address -%}デフォルト住所{% else %}住所{{ address_count }}{% assign address_count = address_count | plus: 1 %}{% endif %}</h3>
               <table role="table" class="customer-account table">
                 <tbody role="rowgroup">
                     <tr role="row">  
