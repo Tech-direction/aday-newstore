@@ -1953,7 +1953,7 @@ body,
   background-color: transparent;
 }
 
-.contents-wrapper .customer .address-list .grid__item .delete {
+.contents-wrapper .customer .address-list .grid__item .address_delete {
   border-radius: 10em;
   background-color: #fff;
   position: absolute;
