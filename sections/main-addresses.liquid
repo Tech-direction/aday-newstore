@@ -282,7 +282,7 @@
               </button>
             
               <div id="EditAddress_{{ address.id }}">
-                <h2>{{ 'customer.addresses.edit_address' | t }}</h2>
+                {% comment %}<h2>{{ 'customer.addresses.edit_address' | t }}</h2>{% endcomment %}
                 {%- form 'customer_address', address -%}
                   <div class="field">
                     <input
