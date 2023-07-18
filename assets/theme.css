@@ -1536,7 +1536,6 @@ body,
 ---------------------------------------------------------------*/
 .contents-wrapper .product-ranking {
   counter-reset: count;
-  align-items: flex-start;
 }
 
 .contents-wrapper .product-ranking .product__item {
