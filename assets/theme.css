@@ -437,7 +437,7 @@ html {
 }
 
 .contents-wrapper [class^="field"] + [class^="field"] {
-  margin-top: var(--margin);
+  margin-top: var(--margin-s);
 }
 
 .contents-wrapper .field__input:focus ~ .field__label,
