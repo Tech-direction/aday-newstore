@@ -1543,11 +1543,11 @@ body,
 }
 
 .contents-wrapper .product-ranking > :nth-child(2) {
-  margin-top: var(--margin-l) !important;
+  top: var(--margin-l);
 }
 
 .contents-wrapper .product-ranking > :nth-child(3) {
-  margin-top: calc(var(--margin-l)*2) !important;
+  top: calc(var(--margin-l)*2);
 }
 
 .contents-wrapper .product-ranking .product__item:before {
