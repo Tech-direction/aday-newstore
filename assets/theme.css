@@ -1542,6 +1542,10 @@ body,
 	counter-increment: count;
 }
 
+.contents-wrapper .product-ranking .product__item + .product__item {
+  margin-top: var(--margin-l);
+}
+
 .contents-wrapper .product-ranking .product__item:before {
 	content: counter(count);
 	width: 2em;
