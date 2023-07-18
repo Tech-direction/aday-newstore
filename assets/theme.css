@@ -2078,9 +2078,13 @@ body,
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: .5em;
   display: block;
 }
 
+.contents-wrapper .customer .address-list .add_address_trigger .icon-wrap svg {
+  fill: rgb(var(--color-border));
+}
 
 
 #boxContent .grid-collection > * {
