@@ -224,6 +224,11 @@ html {
   opacity: .5;
 }
 
+.contents-wrapper .button.align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .contents-wrapper .button.type-primary {
   background-color: rgb(var(--color-primary));
 }
