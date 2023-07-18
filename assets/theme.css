@@ -319,7 +319,7 @@ html {
 }
 
 
-/*===============================================================
+/*===============================================================co
 
 	form item
 
@@ -2042,6 +2042,13 @@ body,
 .contents-wrapper .customer .address-list .grid__item form {
   margin-top: var(--margin);
 }
+
+.contents-wrapper .addresses form>div:nth-of-type(1),
+.contents-wrapper .addresses form>div:nth-of-type(2) {
+  flex: 1;
+}
+
+
 
 
 
