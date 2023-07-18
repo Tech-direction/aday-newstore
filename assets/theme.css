@@ -451,7 +451,13 @@ html {
   transform: none;
 }
 
+.contents-wrapper .field_group {
+  display: flex;
+}
 
+.contents-wrapper .field_group > [class^="field"] {
+  width: calc((100% - var(--margin-s))/2);
+}
 
 
 /*  select
