@@ -436,9 +436,7 @@ html {
   left: 1em !important;
 }
 
-.contents-wrapper .field + .field
-.contents-wrapper .field_group +.field,
-.contents-wrapper .field+.field {
+.contents-wrapper [class^="field"] + [class^="field"] {
   margin-top: var(--margin);
 }
 
