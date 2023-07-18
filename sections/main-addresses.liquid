@@ -350,26 +350,24 @@
                     >
                     <label for="AddressCity_{{ form.id }}">{{ 'customer.addresses.city' | t }}</label>
                   </div>
-                  <div class="field">
-                    <div class="select-wrapper">
-                      <label for="AddressCountry_{{ form.id }}" class="select_label">
-                        {{ 'customer.addresses.country' | t }}
-                      </label>
-                      <div class="select">
-                        <select
-                          id="AddressCountry_{{ form.id }}"
-                          name="address[country]"
-                          data-address-country-select
-                          data-default="{{ form.country }}"
-                          data-form-id="{{ form.id }}"
-                          autocomplete="country"
-                        >
-                          {{ all_country_option_tags }}
-                        </select>
-                        <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
-                          <use href="#icon-caret" />
-                        </svg>
-                      </div>
+                  <div class="field select-wrapper">
+                    <label for="AddressCountry_{{ form.id }}" class="select_label">
+                      {{ 'customer.addresses.country' | t }}
+                    </label>
+                    <div class="select">
+                      <select
+                        id="AddressCountry_{{ form.id }}"
+                        name="address[country]"
+                        data-address-country-select
+                        data-default="{{ form.country }}"
+                        data-form-id="{{ form.id }}"
+                        autocomplete="country"
+                      >
+                        {{ all_country_option_tags }}
+                      </select>
+                      <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+                        <use href="#icon-caret" />
+                      </svg>
                     </div>
                   </div>
                   <div class="field">
