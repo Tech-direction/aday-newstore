@@ -332,6 +332,54 @@
                     >
                     <label for="AddressAddress1_{{ form.id }}">{{ 'customer.addresses.address1' | t }}</label>
                   </div>
+                <div class="field_select">
+                    <label for="AddressCountry_{{ form.id }}" class="select_label">
+                      {{ 'customer.addresses.country' | t }}
+                    </label>
+                    <div class="select">
+                      <select
+                        id="AddressCountry_{{ form.id }}"
+                        name="address[country]"
+                        data-address-country-select
+                        data-default="{{ form.country }}"
+                        data-form-id="{{ form.id }}"
+                        autocomplete="country"
+                      >
+                        {{ all_country_option_tags }}
+                      </select>
+                      <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+                        <use href="#icon-caret" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <input
+                      type="text"
+                      id="AddressZip_{{ form.id }}"
+                      name="address[zip]"
+                      value="{{ form.zip }}"
+                      autocapitalize="characters"
+                      autocomplete="postal-code"
+                      placeholder="{{ 'customer.addresses.zip' | t }}"
+                    >
+                    <label for="AddressZip_{{ form.id }}">{{ 'customer.addresses.zip' | t }}</label>
+                  </div>
+                  <div id="AddressProvinceContainer_{{ form.id }}" style="display:none;" class="field_select">
+                      <label for="AddressProvince_{{ form.id }}" class="select_label">
+                        {{ 'customer.addresses.province' | t }}
+                      </label>
+                      <div class="select">
+                        <select
+                          id="AddressProvince_{{ form.id }}"
+                          name="address[province]"
+                          data-default="{{ form.province }}"
+                          autocomplete="address-level1"
+                        ></select>
+                        <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+                          <use href="#icon-caret" />
+                        </svg>
+                      </div>
+                  </div>
                   <div class="field">
                     <input
                       type="text"
@@ -353,57 +401,6 @@
                       placeholder="{{ 'customer.addresses.city' | t }}"
                     >
                     <label for="AddressCity_{{ form.id }}">{{ 'customer.addresses.city' | t }}</label>
-                  </div>
-                  <div class="field_select">
-                    <label for="AddressCountry_{{ form.id }}" class="select_label">
-                      {{ 'customer.addresses.country' | t }}
-                    </label>
-                    <div class="select">
-                      <select
-                        id="AddressCountry_{{ form.id }}"
-                        name="address[country]"
-                        data-address-country-select
-                        data-default="{{ form.country }}"
-                        data-form-id="{{ form.id }}"
-                        autocomplete="country"
-                      >
-                        {{ all_country_option_tags }}
-                      </select>
-                      <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
-                        <use href="#icon-caret" />
-                      </svg>
-                    </div>
-                  </div>
-        
-                    <div id="AddressProvinceContainer_{{ form.id }}" style="display:none;" class="field_select">
-   
-                        <label for="AddressProvince_{{ form.id }}" class="select_label">
-                          {{ 'customer.addresses.province' | t }}
-                        </label>
-                        <div class="select">
-                          <select
-                            id="AddressProvince_{{ form.id }}"
-                            name="address[province]"
-                            data-default="{{ form.province }}"
-                            autocomplete="address-level1"
-                          ></select>
-                          <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
-                            <use href="#icon-caret" />
-                          </svg>
-                        </div>
- 
-                  </div>
-                  <div class="field">
-                    <input
-                      type="text"
-                      id="AddressZip_{{ form.id }}"
-                      name="address[zip]"
-                      value="{{ form.zip }}"
-                      autocapitalize="characters"
-                      autocomplete="postal-code"
-                      placeholder="{{ 'customer.addresses.zip' | t }}"
-                    >
-                    <label for="AddressZip_{{ form.id }}">{{ 'customer.addresses.zip' | t }}</label>
                   </div>
                   <div class="field">
                     <input
