@@ -2038,13 +2038,14 @@ body,
 .contents-wrapper .customer .address-list .grid__item .address_delete {
   min-width: auto;
   min-height: auto;
+  margin: 0;
   padding: .4em;
-  line-height: 1;
+  line-height: 0;
   border-radius: 10em;
   background-color: #fff;
   position: absolute;
-  top: var(--margin-s);
-  right: var(--margin-s);
+  top: var(--margin-xs);
+  right: var(--margin-xs);
 }
 
 .contents-wrapper .customer .address-list .grid__item [aria-expanded="true"] {
