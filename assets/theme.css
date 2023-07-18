@@ -1539,7 +1539,8 @@ body,
 }
 
 .contents-wrapper .product-ranking .product__item {
-	counter-increment: count;
+  counter-increment: count;
+  align-items: flex-start;
 }
 
 .contents-wrapper .product-ranking > :nth-child(2) {
