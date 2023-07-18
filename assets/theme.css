@@ -1941,9 +1941,9 @@ body,
   padding: var(--margin-l);
 }
 
-.contents-wrapper .customer.login a {
+/*.contents-wrapper .customer.login a {
   display: inline-block;
-}
+}*/
 
 .contents-wrapper .customer.login .recover {
   margin-left: auto;
