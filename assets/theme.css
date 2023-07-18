@@ -343,7 +343,7 @@ html {
   font-size: 1rem;
 }
 
-.contents-wrapper .select-wrapper,
+.contents-wrapper .field_select,
 .contents-wrapper .quantity,
 .contents-wrapper .field {
   border: 1px solid rgb(var(--color-border));
@@ -384,7 +384,7 @@ html {
   box-shadow: none;
 }
 
-.contents-wrapper .select-wrapper:has(select:focus),
+.contents-wrapper .field_select:has(select:focus),
 .contents-wrapper .quantity:has(input:focus),
 .contents-wrapper .quantity:has(button:focus),
 .contents-wrapper .field:has(input:focus) {
@@ -436,7 +436,9 @@ html {
   left: 1em !important;
 }
 
-.contents-wrapper .field + .field {
+.contents-wrapper .field + .field
+.contents-wrapper .field_group +.field,
+.contents-wrapper .field+.field {
   margin-top: var(--margin);
 }
 
@@ -457,13 +459,13 @@ html {
 /*  select
 ---------------------------------------------------------------*/
 
-.contents-wrapper .select-wrapper {
+.contents-wrapper .field_select {
   height: 3.5rem;
   background-color: #fff;
   position: relative;
 }
 
-.contents-wrapper .select-wrapper .select_label {
+.contents-wrapper .field_select .select_label {
   font-size: var(--font-s);
   letter-spacing: 0;
   position: absolute;
@@ -472,7 +474,7 @@ html {
   left: 1rem;
 }
 
-.contents-wrapper .select-wrapper .select {
+.contents-wrapper .field_select .select {
   width: 100%;
   height: 100%;
   position: absolute;
