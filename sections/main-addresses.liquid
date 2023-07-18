@@ -319,7 +319,7 @@
                       autocomplete="organization"
                       placeholder="{{ 'customer.addresses.company' | t }}"
                     >
-                    <label for="AddressCompany_{{ form.id }}">{{ 'customer.addresses.company' | t }}</label>
+                    <label for="AddressCompany_{{ form.id }}">{{ 'customer.addresfield_selectses.company' | t }}</label>
                   </div>
                   <div class="field">
                     <input
@@ -354,7 +354,7 @@
                     >
                     <label for="AddressCity_{{ form.id }}">{{ 'customer.addresses.city' | t }}</label>
                   </div>
-                  <div class="select-wrapper">
+                  <div class="field_select">
                     <label for="AddressCountry_{{ form.id }}" class="select_label">
                       {{ 'customer.addresses.country' | t }}
                     </label>
@@ -375,7 +375,7 @@
                     </div>
                   </div>
         
-                    <div id="AddressProvinceContainer_{{ form.id }}" style="display:none;" class="select-wrapper">
+                    <div id="AddressProvinceContainer_{{ form.id }}" style="display:none;" class="field_select">
    
                         <label for="AddressProvince_{{ form.id }}" class="select_label">
                           {{ 'customer.addresses.province' | t }}
