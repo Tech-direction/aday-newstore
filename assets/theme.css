@@ -2071,6 +2071,7 @@ body,
   position: absolute;
   left: 0;
   top: 0;
+  display: block;
 }
 
 .contents-wrapper .customer .address-list .add_address_trigger .icon-wrap {
