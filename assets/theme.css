@@ -2038,7 +2038,7 @@ body,
 .contents-wrapper .customer .address-list .grid__item .address_delete {
   min-width: auto;
   min-height: auto;
-  padding.4em;
+  padding: .4em;
   line-height: 1;
   border-radius: 10em;
   background-color: #fff;
