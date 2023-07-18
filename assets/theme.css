@@ -458,6 +458,7 @@ html {
 
 .contents-wrapper .field_group > [class^="field"] {
   width: calc((100% - var(--margin-s))/2);
+  margin: 0 !important;
 }
 
 
