@@ -1542,8 +1542,12 @@ body,
 	counter-increment: count;
 }
 
-.contents-wrapper .product-ranking .product__item + .product__item {
+.contents-wrapper .product-ranking > :nth-child(2) {
   margin-top: var(--margin-l) !important;
+}
+
+.contents-wrapper .product-ranking > :nth-child(3) {
+  margin-top: calc(var(--margin-l)*2) !important;
 }
 
 .contents-wrapper .product-ranking .product__item:before {
