@@ -371,19 +371,21 @@
                     </div>
                   </div>
                   <div id="AddressProvinceContainer_{{ form.id }}" style="display:none;">
-                    <label for="AddressProvince_{{ form.id }}">
-                      {{ 'customer.addresses.province' | t }}
-                    </label>
-                    <div class="select">
-                      <select
-                        id="AddressProvince_{{ form.id }}"
-                        name="address[province]"
-                        data-default="{{ form.province }}"
-                        autocomplete="address-level1"
-                      ></select>
-                      <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
-                        <use href="#icon-caret" />
-                      </svg>
+                    <div class="select-wrapper">
+                      <label for="AddressProvince_{{ form.id }}" class="select_label">
+                        {{ 'customer.addresses.province' | t }}
+                      </label>
+                      <div class="select">
+                        <select
+                          id="AddressProvince_{{ form.id }}"
+                          name="address[province]"
+                          data-default="{{ form.province }}"
+                          autocomplete="address-level1"
+                        ></select>
+                        <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+                          <use href="#icon-caret" />
+                        </svg>
+                      </div>
                     </div>
                   </div>
                   <div class="field">
