@@ -1372,7 +1372,6 @@ body,
 
 .contents-wrapper .section-fuatured-blog .content__item {
   white-space: nowrap;
-  background-color: #ccc;
 }
 
 .contents-wrapper .section-fuatured-blog .article-list {
@@ -1380,7 +1379,6 @@ body,
   scroll-snap-type: x;
   overflow-x: scroll;
   flex-wrap: nowrap;
-  background-color: rgba(0,0,0,.15);
 }
 
 .contents-wrapper .section-fuatured-blog .article-list .grid__item {
