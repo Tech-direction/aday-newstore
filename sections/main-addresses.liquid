@@ -89,27 +89,29 @@
               <div id="AddAddress">
                 <h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h2>
                 {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
-                  <div class="field">
-                    <input
-                      type="text"
-                      id="AddressFirstNameNew"
-                      name="address[first_name]"
-                      value="{{ form.first_name }}"
-                      autocomplete="given-name"
-                      placeholder="{{ 'customer.addresses.first_name' | t }}"
-                    >
-                    <label for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }}</label>
-                  </div>
-                  <div class="field">
-                    <input
-                      type="text"
-                      id="AddressLastNameNew"
-                      name="address[last_name]"
-                      value="{{ form.last_name }}"
-                      autocomplete="family-name"
-                      placeholder="{{ 'customer.addresses.last_name' | t }}"
-                    >
-                    <label for="AddressLastNameNew">{{ 'customer.addresses.last_name' | t }}</label>
+                  <div class="field_group">
+                    <div class="field">
+                      <input
+                        type="text"
+                        id="AddressFirstNameNew"
+                        name="address[first_name]"
+                        value="{{ form.first_name }}"
+                        autocomplete="given-name"
+                        placeholder="{{ 'customer.addresses.first_name' | t }}"
+                      >
+                      <label for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }}</label>
+                    </div>
+                    <div class="field">
+                      <input
+                        type="text"
+                        id="AddressLastNameNew"
+                        name="address[last_name]"
+                        value="{{ form.last_name }}"
+                        autocomplete="family-name"
+                        placeholder="{{ 'customer.addresses.last_name' | t }}"
+                      >
+                      <label for="AddressLastNameNew">{{ 'customer.addresses.last_name' | t }}</label>
+                    </div>
                   </div>
                   <div class="field">
                     <input
