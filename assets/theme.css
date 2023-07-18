@@ -424,6 +424,7 @@ html {
 .contents-wrapper .field__input:-webkit-autofill, .customer .field input:focus, .customer .field input:not(:placeholder-shown),
 .contents-wrapper .customer .field input:-webkit-autofill {
   padding: 1.5em 1em .5em;
+  font-size: var(--font-s);
 }
 
 .contents-wrapper .field__label,
