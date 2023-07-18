@@ -1338,6 +1338,7 @@ body,
   margin-bottom: var(--margin-s);
   color: rgb(var(--color-border));
   letter-spacing: normal;
+  font-weight: 400;
   order: 0;
 }
 
