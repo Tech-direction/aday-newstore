@@ -87,9 +87,9 @@
                 {{ 'customer.addresses.add_new' | t }}
               </button>
               <div id="AddAddress">
-                <h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h2>
+                {% comment %}<h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h2>{% endcomment %}
                 {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
-                  <div class="field_group grid grid-2-col-desktop grid--gap-s">
+                  <div class="field_group">
                     <div class="field">
                       <input
                         type="text"
@@ -124,6 +124,60 @@
                     >
                     <label for="AddressCompanyNew">{{ 'customer.addresses.company' | t }}</label>
                   </div>
+                  <div class="field_select">
+                    <label for="AddressCountryNew">{{ 'customer.addresses.country' | t }}</label>
+                    <div class="select">
+                      <select
+                        id="AddressCountryNew"
+                        name="address[country]"
+                        data-default="{{ form.country }}"
+                        autocomplete="country"
+                      >
+                        {{ all_country_option_tags }}
+                      </select>
+                      <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+                        <use href="#icon-caret" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <input
+                      type="text"
+                      id="AddressZipNew"
+                      name="address[zip]"
+                      value="{{ form.zip }}"
+                      autocapitalize="characters"
+                      autocomplete="postal-code"
+                      placeholder="{{ 'customer.addresses.zip' | t }}"
+                    >
+                    <label for="AddressZipNew">{{ 'customer.addresses.zip' | t }}</label>
+                  </div>
+                  
+                  <div id="AddressProvinceContainerNew" style="display: none" class="field_select">
+                    <label for="AddressProvinceNew">{{ 'customer.addresses.province' | t }}</label>
+                    <div class="select">
+                      <select
+                        id="AddressProvinceNew"
+                        name="address[province]"
+                        data-default="{{ form.province }}"
+                        autocomplete="address-level1"
+                      ></select>
+                      <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+                        <use href="#icon-caret" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <input
+                      type="text"
+                      id="AddressCityNew"
+                      name="address[city]"
+                      value="{{ form.city }}"
+                      autocomplete="address-level2"
+                      placeholder="{{ 'customer.addresses.city' | t }}"
+                    >
+                    <label for="AddressCityNew">{{ 'customer.addresses.city' | t }}</label>
+                  </div>
                   <div class="field">
                     <input
                       type="text"
@@ -145,59 +199,6 @@
                       placeholder="{{ 'customer.addresses.address2' | t }}"
                     >
                     <label for="AddressAddress2New">{{ 'customer.addresses.address2' | t }}</label>
-                  </div>
-                  <div class="field">
-                    <input
-                      type="text"
-                      id="AddressCityNew"
-                      name="address[city]"
-                      value="{{ form.city }}"
-                      autocomplete="address-level2"
-                      placeholder="{{ 'customer.addresses.city' | t }}"
-                    >
-                    <label for="AddressCityNew">{{ 'customer.addresses.city' | t }}</label>
-                  </div>
-                  <div>
-                    <label for="AddressCountryNew">{{ 'customer.addresses.country' | t }}</label>
-                    <div class="select">
-                      <select
-                        id="AddressCountryNew"
-                        name="address[country]"
-                        data-default="{{ form.country }}"
-                        autocomplete="country"
-                      >
-                        {{ all_country_option_tags }}
-                      </select>
-                      <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
-                        <use href="#icon-caret" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div id="AddressProvinceContainerNew" style="display: none">
-                    <label for="AddressProvinceNew">{{ 'customer.addresses.province' | t }}</label>
-                    <div class="select">
-                      <select
-                        id="AddressProvinceNew"
-                        name="address[province]"
-                        data-default="{{ form.province }}"
-                        autocomplete="address-level1"
-                      ></select>
-                      <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
-                        <use href="#icon-caret" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="field">
-                    <input
-                      type="text"
-                      id="AddressZipNew"
-                      name="address[zip]"
-                      value="{{ form.zip }}"
-                      autocapitalize="characters"
-                      autocomplete="postal-code"
-                      placeholder="{{ 'customer.addresses.zip' | t }}"
-                    >
-                    <label for="AddressZipNew">{{ 'customer.addresses.zip' | t }}</label>
                   </div>
                   <div class="field">
                     <input
