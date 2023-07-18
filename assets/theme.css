@@ -225,8 +225,9 @@ html {
 }
 
 .contents-wrapper .button.align-center {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block;
 }
 
 .contents-wrapper .button.type-primary {
