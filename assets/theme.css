@@ -157,6 +157,7 @@ html {
 
 .contents-wrapper .link.animate-arrow {
   width: fit-content;
+  margin-top: var(--margin);
   padding-bottom: .5em;
   font-weight: 500;
   border-bottom: 1px solid rgb(var(--color-black));
