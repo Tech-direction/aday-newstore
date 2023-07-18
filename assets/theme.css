@@ -167,6 +167,10 @@ html {
   margin-right: 0;
 }
 
+.contents-wrapper .link.animate-arrow.align-right {
+  margin-left: auto;
+}
+
 
 /*===============================================================
 
