@@ -2083,7 +2083,7 @@ body,
 }
 
 .contents-wrapper .customer .address-list .add_address_trigger .icon-wrap svg {
-  fill: rgb(var(--color-border));
+  color: rgb(var(--color-border));
 }
 
 
