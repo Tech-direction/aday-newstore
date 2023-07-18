@@ -89,7 +89,7 @@
               <div id="AddAddress">
                 <h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h2>
                 {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
-                  <div class="field_group">
+                  <div class="field_group grid grid-2-col-desktop grid--gap-s">
                     <div class="field">
                       <input
                         type="text"
