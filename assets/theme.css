@@ -2082,9 +2082,16 @@ body,
   display: block;
 }
 
+.contents-wrapper .customer .address-list .address_delete  .icon-wrap,
 .contents-wrapper .customer .address-list .add_address_trigger .icon-wrap svg {
   color: rgb(var(--color-border));
 }
+
+
+
+
+
+
 
 
 #boxContent .grid-collection > * {
