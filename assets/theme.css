@@ -1535,6 +1535,7 @@ body,
 /*  ranking
 ---------------------------------------------------------------*/
 .contents-wrapper .product-ranking {
+  padding-bottom:  calc(var(--margin-l)*2);
   counter-reset: count;
 }
 
