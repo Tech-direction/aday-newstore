@@ -2180,7 +2180,8 @@ body,
 .contents-wrapper #boxContent .Polaris-Page,
 .contents-wrapper #boxContent .Polaris-Page__Content,
 .contents-wrapper #boxContent .Polaris-Layout__Section,
-.contents-wrapper #boxContent .Polaris-FormLayout {
+.contents-wrapper #boxContent .Polaris-FormLayout,
+.contents-wrapper #boxContent .Polaris-Layout{
   max-width: none;
   margin: 0;
 }
