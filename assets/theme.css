@@ -2171,9 +2171,6 @@ body,
 	subscription
 
 ===============================================================*/
-#boxContent {
-  display: none;
-}
 
 .contents-wrapper #boxContent {
   background-color: #fff;
