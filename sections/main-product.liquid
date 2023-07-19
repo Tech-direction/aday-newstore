@@ -593,6 +593,43 @@
       "name": "t:sections.main-product.blocks.text.name",
       "settings": [
         {
+        "type": "text",
+        "id": "section_heading",
+        "label": "見出し"
+      },
+      {
+        "type": "select",
+        "id": "heading_size",
+        "options": [
+          {
+            "value": "default",
+            "label": "t:sections.all.heading_size.options__1.label"
+          }, {
+            "value": "m",
+            "label": "t:sections.all.heading_size.options__2.label"
+          }, {
+            "value": "l",
+            "label": "t:sections.all.heading_size.options__3.label"
+          }, {
+            "value": "xl",
+            "label": "最大"
+          }
+        ],
+        "default": "l",
+        "label": "t:sections.all.heading_size.label"
+      },
+      {
+        "type": "text",
+        "id": "section_sub_heading",
+        "label": "見出し（英語）"
+      },
+      {
+        "type": "checkbox",
+        "id": "change_box_layout",
+        "default": false,
+        "label": "レイアウトを左右入れ替える"
+      },
+        {
           "type": "inline_richtext",
           "id": "text",
           "default": "Text block",
