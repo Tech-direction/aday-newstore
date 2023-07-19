@@ -2186,6 +2186,9 @@ body,
   margin: 0;
 }
 
+.contents-wrapper #boxContent .Polaris-FormLayout__Item + .Polaris-FormLayout__Item {
+  margin-top: var(--margin);
+}
 
 .contents-wrapper #boxContent .Polaris-Page {
   max-width: var(--width-max-m);
