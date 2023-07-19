@@ -1546,9 +1546,8 @@ body,
 }
 
 .contents-wrapper .price {
-  margin-top: var(--margin-s);
+  margin-top: var(--margin-s) !important;
   font-size: 1rem;
-  text-align: right;
 }
 
 /*  veriation / buy button
