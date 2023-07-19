@@ -53,6 +53,10 @@
         "share"
       ],
       "settings": {
+        "section_heading": "オンラインショップ",
+        "heading_size": "xl",
+        "section_sub_heading": "ONLINESHOP",
+        "change_box_layout": false,
         "enable_sticky_info": true,
         "media_size": "large",
         "constrain_to_viewport": true,
