@@ -98,7 +98,7 @@
             </div>
           </button>
           {%- if show_dynamic_checkout -%}
-            {{ form | payment_button }}
+            {{ form | payment_button | class: "type-primary"}}
           {%- endif -%}
         </div>
       {%- endform -%}
@@ -109,7 +109,7 @@
         <button
           type="submit"
           name="add"
-          class="product-form__submit button button--full-width button--primary"
+          class="product-form__submit button button--full-width button--primary type-ghost disabled"
           disabled
         >
           {{ 'products.product.sold_out' | t }}
