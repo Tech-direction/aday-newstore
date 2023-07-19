@@ -79,6 +79,10 @@ html {
   font-weight: 500;
 }
 
+.contents-wrapper .align-center {
+  text-align: center;
+}
+
 @media screen and (max-width: 989px) {
   body,
   html {
