@@ -2176,8 +2176,19 @@ body,
   background-color: #fff;
 }
 
-.contents-wrapper #boxContent .Polaris-FormLayout__Item {
+.contents-wrapper #boxContent .Polaris-FormLayout__Item,
+.contents-wrapper #boxContent .Polaris-Page,
+.contents-wrapper #boxContent .Polaris-Page__Content,
+.contents-wrapper #boxContent .Polaris-Layout__Section,
+.contents-wrapper #boxContent .Polaris-FormLayout {
+  max-width: none;
   margin: 0;
+}
+
+
+.contents-wrapper #boxContent .Polaris-Page {
+  max-width: var(--width-max-m);
+  padding: 0 var(--margin);
 }
 
 #boxContent .grid-collection > * {
