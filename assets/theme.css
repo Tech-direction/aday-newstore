@@ -2188,6 +2188,8 @@ body,
 
 .contents-wrapper #boxContent .Polaris-Page {
   max-width: var(--width-max-m);
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 var(--margin);
 }
 
