@@ -140,8 +140,19 @@
         </span>
       {%- endif -%}
       <div class="field">
-        <input type="date"></input>
-      </div>
+          <input
+            type="date"
+            name="properties[誕生日]"
+            id="RegisterForm-Birthday"
+            {% if form.last_name %}
+              value="{{ form.last_name }}"
+            {% endif %}
+            autocomplete="birthday"
+          >
+          <label for="RegisterForm-Birthday">
+            誕生日
+          </label>
+        </div>
       <button class="button align-center">
         {{ 'customer.register.submit' | t }}
       </button>
