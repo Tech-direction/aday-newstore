@@ -2176,11 +2176,13 @@ body,
   background-color: #fff;
 }
 
+.contents-wrapper #boxContent .Polaris-FormLayout__Item {
+  margin: 0;
+}
 
 #boxContent .grid-collection > * {
   padding: 20px;
   text-align: center;
-  background-color: #eee;
 }
 
 #boxContent .grid-collection > :nth-child(even) {
