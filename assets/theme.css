@@ -29,6 +29,7 @@
 @media screen and (max-width: 989px) {
   :root {
     --margin: 20px;
+    --margin-section: calc(var(--margin)*3);
   }
 }
 
@@ -46,6 +47,7 @@ html {
   font-weight: 400;
   letter-spacing: 0;
   color: rgb(var(--color-black));
+  background-color: transparent !important;
 }
 
 * {
@@ -262,6 +264,11 @@ html {
   font-size: 1rem;
   background-color: transparent !important;
   display: block;
+}
+
+.contents-wrapper .quantity__input,
+.contents-wrapper .quantity__button {
+  box-shadow: none !important;
 }
 
 
@@ -487,6 +494,7 @@ html {
 
 .contents-wrapper .field_select .select {
   width: 100%;
+  max-width: none;
   height: 100%;
   position: absolute;
 }
@@ -1160,6 +1168,24 @@ body,
 }
 
 
+@media screen and (max-width: 989px) {
+  .contents-wrapper .section-heading-wrapper {
+    flex-wrap: wrap;
+  }
+  .contents-wrapper .section-heading-wrapper > * {
+    width: 100%;
+  }
+  .contents-wrapper .section-heading-wrapper .heading__item {
+    margin-bottom: var(--margin);
+    order: 0;
+  }
+  .contents-wrapper .section-heading-wrapper .heading__item .heading {
+    margin: 0;
+    writing-mode: unset !important;
+    letter-spacing: .1em;
+  }
+}
+
 
 /*===============================================================
 
@@ -1238,7 +1264,7 @@ body,
 }
 
 .contents-wrapper .subscription-feature-list .feature__item {
-  width: calc((100% - var(--margin-s) * 2)/3);
+  width: calc((100% - var(--margin-s) * 2)/3) !important;
   padding: var(--margin);
   color: #fff;
   font-weight: 500;
@@ -1495,15 +1521,16 @@ body,
 
 /*===============================================================
 
-	collection contents
+	collection contents / product
 
 ===============================================================*/
 
 /*  common DOM
 ---------------------------------------------------------------*/
 
-.contents-wrapper .product__item .product__title,
-.contents-wrapper .product__item .card__heading {
+.contents-wrapper .product__title,
+.contents-wrapper .product__title .heading,
+.contents-wrapper .card__heading {
   font-size: var(--font-l);
 }
 
@@ -1518,16 +1545,37 @@ body,
   overflow: hidden;
 }
 
+.contents-wrapper .price {
+  font-size: 1rem;
+  text-align: right;
+}
 
-/*  veriation
+/*  veriation / buy button
 ---------------------------------------------------------------*/
 
 .contents-wrapper .card-information > *:not(.visually-hidden:first-child) + *:not(.rating) {
   margin-top: 0;
 }
 
+.contents-wrapper .card-information .product-form__input,
+.contents-wrapper .card-information .variant__item,
+.contents-wrapper .shopify-payment-button,
+.contents-wrapper .card-information .product-form {
+  margin-top: var(--margin-s) !important;
+}
+
 .contents-wrapper .product-form__input {
   margin-bottom: 0;
+}
+
+.contents-wrapper .shopify-payment-button {
+
+}
+
+.contents-wrapper .card-information .product-form .product-form__submit {
+  color: #fff;
+  border-color: rgb(var(--color-black));
+  background-color: rgb(var(--color-black));
 }
 
 
@@ -1543,6 +1591,12 @@ body,
   border-radius: var(--border-radius-box);
   background-color: rgb(var(--color-gray));
   position: relative;
+}
+
+@media screen and (max-width: 989px) {
+  .contents-wrapper .product-list {
+    gap: var(--margin) !important;
+  }
 }
 
 
@@ -1597,6 +1651,16 @@ body,
   color: #fff;
   background-color: rgb(var(--color-primary));
 }
+
+@media screen and (max-width: 989px) {
+  .contents-wrapper .product-ranking {
+    padding-bottom: 0;;
+  }
+  .contents-wrapper .product-ranking .product__item {
+    top: 0 !important;
+  }
+}
+
 
 /*  collection page
 ---------------------------------------------------------------*/
@@ -2102,8 +2166,18 @@ body,
 }
 
 
+/*===============================================================
 
+	subscription
 
+===============================================================*/
+#boxContent {
+  display: none;
+}
+
+.contents-wrapper #boxContent {
+  background-color: #fff;
+}
 
 
 #boxContent .grid-collection > * {
