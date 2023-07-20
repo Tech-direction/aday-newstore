@@ -2220,7 +2220,7 @@ html.js {
 }
 
 .contents-wrapper #boxContent .grid-collection .grid-product > *,
-.contents-wrapper #boxContent .grid-collection .grid-product > : first-child > * {
+.contents-wrapper #boxContent .grid-collection .grid-product > :first-child > * {
   margin: 0 !important;
   padding: 0 !important;
 }
