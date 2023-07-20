@@ -2274,6 +2274,12 @@ body,
   .contents-wrapper .cart-items.table th {
     padding: 0 1em 1em !important;
   }
+  .contents-wrapper .cart-item {
+    padding: 1em;
+  }
+  .contents-wrapper .cart-item td {
+    padding: 0;
+  }
 }
 
 /*  cart__footer
