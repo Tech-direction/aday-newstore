@@ -538,6 +538,7 @@ html {
 
 .contents-wrapper .quantity .quantity__button svg {
   width: var(--font-s);
+  color: rgb(var(--color-black));
 }
 
 .contents-wrapper .quantity .quantity__button:focus,
