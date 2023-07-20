@@ -1019,7 +1019,7 @@ body,
 ---------------------------------------------------------------*/
 
 .contents-wrapper .footer__content-top .grid > .grid__item {
-  width: 100%;
+  width: 100% !important;
 }
 
 .contents-wrapper .footer-block__image-wrapper {
