@@ -2205,6 +2205,8 @@ html.js {
 /*  address
 ---------------------------------------------------------------*/
 .contents-wrapper #boxContent .grid-collection .grid-product {
+  padding: var(--margin);
+  border-radius: var(--border-radius-box);
   background-color: rgb(var(--color-gray));
 }
 
