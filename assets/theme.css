@@ -2213,6 +2213,10 @@ body,
   margin-top: 0 !important;
 }
 
+.contents-wrapper .cart-items .cart-item cart-remove-button {
+  margin: 0;
+}
+
 /*  cart__footer
 ---------------------------------------------------------------*/
 
