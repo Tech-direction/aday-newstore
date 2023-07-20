@@ -85,6 +85,15 @@ html {
   text-align: center;
 }
 
+.contents-wrapper .caption-large,
+.contents-wrapper .customer .field input, 
+.contents-wrapper .customer select,
+.contents-wrapper .field__input,
+.contents-wrapper .form__label,
+.contents-wrapper .select__select {
+  font-size: 1rem;
+}
+
 @media screen and (max-width: 989px) {
   body,
   html {
@@ -2184,6 +2193,15 @@ body,
 .contents-wrapper .customer .address-list .grid__item .address_delete .icon-wrap svg {
   transform: scale(.8);
 }
+
+
+/*===============================================================
+
+	cart
+
+===============================================================*/
+
+
 
 
 /*===============================================================
