@@ -2212,6 +2212,12 @@ body,
 /*  cart__footer
 ---------------------------------------------------------------*/
 
+.contents-wrapper .cart__footer {
+  margin-top: var(--margin-l);
+  padding: 0;
+  text-align: center;
+}
+
 .contents-wrapper .cart__footer .cart__blocks {
   width: 100%;
 }
