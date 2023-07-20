@@ -2234,6 +2234,10 @@ body,
   
 }
 
+.contents-wrapper .cart-items  .cart-item__error {
+  margin-top: 0;
+}
+
 /*  cart__footer
 ---------------------------------------------------------------*/
 
