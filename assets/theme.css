@@ -547,8 +547,9 @@ html {
 }
 
 .contents-wrapper .quantity .quantity__button {
-  min-width: none;
-  min-height: none;
+  width: calc(4.5rem / var(--font-body-scale));
+  min-width: auto;
+  min-height: auto;
 }
 
 .contents-wrapper .quantity .quantity__button svg {
