@@ -2218,10 +2218,23 @@ body,
   text-align: center;
 }
 
-.contents-wrapper .totals,
+.contents-wrapper .totals {
+  justify-content: center;
+}
+
+.contents-wrapper .totals .totals__subtotal {
+  font-size: 1rem;
+}
+
+.contents-wrapper .totals .totals__subtotal-value {
+  font-size: var(--font-l);
+}
+
 .contents-wrapper .tax-note {
   text-align: center;
 }
+
+
 
 .contents-wrapper .cart__footer .cart__blocks {
   width: 100%;
