@@ -2229,7 +2229,10 @@ html.js {
   margin-top: 0 !important;
 }
 
-
+.contents-wrapper #boxContent .grid-collection .grid-product .jXLjZO {
+  width: 100%;
+  display: block;
+}
 
 
 
@@ -2274,11 +2277,7 @@ html.js {
   max-height: none !important;
 }
 
-#boxContent .grid-collection .jXLjZO {
-  display: block;
-  padding: 0;
-  width: 100%;
-}
+
 
 .huckleberry-subscription-list-color {
   background-color: #eee;
