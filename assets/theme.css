@@ -2209,6 +2209,10 @@ body,
   
 }
 
+.contents-wrapper .cart-items .price {
+  margin-top: 0;
+}
+
 /*  cart__footer
 ---------------------------------------------------------------*/
 
