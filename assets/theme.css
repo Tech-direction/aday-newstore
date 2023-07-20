@@ -2229,6 +2229,10 @@ html.js {
   margin-top: 0 !important;
 }
 
+.contents-wrapper #boxContent .grid-collection .grid-product >  :first-child * {
+  line-height: 0;
+}
+
 .contents-wrapper #boxContent .grid-collection .grid-product .price__pricing-group > :first-child {
   margin-bottom: var(--margin-s) !important;
 }
