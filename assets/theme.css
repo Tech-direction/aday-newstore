@@ -2205,6 +2205,10 @@ html.js.wf-poppins-n1-active {
   font-size: 1rem;
 }
 
+.contents-wrapper #boxContent .Polaris-FormLayout__Item  select {
+  
+}
+
 @media (min-width: 40em) {
   html.js.wf-poppins-n1-active,
   html.js.wf-poppins-n1-active body {
@@ -2258,6 +2262,7 @@ html.js.wf-poppins-n1-active {
 
 .contents-wrapper #boxContent .grid-collection .grid-product .jXLjZO {
   width: 100%;
+  border-color: rgb(var(--color-border));
   display: block;
 }
 
