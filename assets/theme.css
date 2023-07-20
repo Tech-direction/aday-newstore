@@ -1459,7 +1459,7 @@ body,
   padding-top: 0;
 }
 
-.contents-wrapper .article-wrapper .article-template__content .section .section {
+.contents-wrapper .article-wrapper .article-template__content .section + .section {
   margin-top: var(--margin-l);
 }
 
