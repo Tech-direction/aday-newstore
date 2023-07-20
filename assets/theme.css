@@ -2265,6 +2265,12 @@ body,
   margin-top: 0;
 }
 
+@media screen and (max-width: 749px) {
+ .contents-wrapper .cart-item {
+   margin-bottom: 0;
+ }
+}
+
 /*  cart__footer
 ---------------------------------------------------------------*/
 
