@@ -2210,7 +2210,9 @@ html.js {
   background-color: rgb(var(--color-gray));
 }
 
-
+.contents-wrapper #boxContent .grid-collection .grid-product .price__pricing-group {
+  font-size: var(--font-l);
+}
 
 
 
