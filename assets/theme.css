@@ -2221,6 +2221,10 @@ body,
   align-items: center;
 }
 
+.contents-wrapper .cart-items .product-option {
+  font-size: 1rem;
+}
+
 /*  cart__footer
 ---------------------------------------------------------------*/
 
