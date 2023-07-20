@@ -2230,7 +2230,7 @@ html.js {
 }
 
 .contents-wrapper #boxContent .grid-collection .grid-product .price__pricing-group > :first-child {
-  margin-bottom: var(--margin-s);
+  margin-bottom: var(--margin-s) !important;
 }
 
 .contents-wrapper #boxContent .grid-collection .grid-product .jXLjZO {
