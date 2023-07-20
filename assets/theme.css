@@ -2266,9 +2266,10 @@ body,
 }
 
 @media screen and (max-width: 749px) {
- .contents-wrapper .cart-items thead tr,
+  .contents-wrapper .cart-items thead tr,
   .contents-wrapper .cart-item {
-   margin-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
  }
   .contents-wrapper .cart-items.table th {
     padding: 0 1em 1em !important;
