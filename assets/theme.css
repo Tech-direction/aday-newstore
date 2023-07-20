@@ -546,6 +546,11 @@ html {
   overflow: hidden;
 }
 
+.contents-wrapper .quantity .quantity__button {
+  min-width: none;
+  min-height: none;
+}
+
 .contents-wrapper .quantity .quantity__button svg {
   width: var(--font-s);
   color: rgb(var(--color-black));
