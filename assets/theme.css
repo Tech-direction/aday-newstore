@@ -2197,6 +2197,30 @@ body,
   padding: 0 var(--margin);
 }
 
+
+/*  address
+---------------------------------------------------------------*/
+.contents-wrapper #boxContent .grid-collection .grid-product {
+  background-color: rgb(var(--color-gray));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #boxContent .grid-collection > * {
   padding: 20px;
   text-align: center;
