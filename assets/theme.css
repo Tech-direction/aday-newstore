@@ -2280,6 +2280,15 @@ body,
   .contents-wrapper .cart-item td {
     padding: 0;
   }
+  .contents-wrapper .cart-item tbody tr:after {
+    content: ' ';
+    width: 100%;
+    border-bottom: 1px solid rgb(var(--color-border));
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
 }
 
 /*  cart__footer
