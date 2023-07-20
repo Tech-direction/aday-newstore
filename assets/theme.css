@@ -2201,6 +2201,14 @@ body,
 
 ===============================================================*/
 
+.contents-wrapper .title-wrapper-with-link {
+  display: block;
+}
+
+.contents-wrapper .cart-items {
+  
+}
+
 /*  cart__footer
 ---------------------------------------------------------------*/
 
