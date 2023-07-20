@@ -1527,6 +1527,11 @@ body,
   transform: none;
 }
 
+.contents-wrapper .article-wrapper .article-template__content iframe {
+  width: 100%;
+  border: none;
+}
+
 /*===============================================================
 
 	collection contents / product
