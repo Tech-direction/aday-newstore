@@ -541,6 +541,11 @@ html {
   color: rgb(var(--color-black));
 }
 
+.contents-wrapper .quantity .quantity__button.disabled svg {
+  color: rgb(var(--color-border));
+}
+
+
 .contents-wrapper .quantity .quantity__button:focus,
 .contents-wrapper .quantity .quantity__input:focus {
   z-index: 0;
