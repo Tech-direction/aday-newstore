@@ -2247,6 +2247,7 @@ body,
 
 .contents-wrapper .cart-items .cart-item__quantity-wrapper {
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .contents-wrapper .cart-items .product-option {
