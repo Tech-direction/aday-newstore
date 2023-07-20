@@ -367,7 +367,8 @@ html {
 
 .contents-wrapper variant-selects select,
 .contents-wrapper .product__item .product-form__quantity .quantity input,
-.contents-wrapper .field input {
+.contents-wrapper .field input,
+.contents-wrapper .quantity__input{
   font-size: 1rem;
 }
 
