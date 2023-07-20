@@ -2271,7 +2271,7 @@ body,
    margin-bottom: 0;
  }
   .contents-wrapper .cart-items.table th {
-    padding: 0 1em 1em;
+    padding: 0 1em 1em !important;
   }
 }
 
