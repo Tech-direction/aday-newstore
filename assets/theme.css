@@ -2202,8 +2202,13 @@ html.js {
 }
 
 
-/*  address
+/*  collection
 ---------------------------------------------------------------*/
+
+.contents-wrapper #boxContent .grid-collection {
+  gap: var(--margin-l);
+}
+
 .contents-wrapper #boxContent .grid-collection .grid-product {
   padding: var(--margin);
   border-radius: var(--border-radius-box);
