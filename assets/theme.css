@@ -2278,7 +2278,7 @@ body,
     padding: 1em;
   }
   .contents-wrapper .cart-item td {
-    padding: 0;
+    padding: 0 !important;
   }
   .contents-wrapper .cart-items tbody tr:after {
     content: ' ';
