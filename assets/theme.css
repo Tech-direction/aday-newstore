@@ -2371,11 +2371,15 @@ html.js.wf-poppins-n1-active {
 }
 
 .contents-wrapper #boxContent .Polaris-ResourceList .Polaris-ResourceItem__ListItem {
- border-radius: none;
+ border-radius: 0;
 }
 
 .contents-wrapper #boxContent .Polaris-ResourceList .Polaris-ResourceItem__ListItem + .Polaris-ResourceItem__ListItem {
  border-top: 1px solid rgb(var(--color-border));
+}
+
+.contents-wrapper #boxContent .Polaris-ResourceList  .Polaris-ResourceItem:hover {
+  background-color: transparent;
 }
 
 .contents-wrapper #boxContent .sc-eCImvq {
