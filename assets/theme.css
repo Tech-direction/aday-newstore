@@ -2217,6 +2217,10 @@ body,
   margin: 0;
 }
 
+.contents-wrapper .cart-items .cart-item__quantity-wrapper {
+  align-items: center;
+}
+
 /*  cart__footer
 ---------------------------------------------------------------*/
 
