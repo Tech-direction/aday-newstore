@@ -2242,7 +2242,7 @@ body,
 }
 
 .contents-wrapper .cart__footer .cart__ctas {
-  margin-top: var(--margin);
+  margin-top: var(--margin-l);
   display: block;
 }
 
