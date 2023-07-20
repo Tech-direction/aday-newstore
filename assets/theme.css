@@ -2231,7 +2231,7 @@ body,
 }
 
 .contents-wrapper .tax-note {
-  margin: var(--margin);
+  margin: var(--margin) 0;
   text-align: center;
 }
 
@@ -2242,11 +2242,13 @@ body,
 }
 
 .contents-wrapper .cart__footer .cart__ctas {
+  margin-top: var(--margin);
   display: block;
 }
 
 .contents-wrapper .cart__footer .cart__checkout-button {
   width: fit-content;
+  margin-top: 0;
 }
 
 
