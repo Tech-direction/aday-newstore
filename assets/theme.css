@@ -2208,6 +2208,9 @@ body,
   width: 100%;
 }
 
+.contents-wrapper .cart__footer .cart__checkout-button {
+  margin-top: 0;
+}
 
 
 /*===============================================================
