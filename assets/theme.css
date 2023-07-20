@@ -2225,6 +2225,10 @@ body,
   font-size: 1rem;
 }
 
+.contents-wrapper .cart-items  .cart-item__quantity .cart-item__quantity-wrapper {
+  max-width: 10em;
+}
+
 /*  cart__footer
 ---------------------------------------------------------------*/
 
