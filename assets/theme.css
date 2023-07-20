@@ -2247,15 +2247,18 @@ body,
 
 .contents-wrapper .cart-items .cart-item__quantity-wrapper {
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .contents-wrapper .cart-items .product-option {
   font-size: 1rem;
 }
 
-.contents-wrapper .cart-items  .cart-item__quantity .cart-item__quantity-wrapper {
-  
+.contents-wrapper .cart-items  .cart-item__quantity .cart-item__quantity-wrapper .quantity {
+  flex: 1;
+}
+
+.contents-wrapper .cart-items  .cart-item__quantity .cart-item__quantity-wrapper cart-remove-button {
+  flex: 0;
 }
 
 .contents-wrapper .cart-items  .cart-item__error {
