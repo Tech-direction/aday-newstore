@@ -1895,6 +1895,10 @@ body,
   border: 0;
 }
 
+.contents-wrapper .customer .table td .button svg {
+  color: #fff;
+}
+
 .contents-wrapper .customer .table tfoot td {
   padding: 1em 1em 0;
 }
