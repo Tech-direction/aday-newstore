@@ -2172,6 +2172,10 @@ body,
 
 ===============================================================*/
 
+html.js {
+  font-size: 16px;
+}
+
 .contents-wrapper #boxContent {
   background-color: #fff;
 }
