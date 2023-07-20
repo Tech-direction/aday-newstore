@@ -2215,23 +2215,25 @@ html.js {
   background-color: rgb(var(--color-gray));
 }
 
-.contents-wrapper #boxContent .grid-collection .grid-product .price__pricing-group {
-  font-size: var(--font-l);
-}
-
 .contents-wrapper #boxContent .grid-collection .grid-product > *,
 .contents-wrapper #boxContent .grid-collection .grid-product >  :first-child > * {
   margin: 0 !important;
   padding: 0 !important;
 }
 
+.contents-wrapper #boxContent .grid-collection .grid-product >  :first-child * {
+  line-height: 0;
+}
+
+.contents-wrapper #boxContent .grid-collection .grid-product .price__pricing-group {
+  margin-top: var(--margin-s);
+  font-size: var(--font-l);
+}
+
 .contents-wrapper #boxContent .grid-collection .grid-product .price__pricing-group * {
   margin-top: 0 !important;
 }
 
-.contents-wrapper #boxContent .grid-collection .grid-product >  :first-child * {
-  line-height: 0;
-}
 
 .contents-wrapper #boxContent .grid-collection .grid-product .price__pricing-group > :first-child {
   margin-bottom: var(--margin-s) !important;
