@@ -1455,6 +1455,14 @@ body,
   margin-top: var(--margin-l);
 }
 
+.contents-wrapper .article-wrapper .article-template__content .section {
+  padding-top: 0;
+}
+
+.contents-wrapper .article-wrapper .article-template__content .section .section {
+  margin-top: var(--margin-l);
+}
+
 .contents-wrapper .article-wrapper .article-template__content p + div > img,
 .contents-wrapper .article-wrapper .article-template__content p + p > img,
 .contents-wrapper .article-wrapper .article-template__content p + img,
