@@ -2219,7 +2219,8 @@ html.js {
   font-size: var(--font-l);
 }
 
-.contents-wrapper #boxContent .grid-collection .grid-product > * {
+.contents-wrapper #boxContent .grid-collection .grid-product > *,
+.contents-wrapper #boxContent .grid-collection .grid-product >  :first-child > * {
   margin: 0 !important;
   padding: 0 !important;
 }
