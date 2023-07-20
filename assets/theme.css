@@ -1433,7 +1433,7 @@ body,
 
 /*  article content
 ---------------------------------------------------------------*/
-.contents-wrapper .article-wrapper {
+.contents-wrapper:not(.page) .article-wrapper {
   margin-top: var(--margin-section);
 }
 
