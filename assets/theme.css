@@ -2218,6 +2218,11 @@ body,
   text-align: center;
 }
 
+.contents-wrapper .totals,
+.contents-wrapper .tax-note {
+  text-align: center;
+}
+
 .contents-wrapper .cart__footer .cart__blocks {
   width: 100%;
 }
