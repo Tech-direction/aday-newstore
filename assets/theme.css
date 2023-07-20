@@ -2208,10 +2208,15 @@ body,
   width: 100%;
 }
 
+.contents-wrapper .cart__footer .cart__ctas {
+  display: block;
+}
+
 .contents-wrapper .cart__footer .cart__checkout-button {
   width: fit-content;
   margin-top: 0;
 }
+
 
 
 /*===============================================================
