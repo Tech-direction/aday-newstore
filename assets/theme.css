@@ -379,7 +379,10 @@ a,
 .contents-wrapper .customer .field input,
 .contents-wrapper .customer select,
 .huckleberry-subscription-list-color select,
-.huckleberry-subscription-list-color input {
+.huckleberry-subscription-list-color input,
+.contents-wrapper [data-theme-name=Dawn] .cf-field input:not([type=checkbox]):not([type=radio]),
+.contents-wrapper [data-theme-name=Dawn] .cf-field textarea,
+.contents-wrapper [data-theme-name=Dawn] .cf-field select{
   width: 100%;
   max-width: none !important;
   height: 3.5rem;
