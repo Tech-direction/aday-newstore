@@ -1073,13 +1073,11 @@ body,
   background-color: #fff;
 }
 
- .contents-wrapper .menu-drawer {
+@media screen and (max-width: 750px) {
+  .contents-wrapper .menu-drawer {
     width: 100vw;
     
   }
-
-@media screen and (min-width: 750px) {
- 
   .contents-wrapper .menu-drawer-container {
     padding: var(--margin);
   }
