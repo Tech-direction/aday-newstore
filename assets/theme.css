@@ -199,6 +199,7 @@ a,
 ===============================================================*/
 
 /*.contents-wrapper button,*/
+.button,
 .contents-wrapper .button,
 .contents-wrapper .btn,
 .contents-wrapper .shopify-payment-button__button,
@@ -2950,6 +2951,7 @@ html.js.wf-poppins-n1-active {
   display: none;
 }
 
+.huckleberry-subscription-list-color #root .page .product-form__cart-submit
 
 
 
