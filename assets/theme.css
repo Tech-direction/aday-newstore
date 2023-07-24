@@ -1073,11 +1073,13 @@ body,
   background-color: #fff;
 }
 
-@media screen and (min-width: 750px) {
-  .contents-wrapper .menu-drawer {
+ .contents-wrapper .menu-drawer {
     width: 100vw;
     
   }
+
+@media screen and (min-width: 750px) {
+ 
   .contents-wrapper .menu-drawer-container {
     padding: var(--margin);
   }
@@ -1094,7 +1096,7 @@ body,
     gap: var(--margin-s);
   }
   .contents-wrapper .menu-drawer__utility-links .list {
-
+    flex-wrap: wrap;
     justify-content: center;
   }
 }
