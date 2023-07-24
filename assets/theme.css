@@ -1088,6 +1088,11 @@ body,
   .contents-wrapper .menu-drawer__menu li {
     margin: 0;
   }
+  .contents-wrapper .menu-drawer__menu,
+  .contents-wrapper .menu-drawer__utility-links .list {
+    display: flex;
+    gap: var(--margin-s);
+  }
 }
 
 
