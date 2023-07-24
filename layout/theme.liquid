@@ -310,6 +310,11 @@
     {% sections 'header-group' %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+
+      {% if page or template contains 'account' %}
+        {% render 'customer-navigation' %}
+      {% endif %}
+      
       {{ content_for_layout }}
     </main>
 
