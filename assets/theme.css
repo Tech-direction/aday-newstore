@@ -537,7 +537,8 @@ a,
 .huckleberry-subscription-list-color .form-vertical .grid__item:has(input:focus) label,
 .huckleberry-subscription-list-color .form-vertical .grid__item:has(input:not(:placeholder-shown)) label,
 .huckleberry-subscription-list-color .form-vertical .grid__item:has(input:-webkit-autofill ) label,
-.huckleberry-subscription-list-color .form-vertical .grid__item:has(input:focus) label {
+.huckleberry-subscription-list-color .form-vertical .grid__item:has(input:focus) label,
+[data-theme-name=Dawn] .contents-wrapper .cf-field label:not(input:focus ~ .cf-field ){
   font-size: var(--font-s);
   top: .5em;
   transform: none;
