@@ -206,7 +206,7 @@ html {
 .huckleberry-subscription-list-color #root .huckleberry-subscription-detail-order-btn,
 .huckleberry-subscription-list-color #root .huckleberry-subscription-detail-payment-btn,
 .huckleberry-subscription-list-color #root .huckleberry-subscription-detail-delivery-btn,
-.huckleberry-subscription-list-color #root .micromo .btn {
+.huckleberry-subscription-list-color #root .micromodal .btn {
   height: 3.5rem;
   min-height: auto;
   margin-bottom: 0;
