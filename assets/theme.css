@@ -418,6 +418,7 @@ html {
 /*  focus common
 ---------------------------------------------------------------*/
 
+*:focus-visible,
 .contents-wrapper *:focus-visible,
 .contents-wrapper .field__input:focus,
 .contents-wrapper .select__select:focus,
