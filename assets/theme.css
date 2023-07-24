@@ -1073,7 +1073,10 @@ body,
   background-color: #fff;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 989px) {
+  .contents-wrapper .header-drawer {
+    margin-left: 0;
+  }
   .contents-wrapper .menu-drawer {
     width: 100vw;
   }
