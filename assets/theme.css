@@ -2212,6 +2212,10 @@ body,
   display: block;
 }
 
+.contents-wrapper .cf-form-step {
+  
+}
+
 .contents-wrapper .cf-form-actions {
   margin-top: var(--margin);
   text-align: center;
@@ -2221,7 +2225,7 @@ body,
   margin: 0;
 }
 
-.contents-wrapper .cf-react-target .cf-cancel {
+.contents-wrapper .cf-form-actions .cf-cancel {
   display: none;
 }
 
