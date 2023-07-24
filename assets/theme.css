@@ -2764,6 +2764,7 @@ html.js.wf-poppins-n1-active {
 }
 
 .huckleberry-subscription-list-color #root .wrap .content.content-right > section {
+  margin: var(--margin-l) 0 0;
   padding: var(--margin) 0;
   border-top: 1px solid rgb(var(--color-border));
   border-bottom: 1px solid rgb(var(--color-border));
