@@ -547,6 +547,7 @@ a,
 
 .contents-wrapper .field_select .select_label {
   font-size: var(--font-s);
+  color: rgb(var(--color-border));
   letter-spacing: 0;
   position: absolute;
   top: 50%;
