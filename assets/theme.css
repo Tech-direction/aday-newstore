@@ -406,6 +406,7 @@ a,
   border: 1px solid rgb(var(--color-border));
   background-color: #fff;
   transition: all var(--duration-long) ease;
+  box-shadow: none;
 }
 
 .huckleberry-subscription-list-color select,
