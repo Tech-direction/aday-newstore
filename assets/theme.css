@@ -521,9 +521,10 @@ a,
   transform: none;
 }
 
-.huckleberry-subscription-list-color .form-vertical .grid__item:has(input:focus) label  {
+.huckleberry-subscription-list-color .form-vertical .grid__item:has(input:focus) label,
+.huckleberry-subscription-list-color .form-vertical .grid__item:has(input:not(:placeholder-shown)) label,
+.huckleberry-subscription-list-color .form-vertical .grid__item:has(input:-webkit-autofill ) label  {
   pointer-events: none;
-  position: absolute;
   transition: top var(--duration-short) ease,font-size var(--duration-short) ease;
 }
 
