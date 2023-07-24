@@ -2694,7 +2694,10 @@ html.js.wf-poppins-n1-active {
   display: block;
 }
 
-.huckleberry-subscription-detail-btn {
+.huckleberry-subscription-detail-delivery-btn,
+.huckleberry-subscription-detail-order-btn,
+.huckleberry-subscription-detail-payment-btn,
+.huckleberry-subscription-detail-schedule-btn {
   padding: 0;
   border: none;
 }
@@ -2779,10 +2782,11 @@ html.js.wf-poppins-n1-active {
 
 .huckleberry-subscription-list-color #root .wrap .content.content-right > section {
   margin: var(--margin-l) 0 0;
-  padding: var(--margin) 0;
+  padding: var(--margin) 0 calc(var(--margin)+1rem);
   border-top: 1px solid rgb(var(--color-border));
   border-bottom: 1px solid rgb(var(--color-border));
   display: flex;
+  position: relative;
 }
 
 .huckleberry-subscription-detail-delivery,
@@ -2798,6 +2802,12 @@ html.js.wf-poppins-n1-active {
   margin: 0;
   font-size: 1rem;
   font-weight: bolder;
+}
+
+.huckleberry-subscription-list-color #root .wrap .content.content-right > section .huckleberry-subscription-detail-btn.back {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .huckleberry-subscription-detail-delivery main,
