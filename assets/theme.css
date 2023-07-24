@@ -446,10 +446,7 @@ a,
 .contents-wrapper .localization-form__select:focus.localization-form__select:after,
 [data-theme-name=Dawn] .contents-wrapper .cf-field input:not([type=checkbox]):not([type=radio]):hover,
 [data-theme-name=Dawn] .contents-wrapper .cf-field textarea:hover,
-[data-theme-name=Dawn] .contents-wrapper .cf-field select:hover,
-[data-theme-name=Dawn] .contents-wrapper .cf-field input:not([type=checkbox]):not([type=radio]):focus,
-[data-theme-name=Dawn] .contents-wrapper .cf-field textarea:focus,
-[data-theme-name=Dawn] .contents-wrapper .cf-field select:focus{
+[data-theme-name=Dawn] .contents-wrapper .cf-field select:hover,{
   outline: none;
   outline-offset: 0;
   box-shadow: none;
@@ -460,7 +457,10 @@ a,
 .contents-wrapper .quantity:has(button:focus),
 .contents-wrapper .field:has(input:focus),
 .huckleberry-subscription-list-color select:focus,
-.huckleberry-subscription-list-color input:focus {
+.huckleberry-subscription-list-color input:focus,
+[data-theme-name=Dawn] .contents-wrapper .cf-field input:not([type=checkbox]):not([type=radio]):focus,
+[data-theme-name=Dawn] .contents-wrapper .cf-field textarea:focus,
+[data-theme-name=Dawn] .contents-wrapper .cf-field select:focus {
   box-shadow: 0 0 0 calc(0.01rem + var(--inputs-border-width)) rgba(var(--color-black));
 }
 
