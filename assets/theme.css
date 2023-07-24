@@ -2220,6 +2220,7 @@ body,
 
 .contents-wrapper .cf-form-inner .cf-field-container[data-cf-column-width="6"] {
   width: clac((100% - var(--margin-s))/2);
+  flex: 1;
 }
 
 .contents-wrapper .cf-form-inner .cf-fields-container .cf-field {
