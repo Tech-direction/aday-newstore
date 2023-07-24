@@ -2218,6 +2218,10 @@ body,
   gap: var(--margin-s);
 }
 
+.contents-wrapper .cf-form-inner .cf-field-container[data-cf-column-width="6"] {
+  width: clac((100% - var(--margin-s))/2);
+}
+
 .contents-wrapper .cf-form-inner .cf-fields-container .cf-field {
   margin: 0;
   padding: 0;
