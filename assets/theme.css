@@ -200,6 +200,7 @@ a,
 
 /*.contents-wrapper button,*/
 .button,
+.btn,
 .contents-wrapper .button,
 .contents-wrapper .btn,
 .contents-wrapper .shopify-payment-button__button,
@@ -225,6 +226,8 @@ a,
 
 .button:before,
 .button:after,
+.btn:before,
+.btn:after,
 .contents-wrapper .button:before,
 .contents-wrapper .shopify-challenge__button:before,
 .contents-wrapper .customer button:before,
