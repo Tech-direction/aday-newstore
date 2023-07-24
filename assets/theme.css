@@ -517,9 +517,9 @@ a,
 .huckleberry-subscription-list-color .form-vertical .grid__item input:focus,
 .huckleberry-subscription-list-color .form-vertical .grid__item input:not(:placeholder-shown),
 .huckleberry-subscription-list-color .form-vertical .grid__item inputt:-webkit-autofill,
-[data-theme-name=Dawn] .contents-wrapper .cf-field:has(input:not([type=checkbox]):not([type=radio]):focus),
-[data-theme-name=Dawn] .contents-wrapper .cf-field:has(input:not([type=checkbox]):not([type=radio]):not(:placeholder-shown)),
-[data-theme-name=Dawn] .contents-wrapper .cf-field:has(input:not([type=checkbox]):not([type=radio]):-webkit-autofill) {
+[data-theme-name=Dawn] .contents-wrapper .cf-field input:not([type=checkbox]):not([type=radio]):focus,
+[data-theme-name=Dawn] .contents-wrapper .cf-field input:not([type=checkbox]):not([type=radio]):not(:placeholder-shown),
+[data-theme-name=Dawn] .contents-wrapper .cf-field input:not([type=checkbox]):not([type=radio]):-webkit-autofill {
   padding: 1.5em 1em .5em;
 }
 
