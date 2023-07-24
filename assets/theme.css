@@ -2664,13 +2664,6 @@ html.js.wf-poppins-n1-active {
   flex: 1;
 }
 
-.huckleberry-subscription-list-color #root .wrap .content.content-left > :last-child {
-  width: fit-content;
-  padding: var(--margin);
-  border: 1px solid rgb(var(--color-border));
-  flex: none;
-}
-
 .huckleberry-subscription-list-color #root .wrap .content.content-left > :first-child article {
   margin: 0 !important;
   padding: var(--margin);
@@ -2682,6 +2675,18 @@ html.js.wf-poppins-n1-active {
   max-width: none;
   margin: 0;
 }
+
+.huckleberry-subscription-list-color #root .wrap .content.content-left > :last-child {
+  width: fit-content;
+  padding: var(--margin);
+  border: 1px solid rgb(var(--color-border));
+  flex: none;
+}
+
+.huckleberry-subscription-list-color #root .wrap .content.content-left > :last-child .huckleberry-subscription-detail-history-title {
+  font-size: 1rem;
+}
+
 
 
 /*
