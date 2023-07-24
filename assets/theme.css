@@ -486,7 +486,6 @@ a,
 .contents-wrapper .customer .field input:not(:placeholder-shown),
 .contents-wrapper .customer .field input:-webkit-autofill,
 .huckleberry-subscription-list-color .form-vertical .grid__item input:focus,
-.huckleberry-subscription-list-color .form-vertical .grid__item input:not(:placeholder-shown),
 .huckleberry-subscription-list-color .form-vertical .grid__item inputt:-webkit-autofill {
   padding: 1.5em 1em .5em;
 }
@@ -514,7 +513,6 @@ a,
 .contents-wrapper .customer .field input:not(:placeholder-shown) ~ label,
 .contents-wrapper .customer .field input:-webkit-autofill ~ label,
 .huckleberry-subscription-list-color .form-vertical .grid__item:has(input:focus) label,
-.huckleberry-subscription-list-color .form-vertical .grid__item:has(input:not(:placeholder-shown)) label,
 .huckleberry-subscription-list-color .form-vertical .grid__item:has(input:-webkit-autofill ) label {
   font-size: var(--font-s);
   top: .5em;
