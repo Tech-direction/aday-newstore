@@ -2881,25 +2881,27 @@ html.js.wf-poppins-n1-active {
 /*  mypage modal
 ---------------------------------------------------------------*/
 
-.micromodal-overlay [role=dialog] {
+.huckleberry-subscription-list-color #root .micromodal-overlay [role=dialog] {
   padding: var(--margin);
 }
 
-.micromodal h2 {
+.huckleberry-subscription-list-color #root .micromodal h2 {
   width: 100%;
   font-size: var(--font-l);
   text-align: center;
 }
 
-.micromodal .btn {
-  width: fit-content;
-  margin: var(--margin-s) auto 0 !important;
+.huckleberry-subscription-list-color #root .micromodal .btn {
+  width: auto;
+  height: auto;
+  margin: var(--margin-s) auto 0;
+  padding: .5em1rm;
   border: none;
 }
 
 .micromodal .btn.clear {
-  height: auto !important;
   
+  padding: 0;
   background-color: transparent;
 }
 
