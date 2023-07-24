@@ -1093,6 +1093,10 @@ body,
     display: flex;
     gap: var(--margin-s);
   }
+  .contents-wrapper .menu-drawer__utility-links .list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 
