@@ -2682,7 +2682,7 @@ html.js.wf-poppins-n1-active {
 }
 
 .huckleberry-subscription-list-color #root:has(.page) {
-  max-width: var(--width-max);
+  max-width: var(--width-max-m);
 }
 
 
