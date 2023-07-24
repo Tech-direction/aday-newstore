@@ -1143,7 +1143,7 @@ body,
 ===============================================================*/
 
 .contents-wrapper .section-heading-wrapper,
-.huckleberry-subscription-list-color #root {
+.huckleberry-subscription-list-color #root:has(:not(.page)) {
   display: flex;
   /*flex-wrap: wrap;*/
   column-gap: var(--margin-section);
