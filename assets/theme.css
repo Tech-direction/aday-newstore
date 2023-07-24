@@ -1074,7 +1074,7 @@ body,
 }
 
 @media screen and (max-width: 989px) {
-  .contents-wrapper .header-drawer {
+  .contents-wrapper header-drawer {
     margin-left: 0;
   }
   .contents-wrapper .menu-drawer {
