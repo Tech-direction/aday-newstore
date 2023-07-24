@@ -16,7 +16,7 @@
   }
 {%- endstyle -%}
 
-{% render 'customer-navigation' %}
+{% comment %}{% render 'customer-navigation' %}{% endcomment %}
 
 {%- paginate customer.addresses by 5 -%}
   <div class="customer addresses section-{{ section.id }}-padding page-width" data-customer-addresses>
