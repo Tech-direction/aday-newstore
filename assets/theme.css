@@ -481,7 +481,9 @@ a,
 .contents-wrapper .field input:focus,
 .contents-wrapper .field__input:focus,
 .contents-wrapper .field__input:not(:placeholder-shown),
-.contents-wrapper .field__input:-webkit-autofill, .customer .field input:focus, .customer .field input:not(:placeholder-shown),
+.contents-wrapper .field__input:-webkit-autofill,
+.contents-wrapper .customer .field input:focus,
+.contents-wrapper .customer .field input:not(:placeholder-shown),
 .contents-wrapper .customer .field input:-webkit-autofill,
 .huckleberry-subscription-list-color .medium-up--one-half input:focus {
   padding: 1.5em 1em .5em;
