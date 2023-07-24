@@ -1076,10 +1076,6 @@ body,
 @media screen and (max-width: 750px) {
   .contents-wrapper .menu-drawer {
     width: 100vw;
-    
-  }
-  .contents-wrapper .menu-drawer-container {
-    padding: var(--margin);
   }
   .contents-wrapper .menu-drawer__navigation,
   .contents-wrapper .menu-drawer__utility-links {
