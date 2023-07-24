@@ -2697,8 +2697,7 @@ html.js.wf-poppins-n1-active {
 
 .huckleberry-subscription-list-color #root a:has(.detail-btn),
 .huckleberry-subscription-list-color #root a:has(.back-btn),
-.huckleberry-subscription-list-color #root a:has(.huckleberry-subscription-detail-btn),
-.huckleberry-subscription-list-color #root .huckleberry-subscription-detail-order-btn {
+.huckleberry-subscription-list-color #root a:has(.huckleberry-subscription-detail-btn) {
   width: fit-content;
   margin: var(--margin-s) auto 0;
   text-decoration: none;
