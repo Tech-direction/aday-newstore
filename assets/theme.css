@@ -1138,7 +1138,8 @@ body,
 }
 
 .contents-wrapper .section-heading-wrapper .content__item,
-.huckleberry-subscription-list-color #root section {
+.huckleberry-subscription-list-color #root section,
+.huckleberry-subscription-list-color #root wrap {
   width: calc(100% - var(--margin-section));
   max-width: calc(var(--width-max-m) - var(--margin) * 2);
   margin-right: auto;
