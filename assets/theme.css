@@ -412,6 +412,7 @@ a,
 
 .contents-wrapper .cf-field[data-cf-invalid=true]:not([data-cf-field-type=repeating_group]) {
   border-color: rgb(var(--color-border));
+  background-color: transparent;
 }
 
 .huckleberry-subscription-list-color select,
