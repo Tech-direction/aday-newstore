@@ -2212,27 +2212,28 @@ body,
   display: block;
 }
 
-.contents-wrapper .cf-fields-container {
+.contents-wrapper .cf-form-inner .cf-fields-container {
   width: 100%;
   margin: 0;
+  gap: var(--margin-s);
 }
 
-.contents-wrapper .cf-fields-container .cf-field {
+.contents-wrapper .cf-form-inner .cf-fields-container .cf-field {
   margin: 0;
   padding: 0;
   border: none;
 }
 
-.contents-wrapper .cf-form-actions {
+.contents-wrapper .cf-form-inner .cf-form-actions {
   margin-top: var(--margin);
   text-align: center;
 }
 
-.contents-wrapper .cf-form-actions .cf-submit-form {
+.contents-wrapper .cf-form-inner .cf-form-actions .cf-submit-form {
   margin: 0;
 }
 
-.contents-wrapper .cf-form-actions .cf-cancel {
+.contents-wrapper .cf-form-inner .cf-form-actions .cf-cancel {
   display: none;
 }
 
