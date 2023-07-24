@@ -1183,13 +1183,14 @@ body,
 ===============================================================*/
 
 .contents-wrapper .section-heading-wrapper,
-.huckleberry-subscription-list-color #root:has(.grid__item) {
+.huckleberry-subscription-list-color #root {
   display: flex;
   /*flex-wrap: wrap;*/
   column-gap: var(--margin-section);
 }
 
-.huckleberry-subscription-list-color #root:has(.page) {
+.huckleberry-subscription-list-color #root:has(.page),
+.huckleberry-subscription-list-color #root:has(.grid__item){
   display: block;
 }
 
