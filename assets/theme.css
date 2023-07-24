@@ -508,6 +508,12 @@ a,
   transform: none;
 }
 
+.huckleberry-subscription-list-color .medium-up--one-half label {
+  pointer-events: none;
+  position: absolute;
+  transition: top var(--duration-short) ease,font-size var(--duration-short) ease;
+}
+
 .contents-wrapper .button:disabled,
 .contents-wrapper .button[aria-disabled=true],
 .contents-wrapper .button.disabled,
