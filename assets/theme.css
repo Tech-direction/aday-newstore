@@ -513,7 +513,8 @@ a,
 
 .contents-wrapper .field__label,
 .contents-wrapper .customer .field label,
-.huckleberry-subscription-list-color .form-vertical .grid__item label {
+.huckleberry-subscription-list-color .form-vertical .grid__item label,
+[data-theme-name=Dawn] .contents-wrapper .cf-field label {
   font-size: 1rem;
   color: rgb(var(--color-border));
   line-height: 1;
