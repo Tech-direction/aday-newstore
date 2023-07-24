@@ -2212,6 +2212,11 @@ body,
   display: block;
 }
 
+.contents-wrapper .cf-react-target .cf-cancel {
+  display: none;
+}
+
+
 
 /*  address
 ---------------------------------------------------------------*/
