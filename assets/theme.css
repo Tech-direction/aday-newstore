@@ -224,6 +224,8 @@ a,
   transition: all var(--duration-long) ease;
 }
 
+.button:before,
+.button:after,
 .contents-wrapper .button:before,
 .contents-wrapper .shopify-challenge__button:before,
 .contents-wrapper .customer button:before,
