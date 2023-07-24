@@ -367,7 +367,8 @@ html {
 .contents-wrapper .contents-wrapper .select__select,
 .contents-wrapper .quantity,
 .contents-wrapper .customer .field input,
-.contents-wrapper .customer select {
+.contents-wrapper .customer select,
+.huckleberry-subscription-list-color select {
   width: 100%;
   max-width: none !important;
   height: 3.5rem;
