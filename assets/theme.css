@@ -1081,6 +1081,13 @@ body,
   .contents-wrapper .menu-drawer-container {
     padding: var(--margin);
   }
+  .contents-wrapper .menu-drawer__navigation,
+  .menu-drawer__utility-links {
+    padding: var(--margin);
+  }
+  .menu-drawer__utility-links {
+    
+  }
   .contents-wrapper .menu-drawer__menu li {
     margin: 0;
   }
