@@ -446,7 +446,10 @@ a,
 .contents-wrapper .localization-form__select:focus.localization-form__select:after,
 [data-theme-name=Dawn] .contents-wrapper .cf-field input:not([type=checkbox]):not([type=radio]):hover,
 [data-theme-name=Dawn] .contents-wrapper .cf-field textarea:hover,
-[data-theme-name=Dawn] .contents-wrapper .cf-field select:hover{
+[data-theme-name=Dawn] .contents-wrapper .cf-field select:hover,
+[data-theme-name=Dawn] .contents-wrapper .cf-field input:not([type=checkbox]):not([type=radio]):focus,
+[data-theme-name=Dawn] .contents-wrapper .cf-field textarea:focus,
+[data-theme-name=Dawn] .contents-wrapper .cf-field select:focus{
   outline: none;
   outline-offset: 0;
   box-shadow: none;
