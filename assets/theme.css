@@ -2820,13 +2820,16 @@ html.js.wf-poppins-n1-active {
   font-weight: bolder;
 }
 
+.huckleberry-subscription-list-color #root .wrap .content.content-right > section .huckleberry-subscription-detail-btn-group:has(.huckleberry-subscription-detail-btn.cancel) {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
 .huckleberry-subscription-list-color #root .wrap .content.content-right > section .huckleberry-subscription-detail-btn.cancel {
   min-width: 10em;
   border: 1px solid rgb(var(--color-border));
   background-color: transparent;
-  position: absolute;
-  right: 0;
-  bottom: 0;
 }
 
 .huckleberry-subscription-list-color #root .wrap .content.content-right > section .huckleberry-subscription-detail-btn.back {
