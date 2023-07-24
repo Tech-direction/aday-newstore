@@ -515,7 +515,7 @@ a,
 .contents-wrapper .customer .field input:-webkit-autofill ~ label,
 .huckleberry-subscription-list-color .form-vertical .grid__item:has(input:focus) label,
 .huckleberry-subscription-list-color .form-vertical .grid__item:has(input:not(:placeholder-shown)) label,
-.huckleberry-subscription-list-color .form-vertical .grid__item:has(inputt:-webkit-autofill ) label {
+.huckleberry-subscription-list-color .form-vertical .grid__item:has(input:-webkit-autofill ) label {
   font-size: var(--font-s);
   top: .5em;
   transform: none;
