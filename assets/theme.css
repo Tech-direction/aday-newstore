@@ -1443,6 +1443,13 @@ body,
   display: inline-block;
 }
 
+@media screen and (max-width: 989px) {
+  .contents-wrapper .page-menu .list-menu {
+    gap: var(--margin);
+  }
+}
+
+
 /*===============================================================
 
 	article contents
