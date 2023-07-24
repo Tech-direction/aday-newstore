@@ -504,6 +504,7 @@ a,
 .contents-wrapper .customer .field input:-webkit-autofill ~ label,
 .huckleberry-subscription-list-color .medium-up--one-half label {
   font-size: var(--font-s);
+  color: rgb(var(--color-border));
   top: .5em;
   transform: none;
 }
