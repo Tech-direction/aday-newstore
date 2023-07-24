@@ -423,6 +423,9 @@ a,
   max-width: none;
 }
 
+.huckleberry-subscription-list-color .medium-up--one-half {
+  position: relative;
+}
 
 /*  focus common
 ---------------------------------------------------------------*/
