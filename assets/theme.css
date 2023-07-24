@@ -484,7 +484,8 @@ a,
 }
 
 .contents-wrapper .field__label,
-.contents-wrapper .customer .field label {
+.contents-wrapper .customer .field label,
+.huckleberry-subscription-list-color .medium-up--one-half label {
   font-size: 1rem;
   color: rgb(var(--color-border));
   line-height: 1;
