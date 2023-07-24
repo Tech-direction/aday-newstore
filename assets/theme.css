@@ -205,7 +205,8 @@ html {
 .huckleberry-subscription-list-color #root .huckleberry-subscription-detail-btn,
 .huckleberry-subscription-list-color #root .huckleberry-subscription-detail-order-btn,
 .huckleberry-subscription-list-color #root .huckleberry-subscription-detail-payment-btn,
-.huckleberry-subscription-list-color #root .huckleberry-subscription-detail-delivery-btn {
+.huckleberry-subscription-list-color #root .huckleberry-subscription-detail-delivery-btn,
+.huckleberry-subscription-list-color #root .micromo .btn {
   height: 3.5rem;
   min-height: auto;
   margin-bottom: 0;
@@ -2885,6 +2886,9 @@ html.js.wf-poppins-n1-active {
   text-align: center;
 }
 
+.micromo .btn.clear {
+  
+}
 
 
 
