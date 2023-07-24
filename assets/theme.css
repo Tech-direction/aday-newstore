@@ -374,7 +374,8 @@ a,
 .contents-wrapper .quantity,
 .contents-wrapper .customer .field input,
 .contents-wrapper .customer select,
-.huckleberry-subscription-list-color select {
+.huckleberry-subscription-list-color select,
+.huckleberry-subscription-list-color input {
   width: 100%;
   max-width: none !important;
   height: 3.5rem;
@@ -392,7 +393,8 @@ a,
 .contents-wrapper .field_select,
 .contents-wrapper .quantity,
 .contents-wrapper .field, 
-.huckleberry-subscription-list-color select {
+.huckleberry-subscription-list-color select,
+.huckleberry-subscription-list-color input {
   border: 1px solid rgb(var(--color-border));
   background-color: #fff;
   transition: all var(--duration-long) ease;
