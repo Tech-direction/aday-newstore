@@ -437,6 +437,10 @@ a,
   position: relative;
 }
 
+.contents-wrapper .cf-field[data-cf-invalid=true]:not([data-cf-field-type=repeating_group]) .cf-field-errors {
+  display: none;
+}
+
 /*  focus common
 ---------------------------------------------------------------*/
 
