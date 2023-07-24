@@ -2585,7 +2585,11 @@ html.js.wf-poppins-n1-active {
 .huckleberry-subscription-detail-history-detail .value,
 .huckleberry-subscription-detail-product-detail .value,
 .huckleberry-subscription-detail-product-summary .value,
-.huckleberry-subscription-list-detail .value {
+.huckleberry-subscription-list-detail .value,
+.huckleberry-subscription-detail-delivery main,
+.huckleberry-subscription-detail-order main,
+.huckleberry-subscription-detail-payment main,
+.huckleberry-subscription-detail-schedule main {
   font-size: 1rem;
 }
 
@@ -2615,6 +2619,11 @@ html.js.wf-poppins-n1-active {
 .huckleberry-subscription-list-id,
 .huckleberry-subscription-list-id-title {
   margin: 0;
+}
+
+
+.huckleberry-subscription-detail-schedule > main {
+  display: none !important;
 }
 
 .huckleberry-subscription-detail-product-detail + .huckleberry-subscription-detail-product-detail {
@@ -2854,24 +2863,11 @@ html.js.wf-poppins-n1-active {
   font-size: var(--font-s);
 }
 
-.huckleberry-subscription-detail-schedule > main {
-  display: none !important;
-}
-
 .huckleberry-subscription-detail-order-btn {
   width: 100%;
   max-width: none !important;
   margin-top: 0 !important;
 }
-
-.huckleberry-subscription-detail-delivery main,
-.huckleberry-subscription-detail-order main,
-.huckleberry-subscription-detail-payment main,
-.huckleberry-subscription-detail-schedule main {
-  font-size: 1rem;
-}
-
-
 
 .huckleberry-subscription-detail-btn-group,
 .huckleberry-subscription-detail-order-btn-group {
