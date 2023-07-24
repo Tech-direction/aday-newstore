@@ -423,7 +423,7 @@ a,
   max-width: none;
 }
 
-.huckleberry-subscription-list-color .medium-up--one-half {
+.huckleberry-subscription-list-color .form-vertical .grid__item {
   position: relative;
 }
 
@@ -485,15 +485,15 @@ a,
 .contents-wrapper .customer .field input:focus,
 .contents-wrapper .customer .field input:not(:placeholder-shown),
 .contents-wrapper .customer .field input:-webkit-autofill,
-.huckleberry-subscription-list-color .medium-up--one-half input:focus,
-.huckleberry-subscription-list-color .medium-up--one-half input:not(:placeholder-shown),
-.huckleberry-subscription-list-color .medium-up--one-half inputt:-webkit-autofill {
+.huckleberry-subscription-list-color .form-vertical .grid__item input:focus,
+.huckleberry-subscription-list-color .form-vertical .grid__item input:not(:placeholder-shown),
+.huckleberry-subscription-list-color .form-vertical .grid__item inputt:-webkit-autofill {
   padding: 1.5em 1em .5em;
 }
 
 .contents-wrapper .field__label,
 .contents-wrapper .customer .field label,
-.huckleberry-subscription-list-color .medium-up--one-half label {
+.huckleberry-subscription-list-color .form-vertical .grid__item label {
   font-size: 1rem;
   color: rgb(var(--color-border));
   line-height: 1;
@@ -513,15 +513,15 @@ a,
 .contents-wrapper .customer .field input:focus ~ label,
 .contents-wrapper .customer .field input:not(:placeholder-shown) ~ label,
 .contents-wrapper .customer .field input:-webkit-autofill ~ label,
-.huckleberry-subscription-list-color .medium-up--one-half:has(input:focus) label,
-.huckleberry-subscription-list-color .medium-up--one-half:has(input:not(:placeholder-shown)) label,
-.huckleberry-subscription-list-color .medium-up--one-half:has(inputt:-webkit-autofill ) label {
+.huckleberry-subscription-list-color .form-vertical .grid__item:has(input:focus) label,
+.huckleberry-subscription-list-color .form-vertical .grid__item:has(input:not(:placeholder-shown)) label,
+.huckleberry-subscription-list-color .form-vertical .grid__item:has(inputt:-webkit-autofill ) label {
   font-size: var(--font-s);
   top: .5em;
   transform: none;
 }
 
-.huckleberry-subscription-list-color .medium-up--one-half:has(input:focus) label  {
+.huckleberry-subscription-list-color .form-vertical .grid__item:has(input:focus) label  {
   pointer-events: none;
   position: absolute;
   transition: top var(--duration-short) ease,font-size var(--duration-short) ease;
