@@ -510,7 +510,7 @@ a,
   transform: none;
 }
 
-.huckleberry-subscription-list-color .medium-up--one-half label {
+.huckleberry-subscription-list-color .medium-up--one-half:has(input:focus) label  {
   pointer-events: none;
   position: absolute;
   transition: top var(--duration-short) ease,font-size var(--duration-short) ease;
