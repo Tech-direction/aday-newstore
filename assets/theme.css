@@ -2441,47 +2441,47 @@ html.js.wf-poppins-n1-active {
 /*  collection
 ---------------------------------------------------------------*/
 
-.contents-wrapper #boxContent .grid-collection {
+.grid-collection {
   gap: var(--margin-l);
 }
 
-.contents-wrapper #boxContent .grid-collection .grid-product {
+.grid-collection .grid-product {
   padding: var(--margin);
   border-radius: var(--border-radius-box);
   background-color: rgb(var(--color-gray));
 }
 
-.contents-wrapper #boxContent .grid-collection .grid-product > *,
-.contents-wrapper #boxContent .grid-collection .grid-product >  :first-child > * {
+.grid-collection .grid-product > *,
+.grid-collection .grid-product >  :first-child > * {
   margin: 0 !important;
   padding: 0 !important;
 }
 
-.contents-wrapper #boxContent .grid-collection .grid-product >  :first-child * {
+.grid-collection .grid-product >  :first-child * {
   line-height: 0;
 }
 
-.contents-wrapper #boxContent .grid-collection .grid-product img {
+.grid-collection .grid-product img {
   width: 100% !important;
   max-height: none !important;
   border-radius: var(--border-radius-box);
 }
 
-.contents-wrapper #boxContent .grid-collection .grid-product .price__pricing-group {
+.grid-collection .grid-product .price__pricing-group {
   margin-top: var(--margin-s);
   font-size: var(--font-l);
 }
 
-.contents-wrapper #boxContent .grid-collection .grid-product .price__pricing-group * {
+.grid-collection .grid-product .price__pricing-group * {
   margin-top: 0 !important;
 }
 
 
-.contents-wrapper #boxContent .grid-collection .grid-product .price__pricing-group > :first-child {
+.grid-collection .grid-product .price__pricing-group > :first-child {
   margin-bottom: var(--margin-s) !important;
 }
 
-.contents-wrapper #boxContent .grid-collection .grid-product .jXLjZO {
+.grid-collection .grid-product .jXLjZO {
   width: 100%;
   border-color: rgb(var(--color-border));
   display: flex;
@@ -2519,12 +2519,12 @@ html.js.wf-poppins-n1-active {
 }
 
 @media screen and (max-width: 989px) {
-  .contents-wrapper #boxContent .grid-collection {
+  .grid-collection {
     display: flex !important;
     gap: var(--margin);
     flex-wrap: wrap;
   }
-  .contents-wrapper #boxContent .grid-collection .grid-product {
+  .grid-collection .grid-product {
     width: calc((100% - var(--margin))/2);
   }
 }
