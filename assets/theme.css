@@ -2212,8 +2212,9 @@ body,
   display: block;
 }
 
-.contents-wrapper .cf-form-step {
-  
+.contents-wrapper .cf-fields-container {
+  width: 100%;
+  margin: 0;
 }
 
 .contents-wrapper .cf-form-actions {
