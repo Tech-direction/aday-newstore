@@ -1144,7 +1144,7 @@ body,
 
 .contents-wrapper .section-heading-wrapper,
 .huckleberry-subscription-list-color #root,
-.huckleberry-subscription-list-color #root .page {
+.huckleberry-subscription-list-color #root .page > div {
   display: flex;
   /*flex-wrap: wrap;*/
   column-gap: var(--margin-section);
@@ -1155,13 +1155,15 @@ body,
 }
 
 .contents-wrapper .section-heading-wrapper > *,
-.huckleberry-subscription-list-color #root > * {
+.huckleberry-subscription-list-color #root > *,
+.huckleberry-subscription-list-color #root .page > div > * {
   order: 1;
 }
 
 .contents-wrapper .section-heading-wrapper .content__item,
 .huckleberry-subscription-list-color #root > section,
-.huckleberry-subscription-list-color #root .wrap {
+.huckleberry-subscription-list-color #root .wrap,
+.huckleberry-subscription-list-color #root .page .formLayout {
   width: calc(100% - var(--margin-section));
   max-width: calc(var(--width-max-m) - var(--margin) * 2);
   margin-right: auto;
