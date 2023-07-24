@@ -400,7 +400,8 @@ a,
   transition: all var(--duration-long) ease;
 }
 
-.huckleberry-subscription-list-color select {
+.huckleberry-subscription-list-color select,
+.huckleberry-subscription-list-color input {
   padding: 1em;
 }
 
