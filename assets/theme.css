@@ -1081,16 +1081,17 @@ body,
   .contents-wrapper .menu-drawer__utility-links {
     padding: var(--margin);
   }
-  .contents-wrapper .menu-drawer__menu li {
-    margin: 0;
-  }
   .contents-wrapper .menu-drawer__menu,
   .contents-wrapper .menu-drawer__utility-links .list {
     display: flex;
+    flex-wrap: wrap;
     gap: var(--margin-s);
   }
+  .contents-wrapper .menu-drawer__menu li {
+    width: 100%;
+    margin: 0;
+  }
   .contents-wrapper .menu-drawer__utility-links .list {
-    flex-wrap: wrap;
     justify-content: center;
   }
 }
