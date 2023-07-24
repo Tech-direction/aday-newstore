@@ -515,10 +515,15 @@ a,
 .contents-wrapper .customer .field input:-webkit-autofill ~ label,
 .huckleberry-subscription-list-color .form-vertical .grid__item:has(input:focus) label,
 .huckleberry-subscription-list-color .form-vertical .grid__item:has(input:not(:placeholder-shown)) label,
-.huckleberry-subscription-list-color .form-vertical .grid__item:has(input:-webkit-autofill ) label {
+.huckleberry-subscription-list-color .form-vertical .grid__item:has(input:-webkit-autofill ) label,
+.huckleberry-subscription-list-color .form-vertical .grid__item:has(input:focus) label {
   font-size: var(--font-s);
   top: .5em;
   transform: none;
+}
+
+.huckleberry-subscription-list-color .form-vertical .grid__item:has(select) label {
+  font-size: var(--font-s);
 }
 
 .huckleberry-subscription-list-color .form-vertical .grid__item:has(input:focus) label,
