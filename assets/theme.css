@@ -2212,6 +2212,15 @@ body,
   display: block;
 }
 
+.contents-wrapper .cf-form-actions {
+  margin-top: var(--margin);
+  text-align: center;
+}
+
+.contents-wrapper .cf-form-actions .cf-submit-form {
+  margin: 0;
+}
+
 .contents-wrapper .cf-react-target .cf-cancel {
   display: none;
 }
