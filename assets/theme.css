@@ -385,10 +385,15 @@ html {
 
 .contents-wrapper .field_select,
 .contents-wrapper .quantity,
-.contents-wrapper .field {
+.contents-wrapper .field, 
+.huckleberry-subscription-list-color select {
   border: 1px solid rgb(var(--color-border));
   background-color: #fff;
   transition: all var(--duration-long) ease;
+}
+
+.huckleberry-subscription-list-color select {
+  padding: 1em;
 }
 
 .contents-wrapper .field:before,
