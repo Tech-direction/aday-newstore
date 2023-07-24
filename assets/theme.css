@@ -394,7 +394,7 @@ a,
 .contents-wrapper .quantity,
 .contents-wrapper .field, 
 .huckleberry-subscription-list-color select,
-.huckleberry-subscription-list-color input {
+.huckleberry-subscription-list-color input:not(.ipGBiP) {
   border: 1px solid rgb(var(--color-border));
   background-color: #fff;
   transition: all var(--duration-long) ease;
