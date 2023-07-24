@@ -262,7 +262,7 @@ a,
   background-color: rgb(var(--color-primary));
 }
 
-.button,
+.button:disabled,
 .contents-wrapper .button:disabled ,
 .contents-wrapper .btn:disabled,
 .contents-wrapper .button.disabled ,
