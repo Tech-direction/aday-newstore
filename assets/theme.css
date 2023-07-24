@@ -534,6 +534,7 @@ a,
   top: 50%;
   transform: translateY(-50%);
   left: 1em !important;
+  z-index: 1;
 }
 
 .contents-wrapper [class^="field"] + [class^="field"] {
