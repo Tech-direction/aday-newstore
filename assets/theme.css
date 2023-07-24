@@ -915,7 +915,7 @@ body,
 
 @media screen and (max-width: 989px) {
   .contents-wrapper .header {
-    padding-top: calc(var(--margin-l) + var(--margin-s)) !important;
+    padding: calc(var(--margin-l) + var(--margin-s)) var(--margin) var(--margin) !important;
   }
   .contents-wrapper .header .header__heading-link {
     margin-left: auto !important;
