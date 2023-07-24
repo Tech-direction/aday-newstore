@@ -2891,12 +2891,15 @@ html.js.wf-poppins-n1-active {
   text-align: center;
 }
 
-.micromodal .btn.clear {
-  width: fit-content !important;
-  height: auto !important;
+.micromodal .btn {
+  width: fit-content;
   margin: var(--margin-s) auto 0 !important;
-  padding: 0 var(--margin);
   border: none;
+}
+
+.micromodal .btn.clear {
+  height: auto !important;
+  
   background-color: transparent;
 }
 
