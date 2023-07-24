@@ -405,8 +405,13 @@ a,
 .huckleberry-subscription-list-color input:not(.ipGBiP),
 [data-theme-name=Dawn] .contents-wrapper .cf-field {
   border: 1px solid rgb(var(--color-border));
+  border-radius: 0 !important;
   background-color: #fff;
   transition: all var(--duration-long) ease;
+}
+
+.contents-wrapper .cf-field[data-cf-invalid=true]:not([data-cf-field-type=repeating_group]) {
+  border-color: rgb(var(--color-border));
 }
 
 .huckleberry-subscription-list-color select,
