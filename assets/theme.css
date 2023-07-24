@@ -504,7 +504,8 @@ a,
 .contents-wrapper .customer .field input:-webkit-autofill,
 .huckleberry-subscription-list-color .form-vertical .grid__item input:focus,
 .huckleberry-subscription-list-color .form-vertical .grid__item input:not(:placeholder-shown),
-.huckleberry-subscription-list-color .form-vertical .grid__item inputt:-webkit-autofill {
+.huckleberry-subscription-list-color .form-vertical .grid__item inputt:-webkit-autofill,
+[data-theme-name=Dawn] .contents-wrapper .cf-field input:not([type=checkbox]):not([type=radio]):focus {
   padding: 1.5em 1em .5em;
 }
 
