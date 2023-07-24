@@ -402,9 +402,7 @@ a,
 .contents-wrapper .field, 
 .huckleberry-subscription-list-color select,
 .huckleberry-subscription-list-color input:not(.ipGBiP),
-[data-theme-name=Dawn] .contents-wrapper .cf-field input:not([type=checkbox]):not([type=radio]),
-[data-theme-name=Dawn] .contents-wrapper .cf-field textarea,
-[data-theme-name=Dawn] .contents-wrapper .cf-field select {
+[data-theme-name=Dawn] .contents-wrapper .cf-field {
   border: 1px solid rgb(var(--color-border));
   background-color: #fff;
   transition: all var(--duration-long) ease;
