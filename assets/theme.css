@@ -433,7 +433,8 @@ html {
 .contents-wrapper .field_select:has(select:focus),
 .contents-wrapper .quantity:has(input:focus),
 .contents-wrapper .quantity:has(button:focus),
-.contents-wrapper .field:has(input:focus) {
+.contents-wrapper .field:has(input:focus),
+.huckleberry-subscription-list-color select {
   box-shadow: 0 0 0 calc(0.01rem + var(--inputs-border-width)) rgba(var(--color-black));
 }
 
