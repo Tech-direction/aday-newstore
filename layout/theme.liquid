@@ -312,7 +312,7 @@
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
 
-      {% if request.path contains '/account' %}
+      {% if request.path contains '/account' and customer %}
         {% render 'customer-navigation' %}
       {% endif %}
       
