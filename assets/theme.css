@@ -1143,10 +1143,15 @@ body,
 ===============================================================*/
 
 .contents-wrapper .section-heading-wrapper,
-.huckleberry-subscription-list-color #root:has(:not(.page)) {
+.huckleberry-subscription-list-color #root,
+.huckleberry-subscription-list-color #root .page {
   display: flex;
   /*flex-wrap: wrap;*/
   column-gap: var(--margin-section);
+}
+
+.huckleberry-subscription-list-color #root:has(.page) {
+  display: block;
 }
 
 .contents-wrapper .section-heading-wrapper > *,
