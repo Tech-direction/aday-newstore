@@ -262,11 +262,13 @@ a,
   background-color: rgb(var(--color-primary));
 }
 
+.button,
 .contents-wrapper .button:disabled ,
 .contents-wrapper .btn:disabled,
 .contents-wrapper .button.disabled ,
 .contents-wrapper .btn.disabled {
   background-color: rgb(var(--color-border));
+  opacity: 1;
 }
 
 /*.contents-wrapper * + button,*/
