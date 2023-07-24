@@ -267,6 +267,7 @@ a,
 .contents-wrapper .btn:disabled,
 .contents-wrapper .button.disabled ,
 .contents-wrapper .btn.disabled {
+  border-color: rgb(var(--color-border));
   background-color: rgb(var(--color-border));
   opacity: 1;
 }
