@@ -8,8 +8,8 @@
         "0dbc67c5-7650-49fc-b6a4-e95d044607e3": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/logo.svg",
-            "image_width": 100,
+            "image": "shopify:\/\/shop_images\/aday-logo.svg",
+            "image_width": 380,
             "alignment": "center"
           }
         },
@@ -26,7 +26,7 @@
         "ea4febf9-7a27-478b-ab90-9e4b0812e3fc"
       ],
       "settings": {
-        "color_scheme": "background-1",
+        "color_scheme": "background-2",
         "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
         "enable_follow_on_shop": false,

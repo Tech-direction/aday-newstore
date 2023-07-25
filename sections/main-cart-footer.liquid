@@ -3,7 +3,7 @@
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
 
-<div class="page-width{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}">
+<div class="page-width{% if cart == empty %} is-empty{% endif %} content-size-s" id="main-cart-footer" data-id="{{ section.id }} ">
   <div>
     <div class="cart__footer">
       {%- if settings.show_cart_note -%}
@@ -60,7 +60,7 @@
             {%- else -%}
               <div class="cart__ctas" {{ block.shopify_attributes }}>
                 <noscript>
-                  <button type="submit" class="cart__update-button button button--secondary" form="cart">
+                  <button type="submit" class="cart__update-button button button--secondary align-center" form="cart">
                     {{ 'sections.cart.update' | t }}
                   </button>
                 </noscript>
@@ -68,7 +68,7 @@
                 <button
                   type="submit"
                   id="checkout"
-                  class="cart__checkout-button button"
+                  class="cart__checkout-button button align-center"
                   name="checkout"
                   {% if cart == empty %}
                     disabled
@@ -77,6 +77,7 @@
                 >
                   {{ 'sections.cart.checkout' | t }}
                 </button>
+                <a href="{{ routes.all_products_collection_url }}" class="underlined-link link align-center">{{ 'general.continue_shopping' | t }}</a>
               </div>
 
               {%- if additional_checkout_buttons -%}

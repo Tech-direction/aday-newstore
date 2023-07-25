@@ -1,1 +1,219 @@
-{"sections":{"main":{"type":"main-list-collections","settings":{"title":"Collections","sort":"alphabetical","image_ratio":"square","columns_desktop":3,"columns_mobile":"2"}}},"order":["main"]}
+{
+  "sections": {
+    "f70a0cc6-0eca-46fd-91b2-cd193c00ac1c": {
+      "type": "main-section-header",
+      "settings": {
+        "section_heading": "オンラインショップ",
+        "heading_size": "xl",
+        "section_sub_heading": "ONLINESHOP",
+        "change_box_layout": false,
+        "description": "",
+        "show_description": false,
+        "image": "shopify:\/\/shop_images\/trial_kiji12.jpg"
+      }
+    },
+    "b466eac5-a569-47e9-9d52-c4968c8089ef": {
+      "type": "collection-subscription-section",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/gift2022_01.jpg",
+        "section_heading": "<p>焙煎屋がお届けする、<\/p><p>コーヒー定期便<\/p>",
+        "heading_size": "xl",
+        "section_sub_heading": "SUBSCRIPTION",
+        "description": "<p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、<\/p>",
+        "button-label": "【コーヒー定期便】を詳しく見る",
+        "button-link": "https:\/\/aday-new-store.myshopify.com\/apps\/subscription\/bundler?b=19eec2f0-6f06-4690-b5cf-9e7af50b8c12"
+      }
+    },
+    "8ea36c2b-cf70-4588-8cab-8479b9def8dd": {
+      "type": "collection-beens-section",
+      "blocks": {
+        "1f70d9b9-b476-4ad6-8431-7b67f7e47934": {
+          "type": "column",
+          "settings": {
+            "link_label": "ブレンド豆",
+            "link": "#blend"
+          }
+        },
+        "4cf82d1c-6955-492b-a7f2-14f9b32792a4": {
+          "type": "column",
+          "settings": {
+            "link_label": "アフリカのコーヒー豆",
+            "link": "#african"
+          }
+        },
+        "6d91e6e3-aa8b-4c6c-990c-e972bf788172": {
+          "type": "column",
+          "settings": {
+            "link_label": "中米のコーヒー豆",
+            "link": "#central_american"
+          }
+        },
+        "0ca8a33e-6c8e-4c64-aab7-b25ee22037de": {
+          "type": "column",
+          "settings": {
+            "link_label": "南米のコーヒー豆",
+            "link": "#south_american"
+          }
+        }
+      },
+      "block_order": [
+        "1f70d9b9-b476-4ad6-8431-7b67f7e47934",
+        "4cf82d1c-6955-492b-a7f2-14f9b32792a4",
+        "6d91e6e3-aa8b-4c6c-990c-e972bf788172",
+        "0ca8a33e-6c8e-4c64-aab7-b25ee22037de"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/asairi01_b38ba458-dd59-4291-83e1-71fb6de9f5d2.jpg",
+        "section_heading": "<p>焙煎屋がお届けする、<br\/>コーヒー豆についての見出し<\/p>",
+        "heading_size": "xl",
+        "section_sub_heading": "COFFEE BEANS",
+        "description": "<p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、<\/p>"
+      }
+    },
+    "main": {
+      "type": "main-list-collections",
+      "disabled": true,
+      "settings": {
+        "title": "Collections",
+        "sort": "alphabetical",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "columns_mobile": "2"
+      }
+    },
+    "e840dd1c-bb6f-4e69-99fd-3653ff1de1e7": {
+      "type": "featured-collection-been",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/chumon08.jpg",
+        "section_id": "blend",
+        "section_heading": "ブレンド豆",
+        "heading_size": "xl",
+        "section_sub_heading": "BLEND COFFEE BEANS",
+        "change_box_layout": false,
+        "description": "<p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパーゴなど、いまこの暗い巨きな石の建物のなかで考えていると、<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "ブレンドのコーヒー豆",
+        "products_to_show": 25,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "box_gap": "l"
+      }
+    },
+    "1f8ec698-b23a-4ed8-8fd3-4eab6be698d2": {
+      "type": "featured-collection-been",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/thomas-bennie-1jlJrr4XGkU-unsplash.jpg",
+        "section_id": "african",
+        "section_heading": "アフリカのコーヒー豆",
+        "heading_size": "xl",
+        "section_sub_heading": "AFRICAN COFFEE BEANS",
+        "change_box_layout": true,
+        "description": "<p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパーゴなど、いまこの暗い巨きな石の建物のなかで考えていると、<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "アフリカのコーヒー豆",
+        "products_to_show": 25,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "box_gap": "l"
+      }
+    },
+    "8c5d6e0d-3f26-461a-bbf3-05c407fe8d5e": {
+      "type": "featured-collection-been",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/projeto-cafe-gato-mourisco-x22eJ1VVGFA-unsplash.png",
+        "section_id": "central_american",
+        "section_heading": "中米の豆",
+        "heading_size": "xl",
+        "section_sub_heading": "CENTRAL AMERICAN COFFEE BEANS",
+        "change_box_layout": false,
+        "description": "<p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパーゴなど、いまこの暗い巨きな石の建物のなかで考えていると、<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "中米のコーヒー豆",
+        "products_to_show": 25,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "box_gap": "l"
+      }
+    },
+    "41117e49-4a0c-42df-b24b-11091e3e0718": {
+      "type": "featured-collection-been",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/cesar-ardila-GU44RmwKiWE-unsplash.jpg",
+        "section_id": "south_american",
+        "section_heading": "南米のコーヒー豆",
+        "heading_size": "xl",
+        "section_sub_heading": "SOUTH AMERICAN COFFEE BEANS",
+        "change_box_layout": true,
+        "description": "<p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパーゴなど、いまこの暗い巨きな石の建物のなかで考えていると、<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "南米のコーヒー豆",
+        "products_to_show": 25,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "box_gap": "l"
+      }
+    }
+  },
+  "order": [
+    "f70a0cc6-0eca-46fd-91b2-cd193c00ac1c",
+    "b466eac5-a569-47e9-9d52-c4968c8089ef",
+    "8ea36c2b-cf70-4588-8cab-8479b9def8dd",
+    "main",
+    "e840dd1c-bb6f-4e69-99fd-3653ff1de1e7",
+    "1f8ec698-b23a-4ed8-8fd3-4eab6be698d2",
+    "8c5d6e0d-3f26-461a-bbf3-05c407fe8d5e",
+    "41117e49-4a0c-42df-b24b-11091e3e0718"
+  ]
+}

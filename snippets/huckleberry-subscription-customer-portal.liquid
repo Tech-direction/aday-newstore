@@ -1,0 +1,17 @@
+{%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
+    {%- assign pageUrlWithHost = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first | replace:'\/','/' | replace:'%20',' ' | replace:'\u0026','&' -%}
+    {% if pageUrlWithHost contains "account?hbSubscriptionPath" %}
+      <div id="huckleberry-subscription-customer-portal-wrap">
+      <p><a href="{{ routes.account_url }}">アカウントに戻る</a></p>
+      <div id="huckleberry-subscription-customer-portal"></div>
+    </div>
+    
+    <style>
+      #huckleberry-subscription-customer-portal-wrap {
+        margin-top: 84px;
+      }
+      #huckleberry-subscription-customer-portal-wrap p:first-child {
+        margin: 0  20px;
+      }
+    </style>
+    {% endif %}

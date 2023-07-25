@@ -1,1 +1,169 @@
-{"sections":{"image_banner":{"type":"image-banner","blocks":{"heading":{"type":"heading","settings":{"heading":"Browse our latest products","heading_size":"h0"}},"button":{"type":"buttons","settings":{"button_label_1":"Shop all","button_link_1":"shopify:\/\/collections\/all","button_style_secondary_1":true,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading","button"],"settings":{"image_overlay_opacity":40,"image_height":"large","desktop_content_position":"bottom-center","show_text_box":false,"desktop_content_alignment":"center","color_scheme":"inverse","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":false,"show_text_below":false}},"featured_collection":{"type":"featured-collection","settings":{"title":"Featured products","heading_size":"h2","description":"","show_description":false,"description_style":"body","collection":"all","products_to_show":8,"columns_desktop":4,"full_width":false,"show_view_all":true,"view_all_style":"solid","enable_desktop_slider":false,"color_scheme":"background-1","image_ratio":"adapt","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"enable_quick_add":false,"columns_mobile":"2","swipe_on_mobile":false,"padding_top":44,"padding_bottom":36}}},"order":["image_banner","featured_collection"]}
+{
+  "sections": {
+    "d5fac027-1d6c-4527-b96a-703316269413": {
+      "type": "image-banner-top",
+      "blocks": {
+        "template--19717718147380__d5fac027-1d6c-4527-b96a-703316269413-16886631200b887bea-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>焙煎屋がお届けする、<\/p><p>コーヒー定期便<\/p>",
+            "heading_size": "xl"
+          }
+        },
+        "template--19717718147380__d5fac027-1d6c-4527-b96a-703316269413-16886631200b887bea-1": {
+          "type": "text",
+          "settings": {
+            "text": "あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、",
+            "text_style": "body"
+          }
+        },
+        "665f5e99-d971-4963-a8bd-ddbe7dafdcd4": {
+          "type": "subscription_feature",
+          "settings": {
+          }
+        },
+        "template--19717718147380__d5fac027-1d6c-4527-b96a-703316269413-16886631200b887bea-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "【コーヒー定期便】を詳しく見る",
+            "button_link_1": "https:\/\/aday-new-store.myshopify.com\/apps\/subscription\/bundler?b=19eec2f0-6f06-4690-b5cf-9e7af50b8c12",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19717718147380__d5fac027-1d6c-4527-b96a-703316269413-16886631200b887bea-0",
+        "template--19717718147380__d5fac027-1d6c-4527-b96a-703316269413-16886631200b887bea-1",
+        "665f5e99-d971-4963-a8bd-ddbe7dafdcd4",
+        "template--19717718147380__d5fac027-1d6c-4527-b96a-703316269413-16886631200b887bea-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/gift2022_01.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "ef1e9a68-7a62-4287-8199-03faca0c8b77": {
+      "type": "featured-blog-top",
+      "settings": {
+        "section_heading": "コーヒー豆知識",
+        "heading_size": "xl",
+        "section_sub_heading": "COFFEE JOURNAL",
+        "change_box_layout": true,
+        "blog": "coffee-journal",
+        "post_limit": 4,
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "box_gap": "l"
+      }
+    },
+    "361c01ec-b4ce-4a50-9bc5-26515e1e190d": {
+      "type": "featured-product-monthly",
+      "blocks": {
+        "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "6e040199-d0e7-4ac9-81be-b29248b875ca": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-3": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-4": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-5": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        }
+      },
+      "block_order": [
+        "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-1",
+        "6e040199-d0e7-4ac9-81be-b29248b875ca",
+        "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-3",
+        "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-4",
+        "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-5"
+      ],
+      "settings": {
+        "section_heading": "今月のオススメ商品",
+        "heading_size": "xl",
+        "section_sub_heading": "RECOMMEND ITEM",
+        "change_box_layout": false,
+        "product": "brazil",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "none",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "f86325b7-9ef5-4459-acbc-f77ebaa74e38": {
+      "type": "featured-collection-ranking",
+      "settings": {
+        "section_heading": "人気豆ランキング",
+        "heading_size": "xl",
+        "section_sub_heading": "RANKING COFFEE",
+        "change_box_layout": true,
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "ranking",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "box_gap": "l"
+      }
+    }
+  },
+  "order": [
+    "d5fac027-1d6c-4527-b96a-703316269413",
+    "ef1e9a68-7a62-4287-8199-03faca0c8b77",
+    "361c01ec-b4ce-4a50-9bc5-26515e1e190d",
+    "f86325b7-9ef5-4459-acbc-f77ebaa74e38"
+  ]
+}

@@ -4,8 +4,55 @@
     "theme_name": "Dawn",
     "theme_version": "10.0.0",
     "theme_author": "Shopify",
-    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
-    "theme_support_url": "https://support.shopify.com/"
+    "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/online-store\/themes",
+    "theme_support_url": "https:\/\/support.shopify.com\/"
+  },
+  {
+    "name": "定期購買の特徴",
+    "settings": [
+      {
+        "type": "header",
+        "content": "カラム１"
+      },
+      {
+        "type": "image_picker",
+        "id": "grid_item_1_img",
+        "label": "画像"
+      },
+      {
+        "type": "text",
+        "id": "grid_item_1_heading",
+        "label": "見出し"
+      },
+      {
+        "type": "header",
+        "content": "カラム2"
+      },
+      {
+        "type": "image_picker",
+        "id": "grid_item_2_img",
+        "label": "画像"
+      },
+      {
+        "type": "text",
+        "id": "grid_item_2_heading",
+        "label": "見出し"
+      },
+      {
+        "type": "header",
+        "content": "カラム3"
+      },
+      {
+        "type": "image_picker",
+        "id": "grid_item_3_img",
+        "label": "画像"
+      },
+      {
+        "type": "text",
+        "id": "grid_item_3_heading",
+        "label": "見出し"
+      }
+    ]
   },
   {
     "name": "t:settings_schema.logo.name",
@@ -19,7 +66,7 @@
         "type": "range",
         "id": "logo_width",
         "min": 50,
-        "max": 300,
+        "max": 500,
         "step": 10,
         "default": 100,
         "unit": "px",

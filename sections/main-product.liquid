@@ -55,6 +55,14 @@
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
 
+  <div class="section-heading-wrapper section-container  page-width {% if section.settings.change_box_layout !=blank %} type-reverse{% endif %}">
+  {% if section.settings.section_heading !=blank %}
+  <div class="heading__item">
+    <h2 class="heading type-vertical{% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %}" data-sub_heading="{{ section.settings.section_sub_heading }}">{{ section.settings.section_heading }}</h2>
+  </div>
+  {% endif %}
+
+  <div class="content__item">
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
       {% render 'product-media-gallery', variant_images: variant_images %}
@@ -81,7 +89,7 @@
               </p>
             {%- when 'title' -%}
               <div class="product__title" {{ block.shopify_attributes }}>
-                <h1>{{ product.title | escape }}</h1>
+                <h1 class="heading">{{ product.title | escape }}</h1>
                 <a href="{{ product.url }}" class="product__title">
                   <h2 class="h1">
                     {{ product.title | escape }}
@@ -447,6 +455,8 @@
       </div>
     {%- endif -%}
   </div>
+                        </div>      
+                        </div>
 
   {% render 'product-media-modal' variant_images: variant_images %}
 
@@ -1901,6 +1911,43 @@
     }
   ],
   "settings": [
+    {
+        "type": "text",
+        "id": "section_heading",
+        "label": "見出し"
+      },
+      {
+        "type": "select",
+        "id": "heading_size",
+        "options": [
+          {
+            "value": "default",
+            "label": "t:sections.all.heading_size.options__1.label"
+          }, {
+            "value": "m",
+            "label": "t:sections.all.heading_size.options__2.label"
+          }, {
+            "value": "l",
+            "label": "t:sections.all.heading_size.options__3.label"
+          }, {
+            "value": "xl",
+            "label": "最大"
+          }
+        ],
+        "default": "l",
+        "label": "t:sections.all.heading_size.label"
+      },
+      {
+        "type": "text",
+        "id": "section_sub_heading",
+        "label": "見出し（英語）"
+      },
+      {
+        "type": "checkbox",
+        "id": "change_box_layout",
+        "default": false,
+        "label": "レイアウトを左右入れ替える"
+      },
     {
       "type": "checkbox",
       "id": "enable_sticky_info",

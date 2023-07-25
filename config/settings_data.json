@@ -1,6 +1,13 @@
 {
   "current": {
-    "logo_width": 90,
+    "grid_item_1_img": "shopify:\/\/shop_images\/subscription_img_1.svg",
+    "grid_item_1_heading": "全国送料無料",
+    "grid_item_2_img": "shopify:\/\/shop_images\/subscription_img_2.svg",
+    "grid_item_2_heading": "ずーっと5%オフ",
+    "grid_item_3_img": "shopify:\/\/shop_images\/subscription_img_3.svg",
+    "grid_item_3_heading": "いつでも解約OK",
+    "logo": "shopify:\/\/shop_images\/aday-logo.svg",
+    "logo_width": 380,
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
@@ -133,26 +140,41 @@
     "content_for_index": [
 
     ],
+    "blocks": {
+      "9776720720251544092": {
+        "type": "shopify:\/\/apps\/helium-customer-fields\/blocks\/app-embed\/bab58598-3e6a-4377-aaaa-97189b15f131",
+        "disabled": false,
+        "settings": {
+          "registration_form_id": "Y8tjv3",
+          "edit_account_form_id": "",
+          "edit_account_link_text": "Edit account",
+          "edit_account_heading": "Edit account",
+          "edit_account_back_link_text": "Back to account",
+          "enable_js_api": false,
+          "js_api_version": ""
+        }
+      }
+    },
     "color_schemes": {
       "background-1": {
         "settings": {
           "background": "#ffffff",
           "background_gradient": "",
-          "text": "#121212",
-          "button": "#121212",
+          "text": "#342b2b",
+          "button": "#342b2b",
           "button_label": "#ffffff",
-          "secondary_button_label": "#121212",
+          "secondary_button_label": "#342b2b",
           "shadow": "#121212"
         }
       },
       "background-2": {
         "settings": {
-          "background": "#f3f3f3",
+          "background": "#f5f5f5",
           "background_gradient": "",
-          "text": "#121212",
-          "button": "#121212",
-          "button_label": "#f3f3f3",
-          "secondary_button_label": "#121212",
+          "text": "#342b2b",
+          "button": "#342b2b",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#342b2b",
           "shadow": "#121212"
         }
       },
