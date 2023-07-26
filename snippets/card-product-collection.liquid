@@ -18,7 +18,7 @@
   - forloop_id: {String} The ID of the section that contains this card.
   
   Usage:
-  {% render 'card-product-content', show_vendor: section.settings.show_vendor %}
+  {% render 'card-product-content', show_vendor: section.settings.show_vendor, grid_item_id:grid_item_id %}
 {% endcomment %}
 
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
@@ -202,7 +202,7 @@
 
         
 
-  {%- assign product_form_id = 'product-form-' | append: section_id-%}
+  {%- assign product_form_id = 'product-form-' | append: section_id | append: grid_item_id -%}
 
             {% render 'product-variant-picker-collection',
               product: card_product,
@@ -211,6 +211,13 @@
               update_url: false,
               block_picker_type: 'button',
             %}
+
+  {% render 'product-variant-picker',
+                  product: product,
+                  block: block,
+                  product_form_id: product_form_id,
+                  update_url: false
+                %}
 
             <div
               id="Quantity-Form-{{ product_form_id }}"
