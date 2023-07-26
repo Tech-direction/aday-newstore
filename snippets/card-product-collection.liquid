@@ -206,11 +206,6 @@
               assign product_form_id = 'product-form-' | append: section_id | append: '-' | append: grid_item_id
               assign section_grid_id =  section_id | append: '-' | append: grid_item_id
             -%}
-  {%- assign
-
-
-     product_form_id = 'product-form-' | append: section_id | append: '-' | append: grid_item_id
-  -%}
             
 
             {% render 'product-variant-picker-collection',
@@ -225,7 +220,7 @@
 
 
             <div
-              id="Quantity-Form-{{ product_form_id }}"
+              id="Quantity-Form-{{ section_grid_id }}"
               class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %} variant__item"
               {{ block.shopify_attributes }}
             >
@@ -235,7 +230,7 @@
                 | item_count_for_variant: product.selected_or_first_available_variant.id
               -%}
               {% # theme-check-enable %}
-              <label class="quantity__label form__label" for="Quantity-{{ product_form_id }}">
+              <label class="quantity__label form__label" for="Quantity-{{ section_grid_id }}">
                 {{ 'products.product.quantity.label' | t }}
                 <span class="quantity__rules-cart no-js-hidden{% if cart_qty == 0 %} hidden{% endif %}">
                   <span class="loading-overlay hidden">
@@ -269,7 +264,7 @@
                   class="quantity__input"
                   type="number"
                   name="quantity"
-                  id="Quantity-{{ product_form_id }}"
+                  id="Quantity-{{ section_grid_id }}"
                   data-cart-quantity="{{ cart_qty }}"
                   data-min="{{ card_product.selected_or_first_available_variant.quantity_rule.min }}"
                   min="{{ card_product.selected_or_first_available_variant.quantity_rule.min }}"
