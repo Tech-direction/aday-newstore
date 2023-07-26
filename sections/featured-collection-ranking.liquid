@@ -78,6 +78,12 @@
               data-cascade
               style="--animation-order: {{ forloop.index }};"
               {% endif %}>
+               <product-info
+                  id="ProductInfo-{{ section.id }}-{{ forloop.index }}"
+                  class="product__info-container"
+                  data-section="{{ section.id }}-{{ forloop.index }}"
+                  data-url="{{ product.url }}"
+                > 
               {% render 'card-product-collection'
                , card_product: product,
                media_aspect_ratio: section.settings.image_ratio,
@@ -88,6 +94,7 @@
                show_quick_add: section.settings.enable_quick_add,
                section_id: section.id,
                grid_item_id: forloop.index %}
+                </product-info>
             </li>
           {%- else -%}
             {%- for i in (1..4) -%}
