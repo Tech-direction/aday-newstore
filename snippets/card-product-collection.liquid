@@ -35,6 +35,14 @@
       assign ratio = 1
     endif
   -%}
+
+ <product-info
+          id="ProductInfo-{{ section.id }}-{{ grid_item_id }}"
+          class="product__info-container"
+          data-section="{{ section.id }}-{{ grid_item_id }}"
+          data-url="{{ card_product.url }}"
+        > 
+  
   <div class="card-wrapper product-card-wrapper underline-links-hover">
     <div
       class="
@@ -580,4 +588,5 @@
       </div>
     </div>
   </div>
+</product-info>
 {%- endif -%}
