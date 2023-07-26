@@ -12,7 +12,8 @@
 
 {%- unless product.has_only_default_variant -%}
   
-  {%- if block.settings.picker_type == 'button' -%}　
+
+  {%- if picker_type == 'button' -%}
     <variant-radios
       id="variant-radios-{{ product_form_id }}"
       class="no-js-hidden"
