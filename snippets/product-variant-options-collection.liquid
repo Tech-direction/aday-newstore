@@ -13,7 +13,8 @@
     option: option,
     block: block,
     block_picker_type: block_picker_type,
-    option_name: option_name
+    option_name: option_name,
+    section_grid_id: section_grid_id
   %}
 {% endcomment %}
 {%- liquid
@@ -53,7 +54,7 @@
   {%- if block_picker_type == 'button' -%}
     <input
       type="radio"
-      id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+      id="{{ section_grid_id }}-{{ option.position }}-{{ forloop.index0 }}"
       name="{{ option.name }}"
       value="{{ value | escape }}"
       form="{{ product_form_id }}"
@@ -64,7 +65,7 @@
         class="disabled"
       {% endif %}
     >
-    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+    <label for="{{ section_grid_id }}-{{ option.position }}-{{ forloop.index0 }}">
       {{ value -}}
       <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
     </label>
