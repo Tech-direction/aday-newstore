@@ -313,7 +313,7 @@
 
 
             {%- liquid
-              assign product_form_id_test = 'product-form-' | append: section_id | append: '__main'
+              assign product_form_id_test = 'product-form-' | append: section.id | append: '__main'
               assign section_id_test =  section_id | append: '__main'
             -%}
 
