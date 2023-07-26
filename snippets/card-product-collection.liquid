@@ -328,23 +328,23 @@
   {
     "@context": "http://schema.org/",
     "@type": "Product",
-    "name": {{ product.title | json }},
-    "url": {{ request.origin | append: product.url | json }},
+    "name": {{ card_product.title | json }},
+    "url": {{ request.origin | append: card_product.url | json }},
     {% if seo_media -%}
       "image": [
         {{ seo_media | image_url: width: 1920 | prepend: "https:" | json }}
       ],
     {%- endif %}
-    "description": {{ product.description | strip_html | json }},
-    {% if product.selected_or_first_available_variant.sku != blank -%}
-      "sku": {{ product.selected_or_first_available_variant.sku | json }},
+    "description": {{ card_product.description | strip_html | json }},
+    {% if card_product.selected_or_first_available_variant.sku != blank -%}
+      "sku": {{ card_product.selected_or_first_available_variant.sku | json }},
     {%- endif %}
     "brand": {
       "@type": "Brand",
-      "name": {{ product.vendor | json }}
+      "name": {{ card_product.vendor | json }}
     },
     "offers": [
-      {%- for variant in product.variants -%}
+      {%- for variant in card_product.variants -%}
         {
           "@type" : "Offer",
           {%- if variant.sku != blank -%}
