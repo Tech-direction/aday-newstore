@@ -26,7 +26,7 @@
     >
       {%- for option in product.options_with_values -%}
         <fieldset class="js product-form__input">
-          {% render 'product-variant-options-collection', product: product, option: option, block: block, block_picker_type: 'button',  option_name:option.name %}
+          {% render 'product-variant-options-collection', product: product, option: option, block: block, block_picker_type: 'button',  option_name:option.name, section_grid_id: section_grid_id %}
         </fieldset>
       {%- endfor -%}
       <script type="application/json">
@@ -55,7 +55,7 @@
                 name="options[{{ option.name | escape }}]"
                 form="{{ product_form_id }}"
               >
-                {% render 'product-variant-options-collection', product: product, option: option, block: block, block_picker_type: 'dropdown',  option_name:option.name %}
+                {% render 'product-variant-options-collection', product: product, option: option, block: block, block_picker_type: 'dropdown',  option_name:option.name, section_grid_id: section_grid_id %}
               </select>
               {% render 'icon-caret' %}
             </div>
