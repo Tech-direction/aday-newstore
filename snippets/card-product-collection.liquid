@@ -202,7 +202,7 @@
 
         
 
-  {%- assign product_form_id = 'product-form-' | append: section_id | append: grid_item_id -%}
+  {%- assign product_form_id = 'product-form-' | append: section_id | append: '-' | append: grid_item_id -%}
 
             {% render 'product-variant-picker-collection',
               product: card_product,
