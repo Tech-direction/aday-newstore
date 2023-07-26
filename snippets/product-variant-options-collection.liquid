@@ -55,7 +55,7 @@
     <input
       type="radio"
       id="{{ section_grid_id }}-{{ option.position }}-{{ forloop.index0 }}"
-      name="{{ option.name }}"
+      name="{{ section_grid_id }}-{{ option.name }}"
       value="{{ value | escape }}"
       form="{{ product_form_id }}"
       {% if option.selected_value == value %}
