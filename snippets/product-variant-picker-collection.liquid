@@ -7,7 +7,7 @@
   - product_form_id: {String} Id of the product form to which the variant picker is associated.
   - update_url: {Boolean} whether or not to update url when changing variants. If false, the url isn't updated. Default: true (optional).
   Usage:
-  {% render 'product-variant-picker-collection', product: product, block: block, product_form_id: product_form_id, block_picker_type: picker_type, grid_item_id: grid_item_id %}
+  {% render 'product-variant-picker-collection', product: product, block: block, product_form_id: product_form_id, block_picker_type: picker_type, section_grid_id: section_grid_id, grid_item_id: grid_item_id %}
 {% endcomment %}
 
 {%- unless product.has_only_default_variant -%}
@@ -15,9 +15,9 @@
 
   {%- if block_picker_type == 'button' -%}
     <variant-radios
-      id="variant-radios-{{ section.id }}"
+      id="variant-radios-{{ section_grid_id }}"
       class="no-js-hidden"
-      data-section="{{ section.id }}"
+      data-section="{{ section_grid_id }}"
       data-url="{{ product.url }}"
       {% if update_url == false %}
         data-update-url="false"
@@ -35,9 +35,9 @@
     </variant-radios>
   {%- else -%}
     <variant-selects
-      id="variant-selects-{{ section.id }}"
+      id="variant-selects-{{ section_grid_id }}"
       class="no-js-hidden variant__item"
-      data-section="{{ section.id }}"
+      data-section="{{ section_grid_id }}"
       data-url="{{ product.url }}"
       {% if update_url == false %}
         data-update-url="false"
@@ -50,7 +50,7 @@
             {%  if option.name == 'weight' %}<span class="select_label">グラム数：</span>{% elsif option.name == 'grind' %}<span class="select_label">豆の状態：</span>{% endif %}
             <div class="select">
               <select
-                id="Option-{{ section.id }}-{{ forloop.index0 }}"
+                id="Option-{{ section_grid_id }}-{{ forloop.index0 }}"
                 class="select__select"
                 name="options[{{ option.name | escape }}]"
                 form="{{ product_form_id }}"
@@ -70,15 +70,15 @@
   {%- endif -%}
 {%- endunless -%}
 
-<noscript class="product-form__noscript-wrapper-{{ section.id }}">
+<noscript class="product-form__noscript-wrapper-{{ section_grid_id }}">
   <div class="product-form__input{% if product.has_only_default_variant %} hidden{% endif %}">
-    <label class="form__label" for="Variants-{{ section.id }}">
+    <label class="form__label" for="Variants-{{ section_grid_id }}">
       {{- 'products.product.product_variants' | t -}}
     </label>
     <div class="select">
       <select
         name="id"
-        id="Variants-{{ section.id }}"
+        id="Variants-{{ section_grid_id }}"
         class="select__select"
         form="{{ product_form_id }}"
       >
