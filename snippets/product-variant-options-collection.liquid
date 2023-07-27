@@ -14,7 +14,7 @@
     block: block,
     block_picker_type: block_picker_type,
     option_name: option_name,
-    section_grid_id: section_grid_id
+    section_id: section_id
     grid_item_id: grid_item_id
   %}
 {% endcomment %}
@@ -55,8 +55,8 @@
   {%- if block_picker_type == 'button' -%}
     <input
       type="radio"
-      id="{{ section_grid_id }}-{{ grid_item_id }}-{{ option.position }}-{{ forloop.index0 }}"
-      name="{{ section_grid_id }}-{{ grid_item_id }}-{{ option.name }}"
+      id="{{ section_id }}-{{ grid_item_id }}-{{ option.position }}-{{ forloop.index0 }}"
+      name="{{ section_id }}-{{ grid_item_id }}-{{ option.name }}"
       value="{{ value | escape }}"
       form="{{ product_form_id }}"
       {% if option.selected_value == value %}
@@ -66,7 +66,7 @@
         class="disabled"
       {% endif %}
     >
-    <label for="{{ section_grid_id }}-{{ grid_item_id }}-{{ option.position }}-{{ forloop.index0 }}">
+    <label for="{{ section_id }}-{{ grid_item_id }}-{{ option.position }}-{{ forloop.index0 }}">
       {{ value -}}
       <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
     </label>
