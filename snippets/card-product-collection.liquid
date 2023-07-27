@@ -300,7 +300,7 @@
               %}
 
       
-              {% render 'product-variant-picker-collection', product: card_product, block: block, product_form_id: product_form_id %}
+              {% render 'product-variant-picker-collection', product: card_product, block: block, product_form_id: product_form_id,block_picker_type: 'button' %}
 
               {%- render 'buy-buttons', block: block, product: card_product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
 
