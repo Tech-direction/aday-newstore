@@ -79,7 +79,7 @@
               style="--animation-order: {{ forloop.index }};"
               {% endif %}>
 
-              <div class="product__info-wrapper {% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+              <div class="product__info-wrapper {% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" style="padding:0">
               <product-info
                 id="ProductInfo-{{ section.id }}"
                 data-section="{{ section.id }}"
@@ -253,7 +253,7 @@
                             class="quantity__input"
                             type="number"
                             name="quantity"
-                            id="Quantity-{{ section.id }}"
+                            id="Quantity-{{ section.id }}-{{ forloop.index }}"
                             data-cart-quantity="{{ cart_qty }}"
                             data-min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
                             min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
@@ -318,12 +318,8 @@
                         {{- block.settings.text -}}
                       </a>
 
-                      {% assign share_url = product.selected_variant.url | default: product.url | prepend: request.origin %}
-                      {% render 'share-button',
-                        block: block,
-                        share_link: share_url
-                      %}
-        
+
+               
 
                       {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id, block_picker_type: 'button' %}
     
