@@ -217,7 +217,7 @@
               product_form_id: product_form_id,
               update_url: false,
               block_picker_type: 'button',
-              section_id: section_id,
+              section_id: section_id | append: '-' | append: grid_item_id ,
               grid_item_id: grid_item_id,
             %}
 
