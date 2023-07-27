@@ -206,7 +206,7 @@
         
 
             {%- liquid
-              assign product_form_id = 'product-form-' | append: section.id | append: '-' | append: grid_item_id
+              assign product_form_id = 'product-form-' | append: section.id
               assign section_id =  section.id
             -%}
             
@@ -318,7 +318,7 @@
               block: block,
               product: card_product,
               product_form_id: product_form_id,
-              section_id: product_form_id
+              section_id: section.id
             -%}
 
   <script type="application/ld+json">
