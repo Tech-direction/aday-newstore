@@ -23,7 +23,15 @@
     >
       {%- for option in product.options_with_values -%}
         <fieldset class="js product-form__input">
-          <legend class="form__label">{{ option.name }}</legend>
+          <legend class="form__label">
+            {% assign option_name = option.name %}
+            {% if option.name == 'weight' %}
+              {% assign option_name = '重さ' %}
+            {% elsif option.name == 'grind' %}
+              {% assign option_name = '状態' %}
+            {% endif %}
+            {{ option_name }}
+          </legend>
           {% render 'product-variant-options', product: product, option: option, block: block %}
         </fieldset>
       {%- endfor -%}

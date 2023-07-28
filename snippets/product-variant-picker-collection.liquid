@@ -11,8 +11,6 @@
 {% endcomment %}
 
 {%- unless product.has_only_default_variant -%}
-  
-
   {%- if block_picker_type == 'button' -%}
     <variant-radios
       id="variant-radios-{{ section_id }}"
@@ -26,7 +24,24 @@
     >
       {%- for option in product.options_with_values -%}
         <fieldset class="js product-form__input">
-          {% render 'product-variant-options-collection', product: product, option: option, block: block, block_picker_type: 'button',  option_name:option.name, section_id: section_id, grid_item_id: grid_item_id %}
+          <legend class="form__label">
+            {% assign option_name = option.name %}
+            {% if option.name == 'weight' %}
+              {% assign option_name = '重さ' %}
+            {% elsif option.name == 'grind' %}
+              {% assign option_name = '状態' %}
+            {% endif %}
+            {{ option_name }}
+          </legend>
+          {% render 'product-variant-options-collection',
+            product: product,
+            option: option,
+            block: block,
+            block_picker_type: 'button',
+            option_name: option.name,
+            section_id: section_id,
+            grid_item_id: grid_item_id
+          %}
         </fieldset>
       {%- endfor -%}
       <script type="application/json">
@@ -47,7 +62,11 @@
       {%- for option in product.options_with_values -%}
         <div class="product-form__input product-form__input--dropdown">
           <div class="field_select">
-            {%  if option.name == 'weight' %}<span class="select_label">グラム数：</span>{% elsif option.name == 'grind' %}<span class="select_label">豆の状態：</span>{% endif %}
+            {% if option.name == 'weight' -%}
+              <span class="select_label">グラム数：</span>
+            {%- elsif option.name == 'grind' -%}
+              <span class="select_label">豆の状態：</span>
+            {%- endif %}
             <div class="select">
               <select
                 id="Option-{{ section_id }}-{{ forloop.index0 }}"
@@ -55,7 +74,15 @@
                 name="options[{{ option.name | escape }}]"
                 form="{{ product_form_id }}"
               >
-                {% render 'product-variant-options-collection', product: product, option: option, block: block, block_picker_type: 'dropdown',  option_name:option.name, section_id: section_id, grid_item_id: grid_item_id %}
+                {% render 'product-variant-options-collection',
+                  product: product,
+                  option: option,
+                  block: block,
+                  block_picker_type: 'dropdown',
+                  option_name: option.name,
+                  section_id: section_id,
+                  grid_item_id: grid_item_id
+                %}
               </select>
               {% render 'icon-caret' %}
             </div>
