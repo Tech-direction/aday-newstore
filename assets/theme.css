@@ -1564,7 +1564,8 @@ body,
 }
 
 .contents-wrapper .page-menu .list-menu {
-  max-width: calc(var(--width-max-xs) - var(--margin)*2);
+  /*max-width: calc(var(--width-max-xs) - var(--margin)*2);*/
+  width: 100vw;
   margin: 0 auto;
   border-radius: 10em;
   background-color: rgb(var(--color-primary));
