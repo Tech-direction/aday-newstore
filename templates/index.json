@@ -158,42 +158,12 @@
         "swipe_on_mobile": false,
         "box_gap": "l"
       }
-    },
-    "46fa6585-d8a3-48b0-a384-6cf85096cceb": {
-      "type": "featured-collection-test",
-      "settings": {
-        "section_heading": "",
-        "heading_size": "l",
-        "section_sub_heading": "",
-        "change_box_layout": false,
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "ブレンドのコーヒー豆",
-        "products_to_show": 2,
-        "columns_desktop": 1,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "box_gap": "default"
-      }
     }
   },
   "order": [
     "d5fac027-1d6c-4527-b96a-703316269413",
     "ef1e9a68-7a62-4287-8199-03faca0c8b77",
     "361c01ec-b4ce-4a50-9bc5-26515e1e190d",
-    "f86325b7-9ef5-4459-acbc-f77ebaa74e38",
-    "46fa6585-d8a3-48b0-a384-6cf85096cceb"
+    "f86325b7-9ef5-4459-acbc-f77ebaa74e38"
   ]
 }
