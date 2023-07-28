@@ -2477,6 +2477,12 @@ body,
   transform: scale(.8);
 }
 
+@media screen and (max-width: 989px) {
+  .contents-wrapper .customer .address-list .grid__item {
+    width: 100%;
+  }
+}
+
 
 /*===============================================================
 
