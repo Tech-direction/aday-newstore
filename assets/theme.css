@@ -1822,7 +1822,8 @@ body,
   display: none;
 }
 
-.contents-wrapper .product__item .product__info-container > * + * {
+.contents-wrapper .product__item .product__info-container > * + *,
+.contents-wrapper .product__info-wrapper {
   margin: 0;
 }
 
