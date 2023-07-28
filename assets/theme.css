@@ -2372,6 +2372,8 @@ body,
 }
 
 .contents-wrapper .customer .address-list .grid__item {
+  width: calc((100% - var(--margin)) / 2);
+  min-height: 10em;
   padding: var(--margin);
   border-radius: var(--border-radius-box);
   border: 1px solid rgb(var(--color-border));
