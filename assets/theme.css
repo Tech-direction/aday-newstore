@@ -1838,6 +1838,13 @@ body,
   font-size: 1rem;
 }
 
+.contents-wrapper .product__item .product__info-container .product-form__quantity,
+.contents-wrapper .product__info-wrapper .product-form__quantity {
+  margin-top: var(--margin-s);
+}
+
+
+
 /*  veriation / buy button
 ---------------------------------------------------------------*/
 
