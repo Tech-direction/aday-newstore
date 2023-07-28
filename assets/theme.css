@@ -1823,7 +1823,7 @@ body,
 }
 
 .contents-wrapper .product__item .product__info-container > * + *,
-.contents-wrapper product__info {
+.contents-wrapper product__info  > * + * {
   margin: 0;
 }
 
