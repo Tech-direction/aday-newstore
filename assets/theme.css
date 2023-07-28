@@ -1024,6 +1024,10 @@ body,
 }
 
 @media screen and (max-width: 989px) {
+  .contents-wrapper .header__heading {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .contents-wrapper .header__heading-logo-wrapper {
     max-width: 200px !important;
   }
