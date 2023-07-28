@@ -1560,7 +1560,7 @@ body,
 ===============================================================*/
 
 .contents-wrapper .page-menu {
-  margin-top: var(--margin-section);
+  /*margin-top: var(--margin-section);*/
 }
 
 .contents-wrapper .page-menu .list-menu {
