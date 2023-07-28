@@ -1807,6 +1807,10 @@ body,
 /*  common DOM
 ---------------------------------------------------------------*/
 
+.contents-wrapper .card__information {
+  padding: 0;
+}
+
 .contents-wrapper .product__title,
 .contents-wrapper .product__title .heading,
 .contents-wrapper .card__heading {
