@@ -1823,7 +1823,7 @@ body,
 }
 
 .contents-wrapper .product__item .product__info-container > * + *,
-.contents-wrapper .product__info-wrapper {
+.contents-wrapper product__info {
   margin: 0;
 }
 
@@ -1843,7 +1843,9 @@ body,
   margin-top: var(--margin-s);
 }
 
-
+.contents-wrapper .product__info-wrapper  .product-form {
+  
+}
 
 /*  veriation / buy button
 ---------------------------------------------------------------*/
