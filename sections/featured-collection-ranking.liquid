@@ -81,7 +81,7 @@
                <product-info
                   id="ProductInfo-{{ section.id }}"
                   class="product__info-container"
-                  data-section="{{ section.id }}"
+                  data-section="{{ section.id }}-{{ forloop.index }}"
                   data-url="{{ product.url }}"
                 > 
               {% render 'card-product-collection'
