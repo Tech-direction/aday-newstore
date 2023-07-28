@@ -1819,7 +1819,7 @@ body,
 }
 
 .contents-wrapper .product__item .product__info-container > * + * {
-  margin-top: 0;
+  margin: 0;
 }
 
 .contents-wrapper .product__item .card__inner:has(.card__media) {
