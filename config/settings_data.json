@@ -153,6 +153,12 @@
           "enable_js_api": false,
           "js_api_version": ""
         }
+      },
+      "12850489877569859708": {
+        "type": "shopify:\/\/apps\/\/blocks\/validator-bar\/7521bee8-d5e5-4d5c-abcb-07c78b027718",
+        "disabled": true,
+        "settings": {
+        }
       }
     },
     "color_schemes": {
