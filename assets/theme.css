@@ -1866,6 +1866,11 @@ body,
   padding: var(--margin-s);
 }
 
+.contents-wrapper .pickup-availability-preview  .caption {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 .contents-wrapper .pickup-availability-preview .pickup-availability-button {
   margin-bottom: 0;
 }
