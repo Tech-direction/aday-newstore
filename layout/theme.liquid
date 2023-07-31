@@ -290,13 +290,7 @@
       })(document);
     </script>
 
-    <script>
-      $(window).on('load resize', function(){
-        footer__blocks_wrapper_w = $('.footer__blocks-wrapper').width();
-        console.log(footer__blocks_wrapper_w);
-        $('body').css('--page-width', footer__blocks_wrapper_w);
-      });
-    </script>
+    
     
   </head>
 
@@ -368,5 +362,13 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    <script>
+      $(window).on('load resize', function(){
+        footer__blocks_wrapper_w = $('.footer__blocks-wrapper').width();
+        console.log(footer__blocks_wrapper_w);
+        $('body').css('--page-width', footer__blocks_wrapper_w);
+      });
+    </script>
   </body>
 </html>
