@@ -732,7 +732,7 @@ a,
   display: none;
 }
 
-.cf-date-field--inline-inputs .cf-select-wrap, .cf-date-field--inline-inputs input {
+.contents-wrapper .cf-date-field--inline-inputs .cf-select-wrap, .cf-date-field--inline-inputs input {
   display: none !important;
 }
 
