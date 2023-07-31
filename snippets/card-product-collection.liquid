@@ -205,9 +205,11 @@
 
             {% render 'price', product: card_product, price_class: '' %}
 
-            <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
-              {{ card_product.metafields.introduction.introduction }}
-            </div>
+             {% if card_product.metafields.introduction.introduction != blank %}
+              <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
+                {{ card_product.metafields.introduction.introduction }}
+              </div>
+            {% endif %}
 
             <span class="button">詳しく見る</span>
           </div>
