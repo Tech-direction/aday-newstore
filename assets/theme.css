@@ -1890,6 +1890,10 @@ body,
 }
 
 
+.contents-wrapper .product__text > p {
+  margin-top: 0;
+}
+
 
 
 /*  veriation / buy button
