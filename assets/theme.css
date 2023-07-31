@@ -1852,7 +1852,7 @@ body,
 }
 
 .contents-wrapper .product__info-wrapper variant-radios {
-  margin-top: var(--margin);
+  margin-top: var(--margin) !important;
 }
 
 
