@@ -1862,6 +1862,11 @@ body,
   background-color: rgb(var(--color-gray));
 }
 
+.contents-wrapper .pickup-availability-preview {
+  padding: var(--margin-s);
+}
+
+
 /*  veriation / buy button
 ---------------------------------------------------------------*/
 
