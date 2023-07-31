@@ -726,14 +726,9 @@ a,
 /*  birthday
 ---------------------------------------------------------------*/
 
-.contents-wrapper .f-date-field--inline-inputs .cf-select-wrap,
+.contents-wrapper .cf-date-field--inline-inputs .cf-select-wrap,
 .contents-wrapper .cf-date-field--inline-inputs input {
   margin: 0;
-  display: none;
-}
-
-.contents-wrapper .cf-date-field--inline-inputs .cf-select-wrap, .cf-date-field--inline-inputs input {
-  display: none !important;
 }
 
 .contents-wrapper [data-theme-name=Dawn] .cf-field input:not([type=checkbox]):not([type=radio]),
