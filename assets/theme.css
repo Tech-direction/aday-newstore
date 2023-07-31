@@ -1859,6 +1859,7 @@ body,
 }
 
 .contents-wrapper .product__pickup-availabilities {
+  margin-top: var(--margin);
   border: 1px solid rgb(var(--color-border));
   background-color: rgb(var(--color-gray));
 }
