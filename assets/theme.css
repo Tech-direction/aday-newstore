@@ -172,7 +172,7 @@ a,
 .contents-wrapper .underlined-link,
 .contents-wrapper .customer a:not(.button) {
   color: rgb(var(--color-black));
-  text-decoration: none;
+  text-decoration: none !important;
   transition: all var(--duration-long) ease;
 }
 
