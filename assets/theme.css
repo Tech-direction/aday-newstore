@@ -1881,9 +1881,9 @@ body,
 }
 
 .contents-wrapper .pickup-availability-preview .pickup-availability-button {
-  margin-top: var(--margin-s) !important;
+  margin-top: var(--margin-s);
   margin-bottom: 0;
-  text-decoration: underline;
+  text-decoration: underline !important;
   padding: 0;
   font-size: var(--font-s) !important;
 }
