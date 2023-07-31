@@ -1948,7 +1948,7 @@ body,
   background-color: rgb(var(--color-primary));
 }
 
-.contents-wrapper .product-ranking > :first-child .card__heading,
+.contents-wrapper .product-ranking > :first-child .card__heading a,
 .contents-wrapper .product-ranking > :first-child .price {
   color: #fff !important;
 }
