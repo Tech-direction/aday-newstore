@@ -1891,7 +1891,8 @@ body,
 }
 
 .contents-wrapper .product-list .product__item .button {
-  margin-top: var(--margin-s);
+  width: 100%;
+  margin-top: var(--margin-s) !important;
   
 }
 
