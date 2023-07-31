@@ -1851,7 +1851,8 @@ body,
   margin: 0;
 }
 
-.contents-wrapper .product__info-wrapper variant-radios {
+.contents-wrapper .product__info-wrapper variant-radios,
+.contents-wrapper .product__text inline-richtext{
   margin-top: var(--margin) !important;
 }
 
