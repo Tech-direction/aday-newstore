@@ -293,9 +293,9 @@
     <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js?ver=20230731151543' id='theme-jquery.min-js'></script>
     <script>
       $(window).on('load resize', function(){
+        w_width = $(window).width();
         footer__blocks_wrapper_w = $('.footer__blocks-wrapper').width();
-        console.log(footer__blocks_wrapper_w);
-        $('body').attr('style', '--page-width:'+footer__blocks_wrapper_w+'px;');
+        $('body').attr('style', '--page-width-margin:'+(w_width - footer__blocks_wrapper_w)/2+'px;');
       });
     </script>
     
