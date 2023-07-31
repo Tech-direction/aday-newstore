@@ -1866,6 +1866,10 @@ body,
   padding: var(--margin-s);
 }
 
+.contents-wrapper .pickup-availability-preview .pickup-availability-button {
+  margin-bottom: 0;
+}
+
 
 /*  veriation / buy button
 ---------------------------------------------------------------*/
