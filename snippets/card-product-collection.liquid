@@ -206,7 +206,7 @@
             {% render 'price', product: card_product, price_class: '' %}
 
             <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
-              {{ card_product.metafields.global.description_tag }}
+              {{ card_product.metafields.introduction.introduction }}
             </div>
 
             <span class="button">詳しく見る</span>
