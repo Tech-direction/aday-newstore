@@ -1854,8 +1854,7 @@ body,
 .contents-wrapper .product__info-container .product-form,
 .contents-wrapper .product__info-container .product__description,
 .contents-wrapper .product__info-container .icon-with-text {
-  margin: var(--margin) 0; 
-  margin-bottom: 0;
+  margin: var(--margin) 0;
 }
 
 .contents-wrapper .product__pickup-availabilities {
