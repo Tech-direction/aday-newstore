@@ -726,6 +726,10 @@ a,
 /*  birthday
 ---------------------------------------------------------------*/
 
+.contents-wrapper .cf-date-field--inline-inputs {
+  width: 100%;
+}
+
 .contents-wrapper .cf-date-field--inline-inputs .cf-select-wrap,
 .contents-wrapper .cf-date-field--inline-inputs input {
   margin: 0;
