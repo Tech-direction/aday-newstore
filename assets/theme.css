@@ -1871,7 +1871,7 @@ body,
   font-weight: 500;
 }
 
-.contents-wrapper .pickup-availability-preview .icon {
+.contents-wrapper .pickup-availability-preview .icon path {
   fill: rgb(var(--color-primary)) !important;
 }
 
