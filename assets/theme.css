@@ -1851,6 +1851,13 @@ body,
   margin: 0;
 }
 
+.contents-wrapper .product__info-container .product-form,
+.contents-wrapper .product__info-container .product__description,
+.contents-wrapper .product__info-container .icon-with-text {
+  margin-top: var(--margin);
+  margin-bottom: 0;
+}
+
 
 /*  veriation / buy button
 ---------------------------------------------------------------*/
