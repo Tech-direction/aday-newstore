@@ -1895,8 +1895,8 @@ body,
   margin-top: var(--margin-s) !important;
 }
 
-.contents-wrapper .product-list .product__item .price {
-  margin-top: 0;
+.contents-wrapper .product-list .product__item .card__information {
+  margin-top: var(--margin-s);
 }
 
 @media screen and (max-width: 989px) {
