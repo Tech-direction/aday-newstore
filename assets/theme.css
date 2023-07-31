@@ -1854,12 +1854,11 @@ body,
 .contents-wrapper .product__info-container .product-form,
 .contents-wrapper .product__info-container .product__description,
 .contents-wrapper .product__info-container .icon-with-text {
-  margin-top: var(--margin);
+  margin: var(--margin) 0;
   margin-bottom: 0;
 }
 
 .contents-wrapper .product__pickup-availabilities {
-  margin-top: var(--margin);
   border: 1px solid rgb(var(--color-border));
   background-color: rgb(var(--color-gray));
 }
