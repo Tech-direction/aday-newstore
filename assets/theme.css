@@ -1847,6 +1847,11 @@ body,
   
 }
 
+.contents-wrapper .product__info-container>*+* {
+  margin: 0;
+}
+
+
 /*  veriation / buy button
 ---------------------------------------------------------------*/
 
