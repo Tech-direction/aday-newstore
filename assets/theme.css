@@ -1893,7 +1893,10 @@ body,
 .contents-wrapper .product-list .product__item .button {
   width: 100%;
   margin-top: var(--margin-s) !important;
-  
+}
+
+.contents-wrapper .product-list .product__item .price {
+  margin-top: 0;
 }
 
 @media screen and (max-width: 989px) {
