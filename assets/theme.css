@@ -1950,7 +1950,7 @@ body,
 
 .contents-wrapper .product-ranking > :first-child .card__heading,
 .contents-wrapper .product-ranking > :first-child .price {
-  color: #fff;
+  color: #fff !important;
 }
 
 .contents-wrapper .product-ranking > :first-child:before {
