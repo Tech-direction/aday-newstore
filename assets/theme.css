@@ -1890,6 +1890,11 @@ body,
   position: relative;
 }
 
+.contents-wrapper .product-list .product__item .button {
+  margin-top: var(--margin-s);
+  
+}
+
 @media screen and (max-width: 989px) {
   .contents-wrapper .product-list {
     gap: var(--margin) !important;
