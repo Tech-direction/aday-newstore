@@ -1858,6 +1858,10 @@ body,
   margin-bottom: 0;
 }
 
+.contents-wrapper .product__pickup-availabilities {
+  border: 1px solid rgb(var(--color-border));
+  background-color: rgb(var(--color-gray));
+}
 
 /*  veriation / buy button
 ---------------------------------------------------------------*/
