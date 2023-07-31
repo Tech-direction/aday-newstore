@@ -731,9 +731,7 @@ a,
   margin: 0;
 }
 
-.contents-wrapper [data-theme-name=Dawn] .cf-field input:not([type=checkbox]):not([type=radio]),
-.contents-wrapper [data-theme-name=Dawn] .cf-field textarea,
-.contents-wrapper [data-theme-name=Dawn] .cf-field select {
+.contents-wrapper .cf-select-wrap .input-full {
   padding: 0;
 }
 
