@@ -723,6 +723,21 @@ a,
   color: #fff !important;
 }
 
+/*  birthday
+---------------------------------------------------------------*/
+
+.contents-wrapper .f-date-field--inline-inputs .cf-select-wrap,
+.contents-wrapper .cf-date-field--inline-inputs input {
+  margin: 0;
+}
+
+.contents-wrapper [data-theme-name=Dawn] .cf-field input:not([type=checkbox]):not([type=radio]),
+.contents-wrapper [data-theme-name=Dawn] .cf-field textarea,
+.contents-wrapper [data-theme-name=Dawn] .cf-field select {
+  padding: 0;
+}
+
+
 /*===============================================================
 
 	content Block
