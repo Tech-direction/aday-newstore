@@ -729,6 +729,7 @@ a,
 .contents-wrapper .f-date-field--inline-inputs .cf-select-wrap,
 .contents-wrapper .cf-date-field--inline-inputs input {
   margin: 0;
+  display: none;
 }
 
 
