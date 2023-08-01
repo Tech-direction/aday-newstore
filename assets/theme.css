@@ -875,6 +875,7 @@ body,
   padding-top: var(--margin-section);
 }
 
+.contents-wrapper #MainContent > :first-child,
 .contents-wrapper .section:has(.section-block) + .section {
   padding-top: var(--margin-l);
 }
