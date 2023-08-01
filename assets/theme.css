@@ -1620,6 +1620,11 @@ body,
   flex-wrap: wrap;
 }
 
+.contents-wrapper .subscription-feature-list .feature__item.type-gray {
+  color: rgb(var(--color-black));
+  background-color: rgb(var(--color-gray));
+}
+
 .contents-wrapper .subscription-feature-list .feature__item > * {
   width: 100%;
   margin: 0;
