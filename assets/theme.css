@@ -346,11 +346,13 @@ a,
 
 /* disc
 -----------------------------------------------------*/
-.contents-wrapper .list.type-disc li {
+.contents-wrapper .list.type-disc li,
+.contents-wrapper .rich-text__text ul li {
   padding-left: 1em;
 }
 
-.contents-wrapper .list.type-disc li:before {
+.contents-wrapper .list.type-disc li:before,
+.contents-wrapper .rich-text__text ul li:before {
   content: '';
   width: .5em;
   height: .5em;
