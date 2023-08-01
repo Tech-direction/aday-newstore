@@ -21,7 +21,7 @@
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'heading' -%}
-              <h2
+              <{{ block.settings.heading_dom }}
                 class="rich-text__heading rte inline-richtext {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
@@ -30,7 +30,7 @@
                 {% endif %}
               >
                 {{ block.settings.heading }}
-              </h2>
+              </{{ block.settings.heading_dom }}>
             {%- when 'caption' -%}
               <p
                 class="rich-text__caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -195,28 +195,53 @@
         },
         {
           "type": "select",
-          "id": "heading_size",
+          "id": "heading_dom",
           "options": [
             {
               "value": "h2",
-              "label": "t:sections.all.heading_size.options__1.label"
+              "label": "h2"
             },
             {
               "value": "h1",
-              "label": "t:sections.all.heading_size.options__2.label"
+              "label": "h1"
             },
             {
-              "value": "h0",
-              "label": "t:sections.all.heading_size.options__3.label"
+              "value": "h3",
+              "label": "h3"
             },
             {
-              "value": "hxl",
-              "label": "t:sections.all.heading_size.options__4.label"
+              "value": "h4",
+              "label": "h4"
+            },
+            {
+              "value": "h5",
+              "label": "h5"
             }
           ],
           "default": "h1",
-          "label": "t:sections.all.heading_size.label"
-        }
+          "label": "見出しの種類"
+        },
+        {
+        "type": "select",
+        "id": "heading_size",
+        "options": [
+          {
+            "value": "default",
+            "label": "t:sections.all.heading_size.options__1.label"
+          }, {
+            "value": "m",
+            "label": "t:sections.all.heading_size.options__2.label"
+          }, {
+            "value": "l",
+            "label": "t:sections.all.heading_size.options__3.label"
+          }, {
+            "value": "xl",
+            "label": "最大"
+          }
+        ],
+        "default": "l",
+        "label": "t:sections.all.heading_size.label"
+      }
       ]
     },
     {
