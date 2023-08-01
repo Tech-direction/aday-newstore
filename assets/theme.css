@@ -861,6 +861,10 @@ body,
   padding-top: var(--margin-section);
 }
 
+.contents-wrapper .section:has(.section-block) + .section {
+  padding-top: var(--margin-l);
+}
+
 
 /*===============================================================
 
