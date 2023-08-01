@@ -1638,9 +1638,13 @@ body,
   background-color: rgb(var(--color-gray));
 }
 
-.contents-wrapper .subscription-feature-list .feature__item > *:not([class^="align-"]) {
+.contents-wrapper .subscription-feature-list .feature__item > * {
   width: 100%;
   margin: 0;
+  
+}
+
+.contents-wrapper .subscription-feature-list .feature__item > *:not([class^="align-"]) {
   text-align: center;
 }
 
