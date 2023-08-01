@@ -426,8 +426,12 @@ a,
 
 .contents-wrapper .cf-field  label:has(input[type="checkbox"]):before {
   content: '';
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.contents-wrapper .cf-field  label:has(input[type="checkbox"]) input[type="checkbox"] {
+  display: none;
 }
 
 .contents-wrapper [data-cf-field-type="heading"].cf-field,
