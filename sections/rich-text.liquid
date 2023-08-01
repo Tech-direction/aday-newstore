@@ -109,6 +109,24 @@
   "settings": [
     {
       "type": "select",
+      "id": "content_max_width",
+      "default": "default",
+      "label": "コンテンツの横幅",
+      "options": [
+        {
+          "value": "s",
+          "label": "狭い"
+        }, {
+          "value": "m",
+          "label": "少し狭い"
+        }, {
+          "value": "default",
+          "label": "標準"
+        }
+      ]
+    },
+    {
+      "type": "select",
       "id": "desktop_content_position",
       "options": [
         {
@@ -183,24 +201,6 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 52
-    },
-    {
-      "type": "select",
-      "id": "content_max_width",
-      "default": "default",
-      "label": "コンテンツの横幅",
-      "options": [
-        {
-          "value": "s",
-          "label": "狭い"
-        }, {
-          "value": "m",
-          "label": "少し狭い"
-        }, {
-          "value": "default",
-          "label": "標準"
-        }
-      ]
     }
   ],
   "blocks": [
