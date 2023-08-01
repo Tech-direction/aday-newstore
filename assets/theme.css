@@ -395,7 +395,8 @@ a,
 .huckleberry-subscription-list-color input,
 [data-theme-name=Dawn] .contents-wrapper .cf-field input:not([type=checkbox]):not([type=radio]),
 [data-theme-name=Dawn] .contents-wrapper .cf-field textarea,
-[data-theme-name=Dawn] .contents-wrapper .cf-field select{
+[data-theme-name=Dawn] .contents-wrapper .cf-field select,
+.contents-wrapper .field label:has([type="checkbox"]):before {
   width: 100%;
   max-width: none !important;
   height: 3.5rem;
@@ -416,7 +417,8 @@ a,
 .contents-wrapper .field, 
 .huckleberry-subscription-list-color select,
 .huckleberry-subscription-list-color input:not(.ipGBiP),
-[data-theme-name=Dawn] .contents-wrapper .cf-field {
+[data-theme-name=Dawn] .contents-wrapper .cf-field,
+.contents-wrapper .field label:has([type="checkbox"]):before {
   border: 1px solid rgb(var(--color-border));
   border-radius: 0 !important;
   background-color: #fff;
