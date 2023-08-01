@@ -41,6 +41,7 @@
       ],
       "settings": {
         "content_max_width": "xs",
+        "change_block": true,
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "",
