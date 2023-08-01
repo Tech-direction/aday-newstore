@@ -107,6 +107,18 @@ html {
   font-size: 1rem;
 }
 
+.contents-wrapper .align-left {
+  text-align: left;
+}
+
+.contents-wrapper .align-center {
+  text-align: center;
+}
+
+.contents-wrapper .align-right {
+  text-align: right;
+}
+
 @media screen and (max-width: 989px) {
   body,
   html {
