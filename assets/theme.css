@@ -426,6 +426,7 @@ a,
 .contents-wrapper [data-cf-field-type="heading"].cf-field,
 .contents-wrapper [data-cf-field-type="paragraph"].cf-field,
 .contents-wrapper [data-cf-field-type="email_marketing_consent"].cf-field{
+  font-size: 1rem;
   border: none;
   background-color: transparent;
 }
