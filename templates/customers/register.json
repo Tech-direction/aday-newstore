@@ -1,44 +1,25 @@
 {
   "sections": {
-    "main": {
-      "type": "main-register",
-      "settings": {
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "e461de2f-7a23-4db1-bf1e-804834f28228": {
       "type": "rich-text",
       "blocks": {
         "template--19717718311220__e461de2f-7a23-4db1-bf1e-804834f28228-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "新規会員登録",
             "heading_size": "h1"
           }
         },
         "template--19717718311220__e461de2f-7a23-4db1-bf1e-804834f28228-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "template--19717718311220__e461de2f-7a23-4db1-bf1e-804834f28228-button-1": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "text": "<p>みなさん、はじめまして。A day in the coffeeです。<br\/>私たちのオンラインストアへようこそお越しくださいました。<br\/>当店では、焼きたてのコーヒー豆をご自宅で楽しんでいただけるよう、毎日注文をい<br\/>ただいてから焙煎し、丁寧に梱包してお送りしています。<br\/>会員の皆様には特典として、以下の特別なサービスをご用意しています。<\/p><ul><li>会員登録時に特別割引クーポンをプレゼント！<\/li><li>お誕生日を迎えられたお客様に、特別な割引チケットを贈呈<\/li><li>会員限定の割引クーポンやセール情報をお届け<\/li><li>会員限定のコーヒーについてのお役立ち情報をお読みいただけます<\/li><\/ul><p>皆様の日々のコーヒー生活をもっとおいしく、もっと楽しくするお手伝いができれば<br\/>と思っています。<br\/>まだ当店の会員でない方は、ぜひ以下のリンクから新規登録してください。<\/p>"
           }
         }
       },
       "block_order": [
         "template--19717718311220__e461de2f-7a23-4db1-bf1e-804834f28228-heading-1",
-        "template--19717718311220__e461de2f-7a23-4db1-bf1e-804834f28228-text-1",
-        "template--19717718311220__e461de2f-7a23-4db1-bf1e-804834f28228-button-1"
+        "template--19717718311220__e461de2f-7a23-4db1-bf1e-804834f28228-text-1"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -48,10 +29,17 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "main": {
+      "type": "main-register",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main",
-    "e461de2f-7a23-4db1-bf1e-804834f28228"
+    "e461de2f-7a23-4db1-bf1e-804834f28228",
+    "main"
   ]
 }
