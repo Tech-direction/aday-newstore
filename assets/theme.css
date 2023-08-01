@@ -1638,7 +1638,7 @@ body,
   background-color: rgb(var(--color-gray));
 }
 
-.contents-wrapper .subscription-feature-list .feature__item > * {
+.contents-wrapper .subscription-feature-list .feature__item > *:not([class^="align-"]) {
   width: 100%;
   margin: 0;
   text-align: center;
