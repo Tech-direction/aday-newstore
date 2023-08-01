@@ -892,6 +892,10 @@ body,
   gap: var(--margin);
 }
 
+.contents-wrapper .grid__item {
+  flex-grow: unset;
+}
+
 .contents-wrapper .grid.grid--gap-none {
   gap: 0;
 }
