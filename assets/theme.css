@@ -1626,7 +1626,7 @@ body,
 }
 
 .contents-wrapper .subscription-feature-list .feature__item {
-  width: calc((100% - var(--margin-s) * 2)/3) !important;
+  /*width: calc((100% - var(--margin-s) * 2)/3) !important;*/
   padding: var(--margin);
   color: #fff;
   font-weight: 500;
