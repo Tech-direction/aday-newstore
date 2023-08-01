@@ -417,14 +417,15 @@ a,
 .huckleberry-subscription-list-color select,
 .huckleberry-subscription-list-color input:not(.ipGBiP),
 [data-theme-name=Dawn] .contents-wrapper .cf-field,
-.contents-wrapper .field label:has([type="checkbox"]):before {
+.contents-wrapper .cf-field  label:has(input[type="checkbox"]):before {
   border: 1px solid rgb(var(--color-border));
   border-radius: 0 !important;
   background-color: #fff;
   transition: all var(--duration-long) ease;
 }
 
-.contents-wrapper .field label:has([type="checkbox"]):before {
+.contents-wrapper .cf-field  label:has(input[type="checkbox"]):before {
+  content: '';
   width: 3.5rem;
   height: 3.5rem;
 }
