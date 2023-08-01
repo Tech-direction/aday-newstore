@@ -444,6 +444,8 @@ a,
 }
 
 .contents-wrapper [data-cf-field-type="email_marketing_consent"].cf-field label {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 1rem !important;
   color: rgb(var(--color-black)) !important;
   position: relative !important;
