@@ -445,8 +445,8 @@ a,
 .contents-wrapper [data-cf-field-type="email_marketing_consent"].cf-field label {
   font-size: 1rem !important;
   color: rgb(var(--color-black)) !important;
-  position: relative;
-  top: auto;
+  position: relative !important;
+  top: auto !important;
 }
 
 .contents-wrapper .cf-field[data-cf-invalid=true]:not([data-cf-field-type=repeating_group]) {
