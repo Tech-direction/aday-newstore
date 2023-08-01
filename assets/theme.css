@@ -431,7 +431,7 @@ a,
 }
 
 .contents-wrapper .cf-field  label:has(input[type="checkbox"]) input[type="checkbox"] {
-  display: none;
+  display: none !important; 
 }
 
 .contents-wrapper [data-cf-field-type="heading"].cf-field,
