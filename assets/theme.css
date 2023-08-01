@@ -431,6 +431,15 @@ a,
   background-color: transparent;
 }
 
+.contents-wrapper [data-cf-field-type="heading"].cf-field h1,
+.contents-wrapper [data-cf-field-type="heading"].cf-field h2,
+.contents-wrapper [data-cf-field-type="heading"].cf-field h3,
+.contents-wrapper [data-cf-field-type="heading"].cf-field h4,
+.contents-wrapper [data-cf-field-type="heading"].cf-field h5,
+.contents-wrapper [data-cf-field-type="heading"].cf-field h6 {
+  font-size: 1rem;
+}
+
 .contents-wrapper .cf-field[data-cf-invalid=true]:not([data-cf-field-type=repeating_group]) {
   border-color: rgb(var(--color-border));
   background-color: transparent;
