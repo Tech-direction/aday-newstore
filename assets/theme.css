@@ -2005,7 +2005,6 @@ body,
 }
 
 
-
 /*  veriation / buy button
 ---------------------------------------------------------------*/
 
@@ -2063,6 +2062,18 @@ body,
     gap: var(--margin) !important;
   }
 }
+
+/*  featured-product
+---------------------------------------------------------------*/
+
+.contents-wrapper .featured-product {
+  gap: var(--margin-l);
+}
+
+.contents-wrapper .featured-product > * {
+  padding: 0;
+}
+
 
 
 /*  ranking
