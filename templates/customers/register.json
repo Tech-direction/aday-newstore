@@ -7,7 +7,8 @@
           "type": "heading",
           "settings": {
             "heading": "新規会員登録",
-            "heading_size": "h1"
+            "heading_type": "h1",
+            "heading_size": "xl"
           }
         },
         "template--19717718311220__e461de2f-7a23-4db1-bf1e-804834f28228-text-1": {
