@@ -2071,9 +2071,13 @@ body,
 }
 
 .contents-wrapper .product.featured-product > * {
-  padding: 0;
+  padding: 0 !important;
+  flex: 1;
 }
 
+.contents-wrapper .product.featured-product .product__media-wrapper {
+  
+}
 
 
 /*  ranking
