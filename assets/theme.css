@@ -1557,7 +1557,7 @@ body,
 
 .contents-wrapper.top .section-billboard {
   height: 100svh;
-  padding: 0 0 15svh;
+  padding: 0 0 15svh !important;
 }
 
 .contents-wrapper.top .section-billboard .banner--medium:not(.banner--adapt) {
@@ -1600,7 +1600,7 @@ body,
   
   .contents-wrapper.top .section-billboard {
     height: 44rem;
-    padding-bottom: 10rem;
+    padding-bottom: 10rem !important;
   }
   .contents-wrapper.top .section-billboard .content-container {
     margin-bottom: calc( (10rem - var(--margin-s))*-1 );
