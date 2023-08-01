@@ -1622,7 +1622,7 @@ body,
 
 .contents-wrapper .subscription-feature-list {
   background-color: transparent;
-  gap: var(--margin-s);
+  /*gap: var(--margin-s);*/
 }
 
 .contents-wrapper .subscription-feature-list .feature__item {
