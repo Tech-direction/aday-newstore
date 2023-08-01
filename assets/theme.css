@@ -423,6 +423,11 @@ a,
   transition: all var(--duration-long) ease;
 }
 
+.contents-wrapper .cf-field[data-cf-field-type="heading"] {
+  border: none;
+  background-color: transparent;
+}
+
 .contents-wrapper .cf-field[data-cf-invalid=true]:not([data-cf-field-type=repeating_group]) {
   border-color: rgb(var(--color-border));
   background-color: transparent;
