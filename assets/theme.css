@@ -107,15 +107,15 @@ html {
   font-size: 1rem;
 }
 
-.contents-wrapper .align-left {
+.contents-wrapper *.align-left {
   text-align: left;
 }
 
-.contents-wrapper .align-center {
+.contents-wrapper *.align-center {
   text-align: center;
 }
 
-.contents-wrapper .align-right {
+.contents-wrapper *.align-right {
   text-align: right;
 }
 
