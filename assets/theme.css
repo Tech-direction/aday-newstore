@@ -901,7 +901,7 @@ body,
   max-width: none;
   margin: 0 !important;
   padding: 0;
-  flex: none;
+  /*flex: none;*/
 }
 
 .contents-wrapper .grid .grid__item a:hover {
