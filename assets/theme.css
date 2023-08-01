@@ -453,7 +453,7 @@ a,
   letter-spacing: 0;
 }
 
-.contents-wrapper [data-cf-field-type="email_marketing_consent"].cf-field label {
+[data-theme-name=Dawn] .contents-wrapper [data-cf-field-type="email_marketing_consent"].cf-field label {
   margin-top: 0;
   margin-bottom: 0;
   margin-right: 0;
