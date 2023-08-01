@@ -2755,6 +2755,24 @@ body,
 }
 
 
+/*===============================================================
+
+	richtext
+
+===============================================================*/
+
+.contents-wrapper .rich-text__text.align-left p {
+  text-align: left;
+}
+
+.contents-wrapper .rich-text__text.align-center p {
+  text-align: center;
+}
+
+.contents-wrapper .rich-text__text.align-right p {
+  text-align: right;
+}
+
 
 /*===============================================================
 
