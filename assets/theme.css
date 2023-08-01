@@ -2769,6 +2769,12 @@ body,
   text-align: center;
 }
 
+.contents-wrapper .rich-text__text.align-center ul {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .contents-wrapper .rich-text__text.align-right p {
   text-align: right;
 }
