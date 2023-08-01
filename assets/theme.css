@@ -425,7 +425,7 @@ a,
 
 .contents-wrapper [data-cf-field-type="heading"].cf-field,
 .contents-wrapper [data-cf-field-type="paragraph"].cf-field,
-.contents-wrapper [data-cf-field-type="email_marketing_consent"].cf-field{
+.contents-wrapper [data-cf-field-type="email_marketing_consent"].cf-field {
   font-size: 1rem;
   border: none;
   background-color: transparent;
@@ -440,6 +440,10 @@ a,
   font-size: 1rem;
   font-weight: 400 !important;
   letter-spacing: 0;
+}
+
+.contents-wrapper [data-cf-field-type="email_marketing_consent"].cf-field label {
+  font-size: 1rem;
 }
 
 .contents-wrapper .cf-field[data-cf-invalid=true]:not([data-cf-field-type=repeating_group]) {
