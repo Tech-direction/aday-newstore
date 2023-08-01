@@ -444,6 +444,8 @@ a,
 
 .contents-wrapper [data-cf-field-type="email_marketing_consent"].cf-field label {
   font-size: 1rem;
+  position: relative;
+  top: auto;
 }
 
 .contents-wrapper .cf-field[data-cf-invalid=true]:not([data-cf-field-type=repeating_group]) {
