@@ -2066,11 +2066,11 @@ body,
 /*  featured-product
 ---------------------------------------------------------------*/
 
-.contents-wrapper .featured-product {
+.contents-wrapper .product.featured-product {
   gap: var(--margin-l);
 }
 
-.contents-wrapper .featured-product > * {
+.contents-wrapper .product.featured-product > * {
   padding: 0;
 }
 
