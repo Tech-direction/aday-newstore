@@ -2076,8 +2076,10 @@ body,
 }
 
 .contents-wrapper .product.featured-product .product__media-wrapper {
-  
+  width: auto;
 }
+
+
 
 
 /*  ranking
