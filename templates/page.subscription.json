@@ -1,5 +1,17 @@
 {
   "sections": {
+    "e1ffcafa-e72c-434d-9a86-db65767e87f1": {
+      "type": "main-section-header",
+      "settings": {
+        "section_heading": "コーヒー定期便",
+        "heading_size": "xl",
+        "section_sub_heading": "SUBSCRIPTION",
+        "change_box_layout": false,
+        "description": "",
+        "show_description": false,
+        "image": "shopify:\/\/shop_images\/gift2022_01.jpg"
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -9,6 +21,7 @@
     }
   },
   "order": [
+    "e1ffcafa-e72c-434d-9a86-db65767e87f1",
     "main"
   ]
 }
