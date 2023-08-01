@@ -1822,7 +1822,8 @@ body,
 .contents-wrapper .article-wrapper .article-template__content p + div > .movie,
 .contents-wrapper .article-wrapper .article-template__content p + p > .movie,
 .contents-wrapper .article-wrapper .article-template__content p + .movie,
-.contents-wrapper .article-wrapper .article-template__content * + .movie {
+.contents-wrapper .article-wrapper .article-template__content * + .movie,
+.contents-wrapper .article-wrapper .article-template__content * + ul {
   margin-top: 2em;
 }
 
