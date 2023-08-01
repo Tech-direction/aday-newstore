@@ -430,10 +430,6 @@ a,
   height: 2rem;
 }
 
-.contents-wrapper .cf-field  label:has(input[type="checkbox"]) input[type="checkbox"] {
-  display: none !important; 
-}
-
 .contents-wrapper [data-cf-field-type="heading"].cf-field,
 .contents-wrapper [data-cf-field-type="paragraph"].cf-field,
 .contents-wrapper [data-cf-field-type="email_marketing_consent"].cf-field {
@@ -786,6 +782,18 @@ a,
 
 .contents-wrapper .cf-select-wrap .input-full {
   padding: 0;
+}
+
+
+/*  checkbox
+---------------------------------------------------------------*/
+
+.contents-wrapper .cf-field  label:has(input[type="checkbox"]) input[type="checkbox"] {
+  display: none !important; 
+}
+
+.contents-wrapper .cf-field  label:has(input[type="checkbox"]:checked):before {
+  background-color: rgb(var(--color-black));
 }
 
 
