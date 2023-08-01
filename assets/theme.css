@@ -1618,6 +1618,7 @@ body,
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  gap: var(--margin-s);
 }
 
 .contents-wrapper .subscription-feature-list .feature__item.type-gray {
