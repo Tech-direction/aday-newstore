@@ -145,7 +145,7 @@ html {
   margin: 0;
   font-weight: 500;
   font-family: 'zen-kaku-gothic-new', 'Helvetica Neue', 'Lucida Grande', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'Meiryo', 'メイリオ', 'sans-serif' !important;
-  letter-spacing: .1em;
+  /*letter-spacing: .1em;*/
 }
 
 .contents-wrapper .heading.size-s {
