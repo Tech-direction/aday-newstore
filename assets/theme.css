@@ -1641,7 +1641,6 @@ body,
 .contents-wrapper .subscription-feature-list .feature__item > * {
   width: 100%;
   margin: 0;
-  
 }
 
 .contents-wrapper .subscription-feature-list .feature__item > *:not([class^="align-"]) {
