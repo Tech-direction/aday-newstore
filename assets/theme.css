@@ -423,7 +423,7 @@ a,
   transition: all var(--duration-long) ease;
 }
 
-.contents-wrapper .cf-field[data-cf-field-type="heading"] {
+.contents-wrapper [data-cf-field-type="heading"].cf-field {
   border: none;
   background-color: transparent;
 }
