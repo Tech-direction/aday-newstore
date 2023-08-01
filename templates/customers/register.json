@@ -23,13 +23,13 @@
         "template--19717718311220__e461de2f-7a23-4db1-bf1e-804834f28228-text-1"
       ],
       "settings": {
+        "content_max_width": "xs",
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
         "padding_top": 0,
-        "padding_bottom": 0,
-        "content_max_width": "s"
+        "padding_bottom": 0
       }
     },
     "main": {
