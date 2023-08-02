@@ -892,7 +892,10 @@ body,
 ===============================================================*/
 
 .contents-wrapper .grid {
-  margin: 0 auto;
+  /*margin: 0 auto;*/
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
   gap: var(--margin);
 }
 
