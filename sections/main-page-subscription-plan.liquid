@@ -231,25 +231,74 @@
       "label": "t:sections.multicolumn.settings.title.label"
     },
     {
-      "type": "select",
-      "id": "heading_size",
-      "options": [
-        {
-          "value": "h2",
-          "label": "t:sections.all.heading_size.options__1.label"
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "default",
+              "label": "t:sections.all.heading_size.options__1.label"
+            }, {
+              "value": "m",
+              "label": "t:sections.all.heading_size.options__2.label"
+            }, {
+              "value": "l",
+              "label": "t:sections.all.heading_size.options__3.label"
+            }, {
+              "value": "xl",
+              "label": "最大"
+            }
+          ],
+          "default": "l",
+          "label": "t:sections.all.heading_size.label"
         },
         {
-          "value": "h1",
-          "label": "t:sections.all.heading_size.options__2.label"
+          "type": "select",
+          "id": "heading_type",
+          "options": [
+            {
+              "value": "h2",
+              "label": "h2"
+            },
+            {
+              "value": "h1",
+              "label": "h1"
+            },
+            {
+              "value": "h3",
+              "label": "h3"
+            },
+            {
+              "value": "h4",
+              "label": "h4"
+            },
+            {
+              "value": "h5",
+              "label": "h5"
+            }
+          ],
+          "default": "h1",
+          "label": "見出しの種類"
         },
         {
-          "value": "h0",
-          "label": "t:sections.all.heading_size.options__3.label"
-        }
-      ],
-      "default": "h1",
-      "label": "t:sections.all.heading_size.label"
-    },
+          "type": "select",
+          "id": "text_align",
+          "options": [
+            {
+              "value": "left",
+              "label": "左寄せ"
+            },
+            {
+              "value": "center",
+              "label": "中央寄せ"
+            },
+            {
+              "value": "right",
+              "label": "右寄せ"
+            }
+          ],
+          "default": "left",
+          "label": " 行揃え"
+        },
     {
       "type": "select",
       "id": "image_width",
