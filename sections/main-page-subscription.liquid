@@ -73,6 +73,42 @@
                 {% endif %}
             </ul>
 
+          {%- when 'subscription_plan' -%}
+              <div class="grid">
+                  {%- liquid
+              assign highest_ratio = 0
+              for block in section.blocks
+                if block.settings.image.aspect_ratio > highest_ratio
+                  assign highest_ratio = block.settings.image.aspect_ratio
+                endif
+              endfor
+            -%}
+            {%- for block in section.blocks -%}
+              {%- assign empty_column = '' -%}
+              {%- if block.settings.image == blank
+                and block.settings.title == blank
+                and block.settings.text == blank
+                and block.settings.link_label == blank
+              -%}
+                {%- assign empty_column = ' multicolumn-list__item--empty' -%}
+              {%- endif -%}
+    
+              <div class="grid__item">
+                {%- if block.settings.link_label != blank -%}
+                      <a
+                        class="link"
+                        {% if block.settings.link == blank %}
+                          role="link" aria-disabled="true"
+                        {% else %}
+                          href="{{ block.settings.link }}"
+                        {% endif %}
+                      >
+                        {{- block.settings.link_label | escape -}}</a>
+                    {%- endif -%}
+              </div>
+            {%- endfor -%}
+          </div>
+
         {%- endcase -%}
       {%- endfor -%}
 
@@ -323,6 +359,22 @@
         {
           "type": "paragraph",
           "content": "各項目は左メニュー「テーマ設定」>「定期購買の特徴」で編集ができます。"
+        }
+      ]
+    },
+    {
+      "type": "subscription_plan",
+      "name": "プラン",
+      "settings": [
+        {
+          "type": "text",
+          "id": "link_label",
+          "label": "t:sections.multicolumn.blocks.column.settings.link_label.label"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "t:sections.multicolumn.blocks.column.settings.link.label"
         }
       ]
     }
