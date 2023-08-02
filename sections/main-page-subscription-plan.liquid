@@ -50,7 +50,7 @@
           <div class="grid__item feature__item">
 
                 {%- if block.settings.title != blank -%}
-                  <p class="heading">{{ block.settings.title }}</p>
+                  <p class="heading {% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }}{% endif %}">{{ block.settings.title }}</p>
                 {%- endif -%}
                 {%- if block.settings.text != blank -%}
                   <div class="rte align-left">{{ block.settings.text }}</div>
@@ -374,6 +374,27 @@
           "id": "title",
           "default": "Column",
           "label": "t:sections.multicolumn.blocks.column.settings.title.label"
+        },
+        {
+          "type": "select",
+          "id": "title_size",
+          "options": [
+            {
+              "value": "default",
+              "label": "t:sections.all.heading_size.options__1.label"
+            }, {
+              "value": "m",
+              "label": "t:sections.all.heading_size.options__2.label"
+            }, {
+              "value": "l",
+              "label": "t:sections.all.heading_size.options__3.label"
+            }, {
+              "value": "xl",
+              "label": "最大"
+            }
+          ],
+          "default": "l",
+          "label": "t:sections.all.heading_size.label"
         },
         {
           "type": "richtext",
