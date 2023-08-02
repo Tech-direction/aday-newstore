@@ -5,6 +5,11 @@
 {% endif %}
 
 <div class="page-width {{ content_size }}{% if section.settings.change_block !=blank %} section-block{% endif %}">
+
+  {% if section.settings.article_style !=blank %}
+    <div class="article-wrapper">
+       <div class="article-template__content">
+  {% endif %}
   
       {%- for block in section.blocks -%}
         {%- case block.type -%}
@@ -70,6 +75,11 @@
 
         {%- endcase -%}
       {%- endfor -%}
+
+    {% if section.settings.article_style !=blank %}
+       </div>
+      </div>
+    {% endif %}
 </div>
 
 {% schema %}
@@ -108,6 +118,12 @@
       "id": "change_block",
       "default": false,
       "label": "セクションを解除する（セクション間の余白を狭める）"
+    },
+    {
+      "type": "checkbox",
+      "id": "article_style",
+      "default": false,
+      "label": "記事のスタイルを適用する"
     },
     {
       "type": "select",
@@ -264,12 +280,6 @@
           ],
           "default": "left",
           "label": " 行揃え"
-        },
-        {
-          "type": "checkbox",
-          "id": "article_style",
-          "default": false,
-          "label": "記事のスタイルを適用する"
         }
       ]
     },
@@ -302,12 +312,6 @@
           ],
           "default": "left",
           "label": " 行揃え"
-        },
-        {
-          "type": "checkbox",
-          "id": "article_style",
-          "default": false,
-          "label": "記事のスタイルを適用する"
         }
       ]
     },
