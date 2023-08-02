@@ -1,7 +1,224 @@
+<div class="page-width collection-section-block">
+  
+  {%- if section.settings.image != blank -%}
+  <div class="section-image collection-section-image">
+    <div class="section__media media">{{
+        section.settings.image
+        | image_url: width: 3840
+        | image_tag:
+          loading: 'lazy',
+          width: section.settings.image.width,
+          height: image_height,
+          class: image_class,
+          sizes: sizes,
+          widths: widths
+      }}</div>
+  </div>
+  {% endif %}
+
+  <div class="grid grid--2-col-desktop grid--gap-l valign-middle content-size-m">
+    <div class="grid__item">
+      {% if section.settings.section_heading !=blank %}
+        <h2 class="heading type-sub_heading {% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %}" data-sub_heading="{{ section.settings.section_sub_heading }}">{{ section.settings.section_heading }}</h2>
+      {% endif %}
+      {% if section.settings.description !=blank %}
+        {{ section.settings.description }}
+      {% endif %}
+      {% if section.settings.button-label !=blank %}
+        <a href="{{ section.settings.button-link }}" class="button">{{ section.settings.button-label }}</a>
+      {% endif %}
+    </div>
+    <div class="grid__item">
+      <ul class="grid grid--3-col-desktop grid--gap-s subscription-feature-list">
+          {%- if settings.grid_item_1_heading != blank -%}
+            <li class="grid__item feature__item">
+              <figure>{{ settings.grid_item_1_img | image_url: width: 600 | image_tag:
+                                class: 'subscription-feature-media-1',
+                                widths: widths,
+                                height: logo_height,
+                                width: settings.logo_width,
+                                alt: logo_alt,
+                                sizes: sizes,
+                                preload: true
+                              }}
+              </figure>
+              <p class="heading">{{ settings.grid_item_1_heading }}</p>
+            </li>
+          {% endif %}
+          {%- if settings.grid_item_2_heading != blank -%}
+            <li class="grid__item feature__item">
+              <figure>{{ settings.grid_item_2_img | image_url: width: 600 | image_tag:
+                                class: 'subscription-feature-media-2',
+                                widths: widths,
+                                height: logo_height,
+                                width: settings.logo_width,
+                                alt: logo_alt,
+                                sizes: sizes,
+                                preload: true
+                              }}
+              </figure>
+              <p class="heading">{{ settings.grid_item_2_heading }}</p>
+            </li>
+          {% endif %}
+          {%- if settings.grid_item_3_heading != blank -%}
+            <li class="grid__item feature__item">
+              <figure>{{ settings.grid_item_3_img | image_url: width: 600 | image_tag:
+                                class: 'subscription-feature-media-3',
+                                widths: widths,
+                                height: logo_height,
+                                width: settings.logo_width,
+                                alt: logo_alt,
+                                sizes: sizes,
+                                preload: true
+                              }}
+              </figure>
+              <p class="heading">{{ settings.grid_item_3_heading }}</p>
+            </li>
+          {% endif %}
+      </ul>
+    </div>
+  </div>
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "定期購買",
+    "tag": "section",
+    "class": "section",
+    "disabled_on": {
+      "groups": ["header", "footer"]
+    },
+    "settings": [
+      {
+        "type": "select",
+        "id": "content_max_width",
+        "default": "default",
+        "label": "コンテンツの横幅",
+        "options": [
+          {
+            "value": "xs",
+            "label": "すごく狭い"
+          },
+          {
+            "value": "s",
+            "label": "狭い"
+          }, {
+            "value": "m",
+            "label": "少し狭い"
+          }, {
+            "value": "default",
+            "label": "標準"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "change_block",
+        "default": false,
+        "label": "セクションを解除する（セクション間の余白を狭める）"
+      }
+    ],
+    "presets": [
+      {
+        "name": "定期購買の概要"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "heading",
+        "name": "t:sections.rich-text.blocks.heading.name",
+        "limit": 3,
+        "settings": [
+          {
+            "type": "inline_richtext",
+            "id": "heading",
+            "default": "Talk about your brand",
+            "label": "t:sections.rich-text.blocks.heading.settings.heading.label"
+          },
+          {
+            "type": "select",
+            "id": "heading_type",
+            "options": [
+              {
+                "value": "h2",
+                "label": "h2"
+              },
+              {
+                "value": "h1",
+                "label": "h1"
+              },
+              {
+                "value": "h3",
+                "label": "h3"
+              },
+              {
+                "value": "h4",
+                "label": "h4"
+              },
+              {
+                "value": "h5",
+                "label": "h5"
+              }
+            ],
+            "default": "h1",
+            "label": "見出しの種類"
+          },
+          {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+              {
+                "value": "default",
+                "label": "t:sections.all.heading_size.options__1.label"
+              }, {
+                "value": "m",
+                "label": "t:sections.all.heading_size.options__2.label"
+              }, {
+                "value": "l",
+                "label": "t:sections.all.heading_size.options__3.label"
+              }, {
+                "value": "xl",
+                "label": "最大"
+              }
+            ],
+            "default": "l",
+            "label": "t:sections.all.heading_size.label"
+          }
+        ]
+      },
+      {
+      "type": "text",
+      "name": "t:sections.rich-text.blocks.text.name",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+          "label": "t:sections.rich-text.blocks.text.settings.text.label"
+        },
+        {
+          "type": "select",
+          "id": "text_align",
+          "options": [
+              {
+                "value": "left",
+                "label": "左寄せ"
+              },
+              {
+                "value": "center",
+                "label": "中央寄せ"
+              },
+              {
+                "value": "right",
+                "label": "右寄せ"
+              }
+            ],
+            "default": "left",
+            "label": " 行揃え"
+          }
+        ]
+      }
+    ]
   }
 {% endschema %}
 
@@ -10,3 +227,4 @@
 
 {% javascript %}
 {% endjavascript %}
+
