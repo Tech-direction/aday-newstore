@@ -16,7 +16,7 @@
               {{ block.settings.heading }}
             </h2>
           {%- when 'text' -%}
-            <div class="rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+            <div class="rte {{ block.settings.text_style }}{%- if block.settings.text_align != blank -%} align-{{ block.settings.text_align }} {% endif %}" {{ block.shopify_attributes }}>
               <p>{{ block.settings.text }}</p>
             </div>
           {%- when 'subscription_feature' -%}
