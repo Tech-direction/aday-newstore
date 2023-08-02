@@ -45,6 +45,7 @@
       "settings": {
         "content_max_width": "xs",
         "change_block": false,
+        "article_style": false,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
@@ -132,6 +133,7 @@
       "settings": {
         "content_max_width": "s",
         "change_block": false,
+        "article_style": true,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
