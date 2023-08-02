@@ -50,6 +50,38 @@
         "color_scheme": ""
       }
     },
+    "a47675f0-a3d8-43a3-a35b-861d21517ad0": {
+      "type": "main-page-subscription",
+      "blocks": {
+        "template--20317784211764__a47675f0-a3d8-43a3-a35b-861d21517ad0-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>定期便のご利用について<\/p>",
+            "heading_size": "xl",
+            "text_align": "center"
+          }
+        },
+        "template--20317784211764__a47675f0-a3d8-43a3-a35b-861d21517ad0-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>以下の手順でご利用ください。<\/p>",
+            "text_align": "left"
+          }
+        }
+      },
+      "block_order": [
+        "template--20317784211764__a47675f0-a3d8-43a3-a35b-861d21517ad0-heading-1",
+        "template--20317784211764__a47675f0-a3d8-43a3-a35b-861d21517ad0-text-1"
+      ],
+      "settings": {
+        "content_max_width": "s",
+        "change_block": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": ""
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -61,6 +93,7 @@
   "order": [
     "e1ffcafa-e72c-434d-9a86-db65767e87f1",
     "ed6f1661-e298-4db3-902a-f2640892b2db",
+    "a47675f0-a3d8-43a3-a35b-861d21517ad0",
     "main"
   ]
 }
