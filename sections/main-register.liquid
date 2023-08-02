@@ -160,8 +160,14 @@
 {% schema %}
 {
   "name": "t:sections.main-register.name",
-  "class": "section section-block",
+  "class": "section",
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "change_block",
+      "default": false,
+      "label": "セクションを解除する（セクション間の余白を狭める）"
+    },
     {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"
