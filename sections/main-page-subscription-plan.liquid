@@ -63,9 +63,9 @@
           {%- endif -%}
 
           <div class="grid__item feature__item">
-              <div class="multicolumn-card__info">
+
                 {%- if block.settings.title != blank -%}
-                  <h3 class="inline-richtext">{{ block.settings.title }}</h3>
+                  <p class="heading">{{ block.settings.title }}</p>
                 {%- endif -%}
                 {%- if block.settings.text != blank -%}
                   <div class="rte">{{ block.settings.text }}</div>
@@ -82,7 +82,6 @@
                     {{- block.settings.link_label | escape -}}
                   </a>
                 {%- endif -%}
-              </div>
 
           </div>
         {%- endfor -%}
