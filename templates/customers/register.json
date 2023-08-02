@@ -53,6 +53,7 @@
     "main": {
       "type": "main-register",
       "settings": {
+        "change_block": true,
         "padding_top": 0,
         "padding_bottom": 0
       }
