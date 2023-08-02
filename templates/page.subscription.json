@@ -19,7 +19,8 @@
           "type": "heading",
           "settings": {
             "heading": "<p>焙煎屋がお届けする、<\/p><p>新鮮なコーヒー豆の定期便<\/p>",
-            "heading_size": "xl"
+            "heading_size": "xl",
+            "text_align": "center"
           }
         },
         "template--20317784211764__ed6f1661-e298-4db3-902a-f2640892b2db-text-1": {
