@@ -18,7 +18,7 @@
 {% endif %}
 
 
-<div class="multicolumn page-width {{ content_size }}{% if section.settings.change_block !=blank %} section-block{% endif %}">
+<div class="page-width {{ content_size }}{% if section.settings.change_block !=blank %} section-block{% endif %}">
 
     {%- unless section.settings.title == blank -%}
       <{{ section.settings.heading_type }}
@@ -369,11 +369,6 @@
       "type": "column",
       "name": "t:sections.multicolumn.blocks.column.name",
       "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
-        },
         {
           "type": "inline_richtext",
           "id": "title",
