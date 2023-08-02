@@ -176,7 +176,7 @@
       ],
       "settings": {
         "content_max_width": "s",
-        "change_block": false,
+        "change_block": true,
         "title": "",
         "heading_size": "l",
         "heading_type": "h1",
