@@ -177,7 +177,7 @@
       "settings": {
         "content_max_width": "s",
         "change_block": false,
-        "heading": "Multicolumna",
+        "title": "",
         "heading_size": "l",
         "heading_type": "h1",
         "text_align": "left",
