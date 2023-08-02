@@ -36,12 +36,11 @@
 <div class="multicolumn page-width {{ content_size }}{% if section.settings.change_block !=blank %} section-block{% endif %}">
 
     {%- unless section.settings.title == blank -%}
-      <{{ block.settings.heading_type }}
-              class="heading{% if block.settings.heading_size !="default" %} size-{{ block.settings.heading_size }} {% endif %}{%- if block.settings.text_align != blank -%} align-{{ block.settings.text_align }} {% endif %}"
-              {{ block.shopify_attributes }}
+      <{{ section.settings.heading_type }}
+              class="heading{% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %}{%- if section.settings.text_align != blank -%} align-{{ section.settings.text_align }} {% endif %}"
             >
-              {{ block.settings.title }}
-            </{{ block.settings.heading_type }}>
+              {{ section.settings.title }}
+            </{{ section.settings.heading_type }}>
     {%- endunless -%}
     
       <div class="grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop {{ grid_gap }}">
