@@ -1837,7 +1837,7 @@ body,
   font-weight: 500;
 }
 
-.contents-wrapper .article-wrapper .article-template__content {
+.contents-wrapper:not(.page) .article-wrapper .article-template__content {
   margin-top: var(--margin-l);
 }
 
