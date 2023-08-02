@@ -41,7 +41,7 @@
         "template--20317784211764__ed6f1661-e298-4db3-902a-f2640892b2db-subscription_feature-1"
       ],
       "settings": {
-        "content_max_width": "xs",
+        "content_max_width": "s",
         "change_block": false,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
