@@ -54,13 +54,21 @@
             "link_label": "南米のコーヒー豆",
             "link": "#south_american"
           }
+        },
+        "0e52a22e-a7bb-433e-8655-8d46fe5a64b6": {
+          "type": "column",
+          "settings": {
+            "link_label": "デカフェ",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "1f70d9b9-b476-4ad6-8431-7b67f7e47934",
         "4cf82d1c-6955-492b-a7f2-14f9b32792a4",
         "6d91e6e3-aa8b-4c6c-990c-e972bf788172",
-        "0ca8a33e-6c8e-4c64-aab7-b25ee22037de"
+        "0ca8a33e-6c8e-4c64-aab7-b25ee22037de",
+        "0e52a22e-a7bb-433e-8655-8d46fe5a64b6"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/asairi01_b38ba458-dd59-4291-83e1-71fb6de9f5d2.jpg",
