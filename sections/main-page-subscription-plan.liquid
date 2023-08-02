@@ -50,7 +50,7 @@
           <div class="grid__item feature__item">
 
                 {%- if block.settings.title != blank -%}
-                  <p class="heading {% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }}{% endif %}">{{ block.settings.title }}</p>
+                  <p class="heading {% if section.settings.title_size !="default" %} size-{{ section.settings.title_size }}{% endif %}">{{ block.settings.title }}</p>
                 {%- endif -%}
                 {%- if block.settings.text != blank -%}
                   <div class="rte align-left">{{ block.settings.text }}</div>
