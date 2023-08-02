@@ -10,7 +10,7 @@
         {%- case block.type -%}
           {%- when 'heading' -%}
             <h2
-              class="heading{% if block.settings.heading_size !="default" %} size-{{ block.settings.heading_size }} {% endif %}"
+              class="heading{% if block.settings.heading_size !="default" %} size-{{ block.settings.heading_size }} {% endif %}{%- if block.settings.text_align != blank -%} align-{{ block.settings.text_align }} {% endif %}"
               {{ block.shopify_attributes }}
             >
               {{ block.settings.heading }}
