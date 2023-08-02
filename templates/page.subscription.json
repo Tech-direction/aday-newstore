@@ -69,11 +69,65 @@
             "text": "<p>以下の手順でご利用ください。<\/p>",
             "text_align": "left"
           }
+        },
+        "888d3087-1c7e-4212-a186-436fa56fd5d2": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>①お好みの定期便の種類をお選びください<\/p>",
+            "heading_size": "l",
+            "heading_type": "h3",
+            "text_align": "left"
+          }
+        },
+        "e7dfdb81-86fe-499c-a5dd-20360c1ecaf1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A day in the coffeeでは以下2種類の定期便をご用意しています。<\/p><ul><li>お好きなコーヒー豆100gを3種類お届け<\/li><li>お好きなコーヒー豆200gを1種類お届け<\/li><\/ul>",
+            "text_align": "left"
+          }
+        },
+        "614152cb-6219-4406-b801-dee48eef32a9": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>②お送りするコーヒー豆をお選びください<\/p>",
+            "heading_size": "l",
+            "heading_type": "h2",
+            "text_align": "left"
+          }
+        },
+        "15573d12-e64f-42d2-9bf7-64352ecaa062": {
+          "type": "text",
+          "settings": {
+            "text": "<p>お好きな定期便の種類を選択したあと、画面に表示されているコーヒー豆の一覧からお送りするコーヒー豆をお選びください。<\/p>",
+            "text_align": "left"
+          }
+        },
+        "e0680cf9-72a5-4c74-beb6-4512323bd133": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>③お届け周期を選択後ご購入ください<\/p>",
+            "heading_size": "l",
+            "heading_type": "h3",
+            "text_align": "left"
+          }
+        },
+        "37688181-5b99-4e55-9b7d-a2743afb7bd4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>お届けする周期を選択いただき（2週間に1回 or 月に1回）購入を完了します。<\/p><p><a href=\"https:\/\/aday-new-store.myshopify.com\/pages\/shopping-guide\">定期購入について詳しくはこちらをご確認ください<\/a><\/p>",
+            "text_align": "left"
+          }
         }
       },
       "block_order": [
         "template--20317784211764__a47675f0-a3d8-43a3-a35b-861d21517ad0-heading-1",
-        "template--20317784211764__a47675f0-a3d8-43a3-a35b-861d21517ad0-text-1"
+        "template--20317784211764__a47675f0-a3d8-43a3-a35b-861d21517ad0-text-1",
+        "888d3087-1c7e-4212-a186-436fa56fd5d2",
+        "e7dfdb81-86fe-499c-a5dd-20360c1ecaf1",
+        "614152cb-6219-4406-b801-dee48eef32a9",
+        "15573d12-e64f-42d2-9bf7-64352ecaa062",
+        "e0680cf9-72a5-4c74-beb6-4512323bd133",
+        "37688181-5b99-4e55-9b7d-a2743afb7bd4"
       ],
       "settings": {
         "content_max_width": "s",
@@ -86,6 +140,7 @@
     },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 0,
         "padding_bottom": 0
