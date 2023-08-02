@@ -27,6 +27,11 @@
   {% assign content_size = 'content-size-' | append: section.settings.content_max_width %}
 {% endif %}
 
+{% assign grid_gap = ""  %}
+{% if section.settings.box_gap != "default" %}
+  {% assign grid_gap = 'grid--gap-' | append: section.settings.box_gap %}
+{% endif %}
+
 
 <div class="multicolumn page-width {{ content_size }}{% if section.settings.change_block !=blank %} section-block{% endif %}">
 
@@ -38,8 +43,8 @@
               {{ block.settings.heading }}
             </{{ block.settings.heading_type }}>
     {%- endunless -%}
-    <slider-component class="slider-mobile-gutter">
-      <div class="grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop ">
+    
+      <div class="grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop {{ grid_gap }}">
         {%- liquid
           assign highest_ratio = 0
           for block in section.blocks
@@ -163,7 +168,8 @@
           </button>
         </div>
       {%- endif -%}
-    </slider-component>
+    
+    
     <div class="center{% if show_mobile_slider %} small-hide medium-hide{% endif %}">
       {%- if section.settings.button_label != blank -%}
         <a
