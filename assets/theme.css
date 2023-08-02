@@ -880,7 +880,7 @@ body,
 }
 
 .contents-wrapper #MainContent > :first-child,
-.contents-wrapper .section:has(.section-block) + .section {
+.contents-wrapper .section:has(.section-block) {
   padding-top: var(--margin-l);
 }
 
