@@ -9,12 +9,12 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
-            <h2
+            <{{ block.settings.heading_type }}
               class="heading{% if block.settings.heading_size !="default" %} size-{{ block.settings.heading_size }} {% endif %}{%- if block.settings.text_align != blank -%} align-{{ block.settings.text_align }} {% endif %}"
               {{ block.shopify_attributes }}
             >
               {{ block.settings.heading }}
-            </h2>
+            </{{ block.settings.heading_type }}>
           {%- when 'text' -%}
             <div class="rte {{ block.settings.text_style }}{%- if block.settings.text_align != blank -%} align-{{ block.settings.text_align }} {% endif %}" {{ block.shopify_attributes }}>
               <p>{{ block.settings.text }}</p>
@@ -190,7 +190,6 @@
     {
       "type": "heading",
       "name": "t:sections.image-banner.blocks.heading.name",
-      "limit": 1,
       "settings": [
         {
           "type": "richtext",
@@ -217,6 +216,34 @@
           ],
           "default": "l",
           "label": "t:sections.all.heading_size.label"
+        },
+        {
+          "type": "select",
+          "id": "heading_type",
+          "options": [
+            {
+              "value": "h2",
+              "label": "h2"
+            },
+            {
+              "value": "h1",
+              "label": "h1"
+            },
+            {
+              "value": "h3",
+              "label": "h3"
+            },
+            {
+              "value": "h4",
+              "label": "h4"
+            },
+            {
+              "value": "h5",
+              "label": "h5"
+            }
+          ],
+          "default": "h1",
+          "label": "見出しの種類"
         },
         {
           "type": "select",
