@@ -20,6 +20,7 @@
           "settings": {
             "heading": "<p>焙煎屋がお届けする、<\/p><p>新鮮なコーヒー豆の定期便<\/p>",
             "heading_size": "xl",
+            "heading_type": "h1",
             "text_align": "center"
           }
         },
@@ -58,6 +59,7 @@
           "settings": {
             "heading": "<p>定期便のご利用について<\/p>",
             "heading_size": "xl",
+            "heading_type": "h2",
             "text_align": "center"
           }
         },
