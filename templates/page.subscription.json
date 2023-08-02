@@ -92,7 +92,7 @@
           "settings": {
             "heading": "<p>②お送りするコーヒー豆をお選びください<\/p>",
             "heading_size": "l",
-            "heading_type": "h2",
+            "heading_type": "h3",
             "text_align": "left"
           }
         },
