@@ -28,13 +28,8 @@
 {% endif %}
 
 
-<div class="multicolumn {{ content_size }}{% if section.settings.change_block !=blank %} section-block{% endif %}">
-  <div
-    class="page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-    {% if settings.animations_reveal_on_scroll %}
-      data-cascade
-    {% endif %}
-  >
+<div class="multicolumn page-width {{ content_size }}{% if section.settings.change_block !=blank %} section-block{% endif %}">
+
     {%- unless section.settings.title == blank -%}
       <{{ block.settings.heading_type }}
               class="heading{% if block.settings.heading_size !="default" %} size-{{ block.settings.heading_size }} {% endif %}{%- if block.settings.text_align != blank -%} align-{{ block.settings.text_align }} {% endif %}"
@@ -44,11 +39,7 @@
             </{{ block.settings.heading_type }}>
     {%- endunless -%}
     <slider-component class="slider-mobile-gutter">
-      <ul
-        class="multicolumn-list contains-content-container grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop{% if show_mobile_slider %} slider slider--mobile grid--peek{% endif %}"
-        id="Slider-{{ section.id }}"
-        role="list"
-      >
+      <div class="grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop ">
         {%- liquid
           assign highest_ratio = 0
           for block in section.blocks
@@ -67,7 +58,7 @@
             {%- assign empty_column = ' multicolumn-list__item--empty' -%}
           {%- endif -%}
 
-          <li
+          <div
             id="Slide-{{ section.id }}-{{ forloop.index }}"
             class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {{ block.shopify_attributes }}
@@ -142,9 +133,9 @@
                 {%- endif -%}
               </div>
             </div>
-          </li>
+          </div>
         {%- endfor -%}
-      </ul>
+      </div>
 
       {%- if show_mobile_slider -%}
         <div class="slider-buttons no-js-hidden medium-hide">
@@ -187,7 +178,7 @@
         </a>
       {%- endif -%}
     </div>
-  </div>
+
 </div>
 
 {% schema %}
@@ -404,7 +395,31 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
-    }
+    },
+    {
+        "type": "header",
+        "content": "カラム間の余白"
+      }, {
+        "type": "select",
+        "id": "box_gap",
+        "default": "default",
+        "label": "余白の広さ",
+        "options": [
+          {
+            "value": "none",
+            "label": "余白なし"
+          }, {
+            "value": "s",
+            "label": "狭い"
+          }, {
+            "value": "default",
+            "label": "標準"
+          }, {
+            "value": "l",
+            "label": "広い"
+          }
+        ]
+      }
   ],
   "blocks": [
     {
