@@ -25,26 +25,15 @@
         "template--20317784211764__ed6f1661-e298-4db3-902a-f2640892b2db-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "",
-            "heading_size": "l"
+            "heading": "<p>焙煎屋がお届けする、<\/p><p>新鮮なコーヒー豆の定期便<\/p>",
+            "heading_size": "xl"
           }
         },
         "template--20317784211764__ed6f1661-e298-4db3-902a-f2640892b2db-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "text": "<p>コーヒーは焙煎鮮度が高ければ高いほど香り高いコーヒーが楽しみいただけます。<br\/>好きなコーヒー豆は決まってて、飲む周期も決まっている。そんな方は定期便がおすすめ。<br\/>焼きたての豆を定期的に焙煎所からお届けいたします。<br\/>定期便はよりずっとお得。是非お買い求めください！<\/p>",
             "text_align": "left"
-          }
-        },
-        "template--20317784211764__ed6f1661-e298-4db3-902a-f2640892b2db-buttons-1": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
           }
         },
         "template--20317784211764__ed6f1661-e298-4db3-902a-f2640892b2db-subscription_feature-1": {
@@ -56,11 +45,10 @@
       "block_order": [
         "template--20317784211764__ed6f1661-e298-4db3-902a-f2640892b2db-heading-1",
         "template--20317784211764__ed6f1661-e298-4db3-902a-f2640892b2db-text-1",
-        "template--20317784211764__ed6f1661-e298-4db3-902a-f2640892b2db-buttons-1",
         "template--20317784211764__ed6f1661-e298-4db3-902a-f2640892b2db-subscription_feature-1"
       ],
       "settings": {
-        "content_max_width": "default",
+        "content_max_width": "xs",
         "change_block": false,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
