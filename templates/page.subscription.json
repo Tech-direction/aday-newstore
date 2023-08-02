@@ -18,10 +18,60 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "ed6f1661-e298-4db3-902a-f2640892b2db": {
+      "type": "main-page-subscription",
+      "blocks": {
+        "template--20317784211764__ed6f1661-e298-4db3-902a-f2640892b2db-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "l"
+          }
+        },
+        "template--20317784211764__ed6f1661-e298-4db3-902a-f2640892b2db-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "text_align": "left"
+          }
+        },
+        "template--20317784211764__ed6f1661-e298-4db3-902a-f2640892b2db-buttons-1": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "template--20317784211764__ed6f1661-e298-4db3-902a-f2640892b2db-subscription_feature-1": {
+          "type": "subscription_feature",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--20317784211764__ed6f1661-e298-4db3-902a-f2640892b2db-heading-1",
+        "template--20317784211764__ed6f1661-e298-4db3-902a-f2640892b2db-text-1",
+        "template--20317784211764__ed6f1661-e298-4db3-902a-f2640892b2db-buttons-1",
+        "template--20317784211764__ed6f1661-e298-4db3-902a-f2640892b2db-subscription_feature-1"
+      ],
+      "settings": {
+        "content_max_width": "default",
+        "change_block": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": ""
+      }
     }
   },
   "order": [
     "e1ffcafa-e72c-434d-9a86-db65767e87f1",
-    "main"
+    "main",
+    "ed6f1661-e298-4db3-902a-f2640892b2db"
   ]
 }
