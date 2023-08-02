@@ -154,10 +154,10 @@
         "template--20317784211764__88d80f0e-b70e-4663-b0e3-412f00aa748c-column-1": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "title": "お好きなコーヒー豆（100g）を3種類お届け",
+            "text": "<p>お好きなタイミングでお好きな豆を100gを3種類定期的にお届けします。<br\/>いろんなコーヒー豆を飲みたい！そんな方におすすめプランです。<br\/>以下のボタンより商品お選びいただき、ご購入ください。<\/p>",
+            "link_label": "お好きなコーヒー豆100g3種類を購入する",
+            "link": "\/apps\/subscription\/bundler?b=b6750751-0db3-4596-b574-3b11447dd1be"
           }
         },
         "template--20317784211764__88d80f0e-b70e-4663-b0e3-412f00aa748c-column-2": {
