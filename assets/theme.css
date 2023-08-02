@@ -119,6 +119,10 @@ html {
   text-align: right;
 }
 
+.contents-wrapper .rte + * {
+  margin-top: var(--margin);
+}
+
 @media screen and (max-width: 989px) {
   body,
   html {
