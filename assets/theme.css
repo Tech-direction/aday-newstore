@@ -1563,6 +1563,7 @@ body,
   .contents-wrapper .section-heading-wrapper:has(.section-image) {
     padding-left: 0 !important;
     padding-right: 0 !important;
+    gap: 0;
   }
   .contents-wrapper .section-heading-wrapper:has(.section-image) .heading__item {
     width: fit-content;
