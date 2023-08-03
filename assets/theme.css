@@ -1561,7 +1561,7 @@ body,
     letter-spacing: .1em;
   }
   .contents-wrapper .section-heading-wrapper:has(.section-image) .heading__item {
-    width: fit
+    width: fit-content;
     margin: 0;
     order: 1;
   }
