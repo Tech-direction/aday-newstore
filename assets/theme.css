@@ -1845,6 +1845,7 @@ body,
 ---------------------------------------------------------------*/
 
 .contents-wrapper .section-fuatured-blog .content__item {
+  width: 0;
   white-space: nowrap;
 }
 
