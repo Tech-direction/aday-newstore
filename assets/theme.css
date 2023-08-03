@@ -130,8 +130,14 @@ html {
   }
 }
 
+
 /*  heading
 ---------------------------------------------------------------*/
+
+.contents-wrapper .title,
+.contents-wrapper .title-wrapper-with-link {
+  margin: 0;
+}
 
 .contents-wrapper .heading,
 .contents-wrapper h0,
@@ -2894,7 +2900,7 @@ body,
   color: rgb(var(--color-black));
   font-size: 1rem;
   border-radius: 4px;
-   border-color: rgb(var(--color-black));
+   border-color: rgb(var(--color-blackh));
 }
  
 /*===============================================================
