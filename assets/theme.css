@@ -2844,8 +2844,8 @@ body,
   color: #fff;
 }
 
-.contents-wrapper .cart__footer [role="presentation"] [role="tab"][aria-selected="true"] svg {
-  fill: #fff;
+.contents-wrapper .cart__footer [role="presentation"] [role="tab"][aria-selected="true"] svg path {
+  fill: #fff !important;
 }
 
 [role="tabpanel"] > div > :first-child p {
