@@ -2824,6 +2824,7 @@ body,
 
 .contents-wrapper .cart__footer .baseStyle h3 {
   text-align: center;
+  font-size: var(--font-m);
 }
 
 .contents-wrapper .cart__footer .baseStyle ul {
@@ -2847,7 +2848,10 @@ body,
   fill: #fff;
 }
 
-
+[role="tabpanel"] > div > :first-child p {
+  text-align: center;
+  font-size: 1rem;
+}
  
 /*===============================================================
 
