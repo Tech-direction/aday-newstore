@@ -2279,6 +2279,7 @@ body,
 .contents-wrapper .customer_block {
   padding: var(--margin);
   border-radius: var(--border-radius-box);
+  border: none;
   background-color: rgb(var(--color-gray));
 }
 
@@ -2826,8 +2827,7 @@ body,
 }
 
 .contents-wrapper .cart__footer .baseStyle ul {
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
 }
 
 
