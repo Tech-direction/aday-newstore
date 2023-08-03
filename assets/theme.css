@@ -2846,11 +2846,11 @@ body,
 }
 
 .contents-wrapper .cart__footer [role="presentation"] [role="tab"] svg path {
-  fill: rgb(var(--color-black)) !important;
+  fill: rgb(var(--color-border)) !important;
 }
 
 .contents-wrapper .cart__footer [role="presentation"] [role="tab"][aria-selected="true"] p {
-  color: #fff;
+  color: rgb(var(--color-border));
 }
 
 .contents-wrapper .cart__footer [role="presentation"] [role="tab"][aria-selected="true"] svg path {
