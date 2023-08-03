@@ -1588,6 +1588,9 @@ body,
     max-width: none;
     flex: auto;
   }
+  .contents-wrapper .section-heading-wrapper:has(.section-image) .section-image .media {
+    border-radius: 0;
+  }
 }
 
 
