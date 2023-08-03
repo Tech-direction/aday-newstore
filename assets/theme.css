@@ -2861,7 +2861,8 @@ body,
   fill: #fff !important;
 }
 
-.contents-wrapper .cart__footer p {
+.contents-wrapper .cart__footer p,
+.contents-wrapper .cart__footer select {
   color: rgb(var(--color-black));
   font-size: 1rem;
 }
@@ -2870,7 +2871,8 @@ body,
   fill: rgb(var(--color-black)) !important;
 }
 
-.contents-wrapper .cart__footer .vVPqL6YEmH1pvjtsqjX7 {
+.contents-wrapper .cart__footer .vVPqL6YEmH1pvjtsqjX7,
+.contents-wrapper .cart__footer select {
   border-radius: 0;
   border-color: rgb(var(--color-border));
 }
