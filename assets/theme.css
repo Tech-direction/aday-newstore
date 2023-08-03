@@ -1844,7 +1844,6 @@ body,
 }
 
 .contents-wrapper .section-fuatured-blog .article-list {
-  
   padding-right: var(--margin);
   scroll-snap-type: x;
   overflow-x: scroll;
@@ -1857,6 +1856,9 @@ body,
 }
 
 @media screen and (max-width: 989px) {
+  .contents-wrapper .section-fuatured-blog .article-list {
+    padding-right: 0;
+  }
  .contents-wrapper .section-fuatured-blog .article-list .grid__item {
    width: calc((100vw - var(--margin)*3)/2) !important;
  }
