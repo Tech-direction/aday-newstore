@@ -2849,8 +2849,12 @@ body,
   fill: rgb(var(--color-border)) !important;
 }
 
-.contents-wrapper .cart__footer [role="presentation"] [role="tab"][aria-selected="true"] p {
+.contents-wrapper .cart__footer [role="presentation"] [role="tab"] p {
   color: rgb(var(--color-border));
+}
+
+.contents-wrapper .cart__footer [role="presentation"] [role="tab"][aria-selected="true"] p {
+  color: #fff;
 }
 
 .contents-wrapper .cart__footer [role="presentation"] [role="tab"][aria-selected="true"] svg path {
