@@ -1493,7 +1493,7 @@ body,
   color: rgb(var(--color-primary));
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
-  letter-spacing: 0;
+  letter-spacing: .1em;
   display: block;
 }
 
@@ -1562,7 +1562,7 @@ body,
   .contents-wrapper .section-heading-wrapper .heading__item .heading {
     margin: 0;
     writing-mode: unset !important;
-    letter-spacing: .1em;
+    letter-spacing: 0;
   }
   .contents-wrapper .section-heading-wrapper:has(.section-image) {
     padding-left: 0 !important;
