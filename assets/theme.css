@@ -2840,6 +2840,10 @@ body,
   background-color: rgb(var(--color-primary));
 }
 
+.contents-wrapper .cart__footer [role="presentation"] [role="tab"] svg path {
+  fill: rgb(var(--color-black)) !important;
+}
+
 .contents-wrapper .cart__footer [role="presentation"] [role="tab"][aria-selected="true"] p {
   color: #fff;
 }
