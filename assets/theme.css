@@ -135,7 +135,8 @@ html {
 ---------------------------------------------------------------*/
 
 .contents-wrapper .title,
-.contents-wrapper .title-wrapper-with-link {
+.contents-wrapper .title-wrapper-with-link,
+.contents-wrapper .main-page-title{
   margin: 0 0 var(--margin-l);
 }
 
