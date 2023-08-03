@@ -1852,9 +1852,7 @@ body,
 }
 
 .contents-wrapper .section-fuatured-blog .article-list .grid__item {
-  width: 30vw !important;
-  scroll-snap-align: start;
-  flex: none;
+  width: 25vw !important;
   top: auto;
 }
 
