@@ -178,7 +178,9 @@ html {
   margin: 0;
 }
 
-.contents-wrapper .heading + * {
+.contents-wrapper .heading + *,
+.contents-wrapper .title + *,
+.contents-wrapper .title-wrapper-with-link + * {
   margin-top: var(--margin);
 }
 
