@@ -2150,6 +2150,9 @@ body,
 }
 
 @media screen and (max-width: 989px) {
+  .contents-wrapper .product.featured-product {
+    gap: var(--margin);
+  }
   .contents-wrapper .product.featured-product > * {
     flex: none;
   }
