@@ -2836,10 +2836,16 @@ body,
 }
 
 .contents-wrapper .cart__footer [role="presentation"] [role="tab"][aria-selected="true"] {
-  color: #fff;
-  background-color: rgb(var(--color-black));
+  background-color: rgb(var(--color-primary));
 }
 
+.contents-wrapper .cart__footer [role="presentation"] [role="tab"][aria-selected="true"] p {
+  color: #fff;
+}
+
+.contents-wrapper .cart__footer [role="presentation"] [role="tab"][aria-selected="true"] svg {
+  fill: #fff;
+}
 
 
  
