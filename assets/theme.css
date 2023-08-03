@@ -1867,6 +1867,12 @@ body,
  }
 }
 
+@media screen and (max-width: 749px) {
+ .contents-wrapper .section-fuatured-blog .article-list .grid__item {
+   width: calc((100vw - var(--margin)*2) !important;
+ }
+}
+
 
 /*  article content
 ---------------------------------------------------------------*/
