@@ -2835,7 +2835,7 @@ body,
   background-color: rgb(var(--color-gray));
 }
 
-.contents-wrapper .cart__footer [role="presentation"] [role="tab"][aria-selected="ture"] {
+.contents-wrapper .cart__footer [role="presentation"] [role="tab"][aria-selected="true"] {
   color: #fff;
   background-color: rgb(var(--color-black));
 }
