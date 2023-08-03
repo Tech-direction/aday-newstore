@@ -136,7 +136,7 @@ html {
 
 .contents-wrapper .title,
 .contents-wrapper .title-wrapper-with-link {
-  margin: 0;
+  margin: 0 0 var(--margin-l);
 }
 
 .contents-wrapper .heading,
@@ -178,9 +178,7 @@ html {
   margin: 0;
 }
 
-.contents-wrapper .heading + *,
-.contents-wrapper .title + *,
-.contents-wrapper .title-wrapper-with-link + * {
+.contents-wrapper .heading + * {
   margin-top: var(--margin);
 }
 
