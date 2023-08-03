@@ -2815,7 +2815,7 @@ body,
 
 
 .contents-wrapper .cart__footer  [data-block-handle="checkout-method"] {
-  margin-top: var(--maring-l);
+  margin-top: var(--margin-l);
 }
 
 /*===============================================================
