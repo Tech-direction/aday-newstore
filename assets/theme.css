@@ -1568,11 +1568,17 @@ body,
     padding-left: 0 !important;
     padding-right: 0 !important;
     gap: 0;
+    position: relative;
   }
   .contents-wrapper .section-heading-wrapper:has(.section-image) .heading__item {
     width: fit-content;
     margin: 0;
+    padding:1em;
+    background-color: #fff;
     order: 1;
+    position: absolute;
+    left: var(--margin);
+    bottom: 0;
   }
   .contents-wrapper .section-image {
     height: 25vh !important;
