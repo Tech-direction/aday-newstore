@@ -1024,6 +1024,10 @@ body,
 }
 
 @media screen and (max-width: 989px) {
+  .contents-wrapper .grid:not([class*="-col-tablet"]) .grid__item {
+    width: 100% !important;
+    max-width: none;
+  }
   .contents-wrapper .slider.slider--tablet .slider__slide {
     padding-top: 0;
   }
