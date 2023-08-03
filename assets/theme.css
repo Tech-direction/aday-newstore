@@ -1573,11 +1573,10 @@ body,
   .contents-wrapper .section-heading-wrapper:has(.section-image) .heading__item {
     width: fit-content;
     margin: 0;
-    padding:1em;
+    padding: 0 var(--margin);
     background-color: #fff;
     order: 1;
     position: absolute;
-    left: var(--margin);
     bottom: 0;
     z-index: 1;
   }
