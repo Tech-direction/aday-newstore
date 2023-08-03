@@ -1848,8 +1848,13 @@ body,
   white-space: nowrap;
 }
 
-.contents-wrapper .section-fuatured-blog .article-list {
+.contents-wrapper .section-fuatured-blog .fuatured-blog-wrapper {
   width: calc(100% + var(--page-width-margin));
+  overflow: hidden;
+}
+
+.contents-wrapper .section-fuatured-blog .article-list {
+  
   padding-right: var(--margin);
   scroll-snap-type: x;
   overflow-x: scroll;
