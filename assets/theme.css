@@ -1506,7 +1506,8 @@ body,
 }
 
 .contents-wrapper .section-heading-wrapper .section-image .media {
-  width: 100vw;
+  /*width: 100vw;*/
+  width: calc(100% + var(--page-width-margin));
   height: 100%;
   border-top-right-radius: var(--border-radius-box);
   border-bottom-right-radius: var(--border-radius-box);
