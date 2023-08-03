@@ -2863,7 +2863,7 @@ body,
 
 
 [role="tabpanel"]#REGULAR > div > p,
-[role="tabpanel"] > div > :first-child p {
+[role="tabpanel"]#PICKUP > div > :first-child p {
   text-align: center;
   font-size: 1rem;
 }
