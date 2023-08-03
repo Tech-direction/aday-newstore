@@ -2830,6 +2830,15 @@ body,
   justify-content: center;
 }
 
+.contents-wrapper .cart__footer [role="presentation"] [role="tab"] {
+  border: 0;
+  background-color: rgb(var(--color-gray));
+}
+
+.contents-wrapper .cart__footer [role="presentation"] [role="tab"][aria-selected="ture"] {
+  color: #fff;
+  background-color: rgb(var(--color-black));
+}
 
 
 
