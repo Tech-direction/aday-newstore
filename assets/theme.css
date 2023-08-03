@@ -2781,7 +2781,7 @@ body,
 }
 
 .contents-wrapper .totals {
-  justify-content: center;
+  justify-content: end;
 }
 
 .contents-wrapper .totals .totals__subtotal {
@@ -2793,8 +2793,9 @@ body,
 }
 
 .contents-wrapper .tax-note {
-  margin: var(--margin) 0 0;
-  text-align: center;
+  margin: var(--margin-s) 0 0;
+  text-align: right;
+  font-size: var(--font-s);
 }
 
 
