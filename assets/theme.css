@@ -1570,7 +1570,7 @@ body,
     order: 1;
   }
   .contents-wrapper .section-heading-wrapper .section-image {
-    height: 25vw;
+    height: 25vh;
     flex: auto;
   }
   .contents-wrapper .section-heading-wrapper:has(.section-image) .section-image  {
