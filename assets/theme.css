@@ -2862,7 +2862,8 @@ body,
 }
 
 .contents-wrapper .cart__footer p,
-.contents-wrapper .cart__footer select {
+.contents-wrapper .cart__footer select,
+.contents-wrapper .cart__footer a {
   color: rgb(var(--color-black));
   font-size: 1rem;
 }
