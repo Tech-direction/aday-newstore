@@ -44,9 +44,9 @@
     --margin: 20px;
     --margin-section: calc(var(--margin)*3);
     --font-xl: 1.72rem;
-    --font-l: 1.29rem;
-    --font-m: 1.25rem;
-    --font-s: .75rem;
+    --font-l: 1.45rem;
+    --font-m: 1.29rem;
+    --font-s: 10px;
   }
 }
 
