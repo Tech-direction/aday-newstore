@@ -1560,14 +1560,21 @@ body,
     writing-mode: unset !important;
     letter-spacing: .1em;
   }
+  .contents-wrapper .section-heading-wrapper:has(.section-image) {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
   .contents-wrapper .section-heading-wrapper:has(.section-image) .heading__item {
     width: fit-content;
     margin: 0;
     order: 1;
   }
   .contents-wrapper .section-heading-wrapper .section-image {
-    width: 100vw;
+    height: 25vw;
     flex: auto;
+  }
+  .contents-wrapper .section-heading-wrapper:has(.section-image) .section-image  {
+    
   }
 }
 
