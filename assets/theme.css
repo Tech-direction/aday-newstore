@@ -2145,6 +2145,10 @@ body,
   flex: 1;
 }
 
+.contents-wrapper .product.featured-product .product__info-wrapper {
+  max-width: var(--width-max-xs);
+}
+
 .contents-wrapper .product.featured-product .product__media-wrapper {
   width: auto;
 }
