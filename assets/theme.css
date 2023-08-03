@@ -2153,7 +2153,7 @@ body,
   .contents-wrapper .product.featured-product > * {
     flex: none;
   }
-  .contents-wrapper .product .product-media-container {
+  .contents-wrapper .product.featured-product .product__media-wrapper .product-media-container {
     width: 100%;
   }
 }
