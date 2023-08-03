@@ -2151,7 +2151,7 @@ body,
 
 @media screen and (max-width: 989px) {
   .contents-wrapper .product.featured-product > * {
-    flex: 0;
+    flex: none;
   }
 }
 
