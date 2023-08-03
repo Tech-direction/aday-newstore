@@ -2814,6 +2814,10 @@ body,
 }
 
 
+.contents-wrapper .cart__footer  [data-block-handle="checkout-method"] {
+  margin-top: var(--maring-l);
+}
+
 /*===============================================================
 
 	richtext
