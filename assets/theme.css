@@ -2861,6 +2861,10 @@ body,
   fill: #fff !important;
 }
 
+.contents-wrapper .cart__footer p {
+  color: rgb(var(--color-black));
+  
+}
 
 .contents-wrapper .cart__footer .vVPqL6YEmH1pvjtsqjX7 {
   border-radius: 0;
