@@ -1856,6 +1856,9 @@ body,
 }
 
 @media screen and (max-width: 989px) {
+  .contents-wrapper .section-fuatured-blog .fuatured-blog-wrapper {
+    width: 100%;
+  }
   .contents-wrapper .section-fuatured-blog .article-list {
     padding-right: 0;
   }
