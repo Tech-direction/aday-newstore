@@ -43,6 +43,10 @@
   :root {
     --margin: 20px;
     --margin-section: calc(var(--margin)*3);
+    --font-xl: 1.72rem;
+    --font-l: 1.29rem;
+    --font-m: 1.25rem;
+    --font-s: .75rem;
   }
 }
 
@@ -1489,7 +1493,7 @@ body,
   color: rgb(var(--color-primary));
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
-  letter-spacing: .1em;
+  letter-spacing: 0;
   display: block;
 }
 
