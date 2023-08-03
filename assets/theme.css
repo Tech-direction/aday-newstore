@@ -1583,6 +1583,9 @@ body,
   .contents-wrapper .section-image {
     height: 25vh !important;
   }
+  .contents-wrapper .section:has(.section-heading-wrapper:has(.section-image)) {
+    padding-top: 0;
+  }
   .contents-wrapper .section-heading-wrapper:has(.section-image) .section-image {
     width: 100%;
     max-width: none;
