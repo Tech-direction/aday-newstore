@@ -2862,6 +2862,10 @@ body,
 }
 
 
+.contents-wrapper .cart__footer .vVPqL6YEmH1pvjtsqjX7 {
+  border-color: rgb(var(--color-border));
+}
+
 [role="tabpanel"]#REGULAR,
 [role="tabpanel"]#PICKUP, {
   margin-top: var(--margin);
