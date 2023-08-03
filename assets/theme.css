@@ -1034,59 +1034,59 @@ body,
   .contents-wrapper .slider.slider--tablet.contains-card--standard .slider__slide:not(.collection-list__item--no-media) {
     padding-bottom: 0;
   }
-  .contents-wrapper .grid.grid--2-col-tablet.grid--gap-none .grid__item {
+  .contents-wrapper .grid[class*="2-col-tablet"].grid--gap-none .grid__item {
     width: calc(100% / 2);
   }
-  .contents-wrapper .grid.grid--2-col-tablet.grid--gap-s .grid__item {
+  .contents-wrapper .grid[class*="2-col-tablet"].grid--gap-s .grid__item {
     width: calc((100% - var(--margin-s)) / 2);
   }
-  .contents-wrapper .grid.grid--2-col-tablet.grid .grid__item,
-  .contents-wrapper .grid.grid--2-col-tablet.grid--gap-l .grid__item,
-  .contents-wrapper .grid.grid--2-col-tablet.grid--gap-xl .grid__item {
+  .contents-wrapper .grid[class*="2-col-tablet"] .grid__item,
+  .contents-wrapper .grid[class*="2-col-tablet"].grid--gap-l .grid__item,
+  .contents-wrapper .grid[class*="2-col-tablet"].grid--gap-xl .grid__item {
     width: calc((100% - var(--margin)) / 2);
   }
-  .contents-wrapper .grid.grid--3-col-tablet.grid--gap-none .grid__item {
+  .contents-wrapper .grid[class*="3-col-tablet"].grid--gap-none .grid__item {
     width: calc(100% / 3);
   }
-  .contents-wrapper .grid.grid--3-col-tablet.grid--gap-s .grid__item {
+  .contents-wrapper .grid[class*="3-col-tablet"].grid--gap-s .grid__item {
     width: calc((100% - var(--margin-s)*2) / 3);
   }
-  .contents-wrapper .grid.grid--3-col-tablet.grid .grid__item,
-  .contents-wrapper .grid.grid--3-col-tablet.grid--gap-l .grid__item,
-  .contents-wrapper .grid.grid--3-col-tablet.grid--gap-xl .grid__item {
+  .contents-wrapper .grid[class*="3-col-tablet"] .grid__item,
+  .contents-wrapper .grid[class*="3-col-tablet"].grid--gap-l .grid__item,
+  .contents-wrapper .grid[class*="3-col-tablet"].grid--gap-xl .grid__item {
     width: calc((100% - var(--margin)*2) / 3);
   }
-  .contents-wrapper .grid.grid--4-col-tablet.grid--gap-none .grid__item {
+  .contents-wrapper .grid[class*="4-col-tablet"].grid--gap-none .grid__item {
     width: calc(100% / 4);
   }
-  .contents-wrapper .grid.grid--4-col-tablet.grid--gap-s .grid__item {
+  .contents-wrapper .grid[class*="4-col-tablet"].grid--gap-s .grid__item {
     width: calc((100% - var(--margin-s)*3) / 4);
   }
-  .contents-wrapper .grid.grid--4-col-tablet.grid .grid__item,
-  .contents-wrapper .grid.grid--4-col-tablet.grid--gap-l .grid__item,
-  .contents-wrapper .grid.grid--4-col-tablet.grid--gap-xl .grid__item {
+  .contents-wrapper .grid[class*="4-col-tablet"] .grid__item,
+  .contents-wrapper .grid[class*="4-col-tablet"].grid--gap-l .grid__item,
+  .contents-wrapper .grid[class*="4-col-tablet"].grid--gap-xl .grid__item {
     width: calc((100% - var(--margin)*3) / 4);
   }
-  .contents-wrapper .grid.grid--5-col-tablet.grid--gap-none .grid__item {
+  .contents-wrapper .grid[class*="5-col-tablet"].grid--gap-none .grid__item {
     width: calc(100% / 5);
   }
-  .contents-wrapper .grid.grid--5-col-tablet.grid--gap-s .grid__item {
+  .contents-wrapper .grid[class*="5-col-tablet"].grid--gap-s .grid__item {
     width: calc((100% - var(--margin-s)*4) / 5);
   }
-  .contents-wrapper .grid.grid--5-col-tablet.grid .grid__item,
-  .contents-wrapper .grid.grid--5-col-tablet.grid--gap-l .grid__item,
-  .contents-wrapper .grid.grid--5-col-tablet.grid--gap-xl .grid__item {
+  .contents-wrapper .grid[class*="5-col-tablet"] .grid__item,
+  .contents-wrapper .grid[class*="5-col-tablet"].grid--gap-l .grid__item,
+  .contents-wrapper .grid[class*="5-col-tablet"].grid--gap-xl .grid__item {
     width: calc((100% - var(--margin)*4) / 5);
   }
-  .contents-wrapper .grid.grid--6-col-tablet.grid--gap-none .grid__item {
+  .contents-wrapper .grid[class*="6-col-tablet"].grid--gap-none .grid__item {
     width: calc(100% / 6);
   }
-  .contents-wrapper .grid.grid--6-col-tablet.grid--gap-s .grid__item {
+  .contents-wrapper .grid[class*="6-col-tablet"].grid--gap-s .grid__item {
     width: calc((100% - var(--margin-s)*5) / 6);
   }
-  .contents-wrapper .grid.grid--6-col-tablet.grid .grid__item,
-  .contents-wrapper .grid.grid--6-col-tablet.grid--gap-l .grid__item,
-  .contents-wrapper .grid.grid--6-col-tablet.grid--gap-xl .grid__item {
+  .contents-wrapper .grid[class*="6-col-tablet"] .grid__item,
+  .contents-wrapper .grid[class*="6-col-tablet"].grid--gap-l .grid__item,
+  .contents-wrapper .grid[class*="6-col-tablet"].grid--gap-xl .grid__item {
     width: calc((100% - var(--margin)*5) / 6);
   }
 }
