@@ -2862,6 +2862,12 @@ body,
 }
 
 
+[role="tabpanel"]#REGULAR,
+[role="tabpanel"]#PICKUP, {
+  margin-top: var(--margin);
+  gap: var(--margin);
+}
+
 [role="tabpanel"]#REGULAR > div > p,
 [role="tabpanel"]#PICKUP > div > :first-child p {
   text-align: center;
