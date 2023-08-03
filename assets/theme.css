@@ -1572,11 +1572,11 @@ body,
   }
   .contents-wrapper .section-image {
     height: 25vh !important;
-    flex: auto;
   }
   .contents-wrapper .section-heading-wrapper:has(.section-image) .section-image {
     width: 100%;
     max-width: none;
+    flex: auto;
   }
 }
 
