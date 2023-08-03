@@ -2131,9 +2131,6 @@ body,
   .contents-wrapper .product-list {
     gap: var(--margin) !important;
   }
-  .contents-wrapper .product-list .product-media-container {
-    width: 100%;
-  }
 }
 
 /*  featured-product
@@ -2155,6 +2152,9 @@ body,
 @media screen and (max-width: 989px) {
   .contents-wrapper .product.featured-product > * {
     flex: none;
+  }
+  .contents-wrapper .product .product-media-container {
+    width: 100%;
   }
 }
 
