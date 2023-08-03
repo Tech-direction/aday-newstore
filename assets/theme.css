@@ -2142,13 +2142,18 @@ body,
 
 .contents-wrapper .product.featured-product > * {
   padding: 0 !important;
+  flex: 1;
 }
 
 .contents-wrapper .product.featured-product .product__media-wrapper {
   width: auto;
 }
 
-
+@media screen and (max-width: 989px) {
+  .contents-wrapper .product.featured-product > * {
+    flex: 0;
+  }
+}
 
 
 /*  ranking
