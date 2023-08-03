@@ -1091,19 +1091,6 @@ body,
   }
 }
 
-@media screen and (min-width: 750px) {
-  .contents-wrapper .grid__item {
-    width: inherit;
-    max-width: none;
-  }
-}
-
-@media screen and (max-width: 749px) {
-  .contents-wrapper .grid__item {
-    width: 100% !important;
-    max-width: none;
-  }
-}
 
 /*===============================================================
 
