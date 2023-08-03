@@ -1584,7 +1584,7 @@ body,
     height: 25vh !important;
   }
   .contents-wrapper .section.section-page-header {
-    padding-top: 0;
+    padding-top: 0 !important;
   }
   .contents-wrapper .section-page-header .section-heading-wrapper .section-image {
     width: 100%;
