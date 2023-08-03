@@ -43,9 +43,9 @@
   :root {
     --margin: 20px;
     --margin-section: calc(var(--margin)*3);
-    --font-xl: 1.72rem;
-    --font-l: 1.45rem;
-    --font-m: 1.29rem;
+    --font-xl: 1.6rem;
+    --font-l: 1.4rem;
+    --font-m: 1.2rem;
     --font-s: 10px;
   }
 }
@@ -2283,6 +2283,15 @@ body,
   border-top-left-radius: var(--border-radius-box);
   left: calc(100% + var(--margin)*3);
   right: auto;
+}
+
+@media screen and (max-width: 989px) {
+  .contents-wrapper .product-ranking {
+    padding-bottom: 0;;
+  }
+  .contents-wrapper .product-ranking .product__item {
+    top: 0 !important;
+  }
 }
 
 /*  collection page / beens list
