@@ -2775,7 +2775,7 @@ body,
 ---------------------------------------------------------------*/
 
 .contents-wrapper .cart__footer {
-  margin-top: var(--margin-l);
+  margin-top: var(--margin);
   padding: 0 !important;
   text-align: center;
 }
