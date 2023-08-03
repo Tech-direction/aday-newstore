@@ -1851,6 +1851,7 @@ body,
 
 .contents-wrapper .section-fuatured-blog .article-list {
   width: calc(100% + var(--page-width-margin));
+  padding-right: var(--margin);
   scroll-snap-type: x;
   overflow-x: scroll;
   flex-wrap: nowrap;
