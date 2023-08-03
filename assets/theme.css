@@ -1567,7 +1567,7 @@ body,
   }
   .contents-wrapper .section-heading-wrapper .section-image {
     width: 100vw;
-    
+    flex: auto;
   }
 }
 
