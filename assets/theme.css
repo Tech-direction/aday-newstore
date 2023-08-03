@@ -2798,8 +2798,6 @@ body,
   font-size: var(--font-s);
 }
 
-
-
 .contents-wrapper .cart__footer .cart__blocks {
   width: 100%;
 }
@@ -2815,7 +2813,11 @@ body,
 }
 
 
+/*  app block
+---------------------------------------------------------------*/
+
 .contents-wrapper .cart__footer  [data-block-handle="checkout-method"] {
+  max-width: var(--width-max-xs);
   margin-top: var(--margin-l);
 }
 
