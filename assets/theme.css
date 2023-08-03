@@ -2866,6 +2866,10 @@ body,
   font-size: 1rem;
 }
 
+.contents-wrapper .cart__footer path {
+  fill: rgb(var(--color-black)) !important;
+}
+
 .contents-wrapper .cart__footer .vVPqL6YEmH1pvjtsqjX7 {
   border-radius: 0;
   border-color: rgb(var(--color-border));
