@@ -1594,6 +1594,10 @@ body,
   .contents-wrapper .section-page-header .section-heading-wrapper .section-image .media {
     border-radius: 0;
   }
+  .contents-wrapper .section-heading-wrapper .heading__item .heading:before,
+  .contents-wrapper .heading.type-sub_heading:before {
+    font-size: 1rem;
+  }
 }
 
 
