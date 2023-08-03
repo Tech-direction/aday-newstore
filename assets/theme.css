@@ -2131,6 +2131,9 @@ body,
   .contents-wrapper .product-list {
     gap: var(--margin) !important;
   }
+  .contents-wrapper .product-list .product-media-container {
+    width: 100%;
+  }
 }
 
 /*  featured-product
