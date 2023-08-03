@@ -2822,6 +2822,11 @@ body,
   margin: var(--margin-l) auto 0;
 }
 
+.contents-wrapper .cart__footer .baseStyle > div {
+  margin: 0;
+  gap: var(--margin-s);
+}
+
 .contents-wrapper .cart__footer .baseStyle h3 {
   text-align: center;
   font-size: var(--font-m);
