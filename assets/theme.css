@@ -1850,7 +1850,7 @@ body,
 }
 
 .contents-wrapper .section-fuatured-blog .article-list {
-  width: clamp(calc(100vw - var(--margin) - var(--margin-section) - var(--font-l) - var(--font-m)), 80vw, 100vw);
+  width: calc(100% + var(--page-width-margin));
   scroll-snap-type: x;
   overflow-x: scroll;
   flex-wrap: nowrap;
