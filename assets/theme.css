@@ -2793,7 +2793,7 @@ body,
 }
 
 .contents-wrapper .tax-note {
-  margin: var(--margin) 0;
+  margin: var(--margin) 0 0;
   text-align: center;
 }
 
