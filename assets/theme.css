@@ -2821,6 +2821,19 @@ body,
   margin: var(--margin-l) auto 0;
 }
 
+.contents-wrapper .cart__footer .baseStyle h3 {
+  text-align: center;
+}
+
+.contents-wrapper .cart__footer .baseStyle ul {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+ 
 /*===============================================================
 
 	richtext
