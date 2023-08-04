@@ -2156,8 +2156,13 @@ body,
 
 .contents-wrapper .product.featured-product .product__media-wrapper .product-media-container {
   margin: 0;
+  border: 0;
+}
+
+.contents-wrapper .product.featured-product .product__media-wrapper .product-media-container .media {
   border-radius: var(--border-radius-box);
 }
+
 
 @media screen and (max-width: 989px) {
   .contents-wrapper .product.featured-product {
