@@ -2154,6 +2154,11 @@ body,
   width: auto;
 }
 
+.contents-wrapper .product.featured-product .product__media-wrapper .product-media-container {
+  margin: 0;
+  border-radius: var(--border-radius-box);
+}
+
 @media screen and (max-width: 989px) {
   .contents-wrapper .product.featured-product {
     gap: var(--margin);
@@ -2161,7 +2166,7 @@ body,
   .contents-wrapper .product.featured-product > * {
     flex: none;
   }
-  .contents-wrapper .product.featured-product .product__media-wrapper .product-media-container {
+  ç {
     width: 100%;
   }
 }
