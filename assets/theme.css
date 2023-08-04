@@ -2231,11 +2231,11 @@ body,
 
 .contents-wrapper .product-ranking > :first-child .card__heading a,
 .contents-wrapper .product-ranking > :first-child .price,
-.contents-wrapper .product-ranking .product__view-details {
+.contents-wrapper .product-ranking > :first-child .product__view-details {
   color: #fff !important;
 }
 
-.contents-wrapper .product-ranking .product__view-details {
+.contents-wrapper .product-ranking > :first-child .product__view-details {
   border-color: #fff;
 }
 
