@@ -2177,6 +2177,7 @@ body,
 
 .contents-wrapper .product-list .product__item .card__information .product__view-details {
   width: fit-content;
+  margin-top: var(--margin) !important;
   font-size: var(--font-s) !important;
 }
 
