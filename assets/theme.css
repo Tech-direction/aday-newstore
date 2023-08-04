@@ -1503,7 +1503,8 @@ body,
   border-top-right-radius: var(--border-radius-box);
   border-bottom-right-radius: var(--border-radius-box);
   position: relative;
-  right: var(--margin);
+  left: 100%;
+  transform: translateX(-100%);
 }
 
 .contents-wrapper .section-heading-wrapper .section-image img {
