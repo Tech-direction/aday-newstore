@@ -1848,6 +1848,7 @@ body,
   padding-right: var(--margin);
   scroll-snap-type: x;
   overflow-x: scroll;
+  scroll-padding-left: 0;
   flex-wrap: nowrap;
 }
 
