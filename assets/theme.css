@@ -2135,6 +2135,13 @@ body,
   max-width: 400px !important;
 }
 
+.contents-wrapper .product .product-media-container {
+  width: 100% !important;
+}
+
+
+
+
 /*  product list
 ---------------------------------------------------------------*/
 
