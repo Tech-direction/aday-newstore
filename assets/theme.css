@@ -2118,7 +2118,9 @@ body,
 ---------------------------------------------------------------*/
 
 .contents-wrapper .product.grid > * {
+  width: 100%;
   max-width: none;
+  padding: 0;
   gap: var(--margin-l);
 }
 
