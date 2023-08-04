@@ -2122,7 +2122,7 @@ body,
 }
 
 .contents-wrapper .product.grid > * {
-  width: 100%;
+  width: 100% !important;
   max-width: none !important;
   padding: 0 !important;
 }
@@ -2182,11 +2182,11 @@ body,
 
 .contents-wrapper .product.featured-product .product__info-wrapper {
   max-width: var(--width-max-xs);
-}*/
+}
 
 .contents-wrapper .product.featured-product .product__media-wrapper {
   width: auto;
-}
+}*/
 
 .contents-wrapper .product.featured-product .product__media-wrapper .product-media-container {
   width: 100%;
