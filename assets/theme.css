@@ -45,7 +45,7 @@
     --border-radius-box: 10px;
     --margin-section: calc(var(--margin)*3);
     --font-xl: 1.6rem;
-    --font-l: 1.4rem;
+    /*--font-l: 1.4rem;*/
     --font-m: 1.2rem;
     --font-s: 10px;
   }
