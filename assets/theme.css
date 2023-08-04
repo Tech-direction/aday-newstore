@@ -2167,9 +2167,16 @@ body,
 
 .contents-wrapper .product-list .product__item .card__information {
   margin-top: var(--margin-s);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contents-wrapper .product-list .product__item .card__information > * {
+  width: 100%;
 }
 
 .contents-wrapper .product-list .product__item .card__information .product__view-details {
+  margin-top: auto !important;
   font-size: var(--font-s) !important;
 }
 
