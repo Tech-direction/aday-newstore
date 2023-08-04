@@ -222,7 +222,8 @@ a,
   display: flex;
 }
 
-.contents-wrapper .link.animate-arrow .icon-wrap {
+.contents-wrapper .link.animate-arrow .icon-wrap,
+.contents-wrapper .link.animate-arrow .icon {
   margin-left: 4em;
   margin-right: 0;
 }
