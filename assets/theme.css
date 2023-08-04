@@ -2117,11 +2117,14 @@ body,
 /*  product detail
 ---------------------------------------------------------------*/
 
+.contents-wrapper .product.grid  {
+  gap: var(--margin-l);
+}
+
 .contents-wrapper .product.grid > * {
   width: 100%;
   max-width: none !important;
   padding: 0 !important;
-  gap: var(--margin-l);
 }
 
 .contents-wrapper .product.grid .product__media-wrapper {
