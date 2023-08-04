@@ -222,11 +222,13 @@ a,
   display: flex;
 }
 
-.contents-wrapper .link.animate-arrow .icon-wrap,
-.contents-wrapper .link.animate-arrow .icon {
-  width: var(--font-m);
+.contents-wrapper .link.animate-arrow .icon-wrap {
   margin-left: 2em;
   margin-right: 0;
+}
+
+.contents-wrapper .link.animate-arrow  .icon-wrap .icon {
+  width: var(--font-m);
 }
 
 .contents-wrapper .link.animate-arrow.align-right {
