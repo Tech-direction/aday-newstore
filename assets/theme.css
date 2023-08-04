@@ -2134,7 +2134,7 @@ body,
 }
 
 .contents-wrapper .product-list .product__item .card-information .product__view-details {
-  font-size: var(--font-s);
+  font-size: var(--font-s) !important;
 }
 
 @media screen and (max-width: 989px) {
