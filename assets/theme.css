@@ -2293,13 +2293,13 @@ body,
 }
 
 .contents-wrapper .collection-section-been-wrapper .collection-section-been .collection-list-image {
-  width: calc(100% + var(--page-width-margin));
+  width: 100vw;
   height: 50vw;
   border-top-right-radius: var(--border-radius-box);
   border-bottom-right-radius: var(--border-radius-box);
   position: absolute;
   top: 0;
-  right: 0;
+  right: calc(100% + var(--margin)*3);
   overflow: hidden;
 }
 
