@@ -26,7 +26,7 @@
   --width-max-xs: calc(680px + var(--margin)*2);
   --border-radius-box: var(--margin-s);
   */
-  --margin: clamp(10px, 5vw, 30px);
+  --margin: clamp(10px, 2vw, 30px);
   --margin-section: calc(var(--margin)*5);
   --margin-xl: calc(var(--margin)*2);
   --margin-l: calc(var(--margin)*2);
@@ -41,7 +41,7 @@
 
 @media screen and (max-width: 989px) {
   :root {
-    --margin: 20px;
+    /*--margin: 20px;*/
     --border-radius-box: 10px;
     --margin-section: calc(var(--margin)*3);
     --font-xl: 1.6rem;
