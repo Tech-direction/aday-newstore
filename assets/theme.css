@@ -229,6 +229,7 @@ a,
 
 .contents-wrapper .link.animate-arrow  .icon-wrap .icon {
   width: var(--font-m);
+  margin: 0;
 }
 
 .contents-wrapper .link.animate-arrow.align-right {
