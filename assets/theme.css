@@ -2299,8 +2299,7 @@ body,
   border-bottom-right-radius: var(--border-radius-box);
   position: absolute;
   top: 0;
-  left: 100%;
-  transform: translateX(-100%);
+  right: 0;
   overflow: hidden;
 }
 
