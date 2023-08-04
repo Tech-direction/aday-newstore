@@ -2137,9 +2137,6 @@ body,
 }
 
 @media screen and (max-width: 989px) {
-  .contents-wrapper .product.grid {
-    gap: var(--margin);
-  }
   .contents-wrapper .product.grid .product__media-wrapper,
   .contents-wrapper .product.grid .product__info-wrapper {
     width: 100% !important;
