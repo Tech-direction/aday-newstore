@@ -62,7 +62,7 @@
 body,
 html,
 html.js.wf-poppins-n1-active{
-  font-size: max(16px, 2vw);
+  font-size: clamp(14px, 2vw, 16px) !important;
   line-height: 1.75;
   font-family: 'zen-kaku-gothic-new', 'Helvetica Neue', 'Lucida Grande', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'Meiryo', 'メイリオ', 'sans-serif';
   font-weight: 400;
@@ -131,21 +131,7 @@ html.js.wf-poppins-n1-active{
   margin-top: var(--margin);
 }
 
-@media screen and (max-width: 989px) {
-  body,
-  html,
-  html.js.wf-poppins-n1-active,
-  html.js.wf-poppins-n1-active body {
-    font-size: max(14px, 2vw);
-  }
-}
 
-@media (min-width: 40em) {
-  html.js.wf-poppins-n1-active,
-  html.js.wf-poppins-n1-active body {
-    font-size: max(14px, 2vw);
-  }
-}
 
 
 
