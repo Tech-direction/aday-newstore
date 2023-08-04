@@ -2240,10 +2240,13 @@ body,
 
 @media screen and (max-width: 989px) {
   .contents-wrapper .product-ranking {
-    padding-bottom: 0;;
+    padding-bottom: 0;
   }
   .contents-wrapper .product-ranking .product__item {
     top: 0 !important;
+  }
+  .contents-wrapper .product-ranking > :first-child {
+    width: 100% !important;
   }
 }
 
