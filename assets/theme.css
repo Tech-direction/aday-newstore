@@ -2180,10 +2180,9 @@ body,
     gap: var(--margin);
   }
   .contents-wrapper .product.featured-product > * {
-    flex: none;
-  }
-  ç {
     width: 100%;
+    max-width: none;
+    flex: none;
   }
 }
 
