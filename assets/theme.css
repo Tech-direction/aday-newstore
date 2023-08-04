@@ -2140,7 +2140,8 @@ body,
   .contents-wrapper .product.grid {
     gap: var(--margin);
   }
-  .contents-wrapper .product.grid > * {
+  .contents-wrapper .product.grid .product__media-wrapper,
+  .contents-wrapper .product.grid .product__info-wrapper {
     width: 100% !important;
     max-width: none !important;
   }
