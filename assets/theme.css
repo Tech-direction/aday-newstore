@@ -2130,6 +2130,8 @@ body,
 .contents-wrapper .product.grid .product__info-wrapper {
   width: 35% !important;
   max-width: 420px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .contents-wrapper .product .product-media-container {
@@ -2140,7 +2142,6 @@ body,
   .contents-wrapper .product.grid .product__media-wrapper,
   .contents-wrapper .product.grid .product__info-wrapper {
     width: 100% !important;
-    max-width: none !important;
   }
 }
 
