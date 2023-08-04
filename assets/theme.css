@@ -51,6 +51,8 @@
   }
 }
 
+
+
 /*===============================================================
 
 	basic DOM
@@ -58,7 +60,8 @@
 ===============================================================*/
 
 body,
-html {
+html,
+html.js.wf-poppins-n1-active{
   font-size: max(16px, 2vw);
   line-height: 1.75;
   font-family: 'zen-kaku-gothic-new', 'Helvetica Neue', 'Lucida Grande', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'Meiryo', 'メイリオ', 'sans-serif';
@@ -130,10 +133,20 @@ html {
 
 @media screen and (max-width: 989px) {
   body,
-  html {
+  html,
+  html.js.wf-poppins-n1-active,
+  html.js.wf-poppins-n1-active body {
     font-size: max(12px, 2vw);
   }
 }
+
+@media (min-width: 40em) {
+  html.js.wf-poppins-n1-active,
+  html.js.wf-poppins-n1-active body {
+    font-size: max(12px, 2vw);
+  }
+}
+
 
 
 /*  heading
@@ -3038,10 +3051,6 @@ body,
 
 ===============================================================*/
 
-html.js.wf-poppins-n1-active {
-  font-size: 16px;
-}
-
 .contents-wrapper #boxContent {
   padding-top: var(--margin-section);
   background-color: #fff;
@@ -3097,19 +3106,7 @@ html.js.wf-poppins-n1-active {
   font-size: var(--font-l);
 }
 
-@media (min-width: 40em) {
-  html.js.wf-poppins-n1-active,
-  html.js.wf-poppins-n1-active body {
-    font-size: 1rem;
-  }
-}
 
-@media screen and (max-width: 989px) {
-  html.js.wf-poppins-n1-active,
-  html.js.wf-poppins-n1-active body {
-    font-size: 14px;
-  }
-}
 
 
 /*  collection
