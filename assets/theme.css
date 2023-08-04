@@ -2299,7 +2299,8 @@ body,
   border-bottom-right-radius: var(--border-radius-box);
   position: absolute;
   top: 0;
-  right: calc(100% + var(--margin)*3);
+  left: 100%;
+  transform: translateX(-100%);
   overflow: hidden;
 }
 
