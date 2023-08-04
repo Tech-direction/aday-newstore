@@ -2133,6 +2133,10 @@ body,
   margin-top: var(--margin-s);
 }
 
+.contents-wrapper .product-list .product__item .card-information .product__view-details {
+  font-size: var(--font-s);
+}
+
 @media screen and (max-width: 989px) {
   .contents-wrapper .product-list {
     gap: var(--margin) !important;
