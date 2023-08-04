@@ -2293,7 +2293,7 @@ body,
 }
 
 .contents-wrapper .collection-section-been-wrapper .collection-section-been .collection-list-image {
-  width: 100vw;
+  width: calc(100% + var(--page-width-margin));
   height: 50vw;
   border-top-right-radius: var(--border-radius-box);
   border-bottom-right-radius: var(--border-radius-box);
