@@ -2119,17 +2119,17 @@ body,
 }
 
 .contents-wrapper .product.grid > * {
-  width: 100% !important;
   max-width: none !important;
   padding: 0 !important;
 }
 
 .contents-wrapper .product.grid .product__media-wrapper {
-  
+  width: auto !important;
 }
 
 .contents-wrapper .product.grid .product__info-wrapper {
-  max-width: 400px !important;
+  width: 35% !important;
+  max-width: 440px !important;
 }
 
 .contents-wrapper .product .product-media-container {
