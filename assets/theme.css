@@ -10,7 +10,7 @@
   --color-gray: 245,245,245;
   --color-border: 175,175,175;
   --font-xl: 2rem;
-  --font-l: clamp(1rem, 2vw, 1.5rem);
+  --font-l: min(2vw, 1.5rem);
   --font-m: 1.25rem;
   --font-s: .75rem;
   /*
