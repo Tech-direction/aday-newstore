@@ -213,7 +213,7 @@ a,
 
 .contents-wrapper .link.animate-arrow {
   width: fit-content;
-  margin-top: var(--margin);
+  margin-top: var(--margin-l);
   margin-bottom: 0;
   padding-bottom: .5em;
   font-weight: 500;
