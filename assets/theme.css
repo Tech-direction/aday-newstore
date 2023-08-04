@@ -2133,7 +2133,7 @@ body,
   margin-top: var(--margin-s);
 }
 
-.contents-wrapper .product-list .product__item .card-information .product__view-details {
+.contents-wrapper .product-list .product__item .card__information .product__view-details {
   font-size: var(--font-s) !important;
 }
 
