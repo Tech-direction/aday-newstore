@@ -2124,7 +2124,7 @@ body,
 }
 
 .contents-wrapper .product.grid .product__media-wrapper {
-  width: auto !important;
+  width: calc(65% - var(--margin-l)) !important;
 }
 
 .contents-wrapper .product.grid .product__info-wrapper {
