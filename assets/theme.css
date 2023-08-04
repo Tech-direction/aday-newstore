@@ -2164,6 +2164,7 @@ body,
 }
 
 .contents-wrapper .product.featured-product .product__media-wrapper .product-media-container {
+  width: 100%;
   margin: 0;
   border: 0;
 }
