@@ -2098,7 +2098,9 @@ body,
 }
 
 .contents-wrapper .product .thumbnail-slider .thumbnail-list.slider--tablet-up .thumbnail-list__item.slider__slide {
-  width: calc((100% - var(--margin-s) * 4)/5)
+  width: calc((100% - var(--margin-s) * 4)/5);
+  border-radius: var(--border-radius-box);
+  overflow: hidden;
 }
 
 
