@@ -2092,8 +2092,8 @@ body,
 }
 
 .contents-wrapper .product .thumbnail-slider .thumbnail-list.slider--tablet-up {
-  margin-top: var(--margin);
-  padding: 0:
+  margin-top: var(--margin-s);
+  padding: 0;
 }
 
 
