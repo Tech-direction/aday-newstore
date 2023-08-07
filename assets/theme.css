@@ -2103,6 +2103,9 @@ body,
   overflow: hidden;
 }
 
+.contents-wrapper .product .slider-mobile-gutter {
+  margin: 0;
+}
 
 /*  veriation / buy button
 ---------------------------------------------------------------*/
