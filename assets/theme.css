@@ -2402,7 +2402,7 @@ body,
     max-width: none;
   }
   .contents-wrapper .collection-section-been-wrapper .collection-section-been .collection-list-image {
-    
+    position: static;
   }
 }
 
