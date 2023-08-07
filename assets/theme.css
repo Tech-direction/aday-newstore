@@ -2402,8 +2402,8 @@ body,
     max-width: none;
   }
   .contents-wrapper .collection-section-been-wrapper .collection-section-been .collection-list-image {
-    width: clac(100% - var(--margin));
-    margin-left: clac(var(--margin) * -1);
+    width: calc(100% - var(--margin));
+    margin-left: calc(var(--margin) * -1);
     position: static;
   }
   .contents-wrapper .collection-section-been-wrapper.type-reverse .collection-section-been .collection-list-image {
