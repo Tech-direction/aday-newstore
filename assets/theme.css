@@ -2094,6 +2094,11 @@ body,
 .contents-wrapper .product .thumbnail-slider .thumbnail-list.slider--tablet-up {
   margin-top: var(--margin-s);
   padding: 0;
+  gap: var(--margin-s);
+}
+
+.contents-wrapper .product .thumbnail-slider .thumbnail-list.slider--tablet-up .thumbnail-list__item.slider__slide {
+  width: calc((100% - var(--margin-s) * 4)/5)
 }
 
 
