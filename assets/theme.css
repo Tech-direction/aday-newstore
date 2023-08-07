@@ -2091,6 +2091,11 @@ body,
   border-radius: var(--border-radius-box);
 }
 
+.contents-wrapper .product .thumbnail-slider .thumbnail-list.slider--tablet-up {
+  margin-top: var(--margin);
+  padding: 0:
+}
+
 
 /*  veriation / buy button
 ---------------------------------------------------------------*/
