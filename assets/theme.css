@@ -2114,6 +2114,10 @@ body,
   gap: var(--margin-s);
 }
 
+.contents-wrapper .product .slider-mobile-gutter > * {
+  width: 100%;
+}
+
 .contents-wrapper .product .slider-mobile-gutter .slider.slider--mobile {
   margin: 0;
   scroll-padding-left: 0;
