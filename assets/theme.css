@@ -2398,8 +2398,13 @@ body,
   .contents-wrapper .product-ranking .product__item {
     top: 0 !important;
   }
+
+  
   .contents-wrapper .collection-section-been-wrapper .collection-section-been .heading__item {
     max-width: none;
+  }
+  .contents-wrapper .collection-section-been-wrapper .collection-section-been .heading__item {
+    padding-top: 0;
   }
   .contents-wrapper .collection-section-been-wrapper .collection-section-been .collection-list-image {
     width: calc(100vw - var(--margin));
