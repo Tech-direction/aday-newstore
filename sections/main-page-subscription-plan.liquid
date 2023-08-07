@@ -28,7 +28,7 @@
             </{{ section.settings.heading_type }}>
     {%- endunless -%}
     
-      <div class="grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop {{ grid_gap }} subscription-feature-list">
+      <div class="grid grid--3-col-tablet-down grid--3-col-desktop {{ grid_gap }} subscription-feature-list">
         {%- liquid
           assign highest_ratio = 0
           for block in section.blocks
