@@ -2169,15 +2169,17 @@ body,
   margin-top: var(--margin-s);
   display: flex;
   flex-wrap: wrap;
+  gap: .5em;
 }
 
 .contents-wrapper .product-list .product__item .card__information > * {
   width: 100%;
+  margin-top: 0 !important;
 }
 
 .contents-wrapper .product-list .product__item .card__information .product__view-details {
   width: fit-content;
-  margin-top: var(--margin) !important;
+  margin-top: auto !important;
   font-size: var(--font-s) !important;
 }
 
