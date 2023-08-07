@@ -1571,6 +1571,7 @@ body,
     width: fit-content;
     margin: 0;
     padding: 0 var(--margin);
+    border-top-right-radius: var(--border-radius-box);
     background-color: #fff;
     order: 1;
     position: absolute;
