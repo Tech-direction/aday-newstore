@@ -2108,13 +2108,13 @@ body,
   overflow: hidden;
 }
 
-.contents-wrapper .product .slider-mobile-gutter {
+.contents-wrapper .product .product__column-sticky > .slider-mobile-gutter {
   margin: 0;
   display: flex;
   gap: var(--margin-s);
 }
 
-.contents-wrapper .product .slider-mobile-gutter > * {
+.contents-wrapper .product .product__column-sticky > .slider-mobile-gutter > * {
   width: 100%;
 }
 
