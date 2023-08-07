@@ -96,17 +96,17 @@
             "text_align": "left"
           }
         },
-        "b39c6b5d-f375-415b-a0d7-838ca32f7548": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/subscription_page_498448d3-3f41-4e2a-a9e8-4840e6c8bcac.png"
-          }
-        },
         "15573d12-e64f-42d2-9bf7-64352ecaa062": {
           "type": "text",
           "settings": {
             "text": "<p>お好きな定期便の種類を選択したあと、画面に表示されているコーヒー豆の一覧からお送りするコーヒー豆をお選びください。<\/p>",
             "text_align": "left"
+          }
+        },
+        "b39c6b5d-f375-415b-a0d7-838ca32f7548": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/subscription_page_498448d3-3f41-4e2a-a9e8-4840e6c8bcac.png"
           }
         },
         "e0680cf9-72a5-4c74-beb6-4512323bd133": {
@@ -132,8 +132,8 @@
         "888d3087-1c7e-4212-a186-436fa56fd5d2",
         "e7dfdb81-86fe-499c-a5dd-20360c1ecaf1",
         "614152cb-6219-4406-b801-dee48eef32a9",
-        "b39c6b5d-f375-415b-a0d7-838ca32f7548",
         "15573d12-e64f-42d2-9bf7-64352ecaa062",
+        "b39c6b5d-f375-415b-a0d7-838ca32f7548",
         "e0680cf9-72a5-4c74-beb6-4512323bd133",
         "37688181-5b99-4e55-9b7d-a2743afb7bd4"
       ],
