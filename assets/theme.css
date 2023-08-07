@@ -2393,10 +2393,16 @@ body,
 
 @media screen and (max-width: 989px) {
   .contents-wrapper .product-ranking {
-    padding-bottom: 0;;
+    padding-bottom: 0;
   }
   .contents-wrapper .product-ranking .product__item {
     top: 0 !important;
+  }
+  .contents-wrapper .collection-section-been-wrapper .collection-section-been .heading__item {
+    width: 100%;
+  }
+  .contents-wrapper .collection-section-been-wrapper .collection-section-been .collection-list-image {
+    
   }
 }
 
