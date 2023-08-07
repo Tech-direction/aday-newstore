@@ -1695,7 +1695,7 @@ body,
   margin: 0;
 }
 
-.contents-wrapper .subscription-feature-list .feature__item > *:not([class^="align-"]) {
+.contents-wrapper .subscription-feature-list .feature__item > *:not([class*="align-"]) {
   text-align: center;
 }
 
