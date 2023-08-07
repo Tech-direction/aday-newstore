@@ -2088,6 +2088,10 @@ body,
   border: 0;
 }
 
+.contents-wrapper .product .slider.slider--mobile .slider__slide {
+  padding: 0;
+}
+
 .contents-wrapper .product .product__media-wrapper .product-media-container .media {
   border-radius: var(--border-radius-box);
 }
