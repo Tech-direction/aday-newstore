@@ -2402,8 +2402,12 @@ body,
     max-width: none;
   }
   .contents-wrapper .collection-section-been-wrapper .collection-section-been .collection-list-image {
-    
-    position: relative;
+    width: clac(100% - var(--margin));
+    margin-left: clac(var(--margin) * -1);
+    position: static;
+  }
+  .contents-wrapper .collection-section-been-wrapper .collection-section-been .collection-list-image {
+    margin-left: 0;
   }
 }
 
