@@ -72,7 +72,13 @@
                   </li>
                 {% endif %}
             </ul>
-
+            {%- when 'image' -%}
+            {{
+                      block.settings.image
+                      | image_url: width: 3200
+                      | image_tag:
+                        loading: 'lazy'
+                    }}
 
         {%- endcase -%}
       {%- endfor -%}
