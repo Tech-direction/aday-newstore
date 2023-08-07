@@ -2399,7 +2399,7 @@ body,
     top: 0 !important;
   }
   .contents-wrapper .collection-section-been-wrapper .collection-section-been .heading__item {
-    width: 100%;
+    max-width: none;
   }
   .contents-wrapper .collection-section-been-wrapper .collection-section-been .collection-list-image {
     
