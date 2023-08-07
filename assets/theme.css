@@ -1992,7 +1992,7 @@ body,
 }
 
 .contents-wrapper .article-wrapper a:not(.button) {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 /*===============================================================
