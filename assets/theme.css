@@ -2001,7 +2001,7 @@ body,
 .contents-wrapper .product__title,
 .contents-wrapper .product__title .heading,
 .contents-wrapper .card__heading {
-  font-size: var(--font-l);
+  font-size: var(--font-xl);
 }
 
 .contents-wrapper variant-selects .form__label,
