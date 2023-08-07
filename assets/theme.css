@@ -1987,6 +1987,11 @@ body,
   border: none;
 }
 
+.contents-wrapper .article-wrapper .article-template__content img {
+  border: 1px solid rgb(var(--color-border));
+}
+
+
 /*===============================================================
 
 	collection contents / product
