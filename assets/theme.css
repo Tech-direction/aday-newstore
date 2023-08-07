@@ -130,7 +130,10 @@ html.js.wf-poppins-n1-active{
   margin-top: var(--margin);
 }
 
-
+.contents-wrapper img {
+  max-width: 100%;
+  height: auto;
+}
 
 
 
