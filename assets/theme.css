@@ -2386,7 +2386,7 @@ body,
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   border-top-left-radius: var(--border-radius-box);
-  border-top-left-radius: var(--border-radius-box);
+  border-bottom-left-radius: var(--border-radius-box);
   left: calc(100% + var(--margin)*3);
   right: auto;
 }
@@ -2402,7 +2402,8 @@ body,
     max-width: none;
   }
   .contents-wrapper .collection-section-been-wrapper .collection-section-been .collection-list-image {
-    position: static;
+    
+    position: relative;
   }
 }
 
