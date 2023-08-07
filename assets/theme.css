@@ -2406,7 +2406,7 @@ body,
     margin-left: clac(var(--margin) * -1);
     position: static;
   }
-  .contents-wrapper .collection-section-been-wrapper .collection-section-been .collection-list-image {
+  .contents-wrapper .collection-section-been-wrapper.type-reverse .collection-section-been .collection-list-image {
     margin-left: 0;
   }
 }
