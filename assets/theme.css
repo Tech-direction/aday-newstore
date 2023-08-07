@@ -2004,6 +2004,10 @@ body,
   font-size: var(--font-xl);
 }
 
+.contents-wrapper .product-list .card__heading {
+  font-size: var(--font-l);
+}
+
 .contents-wrapper variant-selects .form__label,
 .contents-wrapper .product__item .product-form__quantity .form__label {
   display: none;
