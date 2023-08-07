@@ -2077,9 +2077,12 @@ body,
   font-size: var(--font-s) !important;
 }
 
-
 .contents-wrapper .product__text > p {
   margin-top: 0;
+}
+
+.contents-wrapper .product .product__media-wrapper .product-media-container .media {
+  border-radius: var(--border-radius-box);
 }
 
 
@@ -2197,10 +2200,6 @@ body,
   width: 100%;
   margin: 0;
   border: 0;
-}
-
-.contents-wrapper .product.featured-product .product__media-wrapper .product-media-container .media {
-  border-radius: var(--border-radius-box);
 }
 
 
