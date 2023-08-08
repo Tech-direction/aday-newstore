@@ -28,7 +28,7 @@
             </{{ section.settings.heading_type }}>
     {%- endunless -%}
     
-      <div class="grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop {{ grid_gap }} subscription-feature-list">
+      <div class="grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop {{ grid_gap }} subscription-plan-list">
         {%- liquid
           assign highest_ratio = 0
           for block in section.blocks
@@ -47,7 +47,7 @@
             {%- assign empty_column = ' multicolumn-list__item--empty' -%}
           {%- endif -%}
 
-          <div class="grid__item feature__item">
+          <div class="grid__item plan__item">
 
                 {%- if block.settings.title != blank -%}
                   <p class="heading {% if block.settings.title_size !="default" %} size-{{ block.settings.title_size }}{% endif %}">{{ block.settings.title }}</p>
@@ -395,6 +395,11 @@
           ],
           "default": "l",
           "label": "t:sections.all.heading_size.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "画像"
         },
         {
           "type": "richtext",
