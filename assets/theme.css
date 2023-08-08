@@ -1736,7 +1736,7 @@ body,
 }
 
 .contents-wrapper .subscription-plan-list .plan__item .heading {
-  padding-bottom: .25em;
+  padding-bottom: .5em;
   text-align: center;
   border-bottom: 1px solid rgb(var(--color-black));
 }
