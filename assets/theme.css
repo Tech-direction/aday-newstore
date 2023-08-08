@@ -1734,6 +1734,13 @@ body,
   background-color: #fff;
 }
 
+.contents-wrapper .subscription-plan-list .plan__item figure {
+  
+}
+
+.contents-wrapper .subscription-plan-list .plan__item .plan_item {
+  max-width: none;
+}
 
 /*===============================================================
 
