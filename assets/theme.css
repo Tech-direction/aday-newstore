@@ -1754,6 +1754,15 @@ body,
   max-width: none;
 }
 
+@media screen and (max-width: 989px) {
+  .contents-wrapper .subscription-plan-list .plan__item {
+    width: calc((100% - var(--margin)) / 2);
+  }
+}
+
+
+
+
 /*===============================================================
 
 	page menu
