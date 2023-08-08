@@ -166,12 +166,24 @@
         "swipe_on_mobile": false,
         "box_gap": "l"
       }
+    },
+    "f9e0afc0-e928-45a3-9682-5919df278603": {
+      "type": "featured-blog-top-news",
+      "settings": {
+        "section_heading": "お知らせ",
+        "heading_size": "l",
+        "section_sub_heading": "NEWS",
+        "blog": "news",
+        "post_limit": 3,
+        "columns_desktop": 3
+      }
     }
   },
   "order": [
     "d5fac027-1d6c-4527-b96a-703316269413",
     "ef1e9a68-7a62-4287-8199-03faca0c8b77",
     "361c01ec-b4ce-4a50-9bc5-26515e1e190d",
-    "f86325b7-9ef5-4459-acbc-f77ebaa74e38"
+    "f86325b7-9ef5-4459-acbc-f77ebaa74e38",
+    "f9e0afc0-e928-45a3-9682-5919df278603"
   ]
 }
