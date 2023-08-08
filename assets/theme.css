@@ -2258,7 +2258,7 @@ body,
 ---------------------------------------------------------------*/
 
 .contents-wrapper .featured-product .product__info-wrapper {
-  padding: var(--margin-l) 0;
+  padding: var(--margin-l) 0 !important;
 }
 
 .contents-wrapper .featured-product .product__media-wrapper .media {
