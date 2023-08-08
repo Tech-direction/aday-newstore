@@ -1725,16 +1725,10 @@ body,
 
 @media screen and (max-width: 989px) {
   .contents-wrapper .subscription-feature-list .feature__item [class^="subscription-feature-media-"] {
-    height: 3vh;
+    height: 5vh;
   }
 }
 
-
-@media screen and (max-width: 749px) {
-  .contents-wrapper .subscription-feature-list .feature__item [class^="subscription-feature-media-"] {
-    height: 3vh;
-  }
-}
 
 /*===============================================================
 
