@@ -261,8 +261,7 @@ a,
   height: 3.5rem;
   min-height: auto;
   margin-bottom: 0;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding: 1em 2em;
   font-size: 1rem;
   color: #fff;
   font-weight: 500;
@@ -306,6 +305,7 @@ a,
 }
 
 .contents-wrapper .button.align-center {
+  width: fit-content;
   margin-left: auto !important;
   margin-right: auto !important;
   display: block;
