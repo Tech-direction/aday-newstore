@@ -51,9 +51,6 @@
                 {%- if block.settings.title != blank -%}
                   <p class="heading {% if block.settings.title_size !="default" %} size-{{ block.settings.title_size }}{% endif %}">{{ block.settings.title }}</p>
                 {%- endif -%}
-                {%- if block.settings.text != blank -%}
-                  <div class="rte align-left">{{ block.settings.text }}</div>
-                {%- endif -%}
                 {%- if block.settings.image != blank -%}
                 <figure>
                   {{
@@ -63,6 +60,9 @@
                       loading: 'lazy'
                   }}
                 </figure>
+                {%- endif -%}
+                {%- if block.settings.text != blank -%}
+                  <div class="rte align-left">{{ block.settings.text }}</div>
                 {%- endif -%}
                 {%- if block.settings.link_label != blank -%}
                   <a
