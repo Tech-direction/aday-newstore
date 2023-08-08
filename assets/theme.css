@@ -2393,7 +2393,7 @@ body,
 
 @media screen and (max-width: 989px) {
   .contents-wrapper .subscription-detail-wrapper {
-    gap: var(--margin);
+    gap: var(--margin) !important;
   }
   .contents-wrapper .subscription-detail-wrapper > * {
     order: 1;
