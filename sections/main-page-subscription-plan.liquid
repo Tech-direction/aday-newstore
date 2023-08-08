@@ -59,13 +59,9 @@
                 <figure>
                   {{
                     block.settings.image
+                    | image_url: width: 820
                     | image_tag:
-                      loading: 'lazy',
-                      width: section.settings.image.width,
-                      height: image_height,
-                      class: image_class,
-                      sizes: sizes,
-                      widths: widths
+                      loading: 'lazy'
                   }}
                 </figure>
                 {%- endif -%}
