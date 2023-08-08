@@ -2281,6 +2281,12 @@ body,
   left: auto;
 }
 
+@media screen and (max-width: 989px) {
+  .contents-wrapper .featured-product .product__media-wrapper .media {
+    height: 25vh;
+  }
+}
+
 
 /*  product list
 ---------------------------------------------------------------*/
