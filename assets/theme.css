@@ -2252,6 +2252,22 @@ body,
 }
 
 
+/*  featured product 
+---------------------------------------------------------------*/
+
+
+.contents-wrapper .featured-product .product__media-wrapper img {
+  width: calc(100% + var(--page-width-margin));
+  max-width: none;
+  height: 100%;
+  border-top-right-radius: var(--border-radius-box);
+  border-bottom-right-radius: var(--border-radius-box);
+  position: relative;
+  left: 100%;
+  transform: translateX(-100%);
+}
+
+
 /*  product list
 ---------------------------------------------------------------*/
 
