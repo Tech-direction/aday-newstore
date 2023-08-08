@@ -2222,7 +2222,7 @@ body,
 ---------------------------------------------------------------*/
 
 .contents-wrapper .product.grid  {
-  gap: var(--margin-l);
+  gap: var(--margin-section);
 }
 
 .contents-wrapper .product.grid > * {
@@ -2231,7 +2231,7 @@ body,
 }
 
 .contents-wrapper .product.grid .product__media-wrapper {
-  width: calc(65% - var(--margin-l)) !important;
+  width: calc(65% - var(--margin-section)) !important;
 }
 
 .contents-wrapper .product.grid .product__info-wrapper {
