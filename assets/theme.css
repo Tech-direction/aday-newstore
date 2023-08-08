@@ -1714,6 +1714,12 @@ body,
   text-shadow: none !important;
 }
 
+@media screen and (max-width: 989px) {
+  .contents-wrapper .subscription-feature-list .feature__item [class^="subscription-feature-media-"] {
+    height: 3vh;
+  }
+}
+
 
 @media screen and (max-width: 749px) {
   .contents-wrapper .subscription-feature-list .feature__item [class^="subscription-feature-media-"] {
@@ -2380,6 +2386,12 @@ body,
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+
+.contents-wrapper .collection-section-image .subscription-detail-wrapper {
+  
+}
+
 
 /*  collection page / collection-section-been-wrapper
 ---------------------------------------------------------------*/
