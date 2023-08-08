@@ -49,7 +49,7 @@
 
           <div class="grid__item plan__item">
                 {%- if block.settings.title != blank -%}
-                  <p class="heading {% if block.settings.title_size !="default" %} size-{{ block.settings.title_size }}{% endif %}">{{ block.settings.title }}</p>
+                  <div class="heading {% if block.settings.title_size !="default" %} size-{{ block.settings.title_size }}{% endif %}">{{ block.settings.title }}</div>
                 {%- endif -%}
                 {%- if block.settings.image != blank -%}
                 <figure>
