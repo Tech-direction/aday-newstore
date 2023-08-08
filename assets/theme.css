@@ -2256,15 +2256,22 @@ body,
 ---------------------------------------------------------------*/
 
 
-.contents-wrapper .featured-product .product__media-wrapper img {
+.contents-wrapper .featured-product .product__media-wrapper .media {
   width: calc(100% + var(--page-width-margin));
-  max-width: none;
   height: 100%;
   border-top-right-radius: var(--border-radius-box);
   border-bottom-right-radius: var(--border-radius-box);
   position: relative;
   left: 100%;
   transform: translateX(-100%);
+}
+
+.contents-wrapper .featured-product .product__media-wrapper .media img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  right: 0;
+  left: auto;
 }
 
 
