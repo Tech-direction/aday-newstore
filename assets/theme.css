@@ -2396,7 +2396,7 @@ body,
     order: 1;
   }
   .contents-wrapper .subscription-detail-wrapper > .grid__item:has(.subscription-feature-list) {
-    margin-top: cacl(var(--margin-l) * -1);
+    margin-top: cacl(var(--margin-l) * -1) !important;
     padding: 0 var(--margin);
     order: 0;
   }
