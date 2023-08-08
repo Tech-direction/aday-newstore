@@ -161,7 +161,7 @@
         "template--20317784211764__88d80f0e-b70e-4663-b0e3-412f00aa748c-column-1": {
           "type": "column",
           "settings": {
-            "title": "お好きなコーヒー豆（100g）を3種類お届け",
+            "title": "<p>お好きなコーヒー豆（100g）を<br\/><strong>3種類<\/strong>お届け<\/p>",
             "title_size": "m",
             "image": "shopify:\/\/shop_images\/sucscription_01.svg",
             "text": "<p>お好きなタイミングでお好きな豆を100gを3種類定期的にお届けします。<br\/>いろんなコーヒー豆を飲みたい！そんな方におすすめプランです。<br\/>以下のボタンより商品お選びいただき、ご購入ください。<\/p>",
@@ -172,7 +172,7 @@
         "template--20317784211764__88d80f0e-b70e-4663-b0e3-412f00aa748c-column-2": {
           "type": "column",
           "settings": {
-            "title": "お好きなコーヒー豆（200g）を1種類お届け",
+            "title": "<p>お好きなコーヒー豆（200g）を<br\/><strong>1種類<\/strong>お届け<\/p>",
             "title_size": "m",
             "image": "shopify:\/\/shop_images\/sucscription_02.svg",
             "text": "<p>お好きなタイミングでお好きな豆を200g定期的にお届けします。<br\/>好きなコーヒー豆は決まっている。そんな方におすすめプランです。<br\/>以下のボタンより商品お選びいただき、ご購入ください。<\/p>",
