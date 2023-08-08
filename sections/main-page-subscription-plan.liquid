@@ -57,6 +57,17 @@
                 {%- endif -%}
                 {%- if block.settings.image != blank -%}
                 <figure>{{ block.settings.image | image_url: width: 600 }}</figure>
+            {{
+        block.settings.image
+        | image_url: width: 3840
+        | image_tag:
+          loading: 'lazy',
+          width: section.settings.image.width,
+          height: image_height,
+          class: image_class,
+          sizes: sizes,
+          widths: widths
+      }}
                 {%- endif -%}
                 {%- if block.settings.link_label != blank -%}
                   <a
