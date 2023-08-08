@@ -306,8 +306,8 @@ a,
 
 .contents-wrapper .button.align-center {
   width: fit-content;
-  margin-left: auto !important;
-  margin-right: auto !important;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .contents-wrapper .button.type-primary {
