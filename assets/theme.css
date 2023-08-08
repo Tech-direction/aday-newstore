@@ -1735,8 +1735,13 @@ body,
 }
 
 .contents-wrapper .subscription-plan-list .plan__item .heading {
+  padding-bottom: .25em;
   text-align: center;
   border-bottom: 1px solid rgb(var(--color-black));
+}
+
+.contents-wrapper .subscription-plan-list .plan__item .heading strong {
+  color: rgb(var(--color-primary));
 }
 
 .contents-wrapper .subscription-plan-list .plan__item figure {
