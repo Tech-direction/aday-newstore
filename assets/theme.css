@@ -2257,6 +2257,9 @@ body,
 /*  featured product 
 ---------------------------------------------------------------*/
 
+.contents-wrapper .featured-product .product__info-wrapper {
+  padding: var(--margin-l) 0;
+}
 
 .contents-wrapper .featured-product .product__media-wrapper .media {
   width: calc(100% + var(--page-width-margin));
