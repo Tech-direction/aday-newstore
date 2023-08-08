@@ -37,7 +37,7 @@
   --width-max-s: calc(960px + var(--margin)*2);
   --width-max-xs: calc(680px + var(--margin)*2);
   --border-radius-box: 20px;
-  --page-width-margin: 10vw;
+  --page-width-margin: 25vw;
 }
 
 @media screen and (max-width: 989px) {
