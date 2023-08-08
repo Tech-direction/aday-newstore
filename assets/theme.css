@@ -2388,10 +2388,10 @@ body,
 }
 
 
-/* subscription-detail 
----------------------------------------------------------------*/
-
 @media screen and (max-width: 989px) {
+  .contents-wrapper .collection-section-image {
+    margin-bottom: var(--margin);
+  }
   .contents-wrapper .subscription-detail-wrapper {
     gap: var(--margin) !important;
   }
