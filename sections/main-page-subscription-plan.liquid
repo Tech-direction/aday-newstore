@@ -56,7 +56,7 @@
                   <div class="rte align-left">{{ block.settings.text }}</div>
                 {%- endif -%}
                 {%- if block.settings.image_picker != blank -%}
-                <figure>{{ settings.image_picker | image_url: width: 600 }}</figure>
+                <figure>{{ block.settings.image_picker | image_url: width: 600 }}</figure>
                 {%- endif -%}
                 {%- if block.settings.link_label != blank -%}
                   <a
