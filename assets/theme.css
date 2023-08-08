@@ -1734,6 +1734,11 @@ body,
   background-color: #fff;
 }
 
+.contents-wrapper .subscription-plan-list .plan__item .heading {
+  text-align: center;
+  border-bottom: 1px solid rgb(var(--color-black));
+}
+
 .contents-wrapper .subscription-plan-list .plan__item figure {
   margin: var(--margin) 0 0;
 }
