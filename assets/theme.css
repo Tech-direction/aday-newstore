@@ -2388,9 +2388,16 @@ body,
 }
 
 
-.contents-wrapper .collection-section-image .subscription-detail-wrapper {
-  
+/* subscription-detail 
+---------------------------------------------------------------*/
+
+@media screen and (max-width: 989px) {
+  .contents-wrapper .subscription-detail-wrapper {
+    align-items: end;
+  }
 }
+
+
 
 
 /*  collection page / collection-section-been-wrapper
