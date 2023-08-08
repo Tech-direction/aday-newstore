@@ -1679,7 +1679,6 @@ body,
 .contents-wrapper .subscription-feature-list .feature__item {
   padding: var(--margin);
   color: #fff;
-  font-weight: 500;
   border-radius: var(--border-radius-box);
   background-color: rgb(var(--color-primary));
   display: flex;
