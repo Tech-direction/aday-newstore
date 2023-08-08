@@ -2392,7 +2392,10 @@ body,
 ---------------------------------------------------------------*/
 
 @media screen and (max-width: 989px) {
-  .contents-wrapper .subscription-detail-wrapper .grid__item:has(.subscription-feature-list) {
+  .contents-wrapper .subscription-detail-wrapper > * {
+    order: 1;
+  }
+  .contents-wrapper .subscription-detail-wrapper > .grid__item:has(.subscription-feature-list) {
     order: 0;
   }
 }
