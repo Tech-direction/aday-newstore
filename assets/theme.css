@@ -28,7 +28,7 @@
   */
   --margin: clamp(15px, 1.5vw, 30px);
   --margin-section: calc(var(--margin)*5);
-  --margin-xl: calc(var(--margin)*2);
+  --margin-xl: calc(var(--margin)*3);
   --margin-l: calc(var(--margin)*2);
   --margin-s: calc(var(--margin)/2);
   --margin-xs: 5px;
@@ -2222,7 +2222,7 @@ body,
 ---------------------------------------------------------------*/
 
 .contents-wrapper .product.grid  {
-  gap: var(--margin-section);
+  gap: var(--margin-xl);
 }
 
 .contents-wrapper .product.grid > * {
@@ -2231,7 +2231,7 @@ body,
 }
 
 .contents-wrapper .product.grid .product__media-wrapper {
-  width: calc(65% - var(--margin-section)) !important;
+  width: calc(65% - var(--margin-xl)) !important;
 }
 
 .contents-wrapper .product.grid .product__info-wrapper {
