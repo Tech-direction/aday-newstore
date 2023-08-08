@@ -2392,8 +2392,8 @@ body,
 ---------------------------------------------------------------*/
 
 @media screen and (max-width: 989px) {
-  .contents-wrapper .subscription-detail-wrapper {
-    align-items: end;
+  .contents-wrapper .subscription-detail-wrapper .grid__item:has(.subscription-feature-list) {
+    order: 0;
   }
 }
 
