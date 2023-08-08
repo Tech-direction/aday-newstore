@@ -1727,7 +1727,7 @@ body,
 
 ===============================================================*/
 
-.contents-wrapper .subscription-plan-list .plan__list {
+.contents-wrapper .subscription-plan-list .plan__item {
   padding: var(--margin);
   border-radius: var(--border-radius-box);
   border: 4px solid rgb(var(--color-black));
