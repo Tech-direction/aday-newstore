@@ -67,19 +67,21 @@
   <div class="page-width section-{{ section.id }}-padding{% if section.settings.secondary_background %} isolate{% endif %} content__item">
     <div class="featured-product product product--{{ section.settings.media_size }} grid grid--1-col gradient color-{{ section.settings.color_scheme }} product--{{ section.settings.media_position }}{% if section.settings.secondary_background == false %} isolate{% endif %} ">
       <div class="grid__item product__media-wrapper">
-      {% if section.settings.image !=blank %}
-        {{
-          section.settings.image
-          | image_url: width: 3840
-          | image_tag:
-            loading: 'lazy',
-            width: section.settings.image.width,
-            height: image_height,
-            class: image_class,
-            sizes: sizes,
-            widths: widths
-        }}
-      {% endif %}
+          {% if section.settings.image !=blank %}
+          <figure class="media">
+            {{
+              section.settings.image
+              | image_url: width: 3840
+              | image_tag:
+                loading: 'lazy',
+                width: section.settings.image.width,
+                height: image_height,
+                class: image_class,
+                sizes: sizes,
+                widths: widths
+            }}
+        </figure>
+        {% endif %}
       </div>
       <div class="product__info-wrapper grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         <product-info
