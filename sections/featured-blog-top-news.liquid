@@ -1,5 +1,4 @@
 
-
 {%- liquid
   assign posts_displayed = section.settings.blog.articles_count
   if section.settings.post_limit <= section.settings.blog.articles_count
@@ -9,112 +8,31 @@
 -%}
 
 <div class="section-heading-wrapper section-container page-width content-size-s">
+  
   {% if section.settings.section_heading !=blank %}
     <h2 class="heading type-sub_heading {% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %} align-center" data-sub_heading="{{ section.settings.section_sub_heading }}">{{ section.settings.section_heading }}</h2>
   {% endif %}
-  
 
-  <div class="page-width-desktop isolate{% if posts_displayed < 3 %} page-width-tablet{% endif %} section-{{ section.id }}-padding news-blog-wrapper">
-    {%- unless section.settings.heading == blank -%}
-      <div class="title-wrapper-with-link{% if posts_displayed > 2 %} title-wrapper--self-padded-tablet-down{% else %} title-wrapper--self-padded-mobile{% endif %} title-wrapper--no-top-margin">
-        <h2
-          id="SectionHeading-{{ section.id }}"
-          class="blog__title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-          {% if settings.animations_reveal_on_scroll %}
-          data-cascade
-          {% endif %}>
-          {{ section.settings.heading }}
-        </h2>
+  {%- if section.settings.blog != blank and section.settings.blog.articles_count > 0 -%}
 
-        {%- if section.settings.blog != blank
-         and section.settings.show_view_all
-         and section.settings.post_limit < section.settings.blog.articles_count
-         -%}
-          <a href="{{ section.settings.blog.url }}" class="link underlined-link large-up-hide{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-            {{ 'sections.featured_blog.view_all' | t }}
-          </a>
-        {%- endif -%}
-      </div>
-    {%- endunless -%}
-    {%- if section.settings.blog != blank and section.settings.blog.articles_count > 0 -%}
+      <ul class="blog__posts articles-wrapper article-list fuatured-blog"role="list">
+        {%- for article in section.settings.blog.articles limit: section.settings.post_limit -%}
+          <li class="news__item">
+            {% render 'article-card'
+             , blog: section.settings.blog,
+             article: article %}
+          </li>
+        {%- endfor -%}
+      </ul>
 
-
-      
-
-        <ul
-          id="Slider-{{ section.id }}"
-          class="blog__posts articles-wrapper contains-card contains-card--article{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid grid--peek grid--2-col-tablet grid--{{ section.settings.columns_desktop }}-col-desktop slider {% if posts_displayed > 2 %}slider--tablet{% else %}slider--mobile{% endif %} {{ grid_gap }} article-list fuatured-blog"
-          role="list">
-          {%- for article in section.settings.blog.articles limit: section.settings.post_limit -%}
-            <li
-              id="Slide-{{ section.id }}-{{ forloop.index }}"
-              class="blog__post grid__item article slider__slide slider__slide--full-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-              {% if settings.animations_reveal_on_scroll %}
-              data-cascade
-              style="--animation-order: {{ forloop.index }};"
-              {% endif %}>
-              {% render 'article-card'
-               , blog: section.settings.blog,
-               article: article,
-               media_aspect_ratio: 1.66,
-               show_image: section.settings.show_image,
-               show_date: section.settings.show_date,
-               show_author: section.settings.show_author,
-               show_excerpt: true %}
-            </li>
-          {%- endfor -%}
-        </ul>
-        
-
-    
-      {%- if section.settings.show_view_all and section.settings.post_limit < section.settings.blog.articles_count -%}
-        {% comment %}
-        <div
-          class="blog__view-all center small-hide medium-hide{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-          {% if settings.animations_reveal_on_scroll %}
-          data-cascade
-          {% endif %}>
-          <a
-            href="{{ section.settings.blog.url }}"
-            id="ViewAll-{{ section.id }}"
-            class="blog__button button"
-            aria-labelledby="ViewAll-{{ section.id }} SectionHeading-{{ section.id }}">
-            {{ 'sections.featured_blog.view_all' | t }}
-          </a>
-        </div>
-        {% endcomment %}
-      {%- endif -%}
-    {%- else -%}
-      {% comment %}
-      <div
-        class="blog-placeholder{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-        {% if settings.animations_reveal_on_scroll %}
-        data-cascade
-        {% endif %}>
-        <div class="placeholder media media--landscape">
-          {{ 'blog-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
-        </div>
-        <div class="blog-placeholder__content">
-          <h2>
-            {{ 'sections.featured_blog.onboarding_title' | t }}
-          </h2>
-          <p class="rte-width">
-            {{ 'sections.featured_blog.onboarding_content' | t }}
-          </p>
-        </div>
-      </div>
-      {% endcomment %}
-    {%- endif -%}
-
-  </div>
-
-    <a href="/blogs/news" class="create_account link animate-arrow align-right" >
+      <a href="/blogs/news" class="create_account link animate-arrow align-right" >
         すべての記事を見る
         <span class="icon-wrap"><svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor"></path></svg>
         </span>
       </a>
     
+  {%- endif -%}
 
 </div>
   
