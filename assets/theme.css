@@ -1259,10 +1259,11 @@ body,
     right: var(--margin);
   }
   .contents-wrapper .header__icon{
-    width: 3rem;
-    height: 3rem;
+    width: 2.8rem;
+    height: 2.8rem;
   }
   .contents-wrapper .header__icon--menu {
+    background-color: #fff;
     position: absolute;
   }
   .contents-wrapper .header__icon--menu .icon {
