@@ -1391,15 +1391,15 @@ body,
   background-color: transparent;
 }
 
-.contents-wrapper.top .section-header:not(.scrolled-past-header) a:not(.header__icon) {
+.contents-wrapper.top .section-header:not(.scrolled-past-header):not(.menu-open) a:not(.header__icon) {
   color: #fff;
 }
 
-.contents-wrapper.top .section-header:not(.scrolled-past-header) .header__heading-logo {
+.contents-wrapper.top .section-header:not(.scrolled-past-header):not(.menu-open) .header__heading-logo {
   fill: #fff;
 }
 
-.contents-wrapper.top .section-header:not(.scrolled-past-header) .header-postage {
+.contents-wrapper.top .section-header:not(.scrolled-past-header):not(.menu-open) .header-postage {
   background-color: #fff;
 }
 
