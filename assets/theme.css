@@ -1258,7 +1258,7 @@ body,
     position: absolute;
     right: var(--margin);
   }
-  .contents-wrapper .contents-wrapper .header__icon {
+  .contents-wrapper .header__icon{
     width: 3rem;
     height: 3rem;
   }
