@@ -1254,17 +1254,15 @@ body,
 }
 
 @media screen and (max-width: 989px) {
-  .contents-wrapper .header__icons {
-    position: absolute;
-    right: var(--margin);
-  }
   .contents-wrapper .header__icon{
     width: 2.8rem;
     height: 2.8rem;
   }
+  .contents-wrapper header-drawer {
+    margin-right: calc(2.8rem + var(--margin-s));
+  }
   .contents-wrapper .header__icon--menu {
     background-color: #fff;
-    position: absolute;
   }
   .contents-wrapper .header__icon--menu .icon {
     width: 1.5rem;
