@@ -1386,8 +1386,8 @@ body,
   position: absolute;
 }
 
-.contents-wrapper.top .section-header:not(.scrolled-past-header) .header-wrapper,
-.contents-wrapper.top .section-header:not(.scrolled-past-header) .header {
+.contents-wrapper.top .section-header:not(.scrolled-past-header):not(.menu-open) .header-wrapper,
+.contents-wrapper.top .section-header:not(.scrolled-past-header):not(.menu-open) .header {
   background-color: transparent;
 }
 
