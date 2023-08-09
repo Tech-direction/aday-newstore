@@ -1253,7 +1253,7 @@ body,
   display: none;
 }
 
-.contents-wrapper .header__icon--cart .icon {
+.contents-wrapper .header__icon .icon {
   width: 1.6rem;
   height: 1.6rem;
 }
