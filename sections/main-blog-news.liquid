@@ -8,14 +8,15 @@
 {%- paginate blog.articles by 6 -%}
   <div class="main-blog-news page-width {{ content_size }}">
 
-    <h1 class="heading size-xl {%- if section.settings.text_align != blank -%} align-{{ section.settings.text_align }} {% endif %}">
+    <h1 class="heading size-xl{% if section.settings.heading_size !="default" %}  {% endif %} {%- if section.settings.text_align != blank -%} align-{{ section.settings.text_align }} {% endif %}">
       {%- if section.settings.heading != blank -%}
         {{  section.settings.heading }}
       {% else %}
         {{ blog.title | escape }}
       {% endif %}
     </h1>
-
+    
+    
     <div class="blog-articles-news">
       {%- for article in blog.articles -%}
         <div class="blog-articles__article article article__news">
