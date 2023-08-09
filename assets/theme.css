@@ -2054,6 +2054,7 @@ body,
 }
 
 .contents-wrapper .blog-articles-news .article__news .article-wrapper {
+  margin: 0;
   padding: var(--margin-l);
   background-color: #fff;
 }
