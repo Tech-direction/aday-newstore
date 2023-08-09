@@ -3386,6 +3386,16 @@ body,
   font-size: 1rem;
 }
 
+.contents-wrapper .cart-notification .cart-notification__heading {
+  margin-bottom: 1em;
+}
+
+.contents-wrapper .cart-notification .cart-notification__close {
+  width: auto;
+  height: auto;
+  margin-top: -1rem;
+  margin-right: -1rem;
+}
 
 /*===============================================================
 
