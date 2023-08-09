@@ -2125,6 +2125,11 @@ body,
   text-decoration: underline !important;
 }
 
+.contents-wrapper .article-wrapper .article-template__content li ol,
+.contents-wrapper .article-wrapper .article-template__content li ul {
+  margin-top: .5em;
+}
+
 
 /*  article news
 ---------------------------------------------------------------*/
