@@ -2048,6 +2048,7 @@ body,
 ---------------------------------------------------------------*/
 
 .contents-wrapper .fuatured-blog-news  {
+  margin-top: var(--margin-l);
   display: flex;
   flex-wrap: wrap;
   gap: var(--margin-l);
