@@ -19,7 +19,7 @@
     
     <div class="blog-articles-news">
       {%- for article in blog.articles -%}
-        <div class="blog-articles__article article article__news">
+        <div id="news_{{ forloop.index }}" class="blog-articles__article article article__news">
           <div class="article-wrapper">
             <span class="circle-divider caption-with-letter-spacing" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
             <h2 class="heading size-m">{{ article.title }}</h2>
