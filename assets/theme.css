@@ -1120,7 +1120,7 @@ body,
 }
 
 .contents-wrapper .header:has(.header-postage) {
-  margin-top: var(--margin-xl) !important;
+  padding-top: var(--margin-xl) !important;
 }
 
 .contents-wrapper .header a:not(.header__icon) {
@@ -1134,10 +1134,10 @@ body,
 
 @media screen and (max-width: 989px) {
   .contents-wrapper .header {
-    padding: var(--margin) var(--margin)  !important;
+    padding: var(--margin) !important;
   }
   .contents-wrapper .header:has(.header-postage) {
-  margin-top: calc(var(--margin-l) + var(--margin-s)) !important;
+  padding-top: calc(var(--margin-l) + var(--margin-s)) !important;
 }
   .contents-wrapper .header .header__heading-link {
     margin-left: auto !important;
