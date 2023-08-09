@@ -9,7 +9,11 @@
   <div class="main-blog-news page-width {{ content_size }}">
     
     <h1 class="heading {%- if section.settings.text_align != blank -%} align-{{ section.settings.text_align }}{% endif %} size-xl">
-      {{ blog.title | escape }}
+      {%- if section.settings.heading != blank -%}
+        {{  section.settings.heading }}
+      {% else %}
+        {{ blog.title | escape }}
+      {% endif %}
     </h1>
     
     <div class="blog-articles-news">
