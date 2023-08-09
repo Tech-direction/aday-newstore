@@ -1341,10 +1341,10 @@ body,
     display: none;
   }
   .contents-wrapper .list-menu {
-    gap: 0;
+    gap: 0 !important;
   }
  .contents-wrapper .list-menu li {
-    margin: 0;
+    margin: 0 !important;
   }
   .contents-wrapper .menu-drawer a {
     padding: var(--margin);
