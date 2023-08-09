@@ -172,10 +172,9 @@
       "settings": {
         "section_heading": "お知らせ",
         "heading_size": "l",
-        "section_sub_heading": "NEWS",
+        "section_sub_heading": "",
         "blog": "news",
-        "post_limit": 3,
-        "columns_desktop": 3
+        "post_limit": 3
       }
     }
   },
