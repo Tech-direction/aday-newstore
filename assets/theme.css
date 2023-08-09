@@ -1341,7 +1341,7 @@ body,
     display: none;
   }
   .contents-wrapper .menu-drawer a {
-    font-size: var(--font-l);
+    font-size: var(--font-m) !important;
     color: rgb(var(--color-black)) !important;
   }
   .contents-wrapper .menu-drawer__navigation,
