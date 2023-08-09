@@ -2053,6 +2053,10 @@ body,
   background-color: rgb(var(--color-gray));
 }
 
+.contents-wrapper .blog-articles-news .article__news .article-wrapper {
+  padding: var(--margin-l);
+  background-color: #fff;
+}
 
 
 /*===============================================================
