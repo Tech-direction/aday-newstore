@@ -1419,7 +1419,7 @@ body,
 }
 
 .contents-wrapper .footer__content-top .grid {
-  gap: var(--margin);
+  gap: var(--margin-l);
 }
 
 
