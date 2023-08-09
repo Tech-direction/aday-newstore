@@ -3368,7 +3368,7 @@ body,
 }
 
 .contents-wrapper .cart-notification .cart-notification-product {
-  margin-bottom: var(--margin-l);
+  margin-bottom: var(--margin);
   padding: var(--margin);
   background-color: rgb(var(--color-gray));
   gap: var(--margin);
