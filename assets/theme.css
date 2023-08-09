@@ -2047,6 +2047,23 @@ body,
 /*  article news
 ---------------------------------------------------------------*/
 
+.contents-wrapper .fuatured-blog-news  {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--margin-l);
+}
+
+.contents-wrapper .fuatured-blog-news .news__item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--margin);
+}
+
+.contents-wrapper .fuatured-blog-news .news__item .caption-with-letter-spacing {
+  width: 10em;
+  flex: 0;
+}
+
 .contents-wrapper .blog-articles-news {
   margin-top: var(--margin-l);
   display: flex;
