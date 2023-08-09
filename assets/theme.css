@@ -409,15 +409,18 @@ a,
 
 /* num
 -----------------------------------------------------*/
-.contents-wrapper .list.type-num {
+.contents-wrapper .list.type-num,
+.contents-wrapper .article-template__content ol {
   counter-reset: count;
 }
 
-.contents-wrapper .list.type-num > li {
+.contents-wrapper .list.type-num > li,
+.contents-wrapper .article-template__content ol li {
   padding-left: 2em;
 }
 
-.contents-wrapper .list.type-num > li:before {
+.contents-wrapper .list.type-num > li:before,
+.contents-wrapper .article-template__content ol li:before {
   counter-increment: count;
   content: '('counter(count)')';
   position: absolute;
