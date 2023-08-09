@@ -1164,8 +1164,8 @@ body,
     margin-left: auto;
     margin-right: auto;
   }
-  .contents-wrapper .header__heading-logo-wrapper {
-    max-width: 200px !important;
+  .contents-wrapper .header__heading-logo {
+    max-width: 160px !important;
   }
 }
 
