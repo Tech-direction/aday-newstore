@@ -2047,6 +2047,10 @@ body,
 /*  article news
 ---------------------------------------------------------------*/
 
+.contents-wrapper .blog-articles-news {
+  margin-top: var(--margin-l);
+}
+
 .contents-wrapper .blog-articles-news .article__news {
   padding: var(--margin-l);
   border-radius: var(--border-radius-box);
