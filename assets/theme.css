@@ -1362,6 +1362,10 @@ body,
 }
 
 
+.contents-wrapper .section-headera[aria-expanded="true"]:not(.header__icon) a {
+  color: rgb(var(--color-black));
+}
+
 /*===============================================================
 
 	section footer
