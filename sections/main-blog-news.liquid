@@ -8,7 +8,7 @@
 {%- paginate blog.articles by 6 -%}
   <div class="main-blog-news page-width {{ content_size }}">
     
-    <h1 class="heading size-xl {%- if section.settings.text_align != blank -%} aalign-{{ section.settings.text_align }}{% endif %}">
+    <h1 class="heading {%- if section.settings.text_align != blank -%}align-{{ section.settings.text_align }}{% endif %} size-xl">
       {{ blog.title | escape }}
     </h1>
     
