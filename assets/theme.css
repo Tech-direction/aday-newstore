@@ -3992,6 +3992,10 @@ body,
   text-align: center;
 }
 
+.huckleberry-subscription-list-color #root .form-vertical .text-center btn {
+  display: inline-block;
+}
+
 .huckleberry-subscription-list-color #root .form-vertical .text-center > :first-child {
   margin-top: var(--margin-l);
 }
