@@ -13,7 +13,7 @@
       }
     },
     "main": {
-      "type": "main-blog",
+      "type": "main-blog-news",
       "settings": {
         "layout": "grid",
         "show_image": true,
