@@ -3188,6 +3188,10 @@ body,
   margin-top: 0;
 }
 
+.contents-wrapper .cart-items  .cart__warnings {
+  padding: 0;
+}
+
 @media screen and (max-width: 749px) {
   .contents-wrapper .cart-items thead tr,
   .contents-wrapper .cart-item {
