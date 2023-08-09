@@ -3367,6 +3367,11 @@ body,
   border: 1px solid rgb(var(--color-border));
 }
 
+.contents-wrapper .cart-notification .cart-notification-product {
+  margin-bottom: var(--margin-l);
+  padding: 0;
+}
+
 .contents-wrapper .cart-notification .product-option {
   font-size: 1rem;
 }
