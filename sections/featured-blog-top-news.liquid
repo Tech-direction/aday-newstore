@@ -17,7 +17,7 @@
 
       <ul class="blog__posts articles-wrapper article-list fuatured-blog-news"role="list">
         {%- for article in section.settings.blog.articles limit: section.settings.post_limit -%}
-          <li class="news__item">
+          <li id="news_{{ forloop.index }}" class="news__item">
             <span class="circle-divider caption-with-letter-spacing" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
             <h3 class="heading size-m">
               <a href="{{ article.url }}" class="full-unstyled-link">
