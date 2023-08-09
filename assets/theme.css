@@ -1258,10 +1258,10 @@ body,
   height: 2rem;
 }
 
-.contents-wrapper .header__icon--cart .icon,
+/*.contents-wrapper .header__icon--cart .icon,
 .contents-wrapper .header__icon--cart:hover .icon {
   transform: scale(2) !important;
-}
+}*/
 
 .contents-wrapper.top .section-header:not(.scrolled-past-header):not(.menu-open) .header__icons a {
   background-color: #fff;
