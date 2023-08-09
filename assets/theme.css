@@ -1314,8 +1314,8 @@ body,
   .contents-wrapper header-drawer {
     margin-left: 0;
   }
-  .contents-wrapper .menu-drawer {
-    width: 100vw;
+  .contents-wrapper .menu-drawer a {
+    color: rgb(var(--color-black)) !important;
   }
   .contents-wrapper .menu-drawer__navigation,
   .contents-wrapper .menu-drawer__utility-links {
@@ -1359,11 +1359,6 @@ body,
 
 .contents-wrapper.top .section-header:not(.scrolled-past-header) .header-postage {
   background-color: #fff;
-}
-
-
-.contents-wrapper .section-header [aria-expanded="true"] a {
-  color: rgb(var(--color-black));
 }
 
 /*===============================================================
