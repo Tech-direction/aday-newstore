@@ -20,7 +20,7 @@
           <li id="news_{{ forloop.index }}" class="news__item">
             <span class="circle-divider caption-with-letter-spacing" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
             <h3 class="heading size-m">
-              <a href="{{ article.url }}" class="full-unstyled-link">
+              <a href="/blogs/news/#news_{{ forloop.index }}" class="full-unstyled-link">
                 {{ article.title | truncate: 50 | escape }}
               </a>
             </h3>
