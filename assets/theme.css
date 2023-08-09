@@ -1203,6 +1203,7 @@ body,
   margin-left: 0;
 }
 
+
 /*  header icons
 ---------------------------------------------------------------*/
 
@@ -1336,7 +1337,11 @@ body,
   .contents-wrapper header-drawer {
     margin-left: 0;
   }
+  .contents-wrapper .menu-drawer__utility-links {
+    display: none;
+  }
   .contents-wrapper .menu-drawer a {
+    font-size: var(--font-l);
     color: rgb(var(--color-black)) !important;
   }
   .contents-wrapper .menu-drawer__navigation,
