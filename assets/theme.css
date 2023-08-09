@@ -378,7 +378,8 @@ a,
   flex-wrap: wrap;
 }
 
-.contents-wrapper li {
+.contents-wrapper ol > li,
+.contents-wrapper ul > li {
   width: 100%;
   text-align: left;
   font-size: 1rem;
@@ -419,12 +420,12 @@ a,
 }
 
 .contents-wrapper .list.type-num > li,
-.contents-wrapper .article-template__content ol li {
+.contents-wrapper .article-template__content ol > li {
   padding-left: 2em;
 }
 
 .contents-wrapper .list.type-num > li:before,
-.contents-wrapper .article-template__content ol li:before {
+.contents-wrapper .article-template__content ol > li:before {
   counter-increment: count;
   content: '('counter(count)')';
   position: absolute;
