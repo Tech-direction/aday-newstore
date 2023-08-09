@@ -277,6 +277,8 @@ a,
   border: none;
   background-color: rgb(var(--color-black));
   transition: all var(--duration-long) ease;
+  display: flex;
+  align-items: center;
 }
 
 .button:before,
