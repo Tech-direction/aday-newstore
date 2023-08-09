@@ -380,7 +380,6 @@ a,
 
 .contents-wrapper ol > li,
 .contents-wrapper ul > li {
-  width: 100%;
   text-align: left;
   font-size: 1rem;
   position: relative;
@@ -1210,10 +1209,6 @@ body,
   display: flex;
   flex-wrap: wrap;
   gap: var(--margin-s) var(--margin);
-}
-
-.contents-wrapper .header__inline-menu .list-menu li {
-  width: auto;
 }
 
 .contents-wrapper .header--middle-left .header__heading-link,
@@ -2127,6 +2122,11 @@ body,
 
 .contents-wrapper .article-wrapper a:not(.button) {
   text-decoration: underline !important;
+}
+
+.contents-wrapper .article-wrapper ol > li,
+.contents-wrapper .article-wrapper ul > li {
+  width: 100%;
 }
 
 .contents-wrapper .article-wrapper .article-template__content li ol,
