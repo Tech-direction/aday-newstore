@@ -2057,7 +2057,7 @@ body,
 .contents-wrapper .fuatured-blog-news .news__item {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--margin);
+  gap: var(--margin-s) var(--margin);
 }
 
 .contents-wrapper .fuatured-blog-news .news__item .caption-with-letter-spacing {
