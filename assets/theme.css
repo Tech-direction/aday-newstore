@@ -432,6 +432,9 @@ a,
   left: 0;
 }
 
+.contents-wrapper .article-template__content ol ol > li:before {
+  content: counter(count)'：';
+}
 
 /*===============================================================co
 
