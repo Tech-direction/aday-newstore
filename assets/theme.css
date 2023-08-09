@@ -2049,6 +2049,9 @@ body,
 
 .contents-wrapper .blog-articles-news {
   margin-top: var(--margin-l);
+  display: flex;
+  gap: var(--margin);
+  
 }
 
 .contents-wrapper .blog-articles-news .article__news {
