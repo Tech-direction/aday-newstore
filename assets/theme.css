@@ -313,11 +313,11 @@ a,
 
 .contents-wrapper .button.align-center {
   width: fit-content;
-  margin-left: auto;
+   /*margin-left: auto;
   margin-right: atuo;
-  display: block;
-  /*left: 50%;
-  transform: translateX(-50%);*/
+  display: block;*/
+ left: 50%;
+  transform: translateX(-50%);
 }
 
 .contents-wrapper .button.type-primary {
