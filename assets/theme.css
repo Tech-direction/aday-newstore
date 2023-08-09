@@ -1254,12 +1254,15 @@ body,
 }
 
 @media screen and (max-width: 989px) {
-  .contents-wrapper .header__icon{
+  .contents-wrapper .header__icons {
+    gap: var(--margin-xs);
+  }
+  .contents-wrapper .header__icon {
     width: 2.8rem;
     height: 2.8rem;
   }
   .contents-wrapper header-drawer {
-    margin-right: calc(2.8rem + var(--margin-s));
+    margin-right: calc(2.8rem + var(--margin-xs));
   }
   .contents-wrapper .header__icon--menu {
     background-color: #fff;
