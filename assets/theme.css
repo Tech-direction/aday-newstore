@@ -323,7 +323,8 @@ a,
   transform: translateX(-50%);
 }
 
-.contents-wrapper .button.type-primary {
+.contents-wrapper .button.type-primary,
+.contents-wrapper .button.button--primary {
   background-color: rgb(var(--color-primary));
 }
 
@@ -3357,7 +3358,17 @@ body,
   border-radius: 4px;
    border-color: rgb(var(--color-blackh));
 }
- 
+
+/*  cart add modal
+---------------------------------------------------------------*/
+
+.contents-wrapper .cart-notification {
+  padding: var(--margin-l);
+  border: 1px solid rgb(var(--color-border));
+}
+
+
+
 /*===============================================================
 
 	richtext
