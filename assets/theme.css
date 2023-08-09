@@ -1362,7 +1362,7 @@ body,
 }
 
 
-.contents-wrapper .section-header[aria-expanded="true"] a {
+.contents-wrapper .section-header [aria-expanded="true"] a {
   color: rgb(var(--color-black));
 }
 
