@@ -1476,6 +1476,14 @@ body,
   background-color: #fff;
 }
 
+@media screen and (max-width: 989px) {
+  .contents-wrapper .footer__list-social .list-social__link .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+
 /*  copyright
 ---------------------------------------------------------------*/
 .contents-wrapper .footer__content-bottom {
