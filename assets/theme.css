@@ -1256,6 +1256,7 @@ body,
 @media screen and (max-width: 989px) {
   .contents-wrapper .header__icons {
     position: absolute;
+    right: var(--margin);
   }
 }
 
