@@ -1119,6 +1119,10 @@ body,
   gap: var(--margin);
 }
 
+.contents-wrapper.top .header {
+   padding: var(--margin-l) var(--margin-l) var(--margin) !important;
+}
+
 .contents-wrapper .header a:not(.header__icon) {
   padding: 0;
 }
