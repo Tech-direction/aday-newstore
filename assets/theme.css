@@ -2018,7 +2018,6 @@ body,
 }
 
 .contents-wrapper .article-wrapper .article-template__content p + div > img,
-.contents-wrapper .article-wrapper .article-template__content p + p > img,
 .contents-wrapper .article-wrapper .article-template__content p + img,
 .contents-wrapper .article-wrapper .article-template__content p + div > .movie,
 .contents-wrapper .article-wrapper .article-template__content p + p > .movie,
@@ -2027,6 +2026,10 @@ body,
 .contents-wrapper .article-wrapper .article-template__content * + ul,
 .contents-wrapper .article-wrapper .article-template__content * + .grid {
   margin-top: 2em;
+}
+
+.contents-wrapper .article-wrapper .article-template__content p + p > img {
+  margin: 0;
 }
 
 .contents-wrapper .article-wrapper .article-template__content h1,
