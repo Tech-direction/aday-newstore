@@ -3253,6 +3253,10 @@ body,
 .contents-wrapper .cart__footer .cart__checkout-button {
   width: fit-content;
   margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: auto;
+  transform: none;
 }
 
 
