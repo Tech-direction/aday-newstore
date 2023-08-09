@@ -1113,14 +1113,14 @@ body,
   width: 100vw;
   max-width: none;
   margin: 0;
-  padding: var(--margin-xl) var(--margin-l) var(--margin) !important;
+  padding: var(--margin) var(--margin-l) !important;
   position: relative;
   display: flex;
   gap: var(--margin);
 }
 
-.contents-wrapper.top .header {
-  margin-top: 
+.contents-wrapper .header:has(.header-postage) {
+  margin-top: var(--margin-xl) !important;
 }
 
 .contents-wrapper .header a:not(.header__icon) {
@@ -1134,8 +1134,11 @@ body,
 
 @media screen and (max-width: 989px) {
   .contents-wrapper .header {
-    padding: calc(var(--margin-l) + var(--margin-s)) var(--margin) var(--margin) !important;
+    padding: var(--margin) var(--margin)  !important;
   }
+  .contents-wrapper .header:has(.header-postage) {
+  margin-top: calc(var(--margin-l) + var(--margin-s)) !important;
+}
   .contents-wrapper .header .header__heading-link {
     margin-left: auto !important;
     margin-right: auto;
