@@ -3371,6 +3371,11 @@ body,
   margin-bottom: var(--margin-l);
   padding: var(--margin);
   background-color: rgb(var(--color-gray));
+  gap: var(--margin);
+}
+
+.contents-wrapper .cart-notification .cart-notification-product__image {
+  margin: 0;
 }
 
 .contents-wrapper .cart-notification dl:has(.product-option) {
