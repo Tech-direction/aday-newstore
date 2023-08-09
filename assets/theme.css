@@ -375,9 +375,11 @@ a,
   list-style: none;
   display: flex;
   gap: 1em;
+  flex-wrap: wrap;
 }
 
 .contents-wrapper li {
+  width: 100%;
   text-align: left;
   font-size: 1rem;
   position: relative;
