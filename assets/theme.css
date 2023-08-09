@@ -790,10 +790,13 @@ a,
   color: rgb(var(--color-border));
 }
 
-
 .contents-wrapper .quantity .quantity__button:focus,
 .contents-wrapper .quantity .quantity__input:focus {
   z-index: 0;
+}
+
+.contents-wrapper .quantity__label {
+  display: none;
 }
 
 
