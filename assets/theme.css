@@ -1269,6 +1269,10 @@ body,
 
 .contents-wrapper .cart-count-bubble {
   background-color: rgb(var(--color-primary));
+  top: 0;
+  left: auto;
+  right: -.5em;
+  bottom: auto;
 }
 
 @media screen and (max-width: 989px) {
