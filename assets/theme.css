@@ -1340,7 +1340,14 @@ body,
   .contents-wrapper .menu-drawer__utility-links {
     display: none;
   }
+  .contents-wrapper .list-menu {
+    gap: 0;
+  }
+ .contents-wrapper .list-menu li {
+    margin: 0;
+  }
   .contents-wrapper .menu-drawer a {
+    padding: var(--margin);
     font-size: var(--font-m) !important;
     color: rgb(var(--color-black)) !important;
   }
