@@ -1337,6 +1337,9 @@ body,
   .contents-wrapper header-drawer {
     margin-left: 0;
   }
+  .contents-wrapper .menu-drawer__navigation {
+    padding: var(--margin) 0;
+  }
   .contents-wrapper .menu-drawer__utility-links {
     display: none;
   }
@@ -1347,7 +1350,7 @@ body,
     margin: 0 !important;
   }
   .contents-wrapper .menu-drawer a {
-    padding: var(--margin);
+    padding: var(--margin) !important;
     font-size: var(--font-m) !important;
     color: rgb(var(--color-black)) !important;
   }
