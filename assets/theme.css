@@ -1354,6 +1354,7 @@ body,
     font-size: var(--font-m) !important;
     color: rgb(var(--color-black)) !important;
   }
+  .contents-wrapper .menu-drawer .menu-drawer__menu-item--active,
   .contents-wrapper .menu-drawer a:hover {
     background-color: rgb(var(--color-gray)) !important;
     opacity: 1 !important;
