@@ -1246,7 +1246,7 @@ body,
   transform: scale(2) !important;
 }
 
-.contents-wrapper.top .section-header:not(.scrolled-past-header) .header__icons a {
+.contents-wrapper.top .section-header:not(.scrolled-past-header):not(.menu-open) .header__icons a {
   background-color: #fff;
 }
 
