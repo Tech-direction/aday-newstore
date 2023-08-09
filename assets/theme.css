@@ -1245,6 +1245,10 @@ body,
   height: 3.5rem;
 }
 
+.contents-wrapper .header__icon .icon {
+  fill: rgb(var(--color-black));
+}
+
 .contents-wrapper .header__icons a .visually-hidden {
   display: none;
 }
