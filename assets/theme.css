@@ -1362,7 +1362,7 @@ body,
 }
 
 
-.contents-wrapper .section-headera[aria-expanded="true"]:not(.header__icon) a {
+.contents-wrapper .section-headera[aria-expanded="true"] a {
   color: rgb(var(--color-black));
 }
 
