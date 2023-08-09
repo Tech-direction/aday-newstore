@@ -3373,6 +3373,10 @@ body,
   background-color: rgb(var(--color-gray));
 }
 
+.contents-wrapper .cart-notification dl:has(.product-option) {
+  margin-top: .5em;
+}
+
 .contents-wrapper .cart-notification .product-option {
   font-size: 1rem;
 }
