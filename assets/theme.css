@@ -1265,6 +1265,7 @@ body,
   .contents-wrapper .header__icon--menu .icon {
     width: 1.5rem;
     height: 1.5rem;
+    transform: none;
   }
 }
 
