@@ -1120,7 +1120,7 @@ body,
 }
 
 .contents-wrapper.top .header {
-   padding: var(--margin-l) var(--margin-l) var(--margin) !important;
+  margin-top: 
 }
 
 .contents-wrapper .header a:not(.header__icon) {
@@ -1144,6 +1144,10 @@ body,
 
 /*  header logo
 ---------------------------------------------------------------*/
+
+.contents-wrapper .header__heading:has(.header__heading-logo) {
+  font-size: 0;
+}
 
 .contents-wrapper .header__heading-logo {
   width: 100%;
