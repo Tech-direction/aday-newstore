@@ -2051,7 +2051,7 @@ body,
   margin-top: var(--margin-l);
   display: flex;
   gap: var(--margin);
-  
+  flex-wrap: wrap;
 }
 
 .contents-wrapper .blog-articles-news .article__news {
