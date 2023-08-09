@@ -2070,6 +2070,7 @@ body,
 }
 
 .contents-wrapper .blog-articles-news .article__news .article-wrapper > .heading {
+  padding-bottom: .5em;
   border-bottom: 1px solid rgb(var(--color-black));
 }
 
