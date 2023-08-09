@@ -2806,6 +2806,7 @@ body,
   font-size: var(--font-s) !important;
   letter-spacing: 0;
   border: 0;
+  display: inline-block;
 }
 
 .contents-wrapper .customer .table td .button svg {
