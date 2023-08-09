@@ -2057,12 +2057,12 @@ body,
 .contents-wrapper .fuatured-blog-news .news__item {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: var(--margin-s) var(--margin);
 }
 
 .contents-wrapper .fuatured-blog-news .news__item .caption-with-letter-spacing {
-  width: 10em;
-  flex: 0;
+
 }
 
 .contents-wrapper .blog-articles-news {
