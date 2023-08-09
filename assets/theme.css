@@ -2063,6 +2063,16 @@ body,
   background-color: #fff;
 }
 
+.contents-wrapper .blog-articles-news .article__news .caption-with-letter-spacing {
+  margin-top: 0;
+  margin-bottom: var(--margin-s);
+  text-align: left;
+}
+
+.contents-wrapper .blog-articles-news .article__news > .heading {
+  border-bottom: 1px solid rgb(var(--color-black));
+}
+
 
 /*===============================================================
 
