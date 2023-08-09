@@ -1338,7 +1338,7 @@ body,
     margin-left: 0;
   }
   .contents-wrapper .menu-drawer__navigation {
-    padding: var(--margin) 0 !important;
+    padding: 0 !important;
   }
   .contents-wrapper .menu-drawer__utility-links {
     display: none;
@@ -1353,6 +1353,10 @@ body,
     padding: var(--margin) !important;
     font-size: var(--font-m) !important;
     color: rgb(var(--color-black)) !important;
+  }
+  .contents-wrapper .menu-drawer a:hover {
+    background-color: rgb(var(--color-gray)) !important;
+    opacity: 1 !important;
   }
   .contents-wrapper .menu-drawer__navigation,
   .contents-wrapper .menu-drawer__utility-links {
