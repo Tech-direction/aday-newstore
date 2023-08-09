@@ -1448,7 +1448,7 @@ body,
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: var(--margin);
+  gap: var(--margin-s) var(--margin);
 }
 
 .contents-wrapper .footer-block--menu ul > * {
