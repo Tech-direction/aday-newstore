@@ -473,7 +473,7 @@ a,
 }
 
 .contents-wrapper textarea.field__input {
-  height: 8rem;
+  height: 10rem;
 }
 
 .contents-wrapper variant-selects select,
@@ -670,6 +670,11 @@ a,
   transform: translateY(-50%);
   left: 1em !important;
   z-index: 1;
+}
+
+.contents-wrapper textarea.field__input .field__label {
+  top: auto;
+  transform: none;
 }
 
 .contents-wrapper [class^="field"] + [class^="field"]:not(.field__label),
