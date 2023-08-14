@@ -232,7 +232,7 @@ a,
 }
 
 .contents-wrapper .link.animate-arrow:hover {
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 .contents-wrapper .link.animate-arrow .icon-wrap {
