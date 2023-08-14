@@ -673,7 +673,7 @@ a,
 }
 
 .contents-wrapper textarea.field__input + .field__label {
-  top: auto;
+  top: 1em;
   transform: none;
 }
 
