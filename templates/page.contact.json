@@ -3,8 +3,9 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "change_block": true,
         "heading": "お問い合わせ",
+        "text": "<p>お問い合わせは、こちらのフォームよりご連絡をお願いいたします。<br\/>送料など、購入に関するご案内は<a href=\"https:\/\/adayinthecoffee.com\/pages\/guide\" title=\"ショッピングガイド\"><span style=\"text-decoration:underline\">ショッピングガイド<\/span><\/a>をご参照ください。<\/p><p><br\/>※ご注文商品の発送スケジュールについても、<a href=\"https:\/\/adayinthecoffee.com\/pages\/guide\" title=\"ショッピングガイド\">ショッピングガイド<\/a>でご案内しております。<\/p>",
+        "text_align": "left",
         "padding_top": 0,
         "padding_bottom": 0
       }
