@@ -52,7 +52,7 @@
             </li>
           </ul>
         {%- endif -%}
-        <div class="contact__fields">
+        {% comment %}<div class="contact__fields">{% endcomment %}
           <div class="field">
             <input
               class="field__input"
@@ -64,7 +64,7 @@
               placeholder="{{ 'templates.contact.form.name' | t }}"
             >
             <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
-          </div>
+          {% comment %}</div>{% endcomment %}
           <div class="field field--with-error">
             <input
               autocomplete="email"
