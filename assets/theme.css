@@ -668,7 +668,7 @@ a,
   z-index: 1;
 }
 
-.contents-wrapper [class^="field"] + [class^="field"],
+.contents-wrapper [class^="field"] + [class^="field"]:not(.field__label),
 .contents-wrapper variant-radios fieldset + fieldset {
   margin-top: var(--margin-s);
 }
