@@ -39,9 +39,12 @@
     {{ section.settings.text }}
   </div>
   {% endif %}
+
+  {% if page.content !=blank %}
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} article-template__content">
     {{ page.content }}
   </div>
+  {% endif %}
 </div>
 
 {% schema %}
