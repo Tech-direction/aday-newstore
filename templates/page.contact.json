@@ -1,1 +1,60 @@
-{"sections":{"main":{"type":"main-page","settings":{"padding_top":36,"padding_bottom":36}},"form":{"type":"contact-form","settings":{"heading":"","heading_size":"h1","color_scheme":"background-1","padding_top":36,"padding_bottom":36}}},"order":["main","form"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "5a597cf9-281b-4c8b-9092-38c8a7c3552d": {
+      "type": "rich-text",
+      "blocks": {
+        "068a83d1-014f-4b1a-89d6-85648972a290": {
+          "type": "heading",
+          "settings": {
+            "heading": "お問い合わせ",
+            "heading_type": "h1",
+            "heading_size": "xl"
+          }
+        },
+        "template--19717718245684__5a597cf9-281b-4c8b-9092-38c8a7c3552d-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>お問い合わせは、こちらのフォームよりご連絡をお願いいたします。<br\/>送料など、購入に関するご案内は<a href=\"https:\/\/adayinthecoffee.com\/pages\/guide\" title=\"ショッピングガイド\"><span style=\"text-decoration:underline\">ショッピングガイド<\/span><\/a>をご参照ください。<\/p><p><br\/>※ご注文商品の発送スケジュールについても、<a href=\"https:\/\/adayinthecoffee.com\/pages\/guide\" title=\"ショッピングガイド\">ショッピングガイド<\/a>でご案内しております。<\/p>",
+            "text_align": "left"
+          }
+        }
+      },
+      "block_order": [
+        "068a83d1-014f-4b1a-89d6-85648972a290",
+        "template--19717718245684__5a597cf9-281b-4c8b-9092-38c8a7c3552d-text-1"
+      ],
+      "settings": {
+        "content_max_width": "xs",
+        "change_block": true,
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "5a597cf9-281b-4c8b-9092-38c8a7c3552d",
+    "form"
+  ]
+}
