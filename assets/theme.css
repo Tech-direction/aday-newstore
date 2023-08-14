@@ -2733,6 +2733,8 @@ body,
 
 ===============================================================*/
 
+.contents-wrapper .contanct_section
+
 .contents-wrapper .contact-wrapper {
   padding: var(--margin-l);
   border-radius: var(--border-radius-box);
