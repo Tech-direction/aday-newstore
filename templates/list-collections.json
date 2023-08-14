@@ -16,12 +16,12 @@
       "type": "collection-subscription-section",
       "settings": {
         "image": "shopify:\/\/shop_images\/gift2022_01.jpg",
-        "section_heading": "<p>焙煎屋がお届けする、<\/p><p>コーヒー定期便<\/p>",
+        "section_heading": "<p>コーヒー焙煎屋さんがお届けする<br\/>焼きたてコーヒー豆の定期便<\/p>",
         "heading_size": "xl",
         "section_sub_heading": "SUBSCRIPTION",
-        "description": "<p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、<\/p>",
+        "description": "<p>コーヒー豆はやっぱり焼きたてが一番。コーヒーを飲むペースに合わせて、焼きたてのコーヒー豆を定期便でお届けします。<\/p>",
         "button-label": "【コーヒー定期便】を詳しく見る",
-        "button-link": "https:\/\/aday-new-store.myshopify.com\/apps\/subscription\/bundler?b=19eec2f0-6f06-4690-b5cf-9e7af50b8c12"
+        "button-link": "\/pages\/subscription"
       }
     },
     "8ea36c2b-cf70-4588-8cab-8479b9def8dd": {
@@ -54,13 +54,21 @@
             "link_label": "南米のコーヒー豆",
             "link": "#south_american"
           }
+        },
+        "0e52a22e-a7bb-433e-8655-8d46fe5a64b6": {
+          "type": "column",
+          "settings": {
+            "link_label": "デカフェ",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "1f70d9b9-b476-4ad6-8431-7b67f7e47934",
         "4cf82d1c-6955-492b-a7f2-14f9b32792a4",
         "6d91e6e3-aa8b-4c6c-990c-e972bf788172",
-        "0ca8a33e-6c8e-4c64-aab7-b25ee22037de"
+        "0ca8a33e-6c8e-4c64-aab7-b25ee22037de",
+        "0e52a22e-a7bb-433e-8655-8d46fe5a64b6"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/asairi01_b38ba458-dd59-4291-83e1-71fb6de9f5d2.jpg",

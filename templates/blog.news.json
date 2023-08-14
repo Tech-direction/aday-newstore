@@ -1,32 +1,15 @@
 {
   "sections": {
-    "c4251696-6c53-4082-a22d-07bd4b970d61": {
-      "type": "main-section-header",
-      "settings": {
-        "section_heading": "コーヒー豆知識",
-        "heading_size": "xl",
-        "section_sub_heading": "COFFEE JOURNAL",
-        "change_box_layout": false,
-        "description": "",
-        "show_description": false,
-        "image": "shopify:\/\/shop_images\/cf_week01.jpg"
-      }
-    },
     "main": {
-      "type": "main-blog",
+      "type": "main-blog-news",
       "settings": {
-        "layout": "grid",
-        "show_image": true,
-        "image_height": "medium",
-        "show_date": true,
-        "show_author": false,
-        "content_max_width": "m",
-        "box_gap": "xl"
+        "heading": "<p>お知らせ<\/p>",
+        "text_align": "center",
+        "content_max_width": "s"
       }
     }
   },
   "order": [
-    "c4251696-6c53-4082-a22d-07bd4b970d61",
     "main"
   ]
 }

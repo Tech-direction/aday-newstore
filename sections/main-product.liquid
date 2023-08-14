@@ -63,7 +63,7 @@
   {% endif %}
 
   <div class="content__item">
-  <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
+  <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid ">
     <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
       {% render 'product-media-gallery', variant_images: variant_images %}
     </div>
@@ -233,6 +233,7 @@
                     <span>({{- 'products.product.quantity.in_cart_html' | t: quantity: cart_qty -}})</span>
                   </span>
                 </label>
+              
                 <quantity-input class="quantity">
                   <button class="quantity__button no-js-hidden" name="minus" type="button">
                     <span class="visually-hidden">

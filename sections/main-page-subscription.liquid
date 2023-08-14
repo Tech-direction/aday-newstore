@@ -1,0 +1,365 @@
+
+
+{% if section.settings.content_max_width != "default" %}
+  {% assign content_size = 'content-size-' | append: section.settings.content_max_width %}
+{% endif %}
+
+<div class="page-width {{ content_size }}{% if section.settings.change_block !=blank %} section-block{% endif %}">
+
+  {% if section.settings.article_style !=blank %}
+    <div class="article-wrapper">
+       <div class="article-template__content">
+  {% endif %}
+  
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'heading' -%}
+            <{{ block.settings.heading_type }}
+              class="heading{% if block.settings.heading_size !="default" %} size-{{ block.settings.heading_size }} {% endif %}{%- if block.settings.text_align != blank -%} align-{{ block.settings.text_align }} {% endif %}"
+              {{ block.shopify_attributes }}
+            >
+              {{ block.settings.heading }}
+            </{{ block.settings.heading_type }}>
+          {%- when 'text' -%}
+            <div class="rte {{ block.settings.text_style }}{%- if block.settings.text_align != blank -%} align-{{ block.settings.text_align }} {% endif %}" {{ block.shopify_attributes }}>
+              <p>{{ block.settings.text }}</p>
+            </div>
+          {%- when 'subscription_feature' -%}
+            <ul class="grid grid--3-col-desktop grid--3-col-tablet-down grid--gap-s subscription-feature-list">
+                {%- if settings.grid_item_1_heading != blank -%}
+                  <li class="grid__item feature__item">
+                    <figure>{{ settings.grid_item_1_img | image_url: width: 600 | image_tag:
+                                      class: 'subscription-feature-media-1',
+                                      widths: widths,
+                                      height: logo_height,
+                                      width: settings.logo_width,
+                                      alt: logo_alt,
+                                      sizes: sizes,
+                                      preload: true
+                                    }}
+                    </figure>
+                    <p class="heading">{{ settings.grid_item_1_heading }}</p>
+                  </li>
+                {% endif %}
+                {%- if settings.grid_item_2_heading != blank -%}
+                  <li class="grid__item feature__item">
+                    <figure>{{ settings.grid_item_2_img | image_url: width: 600 | image_tag:
+                                      class: 'subscription-feature-media-2',
+                                      widths: widths,
+                                      height: logo_height,
+                                      width: settings.logo_width,
+                                      alt: logo_alt,
+                                      sizes: sizes,
+                                      preload: true
+                                    }}
+                    </figure>
+                    <p class="heading">{{ settings.grid_item_2_heading }}</p>
+                  </li>
+                {% endif %}
+                {%- if settings.grid_item_3_heading != blank -%}
+                  <li class="grid__item feature__item">
+                    <figure>{{ settings.grid_item_3_img | image_url: width: 600 | image_tag:
+                                      class: 'subscription-feature-media-3',
+                                      widths: widths,
+                                      height: logo_height,
+                                      width: settings.logo_width,
+                                      alt: logo_alt,
+                                      sizes: sizes,
+                                      preload: true
+                                    }}
+                    </figure>
+                    <p class="heading">{{ settings.grid_item_3_heading }}</p>
+                  </li>
+                {% endif %}
+            </ul>
+            {%- when 'image' -%}
+            {{
+                      block.settings.image
+                      | image_url: width: 3200
+                      | image_tag:
+                        loading: 'lazy'
+                    }}
+
+        {%- endcase -%}
+      {%- endfor -%}
+
+    {% if section.settings.article_style !=blank %}
+       </div>
+      </div>
+    {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "定期購買ページ用セクション",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "select",
+      "id": "content_max_width",
+      "default": "default",
+      "label": "コンテンツの横幅",
+      "options": [
+        {
+          "value": "xs",
+          "label": "すごく狭い"
+        },
+        {
+          "value": "s",
+          "label": "狭い"
+        }, {
+          "value": "m",
+          "label": "少し狭い"
+        }, {
+          "value": "default",
+          "label": "標準"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "change_block",
+      "default": false,
+      "label": "セクションを解除する（セクション間の余白を狭める）"
+    },
+    {
+      "type": "checkbox",
+      "id": "article_style",
+      "default": false,
+      "label": "記事のスタイルを適用する"
+    },
+    {
+      "type": "select",
+      "id": "desktop_content_position",
+      "options": [
+        {
+          "value": "top-left",
+          "label": "t:sections.image-banner.settings.desktop_content_position.options__1.label"
+        },
+        {
+          "value": "top-center",
+          "label": "t:sections.image-banner.settings.desktop_content_position.options__2.label"
+        },
+        {
+          "value": "top-right",
+          "label": "t:sections.image-banner.settings.desktop_content_position.options__3.label"
+        },
+        {
+          "value": "middle-left",
+          "label": "t:sections.image-banner.settings.desktop_content_position.options__4.label"
+        },
+        {
+          "value": "middle-center",
+          "label": "t:sections.image-banner.settings.desktop_content_position.options__5.label"
+        },
+        {
+          "value": "middle-right",
+          "label": "t:sections.image-banner.settings.desktop_content_position.options__6.label"
+        },
+        {
+          "value": "bottom-left",
+          "label": "t:sections.image-banner.settings.desktop_content_position.options__7.label"
+        },
+        {
+          "value": "bottom-center",
+          "label": "t:sections.image-banner.settings.desktop_content_position.options__8.label"
+        },
+        {
+          "value": "bottom-right",
+          "label": "t:sections.image-banner.settings.desktop_content_position.options__9.label"
+        }
+      ],
+      "default": "middle-center",
+      "label": "t:sections.image-banner.settings.desktop_content_position.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_text_box",
+      "default": true,
+      "label": "t:sections.image-banner.settings.show_text_box.label"
+    },
+    {
+      "type": "select",
+      "id": "desktop_content_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.image-banner.settings.desktop_content_alignment.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.image-banner.settings.desktop_content_alignment.options__2.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.image-banner.settings.desktop_content_alignment.options__3.label"
+        }
+      ],
+      "default": "center",
+      "label": "t:sections.image-banner.settings.desktop_content_alignment.label"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "t:sections.image-banner.blocks.heading.name",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "heading",
+          "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "default",
+              "label": "t:sections.all.heading_size.options__1.label"
+            }, {
+              "value": "m",
+              "label": "t:sections.all.heading_size.options__2.label"
+            }, {
+              "value": "l",
+              "label": "t:sections.all.heading_size.options__3.label"
+            }, {
+              "value": "xl",
+              "label": "最大"
+            }
+          ],
+          "default": "l",
+          "label": "t:sections.all.heading_size.label"
+        },
+        {
+          "type": "select",
+          "id": "heading_type",
+          "options": [
+            {
+              "value": "h2",
+              "label": "h2"
+            },
+            {
+              "value": "h1",
+              "label": "h1"
+            },
+            {
+              "value": "h3",
+              "label": "h3"
+            },
+            {
+              "value": "h4",
+              "label": "h4"
+            },
+            {
+              "value": "h5",
+              "label": "h5"
+            }
+          ],
+          "default": "h1",
+          "label": "見出しの種類"
+        },
+        {
+          "type": "select",
+          "id": "text_align",
+          "options": [
+            {
+              "value": "left",
+              "label": "左寄せ"
+            },
+            {
+              "value": "center",
+              "label": "中央寄せ"
+            },
+            {
+              "value": "right",
+              "label": "右寄せ"
+            }
+          ],
+          "default": "left",
+          "label": " 行揃え"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "t:sections.rich-text.blocks.text.name",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+          "label": "t:sections.rich-text.blocks.text.settings.text.label"
+        },
+        {
+          "type": "select",
+          "id": "text_align",
+          "options": [
+            {
+              "value": "left",
+              "label": "左寄せ"
+            },
+            {
+              "value": "center",
+              "label": "中央寄せ"
+            },
+            {
+              "value": "right",
+              "label": "右寄せ"
+            }
+          ],
+          "default": "left",
+          "label": " 行揃え"
+        }
+      ]
+    },
+    {
+        "type": "subscription_feature",
+        "name": "定期購買の特徴",
+        "limit": 1,
+        "settings": [
+        {
+          "type": "paragraph",
+          "content": "各項目は左メニュー「テーマ設定」>「定期購買の特徴」で編集ができます。"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "画像",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "定期購買ページ用セクション",
+      "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "subscription_feature"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

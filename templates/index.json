@@ -6,14 +6,14 @@
         "template--19717718147380__d5fac027-1d6c-4527-b96a-703316269413-16886631200b887bea-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p>焙煎屋がお届けする、<\/p><p>コーヒー定期便<\/p>",
+            "heading": "<p>コーヒー焙煎屋さんがお届けする<br\/>焼きたてコーヒー豆の定期便<\/p>",
             "heading_size": "xl"
           }
         },
         "template--19717718147380__d5fac027-1d6c-4527-b96a-703316269413-16886631200b887bea-1": {
           "type": "text",
           "settings": {
-            "text": "あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、",
+            "text": "コーヒー豆はやっぱり焼きたてが一番。コーヒーを飲むペースに合わせて、焼きたてのコーヒー豆を定期便でお届けします。",
             "text_style": "body"
           }
         },
@@ -26,7 +26,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "【コーヒー定期便】を詳しく見る",
-            "button_link_1": "https:\/\/aday-new-store.myshopify.com\/apps\/subscription\/bundler?b=19eec2f0-6f06-4690-b5cf-9e7af50b8c12",
+            "button_link_1": "shopify:\/\/pages\/subscription",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -86,6 +86,12 @@
           "settings": {
           }
         },
+        "b56f111e-7b06-4cf1-bae8-8b7fafaa47c0": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>芳ばしい香りに、かなりしっかり目の苦味とコク。ケニアならではの\"強いコーヒー感\"を楽しめます。<br\/>欧州で長らく愛されている、なかなか手に入らないレアのコーヒー豆です。<br\/><br\/><strong>ドリップをした印象について<\/strong><br\/>柑橘系の香り。<br\/>オレンジ、ドライフルーツ、カシス。<br\/>軽やかなナチュラルフレーバー。<br\/>クリーン。<br\/>シナモンやカラメルのような甘味が楽しめる焙煎度。<\/p>"
+          }
+        },
         "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-3": {
           "type": "variant_picker",
           "settings": {
@@ -107,6 +113,7 @@
       "block_order": [
         "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-1",
         "6e040199-d0e7-4ac9-81be-b29248b875ca",
+        "b56f111e-7b06-4cf1-bae8-8b7fafaa47c0",
         "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-3",
         "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-4",
         "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-5"
@@ -117,6 +124,7 @@
         "section_sub_heading": "RECOMMEND ITEM",
         "change_box_layout": false,
         "product": "brazil",
+        "image": "shopify:\/\/shop_images\/thomas-bennie-1jlJrr4XGkU-unsplash.jpg",
         "color_scheme": "",
         "secondary_background": false,
         "media_size": "medium",
@@ -126,8 +134,8 @@
         "image_zoom": "none",
         "hide_variants": false,
         "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "f86325b7-9ef5-4459-acbc-f77ebaa74e38": {
@@ -158,12 +166,23 @@
         "swipe_on_mobile": false,
         "box_gap": "l"
       }
+    },
+    "f9e0afc0-e928-45a3-9682-5919df278603": {
+      "type": "featured-blog-top-news",
+      "settings": {
+        "section_heading": "お知らせ",
+        "heading_size": "l",
+        "section_sub_heading": "",
+        "blog": "news",
+        "post_limit": 3
+      }
     }
   },
   "order": [
     "d5fac027-1d6c-4527-b96a-703316269413",
     "ef1e9a68-7a62-4287-8199-03faca0c8b77",
     "361c01ec-b4ce-4a50-9bc5-26515e1e190d",
-    "f86325b7-9ef5-4459-acbc-f77ebaa74e38"
+    "f86325b7-9ef5-4459-acbc-f77ebaa74e38",
+    "f9e0afc0-e928-45a3-9682-5919df278603"
   ]
 }

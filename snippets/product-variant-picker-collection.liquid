@@ -7,16 +7,15 @@
   - product_form_id: {String} Id of the product form to which the variant picker is associated.
   - update_url: {Boolean} whether or not to update url when changing variants. If false, the url isn't updated. Default: true (optional).
   Usage:
-  {% render 'product-variant-picker-collection', product: product, block: block, product_form_id: product_form_id %}
+  {% render 'product-variant-picker-collection', product: product, block: block, product_form_id: product_form_id, block_picker_type: picker_type, section_id: section_id, grid_item_id: grid_item_id %}
 {% endcomment %}
 
 {%- unless product.has_only_default_variant -%}
-  
-  {%- if block.settings.picker_type == 'button' -%}　
+  {%- if block_picker_type == 'button' -%}
     <variant-radios
-      id="variant-radios-{{ product_form_id }}"
+      id="variant-radios-{{ section_id }}"
       class="no-js-hidden"
-      data-section="{{ product_form_id }}"
+      data-section="{{ section_id }}"
       data-url="{{ product.url }}"
       {% if update_url == false %}
         data-update-url="false"
@@ -25,7 +24,24 @@
     >
       {%- for option in product.options_with_values -%}
         <fieldset class="js product-form__input">
-          {% render 'product-variant-options-collection', product: product, option: option, block: block, block_picker_type: 'dropdown',  option_name:option.name %}
+          <legend class="form__label">
+            {% assign option_name = option.name %}
+            {% if option.name == 'weight' %}
+              {% assign option_name = '重さ' %}
+            {% elsif option.name == 'grind' %}
+              {% assign option_name = '状態' %}
+            {% endif %}
+            {{ option_name }}
+          </legend>
+          {% render 'product-variant-options-collection',
+            product: product,
+            option: option,
+            block: block,
+            block_picker_type: 'button',
+            option_name: option.name,
+            section_id: section_id,
+            grid_item_id: grid_item_id
+          %}
         </fieldset>
       {%- endfor -%}
       <script type="application/json">
@@ -34,9 +50,9 @@
     </variant-radios>
   {%- else -%}
     <variant-selects
-      id="variant-selects-{{ product_form_id }}"
+      id="variant-selects-{{ section_id }}"
       class="no-js-hidden variant__item"
-      data-section="{{ product_form_id }}"
+      data-section="{{ section_id }}"
       data-url="{{ product.url }}"
       {% if update_url == false %}
         data-update-url="false"
@@ -46,15 +62,27 @@
       {%- for option in product.options_with_values -%}
         <div class="product-form__input product-form__input--dropdown">
           <div class="field_select">
-            {%  if option.name == 'weight' %}<span class="select_label">グラム数：</span>{% elsif option.name == 'grind' %}<span class="select_label">豆の状態：</span>{% endif %}
+            {% if option.name == 'weight' -%}
+              <span class="select_label">グラム数：</span>
+            {%- elsif option.name == 'grind' -%}
+              <span class="select_label">豆の状態：</span>
+            {%- endif %}
             <div class="select">
               <select
-                id="Option-{{ product_form_id }}-{{ forloop.index0 }}"
+                id="Option-{{ section_id }}-{{ forloop.index0 }}"
                 class="select__select"
                 name="options[{{ option.name | escape }}]"
                 form="{{ product_form_id }}"
               >
-                {% render 'product-variant-options-collection', product: product, option: option, block: block, block_picker_type: 'dropdown',  option_name:option.name %}
+                {% render 'product-variant-options-collection',
+                  product: product,
+                  option: option,
+                  block: block,
+                  block_picker_type: 'dropdown',
+                  option_name: option.name,
+                  section_id: section_id,
+                  grid_item_id: grid_item_id
+                %}
               </select>
               {% render 'icon-caret' %}
             </div>
@@ -69,15 +97,15 @@
   {%- endif -%}
 {%- endunless -%}
 
-<noscript class="product-form__noscript-wrapper-{{ product_form_id }}">
+<noscript class="product-form__noscript-wrapper-{{ section_id }}">
   <div class="product-form__input{% if product.has_only_default_variant %} hidden{% endif %}">
-    <label class="form__label" for="Variants-{{ product_form_id }}">
+    <label class="form__label" for="Variants-{{ section_id }}">
       {{- 'products.product.product_variants' | t -}}
     </label>
     <div class="select">
       <select
         name="id"
-        id="Variants-{{ product_form_id }}"
+        id="Variants-{{ section_id }}"
         class="select__select"
         form="{{ product_form_id }}"
       >

@@ -15,6 +15,11 @@
           "settings": {
           }
         },
+        "32d65b35-f5d1-46d0-8b37-7d498500eb44": {
+          "type": "shopify:\/\/apps\/\/blocks\/checkout-method\/7521bee8-d5e5-4d5c-abcb-07c78b027718",
+          "settings": {
+          }
+        },
         "buttons": {
           "type": "buttons",
           "settings": {
@@ -23,6 +28,7 @@
       },
       "block_order": [
         "subtotal",
+        "32d65b35-f5d1-46d0-8b37-7d498500eb44",
         "buttons"
       ],
       "settings": {

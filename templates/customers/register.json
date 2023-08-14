@@ -1,1 +1,66 @@
-{"sections":{"main":{"type":"main-register","settings":{"padding_top":36,"padding_bottom":36}}},"order":["main"]}
+{
+  "sections": {
+    "e461de2f-7a23-4db1-bf1e-804834f28228": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19717718311220__e461de2f-7a23-4db1-bf1e-804834f28228-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "新規会員登録",
+            "heading_type": "h1",
+            "heading_size": "xl"
+          }
+        },
+        "73b81570-a267-48fb-9501-67fca078950f": {
+          "type": "text",
+          "settings": {
+            "text": "<p>みなさん、はじめまして。A day in the coffeeです。<br\/>私たちのオンラインストアへようこそお越しくださいました。<br\/>当店では、焼きたてのコーヒー豆をご自宅で楽しんでいただけるよう、毎日注文をいただいてから焙煎し、丁寧に梱包してお送りしています。<br\/>会員の皆様には特典として、以下の特別なサービスをご用意しています。<\/p>",
+            "text_align": "left"
+          }
+        },
+        "template--19717718311220__e461de2f-7a23-4db1-bf1e-804834f28228-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>会員登録時に特別割引クーポンをプレゼント！<\/li><li>お誕生日を迎えられたお客様に、特別な割引チケットを贈呈<\/li><li>会員限定の割引クーポンやセール情報をお届け<\/li><li>会員限定のコーヒーについてのお役立ち情報をお読みいただけます<\/li><\/ul>",
+            "text_align": "left"
+          }
+        },
+        "1887fcdd-a8db-4460-b16f-424d9d1fece1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>皆様の日々のコーヒー生活をもっとおいしく、もっと楽しくするお手伝いができればと思っています。<br\/>まだ当店の会員でない方は、ぜひ以下のリンクから新規登録してください。<\/p>",
+            "text_align": "left"
+          }
+        }
+      },
+      "block_order": [
+        "template--19717718311220__e461de2f-7a23-4db1-bf1e-804834f28228-heading-1",
+        "73b81570-a267-48fb-9501-67fca078950f",
+        "template--19717718311220__e461de2f-7a23-4db1-bf1e-804834f28228-text-1",
+        "1887fcdd-a8db-4460-b16f-424d9d1fece1"
+      ],
+      "settings": {
+        "content_max_width": "xs",
+        "change_block": false,
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "main-register",
+      "settings": {
+        "change_block": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "e461de2f-7a23-4db1-bf1e-804834f28228",
+    "main"
+  ]
+}

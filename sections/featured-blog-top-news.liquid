@@ -1,0 +1,106 @@
+
+{%- liquid
+  assign posts_displayed = section.settings.blog.articles_count
+  if section.settings.post_limit <= section.settings.blog.articles_count
+    assign posts_exceed_limit = true
+    assign posts_displayed = section.settings.post_limit
+  endif
+-%}
+
+<div class="section-container page-width content-size-s align-center">
+  
+  {% if section.settings.section_heading !=blank %}
+    <h2 class="heading type-sub_heading {% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %}" data-sub_heading="{{ section.settings.section_sub_heading }}">{{ section.settings.section_heading }}</h2>
+  {% endif %}
+
+  {%- if section.settings.blog != blank and section.settings.blog.articles_count > 0 -%}
+
+      <ul class="blog__posts articles-wrapper article-list fuatured-blog-news"role="list">
+        {%- for article in section.settings.blog.articles limit: section.settings.post_limit -%}
+          <li id="news_{{ forloop.index }}" class="news__item">
+            <span class="circle-divider caption-with-letter-spacing" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
+            <h3 class="heading size-m">
+              <a href="/blogs/news/#news_{{ forloop.index }}" class="full-unstyled-link">
+                {{ article.title | truncate: 50 | escape }}
+              </a>
+            </h3>
+          </li>
+        {%- endfor -%}
+      </ul>
+
+      <a href="/blogs/news" class="create_account link animate-arrow align-right" >
+        すべての記事を見る
+        <span class="icon-wrap"><svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor"></path></svg>
+        </span>
+      </a>
+    
+  {%- endif -%}
+
+</div>
+  
+{% schema %}
+  {
+    "name": "お知らせ",
+    "tag": "section",
+     "class": "section  section-news-blog",
+    "disabled_on": {
+      "groups": ["header", "footer"]
+    },
+    "settings": [
+      {
+        "type": "text",
+        "id": "section_heading",
+        "label": "見出し"
+      },
+      {
+        "type": "select",
+        "id": "heading_size",
+        "options": [
+          {
+            "value": "default",
+            "label": "t:sections.all.heading_size.options__1.label"
+          }, {
+            "value": "m",
+            "label": "t:sections.all.heading_size.options__2.label"
+          }, {
+            "value": "l",
+            "label": "t:sections.all.heading_size.options__3.label"
+          }, {
+            "value": "xl",
+            "label": "最大"
+          }
+        ],
+        "default": "l",
+        "label": "t:sections.all.heading_size.label"
+      },
+      {
+        "type": "text",
+        "id": "section_sub_heading",
+        "label": "見出し（英語）"
+      },
+      {
+        "type": "blog",
+        "id": "blog",
+        "label": "t:sections.featured-blog.settings.blog.label"
+      }, 
+      {
+        "type": "range",
+        "id": "post_limit",
+        "min": 2,
+        "max": 4,
+        "step": 1,
+        "default": 3,
+        "label": "t:sections.featured-blog.settings.post_limit.label"
+      }
+    ],
+    "presets": [
+      {
+        "name": "お知らせ",
+        "settings": {
+          "blog": "News"
+        }
+      }
+    ]
+  }
+{% endschema %}

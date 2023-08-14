@@ -72,13 +72,19 @@
           aria-label="{{ 'general.slider.name' | t }}">
           {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
             <li
-              id="Slide-{{ section.id }}-{{ forloop.index }}"
+              id="Slide-{{ section.id }}"
               class="grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} product__item"
               {% if settings.animations_reveal_on_scroll %}
               data-cascade
               style="--animation-order: {{ forloop.index }};"
               {% endif %}>
-              {% render 'card-product-collection'
+               <product-info
+                  id="ProductInfo-{{ section.id }}"
+                  class="product__info-container"
+                  data-section="{{ section.id }}-{{ forloop.index }}"
+                  data-url="{{ product.url }}"
+                > 
+              {% render 'card-product'
                , card_product: product,
                media_aspect_ratio: section.settings.image_ratio,
                image_shape: section.settings.image_shape,
@@ -86,8 +92,8 @@
                show_vendor: section.settings.show_vendor,
                show_rating: section.settings.show_rating,
                show_quick_add: section.settings.enable_quick_add,
-               section_id: section.id,
-               forloop_id: forloop.index %}
+               grid_item_id: forloop.index %}
+              </product-info>
             </li>
           {%- else -%}
             {%- for i in (1..4) -%}

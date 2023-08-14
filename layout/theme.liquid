@@ -289,6 +289,16 @@
         h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
       })(document);
     </script>
+
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js?ver=20230731151543' id='theme-jquery.min-js'></script>
+    <script>
+      $(window).on('load resize', function(){
+        w_width = $(window).width();
+        footer__blocks_wrapper_w = $('.footer__blocks-wrapper').width();
+        $('body').attr('style', '--page-width-margin:'+(w_width - footer__blocks_wrapper_w)/2+'px;');
+      });
+    </script>
+    
   </head>
 
   {% if template == 'index' or page.handle == 'about' %}
@@ -359,5 +369,7 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    
   </body>
 </html>
