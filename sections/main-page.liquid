@@ -15,7 +15,7 @@
 {%- endstyle -%}
 
 
-<div class="page-width page-width--narrow section-{{ section.id }}-padding article-wrapper content-size-s{% if section.settings.change_block !=blank %} section-block{% endif %}">
+<div class="page-width page-width--narrow section-{{ section.id }}-padding article-wrapper content-size-s">
   <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %} heading size-xl align-center">
     {% if section.settings.heading !=blank %}
       {{ section.settings.heading  }}
@@ -23,6 +23,18 @@
       {{ page.title | escape }}
     {% endif %}
   </h1>
+  {% if section.settings.text !=blank %}
+  <div
+    class="rich-text__text rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} {%- if block.settings.text_align != blank -%} align-{{ block.settings.text_align }} {% endif %}"
+    {{ block.shopify_attributes }}
+    {% if settings.animations_reveal_on_scroll %}
+      data-cascade
+      style="--animation-order: {{ forloop.index }};"
+    {% endif %}
+  >
+    {{ section.settings.text }}
+  </div>
+  {% endif %}
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} article-template__content">
     {{ page.content }}
   </div>
@@ -34,12 +46,6 @@
   "tag": "section",
   "class": "section",
   "settings": [
-    {
-      "type": "checkbox",
-      "id": "change_block",
-      "default": false,
-      "label": "セクションを解除する（セクション間の余白を狭める）"
-    },
     {
       "type": "header",
       "content": "ページタイトル"
