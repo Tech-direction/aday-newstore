@@ -2730,6 +2730,9 @@ body,
   background-color: rgb(var(--color-gray));
 }
 
+.contents-wrapper .contact-wrapper .contact__button {
+  margin-top: var(--margin-l);
+}
 
 /*===============================================================
 
