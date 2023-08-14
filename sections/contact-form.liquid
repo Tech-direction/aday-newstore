@@ -64,7 +64,7 @@
               placeholder="{{ 'templates.contact.form.name' | t }}"
             >
             <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
-          {% comment %}</div>{% endcomment %}
+          </div>
           <div class="field field--with-error">
             <input
               autocomplete="email"
@@ -97,7 +97,7 @@
               </small>
             {%- endif -%}
           </div>
-        </div>
+        {% comment %}</div>{% endcomment %}
         <div class="field">
           <input
             type="tel"
