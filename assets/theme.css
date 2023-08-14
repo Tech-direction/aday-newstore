@@ -231,6 +231,10 @@ a,
   display: flex;
 }
 
+.contents-wrapper .link.animate-arrow:hover {
+  opacity: 1;
+}
+
 .contents-wrapper .link.animate-arrow .icon-wrap {
   margin-left: 2em;
   margin-right: 0;
