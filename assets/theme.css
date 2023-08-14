@@ -2167,6 +2167,10 @@ body,
   margin-top: .5em;
 }
 
+.contents-wrapper .article-wrapper .article-template__content .table {
+  width: 100%;
+}
+
 
 /*  article news
 ---------------------------------------------------------------*/
