@@ -2171,7 +2171,7 @@ body,
   width: 100%;
   font-size: 1rem;
   border-collapse: separate;
-  border-spacing: var(--margin);
+  border-spacing: var(--margin-s);
   box-shadow: none;
 }
 
