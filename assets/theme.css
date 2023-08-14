@@ -409,8 +409,8 @@ a,
 .contents-wrapper .rich-text__text ul li:before,
 .contents-wrapper .article-template__content ul li:before {
   content: '';
-  width: .5em;
-  height: .5em;
+  width: .4em;
+  height: .4em;
   border-radius: 50%;
   background-color: rgb(var(--color-black));
   display: inline-block;
