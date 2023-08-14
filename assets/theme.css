@@ -401,6 +401,7 @@ a,
 .contents-wrapper .list.type-disc li,
 .contents-wrapper .rich-text__text ul li,
 .contents-wrapper .article-template__content ul li {
+  width: 100%;
   padding-left: 1em;
 }
 
