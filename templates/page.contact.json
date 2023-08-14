@@ -3,6 +3,8 @@
     "main": {
       "type": "main-page",
       "settings": {
+        "change_block": true,
+        "heading": "お問い合わせ",
         "padding_top": 0,
         "padding_bottom": 0
       }
