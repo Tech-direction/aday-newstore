@@ -2718,6 +2718,18 @@ body,
 }
 
 
+/*===============================================================
+
+	contact
+
+===============================================================*/
+
+.contents-wrapper .contact-wrapper {
+  padding: var(--margin);
+  border-radius: var(--border-radius-box);
+  background-color: rgb(var(--color-gray));
+}
+
 
 /*===============================================================
 
