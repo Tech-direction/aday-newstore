@@ -1,0 +1,15 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-blog-news",
+      "settings": {
+        "heading": "<p>お知らせ<\/p>",
+        "text_align": "center",
+        "content_max_width": "s"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

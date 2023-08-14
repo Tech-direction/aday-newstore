@@ -1,0 +1,95 @@
+
+{% if section.settings.content_max_width != "default" %}
+  {% assign content_size = 'content-size-' | append: section.settings.content_max_width %}
+{% endif %}
+
+
+
+{%- paginate blog.articles by 6 -%}
+  <div class="main-blog-news page-width {{ content_size }}">
+
+    <h1 class="heading size-xl{% if section.settings.heading_size !="default" %}  {% endif %} {%- if section.settings.text_align != blank -%} align-{{ section.settings.text_align }} {% endif %}">
+      {%- if section.settings.heading != blank -%}
+        {{  section.settings.heading }}
+      {% else %}
+        {{ blog.title | escape }}
+      {% endif %}
+    </h1>
+    
+    
+    <div class="blog-articles-news">
+      {%- for article in blog.articles -%}
+        <div id="news_{{ forloop.index }}" class="blog-articles__article article article__news">
+          <div class="article-wrapper">
+            <span class="circle-divider caption-with-letter-spacing" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
+            <h2 class="heading size-m">{{ article.title }}</h2>
+            <div class="article-content">
+              {{ article.content }}
+            </div>
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+
+    {%- if paginate.pages > 1 -%}
+      {%- render 'pagination', paginate: paginate -%}
+    {%- endif -%}
+  </div>
+{%- endpaginate -%}
+
+{% schema %}
+{
+  "name": "t:sections.main-blog.name",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "options": [
+        {
+          "value": "left",
+          "label": "左寄せ"
+        },
+        {
+          "value": "center",
+          "label": "中央寄せ"
+        },
+        {
+          "value": "right",
+          "label": "右寄せ"
+        }
+      ],
+      "default": "left",
+      "label": " 行揃え"
+    },
+    {
+      "type": "header",
+      "content": "コンテンツの最大横幅"
+    },
+    {
+      "type": "select",
+      "id": "content_max_width",
+      "default": "default",
+      "label": "コンテンツの横幅",
+      "options": [
+        {
+          "value": "s",
+          "label": "狭い"
+        }, {
+          "value": "m",
+          "label": "少し狭い"
+        }, {
+          "value": "default",
+          "label": "標準"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

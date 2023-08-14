@@ -14,8 +14,8 @@
   }
 {%- endstyle -%}
 
-<div class="customer login section-{{ section.id }}-padding">
-  <h1 id="recover" tabindex="-1">
+<div class="customer login section-{{ section.id }}-padding page-width content-size-xs">
+  <h1 id="recover" tabindex="-1" class="heading{% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %} align-center">
     {{ 'customer.recover_password.title' | t }}
   </h1>
   <div>
@@ -23,6 +23,7 @@
       {{ 'customer.recover_password.subtext' | t }}
     </p>
 
+    <div class="customer_block">
     {%- form 'recover_customer_password' -%}
       {% assign recover_success = form.posted_successfully? %}
       <div class="field">
@@ -57,20 +58,22 @@
         </small>
       {%- endif -%}
 
-      <button>
+      <button class="button">
         {{ 'customer.login_page.submit' | t }}
       </button>
 
-      <a href="#login">
+      <a href="#login" class="cancel">
         {{ 'customer.login_page.cancel' | t }}
       </a>
     {%- endform -%}
+    </div>
   </div>
 
-  <h1 id="login" tabindex="-1">
+  <h1 id="login" tabindex="-1" class="heading{% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %} align-center">
     {{ 'customer.login_page.title' | t }}
   </h1>
   <div>
+    <div class="customer_block">
     {%- if recover_success == true -%}
       <h3 class="form__message" tabindex="-1" autofocus>
         <svg aria-hidden="true" focusable="false" viewBox="0 0 13 13">
@@ -132,20 +135,26 @@
           </label>
         </div>
 
-        <a href="#recover">
+        <a href="#recover" class="recover">
           {{ 'customer.login_page.forgot_password' | t }}
         </a>
       {%- endif -%}
 
-      <button>
+      <button class="button type-primary align-center">
         {{ 'customer.login_page.sign_in' | t }}
       </button>
-
-      <a href="{{ routes.account_register_url }}">
-        {{ 'customer.login_page.create_account' | t }}
-      </a>
     {%- endform -%}
+   </div>
+
+      <a href="{{ routes.account_register_url }}" class="create_account link animate-arrow align-right">
+        {{ 'customer.login_page.create_account' | t }}
+        <span class="icon-wrap"><svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor"></path></svg>
+        </span>
+      </a>
+
   </div>
+     
 
   {%- if shop.checkout.guest_login -%}
     <div>
@@ -164,7 +173,29 @@
 {% schema %}
 {
   "name": "t:sections.main-login.name",
+  "class": "section",
   "settings": [
+    {
+        "type": "select",
+        "id": "heading_size",
+        "options": [
+          {
+            "value": "default",
+            "label": "t:sections.all.heading_size.options__1.label"
+          }, {
+            "value": "m",
+            "label": "t:sections.all.heading_size.options__2.label"
+          }, {
+            "value": "l",
+            "label": "t:sections.all.heading_size.options__3.label"
+          }, {
+            "value": "xl",
+            "label": "最大"
+          }
+        ],
+        "default": "l",
+        "label": "t:sections.all.heading_size.label"
+      },
     {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"

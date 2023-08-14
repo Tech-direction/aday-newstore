@@ -1,0 +1,218 @@
+{
+  "sections": {
+    "e1ffcafa-e72c-434d-9a86-db65767e87f1": {
+      "type": "main-section-header",
+      "settings": {
+        "section_heading": "コーヒー定期便",
+        "heading_size": "xl",
+        "section_sub_heading": "SUBSCRIPTION",
+        "change_box_layout": false,
+        "description": "",
+        "show_description": false,
+        "image": "shopify:\/\/shop_images\/gift2022_01.jpg"
+      }
+    },
+    "ed6f1661-e298-4db3-902a-f2640892b2db": {
+      "type": "main-page-subscription",
+      "blocks": {
+        "template--20317784211764__ed6f1661-e298-4db3-902a-f2640892b2db-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>焙煎屋がお届けする、<\/p><p>新鮮なコーヒー豆の定期便<\/p>",
+            "heading_size": "xl",
+            "heading_type": "h1",
+            "text_align": "center"
+          }
+        },
+        "template--20317784211764__ed6f1661-e298-4db3-902a-f2640892b2db-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>コーヒーは焙煎鮮度が高ければ高いほど香り高いコーヒーが楽しみいただけます。<br\/>好きなコーヒー豆は決まってて、飲む周期も決まっている。そんな方は定期便がおすすめ。<br\/>焼きたての豆を定期的に焙煎所からお届けいたします。<br\/>定期便はよりずっとお得。是非お買い求めください！<\/p>",
+            "text_align": "left"
+          }
+        },
+        "template--20317784211764__ed6f1661-e298-4db3-902a-f2640892b2db-subscription_feature-1": {
+          "type": "subscription_feature",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--20317784211764__ed6f1661-e298-4db3-902a-f2640892b2db-heading-1",
+        "template--20317784211764__ed6f1661-e298-4db3-902a-f2640892b2db-text-1",
+        "template--20317784211764__ed6f1661-e298-4db3-902a-f2640892b2db-subscription_feature-1"
+      ],
+      "settings": {
+        "content_max_width": "xs",
+        "change_block": false,
+        "article_style": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": ""
+      }
+    },
+    "a47675f0-a3d8-43a3-a35b-861d21517ad0": {
+      "type": "main-page-subscription",
+      "blocks": {
+        "template--20317784211764__a47675f0-a3d8-43a3-a35b-861d21517ad0-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>定期便のご利用について<\/p>",
+            "heading_size": "xl",
+            "heading_type": "h2",
+            "text_align": "center"
+          }
+        },
+        "template--20317784211764__a47675f0-a3d8-43a3-a35b-861d21517ad0-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>以下の手順でご利用ください。<\/p>",
+            "text_align": "left"
+          }
+        },
+        "888d3087-1c7e-4212-a186-436fa56fd5d2": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>①お好みの定期便の種類をお選びください<\/p>",
+            "heading_size": "l",
+            "heading_type": "h3",
+            "text_align": "left"
+          }
+        },
+        "e7dfdb81-86fe-499c-a5dd-20360c1ecaf1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A day in the coffeeでは以下2種類の定期便をご用意しています。<\/p><ul><li>お好きなコーヒー豆100gを3種類お届け<\/li><li>お好きなコーヒー豆200gを1種類お届け<\/li><\/ul>",
+            "text_align": "left"
+          }
+        },
+        "614152cb-6219-4406-b801-dee48eef32a9": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>②お送りするコーヒー豆をお選びください<\/p>",
+            "heading_size": "l",
+            "heading_type": "h3",
+            "text_align": "left"
+          }
+        },
+        "15573d12-e64f-42d2-9bf7-64352ecaa062": {
+          "type": "text",
+          "settings": {
+            "text": "<p>お好きな定期便の種類を選択したあと、画面に表示されているコーヒー豆の一覧からお送りするコーヒー豆をお選びください。<\/p>",
+            "text_align": "left"
+          }
+        },
+        "b39c6b5d-f375-415b-a0d7-838ca32f7548": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/subscription_page_498448d3-3f41-4e2a-a9e8-4840e6c8bcac.png"
+          }
+        },
+        "e0680cf9-72a5-4c74-beb6-4512323bd133": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>③お届け周期を選択後ご購入ください<\/p>",
+            "heading_size": "l",
+            "heading_type": "h3",
+            "text_align": "left"
+          }
+        },
+        "37688181-5b99-4e55-9b7d-a2743afb7bd4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>お届けする周期を選択いただき（2週間に1回 or 月に1回）購入を完了します。<\/p><p><a href=\"https:\/\/aday-new-store.myshopify.com\/pages\/shopping-guide\">定期購入について詳しくはこちらをご確認ください<\/a><\/p>",
+            "text_align": "left"
+          }
+        }
+      },
+      "block_order": [
+        "template--20317784211764__a47675f0-a3d8-43a3-a35b-861d21517ad0-heading-1",
+        "template--20317784211764__a47675f0-a3d8-43a3-a35b-861d21517ad0-text-1",
+        "888d3087-1c7e-4212-a186-436fa56fd5d2",
+        "e7dfdb81-86fe-499c-a5dd-20360c1ecaf1",
+        "614152cb-6219-4406-b801-dee48eef32a9",
+        "15573d12-e64f-42d2-9bf7-64352ecaa062",
+        "b39c6b5d-f375-415b-a0d7-838ca32f7548",
+        "e0680cf9-72a5-4c74-beb6-4512323bd133",
+        "37688181-5b99-4e55-9b7d-a2743afb7bd4"
+      ],
+      "settings": {
+        "content_max_width": "s",
+        "change_block": false,
+        "article_style": true,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "88d80f0e-b70e-4663-b0e3-412f00aa748c": {
+      "type": "main-page-subscription-plan",
+      "blocks": {
+        "template--20317784211764__88d80f0e-b70e-4663-b0e3-412f00aa748c-column-1": {
+          "type": "column",
+          "settings": {
+            "title": "<p>お好きなコーヒー豆（100g）を<br\/><strong>3種類<\/strong>お届け<\/p>",
+            "title_size": "m",
+            "image": "shopify:\/\/shop_images\/sucscription_01.svg",
+            "text": "<p>お好きなタイミングでお好きな豆を100gを3種類定期的にお届けします。<br\/>いろんなコーヒー豆を飲みたい！そんな方におすすめプランです。<br\/>以下のボタンより商品お選びいただき、ご購入ください。<\/p>",
+            "link_label": "お好きなコーヒー豆100g3種類を購入する",
+            "link": "\/apps\/subscription\/bundler?b=b6750751-0db3-4596-b574-3b11447dd1be"
+          }
+        },
+        "template--20317784211764__88d80f0e-b70e-4663-b0e3-412f00aa748c-column-2": {
+          "type": "column",
+          "settings": {
+            "title": "<p>お好きなコーヒー豆（200g）を<br\/><strong>1種類<\/strong>お届け<\/p>",
+            "title_size": "m",
+            "image": "shopify:\/\/shop_images\/sucscription_02.svg",
+            "text": "<p>お好きなタイミングでお好きな豆を200g定期的にお届けします。<br\/>好きなコーヒー豆は決まっている。そんな方におすすめプランです。<br\/>以下のボタンより商品お選びいただき、ご購入ください。<\/p>",
+            "link_label": "お好きなコーヒー豆200g1種類を購入する",
+            "link": "\/apps\/subscription\/bundler?b=19eec2f0-6f06-4690-b5cf-9e7af50b8c12"
+          }
+        }
+      },
+      "block_order": [
+        "template--20317784211764__88d80f0e-b70e-4663-b0e3-412f00aa748c-column-1",
+        "template--20317784211764__88d80f0e-b70e-4663-b0e3-412f00aa748c-column-2"
+      ],
+      "settings": {
+        "content_max_width": "s",
+        "change_block": true,
+        "title": "",
+        "heading_size": "l",
+        "heading_type": "h1",
+        "text_align": "left",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "box_gap": "default"
+      }
+    }
+  },
+  "order": [
+    "e1ffcafa-e72c-434d-9a86-db65767e87f1",
+    "ed6f1661-e298-4db3-902a-f2640892b2db",
+    "a47675f0-a3d8-43a3-a35b-861d21517ad0",
+    "main",
+    "88d80f0e-b70e-4663-b0e3-412f00aa748c"
+  ]
+}

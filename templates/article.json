@@ -1,1 +1,54 @@
-{"sections":{"main":{"type":"main-article","blocks":{"featured_image":{"type":"featured_image","settings":{"image_height":"adapt"}},"title":{"type":"title","settings":{"blog_show_date":true,"blog_show_author":false}},"share":{"type":"share","settings":{"share_label":"Share"}},"content":{"type":"content","settings":{}}},"block_order":["featured_image","title","share","content"],"settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "f493baa9-a791-46ff-8967-806ed3c1f988": {
+          "type": "header",
+          "settings": {
+            "section_heading": "コーヒー豆知識",
+            "heading_size": "xl",
+            "section_sub_heading": "COFFEE JOURNAL",
+            "change_box_layout": false
+          }
+        },
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "adapt"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "c73a1d30-b6e7-47c3-8fb9-8136b5470688": {
+          "type": "excerpt",
+          "settings": {
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "f493baa9-a791-46ff-8967-806ed3c1f988",
+        "featured_image",
+        "title",
+        "c73a1d30-b6e7-47c3-8fb9-8136b5470688",
+        "content"
+      ],
+      "settings": {
+        "content_max_width": "s"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

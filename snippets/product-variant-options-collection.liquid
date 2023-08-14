@@ -8,10 +8,14 @@
 
 
   Usage:
-  {% render 'product-variant-options',
+  {% render 'product-variant-options-collection',
     product: product,
     option: option,
-    block: block
+    block: block,
+    block_picker_type: block_picker_type,
+    option_name: option_name,
+    section_id: section_id
+    grid_item_id: grid_item_id
   %}
 {% endcomment %}
 {%- liquid
@@ -45,14 +49,14 @@
     endfor
   -%}
 
-  {%- if block.settings.picker_type == 'button' -%}
+  {%- if block_picker_type == 'button' -%}
     <div class="field">
       <input
         type="radio"
-        id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-        name="{{ option.name }}"
+        id="{{ section_id }}-{{ grid_item_id }}-{{ option.position }}-{{ forloop.index0 }}"
+        name="{{ section_id }}-{{ grid_item_id }}-{{ option.name }}"
         value="{{ value | escape }}"
-        form="{{ product_form_id }}"
+        form="{{ product_form_id }}-{{ grid_item_id }}"
         {% if option.selected_value == value %}
           checked
         {% endif %}
@@ -60,12 +64,12 @@
           class="disabled"
         {% endif %}
       >
-      <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+      <label for="{{ section_id }}-{{ grid_item_id }}-{{ option.position }}-{{ forloop.index0 }}">
         {{ value -}}
         <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
       </label>
     </div>
-  {%- elsif block.settings.picker_type == 'dropdown' -%}
+  {%- elsif block_picker_type == 'dropdown' -%}
     <option
       value="{{ value | escape }}"
       {% if option.selected_value == value %}

@@ -14,13 +14,37 @@
   }
 {%- endstyle -%}
 
-<div class="page-width page-width--narrow section-{{ section.id }}-padding">
-  <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-    {{ page.title | escape }}
+{% if section.settings.content_max_width != "default" %}
+  {% assign content_size = 'content-size-' | append: section.settings.content_max_width %}
+{% endif %}
+
+
+<div class="page-width page-width--narrow section-{{ section.id }}-padding article-wrapper {{ content_size }} {% if section.settings.change_block !=blank %} section-block{% endif %}">
+  <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %} heading size-xl align-center">
+    {% if section.settings.heading !=blank %}
+      {{ section.settings.heading  }}
+    {% else %}
+      {{ page.title | escape }}
+    {% endif %}
   </h1>
-  <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+  {% if section.settings.text !=blank %}
+  <div
+    class="rich-text__text rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} {%- if block.settings.text_align != blank -%} align-{{ block.settings.text_align }} {% endif %}"
+    {{ block.shopify_attributes }}
+    {% if settings.animations_reveal_on_scroll %}
+      data-cascade
+      style="--animation-order: {{ forloop.index }};"
+    {% endif %}
+  >
+    {{ section.settings.text }}
+  </div>
+  {% endif %}
+
+  {% if page.content !=blank %}
+  <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} article-template__content">
     {{ page.content }}
   </div>
+  {% endif %}
 </div>
 
 {% schema %}
@@ -29,6 +53,72 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "select",
+      "id": "content_max_width",
+      "default": "s",
+      "label": "コンテンツの横幅",
+      "options": [
+        {
+          "value": "xs",
+          "label": "すごく狭い"
+        },
+        {
+          "value": "s",
+          "label": "狭い"
+        }, {
+          "value": "m",
+          "label": "少し狭い"
+        }, {
+          "value": "default",
+          "label": "標準"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "change_block",
+      "default": false,
+      "label": "セクションを解除する（セクション間の余白を狭める）"
+    },
+    {
+      "type": "header",
+      "content": "ページタイトル"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "t:sections.rich-text.blocks.heading.settings.heading.label"
+    },
+    {
+      "type": "header",
+      "content": "ディスクリプション"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "t:sections.rich-text.blocks.text.settings.text.label"
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "options": [
+        {
+          "value": "left",
+          "label": "左寄せ"
+        },
+        {
+          "value": "center",
+          "label": "中央寄せ"
+        },
+        {
+          "value": "right",
+          "label": "右寄せ"
+        }
+      ],
+      "default": "left",
+      "label": " 行揃え"
+    },
     {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"

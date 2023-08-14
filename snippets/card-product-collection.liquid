@@ -15,9 +15,10 @@
   - horizontal_class: {Boolean} Add a card--horizontal class if set to true. Default: false (optional)
   - horizontal_quick_add: {Boolean} Changes the quick add button styles when set to true. Default: false (optional)
   - placeholder_image: {String} The placeholder image to use when no product exists. Default: 'product-apparel-2' (optional)
-
+  - forloop_id: {String} The ID of the section that contains this card.
+  
   Usage:
-  {% render 'card-product', show_vendor: section.settings.show_vendor %}
+  {% render 'card-product-content', show_vendor: section.settings.show_vendor, grid_item_id:grid_item_id %}
 {% endcomment %}
 
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
@@ -34,6 +35,9 @@
       assign ratio = 1
     endif
   -%}
+
+
+  
   <div class="card-wrapper product-card-wrapper underline-links-hover">
     <div
       class="
@@ -129,7 +133,7 @@
               </span>
             {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
               <span
-                id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
+                id="NoMediaStandardBadge-{{ section_id }}"
                 class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}"
               >
                 {{- 'products.product.on_sale' | t -}}
@@ -155,15 +159,13 @@
               {{ card_product.title | escape }}
             </a>
           </h3>
-          
+          <div class="card-information">
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
               <div class="caption-with-letter-spacing light">{{ card_product.vendor }}</div>
             {%- endif -%}
-  
-            {%- if block.settings.description != blank -%}
+
             <span class="caption-large light">{{ block.settings.description | escape }}</span>
-            {%- endif -%}
 
             {%- if show_rating and card_product.metafields.reviews.rating.value != blank -%}
               {% liquid
@@ -203,15 +205,17 @@
 
             {% render 'price', product: card_product, price_class: '' %}
 
+             {% if card_product.metafields.introduction.introduction != blank %}
+              <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
+                {{ card_product.metafields.introduction.introduction }}
+              </div>
+            {% endif %}
 
-            
-              <a class="link product__view-details animate-arrow align-right">
-                  詳しく見る
-                  <span class="icon-wrap"><svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor"></path></svg></span>
-              </a>
-          
+            <span class="button">詳しく見る</span>
+          </div>
         </div>
+
+      
         {%- if show_quick_add -%}
           <div class="quick-add no-js-hidden">
             {%- liquid
@@ -375,9 +379,7 @@
       <div class="card__content">
         <div class="card__information">
           <h3 class="card__heading card__heading--placeholder{% if settings.card_style == 'standard' %} h5{% endif %}">
-            <a role="link" aria-disabled="true" class="full-unstyled-link">
-              {{ 'onboarding.product_title' | t }}
-            </a>
+            {{ 'onboarding.product_title' | t }}
           </h3>
           <div class="card-information">
             {%- if show_vendor -%}
@@ -390,4 +392,5 @@
       </div>
     </div>
   </div>
+
 {%- endif -%}
