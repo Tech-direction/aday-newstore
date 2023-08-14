@@ -672,7 +672,7 @@ a,
   z-index: 1;
 }
 
-.contents-wrapper textarea.field__input .field__label {
+.contents-wrapper textarea.field__input + .field__label {
   top: auto;
   transform: none;
 }
