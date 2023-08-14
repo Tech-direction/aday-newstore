@@ -472,6 +472,10 @@ a,
   box-shadow: none;
 }
 
+.contents-wrapper textarea.field__input {
+  height: 8rem;
+}
+
 .contents-wrapper variant-selects select,
 .contents-wrapper .product__item .product-form__quantity .quantity input,
 .contents-wrapper .field input,
