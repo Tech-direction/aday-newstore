@@ -428,6 +428,7 @@ a,
 
 .contents-wrapper .list.type-num > li,
 .contents-wrapper .article-template__content ol > li {
+  width: 100%;
   padding-left: 2em;
 }
 
