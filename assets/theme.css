@@ -2173,6 +2173,12 @@ body,
   box-shadow: none;
 }
 
+.contents-wrapper .article-wrapper .article-template__content table th,
+.contents-wrapper .article-wrapper .article-template__content table td {
+  padding: 1em;
+  border: none;
+}
+
 
 /*  article news
 ---------------------------------------------------------------*/
