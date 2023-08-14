@@ -2725,7 +2725,7 @@ body,
 ===============================================================*/
 
 .contents-wrapper .contact-wrapper {
-  padding: var(--margin);
+  padding: var(--margin-l);
   border-radius: var(--border-radius-box);
   background-color: rgb(var(--color-gray));
 }
