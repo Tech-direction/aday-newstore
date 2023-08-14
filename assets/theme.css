@@ -2733,7 +2733,9 @@ body,
 
 ===============================================================*/
 
-.contents-wrapper .contanct_section
+.contents-wrapper .contanct-section {
+  padding-top: var(--margin-l);
+}
 
 .contents-wrapper .contact-wrapper {
   padding: var(--margin-l);
