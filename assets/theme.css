@@ -2179,6 +2179,10 @@ body,
   border: none;
 }
 
+.contents-wrapper .article-wrapper .article-template__content table th {
+  background-color: rgb(var(--color-gray));
+}
+
 
 /*  article news
 ---------------------------------------------------------------*/
