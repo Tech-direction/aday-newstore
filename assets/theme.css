@@ -2170,6 +2170,8 @@ body,
 .contents-wrapper .article-wrapper .article-template__content table {
   width: 100%;
   font-size: 1rem;
+  border-collapse: separate;
+  border-spacing: 0;
   box-shadow: none;
 }
 
