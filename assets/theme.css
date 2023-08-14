@@ -2140,7 +2140,7 @@ body,
   border: 1px solid rgba(var(--color-border), .25);
 }
 
-.contents-wrapper .article-wrapper a:not(.button) {
+.contents-wrapper .article-wrapper a:not(.button):not(.animate-arrow) {
   text-decoration: underline !important;
 }
 
