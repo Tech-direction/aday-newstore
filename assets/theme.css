@@ -4090,13 +4090,15 @@ body,
     width: 100% !important;
   }
   .huckleberry-subscription-list-color #root .wrap .content.content-right > section {
+    border-top: none;
     gap: var(--margin);
   }
   .huckleberry-subscription-list-color #root .wrap .content.content-right > section > * {
     width: 100%;
-  }
-  .huckleberry-subscription-list-color #root .wrap .content.content-right > section > .huckleberry-subscription-detail-delivery {
     border-left: none !important;
+  }
+  .huckleberry-subscription-list-color #root .wrap .content.content-right > section > [class^="huckleberry-subscription-detail-"] + [class^="huckleberry-subscription-detail-"] {
+    border-top: 1px solid rgb(var(--color-border));
   }
 }
 
