@@ -2652,6 +2652,7 @@ body,
 
 .contents-wrapper .collection-section-been-wrapper .collection-section-been {
   max-width: calc(var(--width-max-m) - var(--margin)*2);
+  min-height: 50vw;
   margin-left: auto;
 }
 
