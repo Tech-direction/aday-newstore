@@ -1351,6 +1351,7 @@ body,
   position: absolute;
   top: 0;
   right: var(--margin-l);
+  align-items: center;
 }
 
 .contents-wrapper .header-postage .postage-icon {
