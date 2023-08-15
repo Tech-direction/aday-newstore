@@ -4089,10 +4089,13 @@ body,
   .huckleberry-subscription-list-color #root .wrap .content.content-left > * {
     width: 100% !important;
   }
-  .huckleberry-subscription-list-color #root .wrap .content.content-right > section > * {
-    width: 50%;
+  .huckleberry-subscription-list-color #root .wrap .content.content-right > section {
+    gap: var(--margin);
   }
-  .huckleberry-subscription-list-color #root .wrap .content.content-right > section > .huckleberry-subscription-detail-payment {
+  .huckleberry-subscription-list-color #root .wrap .content.content-right > section > * {
+    width: calc((100% - var(--margin))/2);
+  }
+  .huckleberry-subscription-list-color #root .wrap .content.content-right > section > .huckleberry-subscription-detail-delivery {
     border-left: none !important;
   }
 }
