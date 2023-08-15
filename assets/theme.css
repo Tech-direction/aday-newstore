@@ -3002,6 +3002,10 @@ body,
   display: none !important;
 }
 
+.contents-wrapper .customer .orders_list .table tbody td {
+  padding-bottom: 0;
+}
+
 @media screen and (max-width: 749px) {
    .contents-wrapper .customer .table tbody tr {
     border: 0;
