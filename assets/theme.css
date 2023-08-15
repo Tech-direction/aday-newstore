@@ -2680,6 +2680,7 @@ body,
 
 .contents-wrapper .collection-section-been-wrapper .collection-section-been .collection-list-image .media {
   height: 100%;
+  background-color: transparent;
 }
 
 .contents-wrapper .collection-section-been-wrapper .collection-section-been .collection-list-image img {
