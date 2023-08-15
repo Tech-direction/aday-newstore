@@ -2990,6 +2990,9 @@ body,
 }
 
 @media screen and (max-width: 749px) {
+  .contents-wrapper .cart-item {
+    padding: 1em 0;
+  }
    .contents-wrapper .customer .table tbody tr {
     border: 0;
   }
