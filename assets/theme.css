@@ -2198,6 +2198,17 @@ body,
   background-color: rgb(var(--color-gray));
 }
 
+@media screen and (max-width: 989px) {
+  .contents-wrapper .article-wrapper .article-template__content table,
+  .contents-wrapper .article-wrapper .article-template__content table tbody,
+  .contents-wrapper .article-wrapper .article-template__content table tr,
+  .contents-wrapper .article-wrapper .article-template__content table th,
+  .contents-wrapper .article-wrapper .article-template__content table td {
+    width: 100%;
+    display: block;
+  }
+}
+
 
 /*  article news
 ---------------------------------------------------------------*/
