@@ -1921,7 +1921,7 @@ body,
 
 @media screen and (max-width: 989px) {
   .contents-wrapper .page-menu .list-menu {
-    gap: var(--margin);
+    gap: var(--margin) !important;
   }
 }
 
