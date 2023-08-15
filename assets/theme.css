@@ -3017,6 +3017,7 @@ body,
   }
   .contents-wrapper .customer .table td > *:not(.button) {
     flex: 1;
+    justify-content: end;
   }
   .contents-wrapper .customer .table td + td,
   .contents-wrapper .customer .table tr > :first-child {
@@ -3048,6 +3049,10 @@ body,
   }
   .contents-wrapper .customer .table .item_header {
     text-align: left;
+  }
+  .contents-wrapper .customer .table td + td,
+  .contents-wrapper .customer .table tr > :first-child {
+    align-items: flex-start;
   }
 }
 
