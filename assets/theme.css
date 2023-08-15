@@ -2208,6 +2208,10 @@ body,
     height: auto !important;
     display: block;
   }
+  .contents-wrapper .article-wrapper .article-template__content table td {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 
