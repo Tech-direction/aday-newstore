@@ -2213,7 +2213,7 @@ body,
     padding: .5em 1em;
   }
   .contents-wrapper .article-wrapper .article-template__content table td {
-    padding: .5em 0 var(--margin);
+    padding: .5em 0 var(--margin-l);
   }
   .contents-wrapper .article-wrapper .article-template__content table > tbody > :last-child > :last-child {
     padding-bottom: 0;
