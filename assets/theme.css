@@ -1174,7 +1174,7 @@ body,
     padding: var(--margin) !important;
   }
   .contents-wrapper .header:has(.header-postage) {
-    padding-top: var(--margin-l) !important;
+    padding-top: var(--margin-xl) !important;
   }
   .contents-wrapper .header .header__heading-link {
     margin-left: auto !important;
