@@ -2205,6 +2205,7 @@ body,
   .contents-wrapper .article-wrapper .article-template__content table th,
   .contents-wrapper .article-wrapper .article-template__content table td {
     width: 100% !important;
+    height: auto !important;
     display: block;
   }
 }
