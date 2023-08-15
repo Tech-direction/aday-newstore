@@ -4074,6 +4074,9 @@ body,
   .huckleberry-subscription-list-color #root > * {
     width: 100%;
   }
+  .huckleberry-subscription-list-color #root header {
+    margin-bottom: var(--margin-l);
+  }
   .huckleberry-subscription-list-color #root header .huckleberry-subscription-list-title,
   .huckleberry-subscription-list-color #root header .huckleberry-subscription-detail-title {
     writing-mode: unset;
