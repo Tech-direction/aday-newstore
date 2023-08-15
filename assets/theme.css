@@ -3068,6 +3068,9 @@ body,
     transform: translateX(-50%);
     bottom: var(--margin);
   }
+  .contents-wrapper .customer .orders_list .table tbody tr:after {
+    display: none !important;
+  }
 }
 
 /*  order data
