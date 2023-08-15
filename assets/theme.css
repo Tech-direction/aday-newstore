@@ -2995,7 +2995,7 @@ body,
   }
   .contents-wrapper .customer tr:after,
   .contents-wrapper .customer .table tbody > :last-child:after {
-    display: none;
+    display: none !important;
   }
   .contents-wrapper .customer .table td {
     padding: 0;
