@@ -2312,11 +2312,11 @@ body,
 
 .contents-wrapper .product__info-container .product-form,
 .contents-wrapper .product__info-container .icon-with-text {
-  margin-bottom: var(--margin);
+  margin-bottom: var(--margin-l);
 }
 
 .contents-wrapper .product__info-container .product__description {
-  margin-top: var(--margin);
+  margin-top: var(--margin-l);
 }
 
 .contents-wrapper .product__pickup-availabilities {
@@ -2382,13 +2382,6 @@ body,
 .contents-wrapper .product .slider-mobile-gutter .slider.slider--mobile {
   margin: 0;
   scroll-padding-left: 0;
-}
-
-@media screen and (max-width: 989px) {
-  .contents-wrapper .blog-articles-news .article__news,
-  .contents-wrapper .blog-articles-news .article__news .article-wrapper {
-    padding: var(--margin);
-  }
 }
 
 
