@@ -2237,6 +2237,13 @@ body,
   border-bottom: 1px solid rgb(var(--color-black));
 }
 
+@media screen and (max-width: 989px) {
+  .contents-wrapper .blog-articles-news,
+  .contents-wrapper .blog-articles-news .article__news .article-wrapper {
+    padding: var(--margin);
+  }
+}
+
 
 /*===============================================================
 
