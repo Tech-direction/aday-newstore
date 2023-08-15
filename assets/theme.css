@@ -3859,6 +3859,7 @@ body,
 
 .huckleberry-subscription-list-color #root .huckleberry-subscription-list-title,
 .huckleberry-subscription-list-color #root .huckleberry-subscription-detail-title {
+  height: fit-content;
   writing-mode: vertical-lr !important;
   font-size: var(--font-xl);
   letter-spacing: .1em !important;
