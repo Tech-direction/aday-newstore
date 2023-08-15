@@ -2210,7 +2210,7 @@ body,
   }
   .contents-wrapper .article-wrapper .article-template__content table th,
   .contents-wrapper .article-wrapper .article-template__content table tbody tr > :first-child {
-    padding: .5em;
+    padding: .5em 1em;
   }
   .contents-wrapper .article-wrapper .article-template__content table td {
     padding-left: 0;
