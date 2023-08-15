@@ -3054,6 +3054,13 @@ body,
   .contents-wrapper .customer .table tr > :first-child {
     align-items: flex-start;
   }
+  .contents-wrapper .customer .table,
+  .contents-wrapper .customer .table tbody tr {
+    position: unset;
+  }
+  .contents-wrapper .section-heading-wrapper.type-reverse .content__item .customer_block {
+    padding-bottom: calc(var(--margin-xl) + 1em);
+  }
 }
 
 /*  order data
