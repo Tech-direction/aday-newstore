@@ -1150,7 +1150,7 @@ body,
   width: 100vw;
   max-width: none;
   margin: 0;
-  padding: var(--margin-s) var(--margin-l) !important;
+  padding: var(--margin) var(--margin-l) !important;
   position: relative;
   display: flex;
   gap: var(--margin);
