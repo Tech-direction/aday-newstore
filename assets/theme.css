@@ -1688,7 +1688,7 @@ body,
     background-color: #fff;
     order: 1;
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     z-index: 1;
   }
   .contents-wrapper .section-image {
