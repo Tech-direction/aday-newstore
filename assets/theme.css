@@ -4093,7 +4093,7 @@ body,
     gap: var(--margin);
   }
   .huckleberry-subscription-list-color #root .wrap .content.content-right > section > * {
-    width: calc((100% - var(--margin))/2);
+    width: 100%;
   }
   .huckleberry-subscription-list-color #root .wrap .content.content-right > section > .huckleberry-subscription-detail-delivery {
     border-left: none !important;
