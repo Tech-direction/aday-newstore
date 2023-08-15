@@ -1347,7 +1347,7 @@ body,
   background-color: rgb(var(--color-gray));
   border-bottom-left-radius: calc(var(--border-radius-box)/2);
   border-bottom-right-radius: calc(var(--border-radius-box)/2);
-  display: inline-block;
+  display: flex;
   position: absolute;
   top: 0;
   right: var(--margin-l);
