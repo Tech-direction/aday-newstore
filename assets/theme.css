@@ -3340,6 +3340,9 @@ body,
     left: 0;
     bottom: 0;
   }
+  .contents-wrapper .cart-items tbody > :last-child {
+    padding-bottom: 0;
+  }
 }
 
 /*  cart__footer
