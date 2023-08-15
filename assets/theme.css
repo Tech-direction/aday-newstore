@@ -2915,7 +2915,7 @@ body,
   content: ' ';
   width: 100%;
   border-bottom: 1px solid rgb(var(--color-border));
-  display: block;
+  display: block !important;
   position: absolute;
   left: 0;
   bottom: 0;
