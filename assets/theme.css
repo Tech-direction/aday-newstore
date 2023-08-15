@@ -2742,7 +2742,7 @@ body,
 ---------------------------------------------------------------*/
 
 .contents-wrapper .collection-beens-list a {
-  padding: var(--margin);
+  padding: var(--margin) var(--margin-s);
   text-align: center;
   color: #fff;
   font-size: var(--font-m);
