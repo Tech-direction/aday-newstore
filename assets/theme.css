@@ -3873,8 +3873,8 @@ body,
   order: 1;
 }
 
-.huckleberry-subscription-list-color #root .huckleberry-subscription-list-title,
-.huckleberry-subscription-list-color #root .huckleberry-subscription-detail-title {
+.huckleberry-subscription-list-color #root header .huckleberry-subscription-list-title
+.huckleberry-subscription-list-color #root header .huckleberry-subscription-detail-title {
   height: fit-content;
   writing-mode: vertical-lr;
   font-size: var(--font-xl);
