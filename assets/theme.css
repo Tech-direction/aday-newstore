@@ -2320,6 +2320,7 @@ body,
   margin-bottom: var(--margin-l);
 }
 
+.contents-wrapper .product__info-container .product-form,
 .contents-wrapper .product__info-container .product__description {
   margin-top: var(--margin-l);
 }
