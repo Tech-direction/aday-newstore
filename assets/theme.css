@@ -4088,7 +4088,9 @@ body,
   .huckleberry-subscription-list-color #root .wrap .content.content-left > * {
     width: 100% !important;
   }
-
+  .huckleberry-subscription-list-color #root .wrap .content.content-right > section > * {
+    width: 50%;
+  }
 }
 
 
