@@ -2157,7 +2157,8 @@ body,
 }
 
 .contents-wrapper .article-wrapper a:not(.button):not(.animate-arrow) {
-  text-decoration: underline !important;
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid rbg(var(--color-black));
 }
 
 .contents-wrapper .article-wrapper ol > li,
