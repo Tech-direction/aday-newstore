@@ -1150,14 +1150,14 @@ body,
   width: 100vw;
   max-width: none;
   margin: 0;
-  padding: var(--margin) var(--margin-l) !important;
+  padding: var(--margin-s) var(--margin-l) !important;
   position: relative;
   display: flex;
   gap: var(--margin);
 }
 
 .contents-wrapper .header:has(.header-postage) {
-  padding-top: var(--margin-xl) !important;
+  padding-top: var(--margin-l) !important;
 }
 
 .contents-wrapper .header a:not(.header__icon) {
@@ -1174,7 +1174,7 @@ body,
     padding: var(--margin) !important;
   }
   .contents-wrapper .header:has(.header-postage) {
-    padding-top: var(--margin-xl) !important;
+    padding-top: var(--margin-l) !important;
   }
   .contents-wrapper .header .header__heading-link {
     margin-left: auto !important;
