@@ -2238,7 +2238,7 @@ body,
 }
 
 @media screen and (max-width: 989px) {
-  .contents-wrapper .blog-articles-news,
+  .contents-wrapper .blog-articles-news .article__news,
   .contents-wrapper .blog-articles-news .article__news .article-wrapper {
     padding: var(--margin);
   }
