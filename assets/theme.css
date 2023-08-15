@@ -2309,6 +2309,11 @@ body,
   margin-top: var(--margin) !important;
 }
 
+.contents-wrapper .product__info-container .product-form,
+.contents-wrapper .product__info-container .icon-with-text,
+.contents-wrapper .product__info-container .product__description {
+  margin: 0;
+}
 
 .contents-wrapper .product__info-container .product-form,
 .contents-wrapper .product__info-container .icon-with-text {
