@@ -1352,6 +1352,7 @@ body,
   top: 0;
   right: var(--margin-l);
   align-items: center;
+  gap: var(--margin-xs);
 }
 
 .contents-wrapper .header-postage .postage-icon {
@@ -1366,7 +1367,6 @@ body,
 }
 
 .contents-wrapper .header-postage .emphasis {
-  margin-left: var(--margin-xs);
   padding: var(--margin-xs);
   color: #fff;
   background-color: rgb(var(--color-primary));
