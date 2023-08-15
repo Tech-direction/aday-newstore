@@ -2799,7 +2799,7 @@ body,
 
 @media screen and (max-width: 989px) {
   .contents-wrapper .contact-wrapper {
-    padding: var(--margin);
+    padding: var(--margin-l) var(--margin);
   }
 }
 
