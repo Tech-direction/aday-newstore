@@ -2942,6 +2942,10 @@ body,
 
 .contents-wrapper .customer .table .item_header {
   font-weight: 500;
+  display: flex;
+  gap: .5em 1em;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .contents-wrapper .customer .table .properties {
