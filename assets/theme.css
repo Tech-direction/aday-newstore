@@ -2213,8 +2213,7 @@ body,
     padding: .5em 1em;
   }
   .contents-wrapper .article-wrapper .article-template__content table td {
-    padding-left: 0;
-    padding-right: 0;
+    padding: .5em 0 1em;
   }
 }
 
