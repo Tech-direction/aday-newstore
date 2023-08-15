@@ -2998,6 +2998,10 @@ body,
   flex: 1;
 }
 
+.contents-wrapper .customer .orders_list .table tbody tr:after {
+  display: none !important;
+}
+
 @media screen and (max-width: 749px) {
    .contents-wrapper .customer .table tbody tr {
     border: 0;
@@ -3067,9 +3071,6 @@ body,
     left: 50%;
     transform: translateX(-50%);
     bottom: var(--margin);
-  }
-  .contents-wrapper .customer .orders_list .table tbody tr:after {
-    display: none !important;
   }
 }
 
