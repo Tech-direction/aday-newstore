@@ -1472,6 +1472,10 @@ body,
   margin-bottom: 0;
 }
 
+.contents-wrapper .shopify-section-group-footer-group + ul {
+  display: none;
+}
+
 
 /*  footer content
 ---------------------------------------------------------------*/
