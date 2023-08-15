@@ -2797,6 +2797,13 @@ body,
   margin-top: var(--margin-l);
 }
 
+@media screen and (max-width: 989px) {
+  .contents-wrapper .contact-wrapper {
+    padding: var(--margin);
+  }
+}
+
+
 /*===============================================================
 
 	customer
