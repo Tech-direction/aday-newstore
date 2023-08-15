@@ -1619,21 +1619,6 @@ body,
 }
 
 
-@media screen and (max-width: 989px) {
-  .huckleberry-subscription-list-color #root .huckleberry-subscription-list-title,
-  .huckleberry-subscription-list-color #root .huckleberry-subscription-detail-title {
-    writing-mode: unset !important;
-  }
-  .contents-wrapper .section-heading-wrapper > *,
-  .huckleberry-subscription-list-color #root > * {
-    width: 100%;
-  }
-}
-
-
-
-
-
 /*  image
 ---------------------------------------------------------------*/
 
@@ -4079,6 +4064,13 @@ body,
   margin: 0;
   padding: 0 !important;
   display: block;
+}
+
+
+@media screen and (max-width: 989px) {
+  .huckleberry-subscription-list-color #root > * {
+    width: 100%;
+  }
 }
 
 
