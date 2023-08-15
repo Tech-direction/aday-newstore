@@ -4068,6 +4068,9 @@ body,
 
 
 @media screen and (max-width: 989px) {
+  .huckleberry-subscription-list-color #root {
+    flex-wrap: wrap;
+  }
   .huckleberry-subscription-list-color #root > * {
     width: 100%;
   }
