@@ -1997,7 +1997,7 @@ body,
     gap: var(--margin-l) var(--margin) !important;
   }
   .contents-wrapper .article-list .grid__item {
-    width: 100%;
+    width: 100% !important;
   }
   .contents-wrapper .article-list > :nth-child(even) {
     top: auto;
@@ -2213,7 +2213,7 @@ body,
     padding: .5em 1em;
   }
   .contents-wrapper .article-wrapper .article-template__content table td {
-    padding: .5em 0 var(--margin-l);
+    padding: .5em 0 var(--margin-l );
   }
   .contents-wrapper .article-wrapper .article-template__content table > tbody > :last-child > :last-child {
     padding-bottom: 0;
