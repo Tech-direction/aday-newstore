@@ -4001,6 +4001,7 @@ body,
   border-top: 1px solid rgb(var(--color-border));
   border-bottom: 1px solid rgb(var(--color-border));
   display: flex;
+  flex-wrap: wrap;
 }
 
 .huckleberry-subscription-detail-delivery,
