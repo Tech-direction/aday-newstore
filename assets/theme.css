@@ -327,8 +327,7 @@ a,
   transform: translateX(-50%);
 }
 
-.contents-wrapper .button.type-primary,
-.contents-wrapper .button.button--primary {
+.contents-wrapper .button.type-primary {
   background-color: rgb(var(--color-primary));
 }
 
