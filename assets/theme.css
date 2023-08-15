@@ -2924,7 +2924,7 @@ body,
 .contents-wrapper .customer .table td .button {
   min-width: auto;
   height: auto;
-  margin: 0 0 0 1em;
+  margin: 0;
   padding: 1em;
   font-size: var(--font-s) !important;
   letter-spacing: 0;
