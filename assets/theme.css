@@ -3940,6 +3940,7 @@ body,
   background-color: rgb(var(--color-gray));
   display: flex;
   gap: var(--margin);
+  flex-wrap: wrap;
   align-items: flex-start;
 }
 
@@ -4080,6 +4081,9 @@ body,
   .huckleberry-subscription-list-color #root header .huckleberry-subscription-list-title,
   .huckleberry-subscription-list-color #root header .huckleberry-subscription-detail-title {
     writing-mode: unset;
+  }
+  .huckleberry-subscription-list-color #root .wrap .content.content-left {
+    
   }
 }
 
