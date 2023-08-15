@@ -3201,10 +3201,12 @@ body,
   border: 1px solid rgb(var(--color-border));
   background-color: #fff;
   position: relative;
+  order: 1;
 }
 
 .contents-wrapper .customer .address-list .grid__item.default {
   background-color: rgb(var(--color-gray));
+  order: 0;
 }
 
 .contents-wrapper .customer .address-list .grid__item .address_label {
@@ -3219,6 +3221,7 @@ body,
 
 .contents-wrapper .customer .address-list .grid__item.add_address {
   border-style: dashed;
+  order: 0;
 }
 
 .contents-wrapper .customer .address-list .grid__item .table {
