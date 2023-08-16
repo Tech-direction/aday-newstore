@@ -1735,6 +1735,7 @@ body,
     position: absolute;
     bottom: -1px;
     z-index: 1;
+    writing-mode: unset !important;
   }
   .contents-wrapper .section-image {
     height: 25vh !important;
