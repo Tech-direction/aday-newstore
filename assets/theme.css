@@ -3404,7 +3404,7 @@ body,
   height: 3.5rem;
 }
 
-.contents-wrapper .cart-item cart-remove-button a {
+.contents-wrapper .cart-item .table td cart-remove-button a {
   display: flex;
 }
 
