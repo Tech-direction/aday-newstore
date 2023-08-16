@@ -1168,13 +1168,8 @@ body,
   gap: var(--margin);
 }
 
-.contents-wrapper .header.header--has-postage,
-.contents-wrapper .header:has(.header-postage) {
-  padding-top: var(--margin-l) !important;
-}
-
 .contents-wrapper .header.header--has-postage {
-  display: none;
+  padding-top: var(--margin-l) !important;
 }
 
 .contents-wrapper .header a:not(.header__icon) {
