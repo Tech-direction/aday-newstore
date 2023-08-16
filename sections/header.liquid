@@ -200,8 +200,8 @@
 
     {% if has_header_postage == true %}
       <div class="header-postage">
-              {%- if block.settings.header-postage-img != blank -%}
-                    <figure class="postage-icon">{{ block.settings.header-postage-img | image_url: width: 600 | image_tag:
+              {%- if section.blocks.settings.header-postage-img != blank -%}
+                    <figure class="postage-icon">{{ section.blocks.settings.header-postage-img | image_url: width: 600 | image_tag:
                                       widths: widths,
                                       height: logo_height,
                                       width: settings.logo_width,
@@ -211,7 +211,7 @@
                                     }}
                     </figure>
                 {% endif %}
-        {{ block.settings.header-postage-text1 }}<sapn class="emphasis">{{ block.settings.header-postage-text2 }}</sapn></div>
+        {{ section.blocks.settings.header-postage-text1 }}<sapn class="emphasis">{{ section.blocks.settings.header-postage-text2 }}</sapn></div>
     {% endif %}
     
     {%- liquid
