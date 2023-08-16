@@ -1185,8 +1185,7 @@ body,
   .contents-wrapper .header {
     padding: var(--margin) !important;
   }
-  .contents-wrapper .header.header--has-postage,
-  .contents-wrapper .header:has(.header-postage) {
+  .contents-wrapper .header.header--has-postage {
     padding-top: var(--margin-xl) !important;
   }
   .contents-wrapper .header .header__heading-link {
