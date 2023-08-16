@@ -3404,6 +3404,10 @@ body,
   height: 3.5rem;
 }
 
+.contents-wrapper .cart-item cart-remove-button {
+  display: flex;
+}
+
 @media screen and (max-width: 749px) {
   .contents-wrapper .cart-items tr {
     display: grid;
