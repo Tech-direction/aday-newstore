@@ -4,7 +4,6 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
-      "disabled": true,
       "blocks": {
         "announcement-bar-0": {
           "type": "announcement",
@@ -17,6 +16,7 @@
       "block_order": [
         "announcement-bar-0"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "background-1",
         "show_line_separator": true,
@@ -29,6 +29,7 @@
       "blocks": {
         "e4ca1f66-fc63-4029-a267-5858bf4803c5": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "header-postage-img": "shopify:\/\/shop_images\/postage_img.svg",
             "header-postage-text1": "5,000円以上の購入または店頭受取で",
