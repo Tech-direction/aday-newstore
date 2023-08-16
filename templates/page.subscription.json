@@ -151,6 +151,11 @@
       "type": "main-page",
       "disabled": true,
       "settings": {
+        "content_max_width": "s",
+        "change_block": false,
+        "heading": "",
+        "text": "",
+        "text_align": "left",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -166,7 +171,7 @@
             "image": "shopify:\/\/shop_images\/sucscription_01.svg",
             "text": "<p>お好きなタイミングでお好きな豆を100gを3種類定期的にお届けします。<br\/>いろんなコーヒー豆を飲みたい！そんな方におすすめプランです。<br\/>以下のボタンより商品お選びいただき、ご購入ください。<\/p>",
             "link_label": "お好きなコーヒー豆100g3種類を購入する",
-            "link": "\/apps\/subscription\/bundler?b=b6750751-0db3-4596-b574-3b11447dd1be"
+            "link": "https:\/\/aday-new-store.myshopify.com\/apps\/subscription\/bundler?b=02d46a5b-dddb-4a91-9efe-1aa1e5d3f564"
           }
         },
         "template--20317784211764__88d80f0e-b70e-4663-b0e3-412f00aa748c-column-2": {
@@ -177,7 +182,7 @@
             "image": "shopify:\/\/shop_images\/sucscription_02.svg",
             "text": "<p>お好きなタイミングでお好きな豆を200g定期的にお届けします。<br\/>好きなコーヒー豆は決まっている。そんな方におすすめプランです。<br\/>以下のボタンより商品お選びいただき、ご購入ください。<\/p>",
             "link_label": "お好きなコーヒー豆200g1種類を購入する",
-            "link": "\/apps\/subscription\/bundler?b=19eec2f0-6f06-4690-b5cf-9e7af50b8c12"
+            "link": "https:\/\/aday-new-store.myshopify.com\/apps\/subscription\/bundler?b=0f2a8e97-f5f4-4564-8fa1-e007f691944b"
           }
         }
       },
