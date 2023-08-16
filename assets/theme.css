@@ -3405,7 +3405,7 @@ body,
 }
 
 .contents-wrapper .cart-items td cart-remove-button a {
-  display: flex;
+  display: flex !important;
 }
 
 @media screen and (max-width: 749px) {
