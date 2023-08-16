@@ -1621,7 +1621,10 @@ _:lang(x)::-internal-media-controls-overlay-cast-button, .huckleberry-subscripti
 }
 
 /* safari */
-::-webkit-full-page-media, :future, :root .contents-wrapper .section-heading-wrapper .heading__item,
+::-webkit-full-page-media, :future, :root .contents-wrapper .section-heading-wrapper .heading__item {
+  font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'Meiryo', 'メイリオ', 'sans-serif' !important;
+  letter-spacing: 0;
+}
 ::-webkit-full-page-media, :future, :root .huckleberry-subscription-list-color #root header .huckleberry-subscription-list-title {
   font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'Meiryo', 'メイリオ', 'sans-serif' !important;
   letter-spacing: 0;
