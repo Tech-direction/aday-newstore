@@ -2948,6 +2948,7 @@ body,
 
 .contents-wrapper .customer tr {
   position: relative;
+  display: block;
 }
 
 .contents-wrapper .customer thead:after,
