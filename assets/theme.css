@@ -1713,10 +1713,10 @@ body,
   }
   .contents-wrapper.top .section-heading-wrapper .heading__item {
     margin-bottom: var(--margin);
-  }
-  .contents-wrapper .section-heading-wrapper .heading__item {
-    margin: 0;
     writing-mode: unset !important;
+  }
+  .contents-wrapper .section-heading-wrapper .heading__item .heading {
+    margin: 0;
     letter-spacing: 0;
   }
   .contents-wrapper .section-page-header .section-heading-wrapper {
