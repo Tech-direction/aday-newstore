@@ -3366,8 +3366,8 @@ body,
   display: block;
 }
 
-.contents-wrapper .cart-items {
-  
+.contents-wrapper .cart-items tr {
+  display: table-row;
 }
 
 .contents-wrapper .cart-items .price {
