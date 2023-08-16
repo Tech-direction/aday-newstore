@@ -1763,6 +1763,10 @@ body,
   .contents-wrapper .heading.type-sub_heading:before {
     font-size: 1rem;
   }
+  ::-webkit-full-page-media, :future, :root .contents-wrapper .section-page-header .section-heading-wrapper .heading__item {
+    padding-top: .5em;
+  }
+  
 }
 
 
