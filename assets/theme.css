@@ -3366,10 +3366,6 @@ body,
   display: block;
 }
 
-.contents-wrapper .cart-items tr {
-  display: grid;
-}
-
 .contents-wrapper .cart-items .price {
   margin-top: 0 !important;
 }
@@ -3403,6 +3399,9 @@ body,
 }
 
 @media screen and (max-width: 749px) {
+  .contents-wrapper .cart-items tr {
+    display: grid;
+  }
   .contents-wrapper .cart-items thead tr,
   .contents-wrapper .cart-item {
     margin-bottom: 0;
