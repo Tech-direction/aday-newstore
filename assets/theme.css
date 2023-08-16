@@ -2947,6 +2947,7 @@ body,
 }
 
 .contents-wrapper .customer tr {
+  border: 0;
   position: relative;
   display: block;
 }
