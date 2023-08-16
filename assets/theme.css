@@ -3399,6 +3399,12 @@ body,
   padding: 0;
 }
 
+@media screen and (max-width: 989px) {
+  .contents-wrapper .cart-item cart-remove-button {
+    height: auto;
+  }
+}
+
 @media screen and (max-width: 749px) {
   .contents-wrapper .cart-items tr {
     display: grid;
@@ -3428,9 +3434,6 @@ body,
   }
   .contents-wrapper .cart-items tbody > :last-child {
     padding-bottom: 0;
-  }
-  .contents-wrapper .cart-item cart-remove-button {
-    height: auto;
   }
 }
 
