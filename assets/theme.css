@@ -1611,11 +1611,11 @@ body,
 }
 
 /* chrome */
-_:lang(x)::-internal-media-controls-overlay-cast-button, .contents-wrapper .section-heading-wrapper .heading__item .heading　{
-  letter-spacing: -.25em;
-}
-_:lang(x)::-internal-media-controls-overlay-cast-button, .huckleberry-subscription-list-color #root header .huckleberry-subscription-list-title　{
-  letter-spacing: -.25em;
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  .contents-wrapper .section-heading-wrapper .heading__item,
+  .huckleberry-subscription-list-color #root header .huckleberry-subscription-list-title {
+    letter-spacing: -.25em;
+  }
 }
 
 /* safari */
