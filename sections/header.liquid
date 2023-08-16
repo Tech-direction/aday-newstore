@@ -175,9 +175,9 @@
     {%- endfor -%}
 
   
-  <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}">
+  <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}{% if has_header_postage == true %} has-header-postage{% endif %}">
 
-    {% comment %}
+
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when 'announcement' -%}
@@ -196,23 +196,8 @@
         {{ block.settings.header-postage-text1 }}<sapn class="emphasis">{{ block.settings.header-postage-text2 }}</sapn></div>
       {%- endcase -%}
     {%- endfor -%}
-    {% endcomment %}
 
-    {% if has_header_postage == true %}
-      <div class="header-postage">
-              {%- if section.blocks.settings.header-postage-img != blank -%}
-                    <figure class="postage-icon">{{ section.blocks.settings.header-postage-img | image_url: width: 600 | image_tag:
-                                      widths: widths,
-                                      height: logo_height,
-                                      width: settings.logo_width,
-                                      alt: logo_alt,
-                                      sizes: sizes,
-                                      preload: true
-                                    }}
-                    </figure>
-                {% endif %}
-        {{ section.blocks.settings.header-postage-text1 }}<sapn class="emphasis">{{ section.blocks.settings.header-postage-text2 }}</sapn></div>
-    {% endif %}
+
     
     {%- liquid
       if section.settings.menu != blank
