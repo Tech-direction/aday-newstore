@@ -3367,7 +3367,7 @@ body,
 }
 
 .contents-wrapper .cart-items tr {
-  display: table-row;
+  display: grid;
 }
 
 .contents-wrapper .cart-items .price {
