@@ -1606,7 +1606,7 @@ body,
   flex: 1;
 }
 
-.contents-wrapper .section-heading-wrapper .heading__item .heading,
+.contents-wrapper .section-heading-wrapper .heading__item,
 .huckleberry-subscription-list-color #root header .huckleberry-subscription-list-title {
   margin: -.5rem 0 0;
   writing-mode: vertical-rl;
@@ -1614,13 +1614,13 @@ body,
 
 /* chrome */
 @media screen and (-webkit-min-device-pixel-ratio:0){
-  .contents-wrapper .section-heading-wrapper .heading__item .heading,
+  .contents-wrapper .section-heading-wrapper .heading__item,
   .huckleberry-subscription-list-color #root header .huckleberry-subscription-list-title {
       letter-spacing: -.25em;
     }
 }
 /* safari */
-::-webkit-full-page-media, :future, :root .contents-wrapper .section-heading-wrapper .heading__item .heading,
+::-webkit-full-page-media, :future, :root .contents-wrapper .section-heading-wrapper .heading__item,
 ::-webkit-full-page-media, :future, :root .huckleberry-subscription-list-color #root header .huckleberry-subscription-list-title {
   font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'Meiryo', 'メイリオ', 'sans-serif' !important;
   letter-spacing: 0;
