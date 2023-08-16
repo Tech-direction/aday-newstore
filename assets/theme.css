@@ -1173,6 +1173,10 @@ body,
   padding-top: var(--margin-l) !important;
 }
 
+.contents-wrapper .header.header--has-postage {
+  display: none;
+}
+
 .contents-wrapper .header a:not(.header__icon) {
   padding: 0;
 }
