@@ -1612,7 +1612,7 @@ body,
 
 /* chrome */
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-  .contents-wrapper .section-heading-wrapper .heading__item,
+  .contents-wrapper .section-heading-wrapper .heading__item .heading,
   .huckleberry-subscription-list-color #root header .huckleberry-subscription-list-title {
     letter-spacing: -.25em;
   }
