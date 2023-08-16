@@ -3399,10 +3399,9 @@ body,
   padding: 0;
 }
 
-@media screen and (max-width: 989px) {
-  .contents-wrapper .cart-item cart-remove-button {
-    height: auto;
-  }
+.contents-wrapper .cart-item cart-remove-button {
+  width: 3.5rem;
+  height: 3.5rem;
 }
 
 @media screen and (max-width: 749px) {
