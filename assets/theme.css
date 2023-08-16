@@ -1168,6 +1168,7 @@ body,
   gap: var(--margin);
 }
 
+.contents-wrapper .header.header--has-postage,
 .contents-wrapper .header:has(.header-postage) {
   padding-top: var(--margin-l) !important;
 }
@@ -1185,6 +1186,7 @@ body,
   .contents-wrapper .header {
     padding: var(--margin) !important;
   }
+  .contents-wrapper .header.header--has-postage,
   .contents-wrapper .header:has(.header-postage) {
     padding-top: var(--margin-xl) !important;
   }
