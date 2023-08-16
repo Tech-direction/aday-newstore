@@ -3429,6 +3429,9 @@ body,
   .contents-wrapper .cart-items tbody > :last-child {
     padding-bottom: 0;
   }
+  .contents-wrapper .cart-item cart-remove-button {
+    height: auto;
+  }
 }
 
 /*  cart__footer
