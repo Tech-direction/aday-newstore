@@ -1972,7 +1972,7 @@ body,
   gap: var(--margin-s);
 }
 
-.contents-wrapper .page-menu .list-menu a .icon svg {
+.contents-wrapper .page-menu .list-menu a .icon {
   fill: #fff;
 }
 
