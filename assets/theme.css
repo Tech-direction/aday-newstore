@@ -2964,6 +2964,10 @@ body,
   display: none;
 }
 
+.contents-wrapper .customer .table.customer-account tbody tr > *  {
+  border-bottom-style: dashed;
+}
+
 /*.contents-wrapper .customer thead tr > :first-child,
 .contents-wrapper .customer tbody tr > :first-child {
   position: relative;
@@ -3043,9 +3047,6 @@ body,
   display: flex;
 }
 
-.contents-wrapper .customer .table.customer-account tbody tr:after {
-  border-bottom-style: dashed;
-}
 
 .contents-wrapper .customer .table.customer-account tbody > :last-child:after {
   border-bottom-style: solid;
