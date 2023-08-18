@@ -1958,7 +1958,7 @@ body,
   /*background-color: rgb(var(--color-primary));*/
   display: flex;
   justify-content: center;
-  gap: var(--margin-s);
+  gap: var(--margin-s) !important;
 }
 
 .contents-wrapper .page-menu .list-menu a {
