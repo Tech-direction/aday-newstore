@@ -216,12 +216,13 @@
     "89f0ec6a-2654-487a-84f5-699fd23386fd": {
       "type": "featured-collection-been",
       "settings": {
+        "image": "shopify:\/\/shop_images\/decaf_e7e612f3-dba6-43e2-8c60-46f9edfb8d1b.jpg",
         "section_id": "decaf",
         "section_heading": "ディカフェ",
         "heading_size": "xl",
         "section_sub_heading": "DECAF",
         "change_box_layout": false,
-        "description": "",
+        "description": "<p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパーゴなど、いまこの暗い巨きな石の建物のなかで考えていると、<\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "ディカフェのコーヒー豆",
