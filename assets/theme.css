@@ -2391,7 +2391,7 @@ body,
 }
 
 .contents-wrapper .product-list .card__heading {
-  font-size: var(--font-l);
+  font-size: var(--font-m);
 }
 
 .contents-wrapper variant-selects .form__label,
@@ -3823,7 +3823,7 @@ body,
 
 .grid-collection .grid-product .price__pricing-group {
   margin-top: var(--margin-s);
-  font-size: var(--font-l);
+  font-size: var(--font-m);
 }
 
 .grid-collection .grid-product .price__pricing-group * {
