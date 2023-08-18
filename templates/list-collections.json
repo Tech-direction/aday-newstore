@@ -78,6 +78,52 @@
         "description": "<p>A day in the coffeeでは注文をいただいてから焙煎を行う<strong>注文焙煎<\/strong>を行なって、皆様にお届けしております。香り高いコーヒー豆の味わいをぜひお楽しみください。<\/p>"
       }
     },
+    "33a460c4-879a-4544-98d7-260811f8daef": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19717718343988__33a460c4-879a-4544-98d7-260811f8daef-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "定期購買について",
+            "heading_type": "h1",
+            "heading_size": "l"
+          }
+        },
+        "template--19717718343988__33a460c4-879a-4544-98d7-260811f8daef-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "text_align": "left"
+          }
+        },
+        "template--19717718343988__33a460c4-879a-4544-98d7-260811f8daef-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19717718343988__33a460c4-879a-4544-98d7-260811f8daef-heading-1",
+        "template--19717718343988__33a460c4-879a-4544-98d7-260811f8daef-text-1",
+        "template--19717718343988__33a460c4-879a-4544-98d7-260811f8daef-button-1"
+      ],
+      "settings": {
+        "content_max_width": "default",
+        "change_block": false,
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "main": {
       "type": "main-list-collections",
       "disabled": true,
@@ -249,6 +295,7 @@
     "f70a0cc6-0eca-46fd-91b2-cd193c00ac1c",
     "b466eac5-a569-47e9-9d52-c4968c8089ef",
     "8ea36c2b-cf70-4588-8cab-8479b9def8dd",
+    "33a460c4-879a-4544-98d7-260811f8daef",
     "main",
     "e840dd1c-bb6f-4e69-99fd-3653ff1de1e7",
     "1f8ec698-b23a-4ed8-8fd3-4eab6be698d2",
