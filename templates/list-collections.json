@@ -14,6 +14,7 @@
     },
     "b466eac5-a569-47e9-9d52-c4968c8089ef": {
       "type": "collection-subscription-section",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/gift2022_01.jpg",
         "section_heading": "<p>コーヒー焙煎屋さんがお届けする、焼きたてコーヒー豆の定期便<\/p>",
