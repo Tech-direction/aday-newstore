@@ -3009,7 +3009,10 @@ body,
   display: flex;
   gap: .5em 1em;
   flex-wrap: wrap;
-  /*align-items: center;*/
+}
+
+.contents-wrapper .customer .table .cell_data .item_header {
+  align-items: center;
 }
 
 .contents-wrapper .customer .table .properties {
