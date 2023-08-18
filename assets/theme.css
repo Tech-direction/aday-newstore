@@ -2972,7 +2972,7 @@ body,
   bottom: 0;
 }
 
-.contents-wrapper .customer tbody :last-child > :first-child:after {
+.contents-wrapper .customer tbody > :last-child > :first-child:after {
   display: none;
 }
 
