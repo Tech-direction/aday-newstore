@@ -2268,26 +2268,26 @@ body,
 
 
 @media screen and (max-width: 989px) {
-  .contents-wrapper .article-wrapper .article-template__content table,
-  .contents-wrapper .article-wrapper .article-template__content table tbody,
-  .contents-wrapper .article-wrapper .article-template__content table tr,
-  .contents-wrapper .article-wrapper .article-template__content table th,
-  .contents-wrapper .article-wrapper .article-template__content table td {
+  .contents-wrapper .article-wrapper .article-template__content table:not(.hold),
+  .contents-wrapper .article-wrapper .article-template__content table:not(.hold) tbody,
+  .contents-wrapper .article-wrapper .article-template__content table:not(.hold) tr,
+  .contents-wrapper .article-wrapper .article-template__content table:not(.hold) th,
+  .contents-wrapper .article-wrapper .article-template__content table:not(.hold) td {
     width: 100% !important;
     height: auto !important;
     display: block;
   }
-  .contents-wrapper .article-wrapper .article-template__content table {
+  .contents-wrapper .article-wrapper .article-template__content table:not(.hold) {
     left: 0;
   }
-  .contents-wrapper .article-wrapper .article-template__content table th,
-  .contents-wrapper .article-wrapper .article-template__content table tbody tr > :first-child {
+  .contents-wrapper .article-wrapper .article-template__content table:not(.hold) th,
+  .contents-wrapper .article-wrapper .article-template__content table:not(.hold) tbody tr > :first-child {
     padding: .5em 1em;
   }
-  .contents-wrapper .article-wrapper .article-template__content table td {
+  .contents-wrapper .article-wrapper .article-template__content table:not(.hold) td {
     padding: .5em 0 var(--margin-l );
   }
-  .contents-wrapper .article-wrapper .article-template__content table > tbody > :last-child > :last-child {
+  .contents-wrapper .article-wrapper .article-template__content table:not(.hold) > tbody > :last-child > :last-child {
     padding-bottom: 0;
   }
 }
