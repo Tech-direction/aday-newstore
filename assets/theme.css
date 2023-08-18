@@ -2191,7 +2191,7 @@ body,
 .contents-wrapper .article-wrapper .article-template__content h4 {
   padding-left: .5em;
   font-size: var(--font-m);
-  border-left: 5px solid rgb(var(--color-border));
+  border-left: 5px solid rgb(var(--color-black));
 }
 
 .contents-wrapper .article-wrapper .article-template__back:last-child {
