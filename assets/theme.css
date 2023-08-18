@@ -1947,7 +1947,7 @@ body,
 
 .contents-wrapper .page-menu {
   /*margin-top: var(--margin-section);*/
-  padding-top: 0!important;
+  /*padding-top: 0!important;*/
 }
 
 .contents-wrapper .page-menu .list-menu {
