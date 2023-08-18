@@ -2232,11 +2232,13 @@ body,
 }
 
 .contents-wrapper .article-wrapper .article-template__content table {
-  width: 100%;
+  width: calc(100% + var(--margin-s)*2);
   font-size: 1rem;
   border-collapse: separate;
   border-spacing: var(--margin-s);
   box-shadow: none;
+  position: relative;
+  left: calc(var(--margin-s) * -1);
 }
 
 .contents-wrapper .article-wrapper .article-template__content table th,
@@ -2258,6 +2260,10 @@ body,
   font-style: normal;
   color: rgb(var(--color-black));
   border: 0;
+}
+
+.contents-wrapper .article-wrapper .article-template__content li blockquote {
+  margin-top: .5rem;
 }
 
 
