@@ -2956,7 +2956,7 @@ body,
 }
 
 .contents-wrapper .customer tbody > :last-child > * {
-  border-bottom: none;
+  border-bottom: 0;
 }
 
 .contents-wrapper .customer thead:after,
@@ -2967,6 +2967,11 @@ body,
 .contents-wrapper .customer .table.customer-account tbody tr > *  {
   border-bottom-style: dashed;
 }
+
+.contents-wrapper .customer .table.customer-account tbody > :last-child > tr > * {
+  border-bottom: 1px solid rgb(var(--color-border));
+}
+
 
 /*.contents-wrapper .customer thead tr > :first-child,
 .contents-wrapper .customer tbody tr > :first-child {
@@ -3042,6 +3047,7 @@ body,
   display: flex;
 }
 
+/*
 .contents-wrapper .customer .table.customer-account tbody > :first-child td {
   border-top: 1px solid rgb(var(--color-border));
   display: flex;
@@ -3052,6 +3058,7 @@ body,
   border-bottom-style: solid;
   display: block !important;
 }
+*/
 
 .contents-wrapper .customer .table.customer-account td:before {
   content: attr(data-label);
