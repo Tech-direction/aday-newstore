@@ -2964,11 +2964,16 @@ body,
   display: none;
 }
 
+.contents-wrapper .customer .table.customer-account tbody > :first-child td {
+  border-top: 1px solid rgb(var(--color-border));
+  display: flex;
+}
+
 .contents-wrapper .customer .table.customer-account tbody tr > *  {
   border-bottom-style: dashed;
 }
 
-.contents-wrapper .customer .table.customer-account tbody > :last-child > tr > * {
+.contents-wrapper .customer .table.customer-account tbody > :last-child > * {
   border-bottom: 1px solid rgb(var(--color-border));
 }
 
