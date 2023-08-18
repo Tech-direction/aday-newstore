@@ -1970,7 +1970,7 @@ body,
   border-radius: 10em;
   background-color: rgb(var(--color-primary));
   display: flex;
-  gap: var(--margin-s);
+  gap: .5em;
   align-items: center;
   justify-content: center;
 }
