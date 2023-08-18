@@ -2959,12 +2959,12 @@ body,
   border-bottom: none;
 }
 
-/*.contents-wrapper .customer thead:after,
+.contents-wrapper .customer thead:after,
 .contents-wrapper .customer tfoot:before {
   display: none;
 }
 
-.contents-wrapper .customer thead tr > :first-child,
+/*.contents-wrapper .customer thead tr > :first-child,
 .contents-wrapper .customer tbody tr > :first-child {
   position: relative;
   overflow-x: hidden;
