@@ -2290,6 +2290,10 @@ body,
   .contents-wrapper .article-wrapper .article-template__content table:not(.hold) > tbody > :last-child > :last-child {
     padding-bottom: 0;
   }
+  .contents-wrapper .article-wrapper .article-template__content table.hold th,
+  .contents-wrapper .article-wrapper .article-template__content table.hold tbody tr > :first-child {
+    width: auto;
+  }
 }
 
 
