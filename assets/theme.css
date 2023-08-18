@@ -2277,6 +2277,9 @@ body,
     height: auto !important;
     display: block;
   }
+  .contents-wrapper .article-wrapper .article-template__content table {
+    left: 0;
+  }
   .contents-wrapper .article-wrapper .article-template__content table th,
   .contents-wrapper .article-wrapper .article-template__content table tbody tr > :first-child {
     padding: .5em 1em;
