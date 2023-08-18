@@ -2860,6 +2860,9 @@ body,
 }
 
 @media screen and (max-width: 989px) {
+  .contents-wrapper .collection-section-been-wrapper .product-list:not(.product-ranking) {
+    justify-content: flex-start;
+  }
   .contents-wrapper .product-ranking {
     padding-bottom: 0;
   }
