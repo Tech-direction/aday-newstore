@@ -2955,8 +2955,8 @@ body,
   display: none;
 }
 
-.contents-wrapper .customer thead tr > :first-child:after,
-.contents-wrapper .customer tbody tr > :first-child:after {
+.contents-wrapper .customer thead tr > :first-child,
+.contents-wrapper .customer tbody tr > :first-child {
   position: relative;
   overflow-x: hidden;
 }
