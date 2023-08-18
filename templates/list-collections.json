@@ -216,7 +216,7 @@
     "89f0ec6a-2654-487a-84f5-699fd23386fd": {
       "type": "featured-collection-been",
       "settings": {
-        "section_id": "",
+        "section_id": "decaf",
         "section_heading": "ディカフェ",
         "heading_size": "xl",
         "section_sub_heading": "DECAF",
@@ -224,9 +224,9 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "",
-        "products_to_show": 4,
-        "columns_desktop": 4,
+        "collection": "ディカフェのコーヒー豆",
+        "products_to_show": 25,
+        "columns_desktop": 3,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
