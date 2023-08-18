@@ -1981,8 +1981,9 @@ body,
 }
 
 @media screen and (max-width: 989px) {
-  .contents-wrapper .page-menu .list-menu {
-    gap: var(--margin) !important;
+  .contents-wrapper .page-menu .list-menu li,
+  .contents-wrapper .page-menu .list-menu a {
+    width: 100%;
   }
 }
 
