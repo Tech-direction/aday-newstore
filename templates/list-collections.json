@@ -59,7 +59,7 @@
           "type": "column",
           "settings": {
             "link_label": "ディカフェ",
-            "link": ""
+            "link": "#decaf"
           }
         }
       },
