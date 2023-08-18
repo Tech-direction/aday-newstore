@@ -2948,8 +2948,6 @@ body,
 
 .contents-wrapper .customer tr {
   border: 0;
-  position: relative;
-  display: block;
 }
 
 .contents-wrapper .customer thead:after,
@@ -2957,10 +2955,16 @@ body,
   display: none;
 }
 
-.contents-wrapper .customer thead tr:after,
-.contents-wrapper .customer tbody tr:after {
+.contents-wrapper .customer thead tr > :first-child:after,
+.contents-wrapper .customer tbody tr > :first-child:after {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.contents-wrapper .customer thead tr > :first-child:after,
+.contents-wrapper .customer tbody tr > :first-child:after {
   content: ' ';
-  width: 100%;
+  width: 100vw;
   border-bottom: 1px solid rgb(var(--color-border));
   display: block !important;
   position: absolute;
