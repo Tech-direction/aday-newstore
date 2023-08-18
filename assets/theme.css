@@ -1962,6 +1962,7 @@ body,
 }
 
 .contents-wrapper .page-menu .list-menu a {
+  width: 10em;
   padding: .5em 1.5em;
   font-size: var(--font-m);
   font-weight: 500;
