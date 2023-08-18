@@ -1971,9 +1971,11 @@ body,
   display: flex;
   gap: var(--margin-s);
   align-items: center;
+  justify-content: center;
 }
 
 .contents-wrapper .page-menu .list-menu a .icon {
+  height: 1.5em;
   fill: #fff;
 }
 
