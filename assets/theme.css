@@ -1958,11 +1958,11 @@ body,
   /*background-color: rgb(var(--color-primary));*/
   display: flex;
   justify-content: center;
-  gap: var(--margin-l);
+  gap: var(--margin-s);
 }
 
 .contents-wrapper .page-menu .list-menu a {
-  width: 10em;
+  width: 12em;
   padding: .5em 1.5em;
   font-size: var(--font-m);
   font-weight: 500;
