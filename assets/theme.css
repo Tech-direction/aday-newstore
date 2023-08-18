@@ -1968,7 +1968,8 @@ body,
   color: #fff;
   border-radius: 10em;
   background-color: rgb(var(--color-primary));
-  display: inline-block;
+  display: flex;
+  gap: var(--margin-s);
 }
 
 .contents-wrapper .page-menu .list-menu a .icon svg {
