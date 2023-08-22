@@ -1,5 +1,6 @@
-<div class="page-width collection-section-block">
-  
+<div class="page-width collection-section-block {% if section.settings.change_block !=blank %} section-block{% endif %}">
+
+  {% comment %}
   {%- if section.settings.image != blank -%}
   <div class="section-image collection-section-image">
     <div class="section__media media">{{
@@ -15,6 +16,7 @@
       }}</div>
   </div>
   {% endif %}
+  {% endcomment %}
 
   <div class="grid grid--2-col-desktop grid--gap-l valign-middle content-size-m subscription-detail-wrapper">
     <div class="grid__item">
@@ -27,7 +29,72 @@
       {% if section.settings.button-label !=blank %}
         <a href="{{ section.settings.button-link }}" class="button align-center">{{ section.settings.button-label }}</a>
       {% endif %}
+      <ul class="grid grid--3-col-desktop grid--3-col-tablet grid--gap-s subscription-feature-list">
+          {%- if settings.grid_item_1_heading != blank -%}
+            <li class="grid__item feature__item">
+              <figure>{{ settings.grid_item_1_img | image_url: width: 600 | image_tag:
+                                class: 'subscription-feature-media-1',
+                                widths: widths,
+                                height: logo_height,
+                                width: settings.logo_width,
+                                alt: logo_alt,
+                                sizes: sizes,
+                                preload: true
+                              }}
+              </figure>
+              <p class="heading">{{ settings.grid_item_1_heading }}</p>
+            </li>
+          {% endif %}
+          {%- if settings.grid_item_2_heading != blank -%}
+            <li class="grid__item feature__item">
+              <figure>{{ settings.grid_item_2_img | image_url: width: 600 | image_tag:
+                                class: 'subscription-feature-media-2',
+                                widths: widths,
+                                height: logo_height,
+                                width: settings.logo_width,
+                                alt: logo_alt,
+                                sizes: sizes,
+                                preload: true
+                              }}
+              </figure>
+              <p class="heading">{{ settings.grid_item_2_heading }}</p>
+            </li>
+          {% endif %}
+          {%- if settings.grid_item_3_heading != blank -%}
+            <li class="grid__item feature__item">
+              <figure>{{ settings.grid_item_3_img | image_url: width: 600 | image_tag:
+                                class: 'subscription-feature-media-3',
+                                widths: widths,
+                                height: logo_height,
+                                width: settings.logo_width,
+                                alt: logo_alt,
+                                sizes: sizes,
+                                preload: true
+                              }}
+              </figure>
+              <p class="heading">{{ settings.grid_item_3_heading }}</p>
+            </li>
+          {% endif %}
+      </ul>
     </div>
+    <div class="grid__item">
+      {%- if section.settings.image != blank -%}
+      <div class="section-image collection-section-image">
+        <div class="section__media media">{{
+            section.settings.image
+            | image_url: width: 3840
+            | image_tag:
+              loading: 'lazy',
+              width: section.settings.image.width,
+              height: image_height,
+              class: image_class,
+              sizes: sizes,
+              widths: widths
+          }}</div>
+      </div>
+      {% endif %}
+    </div>
+    {% comment %}
     <div class="grid__item">
       <ul class="grid grid--3-col-desktop grid--3-col-tablet grid--gap-s subscription-feature-list">
           {%- if settings.grid_item_1_heading != blank -%}
@@ -77,6 +144,7 @@
           {% endif %}
       </ul>
     </div>
+    {% endcomment %}
   </div>
 </div>
 
