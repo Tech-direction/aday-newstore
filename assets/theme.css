@@ -2765,6 +2765,12 @@ body,
 }
 
 
+.contents-wrapper .subscription-block .subscription-detail-wrapper {
+  padding: var(--margin-l);
+  background-color: rgb(var(--color-gray));
+}
+
+
 @media screen and (max-width: 989px) {
   .contents-wrapper .collection-section-image {
     margin-bottom: var(--margin);
@@ -2902,14 +2908,6 @@ body,
   background-color: rgb(var(--color-primary));
   display: block;
 }
-
-
-
-.collection-section-block.subscription-block {
-  padding: var(--margin-l);
-  background-color: rgb(var(--color-gray));
-}
-
 
 /*===============================================================
 
