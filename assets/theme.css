@@ -2807,7 +2807,7 @@ body,
   }
   .contents-wrapper .subscription-block .subscription-detail-wrapper .collection-section-image {
     margin-top: 0;
-    margin-bottom: var(--margin);
+    margin-bottom: var(--margin-l);
   }
 }
 
