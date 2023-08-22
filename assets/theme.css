@@ -2932,6 +2932,14 @@ body,
   display: block;
 }
 
+@media screen and (max-width: 989px) {
+  .contents-wrapper .collection-beens-list a {
+    padding: 0 var(--margin);
+  }
+}
+
+
+
 /*===============================================================
 
 	contact
