@@ -59,17 +59,17 @@
         "0e52a22e-a7bb-433e-8655-8d46fe5a64b6"
       ],
       "settings": {
-        "section_heading": "<p>焼きたてコーヒー豆の新鮮さと香りをお楽しみください<\/p>",
+        "section_heading": "<p>焼きたてコーヒー豆の新鮮さと<br\/>香りをお楽しみください<\/p>",
         "heading_size": "xl",
-        "section_sub_heading": "COFFEE BEANS",
-        "description": "<p>A day in the coffeeでは注文をいただいてから焙煎を行う<strong>注文焙煎<\/strong>を行なって、皆様にお届けしております。香り高いコーヒー豆の味わいをぜひお楽しみください。<\/p>"
+        "section_sub_heading": "",
+        "description": "<p>A day in the coffeeでは注文をいただいてから焙煎を行う<strong>注文焙煎<\/strong>を行なって、<br\/>皆様にお届けしております。香り高いコーヒー豆の味わいをぜひお楽しみください。<\/p>"
       }
     },
     "b466eac5-a569-47e9-9d52-c4968c8089ef": {
       "type": "collection-subscription-section",
       "settings": {
         "image": "shopify:\/\/shop_images\/gift2022_01.jpg",
-        "section_heading": "<p>コーヒー焙煎屋さんがお届けする、焼きたてコーヒー豆の定期便<\/p>",
+        "section_heading": "<p>コーヒー焙煎屋さんがお届けする、<br\/>焼きたてコーヒー豆の定期便<\/p>",
         "heading_size": "xl",
         "section_sub_heading": "SUBSCRIPTION",
         "description": "<p>コーヒー豆はやっぱり焼きたてが一番。コーヒーを飲むペースに合わせて、焼きたてのコーヒー豆を定期便でお届けします。<\/p>",
