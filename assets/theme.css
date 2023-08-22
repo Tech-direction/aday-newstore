@@ -4039,7 +4039,7 @@ body,
 }
 
 .huckleberry-subscription-detail-history-detail > :first-child {
-  width: 5em;
+  width: 6em;
 }
 
 .huckleberry-subscription-detail-schedule > main {
@@ -4341,6 +4341,9 @@ body,
   }
   .huckleberry-subscription-list-color #root .wrap .content.content-right > section > [class^="huckleberry-subscription-detail-"] + [class^="huckleberry-subscription-detail-"] {
     border-top: 1px solid rgb(var(--color-border));
+  }
+  .huckleberry-subscription-detail-history-detail > * {
+    text-align: left;
   }
 }
 
