@@ -26,9 +26,6 @@
       {% if section.settings.description !=blank %}
         {{ section.settings.description }}
       {% endif %}
-      {% if section.settings.button-label !=blank %}
-        <a href="{{ section.settings.button-link }}" class="button align-center">{{ section.settings.button-label }}</a>
-      {% endif %}
       <ul class="grid grid--3-col-desktop grid--3-col-tablet grid--gap-s subscription-feature-list">
           {%- if settings.grid_item_1_heading != blank -%}
             <li class="grid__item feature__item">
@@ -76,6 +73,9 @@
             </li>
           {% endif %}
       </ul>
+      {% if section.settings.button-label !=blank %}
+        <a href="{{ section.settings.button-link }}" class="button align-center">{{ section.settings.button-label }}</a>
+      {% endif %}
     </div>
     <div class="grid__item">
       {%- if section.settings.image != blank -%}
