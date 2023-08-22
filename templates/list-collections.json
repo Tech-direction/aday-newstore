@@ -147,7 +147,7 @@
         "description": "<p>コーヒーでそのお店の個性を出す。その方法としてA day in the coffee ではブレンドコーヒーをとても大事にしてます。産地や焙煎度合いをミックスして、コーヒーの魅力をより引き出すことができます。当店では、焙煎度合いで3種類「ライトブレンド」「ミディアムブレンド」「ストロングブレンド」と、季節ごとの「シーズンブレンド」の4種類ブレンドをご用意しています。ブレンドはコーヒーショップの顔のような存在。A day in the coffeeのブレンドをぜひ一度ご賞味ください。<br\/><\/p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "ブレンドのコーヒー豆",
+        "collection": "blend",
         "products_to_show": 25,
         "columns_desktop": 3,
         "full_width": false,
