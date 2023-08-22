@@ -61,14 +61,7 @@
   <div class="section-heading-wrapper section-container page-width {% if section.settings.change_box_layout !=blank %} type-reverse{% endif %}">
   {% if section.settings.section_heading !=blank %}
   <div class="heading__item">
-      {%- for collection in product.collections -%}
-        {% if collection.handle != "ranking" %}
-          {{ collection.handle }}
-          {% assign sub_heading = section.settings.collection.metafields.custom.subtitle  %}
-        {% endif %}
-      {% endfor %}
-          
-    <h2 class="heading type-vertical{% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %}" {% if sub_heading != blank %} data-sub_heading="{{ sub_heading}}" {% endif %}}">{{ section.settings.section_heading }}</h2>
+    <h2 class="heading type-vertical{% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %}" data-sub_heading="{{ section.settings.section_sub_heading }}">{{ section.settings.section_heading }}</h2>
   </div>
   {% endif %}
   
@@ -119,7 +112,12 @@
                   {{- block.settings.richtext -}}
                 </div>
               {%- when 'title' -%}
-                <h2 class="product__title {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+                {%- for collection in product.collections -%}
+                  {% if collection.handle != "ranking" %}
+                    {% assign sub_heading = section.settings.collection.metafields.custom.subtitle  %}
+                  {% endif %}
+                {% endfor %}
+                <h2 class="product__title {{ block.settings.heading_size }} type-sub_heading" {{ block.shopify_attributes }} {% if sub_heading != blank %} data-sub_heading="{{ sub_heading}}" {% endif %}}>
                   {%- if product.title != blank -%}
                     {{ product.title | escape }}
                   {%- else -%}
