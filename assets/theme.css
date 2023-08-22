@@ -2798,6 +2798,11 @@ body,
   .contents-wrapper .subscription-block .subscription-detail-wrapper {
     padding: var(--margin);
   }
+  .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list {
+    margin-top: 0;
+    margin-bottom: var(--margin);
+    order: 0;
+  }
 }
 
 
