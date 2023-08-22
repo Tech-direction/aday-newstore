@@ -2797,6 +2797,10 @@ body,
   }
   .contents-wrapper .subscription-block .subscription-detail-wrapper > .grid__item {
     padding: 0;
+    order: 1;
+  }
+  .contents-wrapper .subscription-block .subscription-detail-wrapper > :last-child {
+    order: 0;
   }
   .contents-wrapper .subscription-block .subscription-detail-wrapper {
     padding: var(--margin);
