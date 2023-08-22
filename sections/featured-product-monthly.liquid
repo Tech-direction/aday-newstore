@@ -33,7 +33,7 @@
   endif
 -%}
 
-{{  product | json }}
+{{  product.collections | json }}
 
 {% comment %} TODO: assign `product.selected_or_first_available_variant` to variable and replace usage to reduce verbosity {% endcomment %}
 
