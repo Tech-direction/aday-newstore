@@ -117,7 +117,7 @@
                     {% assign sub_heading = collection.metafields.custom.subtitle  %}
                   {% endif %}
                 {% endfor %}
-                <h2 class="product__title {{ block.settings.heading_size }} type-sub_heading" {{ block.shopify_attributes }} {% if sub_heading != blank %} data-sub_heading="{{ sub_heading}}" {% endif %}>
+                <h2 class="product__title {{ block.settings.heading_size }} heading type-sub_heading" {{ block.shopify_attributes }} {% if sub_heading != blank %} data-sub_heading="{{ sub_heading}}" {% endif %}>
                   {%- if product.title != blank -%}
                     {{ product.title | escape }}
                   {%- else -%}
