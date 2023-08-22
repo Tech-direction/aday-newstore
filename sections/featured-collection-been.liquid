@@ -58,7 +58,6 @@
     {% endif %}
 
     {% assign sub_heading = section.settings.collection.metafields.custom.subtitle  %}
-    {{ section.settings.collection.title }}
     
     <h2 class="heading type-sub_heading{% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %}" {% if sub_heading != blank %} data-sub_heading="{{ sub_heading}}" {% endif %}}>{{ section.settings.collection.title }}</h2>
     {{ section.settings.description }}
