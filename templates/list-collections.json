@@ -62,8 +62,9 @@
         "change_block": false,
         "section_heading": "<p>焼きたてコーヒー豆の新鮮さと<br\/>香りをお楽しみください<\/p>",
         "heading_size": "xl",
-        "section_sub_heading": "",
-        "description": "<p>A day in the coffeeでは注文をいただいてから焙煎を行う<strong>注文焙煎<\/strong>を行なって、<br\/>皆様にお届けしております。香り高いコーヒー豆の味わいをぜひお楽しみください。<\/p>"
+        "heading_text_align": "center",
+        "description": "<p>A day in the coffeeでは注文をいただいてから焙煎を行う<strong>注文焙煎<\/strong>を行なって、<br\/>皆様にお届けしております。香り高いコーヒー豆の味わいをぜひお楽しみください。<\/p>",
+        "description_text_align": "left"
       }
     },
     "b466eac5-a569-47e9-9d52-c4968c8089ef": {
