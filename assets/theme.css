@@ -2888,13 +2888,13 @@ body,
 ---------------------------------------------------------------*/
 
 .contents-wrapper .collection-beens-list a {
-  padding: var(--margin) var(--margin-s);
+  padding: var(--margin-s) var(--margin);
   text-align: center;
   color: #fff;
   font-size: var(--font-m);
   font-weight: 500;
   line-height: 1.4;
-  border-radius: var(--border-radius-box);
+  border-radius: 10em;
   background-color: rgb(var(--color-primary));
   display: block;
 }
