@@ -34,6 +34,9 @@
 -%}
 
 {{  product.collections | json }}
+{%- for collection in product.collections -%}
+  {{ collection.handle }}
+{% endfor %}
 
 {% comment %} TODO: assign `product.selected_or_first_available_variant` to variable and replace usage to reduce verbosity {% endcomment %}
 
