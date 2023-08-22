@@ -2780,6 +2780,11 @@ body,
 }
 
 
+.contents-wrapper .others-block .description + * {
+  margin-top: var(--margin);
+}
+
+
 @media screen and (max-width: 989px) {
   .contents-wrapper .collection-section-image {
     margin-bottom: var(--margin);
