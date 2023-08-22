@@ -2775,6 +2775,10 @@ body,
   margin-bottom: 0;
 }
 
+.contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list {
+  margin-top: var(--margin);
+}
+
 
 @media screen and (max-width: 989px) {
   .contents-wrapper .collection-section-image {
