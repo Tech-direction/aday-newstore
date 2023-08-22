@@ -101,7 +101,7 @@
         "description": "<p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパーゴなど、いまこの暗い巨きな石の建物のなかで考えていると、<\/p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "ブレンドのコーヒー豆",
+        "collection": "blend",
         "products_to_show": 25,
         "columns_desktop": 3,
         "full_width": false,
