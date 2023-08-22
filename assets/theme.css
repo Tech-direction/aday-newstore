@@ -4232,7 +4232,6 @@ body,
 }
 
 .huckleberry-subscription-list-color #root .wrap .content.content-right {
-  padding-bottom: calc(var(--margin) + 1rem);
   position: relative;
 }
 
@@ -4268,8 +4267,8 @@ body,
 .huckleberry-subscription-list-color #root .wrap .content.content-right > section .huckleberry-subscription-detail-btn-group:has(.huckleberry-subscription-detail-btn.cancel) {
   border: none;
   position: absolute;
+  top: 100%;
   right: 0;
-  bottom: 0;
 }
 
 .huckleberry-subscription-list-color #root .wrap .content.content-right > section .huckleberry-subscription-detail-btn.cancel {
