@@ -235,6 +235,19 @@
         "swipe_on_mobile": false,
         "box_gap": "default"
       }
+    },
+    "793bf923-d917-4523-ab4b-ee2c46577020": {
+      "type": "fuatured-collection-other",
+      "settings": {
+        "collection": "アレンジコーヒー",
+        "change_block": false,
+        "image": "shopify:\/\/shop_images\/drip_howto00.jpg",
+        "section_heading": "",
+        "heading_size": "l",
+        "heading_text_align": "left",
+        "description": "",
+        "description_text_align": "left"
+      }
     }
   },
   "order": [
@@ -246,6 +259,7 @@
     "1f8ec698-b23a-4ed8-8fd3-4eab6be698d2",
     "8c5d6e0d-3f26-461a-bbf3-05c407fe8d5e",
     "41117e49-4a0c-42df-b24b-11091e3e0718",
-    "89f0ec6a-2654-487a-84f5-699fd23386fd"
+    "89f0ec6a-2654-487a-84f5-699fd23386fd",
+    "793bf923-d917-4523-ab4b-ee2c46577020"
   ]
 }
