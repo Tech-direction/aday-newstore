@@ -240,7 +240,7 @@
         "description": "<p>プランテーションに代表されるような大規模農園で栽培されることが多く、生産量が多いことから味わいの印象が平均的なコーヒー豆の多い地域です。ブラジルのコーヒー豆のようにブレンド豆のベースに使われることが多いですが、一部ではコロンビア原種（ティピカ）のコーヒー豆や、南米西側エリアの山岳地域国のボリビアなどで栽培しているスペシャルティコーヒー豆などでは、コクも深く希少価値の高い豆も生産されています。<\/p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "南米のコーヒー豆",
+        "collection": "south_american",
         "products_to_show": 25,
         "columns_desktop": 3,
         "full_width": false,
