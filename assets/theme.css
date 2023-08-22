@@ -2887,8 +2887,12 @@ body,
 /*  collection page / beens list
 ---------------------------------------------------------------*/
 
+.contents-wrapper .collection-beens-list {
+  margin-top: var(--margin);
+}
+
 .contents-wrapper .collection-beens-list a {
-  padding: var(--margin-s) var(--margin);
+  padding: var(--margin);
   text-align: center;
   color: #fff;
   font-size: var(--font-m);
