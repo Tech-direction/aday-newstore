@@ -2770,6 +2770,10 @@ body,
   background-color: rgb(var(--color-gray));
 }
 
+.contents-wrapper .subscription-block .subscription-detail-wrapper .collection-section-image {
+  margin-bottom: 0;
+}
+
 
 @media screen and (max-width: 989px) {
   .contents-wrapper .collection-section-image {
