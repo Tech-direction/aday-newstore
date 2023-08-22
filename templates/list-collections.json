@@ -240,6 +240,8 @@
       "type": "fuatured-collection-other",
       "settings": {
         "collection": "arrange",
+        "products_to_show": 25,
+        "columns_desktop": 3,
         "change_block": false,
         "image": "shopify:\/\/shop_images\/drip_howto00.jpg",
         "section_heading": "",
