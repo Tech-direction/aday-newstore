@@ -178,7 +178,7 @@
         "description": "<p>コーヒーの起源となっている地域。アフリカの大地を思わせるようなスパイス感のある豆が多く、特にエチオピアのコーヒーは風味が独特です。一方、ケニアはコク、風味ともに十分で昔から人気の高いコーヒー豆です。<\/p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "アフリカのコーヒー豆",
+        "collection": "african",
         "products_to_show": 25,
         "columns_desktop": 3,
         "full_width": false,
