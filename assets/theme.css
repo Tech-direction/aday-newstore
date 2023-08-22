@@ -2934,7 +2934,7 @@ body,
 
 @media screen and (max-width: 989px) {
   .contents-wrapper .collection-beens-list a {
-    padding: 0 var(--margin);
+    padding: var(--margin) 0;
   }
 }
 
