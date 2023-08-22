@@ -39,7 +39,7 @@
 
 <div class="collection-section-been content-size-m">
   
-  {% if section.settings.section_heading !=blank %}
+  
   <div class="heading__item">
   {%- if section.settings.image != blank -%}
     <div class="section-image collection-list-image">
@@ -63,7 +63,7 @@
     <h2 class="heading type-sub_heading{% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %}" {% if sub_heading != blank %} data-sub_heading="{{ sub_heading}}" {% endif %}}>{{ section.settings.collection.title }}</h2>
     {{ section.settings.description }}
   </div>
-  {% endif %}
+
   <div class="color-{{ section.settings.color_scheme }} isolate gradient content__item">
     <div class="collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
       
