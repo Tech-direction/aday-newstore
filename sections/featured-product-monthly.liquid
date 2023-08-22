@@ -114,7 +114,7 @@
               {%- when 'title' -%}
                 {%- for collection in product.collections -%}
                   {% if collection.handle != "ranking" %}
-                    {% assign sub_heading = section.settings.collection.metafields.custom.subtitle  %}
+                    {% assign sub_heading = collection.handle.metafields.custom.subtitle  %}
                   {% endif %}
                 {% endfor %}
                 <h2 class="product__title {{ block.settings.heading_size }} type-sub_heading" {{ block.shopify_attributes }} {% if sub_heading != blank %} data-sub_heading="{{ sub_heading}}" {% endif %}>
