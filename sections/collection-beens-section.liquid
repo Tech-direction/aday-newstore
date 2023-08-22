@@ -22,7 +22,7 @@
         <h2 class="heading type-sub_heading {% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %}{%- if section.settings.heading_text_align != blank -%} align-{{ section.settings.heading_text_align }} {% endif %}" data-sub_heading="{{ section.settings.section_sub_heading }}">{{ section.settings.section_heading }}</h2>
       {% endif %}
       {% if section.settings.description !=blank %}
-        {{ section.settings.description | class: "test" }}
+        {{ section.settings.description }}
       {% endif %}
       {% if section.settings.button-label !=blank %}
         <a href="{{ section.settings.button-link }}" class="button">{{ section.settings.button-label }}</a>
