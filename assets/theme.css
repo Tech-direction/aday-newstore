@@ -2904,6 +2904,13 @@ body,
 }
 
 
+
+.collection-section-block.subscription-block {
+  padding: var(--margin-l);
+  background-color: rgb(var(--color-gray));
+}
+
+
 /*===============================================================
 
 	contact
