@@ -2767,6 +2767,7 @@ body,
 
 .contents-wrapper .subscription-block .subscription-detail-wrapper {
   padding: var(--margin-l);
+  border-radius: var(--border-radius-box);
   background-color: rgb(var(--color-gray));
 }
 
