@@ -3,9 +3,9 @@
     "f70a0cc6-0eca-46fd-91b2-cd193c00ac1c": {
       "type": "main-section-header",
       "settings": {
-        "section_heading": "オンラインショップ",
+        "section_heading": "焼きたてのコーヒー豆",
         "heading_size": "xl",
-        "section_sub_heading": "ONLINESHOP",
+        "section_sub_heading": "COFFEE BEANS",
         "change_box_layout": false,
         "description": "",
         "show_description": false,
@@ -63,7 +63,7 @@
         "section_heading": "<p>焼きたてコーヒー豆の新鮮さと<br\/>香りをお楽しみください<\/p>",
         "heading_size": "xl",
         "heading_text_align": "center",
-        "description": "<p>A day in the coffeeでは注文をいただいてから焙煎を行う<strong>注文焙煎<\/strong>を行なって、<br\/>皆様にお届けしております。香り高いコーヒー豆の味わいをぜひお楽しみください。<\/p>",
+        "description": "<p>A day in the coffeeでは注文をいただいてから焙煎を行う<strong>注文焙煎<\/strong>を行なって、皆様にお届けしております。香り高いコーヒー豆の味わいをぜひお楽しみください。<br\/><br\/>また、コーヒーの定期便もご用意しております。定期便に興味のある方は以下の「【コーヒー定期便】を詳しく見る」よりご確認ください。<\/p>",
         "description_text_align": "left"
       }
     },
@@ -214,7 +214,7 @@
         "section_id": "decaf",
         "heading_size": "xl",
         "change_box_layout": false,
-        "description": "<p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパーゴなど、いまこの暗い巨きな石の建物のなかで考えていると、<\/p>",
+        "description": "<p>A day in the coffeeではディカフェの豆もご用意しております。事情によりカフェイン入りのコーヒーが飲めない方にも、ディカフェのコーヒー豆を焼きたてでお届けしております。<\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "decaf",
@@ -248,7 +248,7 @@
         "section_heading": "",
         "heading_size": "xl",
         "heading_text_align": "left",
-        "description": "<p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパーゴなど、いまこの暗い巨きな石の建物のなかで考えていると、<\/p>",
+        "description": "<p>まずはお気軽にコーヒーを楽しむ手段として、ドリップバッグやアイスコーヒーバッグなどの商品もご用意しております。こちらの商品は店舗で1つずつパックして生産しており、なるべく焙煎鮮度の高いコーヒー豆をお届けできるよう努めています。コーヒーの道具がない方も、お気軽にお楽しみいただけます。ひと味違う香り高いアレンジコーヒーも是非ご賞味ください<\/p>",
         "description_text_align": "left"
       }
     }
