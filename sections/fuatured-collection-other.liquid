@@ -1,0 +1,294 @@
+<div class="page-width collection-section-block others-block {% if section.settings.change_block !=blank %} section-block{% endif %}">
+  
+  {%- if section.settings.image != blank -%}
+  <div class="section-image collection-section-image">
+    <div class="section__media media">{{
+        section.settings.image
+        | image_url: width: 3840
+        | image_tag:
+          loading: 'lazy',
+          width: section.settings.image.width,
+          height: image_height,
+          class: image_class,
+          sizes: sizes,
+          widths: widths
+      }}</div>
+  </div>
+  {% endif %}
+
+  <div class=" {% comment %}grid grid--2-col-desktop grid--gap-l valign-middle{% endcomment %}page-width content-size-m">
+
+      {% assign sub_heading = section.settings.collection.metafields.custom.subtitle  %}
+      <h2 class="heading type-sub_heading{% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %}" {% if sub_heading != blank %} data-sub_heading="{{ sub_heading}}" {% endif %}}>{{ section.settings.collection.title }}</h2>
+      
+      {% if section.settings.description !=blank %}
+        <div class="{%- if section.settings.heading_text_align != blank -%} align-{{ section.settings.heading_text_align }} {% endif %} description">
+        {{ section.settings.description }}
+        </div>
+      {% endif %}
+
+
+    <div class="color-{{ section.settings.color_scheme }} isolate gradient content__item">
+    <div class="collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
+      
+  
+      {% assign grid_gap = ""  %}
+      {% if section.settings.box_gap != "default" %}
+        {% assign grid_gap = 'grid--gap-' | append: section.settings.box_gap %}
+      {% endif %}
+  
+      <slider-component class="slider-mobile-gutter{% if section.settings.full_width %} slider-component-full-width{% endif %}{% if show_mobile_slider == false %} page-width{% endif %}{% if show_desktop_slider == false and section.settings.full_width == false %} page-width-desktop{% endif %}{% if show_desktop_slider %} slider-component-desktop{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        <ul
+          id="Slider-{{ section.id }}"
+          class="grid product-grid contains-card contains-card--product{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid--{{ section.settings.columns_desktop }}-col-desktop{% if section.settings.collection == blank %} grid--2-col-tablet-down{% else %} grid--{{ section.settings.columns_mobile }}-col-tablet-down{% endif %}{% if show_mobile_slider or show_desktop_slider %} slider{% if show_desktop_slider %} slider--desktop{% endif %}{% if show_mobile_slider %} slider--tablet grid--peek{% endif %}{% endif %} {{ grid_gap }} product-list"
+          role="list"
+          aria-label="{{ 'general.slider.name' | t }}">
+          {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
+            <li
+              id="Slide-{{ section.id }}-{{ forloop.index }}"
+              class="grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} product__item"
+              {% if settings.animations_reveal_on_scroll %}
+              data-cascade
+              style="--animation-order: {{ forloop.index }};"
+              {% endif %}>
+              {% render 'card-product'
+               , card_product: product,
+               media_aspect_ratio: section.settings.image_ratio,
+               image_shape: section.settings.image_shape,
+               show_secondary_image: section.settings.show_secondary_image,
+               show_vendor: section.settings.show_vendor,
+               show_rating: section.settings.show_rating,
+               show_quick_add: section.settings.enable_quick_add,
+               section_id: section.id,
+               forloop_id: forloop.index %}
+            </li>
+          {%- else -%}
+            {%- for i in (1..4) -%}
+              <li
+                class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                {% if settings.animations_reveal_on_scroll %}
+                data-cascade
+                style="--animation-order: {{ forloop.index }};"
+                {% endif %}>
+                {%- assign placeholder_image = 'product-apparel-' | append: forloop.rindex -%}
+                {% render 'card-product'
+                 , show_vendor: section.settings.show_vendor,
+                 placeholder_image: placeholder_image %}
+              </li>
+            {%- endfor -%}
+          {%- endfor -%}
+        </ul>
+        {%- if show_mobile_slider or show_desktop_slider -%}
+          <div class="slider-buttons no-js-hidden">
+            <button
+              type="button"
+              class="slider-button slider-button--prev"
+              name="previous"
+              aria-label="{{ 'general.slider.previous_slide' | t }}"
+              aria-controls="Slider-{{ section.id }}">
+              {% render 'icon-caret' %}
+            </button>
+            <div class="slider-counter caption">
+              <span class="slider-counter--current">1</span>
+              <span aria-hidden="true">
+                /
+              </span>
+              <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
+              <span class="slider-counter--total">{{ products_to_display }}</span>
+            </div>
+            <button
+              type="button"
+              class="slider-button slider-button--next"
+              name="next"
+              aria-label="{{ 'general.slider.next_slide' | t }}"
+              aria-controls="Slider-{{ section.id }}">
+              {% render 'icon-caret' %}
+            </button>
+          </div>
+        {%- endif -%}
+      </slider-component>
+  
+      {%- if section.settings.show_view_all and more_in_collection -%}
+        <div class="center collection__view-all{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+          <a
+            href="{{ section.settings.collection.url }}"
+            class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}"
+            aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title }}">
+            {{ 'sections.featured_collection.view_all' | t }}
+          </a>
+        </div>
+      {%- endif -%}
+      {% if section.settings.image_shape == 'arch' %}
+        {% render 'mask-arch' %}
+      {%- endif -%}
+    </div>
+  </div>
+      
+      
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "商品一覧（その他）",
+    "tag": "section",
+    "class": "section",
+    "disabled_on": {
+      "groups": ["header", "footer"]
+    },
+    "settings": [
+      {
+        "type": "collection",
+        "id": "collection",
+        "label": "t:sections.featured-collection.settings.collection.label"
+      },
+      {
+        "type": "range",
+        "id": "products_to_show",
+        "min": 2,
+        "max": 25,
+        "step": 1,
+        "default": 4,
+        "label": "t:sections.featured-collection.settings.products_to_show.label"
+      }, {
+        "type": "range",
+        "id": "columns_desktop",
+        "min": 1,
+        "max": 5,
+        "step": 1,
+        "default": 4,
+        "label": "t:sections.featured-collection.settings.columns_desktop.label"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.featured-collection.settings.header_mobile.content"
+      }, {
+        "type": "select",
+        "id": "columns_mobile",
+        "default": "2",
+        "label": "t:sections.featured-collection.settings.columns_mobile.label",
+        "options": [
+          {
+            "value": "1",
+            "label": "t:sections.featured-collection.settings.columns_mobile.options__1.label"
+          }, {
+            "value": "2",
+            "label": "t:sections.featured-collection.settings.columns_mobile.options__2.label"
+          }
+        ]
+      },
+      {
+      "type": "checkbox",
+      "id": "change_block",
+      "default": false,
+      "label": "セクションを解除する（セクション間の余白を狭める）"
+    },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "エリア画像"
+      },
+      {
+        "type": "richtext",
+        "id": "section_heading",
+        "label": "見出し"
+      },
+      {
+        "type": "select",
+        "id": "heading_size",
+        "options": [
+          {
+            "value": "default",
+            "label": "t:sections.all.heading_size.options__1.label"
+          }, {
+            "value": "m",
+            "label": "t:sections.all.heading_size.options__2.label"
+          }, {
+            "value": "l",
+            "label": "t:sections.all.heading_size.options__3.label"
+          }, {
+            "value": "xl",
+            "label": "最大"
+          }
+        ],
+        "default": "l",
+        "label": "t:sections.all.heading_size.label"
+      },
+      {
+        "type": "select",
+        "id": "heading_text_align",
+        "options": [
+          {
+            "value": "left",
+            "label": "左寄せ"
+          },
+          {
+            "value": "center",
+            "label": "中央寄せ"
+          },
+          {
+            "value": "right",
+            "label": "右寄せ"
+          }
+        ],
+        "default": "left",
+        "label": " 見出し行揃え"
+      },
+      {
+        "type": "richtext",
+        "id": "description",
+        "label": "t:sections.featured-collection.settings.description.label"
+      },
+      {
+        "type": "select",
+        "id": "description_text_align",
+        "options": [
+          {
+            "value": "left",
+            "label": "左寄せ"
+          },
+          {
+            "value": "center",
+            "label": "中央寄せ"
+          },
+          {
+            "value": "right",
+            "label": "右寄せ"
+          }
+        ],
+        "default": "left",
+        "label": " 説明行揃え"
+      }
+    ],
+    "blocks": [
+    {
+      "type": "column",
+      "name": "t:sections.multicolumn.blocks.column.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "link_label",
+          "label": "t:sections.multicolumn.blocks.column.settings.link_label.label"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "t:sections.multicolumn.blocks.column.settings.link.label"
+        }
+      ]
+    }
+  ],
+    "presets": [
+      {
+        "name": "商品一覧（その他）"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+

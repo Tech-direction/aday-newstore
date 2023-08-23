@@ -39,7 +39,7 @@
 
 <div class="collection-section-been content-size-m">
   
-  {% if section.settings.section_heading !=blank %}
+  
   <div class="heading__item">
   {%- if section.settings.image != blank -%}
     <div class="section-image collection-list-image">
@@ -56,11 +56,13 @@
         }}</div>
     </div>
     {% endif %}
+
+    {% assign sub_heading = section.settings.collection.metafields.custom.subtitle  %}
     
-    <h2 class="heading type-sub_heading{% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %}" data-sub_heading="{{ section.settings.section_sub_heading }}">{{ section.settings.section_heading }}</h2>
+    <h2 class="heading type-sub_heading{% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %}" {% if sub_heading != blank %} data-sub_heading="{{ sub_heading}}" {% endif %}}>{{ section.settings.collection.title }}</h2>
     {{ section.settings.description }}
   </div>
-  {% endif %}
+
   <div class="color-{{ section.settings.color_scheme }} isolate gradient content__item">
     <div class="collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
       
@@ -180,11 +182,6 @@
         "label": "ID（ページ内リンク）"
       },
       {
-        "type": "text",
-        "id": "section_heading",
-        "label": "見出し"
-      },
-      {
         "type": "select",
         "id": "heading_size",
         "options": [
@@ -204,11 +201,6 @@
         ],
         "default": "l",
         "label": "t:sections.all.heading_size.label"
-      },
-      {
-        "type": "text",
-        "id": "section_sub_heading",
-        "label": "見出し（英語）"
       },
       {
         "type": "checkbox",

@@ -36,7 +36,7 @@
       <h1 class="heading type-vertical size-xl " data-sub_heading="ORDERS">{{ 'customer.orders.title' | t }}</h1>
     </div>
 
-    <div class="content__item">
+    <div class="content__item orders_list">
       {% paginate customer.orders by 20 %}
         {%- if customer.orders.size > 0 -%}
 
