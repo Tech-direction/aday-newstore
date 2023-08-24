@@ -123,7 +123,7 @@
     "1f8ec698-b23a-4ed8-8fd3-4eab6be698d2": {
       "type": "featured-collection-been",
       "settings": {
-        "image": "shopify:\/\/shop_images\/image_africa.jpg",
+        "image": "shopify:\/\/shop_images\/image_africa2.jpg",
         "section_id": "african",
         "heading_size": "xl",
         "change_box_layout": true,
@@ -152,7 +152,7 @@
     "8c5d6e0d-3f26-461a-bbf3-05c407fe8d5e": {
       "type": "featured-collection-been",
       "settings": {
-        "image": "shopify:\/\/shop_images\/image_middle_4d6ab4b7-d8c0-4ccb-a502-fd96ad673edd.jpg",
+        "image": "shopify:\/\/shop_images\/image_middle2.jpg",
         "section_id": "central_american",
         "heading_size": "xl",
         "change_box_layout": false,
@@ -181,7 +181,7 @@
     "41117e49-4a0c-42df-b24b-11091e3e0718": {
       "type": "featured-collection-been",
       "settings": {
-        "image": "shopify:\/\/shop_images\/image_south.jpg",
+        "image": "shopify:\/\/shop_images\/image_south2.jpg",
         "section_id": "south_american",
         "heading_size": "xl",
         "change_box_layout": true,
