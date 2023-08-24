@@ -123,7 +123,7 @@
     "1f8ec698-b23a-4ed8-8fd3-4eab6be698d2": {
       "type": "featured-collection-been",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Africa.jpg",
+        "image": "shopify:\/\/shop_images\/image_africa.jpg",
         "section_id": "african",
         "heading_size": "xl",
         "change_box_layout": true,
