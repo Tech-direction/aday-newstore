@@ -287,7 +287,8 @@ a,
   text-decoration: none;
   border-radius: 4px;
   border: none;
-  background-color: rgb(var(--color-black));
+  /*background-color: rgb(var(--color-black));*/
+  background-color: #a9a9a9;
   transition: all var(--duration-long) ease;
   display: flex;
   align-items: center;
