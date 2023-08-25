@@ -847,9 +847,9 @@ a,
   border-left: none;
 }
 
-.contents-wrapper variant-radios fieldset .field:has(input:checked) {
+/*.contents-wrapper variant-radios fieldset .field:has(input:checked) {
   background-color: rgb(var(--color-black));
-}
+}*/
 
 .contents-wrapper variant-radios fieldset label {
   width: 100%;
@@ -867,7 +867,7 @@ a,
 
 .contents-wrapper variant-radios fieldset input:checked + label {
   color: #fff !important;
-  background-color: rgb(var(--color-gray));
+  background-color: rgb(var(--color-gray)) !important;
 }
 
 /*  birthday
