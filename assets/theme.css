@@ -3126,7 +3126,7 @@ body,
 
 .contents-wrapper .customer .table .item_header > p,
 .contents-wrapper .customer .table .item_header > a {
-  font-size: var(--font-m);
+  font-size: var(--font-m) !important;
 }
 
 .contents-wrapper .customer .table .cell_data .item_header {
