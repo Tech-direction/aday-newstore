@@ -7,7 +7,7 @@
 :root {
   --color-black: 52,43,43;
   --color-primary: 198,68,70;
-  --color-gray: 245,245,245;
+  --color-gray-light: 245,245,245;
   --color-border: 175,175,175;
   --font-xl: 2rem;
   --font-l: 1.5rem;
@@ -1279,7 +1279,7 @@ body,
   padding: .75em;
   text-align: center;
   border-radius: 10em;
-  background-color: rgb(var(--color-gray));
+  background-color: rgb(var(--color-gray-light));
 }
 
 .contents-wrapper .header__icon {
@@ -1350,7 +1350,7 @@ body,
   font-size: .875em;
   vertical-align: middle;
   color: rgb(var(--color-primary));
-  background-color: rgb(var(--color-gray));
+  background-color: rgb(var(--color-gray-light));
   border-bottom-left-radius: calc(var(--border-radius-box)/2);
   border-bottom-right-radius: calc(var(--border-radius-box)/2);
   display: flex;
@@ -1421,7 +1421,7 @@ body,
   }
   .contents-wrapper .menu-drawer .menu-drawer__menu-item--active,
   .contents-wrapper .menu-drawer a:hover {
-    background-color: rgb(var(--color-gray)) !important;
+    background-color: rgb(var(--color-gray-light)) !important;
     opacity: 1 !important;
   }
   .contents-wrapper .menu-drawer__navigation,
@@ -1866,7 +1866,7 @@ body,
 
 .contents-wrapper .subscription-feature-list .feature__item.type-gray {
   color: rgb(var(--color-black));
-  background-color: rgb(var(--color-gray));
+  background-color: rgb(var(--color-gray-light));
 }
 
 .contents-wrapper .subscription-feature-list .feature__item > * {
@@ -2269,7 +2269,7 @@ body,
 .contents-wrapper .article-wrapper .article-template__content table th,
 .contents-wrapper .article-wrapper .article-template__content table tbody tr > :first-child {
   width: 20em;
-  background-color: rgb(var(--color-gray));
+  background-color: rgb(var(--color-gray-light));
 }
 
 .contents-wrapper .article-wrapper .article-template__content blockquote {
@@ -2347,7 +2347,7 @@ body,
 .contents-wrapper .blog-articles-news .article__news {
   padding: var(--margin-l);
   border-radius: var(--border-radius-box);
-  background-color: rgb(var(--color-gray));
+  background-color: rgb(var(--color-gray-light));
 }
 
 .contents-wrapper .blog-articles-news .article__news .article-wrapper {
@@ -2457,7 +2457,7 @@ body,
 
 .contents-wrapper .product__pickup-availabilities {
   /*border-top: 1px solid rgb(var(--color-border));*/
-  background-color: rgb(var(--color-gray));
+  background-color: rgb(var(--color-gray-light));
 }
 
 .contents-wrapper .pickup-availability-preview {
@@ -2636,7 +2636,7 @@ body,
 .contents-wrapper .product-list .grid__item {
   padding: var(--margin);
   border-radius: var(--border-radius-box);
-  background-color: rgb(var(--color-gray));
+  background-color: rgb(var(--color-gray-light));
   position: relative;
 }
 
@@ -2701,7 +2701,7 @@ body,
 	line-height: 1;
 	border-radius: 10em;
 	letter-spacing: 0;
-	background-color: rgb(var(--color-gray));
+	background-color: rgb(var(--color-gray-light));
 	display: inline-block;
   position: absolute;
   top: .25em;
@@ -2772,7 +2772,7 @@ body,
 .contents-wrapper .subscription-block .subscription-detail-wrapper {
   padding: var(--margin-l);
   border-radius: var(--border-radius-box);
-  background-color: rgb(var(--color-gray));
+  background-color: rgb(var(--color-gray-light));
 }
 
 .contents-wrapper .subscription-block .subscription-detail-wrapper .collection-section-image {
@@ -2962,7 +2962,7 @@ body,
 .contents-wrapper .contact-wrapper {
   padding: var(--margin-l);
   border-radius: var(--border-radius-box);
-  background-color: rgb(var(--color-gray));
+  background-color: rgb(var(--color-gray-light));
 }
 
 .contents-wrapper .contact-wrapper .contact__button {
@@ -2995,7 +2995,7 @@ body,
   padding: var(--margin);
   border-radius: var(--border-radius-box);
   border: none;
-  background-color: rgb(var(--color-gray));
+  background-color: rgb(var(--color-gray-light));
 }
 
 .contents-wrapper .customer_block + .customer_block {
@@ -3151,7 +3151,7 @@ body,
   font-size: var(--font-s);
   line-height: 1;
   border: 1px solid rgb(var(--color-border));
-  background-color: rgb(var(--color-gray));
+  background-color: rgb(var(--color-gray-light));
 }
 
 .contents-wrapper .customer .table.customer-account tbody td {
@@ -3420,7 +3420,7 @@ body,
 }
 
 .contents-wrapper .customer .address-list .grid__item.default {
-  background-color: rgb(var(--color-gray));
+  background-color: rgb(var(--color-gray-light));
   order: 0;
 }
 
@@ -3679,7 +3679,7 @@ body,
 
 .contents-wrapper .cart__footer [role="presentation"] [role="tab"] {
   border: 0;
-  background-color: rgb(var(--color-gray));
+  background-color: rgb(var(--color-gray-light));
 }
 
 .contents-wrapper .cart__footer [role="presentation"] [role="tab"][aria-selected="true"] {
@@ -3750,7 +3750,7 @@ body,
 .contents-wrapper .cart-notification .cart-notification-product {
   margin-bottom: var(--margin);
   padding: var(--margin);
-  background-color: rgb(var(--color-gray));
+  background-color: rgb(var(--color-gray-light));
   gap: var(--margin);
 }
 
@@ -3886,7 +3886,7 @@ body,
 .grid-collection .grid-product {
   padding: var(--margin);
   border-radius: var(--border-radius-box);
-  background-color: rgb(var(--color-gray));
+  background-color: rgb(var(--color-gray-light));
 }
 
 .grid-collection .grid-product > *,
@@ -4009,7 +4009,7 @@ body,
 .contents-wrapper #boxContent .sc-jRQAMF {
   padding: var(--margin);
   border-radius: var(--border-radius-box);
-  background-color: rgb(var(--color-gray));
+  background-color: rgb(var(--color-gray-light));
 }
 
 .contents-wrapper #boxContent .eRnhep.eRnhep.eRnhep .sc-gKckTs {
@@ -4175,7 +4175,7 @@ body,
 .huckleberry-subscription-list-color #root article.subscription-history {
   padding: var(--margin);
   border-radius: var(--border-radius-box);
-  background-color: rgb(var(--color-gray));
+  background-color: rgb(var(--color-gray-light));
 }
 
 .huckleberry-subscription-list-color #root article.subscription-history .huckleberry-subscription-list-detail {
@@ -4243,7 +4243,7 @@ body,
 .huckleberry-subscription-list-color #root .wrap .content.content-left {
   padding: var(--margin);
   border-radius: var(--border-radius-box);
-  background-color: rgb(var(--color-gray));
+  background-color: rgb(var(--color-gray-light));
   display: flex;
   gap: var(--margin);
   flex-wrap: wrap;
