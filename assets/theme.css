@@ -3199,7 +3199,7 @@ body,
     display: none !important;
   }
   .contents-wrapper .customer .table td {
-    padding: 1em 0;
+    padding: 0;
   }
   .contents-wrapper .customer .table td:before {
     width: 7em;
