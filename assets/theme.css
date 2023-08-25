@@ -2670,6 +2670,9 @@ body,
   .contents-wrapper .product-list {
     gap: var(--margin) !important;
   }
+  .contents-wrapper .product-list .product__item .card__information .product__view-details {
+    font-size: var(--font-xs) !important;
+  }
 }
 
 
