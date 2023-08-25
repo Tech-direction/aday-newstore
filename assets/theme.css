@@ -4183,6 +4183,13 @@ body,
   padding-top: 0;
 }
 
+.huckleberry-subscription-list-color #root article.subscription-history .huckleberry-subscription-list-detail + a {
+  width: fit-content;
+  margin: var(--margin-s) auto 0;
+  text-decoration: none;
+  display: block;
+}
+
 .huckleberry-subscription-list-color #root a:has(.detail-btn),
 .huckleberry-subscription-list-color #root a:has(.back-btn),
 .huckleberry-subscription-list-color #root a:has(.huckleberry-subscription-detail-btn) {
