@@ -1832,6 +1832,7 @@ body,
     margin-bottom: calc( (10rem - var(--margin-s))*-1 );
   }
   .contents-wrapper.top .section-billboard .banner__content {
+    padding: 0 var(--margin);
     justify-content: center;
   }
   .contents-wrapper.top .section-billboard .banner--medium:not(.banner--adapt) .banner__media {
