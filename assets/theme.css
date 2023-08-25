@@ -4377,6 +4377,7 @@ body,
   height: auto;
   padding: .5em;
   font-size: var(--font-s);
+  line-height: 1.4;
 }
 
 .huckleberry-subscription-detail-order-btn {
