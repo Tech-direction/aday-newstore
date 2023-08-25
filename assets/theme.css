@@ -4267,6 +4267,11 @@ body,
   flex: none;
 }
 
+.huckleberry-subscription-list-color #root .wrap .content.content-left > :last-child dt,
+.huckleberry-subscription-list-color #root .wrap .content.content-left > :last-child dd {
+  font-weight: normal;
+}
+
 .huckleberry-subscription-list-color #root .wrap .content.content-left > :last-child header {
   margin: 0 !important;
 }
