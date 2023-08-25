@@ -3261,6 +3261,12 @@ body,
     transform: translateX(-50%);
     bottom: var(--margin);
   }
+  .contents-wrapper .customer tbody tr > * {
+    border-bottom: 0;
+  }
+  .contents-wrapper .customer tbody tr > :last-child {
+    border-bottom: 1px solid rgb(var(--color-border));
+  }
 }
 
 /*  order data
