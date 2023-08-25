@@ -4212,7 +4212,7 @@ body,
 }
 
 .huckleberry-subscription-detail-delivery .huckleberry-subscription-detail-delivery-btn {
-  width: fit-content;
+  width: fit-content !important;
 }
 
 .huckleberry-subscription-list-color #root a:has(.detail-btn):hover,
