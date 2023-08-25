@@ -4316,6 +4316,7 @@ body,
   font-weight: bolder;
 }
 
+.huckleberry-subscription-list-color #root .wrap .content.content-right > section .huckleberry-subscription-detail-btn-group,
 .huckleberry-subscription-list-color #root .wrap .content.content-right > section .huckleberry-subscription-detail-btn-group:has(.huckleberry-subscription-detail-btn.cancel) {
   border: none;
   position: absolute;
