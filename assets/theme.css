@@ -4352,6 +4352,7 @@ body,
 
 .huckleberry-subscription-list-color #root .wrap .content.content-right > section .huckleberry-subscription-detail-btn.cancel {
   min-width: 10em;
+  margin-left: auto;
   text-align: center;
   color: rgb(var(--color-black));
   border: 1px solid rgb(var(--color-border));
