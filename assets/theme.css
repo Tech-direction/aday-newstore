@@ -3203,7 +3203,6 @@ body,
     justify-content: space-between;
   }
   .contents-wrapper .customer .table td:before {
-    width: 7em;
     color: rgb(var(--color-black));
     font-size: 1rem;
     flex: none;
