@@ -1865,7 +1865,7 @@ body,
 }
 
 .contents-wrapper .subscription-feature-list .feature__item .heading {
-  color: rgb(var(--color-primary));
+  color: rgb(var(--color-primary)) !important;
 }
 
 .contents-wrapper .subscription-feature-list .feature__item.type-gray {
