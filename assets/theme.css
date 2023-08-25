@@ -628,7 +628,8 @@ a,
 [data-theme-name=Dawn] .contents-wrapper .cf-field:has(input:not([type=checkbox]):not([type=radio]):focus),
 [data-theme-name=Dawn] .contents-wrapper .cf-field:has(textarea:focus),
 [data-theme-name=Dawn] .contents-wrapper .cf-field:has(select:focus) {
-  box-shadow: 0 0 0 calc(0.01rem + var(--inputs-border-width)) rgba(var(--color-black));
+  /*box-shadow: 0 0 0 calc(0.01rem + var(--inputs-border-width)) rgba(var(--color-black));*/
+  box-shadow: none;
 }
 
 .contents-wrapper .quantity input:focus,
