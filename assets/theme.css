@@ -3261,7 +3261,8 @@ body,
     transform: translateX(-50%);
     bottom: var(--margin);
   }
-  .contents-wrapper .customer tbody tr > * {
+  .contents-wrapper .customer tbody tr > *,
+  .contents-wrapper .customer tbody :last-child > :last-child {{
     border-bottom: 0;
   }
   .contents-wrapper .customer tbody tr > :last-child {
