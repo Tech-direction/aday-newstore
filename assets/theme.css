@@ -3125,7 +3125,7 @@ body,
 }
 
 .contents-wrapper .customer .table .item_header > p,
-.contents-wrapper .customer .table .item_header > a:not(.btn) {
+.contents-wrapper .customer .table .item_header > a:not(.button) {
   font-size: var(--font-m) !important;
 }
 
