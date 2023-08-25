@@ -4021,8 +4021,12 @@ body,
 #huckleberry-subscription-customer-portal-wrap {
   margin: 0 !important;
 }
-#huckleberry-subscription-customer-portal-wrap a[href="/account"],
+
 #huckleberry-subscription-customer-portal-wrap p:has(a[href="/account"]) {
+  display: none;
+}
+
+#huckleberry-subscription-customer-portal-wrap a[href="/account"] {
   display: none;
 }
 
