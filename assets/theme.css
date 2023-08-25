@@ -3227,7 +3227,6 @@ body,
     border-top: 1px solid rgb(var(--color-border));
   }
   .contents-wrapper .customer .table tfoot {
-    margin-top: 1em;
     display: block;
     position: relative;
   }
