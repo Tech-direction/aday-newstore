@@ -4430,6 +4430,9 @@ body,
   .huckleberry-subscription-list-color #root .wrap .content.content-right > section > [class^="huckleberry-subscription-detail-"] header {
     margin-bottom: 0;
   }
+}
+
+@media screen and (max-width: 749px) {
   .huckleberry-subscription-detail-delivery .huckleberry-subscription-detail-delivery-btn,
   .huckleberry-subscription-detail-payment .huckleberry-subscription-detail-payment-btn {
     width: 100% !important;
