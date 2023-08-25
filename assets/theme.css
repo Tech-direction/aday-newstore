@@ -1978,7 +1978,7 @@ body,
   font-weight: 500;
   color: #fff;
   border-radius: 10em;
-  background-color: rgb(var(--color-primary));
+  background-color: rgb(var(--color-gray));
   display: flex;
   gap: .5em;
   align-items: center;
