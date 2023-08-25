@@ -356,13 +356,13 @@ a,
   margin-top: var(--margin);
 }
 
-.contents-wrapper button.type-ghost,
+/*.contents-wrapper button.type-ghost,
 .contents-wrapper .button.type-ghost,
 .contents-wrapper .btn.type-ghost {
   color: rgb(var(--color-black));
   border: 1px solid rgb(var(--color-border));
   background-color: #fff;
-}
+}*/
 
 .contents-wrapper .cancel {
   width: fit-content;
