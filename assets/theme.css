@@ -3297,7 +3297,7 @@ body,
 .contents-wrapper .customer .customer_order_data li {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--margin-s);
+  gap: 1em;
   align-items: flex-start;
 }
 
