@@ -2944,7 +2944,7 @@ body,
   font-weight: 500;
   line-height: 1.4;
   border-radius: 10em;
-  background-color: rgb(var(--color-primary));
+  background-color: rgb(var(--color-gray));
   display: block;
 }
 
