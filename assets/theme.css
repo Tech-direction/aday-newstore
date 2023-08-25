@@ -4415,7 +4415,7 @@ body,
   }
   .huckleberry-subscription-list-color #root .wrap .content.content-right > section > * {
     width: 100% !important;
-    padding: var(--margin) 0;
+    padding: var(--margin) 0 0;
     border-left: none !important;
   }
   .huckleberry-subscription-list-color #root .wrap .content.content-right > section > [class^="huckleberry-subscription-detail-"] + [class^="huckleberry-subscription-detail-"] {
