@@ -4091,8 +4091,12 @@ body,
   border-top: 1px dashed rgb(var(--color-border));
 }
 
+.huckleberry-subscription-list-color #root .wrap .content.content-left > :first-child > article > :nth-child(2) {
+  border-top: 0;
+}
+
 .huckleberry-subscription-detail-product-detail:has(.huckleberry-subscription-detail-product-title) + .huckleberry-subscription-detail-product-detail {
-  border-top: none;
+  border-top: 0;
 }
 
 .huckleberry-subscription-detail-product-detail > * {
