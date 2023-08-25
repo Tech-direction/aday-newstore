@@ -913,6 +913,7 @@ a,
 }
 
 .contents-wrapper .page-width {
+  width: 100%;
   max-width: var(--width-max);
   padding: 0 var(--margin) !important;
 }
