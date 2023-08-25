@@ -3321,6 +3321,10 @@ body,
 }
 
 @media screen and (max-width: 749px) {
+  .contents-wrapper .customer .customer_order_data .label {
+    width: 5em;
+    text-align: center;
+  }
   .contents-wrapper .customer .customer_order_data .status {
     position: absolute;
     top: 3em;
