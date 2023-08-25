@@ -4211,6 +4211,10 @@ body,
   border: none;
 }
 
+.huckleberry-subscription-detail-delivery .huckleberry-subscription-detail-delivery-btn {
+  width: fit-content;
+}
+
 .huckleberry-subscription-list-color #root a:has(.detail-btn):hover,
 .huckleberry-subscription-list-color #root a:has(.back-btn):hover,
 .huckleberry-subscription-list-color #root a:has(.huckleberry-subscription-detail-btn):hover {
