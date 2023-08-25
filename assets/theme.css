@@ -1857,16 +1857,11 @@ body,
   padding: var(--margin);
   color: #fff;
   border-radius: var(--border-radius-box);
-  /*background-color: rgb(var(--color-primary));*/
-  background-color: rgb(var(--color-gray));
+  background-color: rgb(var(--color-primary));
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: var(--margin-s);
-}
-
-.contents-wrapper .subscription-feature-list .feature__item .heading {
-  color: rgb(var(--color-primary)) !important;
 }
 
 .contents-wrapper .subscription-feature-list .feature__item.type-gray {
@@ -1887,7 +1882,6 @@ body,
   width: auto;
   height: 64px;
   display: inline-block;
-  filter: invert(42%) sepia(11%) saturate(4405%) hue-rotate(312deg) brightness(82%) contrast(105%);
 }
 
 .contents-wrapper .subscription-feature-list .feature__item .heading {
