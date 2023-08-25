@@ -867,6 +867,7 @@ a,
 
 .contents-wrapper variant-radios fieldset input:checked + label {
   color: #fff !important;
+  background-color: rgb(var(--color-gray));
 }
 
 /*  birthday
