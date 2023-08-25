@@ -3200,6 +3200,7 @@ body,
   }
   .contents-wrapper .customer .table td {
     padding: 0;
+    justify-content: space-between;
   }
   .contents-wrapper .customer .table td:before {
     width: 7em;
