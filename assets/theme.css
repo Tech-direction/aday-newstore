@@ -3228,6 +3228,7 @@ body,
   }
   .contents-wrapper .customer .table tfoot {
     margin-top: 1em;
+    display: block;
     position: relative;
   }
   .contents-wrapper .customer .table tfoot:after {
