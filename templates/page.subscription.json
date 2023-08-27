@@ -121,7 +121,14 @@
         "37688181-5b99-4e55-9b7d-a2743afb7bd4": {
           "type": "text",
           "settings": {
-            "text": "<p>お届けする周期を選択いただき（2週間に1回 or 月に1回）購入を完了します。<\/p><p><strong>※定期購入商品のお届けは全て配送でのお届けになります。「店舗受取」を選択し、送付先のご住所がわからないご注文についてはキャンセルとさせていただきますのでご了承ください。<\/strong><\/p><p><a href=\"https:\/\/aday-new-store.myshopify.com\/pages\/shopping-guide\">定期購入について詳しくはこちらをご確認ください<\/a><\/p>",
+            "text": "<p>お届けする周期を選択いただき（2週間に1回 or 月に1回）購入を完了します。<\/p><p><a href=\"https:\/\/aday-new-store.myshopify.com\/pages\/shopping-guide\">定期購入について詳しくはこちらをご確認ください<\/a><\/p>",
+            "text_align": "left"
+          }
+        },
+        "23a46cad-2fe0-4d9e-a49c-9a3d3e97159b": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>※定期購入商品のお届けは全て配送でのお届けになります。<br\/>「店舗受取」を選択し、送付先のご住所がわからないご注文についてはキャンセルとさせていただきますのでご了承ください。<\/strong><\/p>",
             "text_align": "left"
           }
         }
@@ -135,7 +142,8 @@
         "15573d12-e64f-42d2-9bf7-64352ecaa062",
         "b39c6b5d-f375-415b-a0d7-838ca32f7548",
         "e0680cf9-72a5-4c74-beb6-4512323bd133",
-        "37688181-5b99-4e55-9b7d-a2743afb7bd4"
+        "37688181-5b99-4e55-9b7d-a2743afb7bd4",
+        "23a46cad-2fe0-4d9e-a49c-9a3d3e97159b"
       ],
       "settings": {
         "content_max_width": "s",
