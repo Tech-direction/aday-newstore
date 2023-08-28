@@ -3605,6 +3605,10 @@ body,
   display: flex !important;
 }
 
+.contents-wrapper .cart__warnings {
+  padding: 0;
+}
+
 .contents-wrapper .cart__warnings .customer_block {
   margin-top: var(--margin-l);
 }
