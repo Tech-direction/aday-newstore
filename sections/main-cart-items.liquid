@@ -23,7 +23,12 @@
   <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
 {%- endunless -%}
 
-<cart-items class="page-width{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %} content-size-m">
+{% assign  content_size = 'content-size-m' %}
+{%- if shop.customer_accounts_enabled and customer == null -%}
+  {% assign  content_size = 'content-size-xs' %}
+{% endif %}
+
+<cart-items class="page-width{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %} {{ content_size }}">
   <div class="title-wrapper-with-link align-center">
     <h1 class="title title--primary heading size-xl">{{ 'sections.cart.title' | t }}</h1>
   </div>
