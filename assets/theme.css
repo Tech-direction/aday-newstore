@@ -146,6 +146,10 @@ html.js.wf-poppins-n1-active{
   background-color: transparent;
 }
 
+.contents-wrapper strong {
+  color: rgb(var(--color-primary));
+}
+
 
 /*  heading
 ---------------------------------------------------------------*/
