@@ -24,8 +24,7 @@
 {%- endunless -%}
 
 {% assign  content_size = 'content-size-m' %}
-{%- if cart != empty -%}
-  ok
+{%- if cart == empty -%}
   {% assign  content_size = 'content-size-xs' %}
 {% endif %}
 
