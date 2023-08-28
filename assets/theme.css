@@ -3606,7 +3606,7 @@ body,
 }
 
 .contents-wrapper .cart__warnings .customer_block {
-  margin-top: var(--margin-m);
+  margin-top: var(--margin-l);
 }
 
 @media screen and (max-width: 749px) {
