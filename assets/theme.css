@@ -321,12 +321,27 @@ a,
   max-width: none;
 }
 
-/*.contents-wrapper button:hover,*/
+.button:hover,
+.btn:hover,
+.contents-wrapper .button:hover,
+.contents-wrapper .btn:hover,
+.contents-wrapper .shopify-payment-button__button:hover,
+.huckleberry-subscription-list-color #root .detail-btn:hover,
+.huckleberry-subscription-list-color #root .huckleberry-subscription-detail-btn:hover,
+.huckleberry-subscription-list-color #root .huckleberry-subscription-detail-order-btn:hover,
+.huckleberry-subscription-list-color #root .huckleberry-subscription-detail-payment-btn:hover,
+.huckleberry-subscription-list-color #root .huckleberry-subscription-detail-delivery-btn:hover,
+.huckleberry-subscription-list-color #root .micromodal .btn:hover {
+  background-color: rgb(var(--color-gray));
+  opacity: .5;
+}
+
+/*.contents-wrapper button:hover,
 .contents-wrapper .button:hover,
 .contents-wrapper .btn:hover {
   color: #fff;
   opacity: .5;
-}
+}*/
 
 .contents-wrapper .button.align-center {
   width: fit-content;
