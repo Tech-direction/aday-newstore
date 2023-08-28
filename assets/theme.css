@@ -3605,6 +3605,10 @@ body,
   display: flex !important;
 }
 
+.contents-wrapper .cart__warnings .customer_block {
+  margin-top: var(--margin-m);
+}
+
 @media screen and (max-width: 749px) {
   .contents-wrapper .cart-items tr {
     display: grid;
