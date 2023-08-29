@@ -155,6 +155,7 @@ html.js.wf-poppins-n1-active{
   color: rgb(var(--color-primary));
   font-weight: bold;
   background-color: rgba(var(--color-primary), .2);
+  display: inline-block;
 }
 
 
