@@ -401,6 +401,7 @@
                             </div>
                           {%- endfor -%}
                         </div>
+                  {{ number_of_slides }}
                         {%- if number_of_slides > 1 -%}
                           <div class="slider-buttons no-js-hidden">
                             <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'general.slider.previous_slide' | t }}">{% render 'icon-caret' %}</button>
