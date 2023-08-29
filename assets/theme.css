@@ -2516,6 +2516,7 @@ body,
 }
 
 .contents-wrapper .product .slider.slider--mobile .slider__slide {
+  width: 100%
   padding: 0;
 }
 
