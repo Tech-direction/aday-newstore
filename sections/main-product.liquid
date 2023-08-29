@@ -412,7 +412,6 @@
                                 <span class="slider-counter--total">{{ number_of_slides }}</span>
                               {%- else -%}
                                 <div class="slideshow__control-wrapper">
-                                {{ number_of_slides }}
                                   {%- for i in (1..number_of_slides) -%}
                                     <button class="slider-counter__link slider-counter__link--{{ block.settings.pagination_style }} link" aria-label="{{ 'sections.slideshow.load_slide' | t }} {{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}" aria-controls="Slider-{{ block.id }}">
                                       {%- if block.settings.pagination_style == 'numbers' -%}{{ forloop.index }}{% else %}<span class="dot"></span>{%- endif -%}
