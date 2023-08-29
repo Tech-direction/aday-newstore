@@ -2194,7 +2194,8 @@ body,
 .contents-wrapper .article-wrapper .article-template__content p + .movie,
 .contents-wrapper .article-wrapper .article-template__content * + .movie,
 .contents-wrapper .article-wrapper .article-template__content * + ul,
-.contents-wrapper .article-wrapper .article-template__content * + .grid {
+.contents-wrapper .article-wrapper .article-template__content * + .grid,
+.contents-wrapper .article-wrapper .article-template__content * + em {
   margin-top: 2em;
 }
 
