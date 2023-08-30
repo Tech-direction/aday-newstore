@@ -2832,7 +2832,19 @@ body,
   padding: var(--margin);
 }
 
+.contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-detail-grid  .subscription_image__item {
+  position: relative;
+}
+
+.contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-detail-grid  .subscription_image__item .btn {
+  position: absolute;
+  right: var(--margin);
+  bottom: var(--margin);
+  z-index: 1;
+} 
+
 .contents-wrapper .subscription-block .subscription-detail-wrapper .collection-section-image {
+  height: 100%;
   margin-bottom: 0;
   border-radius: 0;
 }
