@@ -24,7 +24,7 @@
 
   <a href="{{ section.settings.button-link }}" class="subscription-detail-wrapper">
   <div class="grid subscription-detail-grid">
-    <div class="grid__item">
+    <div class="grid__item subscription_info__item">
       {% if section.settings.section_heading !=blank %}
         <h2 class="heading type-sub_heading {% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %}" data-sub_heading="{{ section.settings.section_sub_heading }}">{{ section.settings.section_heading }}</h2>
       {% endif %}
@@ -79,7 +79,7 @@
           {% endif %}
       </ul>
     </div>
-    <div class="grid__item">
+    <div class="grid__item subscription_image__item">
       {%- if section.settings.image != blank -%}
       <div class="section-image collection-section-image">
         <div class="section__media media">{{
