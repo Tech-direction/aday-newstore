@@ -1,3 +1,7 @@
+{% if section.settings.content_max_width != "default" %}
+  {% assign content_size = 'content-size-' | append: section.settings.content_max_width %}
+{% endif %}
+
 <div class="page-width collection-section-block {% if section.settings.change_block !=blank %} section-block{% endif %}">
   
   {%- if section.settings.image != blank -%}
@@ -90,6 +94,28 @@
       "groups": ["header", "footer"]
     },
     "settings": [
+      {
+      "type": "select",
+      "id": "content_max_width",
+      "default": "default",
+      "label": "コンテンツの横幅",
+      "options": [
+        {
+          "value": "xs",
+          "label": "すごく狭い"
+        },
+        {
+          "value": "s",
+          "label": "狭い"
+        }, {
+          "value": "m",
+          "label": "少し狭い"
+        }, {
+          "value": "default",
+          "label": "標準"
+        }
+      ]
+    },
       {
       "type": "checkbox",
       "id": "change_block",
