@@ -2857,6 +2857,12 @@ body,
   margin-top: var(--margin);
 }
 
+.contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .contents-wrapper .others-block .description + * {
   margin-top: var(--margin);
