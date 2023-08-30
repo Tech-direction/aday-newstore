@@ -25,7 +25,7 @@
         "label": "画像（小）"
       },
       {
-        "type": "text",
+        "type": "richtext",
         "id": "grid_item_1_heading",
         "label": "見出し"
       },
@@ -44,7 +44,7 @@
         "label": "画像（小）"
       },
       {
-        "type": "text",
+        "type": "richtext",
         "id": "grid_item_2_heading",
         "label": "見出し"
       },
@@ -63,7 +63,7 @@
         "label": "画像（小）"
       },
       {
-        "type": "text",
+        "type": "richtext",
         "id": "grid_item_3_heading",
         "label": "見出し"
       }
