@@ -73,9 +73,9 @@
         "change_block": true,
         "image": "shopify:\/\/shop_images\/image2575.jpg",
         "section_heading": "<p>コーヒー焙煎屋さんがお届けする、<br\/>焼きたてコーヒー豆の定期便<\/p>",
-        "heading_size": "xl",
+        "heading_size": "l",
         "section_sub_heading": "SUBSCRIPTION",
-        "description": "<p>コーヒー豆はやっぱり焼きたてが一番。コーヒーを飲むペースに合わせて、焼きたてのコーヒー豆を定期便でお届けします。<\/p>",
+        "description": "",
         "button-label": "【コーヒー定期便】を詳しく見る",
         "button-link": "\/pages\/subscription"
       }
