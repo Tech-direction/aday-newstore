@@ -2858,6 +2858,8 @@ body,
 }
 
 .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item {
+  padding: var(--margin-s);
+  border-radius: calc(var(--border-radius-box)/2);
   display: flex;
   justify-content: center;
   align-items: center;
