@@ -2829,11 +2829,13 @@ body,
 } 
 
 .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-detail-grid  .subscription_info__item {
+  width: fit-content;
   padding: var(--margin);
 }
 
 .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-detail-grid  .subscription_image__item {
   position: relative;
+  flex: 1;
 }
 
 .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-detail-grid  .subscription_image__item .button {
