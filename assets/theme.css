@@ -2871,7 +2871,8 @@ body,
   height: 32px;
 }
 
-.contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item .heafing br {
+.contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item .heading br {
+  text-align: left;
   display: block;
 }
 
