@@ -2823,6 +2823,10 @@ body,
   background-color: rgb(var(--color-gray-light));
 }
 
+.contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-detail-grid {
+  gap: 0;
+} 
+
 .contents-wrapper .subscription-block .subscription-detail-wrapper .collection-section-image {
   margin-bottom: 0;
 }
