@@ -2863,6 +2863,10 @@ body,
   align-items: center;
 }
 
+.contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item > * {
+  width: auto;
+}
+
 .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item .heafing br {
   display: block;
 }
