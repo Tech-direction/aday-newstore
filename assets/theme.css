@@ -2827,6 +2827,10 @@ body,
   gap: 0;
 } 
 
+.contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-detail-grid  .subscription_info__item {
+  padding: var(--margin);
+}
+
 .contents-wrapper .subscription-block .subscription-detail-wrapper .collection-section-image {
   margin-bottom: 0;
 }
