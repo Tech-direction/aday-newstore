@@ -2858,7 +2858,7 @@ body,
 }
 
 .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item {
-  width: 10em;
+  width: 10.5em;
   padding: var(--margin-s);
   border-radius: calc(var(--border-radius-box)/2);
   display: flex;
