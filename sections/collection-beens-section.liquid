@@ -2,7 +2,7 @@
   {% assign content_size = 'content-size-' | append: section.settings.content_max_width %}
 {% endif %}
 
-<div class="page-width collection-section-block {% if section.settings.change_block !=blank %} section-block{% endif %}">
+<div class="page-width {{ content_size }} collection-section-block {% if section.settings.change_block !=blank %} section-block{% endif %}">
   
   {%- if section.settings.image != blank -%}
   <div class="section-image collection-section-image">
