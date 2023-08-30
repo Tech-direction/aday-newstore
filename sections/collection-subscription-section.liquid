@@ -78,9 +78,6 @@
             </li>
           {% endif %}
       </ul>
-      {% if section.settings.button-label !=blank %}
-        <div class="button align-center">{{ section.settings.button-label }}</div>
-      {% endif %}
     </div>
     <div class="grid__item">
       {%- if section.settings.image != blank -%}
@@ -97,6 +94,9 @@
               widths: widths
           }}</div>
       </div>
+      {% endif %}
+      {% if section.settings.button-label !=blank %}
+        <div class="button align-center">{{ section.settings.button-label }}</div>
       {% endif %}
     </div>
     {% comment %}
