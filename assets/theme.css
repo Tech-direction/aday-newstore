@@ -2872,7 +2872,7 @@ body,
 }
 
 .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item .heading {
-  text-align: left;
+  text-align: left !important;
 }
 
 .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item .heading br {
