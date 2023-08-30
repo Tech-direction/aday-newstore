@@ -2820,6 +2820,7 @@ body,
 .contents-wrapper .subscription-block .subscription-detail-wrapper {
   border-radius: var(--border-radius-box);
   background-color: rgb(var(--color-gray-light));
+  overflow: hidden;
   display: block;
 }
 
@@ -2833,6 +2834,7 @@ body,
 
 .contents-wrapper .subscription-block .subscription-detail-wrapper .collection-section-image {
   margin-bottom: 0;
+  border-radius: 0;
 }
 
 .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list {
