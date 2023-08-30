@@ -29,7 +29,7 @@
       <ul class="grid grid--3-col-desktop grid--3-col-tablet grid--gap-s subscription-feature-list">
           {%- if settings.grid_item_1_heading != blank -%}
             <li class="grid__item feature__item">
-              <figure>{{ settings.grid_item_1_img | image_url: width: 600 | image_tag:
+              <figure>{{ settings.grid_item_1_img_small | image_url: width: 600 | image_tag:
                                 class: 'subscription-feature-media-1',
                                 widths: widths,
                                 height: logo_height,
@@ -44,7 +44,7 @@
           {% endif %}
           {%- if settings.grid_item_2_heading != blank -%}
             <li class="grid__item feature__item">
-              <figure>{{ settings.grid_item_2_img | image_url: width: 600 | image_tag:
+              <figure>{{ settings.grid_item_2_img_small | image_url: width: 600 | image_tag:
                                 class: 'subscription-feature-media-2',
                                 widths: widths,
                                 height: logo_height,
@@ -59,7 +59,7 @@
           {% endif %}
           {%- if settings.grid_item_3_heading != blank -%}
             <li class="grid__item feature__item">
-              <figure>{{ settings.grid_item_3_img | image_url: width: 600 | image_tag:
+              <figure>{{ settings.grid_item_3_img_small | image_url: width: 600 | image_tag:
                                 class: 'subscription-feature-media-3',
                                 widths: widths,
                                 height: logo_height,
