@@ -1,4 +1,8 @@
-<div class="page-width collection-section-block subscription-block {% if section.settings.change_block !=blank %} section-block{% endif %}">
+{% if section.settings.content_max_width != "default" %}
+  {% assign content_size = 'content-size-' | append: section.settings.content_max_width %}
+{% endif %}
+
+<div class="page-width collection-section-block subscription-block {{ content_size }} {% if section.settings.change_block !=blank %} section-block{% endif %}">
 
   {% comment %}
   {%- if section.settings.image != blank -%}
