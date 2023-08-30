@@ -1924,9 +1924,16 @@ body,
   text-shadow: none !important;
 }
 
+.contents-wrapper .subscription-feature-list .feature__item .heading　> br {
+  display: none;
+}
+
 @media screen and (max-width: 989px) {
   .contents-wrapper .subscription-feature-list .feature__item [class^="subscription-feature-media-"] {
     height: 5vh;
+  }
+  .contents-wrapper .subscription-feature-list .feature__item .heading　> br {
+    display: block;
   }
 }
 
