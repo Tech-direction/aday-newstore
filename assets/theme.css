@@ -2864,6 +2864,7 @@ body,
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1em;
 }
 
 .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item > * {
@@ -2879,7 +2880,9 @@ body,
 }
 
 .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item .heading {
+  padding-left: 1em;
   text-align: left !important;
+  border-left: 1px solid #fff;
 }
 
 .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item .heading br {
