@@ -20,6 +20,11 @@
         "label": "画像"
       },
       {
+        "type": "image_picker",
+        "id": "grid_item_1_img_small",
+        "label": "画像（小）"
+      },
+      {
         "type": "text",
         "id": "grid_item_1_heading",
         "label": "見出し"
@@ -34,6 +39,11 @@
         "label": "画像"
       },
       {
+        "type": "image_picker",
+        "id": "grid_item_2_img_small",
+        "label": "画像（小）"
+      },
+      {
         "type": "text",
         "id": "grid_item_2_heading",
         "label": "見出し"
@@ -46,6 +56,11 @@
         "type": "image_picker",
         "id": "grid_item_3_img",
         "label": "画像"
+      },
+      {
+        "type": "image_picker",
+        "id": "grid_item_3_img_small",
+        "label": "画像（小）"
       },
       {
         "type": "text",
