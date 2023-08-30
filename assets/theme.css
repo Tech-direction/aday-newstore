@@ -2869,6 +2869,10 @@ body,
   width: auto;
 }
 
+.contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item figure {
+  line-height: 1;
+}
+
 .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item [class^="subscription-feature-media-"] {
   height: 32px;
 }
