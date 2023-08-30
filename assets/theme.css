@@ -2836,7 +2836,7 @@ body,
   position: relative;
 }
 
-.contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-detail-grid  .subscription_image__item .btn {
+.contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-detail-grid  .subscription_image__item .button {
   position: absolute;
   right: var(--margin);
   bottom: var(--margin);
