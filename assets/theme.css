@@ -2948,6 +2948,9 @@ body,
     text-align: center !important;
     border-left: 0;
   }
+  .contents-wrapper .subscription-block .subscription-detail-wrapper .collection-section-image {
+    height: auto;
+  }
   /*.contents-wrapper .subscription-block .subscription-detail-wrapper {
     padding: var(--margin);
   }
