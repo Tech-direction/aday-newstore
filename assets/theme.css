@@ -2937,6 +2937,7 @@ body,
   .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item .heading {
     padding-left: 0;
     text-align: center !important;
+    border-left: 0;
   }
   /*.contents-wrapper .subscription-block .subscription-detail-wrapper {
     padding: var(--margin);
