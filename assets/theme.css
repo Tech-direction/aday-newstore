@@ -2937,7 +2937,7 @@ body,
     padding: var(--margin) var(--margin-s);
   }
   .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item {
-    width: 4em;
+    width: max(calc((100% - var(--margin-s)*2)/3) , 4em);
     gap: .5em;
   }
   .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item > *  {
