@@ -2618,7 +2618,7 @@ body,
 ---------------------------------------------------------------*/
 
 .contents-wrapper .product .price {
-  font-size: var(--font-m);
+  font-size: var(--font-m) !important;
 }
 
 .contents-wrapper .product.grid  {
