@@ -2826,6 +2826,7 @@ body,
 
 .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-detail-grid {
   gap: 0;
+  align-items: center;
 } 
 
 .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-detail-grid .subscription_info__item {
