@@ -2932,7 +2932,8 @@ body,
     order: 0;
   }
   .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item {
-    width: 5em;
+    width: 4em;
+    gap: .5em;
   }
   .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item > *  {
     width: 100%;
