@@ -2883,6 +2883,7 @@ body,
 .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item .heading {
   padding-left: 1em;
   text-align: left !important;
+  font-size: max(3vw, var(--font-l));
   border-left: 1px solid #fff;
 }
 
