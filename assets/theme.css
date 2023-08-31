@@ -2838,8 +2838,9 @@ body,
   flex: 1;
 }
 
-.contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-detail-grid  .subscription_image__item .button {
+.contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-detail-grid .subscription_image__item .button {
   color: rgb(var(--color-black));
+  font-size: var(--font-s);
   background-color: #fff;
   position: absolute;
   right: var(--margin);
