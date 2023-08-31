@@ -2933,6 +2933,7 @@ body,
     order: 0;
   }
   .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-detail-grid .subscription_info__item {
+    width: auto !important; 
     padding: var(--margin) var(--margin-s);
   }
   .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item {
