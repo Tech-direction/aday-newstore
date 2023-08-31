@@ -27,8 +27,10 @@ $(window).on('load', function(){
   };
   $(".fuatured-blog").draggable();
 
+  /*
   var fuatured_blog_articles = $(".fuatured-blog .article").length;
   console.log(fuatured_blog_articles);
   $(".fuatured-blog").parents('.fuatured-blog-wrapper').find('.slider-counter .slider-counter--total').text(fuatured_blog_articles);
+  */
 
 });
