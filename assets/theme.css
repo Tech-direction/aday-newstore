@@ -274,11 +274,8 @@ a,
   margin-right: 0;
 }
 
- .view-pc {
-    display: none !important;
-  }
 
-@media (min-width: 989px) {
+@media (min-width: 990px) {
   .view-sp {
     display: none !important;
   }
@@ -286,6 +283,13 @@ a,
 		margin-top: 0 !important;
 	}
 }
+
+@media (max-width: 989px) {
+  .view-pc {
+    display: none !important;
+  }
+}
+
 
 
 /*===============================================================
