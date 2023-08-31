@@ -2519,6 +2519,7 @@ body,
 .contents-wrapper .product__pickup-availabilities {
   /*border-top: 1px solid rgb(var(--color-border));*/
   background-color: rgb(var(--color-gray-light));
+  display: none;
 }
 
 .contents-wrapper .pickup-availability-preview {
