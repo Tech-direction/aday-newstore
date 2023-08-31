@@ -78,6 +78,9 @@
             </li>
           {% endif %}
       </ul>
+      {% if section.settings.button-label !=blank %}
+        <span class="link type-arrow view-ps">詳しく見る</span>
+      {% endif %}
     </div>
     <div class="grid__item subscription_image__item">
       {%- if section.settings.image != blank -%}
@@ -96,7 +99,7 @@
       </div>
       {% endif %}
       {% if section.settings.button-label !=blank %}
-        <div class="button">{{ section.settings.button-label }}</div>
+        <div class="button view-pc">{{ section.settings.button-label }}</div>
       {% endif %}
     </div>
     {% comment %}
