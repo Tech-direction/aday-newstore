@@ -2932,6 +2932,9 @@ body,
   .contents-wrapper .subscription-block .subscription-detail-wrapper > :last-child {
     order: 0;
   }
+  .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-detail-grid .subscription_info__item {
+    padding: var(--margin) var(--margin-s);
+  }
   .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item {
     width: 4em;
     gap: .5em;
