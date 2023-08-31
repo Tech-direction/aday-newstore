@@ -2982,7 +2982,11 @@ body,
   
 }
 
-
+@media screen and (max-width: 749px) {
+   .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item {
+    width: 4em;
+   }
+}
 
 
 /*  collection page / collection-section-been-wrapper
