@@ -2926,13 +2926,14 @@ body,
   .contents-wrapper .subscription-block .subscription-detail-wrapper > :last-child {
     order: 0;
   }
-  .contents-wrapper .subscription-block .subscription-detail-wrapper {
+  /*.contents-wrapper .subscription-block .subscription-detail-wrapper {
     padding: var(--margin);
   }
   .contents-wrapper .subscription-block .subscription-detail-wrapper .collection-section-image {
     margin-top: 0;
     margin-bottom: var(--margin-l);
-  }
+  }*/
+  
 }
 
 
