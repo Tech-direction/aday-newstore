@@ -274,6 +274,19 @@ a,
   margin-right: 0;
 }
 
+ .view-pc {
+    display: none !important;
+  }
+
+@media (min-width: 989px) {
+  .view-sp {
+    display: none !important;
+  }
+	.view-sp + * {
+		margin-top: 0 !important;
+	}
+}
+
 
 /*===============================================================
 
