@@ -23,5 +23,5 @@ $.prototype.draggable = function() {
     $(t).data("down", false);
   });
 };
-//$(".fuatured-blog").draggable();
+$(".fuatured-blog").draggable();
 
