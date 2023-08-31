@@ -41,4 +41,4 @@ jQuery.prototype.mousedragscrollable = function () {
       return false;
     });
 };
-$(".scroll").mousedragscrollable();
+$(".fuatured-blog").mousedragscrollable();
