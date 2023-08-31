@@ -2834,7 +2834,7 @@ body,
 }
 
 .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-detail-grid .subscription_info__item > .heading {
-  font-size: max(3vw, var(--font-l));
+  font-size: min(3vw, var(--font-l));
 }
 
 .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-detail-grid .subscription_image__item {
