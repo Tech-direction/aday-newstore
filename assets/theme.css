@@ -2617,6 +2617,10 @@ body,
 /*  product detail
 ---------------------------------------------------------------*/
 
+.contents-wrapper .product .price {
+  font-size: var(--font-m);
+}
+
 .contents-wrapper .product.grid  {
   gap: var(--margin-xl);
 }
