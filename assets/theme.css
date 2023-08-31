@@ -2159,6 +2159,12 @@ body,
 }
 
 @media screen and (max-width: 989px) {
+  .contents-wrapper .section-fuatured-blog .content__item {
+    margin-left: -15px;
+    margin-right: -15px;
+    left: 15px;
+    position: relative;
+  }
   .contents-wrapper .section-fuatured-blog .fuatured-blog-wrapper {
     width: 100%;
   }
