@@ -2482,6 +2482,7 @@ body,
   margin-top: var(--margin-s) !important;
   font-size: 1rem;
   font-weight: bold;
+  line-height: 1;
 }
 
 
