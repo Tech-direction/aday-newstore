@@ -2885,7 +2885,7 @@ body,
 }
 
 .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item [class^="subscription-feature-media-"] {
-  height: min(3vw, 32px);
+  height: min(5vw, 32px);
 }
 
 .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item .heading {
