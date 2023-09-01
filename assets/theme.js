@@ -32,7 +32,7 @@
 
 
 $(window).on('load resize', function(){
-/*	
+	
 	w_width = $(window).width();
 	w_height = $(window).height();
 
@@ -69,6 +69,6 @@ $(window).on('load resize', function(){
       $('.fuatured-blog.slick-slider').slick('unslick');
     }
   }
-  */
+  
 
 });
