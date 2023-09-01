@@ -5,7 +5,7 @@
 
 ===============================================================*/
 
-$(document).on('click', 'a[href^="#"]', function() {
+/*$(document).on('click', 'a[href^="#"]', function() {
   var speed = 500;
   var href = $(this).attr("href");
   var target = $(href == "#" || href == "" ? 'html' : href);
@@ -21,4 +21,18 @@ $(document).on('click', 'a[href^="#"]', function() {
   }
   
     
-});
+});*/
+
+$(document).ready(function(e) {
+       var headerHight = 80;　//ヘッダ高さ
+       $('a[data-area]').click(function() {
+           var href = '#' + $(this).attr("data-area");
+           var target = $(href == "#" || href == "" ? 'html' : href);
+           console.log(target);
+           var position = target.offset().top - headerHight;
+           $("html, body").animate({
+               scrollTop: position
+           }, 550, "swing");
+           return false;
+       });
+   });
