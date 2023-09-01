@@ -17,8 +17,8 @@ $(document).on('click', 'a[href^="#"]', function() {
   else {
     scrollTop = $(window).scrollTop();
     $('html').animate({scrollTop:scrollTop}, speed, 'swing');
-    return false;
+    
   }
   
-    //return false;
+    return false;
 });
