@@ -39,7 +39,7 @@ $(window).on('load resize', function(){
   if( 990 < w_width ) {
     if(0 < $('.fuatured-blog').length ) {
       $('.fuatured-blog').slick({
-        infinite: true,
+        infinite: false,
         slidesToShow: 3,
         slidesToScroll: 1,
         dots: false,
