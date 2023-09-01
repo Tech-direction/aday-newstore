@@ -24,22 +24,21 @@ $(document).on('click', 'a[href^="#"]', function() {
     
 });
 
-$(function(){
-  $('a[href^=#]').click(function() {
-    var position = 0;
-    var href= $(this).attr("href");
-    if(href.indexOf('#') >= 0 && $(href).size() && href != '' && href != '#'){
-      var target = $(href);
-      try{
-        position = target.offset().top;
-      }catch(e){
-      }
-    }
-    var scrollY = document.documentElement.scrollTop || document.body.scrollTop;
-    var speed = Math.ceil(Math.pow(Math.abs((position - scrollY)), 0.7));
-    if(speed){
-      $('body, html').animate({scrollTop:position}, speed, 'swing');
-    }
-    return false;
-  });
-});
+(function(){
+  window.addEventListener("click" , check_click);
+  console.log('ok');
+
+  function check_click(e){
+    let target = e.target;
+    if(!target || target.tagName !== "A"){return;}
+    let href = target.getAttribute("href");
+    if(href.indexOf("#") === -1){return;}
+    if(href.match(/^[http:|https:|\/\/]/)){return;}
+    setTimeout(hash_link_url_adjust , 0);
+  }
+
+  function hash_link_url_adjust(href){
+    let sp = location.href.split("#");
+    history.pushState(null, null, sp[0])
+  };
+})()
