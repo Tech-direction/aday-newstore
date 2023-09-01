@@ -29,13 +29,7 @@ $(document).on('click', 'a[href^="#"]', function() {
     
 });
 
-(function(){ /*ページ内リンクのハッシュを削除*/
-  window.addEventListener("click" , check_click);
-
- 
-
-  function hash_link_url_adjust(href){
+function hash_link_url_adjust(href){
     let sp = location.href.split("#");
     history.pushState(null, null, sp[0])
   };
-})()
