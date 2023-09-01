@@ -2165,6 +2165,10 @@ body,
   top: auto;
 }
 
+.slide-trigger {
+  display: inline-block;
+}
+
 
 @media screen and (max-width: 989px) {
   .contents-wrapper .section-fuatured-blog .content__item {
