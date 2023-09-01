@@ -2652,11 +2652,15 @@ body,
   width: 100% !important;
 }
 
-
 .contents-wrapper .product.grid .product__info-wrapper .article {
-  padding: var(--margin-s);
+  padding: var(--margin);
   background-color: rgb(var(--color-gray-light));
   display: block;
+}
+
+.contents-wrapper .product.grid .product__info-wrapper .article .thumbnail {
+  padding-top: 66%;
+  position: relative;
 }
 
 
