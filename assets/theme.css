@@ -2165,7 +2165,7 @@ body,
   top: auto;
 }
 
-.slide-trigger {
+.contents-wrapper .section-fuatured-blog .slide-trigger {
   display: inline-block;
 }
 
