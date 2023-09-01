@@ -2163,8 +2163,6 @@ body,
   overflow-x: unset;
 }
 
-.contents-wrapper .section-fuatured-blog .article-list
-
 @media screen and (max-width: 989px) {
   .contents-wrapper .section-fuatured-blog .content__item {
     margin-left: calc(var(--margin) * -1) !important;
