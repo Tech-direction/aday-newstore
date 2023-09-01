@@ -2166,7 +2166,8 @@ body,
 }
 
 .contents-wrapper .section-fuatured-blog .slide-trigger {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   position: absolute;
   top: 50%;
   right: 100%;
