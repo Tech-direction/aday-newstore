@@ -1,4 +1,4 @@
-$(window).on('load scroll', function(){
+$(window).on('scroll', function(){
   $('.shopify-section-group-header-group').attr('style', '');
 });
 
