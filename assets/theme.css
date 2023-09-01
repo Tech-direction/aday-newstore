@@ -2147,7 +2147,7 @@ body,
 
 .contents-wrapper .section-fuatured-blog .fuatured-blog-wrapper {
   width: calc(100% + var(--page-width-margin));
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 .contents-wrapper .section-fuatured-blog .article-list {
