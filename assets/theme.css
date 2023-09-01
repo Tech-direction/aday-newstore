@@ -2156,6 +2156,7 @@ body,
   overflow-x: scroll;
   scroll-padding-left: 0;
   flex-wrap: nowrap;
+  scroll-behavior: smooth;
 }
 
 .contents-wrapper .section-fuatured-blog .article-list .grid__item {
