@@ -42,7 +42,7 @@ $(document).on('click', 'a[href^="#"]', function() {
     }
     
     let href = target.getAttribute("href");
-    console.log(href);
+    
     
     if(href.indexOf("#") === -1){
       return;
@@ -56,6 +56,7 @@ $(document).on('click', 'a[href^="#"]', function() {
   }
 
   function hash_link_url_adjust(href){
+    console.log(href);
     let sp = location.href.split("#");
     history.pushState(null, null, sp[0])
   };
