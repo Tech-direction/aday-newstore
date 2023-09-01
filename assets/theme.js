@@ -29,7 +29,7 @@ $(document).on('click', 'a[href^="#"]', function() {
   
 
   function check_click(e){
-    console.log('ok');
+    
     let target = e.target;
     if(!target || target.tagName !== "A"){return;}
     let href = target.getAttribute("href");
@@ -40,6 +40,7 @@ $(document).on('click', 'a[href^="#"]', function() {
 
   function hash_link_url_adjust(href){
     let sp = location.href.split("#");
+    console.log(href);
     history.pushState(null, null, sp[0])
   };
 })()
