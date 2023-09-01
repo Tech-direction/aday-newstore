@@ -1,4 +1,8 @@
-<div class="page-width collection-section-block {% if section.settings.change_block !=blank %} section-block{% endif %}">
+{% if section.settings.content_max_width != "default" %}
+  {% assign content_size = 'content-size-' | append: section.settings.content_max_width %}
+{% endif %}
+
+<div class="page-width {{ content_size }} collection-section-block {% if section.settings.change_block !=blank %} section-block{% endif %}">
   
   {%- if section.settings.image != blank -%}
   <div class="section-image collection-section-image">
@@ -16,7 +20,7 @@
   </div>
   {% endif %}
 
-  <div class=" {% comment %}grid grid--2-col-desktop grid--gap-l valign-middle{% endcomment %}page-width content-size-m">
+  {% comment %}<div class="grid grid--2-col-desktop grid--gap-l valign-middle page-width content-size-m">{% endcomment %}
     {% comment %}<div class="grid__item">{% endcomment %}
       {% if section.settings.section_heading !=blank %}
         <h2 class="heading type-sub_heading {% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %}{%- if section.settings.heading_text_align != blank -%} align-{{ section.settings.heading_text_align }} {% endif %}" data-sub_heading="{{ section.settings.section_sub_heading }}">{{ section.settings.section_heading }}</h2>
@@ -78,7 +82,7 @@
         {%- endfor -%}
       </ul>
     {% comment %}</div>{% endcomment %}
-  </div>
+  {% comment %}</div>{% endcomment %}
 </div>
 
 {% schema %}
@@ -90,6 +94,28 @@
       "groups": ["header", "footer"]
     },
     "settings": [
+      {
+      "type": "select",
+      "id": "content_max_width",
+      "default": "default",
+      "label": "コンテンツの横幅",
+      "options": [
+        {
+          "value": "xs",
+          "label": "すごく狭い"
+        },
+        {
+          "value": "s",
+          "label": "狭い"
+        }, {
+          "value": "m",
+          "label": "少し狭い"
+        }, {
+          "value": "default",
+          "label": "標準"
+        }
+      ]
+    },
       {
       "type": "checkbox",
       "id": "change_block",
