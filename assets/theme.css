@@ -2652,6 +2652,14 @@ body,
   width: 100% !important;
 }
 
+
+.contents-wrapper .product.grid .product__info-wrapper .article {
+  padding: var(--margin-s);
+  background-color: rgb(var(--color-gray-light));
+  display: block;
+}
+
+
 @media screen and (max-width: 989px) {
   .contents-wrapper .product.grid  {
     gap: var(--margin-l);
