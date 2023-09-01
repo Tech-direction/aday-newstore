@@ -2660,6 +2660,7 @@ body,
 
 .contents-wrapper .product.grid .product__info-wrapper .article .thumbnail {
   padding-top: 66%;
+  background-size: cover;
   position: relative;
 }
 
