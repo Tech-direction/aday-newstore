@@ -16,9 +16,7 @@ $(document).on('click', 'a[href^="#"]', function() {
   }
   else {
     $('html').animate({scrollTop:$(this).offset().top}, speed, 'swing');
-    if($(this).hasClass('next')) {
-      $('html').animate({scrollRight:position.right}, speed, 'swing');
-    }
+    $('html').animate({scrollLeft:position.left}, speed, 'swing');
   }
   
     return false;
