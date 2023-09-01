@@ -2158,9 +2158,14 @@ body,
   flex-wrap: nowrap;
 }
 
+.contents-wrapper .section-fuatured-blog .article-list .grid__item {
+  width: 20vw !important;
+  display: inline-block;
+  top: auto;
+}
+
 .contents-wrapper .section-fuatured-blog .article-list.slick-slider .grid__item {
-  scroll-snap-type: unset;
-  overflow-x: unset;
+  scroll-snap-type: x;
 }
 
 @media screen and (max-width: 989px) {
