@@ -2164,8 +2164,12 @@ body,
   top: auto;
 }
 
-.contents-wrapper .section-fuatured-blog .article-list.slick-slider .grid__item {
-  scroll-snap-type: x;
+.contents-wrapper .section-fuatured-blog .article-list.slick-slider {
+  scroll-snap-type: unset;
+}
+
+.contents-wrapper .section-fuatured-blog .article-list.slick-slider .grid__item + .grid__item {
+  margin-left: var(--margin-l);
 }
 
 @media screen and (max-width: 989px) {
