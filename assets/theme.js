@@ -11,7 +11,7 @@ $(document).on('click', 'a[href^="#"]', function() {
   var target = $(href == "#" || href == "" ? 'html' : href);
   var position = target.offset();
   
-  if(!$(this).has('slide-trigger')) {
+  if(!$(this).hasClass('slide-trigger')) {
     $('html').animate({scrollTop:position.top}, speed, 'swing');
   }
   
