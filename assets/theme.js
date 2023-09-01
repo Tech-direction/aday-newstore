@@ -37,11 +37,12 @@ $(document).on('click', 'a[href^="#"]', function() {
     let target = e.target;
     
     if(!target || target.tagName !== "A"){
-      console.log('ok');
+      
       return;
     }
     
     let href = target.getAttribute("href");
+    console.log(href);
     
     if(href.indexOf("#") === -1){
       return;
