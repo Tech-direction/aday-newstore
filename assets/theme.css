@@ -2160,6 +2160,7 @@ body,
 
 .contents-wrapper .section-fuatured-blog .article-list .grid__item {
   width: 20vw !important;
+  display: inline-block;
   top: auto;
 }
 
