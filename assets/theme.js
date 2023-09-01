@@ -13,13 +13,11 @@ $(document).on('click', 'a[href^="#"]', function() {
   
   if(!$(this).hasClass('slide-trigger')) {
     $('html').animate({scrollTop:position.top}, speed, 'swing');
+    return false;
   }
   else {
     scrollTop = $(window).scrollTop();
     $('html').animate({scrollTop:scrollTop}, speed, 'swing');
-    setTimeout(function(){
-return false;
-	},500);
   }
   
     
