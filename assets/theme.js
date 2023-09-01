@@ -20,5 +20,5 @@ $(document).on('click', 'a[href^="#"]', function() {
     $('html').animate({scrollLeft:position.left}, speed, 'swing');
   }*/
   
-    return false;
+    //return false;
 });
