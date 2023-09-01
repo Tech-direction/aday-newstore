@@ -59,6 +59,7 @@
         "0e52a22e-a7bb-433e-8655-8d46fe5a64b6"
       ],
       "settings": {
+        "content_max_width": "m",
         "change_block": false,
         "section_heading": "<p>焼きたてコーヒー豆の新鮮さと<br\/>香りをお楽しみください<\/p>",
         "heading_size": "xl",
@@ -70,6 +71,7 @@
     "b466eac5-a569-47e9-9d52-c4968c8089ef": {
       "type": "collection-subscription-section",
       "settings": {
+        "content_max_width": "default",
         "change_block": true,
         "image": "shopify:\/\/shop_images\/image2575.jpg",
         "section_heading": "<p>コーヒー焙煎屋さんがお届けする、<br\/>焼きたてコーヒー豆の定期便<\/p>",
