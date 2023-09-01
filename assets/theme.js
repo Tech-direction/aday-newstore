@@ -14,7 +14,10 @@ $(document).on('click', 'a[href^="#"]', function() {
   if(!$(this).hasClass('slide-trigger')) {
     $('html').animate({scrollTop:position.top}, speed, 'swing');
   }
-  
+  else {
+    if($(this).hasClass('next')) {
+      $('html').animate({scrollRightp:position.right}, speed, 'swing');
+  }
   
     return false;
 });
