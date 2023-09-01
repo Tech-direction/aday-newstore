@@ -24,6 +24,7 @@ $(document).on('click', 'a[href^="#"]', function() {
 		var speed = 400;
 		var target = $(href == "#" || href == "" ? 'html' : href);
 		var position = target.offset().top - h_header;
+      console.log(position);
 		
 		$('body,html').animate({scrollTop:position}, speed, 'swing');
 
