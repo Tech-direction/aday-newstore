@@ -67,8 +67,8 @@
       {% endif %}
       
       <slider-component class="slider-mobile-gutter{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-        <a class="slide-trigger slide-next view-pc" data-area="fuatured_blog_atricle_1">test</a>
-        <a class="slide-trigger slide-prev view-pc disabled" data-area="fuatured_blog_atricle_4">test</a>
+        <a class="slide-trigger slide-next view-pc" href="#fuatured_blog_atricle_1">test</a>
+        <a class="slide-trigger slide-prev view-pc disabled" href="#fuatured_blog_atricle_4">test</a>
         <ul
           id="Slider-{{ section.id }}"
           class="blog__posts articles-wrapper contains-card contains-card--article{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid grid--peek grid--1-col-tablet grid--{{ section.settings.columns_desktop }}-col-desktop slider {% if posts_displayed > 2 %}slider--tablet{% else %}slider--mobile{% endif %} {{ grid_gap }} article-list fuatured-blog"
