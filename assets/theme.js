@@ -20,7 +20,6 @@ $(document).on('click', 'a[href^="#"]', function() {
     $('html').animate({scrollTop:scrollTop}, speed, 'swing');
 
     let href = $(this).attr("href");
-    console.log(href);
     setTimeout(hash_link_url_adjust , 0);
     
     $('.shopify-section-group-header-group').addClass('shopify-section-header-hidden');
@@ -31,6 +30,6 @@ $(document).on('click', 'a[href^="#"]', function() {
 });
 
 function hash_link_url_adjust(href){
-    let sp = location.href.split("#");
-    history.pushState(null, null, sp[0])
-  };
+  let sp = location.href.split("#");
+  history.pushState(null, null, sp[0])
+};
