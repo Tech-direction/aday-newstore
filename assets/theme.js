@@ -35,8 +35,9 @@ $(document).on('click', 'a[href^="#"]', function() {
   function check_click(e){
     
     let target = e.target;
-    console.log(target);
+    
     if(!target || target.tagName !== "A"){
+      console.log('ok');
       return;
     }
     
