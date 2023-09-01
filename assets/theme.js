@@ -15,8 +15,10 @@ $(document).on('click', 'a[href^="#"]', function() {
     $('html').animate({scrollTop:position.top}, speed, 'swing');
   }
   else {
+    $('html').animate({scrollTop:$(this).target.offset().top}, speed, 'swing');
     if($(this).hasClass('next')) {
-      $('html').animate({scrollRightp:position.right}, speed, 'swing');
+      $('html').animate({scrollRight:position.right}, speed, 'swing');
+    }
   }
   
     return false;
