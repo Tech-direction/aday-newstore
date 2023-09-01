@@ -2166,14 +2166,21 @@ body,
 }
 
 .contents-wrapper .section-fuatured-blog .slide-trigger {
+  width: var(--font-l);
+  height: var(--font-l);
+  border-radius: 50%;
+  border: 1px solid rbg(var(--color-black));
+  line-height: 1px;
   display: flex;
+  justify-content: center;
   align-items: center;
   position: absolute;
   top: 50%;
-  right: 100%;
+  right: calc(100% + var(--margin));
   transform: translateY(-50%);
 }
 
+.contents-wrapper .section-fuatured-blog .slide-trigger 
 
 @media screen and (max-width: 989px) {
   .contents-wrapper .section-fuatured-blog .content__item {
