@@ -35,7 +35,7 @@ $(window).on('load resize', function(){
 	
 	w_width = $(window).width();
 	w_height = $(window).height();
-
+/*
   if( 990 < w_width ) {
     if(0 < $('.fuatured-blog').length ) {
       $('.fuatured-blog').slick({
@@ -69,6 +69,6 @@ $(window).on('load resize', function(){
       $('.fuatured-blog.slick-slider').slick('unslick');
     }
   }
-  
+*/
 
 });
