@@ -276,6 +276,11 @@ a,
 }
 
 
+.contents-wrapper .article-template>*:first-child:not(.article-template__hero-container) {
+  margin-top: 0;
+}
+
+
 @media (min-width: 990px) {
   .view-sp {
     display: none !important;
