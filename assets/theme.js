@@ -28,13 +28,14 @@ $(document).on('click', 'a[href^="#"]', function() {
   window.addEventListener("click" , check_click);
 
   function check_click(e){
+    console.log('ok');
     let target = e.target;
     if(!target || target.tagName !== "A"){return;}
     let href = target.getAttribute("href");
     if(href.indexOf("#") === -1){return;}
     if(href.match(/^[http:|https:|\/\/]/)){return;}
 
-    console.log('ok');
+    
     setTimeout(hash_link_url_adjust , 0);
   }
 
