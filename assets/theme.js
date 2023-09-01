@@ -19,6 +19,7 @@ $(document).on('click', 'a[href^="#"]', function() {
     scrollTop = $(window).scrollTop();
     $('html').animate({scrollTop:scrollTop}, speed, 'swing');
     $('.shopify-section-group-header-group').addClass('shopify-section-header-hidden');
+    $('.shopify-section-group-header-group').hide();
   }
   
     
