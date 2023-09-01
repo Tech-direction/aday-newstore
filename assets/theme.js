@@ -21,7 +21,7 @@ $(document).on('click', 'a[href^="#"]', function() {
   href = $(this).attr("href");
 	
 	setTimeout(function(){
-		var speed = 10000;
+		var speed = 1000;
 		var target = $(href == "#" || href == "" ? 'html' : href);
 		var position = target.offset().top;
       console.log(position);
