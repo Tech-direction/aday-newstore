@@ -1,5 +1,5 @@
 $(window).on('scroll', function(){
-  $('.shopify-section-group-header-group').attr('style', '');
+  
 });
 
 
@@ -25,7 +25,12 @@ $(document).on('click', 'a[href^="#"]', function() {
 
     let href = $(this).attr("href");
     setTimeout(hash_link_url_adjust , 0);
+    
     $('.shopify-section-group-header-group').css('top', 'calc(-1 * var(--header-height))');
+    setTimeout(function(){
+      $('.shopify-section-group-header-group').addClass('shopify-section-header-hidden');
+      $('.shopify-section-group-header-group.shopify-section-header-hidden').attr('style', '');
+	},40);
   }
 });
 
