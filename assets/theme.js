@@ -19,8 +19,8 @@ $(document).on('click', 'a[href^="#"]', function() {
     scrollTop = $(window).scrollTop();
     $('html').animate({scrollTop:scrollTop}, speed, 'swing');
 
-    let href = $(this).getAttribute("href");
-    setTimeout(hash_link_url_adjust , 0);
+    //let href = $(this).getAttribute("href");
+    //setTimeout(hash_link_url_adjust , 0);
     
     $('.shopify-section-group-header-group').addClass('shopify-section-header-hidden');
     
@@ -35,7 +35,7 @@ $(document).on('click', 'a[href^="#"]', function() {
   function check_click(e){
     
     let target = e.target;
-
+    console.log(target);
     if(!target || target.tagName !== "A"){
       return;
     }
