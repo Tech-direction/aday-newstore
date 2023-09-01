@@ -5,7 +5,7 @@
 
 ===============================================================*/
 
-/*$(document).on('click', 'a[href^="#"]', function() {
+$(document).on('click', 'a[href^="#"]', function() {
   var speed = 500;
   var href = $(this).attr("href");
   var target = $(href == "#" || href == "" ? 'html' : href);
@@ -18,21 +18,8 @@
   else {
     scrollTop = $(window).scrollTop();
     $('html').animate({scrollTop:scrollTop}, speed, 'swing');
+    window.history.replaceState(null, '', location.pathname + location.search);
   }
   
     
-});*/
-
-$(document).ready(function(e) {
-
-       $('a[data-area]').click(function() {
-           var href = '#' + $(this).attr("data-area");
-           var target = $(href == "#" || href == "" ? 'html' : href);
-           console.log(target);
-           var position = target.offset().top;
-           $("html, body").animate({
-               scrollLeft: position
-           }, 550, "swing");
-           return false;
-       });
-   });
+});
