@@ -23,8 +23,7 @@ $(document).on('click', 'a[href^="#"]', function() {
     setTimeout(hash_link_url_adjust , 0);
 
 
-		$('.shopify-section-group-header-group').css('top': '0');
-
+		$('.shopify-section-group-header-group').css('display': 'none');
     
     
   }
