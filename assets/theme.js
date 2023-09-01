@@ -24,7 +24,7 @@ $(document).on('click', 'a[href^="#"]', function() {
 
     setTimeout(function(){
 		$('.shopify-section-group-header-group').addClass('shopify-section-header-hidden');
-	},10);
+	},20);
     
     
   }
