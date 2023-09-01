@@ -43,7 +43,7 @@ $(window).on('load resize', function(){
         slidesToShow: 3,
         slidesToScroll: 1,
         dots: false,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2500,
         centerMode: true,
         prevArrow: false,
