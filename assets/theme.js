@@ -20,7 +20,7 @@ $(document).on('click', 'a[href^="#"]', function() {
     $('html').animate({scrollTop:scrollTop}, speed, 'swing');
 
     let href = $(this).attr("href");
-    //setTimeout(hash_link_url_adjust , 0);
+    setTimeout(hash_link_url_adjust , 0);
     
     $('.shopify-section-group-header-group').addClass('shopify-section-header-hidden');
     
@@ -32,31 +32,9 @@ $(document).on('click', 'a[href^="#"]', function() {
 (function(){ /*ページ内リンクのハッシュを削除*/
   window.addEventListener("click" , check_click);
 
-  function check_click(e){
-    
-    let target = e.target;
-    
-    if(!target || target.tagName !== "A"){
-      
-      return;
-    }
-    
-    let href = target.getAttribute("href");
-    
-    
-    if(href.indexOf("#") === -1){
-      return;
-    }
-    if(href.match(/^[http:|https:|\/\/]/)){
-      return;
-    }
-
-    
-    setTimeout(hash_link_url_adjust , 0);
-  }
+ 
 
   function hash_link_url_adjust(href){
-    console.log(href);
     let sp = location.href.split("#");
     history.pushState(null, null, sp[0])
   };
