@@ -20,6 +20,7 @@ $(document).on('click', 'a[href^="#"]', function() {
     setTimeout(function(){
 return false;
 	},500);
+  }
   
     
 });
