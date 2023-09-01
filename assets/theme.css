@@ -2654,14 +2654,20 @@ body,
 
 .contents-wrapper .product.grid .product__info-wrapper .article {
   padding: var(--margin);
+  border-radius: var(--border-radius-box);
   background-color: rgb(var(--color-gray-light));
   display: block;
 }
 
 .contents-wrapper .product.grid .product__info-wrapper .article .thumbnail {
   padding-top: 66%;
+  border-radius: calc(var(--border-radius-box) * .8);
   background-size: cover;
   position: relative;
+}
+
+.contents-wrapper .product.grid .product__info-wrapper .article .title {
+  margin: .5em 0 0;
 }
 
 
