@@ -19,7 +19,7 @@ $(document).on('click', 'a[href^="#"]', function() {
     scrollTop = $(window).scrollTop();
     $('html').animate({scrollTop:scrollTop}, speed, 'swing');
 
-    //let href = $(this).getAttribute("href");
+    let href = $(this).attr("href");
     //setTimeout(hash_link_url_adjust , 0);
     
     $('.shopify-section-group-header-group').addClass('shopify-section-header-hidden');
