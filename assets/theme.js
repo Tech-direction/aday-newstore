@@ -26,9 +26,10 @@ $(document).on('click', 'a[href^="#"]', function() {
 
 (function(){
   window.addEventListener("click" , check_click);
-  console.log('ok');
+  
 
   function check_click(e){
+    console.log('ok');
     let target = e.target;
     if(!target || target.tagName !== "A"){return;}
     let href = target.getAttribute("href");
