@@ -176,23 +176,6 @@
         "blog": "news",
         "post_limit": 3
       }
-    },
-    "a47ee7fd-9726-4cab-a010-a01aa5744f15": {
-      "type": "featured-blog",
-      "settings": {
-        "heading": "Blog posts",
-        "heading_size": "h1",
-        "blog": "coffee-journal",
-        "post_limit": 4,
-        "columns_desktop": 4,
-        "color_scheme": "",
-        "show_image": true,
-        "show_date": true,
-        "show_author": false,
-        "show_view_all": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -200,7 +183,6 @@
     "ef1e9a68-7a62-4287-8199-03faca0c8b77",
     "361c01ec-b4ce-4a50-9bc5-26515e1e190d",
     "f86325b7-9ef5-4459-acbc-f77ebaa74e38",
-    "f9e0afc0-e928-45a3-9682-5919df278603",
-    "a47ee7fd-9726-4cab-a010-a01aa5744f15"
+    "f9e0afc0-e928-45a3-9682-5919df278603"
   ]
 }
