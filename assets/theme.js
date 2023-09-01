@@ -34,7 +34,7 @@ $(document).on('click', 'a[href^="#"]', function() {
     if(href.indexOf("#") === -1){return;}
     if(href.match(/^[http:|https:|\/\/]/)){return;}
 
-    console.log(href);
+    console.log(target.getAttribute("href"));
     setTimeout(hash_link_url_adjust , 0);
   }
 
