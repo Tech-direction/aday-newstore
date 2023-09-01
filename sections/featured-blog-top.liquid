@@ -65,7 +65,7 @@
       {% if section.settings.box_gap != "default" %}
         {% assign grid_gap = 'grid--gap-' | append: section.settings.box_gap %}
       {% endif %}
-      <span class="slide-trigger slide-next">test</span>
+      <a class="slide-trigger slide-next" href="">test</a>
       <slider-component class="slider-mobile-gutter{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         <ul
           id="Slider-{{ section.id }}"
@@ -73,7 +73,7 @@
           role="list">
           {%- for article in section.settings.blog.articles limit: section.settings.post_limit -%}
             <li
-              id="atricle_{{ forloop.index }}{% comment %}Slide-{{ section.id }}-{{ forloop.index }}{% endcomment %}"
+              id="fuatured_blog_atricle_{{ forloop.index }}{% comment %}Slide-{{ section.id }}-{{ forloop.index }}{% endcomment %}"
               data-item_num="{{ forloop.index }}" 
               class="blog__post grid__item article slider__slide slider__slide--full-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
               {% if settings.animations_reveal_on_scroll %}
