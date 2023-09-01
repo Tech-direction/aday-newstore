@@ -2653,6 +2653,7 @@ body,
 }
 
 .contents-wrapper .product.grid .product__info-wrapper .article {
+  margin-top: var(--margin);
   padding: var(--margin);
   border-radius: var(--border-radius-box);
   background-color: rgb(var(--color-gray-light));
@@ -2667,7 +2668,7 @@ body,
 }
 
 .contents-wrapper .product.grid .product__info-wrapper .article .title {
-  margin: .5em 0 0;
+  margin: .5em 0 0 !important;
 }
 
 
