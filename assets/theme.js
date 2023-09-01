@@ -1,4 +1,4 @@
-$(window).on('load', function(){
+/*$(window).on('load', function(){
 
   $.prototype.draggable = function() {
     var t;
@@ -27,4 +27,4 @@ $(window).on('load', function(){
   };
   $(".fuatured-blog").draggable();
 
-});
+});*/
