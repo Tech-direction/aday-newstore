@@ -23,8 +23,8 @@ $(document).on('click', 'a[href^="#"]', function() {
 	setTimeout(function(){
 		var speed = 400;
 		var target = $(href == "#" || href == "" ? 'html' : href);
-		var position = target.offset().top - h_header;
-      console.log(target);
+		var position = target.offset().top;
+      console.log(position);
 		
 		$('body,html').animate({scrollTop:position}, speed, 'swing');
 
