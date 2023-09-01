@@ -28,14 +28,14 @@ $(document).on('click', 'a[href^="#"]', function() {
   window.addEventListener("click" , check_click);
 
   function check_click(e){
-    
+    console.log(target.getAttribute("href"));
     let target = e.target;
     if(!target || target.tagName !== "A"){
       return;
     }
     
     let href = target.getAttribute("href");
-    console.log(href);
+    
     if(href.indexOf("#") === -1){
       return;
     }
