@@ -2160,7 +2160,7 @@ body,
 
 .contents-wrapper .section-fuatured-blog .article-list.slick-slider .grid__item {
   scroll-snap-type: unset;
-  overflow-x: none;
+  overflow-x: unset;
 }
 
 .contents-wrapper .section-fuatured-blog .article-list
