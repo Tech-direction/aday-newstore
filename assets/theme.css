@@ -2167,6 +2167,10 @@ body,
 
 .contents-wrapper .section-fuatured-blog .slide-trigger {
   display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%);
 }
 
 
