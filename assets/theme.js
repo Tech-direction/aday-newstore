@@ -15,8 +15,8 @@ $(document).on('click', 'a[href^="#"]', function() {
     $('html').animate({scrollTop:position.top}, speed, 'swing');
   }
   else {
-    console.log($(this).offset().top);
-    $('html').animate({scrollTop:$(this).offset().top}, speed, 'swing');
+    scrollTop = $(window).scrollTop();
+    $('html').animate({scrollTop:scrollTop}, speed, 'swing');
   }
   
     //return false;
