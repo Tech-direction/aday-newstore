@@ -23,22 +23,30 @@
   <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
 {%- endunless -%}
 
-<cart-items class="page-width{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %} content-size-m">
+{% assign  content_size = 'content-size-m' %}
+{%- if cart == empty -%}
+  {% assign  content_size = 'content-size-xs' %}
+{% endif %}
+
+<cart-items class="page-width{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %} {{ content_size }}">
   <div class="title-wrapper-with-link align-center">
     <h1 class="title title--primary heading size-xl">{{ 'sections.cart.title' | t }}</h1>
   </div>
 
   <div class="cart__warnings">
     <h1 class="cart__empty-text heading size-xl">{{ 'sections.cart.empty' | t }}</h1>
-    <a href="{{ routes.all_products_collection_url }}" class="button">
+    <a href="{{ routes.collections_url }}" class="button align-center">
       {{ 'general.continue_shopping' | t }}
     </a>
 
     {%- if shop.customer_accounts_enabled and customer == null -%}
-      <h2 class="cart__login-title heading">{{ 'sections.cart.login.title' | t }}</h2>
-      <p class="cart__login-paragraph">
-        {{ 'sections.cart.login.paragraph_html' | t: link: routes.account_login_url }}
-      </p>
+      <div class="customer_block">
+        <h2 class="cart__login-title heading size-m">{{ 'sections.cart.login.title' | t }}</h2>
+        <p class="cart__login-paragraph">
+          {{ 'sections.cart.login.paragraph_html' | t: link: routes.account_login_url }}
+        </p>
+        <a href="{{ routes.account_login_url }}" class="button align-center">ログイン</a>
+      </div>
     {%- endif -%}
   </div>
 

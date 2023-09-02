@@ -6,7 +6,7 @@
         "template--19717718147380__d5fac027-1d6c-4527-b96a-703316269413-16886631200b887bea-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p>コーヒー焙煎屋さんがお届けする<br\/>焼きたてコーヒー豆の定期便<\/p>",
+            "heading": "<p>コーヒー豆の焙煎屋さんがお届けする<br\/>焼きたてコーヒー豆の定期便<\/p>",
             "heading_size": "xl"
           }
         },
@@ -41,7 +41,7 @@
         "template--19717718147380__d5fac027-1d6c-4527-b96a-703316269413-16886631200b887bea-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/gift2022_01.jpg",
+        "image": "shopify:\/\/shop_images\/image2575.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -68,7 +68,7 @@
         "show_image": true,
         "show_date": true,
         "show_author": false,
-        "show_view_all": true,
+        "show_view_all": false,
         "box_gap": "l"
       }
     },
@@ -89,7 +89,7 @@
         "b56f111e-7b06-4cf1-bae8-8b7fafaa47c0": {
           "type": "richtext",
           "settings": {
-            "richtext": "<p>芳ばしい香りに、かなりしっかり目の苦味とコク。ケニアならではの\"強いコーヒー感\"を楽しめます。<br\/>欧州で長らく愛されている、なかなか手に入らないレアのコーヒー豆です。<br\/><br\/><strong>ドリップをした印象について<\/strong><br\/>柑橘系の香り。<br\/>オレンジ、ドライフルーツ、カシス。<br\/>軽やかなナチュラルフレーバー。<br\/>クリーン。<br\/>シナモンやカラメルのような甘味が楽しめる焙煎度。<\/p>"
+            "richtext": "<p>芳ばしい香りに、かなりしっかり目の苦味とコク。ケニアならではの\"強いコーヒー感\"を楽しめます。<br\/>欧州で長らく愛されている、なかなか手に入らないレアのコーヒー豆です。<br\/><br\/><strong>オーナーからのひとこと<\/strong><br\/>柑橘系の香り。<br\/>オレンジ、ドライフルーツ、カシス。<br\/>軽やかなナチュラルフレーバー。<br\/>クリーン。<br\/>シナモンやカラメルのような甘味が楽しめる焙煎度。<\/p>"
           }
         },
         "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-3": {
@@ -123,8 +123,8 @@
         "heading_size": "xl",
         "section_sub_heading": "RECOMMEND ITEM",
         "change_box_layout": false,
-        "product": "brazil",
-        "image": "shopify:\/\/shop_images\/thomas-bennie-1jlJrr4XGkU-unsplash.jpg",
+        "product": "kenya",
+        "image": "shopify:\/\/shop_images\/image_africa.jpg",
         "color_scheme": "",
         "secondary_background": false,
         "media_size": "medium",

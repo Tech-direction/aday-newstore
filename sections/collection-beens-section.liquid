@@ -1,4 +1,8 @@
-<div class="page-width collection-section-block">
+{% if section.settings.content_max_width != "default" %}
+  {% assign content_size = 'content-size-' | append: section.settings.content_max_width %}
+{% endif %}
+
+<div class="page-width {{ content_size }} collection-section-block {% if section.settings.change_block !=blank %} section-block{% endif %}">
   
   {%- if section.settings.image != blank -%}
   <div class="section-image collection-section-image">
@@ -16,21 +20,23 @@
   </div>
   {% endif %}
 
-  <div class="grid grid--2-col-desktop grid--gap-l valign-middle content-size-m">
-    <div class="grid__item">
+  {% comment %}<div class="grid grid--2-col-desktop grid--gap-l valign-middle page-width content-size-m">{% endcomment %}
+    {% comment %}<div class="grid__item">{% endcomment %}
       {% if section.settings.section_heading !=blank %}
-        <h2 class="heading type-sub_heading {% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %}" data-sub_heading="{{ section.settings.section_sub_heading }}">{{ section.settings.section_heading }}</h2>
+        <h2 class="heading type-sub_heading {% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %}{%- if section.settings.heading_text_align != blank -%} align-{{ section.settings.heading_text_align }} {% endif %}" data-sub_heading="{{ section.settings.section_sub_heading }}">{{ section.settings.section_heading }}</h2>
       {% endif %}
       {% if section.settings.description !=blank %}
+        <div class="{%- if section.settings.heading_text_align != blank -%} align-{{ section.settings.heading_text_align }} {% endif %} description">
         {{ section.settings.description }}
+        </div>
       {% endif %}
       {% if section.settings.button-label !=blank %}
         <a href="{{ section.settings.button-link }}" class="button">{{ section.settings.button-label }}</a>
       {% endif %}
-    </div>
-    <div class="grid__item">
+    {% comment %}</div>{% endcomment %}
+    {% comment %}<div class="grid__item">{% endcomment %}
       <ul
-        class="multicolumn-list contains-content-container grid grid--2-col-desktop grid--2-col-tablet-down grid--gap-s collection-beens-list"
+        class="multicolumn-list contains-content-container grid grid--5-col-desktop grid--2-col-tablet-down grid--gap-s collection-beens-list"
         id="Slider-{{ section.id }}"
         role="list"
       >
@@ -75,8 +81,8 @@
           </li>
         {%- endfor -%}
       </ul>
-    </div>
-  </div>
+    {% comment %}</div>{% endcomment %}
+  {% comment %}</div>{% endcomment %}
 </div>
 
 {% schema %}
@@ -88,6 +94,34 @@
       "groups": ["header", "footer"]
     },
     "settings": [
+      {
+      "type": "select",
+      "id": "content_max_width",
+      "default": "default",
+      "label": "コンテンツの横幅",
+      "options": [
+        {
+          "value": "xs",
+          "label": "すごく狭い"
+        },
+        {
+          "value": "s",
+          "label": "狭い"
+        }, {
+          "value": "m",
+          "label": "少し狭い"
+        }, {
+          "value": "default",
+          "label": "標準"
+        }
+      ]
+    },
+      {
+      "type": "checkbox",
+      "id": "change_block",
+      "default": false,
+      "label": "セクションを解除する（セクション間の余白を狭める）"
+    },
       {
         "type": "image_picker",
         "id": "image",
@@ -120,14 +154,49 @@
         "label": "t:sections.all.heading_size.label"
       },
       {
-        "type": "text",
-        "id": "section_sub_heading",
-        "label": "見出し（英語）"
+        "type": "select",
+        "id": "heading_text_align",
+        "options": [
+          {
+            "value": "left",
+            "label": "左寄せ"
+          },
+          {
+            "value": "center",
+            "label": "中央寄せ"
+          },
+          {
+            "value": "right",
+            "label": "右寄せ"
+          }
+        ],
+        "default": "left",
+        "label": " 見出し行揃え"
       },
       {
         "type": "richtext",
         "id": "description",
         "label": "t:sections.featured-collection.settings.description.label"
+      },
+      {
+        "type": "select",
+        "id": "description_text_align",
+        "options": [
+          {
+            "value": "left",
+            "label": "左寄せ"
+          },
+          {
+            "value": "center",
+            "label": "中央寄せ"
+          },
+          {
+            "value": "right",
+            "label": "右寄せ"
+          }
+        ],
+        "default": "left",
+        "label": " 説明行揃え"
       }
     ],
     "blocks": [

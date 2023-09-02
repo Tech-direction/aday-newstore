@@ -9,7 +9,7 @@
         "change_box_layout": false,
         "description": "",
         "show_description": false,
-        "image": "shopify:\/\/shop_images\/gift2022_01.jpg"
+        "image": "shopify:\/\/shop_images\/image2575.jpg"
       }
     },
     "ed6f1661-e298-4db3-902a-f2640892b2db": {
@@ -18,7 +18,7 @@
         "template--20317784211764__ed6f1661-e298-4db3-902a-f2640892b2db-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "<p>焙煎屋がお届けする、<\/p><p>新鮮なコーヒー豆の定期便<\/p>",
+            "heading": "<p>コーヒー豆の焙煎屋さんがお届けする、<\/p><p>焼きたてコーヒー豆の定期便<\/p>",
             "heading_size": "xl",
             "heading_type": "h1",
             "text_align": "center"
@@ -124,6 +124,13 @@
             "text": "<p>お届けする周期を選択いただき（2週間に1回 or 月に1回）購入を完了します。<\/p><p><a href=\"https:\/\/aday-new-store.myshopify.com\/pages\/shopping-guide\">定期購入について詳しくはこちらをご確認ください<\/a><\/p>",
             "text_align": "left"
           }
+        },
+        "23a46cad-2fe0-4d9e-a49c-9a3d3e97159b": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>※定期購入商品のお届けは全て配送でのお届けになります。「店舗受取」を選択し、送付先のご住所がわからないご注文についてはキャンセルとさせていただきますのでご了承ください。<\/em><\/p>",
+            "text_align": "left"
+          }
         }
       },
       "block_order": [
@@ -135,7 +142,8 @@
         "15573d12-e64f-42d2-9bf7-64352ecaa062",
         "b39c6b5d-f375-415b-a0d7-838ca32f7548",
         "e0680cf9-72a5-4c74-beb6-4512323bd133",
-        "37688181-5b99-4e55-9b7d-a2743afb7bd4"
+        "37688181-5b99-4e55-9b7d-a2743afb7bd4",
+        "23a46cad-2fe0-4d9e-a49c-9a3d3e97159b"
       ],
       "settings": {
         "content_max_width": "s",
@@ -151,6 +159,11 @@
       "type": "main-page",
       "disabled": true,
       "settings": {
+        "content_max_width": "s",
+        "change_block": false,
+        "heading": "",
+        "text": "",
+        "text_align": "left",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -166,7 +179,7 @@
             "image": "shopify:\/\/shop_images\/sucscription_01.svg",
             "text": "<p>お好きなタイミングでお好きな豆を100gを3種類定期的にお届けします。<br\/>いろんなコーヒー豆を飲みたい！そんな方におすすめプランです。<br\/>以下のボタンより商品お選びいただき、ご購入ください。<\/p>",
             "link_label": "お好きなコーヒー豆100g3種類を購入する",
-            "link": "\/apps\/subscription\/bundler?b=b6750751-0db3-4596-b574-3b11447dd1be"
+            "link": "https:\/\/aday-new-store.myshopify.com\/apps\/subscription\/bundler?b=3e546580-9e00-4859-ab03-47bd4333c3bb"
           }
         },
         "template--20317784211764__88d80f0e-b70e-4663-b0e3-412f00aa748c-column-2": {
@@ -177,7 +190,7 @@
             "image": "shopify:\/\/shop_images\/sucscription_02.svg",
             "text": "<p>お好きなタイミングでお好きな豆を200g定期的にお届けします。<br\/>好きなコーヒー豆は決まっている。そんな方におすすめプランです。<br\/>以下のボタンより商品お選びいただき、ご購入ください。<\/p>",
             "link_label": "お好きなコーヒー豆200g1種類を購入する",
-            "link": "\/apps\/subscription\/bundler?b=19eec2f0-6f06-4690-b5cf-9e7af50b8c12"
+            "link": "https:\/\/aday-new-store.myshopify.com\/apps\/subscription\/bundler?b=0546ae5c-590c-4a1d-ab2a-30dbbc829f30"
           }
         }
       },

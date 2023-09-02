@@ -138,7 +138,7 @@
                   {% else %}
                     href="{{ block.settings.button_link_1 }}"
                   {% endif %}
-                  class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
+                  class="button  type-primary{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
                 >
                   {{- block.settings.button_label_1 | escape -}}
                 </a>
@@ -150,7 +150,7 @@
                   {% else %}
                     href="{{ block.settings.button_link_2 }}"
                   {% endif %}
-                  class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"
+                  class="button  type-primary{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"
                 >
                   {{- block.settings.button_label_2 | escape -}}
                 </a>
@@ -170,7 +170,7 @@
                                       preload: true
                                     }}
                     </figure>
-                    <p class="heading">{{ settings.grid_item_1_heading }}</p>
+                    <div class="heading">{{ settings.grid_item_1_heading }}</div>
                   </li>
                 {% endif %}
                 {%- if settings.grid_item_2_heading != blank -%}
@@ -185,7 +185,7 @@
                                       preload: true
                                     }}
                     </figure>
-                    <p class="heading">{{ settings.grid_item_2_heading }}</p>
+                    <div class="heading">{{ settings.grid_item_2_heading }}</div>
                   </li>
                 {% endif %}
                 {%- if settings.grid_item_3_heading != blank -%}
@@ -200,7 +200,7 @@
                                       preload: true
                                     }}
                     </figure>
-                    <p class="heading">{{ settings.grid_item_3_heading }}</p>
+                    <div class="heading">{{ settings.grid_item_3_heading }}</div>
                   </li>
                 {% endif %}
             </ul>

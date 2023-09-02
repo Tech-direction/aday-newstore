@@ -3,25 +3,13 @@
     "f70a0cc6-0eca-46fd-91b2-cd193c00ac1c": {
       "type": "main-section-header",
       "settings": {
-        "section_heading": "オンラインショップ",
+        "section_heading": "焼きたてのコーヒー豆",
         "heading_size": "xl",
-        "section_sub_heading": "ONLINESHOP",
+        "section_sub_heading": "COFFEE BEANS",
         "change_box_layout": false,
         "description": "",
         "show_description": false,
-        "image": "shopify:\/\/shop_images\/trial_kiji12.jpg"
-      }
-    },
-    "b466eac5-a569-47e9-9d52-c4968c8089ef": {
-      "type": "collection-subscription-section",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/gift2022_01.jpg",
-        "section_heading": "<p>コーヒー焙煎屋さんがお届けする<br\/>焼きたてコーヒー豆の定期便<\/p>",
-        "heading_size": "xl",
-        "section_sub_heading": "SUBSCRIPTION",
-        "description": "<p>コーヒー豆はやっぱり焼きたてが一番。コーヒーを飲むペースに合わせて、焼きたてのコーヒー豆を定期便でお届けします。<\/p>",
-        "button-label": "【コーヒー定期便】を詳しく見る",
-        "button-link": "\/pages\/subscription"
+        "image": "shopify:\/\/shop_images\/image2721.jpg"
       }
     },
     "8ea36c2b-cf70-4588-8cab-8479b9def8dd": {
@@ -58,8 +46,8 @@
         "0e52a22e-a7bb-433e-8655-8d46fe5a64b6": {
           "type": "column",
           "settings": {
-            "link_label": "デカフェ",
-            "link": ""
+            "link_label": "ディカフェ",
+            "link": "#decaf"
           }
         }
       },
@@ -71,11 +59,27 @@
         "0e52a22e-a7bb-433e-8655-8d46fe5a64b6"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/asairi01_b38ba458-dd59-4291-83e1-71fb6de9f5d2.jpg",
-        "section_heading": "<p>焙煎屋がお届けする、<br\/>コーヒー豆についての見出し<\/p>",
+        "content_max_width": "m",
+        "change_block": false,
+        "section_heading": "<p>焼きたてコーヒー豆の新鮮さと<br\/>香りをお楽しみください<\/p>",
         "heading_size": "xl",
-        "section_sub_heading": "COFFEE BEANS",
-        "description": "<p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、<\/p>"
+        "heading_text_align": "center",
+        "description": "<p>A day in the coffeeでは注文をいただいてから焙煎を行う<strong>注文焙煎<\/strong>を行なって、皆様にお届けしております。<br\/>香り高いコーヒー豆の味わいをぜひお楽しみください。<br\/><br\/>また、コーヒーの定期便もご用意しております。<br\/>定期便に興味のある方は以下の「【コーヒー定期便】を詳しく見る」よりご確認ください。<\/p>",
+        "description_text_align": "left"
+      }
+    },
+    "b466eac5-a569-47e9-9d52-c4968c8089ef": {
+      "type": "collection-subscription-section",
+      "settings": {
+        "content_max_width": "default",
+        "change_block": true,
+        "image": "shopify:\/\/shop_images\/image2575.jpg",
+        "section_heading": "<p>コーヒー焙煎屋さんがお届けする、<br\/>焼きたてコーヒー豆の定期便<\/p>",
+        "heading_size": "l",
+        "section_sub_heading": "SUBSCRIPTION",
+        "description": "",
+        "button-label": "【コーヒー定期便】を詳しく見る",
+        "button-link": "\/pages\/subscription"
       }
     },
     "main": {
@@ -92,16 +96,14 @@
     "e840dd1c-bb6f-4e69-99fd-3653ff1de1e7": {
       "type": "featured-collection-been",
       "settings": {
-        "image": "shopify:\/\/shop_images\/chumon08.jpg",
+        "image": "shopify:\/\/shop_images\/image_0823.jpg",
         "section_id": "blend",
-        "section_heading": "ブレンド豆",
         "heading_size": "xl",
-        "section_sub_heading": "BLEND COFFEE BEANS",
         "change_box_layout": false,
-        "description": "<p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパーゴなど、いまこの暗い巨きな石の建物のなかで考えていると、<\/p>",
+        "description": "<p>コーヒーでそのお店の個性を出す。その方法としてA day in the coffee ではブレンドコーヒーをとても大事にしてます。産地や焙煎度合いをミックスして、コーヒーの魅力をより引き出すことができます。当店では、焙煎度合いで3種類「ライトブレンド」「ミディアムブレンド」「ストロングブレンド」と、季節ごとの「シーズンブレンド」の4種類ブレンドをご用意しています。ブレンドはコーヒーショップの顔のような存在。A day in the coffeeのブレンドをぜひ一度ご賞味ください。<\/p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "ブレンドのコーヒー豆",
+        "collection": "blend",
         "products_to_show": 25,
         "columns_desktop": 3,
         "full_width": false,
@@ -123,16 +125,14 @@
     "1f8ec698-b23a-4ed8-8fd3-4eab6be698d2": {
       "type": "featured-collection-been",
       "settings": {
-        "image": "shopify:\/\/shop_images\/thomas-bennie-1jlJrr4XGkU-unsplash.jpg",
+        "image": "shopify:\/\/shop_images\/image_africa2.jpg",
         "section_id": "african",
-        "section_heading": "アフリカのコーヒー豆",
         "heading_size": "xl",
-        "section_sub_heading": "AFRICAN COFFEE BEANS",
         "change_box_layout": true,
-        "description": "<p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパーゴなど、いまこの暗い巨きな石の建物のなかで考えていると、<\/p>",
+        "description": "<p>コーヒーの起源となっている地域。アフリカの大地を思わせるようなスパイス感のある豆が多く、特にエチオピアのコーヒーは風味が独特です。一方、ケニアはコク、風味ともに十分で昔から人気の高いコーヒー豆です。<\/p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "アフリカのコーヒー豆",
+        "collection": "african",
         "products_to_show": 25,
         "columns_desktop": 3,
         "full_width": false,
@@ -154,16 +154,14 @@
     "8c5d6e0d-3f26-461a-bbf3-05c407fe8d5e": {
       "type": "featured-collection-been",
       "settings": {
-        "image": "shopify:\/\/shop_images\/projeto-cafe-gato-mourisco-x22eJ1VVGFA-unsplash.png",
+        "image": "shopify:\/\/shop_images\/image_middle2.jpg",
         "section_id": "central_american",
-        "section_heading": "中米の豆",
         "heading_size": "xl",
-        "section_sub_heading": "CENTRAL AMERICAN COFFEE BEANS",
         "change_box_layout": false,
-        "description": "<p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパーゴなど、いまこの暗い巨きな石の建物のなかで考えていると、<\/p>",
+        "description": "<p>山岳地域でコーヒー豆が栽培されることが多く、標高差による寒暖差幅の大きさから、固くしまった品質の高いコーヒー豆の多いエリアです。すっきりとして甘みも十分、コーヒーのいいとこ取りをしたような印象のグアテマラのコーヒー豆は、当店でも人気が高いです。<\/p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "中米のコーヒー豆",
+        "collection": "central_american",
         "products_to_show": 25,
         "columns_desktop": 3,
         "full_width": false,
@@ -185,16 +183,14 @@
     "41117e49-4a0c-42df-b24b-11091e3e0718": {
       "type": "featured-collection-been",
       "settings": {
-        "image": "shopify:\/\/shop_images\/cesar-ardila-GU44RmwKiWE-unsplash.jpg",
+        "image": "shopify:\/\/shop_images\/image_south2.jpg",
         "section_id": "south_american",
-        "section_heading": "南米のコーヒー豆",
         "heading_size": "xl",
-        "section_sub_heading": "SOUTH AMERICAN COFFEE BEANS",
         "change_box_layout": true,
-        "description": "<p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパーゴなど、いまこの暗い巨きな石の建物のなかで考えていると、<\/p>",
+        "description": "<p>プランテーションに代表されるような大規模農園で栽培されることが多く、生産量が多いことから味わいの印象が平均的なコーヒー豆の多い地域です。ブラジルのコーヒー豆のようにブレンド豆のベースに使われることが多いですが、一部ではコロンビア原種（ティピカ）のコーヒー豆や、南米西側エリアの山岳地域国のボリビアなどで栽培しているスペシャルティコーヒー豆などでは、コクも深く希少価値の高い豆も生産されています。<\/p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "南米のコーヒー豆",
+        "collection": "south_american",
         "products_to_show": 25,
         "columns_desktop": 3,
         "full_width": false,
@@ -212,16 +208,63 @@
         "swipe_on_mobile": false,
         "box_gap": "l"
       }
+    },
+    "89f0ec6a-2654-487a-84f5-699fd23386fd": {
+      "type": "featured-collection-been",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/image_2759.jpg",
+        "section_id": "decaf",
+        "heading_size": "xl",
+        "change_box_layout": false,
+        "description": "<p>A day in the coffeeではディカフェの豆もご用意しております。子育て中でカフェインを制限したい方や、寝る前のひと時にコーヒーを楽しみたい方向けに、ディカフェのコーヒー豆を焼きたてでお届けしております。<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "decaf",
+        "products_to_show": 25,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "box_gap": "default"
+      }
+    },
+    "793bf923-d917-4523-ab4b-ee2c46577020": {
+      "type": "fuatured-collection-other",
+      "settings": {
+        "collection": "arrange",
+        "products_to_show": 25,
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "change_block": false,
+        "image": "shopify:\/\/shop_images\/drip_howto00.jpg",
+        "section_heading": "",
+        "heading_size": "xl",
+        "heading_text_align": "left",
+        "description": "<p>まずはお気軽にコーヒーを楽しむ手段として、ドリップバッグやアイスコーヒーバッグなどの商品もご用意しております。<br\/>こちらの商品は店舗で1つずつパックして生産しており、なるべく焙煎鮮度の高いコーヒー豆をお届けできるよう努めています。<br\/>コーヒーの道具がない方も、お気軽にお楽しみいただけます。ひと味違う香り高いアレンジコーヒーも是非ご賞味ください。<\/p>",
+        "description_text_align": "left"
+      }
     }
   },
   "order": [
     "f70a0cc6-0eca-46fd-91b2-cd193c00ac1c",
-    "b466eac5-a569-47e9-9d52-c4968c8089ef",
     "8ea36c2b-cf70-4588-8cab-8479b9def8dd",
+    "b466eac5-a569-47e9-9d52-c4968c8089ef",
     "main",
     "e840dd1c-bb6f-4e69-99fd-3653ff1de1e7",
     "1f8ec698-b23a-4ed8-8fd3-4eab6be698d2",
     "8c5d6e0d-3f26-461a-bbf3-05c407fe8d5e",
-    "41117e49-4a0c-42df-b24b-11091e3e0718"
+    "41117e49-4a0c-42df-b24b-11091e3e0718",
+    "89f0ec6a-2654-487a-84f5-699fd23386fd",
+    "793bf923-d917-4523-ab4b-ee2c46577020"
   ]
 }
