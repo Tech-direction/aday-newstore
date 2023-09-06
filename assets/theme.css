@@ -2513,6 +2513,7 @@ body,
   font-size: 1rem;
   font-weight: bold;
   line-height: 1;
+  letter-spacing: 0;
 }
 
 
@@ -2589,6 +2590,7 @@ body,
 }
 
 .contents-wrapper .product .product__media-wrapper .product-media-container .media {
+  padding-top: 100%;
   border-radius: var(--border-radius-box);
 }
 
@@ -2615,6 +2617,70 @@ body,
 }
 
 
+/*  sale
+---------------------------------------------------------------*/
+
+.contents-wrapper .product .price,
+.contents-wrapper .price.price--on-sale .price__container .price__sale,
+.contents-wrapper .cart-item__price-wrapper .cart-item__discounted-prices {
+  display: flex;
+  align-items: center;
+  gap: .5em;
+}
+
+.contents-wrapper .price .price-item {
+  margin: 0;
+}
+
+.contents-wrapper .price__sale > *,
+.contents-wrapper .cart-item__price-wrapper .cart-item__discounted-prices > * {
+  order: 1;
+}
+
+.contents-wrapper .price__sale .price-item.price-item--sale,
+.contents-wrapper .cart-item__price-wrapper .cart-item__discounted-prices .price {
+  order: 0;
+}
+
+.contents-wrapper .price__sale .price-item.price-item--regular,
+.contents-wrapper .cart-item__price-wrapper .cart-item__discounted-prices .price.cart-item__old-price {
+  color: rgb(var(--color-border));
+  opacity: 1;
+}
+
+.contents-wrapper .price__sale .price-item.price-item--regular::before,
+.contents-wrapper .cart-item__price-wrapper .cart-item__discounted-prices .price.cart-item__old-price::before {
+  content: '(';
+}
+
+.contents-wrapper .price__sale .price-item.price-item--regular::after,
+.contents-wrapper .cart-item__price-wrapper .cart-item__discounted-prices .price.cart-item__old-price::after {
+  content: ')';
+}
+
+.contents-wrapper .cart-item__price-wrapper .cart-item__discounted-prices {
+  justify-content: flex-end;
+}
+
+.contents-wrapper .product__item .price .price-item--regular,
+.contents-wrapper .cart-item__price-wrapper .cart-item__discounted-prices .price.cart-item__old-price {
+  font-size: 1rem;
+}
+
+.contents-wrapper .product .price .badge,
+.contents-wrapper .product__item .card__badge span {
+  margin: 0;
+  padding: .5em 1em;
+  font-size: var(--font-s);
+  font-style: italic;
+  font-weight: normal;
+  border-radius: 0;
+}
+
+.contents-wrapper .product .price .badge.price__badge-sale,
+.contents-wrapper .product__item .card__badge span {
+  background-color: rgb(var(--color-primary));
+}
 
 
 /*  veriation / buy button
@@ -2777,7 +2843,7 @@ body,
 
 .contents-wrapper .product-list .product__item .card__information .product__view-details {
   width: fit-content;
-  margin-top: auto !important;
+  margin-top: var(--margin) !important;
   padding-bottom: .25em;
   font-size: var(--font-s) !important;
 }
@@ -3809,6 +3875,26 @@ body,
   margin-top: var(--margin-l);
 }
 
+.contents-wrapper .cart-items .discounts {
+  max-width: none;
+  margin-top: 1em;
+  font-size: var(--font-s);
+  justify-content: flex-start !important;
+}
+
+.contents-wrapper .cart-items .discounts .icon {
+  display: none;
+}
+
+.contents-wrapper .cart-items .discounts .discounts__discount {
+  padding: .5em;
+  color: #fff;
+  font-style: italic;
+  line-height: 1;
+  background-color: rgb(var(--color-primary));
+}
+
+
 @media screen and (max-width: 749px) {
   .contents-wrapper .cart-items tr {
     display: grid;
@@ -3817,7 +3903,13 @@ body,
   .contents-wrapper .cart-item {
     margin-bottom: 0;
     border-bottom: 0;
- }
+  }
+  .contents-wrapper .cart-items thead tr {
+    display: flex;
+  }
+  .contents-wrapper .cart-items thead tr > * {
+    flex: 1;
+  }
   .contents-wrapper .cart-items.table th {
     padding: 0 1em 1em !important;
   }
@@ -3827,7 +3919,7 @@ body,
   .contents-wrapper .cart-item td {
     padding: 0 !important;
   }
-  .contents-wrapper .cart-items tbody tr:after {
+  /*.contents-wrapper .cart-items tbody tr:after {
     content: ' ';
     width: 100%;
     border-bottom: 1px solid rgb(var(--color-border));
@@ -3835,6 +3927,9 @@ body,
     position: absolute;
     left: 0;
     bottom: 0;
+  }*/
+  .contents-wrapper .cart-items tbody tr + tr {
+    border-top: 1px solid rgb(var(--color-border)) !important;
   }
   .contents-wrapper .cart-items tbody > :last-child {
     padding-bottom: 0;
@@ -3860,6 +3955,7 @@ body,
 
 .contents-wrapper .totals .totals__subtotal-value {
   font-size: var(--font-l);
+  font-weight: bold;
 }
 
 .contents-wrapper .tax-note {
