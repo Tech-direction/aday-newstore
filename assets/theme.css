@@ -958,7 +958,11 @@ a,
 ---------------------------------------------------------------*/
 
 .contents-wrapper .form__message {
-  font-size: var(--font-m);
+  font-size: 1rem !important;
+}
+
+.contents-wrapper .form__message svg {
+  display: none;
 }
 
 
