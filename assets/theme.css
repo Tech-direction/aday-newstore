@@ -973,6 +973,9 @@ a,
   margin-bottom: var(--margin);
 }
 
+.contents-wrapper .errors ul li {
+  background-color: rgb(var(--color-primary));
+}
 
 
 /*===============================================================
