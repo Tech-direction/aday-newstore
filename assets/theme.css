@@ -3718,6 +3718,11 @@ body,
   display: none;
 }
 
+@media screen and (max-width: 749px) {
+  .contents-wrapper .customer.login .customer_block {
+    padding: var(--margin);
+  }
+}
 
 
 /*  address
