@@ -974,6 +974,10 @@ a,
 }
 
 .contents-wrapper .errors ul li {
+  color: rgb(var(--color-primary));
+}
+
+.contents-wrapper .errors ul li:before {
   background-color: rgb(var(--color-primary));
 }
 
