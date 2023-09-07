@@ -2122,7 +2122,8 @@ body,
   padding-bottom: 60% !important;
 }
 
-.contents-wrapper .article-list:not(.fuatured-blog) {
+.contents-wrapper .article-list:not(.fuatured-blog),
+.contents-wrapper .article-list:not(.fuatured-blog-news) {
   gap: clamp(var(--margin), calc(var(--margin-l) + 5.5vw) ,var(--margin-section)) !important;
 }
 
