@@ -2076,7 +2076,7 @@ body,
   display: flex !important;
 }
 
-.contents-wrapper .article-list > :nth-child(even) {
+.contents-wrapper .article-list:not(.fuatured-blog):not(.fuatured-blog-news) > :nth-child(even) {
   top: calc(var(--margin-section) - var(--margin));
   position: relative;
 }
