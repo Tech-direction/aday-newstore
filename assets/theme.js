@@ -9,7 +9,7 @@ $(window).on('scroll', function(){
 
 ===============================================================*/
 
-$(document).on('click', 'a[href^="#"]', function() {
+/*$(document).on('click', 'a[href^="#"]', function() {
   var speed = 500;
   var href = $(this).attr("href");
   var target = $(href == "#" || href == "" ? 'html' : href);
@@ -37,4 +37,4 @@ $(document).on('click', 'a[href^="#"]', function() {
 function hash_link_url_adjust(href){
   let sp = location.href.split("#");
   history.pushState(null, null, sp[0])
-};
+};*/
