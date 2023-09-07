@@ -181,7 +181,6 @@
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when 'announcement' -%}
-        {{ block.settings.header-postage-link }}
             <{%- if block.settings.header-postage-link != blank -%}a href="{{ block.settings.header-postage-link }}"{%else %}div{% endif %} class="header-postage">
               {%- if block.settings.header-postage-img != blank -%}
                     <figure class="postage-icon">{{ block.settings.header-postage-img | image_url: width: 600 | image_tag:
