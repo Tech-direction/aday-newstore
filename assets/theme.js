@@ -1,6 +1,6 @@
-/*$(window).on('scroll', function(){
+$(window).on('scroll', function(){
   
-});*/
+});
 
 
 /*===============================================================
@@ -37,4 +37,4 @@
 function hash_link_url_adjust(href){
   let sp = location.href.split("#");
   history.pushState(null, null, sp[0])
-};*/
+};
