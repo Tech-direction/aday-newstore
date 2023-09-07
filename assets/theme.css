@@ -968,8 +968,9 @@ a,
   display: none;
 }
 
-.contents-wrapper .errors ul {
-  
+.contents-wrapper .errors {
+  margin-top: 1em;
+  margin-bottom: var(--margin);
 }
 
 
