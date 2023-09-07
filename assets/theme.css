@@ -441,7 +441,8 @@ a,
 ===============================================================*/
 
 .contents-wrapper ol,
-.contents-wrapper ul {
+.contents-wrapper ul,
+.contents-wrapper .errors ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -465,14 +466,16 @@ a,
 -----------------------------------------------------*/
 .contents-wrapper .list.type-disc li,
 .contents-wrapper .rich-text__text ul li,
-.contents-wrapper .article-template__content ul li {
+.contents-wrapper .article-template__content ul li,
+.contents-wrapper .errors ul li {
   width: 100%;
   padding-left: 1em;
 }
 
 .contents-wrapper .list.type-disc li:before,
 .contents-wrapper .rich-text__text ul li:before,
-.contents-wrapper .article-template__content ul li:before {
+.contents-wrapper .article-template__content ul li:before,
+.contents-wrapper .errors ul li:before {
   content: '';
   width: .4em;
   height: .4em;
@@ -964,6 +967,11 @@ a,
 .contents-wrapper .form__message svg {
   display: none;
 }
+
+.contents-wrapper .errors ul {
+  
+}
+
 
 
 /*===============================================================
