@@ -1894,7 +1894,7 @@ body,
     justify-content: center;
   }
   wrapper.top .section-billboard .banner__content .heading br {
-    display: block;
+    display: block; 
   }
   .contents-wrapper.top .section-billboard .banner--medium:not(.banner--adapt) .banner__media {
     position: absolute;
