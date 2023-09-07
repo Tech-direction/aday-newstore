@@ -1400,12 +1400,12 @@ body,
 ---------------------------------------------------------------*/
 
 .contents-wrapper .header-postage {
-  padding: var(--margin-s)  1em .5em;
+  padding: var(--margin-s)  1em .5em !important;
   line-height: 1;
   font-weight: 500;
   font-size: .875em;
   vertical-align: middle;
-  color: rgb(var(--color-primary));
+  color: rgb(var(--color-primary)) !important;
   background-color: rgb(var(--color-gray-light));
   border-bottom-left-radius: calc(var(--border-radius-box)/2);
   border-bottom-right-radius: calc(var(--border-radius-box)/2);
