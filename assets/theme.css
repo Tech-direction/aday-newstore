@@ -1893,7 +1893,7 @@ body,
     padding: 0 var(--margin-l) !important;
     justify-content: center;
   }
-  .wrapper.top .section-billboard .banner__content .heading br {
+  .contents-wrapper.top .section-billboard .banner__content .heading br {
     display: block; 
   }
   .contents-wrapper.top .section-billboard .banner--medium:not(.banner--adapt) .banner__media {
