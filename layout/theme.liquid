@@ -15,8 +15,9 @@
     {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
-      {{ template }}
+    {{ template }}
     {{ handle }}
+    {{ current_page }}
     <title>
       {{ page_title }}
       {%- if current_tags %} - ; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
