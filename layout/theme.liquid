@@ -15,9 +15,7 @@
     {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
-    {{ template }}
-    {{ handle }}
-    {{ current_page }}
+
     <title>
       {%- if page_title == 'コレクション' %} 焼きたてのコーヒー豆
       {%- else %}{{ page_title }}
