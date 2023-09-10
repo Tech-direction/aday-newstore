@@ -19,7 +19,7 @@
     {{ handle }}
     {{ current_page }}
     <title>
-      {%- if page_titel == 'コレクション' %} 焼きたてのコーヒー豆
+      {%- if page_title == 'コレクション' %} 焼きたてのコーヒー豆
       {%- else %}{{ page_title }}
       {% endif -%}
       {%- if current_tags %} - ; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
