@@ -2199,26 +2199,45 @@ body,
 .contents-wrapper .section-fuatured-blog .slide-trigger {
   width: var(--font-l);
   height: var(--font-l);
+  padding: var(--margin);
+  color: rgb(var(--color-border));
   border-radius: 50%;
-  border: 1px solid rbg(var(--color-black));
+  border: 1px solid rgb(var(--color-border));
   line-height: 1px;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   position: absolute;
   top: 50%;
-  right: calc(100% + var(--margin));
+  right: calc(100% + var(--margin) + 1em);
   transform: translateY(-50%);
 }
 
-.contents-wrapper .section-fuatured-blog .slide-trigger 
+.contents-wrapper .section-fuatured-blog .slide-trigger.active {
+  display: flex;
+}
+
+.contents-wrapper .section-fuatured-blog .slide-trigger .icon-wrap svg {
+  fill: rgb(var(--color-border));
+}
+
+.contents-wrapper .section-fuatured-blog .slide-trigger.slide-prev .icon-wrap {
+  transform: rotate(180deg);
+}
 
 @media screen and (max-width: 989px) {
+  .contents-wrapper .section-fuatured-blog .section-container {
+    overflow: hidden;
+  }
   .contents-wrapper .section-fuatured-blog .content__item {
     margin-left: calc(var(--margin) * -1) !important;
     margin-right: calc(var(--margin) * -1) !important;
     left: var(--margin);
     position: relative;
+  }
+  .contents-wrapper .section-fuatured-blog .content__item .link.animate-arrow.align-right {
+    position: relative;
+    right: calc(var(--margin)*2);
   }
   .contents-wrapper .section-fuatured-blog .fuatured-blog-wrapper {
     width: 100%;
@@ -2677,7 +2696,9 @@ body,
 .contents-wrapper .price__sale .price-item.price-item--regular,
 .contents-wrapper .cart-item__price-wrapper .cart-item__discounted-prices .price.cart-item__old-price {
   color: rgb(var(--color-border));
+  font-weight: normal;
   opacity: 1;
+  display: flex;
 }
 
 .contents-wrapper .price__sale .price-item.price-item--regular::before,
@@ -2830,6 +2851,14 @@ body,
   position: absolute;
   right: 0;
   left: auto;
+}
+
+.contents-wrapper .featured-product .owner_comment {
+  padding: 1em;
+  border-top-left-radius: var(--border-radius-box);
+  border-top-right-radius: var(--border-radius-box);
+  border-bottom-right-radius: var(--border-radius-box);
+  background-color: rgb(var(--color-gray-light));
 }
 
 @media screen and (max-width: 989px) {
@@ -4905,6 +4934,23 @@ body,
 }
 
 
+/*===============================================================
 
+	registration
 
+===============================================================*/
 
+.contents-wrapper .benefits_list {
+  padding: 1em;
+  border-radius: var(--border-radius-box);
+  border: 1px solid rgb(var(--color-primary));
+}
+
+.contents-wrapper .benefits_list ul li {
+  color: rgb(var(--color-primary));
+  font-weight: bold;
+}
+
+.contents-wrapper .benefits_list ul li::before {
+  background-color: rgb(var(--color-primary));
+}
