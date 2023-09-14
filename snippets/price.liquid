@@ -87,7 +87,14 @@
   </div>
   {%- if show_badges -%}
     <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
-      {{ 'products.product.on_sale' | t }}
+      {% comment %}{{ 'products.product.on_sale' | t }}{% endcomment %}
+      {% assign discountrate = product.price
+        | times: 100
+        | divided_by: product.compare_at_price
+        | minus: 100
+        | times: -1
+      %}
+      {{ discountrate }}%OFF
     </span>
 
     <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">

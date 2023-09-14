@@ -46,7 +46,7 @@
   -%}
 
   {%- if block.settings.picker_type == 'button' -%}
-    <div class="field">
+    <div class="field {% if option_disabled %}disabled{% endif %}">
       <input
         type="radio"
         id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
