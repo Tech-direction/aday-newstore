@@ -48,7 +48,7 @@
               </p>
             {%- when 'text' -%}
               <div
-                class="rich-text__text rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} {%- if block.settings.text_align != blank -%} align-{{ block.settings.text_align }} {% endif %}"
+                class="rich-text__text rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} {%- if block.settings.text_align != blank -%} align-{{ block.settings.text_align }} {% endif %} {{ block.settings.text_class }}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
@@ -354,6 +354,11 @@
           ],
           "default": "left",
           "label": " 行揃え"
+        },
+        {
+          "type": "text",
+          "id": "text_class",
+          "label": "CSSクラス"
         }
       ]
     },

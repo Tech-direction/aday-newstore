@@ -89,7 +89,15 @@
         "b56f111e-7b06-4cf1-bae8-8b7fafaa47c0": {
           "type": "richtext",
           "settings": {
-            "richtext": "<p>芳ばしい香りに、かなりしっかり目の苦味とコク。ケニアならではの\"強いコーヒー感\"を楽しめます。<br\/>欧州で長らく愛されている、なかなか手に入らないレアのコーヒー豆です。<br\/><br\/><strong>オーナーからのひとこと<\/strong><br\/>柑橘系の香り。<br\/>オレンジ、ドライフルーツ、カシス。<br\/>軽やかなナチュラルフレーバー。<br\/>クリーン。<br\/>シナモンやカラメルのような甘味が楽しめる焙煎度。<\/p>"
+            "richtext": "<p>芳ばしい香りに、かなりしっかり目の苦味とコク。ケニアならではの\"強いコーヒー感\"を楽しめます。<br\/>欧州で長らく愛されている、なかなか手に入らないレアのコーヒー豆です。<\/p>",
+            "text_class": ""
+          }
+        },
+        "cee4bfc3-7283-4a43-b966-81b3d6f8af8b": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p><strong>オーナーからのひとこと<\/strong><br\/>柑橘系の香り。<br\/>オレンジ、ドライフルーツ、カシス。<br\/>軽やかなナチュラルフレーバー。<br\/>クリーン。<br\/>シナモンやカラメルのような甘味が楽しめる焙煎度。<\/p>",
+            "text_class": "owner_comment"
           }
         },
         "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-3": {
@@ -114,6 +122,7 @@
         "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-1",
         "6e040199-d0e7-4ac9-81be-b29248b875ca",
         "b56f111e-7b06-4cf1-bae8-8b7fafaa47c0",
+        "cee4bfc3-7283-4a43-b966-81b3d6f8af8b",
         "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-3",
         "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-4",
         "template--19717718147380__361c01ec-b4ce-4a50-9bc5-26515e1e190d-16883555516b0b3b8d-5"
@@ -176,24 +185,6 @@
         "blog": "news",
         "post_limit": 3
       }
-    },
-    "3cf81b33-78e8-42ef-8ee7-e590974e6961": {
-      "type": "featured-blog",
-      "disabled": true,
-      "settings": {
-        "heading": "Blog posts",
-        "heading_size": "h1",
-        "blog": "coffee-journal",
-        "post_limit": 4,
-        "columns_desktop": 4,
-        "color_scheme": "",
-        "show_image": true,
-        "show_date": true,
-        "show_author": false,
-        "show_view_all": true,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
     }
   },
   "order": [
@@ -201,7 +192,6 @@
     "ef1e9a68-7a62-4287-8199-03faca0c8b77",
     "361c01ec-b4ce-4a50-9bc5-26515e1e190d",
     "f86325b7-9ef5-4459-acbc-f77ebaa74e38",
-    "f9e0afc0-e928-45a3-9682-5919df278603",
-    "3cf81b33-78e8-42ef-8ee7-e590974e6961"
+    "f9e0afc0-e928-45a3-9682-5919df278603"
   ]
 }
