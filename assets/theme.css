@@ -2222,11 +2222,15 @@ body,
 }
 
 .contents-wrapper .section-fuatured-blog .slide-trigger .icon-wrap svg {
+  width: 1rem;
   fill: rgb(var(--color-border));
+}
+.contents-wrapper .section-fuatured-blog .slide-trigger .icon-wrap {
+  transform: rotate(-90deg);
 }
 
 .contents-wrapper .section-fuatured-blog .slide-trigger.slide-prev .icon-wrap {
-  transform: rotate(180deg);
+  transform: rotate(90deg);
 }
 
 @media screen and (max-width: 989px) {
