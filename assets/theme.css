@@ -2550,7 +2550,7 @@ body,
 }
 
 .contents-wrapper .pagination-wrapper .pagination__item:hover {
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 .contents-wrapper .pagination-wrapper .pagination__item-arrow {
