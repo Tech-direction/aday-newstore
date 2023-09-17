@@ -2588,11 +2588,11 @@ body,
 }
 
 .contents-wrapper .pagination-wrapper .pagination__item-arrow.pagination__item--next:hover .icon {
-  transform: rotate(90deg);
+  transform: rotate(90deg) !important;
 }
 
 .contents-wrapper .pagination-wrapper .pagination__item-arrow.pagination__item--prev:hover .icon {
-  transform: rotate(-90deg);
+  transform: rotate(-90deg) !important;
 }
 
 
