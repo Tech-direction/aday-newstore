@@ -2546,7 +2546,7 @@ body,
   width: var(--font-l);
   height: var(--font-l);
   padding: var(--margin);
-  color: rgb(var(--color-border));
+  color: rgb(var(--color-black));
 }
 
 .contents-wrapper .pagination-wrapper .pagination__item:hover {
@@ -2560,6 +2560,7 @@ body,
 
 .contents-wrapper .pagination-wrapper .pagination__item-arrow .icon {
   width: 1rem;
+  color: rgb(var(--color-border));
 }
 
 
