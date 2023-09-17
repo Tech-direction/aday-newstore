@@ -2580,6 +2580,7 @@ body,
   width: 1rem;
   margin: 0;
   color: rgb(var(--color-border));
+  position: absolute;
 }
 
 
