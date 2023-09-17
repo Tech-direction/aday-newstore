@@ -31,7 +31,7 @@
     {% comment %}}<h1 class="title--primary{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
       {{ blog.title | escape }}
     </h1>{% endcomment %}
-    {% assign articles_modulo = blog.articles | modulo : 2 %}
+    {% assign articles_modulo = blog.articles.size | modulo : 2 %}
   {{ blog.articles.size }}
   
     <div class="blog-articles grid grid--2-col-desktop grid--2-col-tablet {{ grid_gap }} article-list {% if articles_modulo == 0 and blog.articles > 1 %} type-even {% endif %}{% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
