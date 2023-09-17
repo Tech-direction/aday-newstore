@@ -1,5 +1,17 @@
 {
   "sections": {
+    "e4af458d-2c78-4a1e-ae41-239789669102": {
+      "type": "main-section-header",
+      "settings": {
+        "section_heading": "店舗情報",
+        "heading_size": "xl",
+        "section_sub_heading": "ACCESS",
+        "change_box_layout": false,
+        "description": "",
+        "show_description": false,
+        "image": "shopify:\/\/shop_images\/access01.jpg"
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -14,6 +26,7 @@
     }
   },
   "order": [
+    "e4af458d-2c78-4a1e-ae41-239789669102",
     "main"
   ]
 }
