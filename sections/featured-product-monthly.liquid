@@ -106,7 +106,7 @@
                 </p>
               {%- when 'richtext' -%}
                 <div
-                  class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
+                  class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %} {{ block.settings.text_class }}"
                   {{ block.shopify_attributes }}
                 >
                   {{- block.settings.richtext -}}
@@ -558,6 +558,11 @@
           "type": "richtext",
           "id": "richtext",
           "label": "リッチテキスト"
+        },
+        {
+          "type": "text",
+          "id": "text_class",
+          "label": "CSSクラス"
         }
       ]
     },

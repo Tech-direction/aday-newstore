@@ -32,7 +32,8 @@
           "settings": {
             "header-postage-img": "shopify:\/\/shop_images\/postage_img.svg",
             "header-postage-text1": "定期便はいつでも",
-            "header-postage-text2": "5％OFF＋送料無料"
+            "header-postage-text2": "5％OFF＋送料無料",
+            "header-postage-link": "shopify:\/\/pages\/subscription"
           }
         }
       },
