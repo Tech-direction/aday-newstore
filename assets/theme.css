@@ -2542,6 +2542,10 @@ body,
   margin-top: var(--margin-l);
 }
 
+.contents-wrapper .pagination__list li {
+  margin: 0;
+}
+
 .contents-wrapper .pagination-wrapper .pagination__item {
   width: var(--font-l);
   height: var(--font-l);
