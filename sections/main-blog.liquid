@@ -34,7 +34,7 @@
     {% assign articles_modulo = blog.articles | modulo : 2 %}
   {{ articles_modulo }}
   
-    <div class="blog-articles grid grid--2-col-desktop grid--2-col-tablet {{ grid_gap }} article-list test {% if articles_modulo == 0 and articles_modulo > 1 %} type-even {% endif %}{% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
+    <div class="blog-articles grid grid--2-col-desktop grid--2-col-tablet {{ grid_gap }} article-list {% if articles_modulo == 0 and blog.articles > 1 %} type-even {% endif %}{% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
       {%- for article in blog.articles -%}
         <div
           class="blog-articles__article article grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
