@@ -2549,6 +2549,7 @@ body,
 .contents-wrapper .pagination__list li {
   max-width: none;
   margin: 0 !important;
+  flex: none;
 }
 
 .contents-wrapper .pagination-wrapper .pagination__item {
