@@ -2565,6 +2565,9 @@ body,
 .contents-wrapper .pagination-wrapper .pagination__item-arrow {
   border-radius: 50%;
   border: 1px solid rgb(var(--color-border));
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contents-wrapper .pagination-wrapper .pagination__item-arrow .icon {
