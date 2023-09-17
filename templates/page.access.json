@@ -18,6 +18,7 @@
         "content_max_width": "s",
         "change_block": false,
         "heading": "",
+        "heading_hide": true,
         "text": "",
         "text_align": "left",
         "padding_top": 0,
