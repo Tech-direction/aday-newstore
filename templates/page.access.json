@@ -16,7 +16,7 @@
       "type": "main-page",
       "settings": {
         "content_max_width": "s",
-        "change_block": false,
+        "change_block": true,
         "heading": "",
         "heading_hide": true,
         "text": "",
