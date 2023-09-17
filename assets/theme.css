@@ -2569,6 +2569,7 @@ body,
 
 .contents-wrapper .pagination-wrapper .pagination__item-arrow .icon {
   width: 1rem;
+  margin: 0;
   color: rgb(var(--color-border));
 }
 
