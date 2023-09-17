@@ -32,7 +32,7 @@
       {{ blog.title | escape }}
     </h1>{% endcomment %}
     {% assign articles_modulo = blog.articles | modulo : 2 %}
-  {{ blog.articles }}
+  {{ blog.articles.size }}
   
     <div class="blog-articles grid grid--2-col-desktop grid--2-col-tablet {{ grid_gap }} article-list {% if articles_modulo == 0 and blog.articles > 1 %} type-even {% endif %}{% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
       {%- for article in blog.articles -%}
