@@ -2174,7 +2174,7 @@ body,
 
 @media screen and (max-width: 989px) {
   .contents-wrapper .article-list {
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
     gap: var(--margin-l) var(--margin) !important;
   }
   .contents-wrapper .article-list .grid__item {
