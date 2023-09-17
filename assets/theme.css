@@ -2559,7 +2559,7 @@ body,
 }
 
 .contents-wrapper .pagination-wrapper .pagination__item-arrow .icon {
-  color: rgb(var(--color-border));
+  width: 1rem;
 }
 
 
