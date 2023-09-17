@@ -2543,6 +2543,9 @@ body,
 }
 
 .contents-wrapper .pagination-wrapper .pagination__item {
+  width: var(--font-l);
+  height: var(--font-l);
+  padding: var(--margin);
   color: rgb(var(--color-border));
 }
 
