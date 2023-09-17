@@ -125,6 +125,7 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
+    "checkout_header_image": "shopify:\/\/shop_images\/access01.jpg",
     "checkout_logo_image": "shopify:\/\/shop_images\/logo.svg",
     "sections": {
       "main-password-header": {
