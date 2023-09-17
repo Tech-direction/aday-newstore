@@ -2543,7 +2543,7 @@ body,
 }
 
 .contents-wrapper .pagination__list li {
-  margin: 0;
+  margin: 0 !important;
 }
 
 .contents-wrapper .pagination-wrapper .pagination__item {
@@ -2553,6 +2553,7 @@ body,
   color: rgb(var(--color-black));
 }
 
+.contents-wrapper .pagination-wrapper .pagination__item,
 .contents-wrapper .pagination-wrapper .pagination__item:hover {
   opacity: 1 !important;
 }
