@@ -42,7 +42,7 @@
       ],
       "settings": {
         "logo_position": "middle-left",
-        "menu": "",
+        "menu": "global-nav",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": false,
