@@ -31,10 +31,10 @@
     {% comment %}}<h1 class="title--primary{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
       {{ blog.title | escape }}
     </h1>{% endcomment %}
-    {% assign modulo = blog.articles | modulo : 2 %}
-  {{ modulo }}
+    {% assign articles_modulo = blog.articles | modulo : 2 %}
+  {{ articles_modulo }}
   
-    <div class="blog-articles grid grid--2-col-desktop grid--2-col-tablet {{ grid_gap }} article-list{% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
+    <div class="blog-articles grid grid--2-col-desktop grid--2-col-tablet {{ grid_gap }} article-list{% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}{% if articles_modulo == 0 and articles_modulo > 1 %} type-even {% endif %}">
       {%- for article in blog.articles -%}
         <div
           class="blog-articles__article article grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
