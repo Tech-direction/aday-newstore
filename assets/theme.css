@@ -2576,11 +2576,23 @@ body,
   justify-content: center;
 }
 
+.contents-wrapper .pagination-wrapper .pagination__item-arrow:hover {
+  opacity: .5;
+}
+
 .contents-wrapper .pagination-wrapper .pagination__item-arrow .icon {
   width: 1rem;
   margin: 0;
   color: rgb(var(--color-border));
   position: absolute;
+}
+
+.contents-wrapper .pagination-wrapper .pagination__item-arrow.pagination__item--next:hover .icon {
+  transform: rotate(90deg);
+}
+
+.contents-wrapper .pagination-wrapper .pagination__item-arrow.pagination__item--prev:hover .icon {
+  transform: rotate(-90deg);
 }
 
 
