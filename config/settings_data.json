@@ -128,7 +128,7 @@
     "checkout_header_image": "shopify:\/\/shop_images\/access01.jpg",
     "checkout_logo_image": "shopify:\/\/shop_images\/logo.svg",
     "checkout_logo_size": "medium",
-    "checkout_body_background_color": "#f5f5f5",
+    "checkout_body_background_color": "#d2d2d2",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
