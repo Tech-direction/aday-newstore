@@ -2542,7 +2542,12 @@ body,
   margin-top: var(--margin-l);
 }
 
+.contents-wrapper .pagination-wrapper .pagination__item:hover {
+  opacity: 1;
+}
+
 .contents-wrapper .pagination-wrapper .pagination__item-arrow {
+  border-radius: 50%;
   border: 1px solid rgb(var(--color-border));
 }
 
