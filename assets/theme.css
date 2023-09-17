@@ -2564,6 +2564,7 @@ body,
   opacity: 1 !important;
 }
 
+.contents-wrapper .pagination-wrapper .pagination__item--current:after,
 .contents-wrapper .pagination-wrapper .pagination__item--current:after {
   bottom: 0;
 }
