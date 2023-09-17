@@ -21,6 +21,7 @@
 
 
 <div class="page-width page-width--narrow section-{{ section.id }}-padding article-wrapper {{ content_size }} {% if section.settings.change_block !=blank %} section-block{% endif %}">
+  {% if section.settings.heading_hide != false %}
   <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %} heading size-xl align-center">
     {% if section.settings.heading !=blank %}
       {{ section.settings.heading  }}
@@ -28,6 +29,7 @@
       {{ page.title | escape }}
     {% endif %}
   </h1>
+  {% endif %}
   {% if section.settings.text !=blank %}
   <div
     class="rich-text__text rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} {%- if block.settings.text_align != blank -%} align-{{ block.settings.text_align }} {% endif %}"
