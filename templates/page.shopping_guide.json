@@ -1,11 +1,24 @@
 {
   "sections": {
+    "e8ca0490-d562-485d-9b29-dc8c5609eec6": {
+      "type": "main-section-header",
+      "settings": {
+        "section_heading": "ショッピングガイド",
+        "heading_size": "xl",
+        "section_sub_heading": "SHOPPING GUIDE",
+        "change_box_layout": false,
+        "description": "",
+        "show_description": false,
+        "image": "shopify:\/\/shop_images\/image2724.jpg"
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
         "content_max_width": "s",
-        "change_block": false,
+        "change_block": true,
         "heading": "",
+        "heading_hide": true,
         "text": "",
         "text_align": "left",
         "padding_top": 0,
@@ -14,6 +27,7 @@
     }
   },
   "order": [
+    "e8ca0490-d562-485d-9b29-dc8c5609eec6",
     "main"
   ]
 }
