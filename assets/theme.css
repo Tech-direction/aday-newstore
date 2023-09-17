@@ -2577,7 +2577,7 @@ body,
 }
 
 .contents-wrapper .pagination-wrapper .pagination__item-arrow:hover {
-  opacity: .5;
+  opacity: .5 !important;
 }
 
 .contents-wrapper .pagination-wrapper .pagination__item-arrow .icon {
@@ -2587,11 +2587,11 @@ body,
   position: absolute;
 }
 
-.contents-wrapper .pagination-wrapper .pagination__item-arrow.pagination__item--next:hover .icon {
+.contents-wrapper .pagination-wrapper .pagination__item.pagination__item--next:hover .icon {
   transform: rotate(90deg);
 }
 
-.contents-wrapper .pagination-wrapper .pagination__item-arrow.pagination__item--prev:hover .icon {
+.contents-wrapper .pagination-wrapper .pagination__item.pagination__item--prev:hover .icon {
   transform: rotate(-90deg);
 }
 
