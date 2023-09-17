@@ -2542,6 +2542,10 @@ body,
   margin-top: var(--margin-l);
 }
 
+.contents-wrapper .pagination-wrapper .pagination__item {
+  color: rgb(var(--color-border));
+}
+
 .contents-wrapper .pagination-wrapper .pagination__item:hover {
   opacity: 1;
 }
