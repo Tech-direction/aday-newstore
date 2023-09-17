@@ -2543,7 +2543,9 @@ body,
 }
 
 .contents-wrapper .pagination__list li {
+  max-width: none;
   margin: 0 !important;
+  gap: var(--margin);
 }
 
 .contents-wrapper .pagination-wrapper .pagination__item {
