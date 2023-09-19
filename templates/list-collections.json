@@ -59,12 +59,12 @@
         "0e52a22e-a7bb-433e-8655-8d46fe5a64b6"
       ],
       "settings": {
-        "content_max_width": "m",
+        "content_max_width": "default",
         "change_block": false,
         "section_heading": "<p>焼きたてコーヒー豆の新鮮さと<br\/>香りをお楽しみください<\/p>",
         "heading_size": "xl",
-        "heading_text_align": "center",
-        "description": "<p>A day in the coffeeでは注文をいただいてから焙煎を行う<strong>注文焙煎<\/strong>を行なって、皆様にお届けしております。<br\/>香り高いコーヒー豆の味わいをぜひお楽しみください。<br\/><br\/>また、コーヒーの定期便もご用意しております。<br\/>定期便に興味のある方は以下の「【コーヒー定期便】を詳しく見る」よりご確認ください。<\/p>",
+        "heading_text_align": "left",
+        "description": "<p>A day in the coffeeでは注文をいただいてから焙煎を行う<strong>注文焙煎<\/strong>を行なっています。<br\/>香り高いコーヒー豆の味わいをお楽しみください。<br\/><br\/>コーヒーの定期便もご用意しています。詳しくは以下の「<strong>【コーヒー定期便】を詳しく見る<\/strong>」よりご確認ください。<\/p>",
         "description_text_align": "left"
       }
     },
@@ -72,7 +72,7 @@
       "type": "collection-subscription-section",
       "settings": {
         "content_max_width": "default",
-        "change_block": true,
+        "change_block": false,
         "image": "shopify:\/\/shop_images\/image2575.jpg",
         "section_heading": "<p>コーヒー焙煎屋さんがお届けする、<br\/>焼きたてコーヒー豆の定期便<\/p>",
         "heading_size": "l",
@@ -154,7 +154,6 @@
     "8c5d6e0d-3f26-461a-bbf3-05c407fe8d5e": {
       "type": "featured-collection-been",
       "settings": {
-        "image": "shopify:\/\/shop_images\/image_middle2.jpg",
         "section_id": "central_american",
         "heading_size": "xl",
         "change_box_layout": false,
