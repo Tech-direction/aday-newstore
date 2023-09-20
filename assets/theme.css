@@ -2040,7 +2040,7 @@ body,
   }
   .contents-wrapper .subscription-feature-list .feature__item [class^="subscription-feature-media-"] {
     height: 4vh;
-  }
+  } 
   .contents-wrapper .subscription-feature-list .feature__item .heading br {
     display: block;
   }
