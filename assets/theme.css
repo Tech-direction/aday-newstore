@@ -4710,6 +4710,13 @@ body,
   }
 }
 
+@media screen and (max-width: 749px) {
+  .grid-collection .grid-product {
+    padding: var(--margin-s);
+  }
+}
+
+
 
 /*  checkout
 ---------------------------------------------------------------*/
