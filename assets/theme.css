@@ -3646,6 +3646,13 @@ body,
   text-align: right;
 }
 
+@media screen and (max-width: 989px) {
+  .contents-wrapper .customer_block {
+    padding: var(--margin-s);
+  }
+}
+
+
 /*  table
 ---------------------------------------------------------------*/
 
