@@ -3558,7 +3558,8 @@ body,
   background-color: rgb(var(--color-gray-light));
 }
 
-.contents-wrapper .customer_block + .customer_block {
+.contents-wrapper .customer_block + .customer_block,
+.contents-wrapper .description + .customer_block {
   margin-top: var(--margin-s);
 }
 
