@@ -2801,8 +2801,11 @@ body,
   border-radius: var(--border-radius-box);
 }
 
+.contents-wrapper .product .thumbnail-slider {
+  margin-top: var(--margin-s);
+}
+
 .contents-wrapper .product .thumbnail-slider .thumbnail-list.slider--tablet-up {
-  margin-top: var(--margin-s) !important;
   padding: 0;
   gap: var(--margin-s);
 }
