@@ -5206,9 +5206,11 @@ body,
 ===============================================================*/
 
 .contents-wrapper .slider-button {
-  color: rgb(var(--color-border));
   border-radius: 50%;
   border: 1px solid rgb(var(--color-border));
   line-height: 1px;
 }
 
+.contents-wrapper .slider-button svg {
+  color: rgb(var(--color-border));
+}
