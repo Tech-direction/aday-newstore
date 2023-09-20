@@ -1633,6 +1633,11 @@ body,
   display: none;
 }
 
+.contents-wrapper .copyright__content {
+  font-size: var(--font-s);
+  display: block;
+}
+
 
 /*  footer content
 ---------------------------------------------------------------*/
