@@ -4408,6 +4408,11 @@ body,
   gap: var(--margin);
 }
 
+.contents-wrapper .cart-notification  .modal__close-button .icon {
+  width: 1rem;
+  height: 1rem;
+}
+
 .contents-wrapper .cart-notification .cart-notification-product__image {
   margin: 0;
 }
