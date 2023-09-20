@@ -4396,6 +4396,10 @@ body,
   border-color: rgb(var(--color-border));
 }
 
+.contents-wrapper .cart__footer .vVPqL6YEmH1pvjtsqjX7 > span {
+  color: rgb(var(--color-black));
+}
+
 [role="tabpanel"]#REGULAR,
 [role="tabpanel"]#PICKUP, {
   margin-top: var(--margin);
