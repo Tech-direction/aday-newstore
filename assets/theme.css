@@ -879,7 +879,8 @@ a,
 }
 
 .contents-wrapper .quantity .quantity__button {
-  width: calc(4.5rem / var(--font-body-scale));
+  /*width: calc(4.5rem / var(--font-body-scale));*/
+  width: 3rem;
   min-width: auto;
   min-height: auto;
   padding: 0;
