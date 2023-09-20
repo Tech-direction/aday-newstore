@@ -24,6 +24,7 @@
     </p>
 
     <div class="customer_block">
+    {%- form 'recover_customer_password' -%}
       {%- if form.errors -%}
         <small id="RecoverEmail-email-error" class="form__message">
           <svg aria-hidden="true" focusable="false" viewBox="0 0 13 13">
@@ -35,7 +36,6 @@
           {{ form.errors.messages.form }}
         </small>
       {%- endif -%}
-    {%- form 'recover_customer_password' -%}
       {% assign recover_success = form.posted_successfully? %}
       <div class="field">
         <input
