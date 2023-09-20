@@ -3651,7 +3651,7 @@ body,
 }
 
 .contents-wrapper .customer_block + .link.animate-arrow {
-  margin-top: var(--margin);
+  margin-top: var(--margin) !important;
 }
 
 @media screen and (max-width: 989px) {
