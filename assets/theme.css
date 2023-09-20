@@ -2818,6 +2818,10 @@ body,
   font-weight: normal;
 }
 
+.contents-wrapper .product-list .product__item .price .price-item--regular::after {
+  display: none;
+}
+
 .contents-wrapper .price__sale .price-item.price-item--regular,
 .contents-wrapper .cart-item__price-wrapper .cart-item__discounted-prices .price.cart-item__old-price {
   color: rgb(var(--color-border));
