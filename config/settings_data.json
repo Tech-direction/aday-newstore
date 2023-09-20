@@ -11,6 +11,7 @@
     "grid_item_3_heading": "<p>いつでも<br\/>解約OK<\/p>",
     "logo": "shopify:\/\/shop_images\/aday-logo.svg",
     "logo_width": 380,
+    "favicon": "shopify:\/\/shop_images\/favicon.png",
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
