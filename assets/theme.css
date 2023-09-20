@@ -2878,9 +2878,11 @@ body,
   order: 0;
 }
 
-.contents-wrapper .price .price-item.price-item--regular {
+.contents-wrapper .price .price-item.price-item--regular,
+.contents-wrapper .price__sale .price-item.price-item--sale {
   display: flex;
   align-items: baseline;
+  gap: .5em;
 }
 
 .contents-wrapper .price .price-item.price-item--regular::after,
