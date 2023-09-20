@@ -157,7 +157,7 @@ html.js.wf-poppins-n1-active{
 
 .contents-wrapper .menu {
   max-width: 670px;
-  border: 0;
+  border: 0 !important;
 }
 
 @media screen and (max-width: 749px) {
