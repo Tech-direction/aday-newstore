@@ -3156,6 +3156,10 @@ body,
   width: 1rem;
 }
 
+.contents-wrapper .product-list .product__item .card--media .card__inner .card__content {
+  padding: var(--margin-s);
+}
+
 @media screen and (max-width: 989px) {
   .contents-wrapper .product-list {
     gap: var(--margin) !important;
@@ -3166,7 +3170,7 @@ body,
 }
 @media screen and (max-width: 749px) {
   .contents-wrapper .product-list .grid__item {
-    padding: var(--margin-s)
+    padding: var(--margin-s);
   }
 }
 
