@@ -2499,6 +2499,9 @@ body,
 
 
 @media screen and (max-width: 989px) {
+  .contents-wrapper .article-wrapper .article-template__content table.hold {
+    border-spacing: var(--margin-xs);
+  }
   .contents-wrapper .article-wrapper .article-template__content table:not(.hold),
   .contents-wrapper .article-wrapper .article-template__content table:not(.hold) tbody,
   .contents-wrapper .article-wrapper .article-template__content table:not(.hold) tr,
