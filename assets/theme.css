@@ -4445,6 +4445,12 @@ body,
   margin-right: -1rem;
 }
 
+@media screen and (max-width: 749px) {
+  .contents-wrapper .cart-notification {
+    padding: var(--margin);
+  }
+}
+
 /*===============================================================
 
 	404
