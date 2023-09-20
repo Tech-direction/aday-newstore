@@ -3779,7 +3779,7 @@ body,
   margin-top: 0;
 }
 
-.contents-wrapper .customer .table .item_header a {
+.contents-wrapper .customer .table .item_header a:not(.button) {
     width: 100%;
   }
 
