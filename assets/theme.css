@@ -2307,6 +2307,7 @@ body,
     width: 100%;
   }
   .contents-wrapper .section-fuatured-blog .article-list {
+    margin-bottom: var(--margin-l);
     padding-right: 0;
   }
  .contents-wrapper .section-fuatured-blog .article-list .grid__item {
