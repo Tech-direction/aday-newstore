@@ -3690,7 +3690,7 @@ body,
 }
 
 .contents-wrapper .customer tbody > :last-child > * {
-  /*border-bottom: 0;*/
+  border-bottom: 0;
 }
 
 .contents-wrapper .customer thead:after,
