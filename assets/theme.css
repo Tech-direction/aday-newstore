@@ -2834,6 +2834,7 @@ body,
 .contents-wrapper .price__sale .price-item.price-item--regular::after,
 .contents-wrapper .cart-item__price-wrapper .cart-item__discounted-prices .price.cart-item__old-price::after {
   content: ')';
+  font-size: 1em;
 }
 
 .contents-wrapper .cart-item__price-wrapper .cart-item__discounted-prices {
