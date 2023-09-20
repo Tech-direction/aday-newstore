@@ -4305,7 +4305,7 @@ body,
   margin: var(--margin-s) 0 0;
   padding: 0 var(--margin);
   text-align: right;
-  font-size: var(--font-s);
+  font-size: var(--font-s) !important;
 }
 
 .contents-wrapper .cart__footer .cart__blocks {
