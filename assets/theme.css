@@ -1663,7 +1663,7 @@ body,
 
 .contents-wrapper .footer-block--menu ul a {
   padding: 0;
-  display: inline-block;
+  display: block;
 }
 
 .contents-wrapper .footer-block--menu ul a:hover {
