@@ -2805,6 +2805,15 @@ body,
   margin-top: var(--margin-s) !important;
 }
 
+.contents-wrapper .product .slider-mobile-gutter.thumbnail-slider .slider-button--prev {
+  margin-right: var(--margin-s);
+}
+
+.contents-wrapper .product .slider-mobile-gutter.thumbnail-slider .slider-button--next {
+  margin-left: var(--margin-s);
+}
+
+
 .contents-wrapper .product .thumbnail-slider .thumbnail-list.slider--tablet-up {
   padding: 0;
   gap: var(--margin-s);
