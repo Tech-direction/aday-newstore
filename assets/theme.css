@@ -4398,12 +4398,13 @@ body,
 .contents-wrapper .cart-notification {
   padding: var(--margin-l);
   border: 1px solid rgb(var(--color-border));
+  background-color: rgb(var(--color-gray-light));
 }
 
 .contents-wrapper .cart-notification .cart-notification-product {
   margin-bottom: var(--margin);
   padding: var(--margin);
-  background-color: rgb(var(--color-gray-light));
+  background-color: #fff;
   gap: var(--margin);
 }
 
