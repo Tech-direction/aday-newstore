@@ -2813,6 +2813,9 @@ body,
   margin-left: var(--margin-s);
 }
 
+.contents-wrapper .product .slider-mobile-gutter.thumbnail-slider .slider-button:disabled {
+  display: none;
+}
 
 .contents-wrapper .product .thumbnail-slider .thumbnail-list.slider--tablet-up {
   padding: 0;
@@ -2824,6 +2827,7 @@ body,
   border-radius: var(--border-radius-box);
   overflow: hidden;
 }
+
 
 .contents-wrapper .product .slider-mobile-gutter {
   margin: 0 !important;
