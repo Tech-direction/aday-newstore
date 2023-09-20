@@ -2903,6 +2903,7 @@ body,
   font-weight: normal;
   opacity: 1;
   display: flex;
+  gap: 0;
 }
 
 .contents-wrapper .price__sale .price-item.price-item--regular::before,
