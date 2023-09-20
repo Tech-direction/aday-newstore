@@ -3961,7 +3961,7 @@ body,
     width: 100%;
   }
   .contents-wrapper .customer .customer_order_data p {
-    flex: auto;
+    flex: 1;
   }
   .contents-wrapper .customer .customer_order_data .label {
     width: 5em;
