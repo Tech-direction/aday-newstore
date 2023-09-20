@@ -3878,7 +3878,10 @@ body,
   }
   .contents-wrapper .customer .table .item_header {
     text-align: left;
-    justify-items: flex-start;
+    justify-content: flex-start !important;
+  }
+  .contents-wrapper .customer .table .item_header a {
+    width: 100%;
   }
   .contents-wrapper .customer .orders_list .table td + td,
   .contents-wrapper .customer .orders_list .table tr > :first-child {
