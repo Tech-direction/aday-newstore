@@ -968,6 +968,9 @@ a,
   .contents-wrapper .cf-field-container.birthday .input-full {
     padding-top: 1em;
   }
+  .contents-wrapper .cf-field-container.birthday .input-full + .cf-down-arrow {
+    margin-top: .5em;
+  }
 }
 
 
