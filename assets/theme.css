@@ -2037,10 +2037,10 @@ body,
 @media screen and (max-width: 989px) {
   .contents-wrapper .subscription-feature-list .feature__item {
     padding: var(--margin-s);
-    gap: var(--margin-xs);
+    gap: 0);
   }
   .contents-wrapper .subscription-feature-list .feature__item [class^="subscription-feature-media-"] {
-    height: 3vh;
+    height: 4vh;
   } 
   .contents-wrapper .subscription-feature-list .feature__item .heading br {
     display: block;
