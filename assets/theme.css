@@ -3839,6 +3839,7 @@ body,
     justify-content: space-between;
   }
   .contents-wrapper .customer .table td:before {
+    min-width: 5em;
     color: rgb(var(--color-black));
     font-size: 1rem;
     flex: none;
