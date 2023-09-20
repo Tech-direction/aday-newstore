@@ -956,8 +956,18 @@ a,
 }
 
 @media screen and (max-width: 749px) {
-  padding-left: 0;
+  .contents-wrapper .cf-date-field--inline-inputs {
+    padding-left: 0;
+  }
+  .contents-wrapper .cf-field-container.birthday label {
+    font-size: var(--font-s);
+    top: 0.5em;
+    transform: none;
+  }
 }
+
+
+    
 
 
 /*  checkbox
