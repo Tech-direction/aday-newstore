@@ -4345,7 +4345,7 @@ body,
 }
 
 .contents-wrapper .cart__footer .baseStyle h3 {
-  margin-bottom: var(--margin);
+  margin-bottom: var(--margin-s);
   text-align: center;
   font-size: var(--font-m);
 }
