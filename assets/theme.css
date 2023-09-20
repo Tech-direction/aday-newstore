@@ -28,7 +28,7 @@
   --width-max-xs: calc(680px + var(--margin)*2);
   --border-radius-box: var(--margin-s);
   */
-  --margin: clamp(15px, 1.5vw, 30px);
+  --margin: clamp(20px, 1.5vw, 30px);
   --margin-section: calc(var(--margin)*5);
   --margin-xl: calc(var(--margin)*3);
   --margin-l: calc(var(--margin)*2);
