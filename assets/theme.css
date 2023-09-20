@@ -2878,6 +2878,10 @@ body,
   order: 0;
 }
 
+.contents-wrapper .price .price-item.price-item--regular {
+  display: flex;
+}
+
 .contents-wrapper .price .price-item.price-item--regular::after,
 .contents-wrapper .price__sale .price-item.price-item--sale::after {
   content: '税込';
