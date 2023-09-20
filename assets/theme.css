@@ -965,6 +965,9 @@ a,
     top: .5em;
     transform: none;
   }
+  .contents-wrapper .cf-field-container.birthday .input-full {
+    padding-top: 1em;
+  }
 }
 
 
