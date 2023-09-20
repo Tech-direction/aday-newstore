@@ -4590,11 +4590,14 @@ body,
   font-size: 1rem;
 }
 
-.contents-wrapper #boxContent .Polaris-FormLayout__Item  select {
+.contents-wrapper #boxContent .Polaris-FormLayout__Item select {
   max-width: calc(var(--width-max-xs) - var(--margin)*2);
+  height: 3.5rem;
   margin: 0 auto;
   padding: 1em !important;
   font-size: 1rem;
+  color: rgb(var(--color-black));
+  border-radius: 0;
   border-color: rgb(var(--color-border)) !important;
   display: block;
 }
