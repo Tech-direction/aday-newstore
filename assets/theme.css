@@ -4630,6 +4630,10 @@ body,
   background-color: rgb(var(--color-gray-light));
 }
 
+.grid-collection .grid-product .sc-bdvvaa {
+  color: rgb(var(--color-black));
+}
+
 .grid-collection .grid-product > *,
 .grid-collection .grid-product >  :first-child > * {
   margin: 0 !important;
