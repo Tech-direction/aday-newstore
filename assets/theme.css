@@ -2892,7 +2892,8 @@ body,
   font-weight: normal;
 }
 
-.contents-wrapper .product-list .product__item .price .price-item--regular::after {
+.contents-wrapper .product-list .product__item .price .price-item--regular::after,
+.contents-wrapper .product-list .product__item .price__sale .price-item.price-item--sale::after {
   display: none;
 }
 
