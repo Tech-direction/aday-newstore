@@ -961,8 +961,8 @@ a,
   }
   .contents-wrapper .cf-field-container.birthday label {
     font-size: var(--font-s);
-    top: 0.5em;
-    transform: none;
+    position: absolute;
+    top: .5em;
   }
 }
 
