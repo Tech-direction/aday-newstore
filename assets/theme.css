@@ -2035,6 +2035,9 @@ body,
 }
 
 @media screen and (max-width: 989px) {
+  .contents-wrapper .subscription-feature-list .feature__item {
+    padding: var(--margin-s);
+  }
   .contents-wrapper .subscription-feature-list .feature__item [class^="subscription-feature-media-"] {
     height: 5vh;
   }
