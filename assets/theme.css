@@ -3830,7 +3830,7 @@ body,
 }
 
 .contents-wrapper .customer .table.customer-account td>*:not(.button) {
-  text-align: right;
+  text-align: left;
   flex: 1;
 }
 
