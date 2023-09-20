@@ -5199,4 +5199,15 @@ body,
   background-color: transparent;
 }
 
+/*===============================================================
+
+	slider
+
+===============================================================*/
+
+.contents-wrapper .slider-button {
+  border-radius: 50%;
+  border: 1px solid rgb(var(--color-border));
+  line-height: 1px;
+}
 
