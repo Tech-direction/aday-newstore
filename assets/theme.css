@@ -2880,6 +2880,7 @@ body,
 
 .contents-wrapper .price .price-item.price-item--regular {
   display: flex;
+  align-items: baseline;
 }
 
 .contents-wrapper .price .price-item.price-item--regular::after,
