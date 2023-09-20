@@ -2290,9 +2290,9 @@ body,
 }
 
 @media screen and (max-width: 989px) {
-  .contents-wrapper .section-fuatured-blog .section-container {
+  /*.contents-wrapper .section-fuatured-blog .section-container {
     overflow: hidden;
-  }
+  }*/
   .contents-wrapper .section-fuatured-blog .content__item {
     margin-left: calc(var(--margin) * -1) !important;
     margin-right: calc(var(--margin) * -1) !important;
