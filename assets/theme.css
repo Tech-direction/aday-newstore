@@ -3566,10 +3566,14 @@ body,
   margin-top: var(--margin-s);
 }
 
-.contents-wrapper .heading + .customer_block,
-.contents-wrapper .description + .customer_block {
+.contents-wrapper .heading + .customer_block {
   margin-top: var(--margin);
 }
+
+.contents-wrapper .description + .customer_block {
+  margin-top: var(--margin-l);
+}
+
 
 .contents-wrapper .customer form {
   margin: 0;
