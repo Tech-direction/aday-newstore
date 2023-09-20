@@ -3788,7 +3788,7 @@ body,
   }
 
 .contents-wrapper .customer .table .fulfillment {
-  margin-top: .5rem;
+  margin: .5rem auto 0 0;
   padding: .5em;
   font-size: var(--font-s);
   line-height: 1;
