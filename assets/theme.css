@@ -4417,6 +4417,7 @@ body,
   text-decoration: none;
 }
 
+.contents-wrapper .cart-notification .cart-notification__heading,
 .contents-wrapper .cart-notification  .cart-notification__heading .icon-checkmark {
   color: rgb(var(--color-primary));
 }
