@@ -4413,6 +4413,10 @@ body,
   height: 1rem;
 }
 
+.contents-wrapper .cart-notification .link {
+  text-decoration: none;
+}
+
 .contents-wrapper .cart-notification  .cart-notification__heading .icon-checkmark {
   color: rgb(var(--color-primary));
 }
