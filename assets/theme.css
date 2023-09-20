@@ -3856,6 +3856,9 @@ body,
   .contents-wrapper .customer .table tr > :first-child {
     padding-top: 1em;
   }
+  .customer .table tbody > :first-child > :first-child {
+    padding-top: 0;
+  }
   .contents-wrapper .customer .table tfoot td {
     padding: 1em 0 0 !important;
   }
