@@ -4708,6 +4708,10 @@ body,
   background-color: rgb(var(--color-primary)) !important;
 }
 
+.sc-crHlIS {
+  color: rgb(var(--color-primary)) !important;
+}
+
 @media screen and (max-width: 989px) {
   .grid-collection {
     display: flex !important;
