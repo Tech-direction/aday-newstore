@@ -4704,6 +4704,10 @@ body,
   background-color: transparent;
 }
 
+.eTItzI.eTItzI.eTItzI:checked + .sc-furvIG::before {
+  background-color: rgb(var(--color-primary)) !important;
+}
+
 @media screen and (max-width: 989px) {
   .grid-collection {
     display: flex !important;
