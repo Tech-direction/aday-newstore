@@ -2814,6 +2814,7 @@ body,
 .contents-wrapper .price__sale .price-item.price-item--sale::after {
   content: '税込';
   font-size: var(--font-s);
+  font-weight: normal:
 }
 
 .contents-wrapper .price__sale .price-item.price-item--regular,
