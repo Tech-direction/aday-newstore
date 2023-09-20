@@ -3164,6 +3164,11 @@ body,
     font-size: var(--font-xs) !important;
   }
 }
+@media screen and (max-width: 749px) {
+  .contents-wrapper .product-list .grid__item {
+    padding: var(--margin-s)
+  }
+}
 
 
 
