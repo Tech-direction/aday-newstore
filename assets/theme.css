@@ -4281,7 +4281,7 @@ body,
 ---------------------------------------------------------------*/
 
 .contents-wrapper .cart__footer {
-  margin-top: var(--margin);
+  margin-top: var(--margin-l);
   padding: 0 !important;
   text-align: center;
 }
