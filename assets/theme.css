@@ -3542,6 +3542,10 @@ body,
 
 ===============================================================*/
 
+.contents-wrapper .login p {
+  margin-bottom: 0;
+}
+
 .contents-wrapper .customer:not(.account):not(.order) {
   max-width: var(--width-max);
   text-align: unset;
