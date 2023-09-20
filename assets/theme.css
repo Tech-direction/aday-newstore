@@ -3650,6 +3650,10 @@ body,
   text-align: right;
 }
 
+.contents-wrapper .customer_block + .link.animate-arrow {
+  margin-top: var(--margin);
+}
+
 @media screen and (max-width: 989px) {
   .contents-wrapper .customer_block {
     padding: var(--margin-s);
