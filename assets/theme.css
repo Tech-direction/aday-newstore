@@ -2231,6 +2231,10 @@ body,
 /*  section fuatured blog
 ---------------------------------------------------------------*/
 
+.contents-wrapper .section-fuatured-blog {
+  overflow-x: hidden;
+}
+
 .contents-wrapper .section-fuatured-blog .content__item {
   width: 0;
   white-space: nowrap;
