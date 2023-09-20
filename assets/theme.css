@@ -2314,7 +2314,7 @@ body,
    width: calc((100vw - var(--margin)*3)/2) !important;
  }
   .contents-wrapper .section-fuatured-blog .article-list + .slider-buttons {
-    left: calc(var(--margin) * -1 );
+    margin-left: calc(var(--margin) * -1 );
   }
 }
 
