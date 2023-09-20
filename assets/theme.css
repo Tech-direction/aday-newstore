@@ -943,7 +943,7 @@ a,
 
 .contents-wrapper .cf-date-field--inline-inputs {
   width: 100%;
-  /*padding-left: 5em;*/
+  padding-left: 5em;
 }
 
 .contents-wrapper .cf-date-field--inline-inputs .cf-select-wrap,
@@ -955,7 +955,7 @@ a,
   padding: 0;
 }
 
-/*@media screen and (max-width: 749px) {
+@media screen and (max-width: 749px) {
   .contents-wrapper .cf-date-field--inline-inputs {
     padding-left: 0;
   }
@@ -965,7 +965,7 @@ a,
     top: .5em;
     transform: none;
   }
-}*/
+}
 
 
     
