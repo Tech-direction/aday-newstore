@@ -963,6 +963,7 @@ a,
     font-size: var(--font-s);
     position: absolute;
     top: .5em;
+    transform: none;
   }
 }
 
