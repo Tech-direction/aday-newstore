@@ -5211,6 +5211,10 @@ body,
   line-height: 1px;
 }
 
+.contents-wrapper .slider-button:disabled {
+  opacity: .5;
+}
+
 .contents-wrapper .slider-button svg {
   color: rgb(var(--color-border));
 }
