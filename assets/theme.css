@@ -2778,6 +2778,10 @@ body,
 }
 
 
+.contents-wrapper .product .product__tax {
+  display: none;
+}
+
 /*  sale
 ---------------------------------------------------------------*/
 
