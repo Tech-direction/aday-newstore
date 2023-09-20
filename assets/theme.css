@@ -2734,6 +2734,10 @@ body,
   margin-top: var(--margin-s);
 }
 
+.contents-wrapper .product__item .card__inner {
+  background-color: transparent;
+}
+
 .contents-wrapper .product__info-container > * + * {
   margin: 0;
 }
