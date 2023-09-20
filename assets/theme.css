@@ -2307,12 +2307,15 @@ body,
     width: 100%;
   }
   .contents-wrapper .section-fuatured-blog .article-list {
-    margin-bottom: var(--margin-l);
+    margin-bottom: var(--margin) !important;
     padding-right: 0;
   }
  .contents-wrapper .section-fuatured-blog .article-list .grid__item {
    width: calc((100vw - var(--margin)*3)/2) !important;
  }
+  .contents-wrapper .section-fuatured-blog .article-list + .slider-buttons {
+    left: calc(var(--margin) * -1 );
+  }
 }
 
 @media screen and (max-width: 749px) {
