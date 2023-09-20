@@ -4330,6 +4330,10 @@ body,
 /*  app block
 ---------------------------------------------------------------*/
 
+.contents-wrapper .cart__footer .shopify-app-block {
+  margin-top: var(--margin-l);
+}
+
 .contents-wrapper .cart__footer  [data-block-handle="checkout-method"] {
   max-width: var(--width-max-xs);
   margin: var(--margin-l) auto 0;
