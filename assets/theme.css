@@ -1321,7 +1321,7 @@ body,
 
 @media screen and (max-width: 989px) {
   .contents-wrapper .header {
-    padding: var(--margin-s) !important;
+    padding: var(--margin) !important;
   }
   .contents-wrapper .header.header--has-postage {
     padding-top: var(--margin-xl) !important;
