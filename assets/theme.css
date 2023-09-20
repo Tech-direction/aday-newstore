@@ -2040,7 +2040,7 @@ body,
     gap: var(--margin-xs);
   }
   .contents-wrapper .subscription-feature-list .feature__item [class^="subscription-feature-media-"] {
-    height: 4vh;
+    height: 3vh;
   } 
   .contents-wrapper .subscription-feature-list .feature__item .heading br {
     display: block;
