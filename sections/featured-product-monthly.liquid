@@ -113,7 +113,7 @@
                 </div>
               {%- when 'title' -%}
                 {%- for collection in product.collections -%}
-                  {% if collection.handle != "ranking" %}
+                  {% if collection.handle == "blend" or collection.handle == "african" or collection.handle == "central_american" or collection.handle == "south_american" or collection.handle == "decaf" %}
                     {% assign sub_heading = collection.metafields.custom.subtitle  %}
                   {% endif %}
                 {% endfor %}
