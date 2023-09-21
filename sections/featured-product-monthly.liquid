@@ -113,6 +113,7 @@
                 </div>
               {%- when 'title' -%}
                 {%- for collection in product.collections -%}
+                  <!-- {{ collection.handle }} -->
                   {% if collection.handle != "ranking" %}
                     {% assign sub_heading = collection.metafields.custom.subtitle  %}
                   {% endif %}
