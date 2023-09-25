@@ -63,7 +63,7 @@
                   <td headers="RowOrder ColumnMagazine" role="cell" data-label="メールマガジン" class="cell_birth">
                     <span>
   {{ customer.email_marketing_consent }}
-                      {%- if customer.email_marketing_consent == true -%}
+                      {%- if customer.email_marketing_consent -%}
                         受信する
                       {%- else -%}
                         受信しない
