@@ -62,8 +62,7 @@
                 <tr role="row">
                   <td headers="RowOrder ColumnEmailMarketingConsent" role="cell" data-label="メールマガジン" class="cell_email_marketing_consent">
                     <span>
-  {{ customer.email_marketing_consent.state  }}
-  {{ customer.email_marketing_consent  }}
+  {{ customer.metafields.email_marketing_consent.state  }}
                       {%- if customer.email_marketing_consent == ' ' -%}
                         受信する
                       {%- else -%}
