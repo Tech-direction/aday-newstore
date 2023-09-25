@@ -4123,6 +4123,7 @@ body,
   display: block;
 }
 
+.contents-wrapper .customer .account_edit,
 .contents-wrapper .customer .address-list .grid__item .address_edit {
   height: 3em;
   margin-top: var(--margin-s);
