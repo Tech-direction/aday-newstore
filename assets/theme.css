@@ -4125,14 +4125,14 @@ body,
 .contents-wrapper .customer .address-list .grid__item .button {
   width: fit-content;
   margin: var(--margin) auto 0;
-  display: block;
+  display: flex;
 }
 
 .contents-wrapper .customer .account_edit,
 .contents-wrapper .customer .address-list .grid__item .address_edit {
   height: 3em;
   margin-top: var(--margin-s);
-  font-size: var(--font-s);
+  font-size: var(--font-s) !important;
 }
 
 .contents-wrapper .customer .address-list .grid__item .address_delete {

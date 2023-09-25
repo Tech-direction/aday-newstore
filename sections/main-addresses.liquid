@@ -59,6 +59,17 @@
                     <span>{{ customer.metafields.customer_fields.birthday }}</span>
                   </td>
                 </tr>
+                <tr role="row">
+                  <td headers="RowOrder ColumnMagazine" role="cell" data-label="メールマガジン" class="cell_birth">
+                    <span>
+                      {%- if customer.metafields.customer_fields.email_marketing_consent != blank -%}
+                        受信する
+                      {%- else -%}
+                        受信しない
+                      {%- endif -%}
+                    </span>
+                  </td>
+                </tr>
               </tbody>
             </table>
             <a class="button type-ghost account_edit" href="/tools/customr/edit-account">編集する</a>
