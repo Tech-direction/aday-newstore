@@ -2147,6 +2147,10 @@ body,
   fill: #fff;
 }
 
+.contents-wrapper .page-menu .list-menu [class$="cf-edit-account-link"] {
+  display: none;
+}
+
 @media screen and (max-width: 989px) {
   .contents-wrapper .page-menu .list-menu li,
   .contents-wrapper .page-menu .list-menu a {
@@ -4117,6 +4121,7 @@ body,
   background-color: transparent;
 }
 
+.contents-wrapper .customer .account_edit,
 .contents-wrapper .customer .address-list .grid__item .button {
   width: fit-content;
   margin: var(--margin) auto 0;

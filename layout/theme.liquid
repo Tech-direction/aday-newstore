@@ -280,25 +280,48 @@
     </script>
 
     <script>
-      (function(d) {
+      (function (d) {
         var config = {
-          kitId: 'khg0tju',
-          scriptTimeout: 3000,
-          async: true
-        },
-        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            kitId: 'khg0tju',
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className = h.className.replace(/\bwf-loading\b/g, '') + ' wf-inactive';
+          }, config.scriptTimeout),
+          tk = d.createElement('script'),
+          f = false,
+          s = d.getElementsByTagName('script')[0],
+          a;
+        h.className += ' wf-loading';
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != 'complete' && a != 'loaded')) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
       })(document);
     </script>
 
-    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js?ver=20230731151543' id='theme-jquery.min-js'></script>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js?ver=20230731151543"
+      id="theme-jquery.min-js"
+    ></script>
     <script>
-      $(window).on('load resize', function(){
+      $(window).on('load resize', function () {
         w_width = $(window).width();
         footer__blocks_wrapper_w = $('.footer__blocks-wrapper').width();
-        $('body').attr('style', '--page-width-margin:'+(w_width - footer__blocks_wrapper_w)/2+'px;');
+        $('body').attr('style', '--page-width-margin:' + (w_width - footer__blocks_wrapper_w) / 2 + 'px;');
       });
     </script>
-    
   </head>
 
   {% if template == 'index' or page.handle == 'about' %}
@@ -308,7 +331,6 @@
     {% assign wrapper_class = 'page' %}
   {% endif %}
 
- 
   <body class="gradient contents-wrapper {{ wrapper_class }} {{ page.handle }}{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
@@ -321,11 +343,12 @@
     {% sections 'header-group' %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
-
-      {% if request.path contains '/account' and customer %}
-        {% render 'customer-navigation' %}
+      {% if customer %}
+        {% if request.path contains '/account' or request.path contains 'edit-account' %}
+          {% render 'customer-navigation' %}
+        {% endif %}
       {% endif %}
-      
+
       {{ content_for_layout }}
     </main>
 
@@ -370,7 +393,5 @@
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
     <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
-
-    
   </body>
 </html>
