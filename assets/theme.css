@@ -962,6 +962,7 @@ a,
 .contents-wrapper .cf-date-field--inline-inputs {
   width: 100%;
   padding-left: 5em;
+  background-color: #fff;
 }
 
 .contents-wrapper .cf-date-field--inline-inputs .cf-select-wrap,
