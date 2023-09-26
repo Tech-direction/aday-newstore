@@ -72,10 +72,15 @@
                 </tr>
               </tbody>
             </table>
-            <a class="button type-ghost account_edit" href="/tools/customr/edit-account">編集する</a>
+            {% if customer.metafields.customer_fields.birthday != blank %}
+              <form class="edit_account" data-cf-form="WBt6jk"></form>
+            {% else %}
+              <form class="edit_account" data-cf-form="X1tOR8"></form>
+            {% endif %}
+            <span class="button type-ghost account_edit"></span>
           </div>
-  <form data-cf-form="WBt6jk"></form>
-  <form data-cf-form="X1tOR8"></form>
+  
+  
   
 
           <a href="{{ routes.account_logout_url }}" class="create_account link animate-arrow align-right">
