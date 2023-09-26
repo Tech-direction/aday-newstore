@@ -4209,10 +4209,12 @@ body,
 .contents-wrapper .customer .account_edit_form {
   height: 0;
   transition: all var(--duration-long) ease;
+  overflow-y: hidden;
 }
 
 .contents-wrapper .customer .account_edit_form.active {
   height: auto;
+  padding-top: var(--margin);
 }
 
 .contents-wrapper .customer .account_edit:before {
