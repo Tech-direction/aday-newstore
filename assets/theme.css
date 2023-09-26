@@ -4207,6 +4207,7 @@ body,
 ---------------------------------------------------------------*/
 
 .contents-wrapper .customer .account_edit_form {
+  max-width: var(--width-max-xs);
   height: 0;
   transition: all var(--duration-long) ease;
   overflow-y: hidden;
