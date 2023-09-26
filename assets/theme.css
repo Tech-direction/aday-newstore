@@ -4210,6 +4210,8 @@ body,
 .contents-wrapper .customer .account_edit_form {
   max-width: var(--width-max-xs);
   height: 0;
+  margin-left: auto;
+  margin-right: auto;
   transition: all var(--duration-long) ease;
   overflow-y: hidden;
 }
@@ -4239,7 +4241,9 @@ body,
   opacity: 1;
 }
 
-
+.contents-wrapper .customer .account_edit_form .description {
+  display: none;
+}
 
 /*===============================================================
 
