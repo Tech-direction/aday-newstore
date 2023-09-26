@@ -46,3 +46,26 @@ function hash_link_url_adjust(href){
   let sp = location.href.split("#");
   history.pushState(null, null, sp[0])
 };
+
+
+/*===============================================================
+
+	# edit account
+
+===============================================================*/
+
+$(document).on('click', '.account_edit', function() {
+
+  if(!$(this).hasClass('active')) {
+    $(this).addClass('active');
+    $('.account_edit_form').addClass('active');
+  }
+  else {
+    $(this).removeClass('active');
+    $('.account_edit_form').removeClass('active');
+  }
+  
+
+});
+
+
