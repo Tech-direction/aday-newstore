@@ -4203,6 +4203,34 @@ body,
 }
 
 
+/*  account
+---------------------------------------------------------------*/
+
+.contents-wrapper .customer .account_edit_form {
+  height: 0;
+  transition: all var(--duration-long) ease;
+}
+
+.contents-wrapper .customer .account_edit_form.active {
+  height: auto;
+}
+
+.contents-wrapper .customer .account_edit:before {
+  content: '編集する';
+}
+
+.contents-wrapper .customer .account_edit.active {
+  height: auto;
+  border: 0;
+  background-color: transparent;
+}
+
+.contents-wrapper .customer .account_edit.active:before {
+  content: 'キャンセル';
+}
+
+
+
 /*===============================================================
 
 	cart
