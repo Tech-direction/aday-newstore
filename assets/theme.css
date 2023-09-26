@@ -551,6 +551,7 @@ a,
   max-width: none !important;
   height: 3.5rem;
   min-height: auto !important;
+  color: rgb(var(--color-black));
   font-size: 1rem;
   box-shadow: none;
 }
