@@ -442,7 +442,7 @@ a,
   min-height: auto;
   margin: var(--margin-s) auto 0 !important ;
   padding: 0;
-  font-size: 1rem;
+  font-size: var(--font-s);
   background-color: transparent !important;
   display: block;
 }
