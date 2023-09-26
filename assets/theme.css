@@ -4241,6 +4241,11 @@ body,
   opacity: 1;
 }
 
+.contents-wrapper .customer .account_edit_form .cf-submit-form {
+  color: #fff;
+  background-color: rgb(var(--color-gray));
+}
+
 .contents-wrapper .customer .account_edit_form .description {
   display: none;
 }
