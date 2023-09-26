@@ -4230,7 +4230,7 @@ body,
 }
 
 .contents-wrapper .customer .account_edit.active:before {
-  content: 'キャンセル';
+  content: 'キャンセルする';
 }
 
 
