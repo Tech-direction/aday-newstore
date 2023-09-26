@@ -4219,7 +4219,8 @@ body,
 
 .contents-wrapper .customer .account_edit:before {
   content: '編集する';
-  position: static;
+  position: relative;
+  z-index: 1;
 }
 
 .contents-wrapper .customer .account_edit.active {
