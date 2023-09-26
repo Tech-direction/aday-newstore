@@ -4233,6 +4233,10 @@ body,
   content: 'キャンセルする';
 }
 
+.contents-wrapper .customer .account_edit.active:hover {
+  opacity: 1;
+}
+
 
 
 /*===============================================================
