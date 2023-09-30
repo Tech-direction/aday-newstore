@@ -8,15 +8,14 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
-            "link": ""
+            "text": "【全品20%OFF】10月31日まで！お得な「コーヒー月間」キャンペーンを開催中！",
+            "link": "shopify:\/\/collections"
           }
         }
       },
       "block_order": [
         "announcement-bar-0"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "background-1",
         "show_line_separator": true,
