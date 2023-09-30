@@ -7,6 +7,7 @@
       "blocks": {
         "announcement-bar-0": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "【全品20%OFF】10月31日まで！お得な「コーヒー月間」キャンペーンを開催中！",
             "link": "shopify:\/\/collections"
