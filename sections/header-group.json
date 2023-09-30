@@ -4,19 +4,7 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
-      "blocks": {
-        "announcement-bar-0": {
-          "type": "announcement",
-          "disabled": true,
-          "settings": {
-            "text": "【全品20%OFF】10月31日まで！お得な「コーヒー月間」キャンペーンを開催中！",
-            "link": "shopify:\/\/collections"
-          }
-        }
-      },
-      "block_order": [
-        "announcement-bar-0"
-      ],
+      "disabled": true,
       "settings": {
         "color_scheme": "background-1",
         "show_line_separator": true,
@@ -27,6 +15,13 @@
     "header": {
       "type": "header",
       "blocks": {
+        "5034c4fb-ad5a-4f03-beaf-c1e2b838b511": {
+          "type": "announcement_bar",
+          "settings": {
+            "header-announcement-text1": "【全品20%OFF】10月31日まで！お得な「コーヒー月間」キャンペーンを開催中！",
+            "header-announcement-link": "shopify:\/\/collections"
+          }
+        },
         "e4ca1f66-fc63-4029-a267-5858bf4803c5": {
           "type": "announcement",
           "settings": {
@@ -38,6 +33,7 @@
         }
       },
       "block_order": [
+        "5034c4fb-ad5a-4f03-beaf-c1e2b838b511",
         "e4ca1f66-fc63-4029-a267-5858bf4803c5"
       ],
       "settings": {
