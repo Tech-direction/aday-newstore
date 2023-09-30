@@ -194,6 +194,11 @@
                     </figure>
                 {% endif %}
         {{ block.settings.header-postage-text1 }}<sapn class="emphasis">{{ block.settings.header-postage-text2 }}</sapn></{%- if block.settings.header-postage-link != blank -%}a{%else %}div{% endif %}>
+
+        {%- when 'announcement_bar' -%}
+          <{%- if block.settings.header-announcement-link != blank -%}a href="{{ block.settings.header-announcement-link }}"{%else %}div{% endif %} class="header-announcement_bar">
+          {{ block.settings.header-announcement-text1 }}</{%- if block.settings.header-announcement-link != blank -%}a{%else %}div{% endif %}>
+        
       {%- endcase -%}
     {%- endfor -%}
 
@@ -743,6 +748,23 @@
         {
           "type": "url",
           "id": "header-postage-link",
+          "label": "リンク先"
+        }
+      ]
+    }
+    {
+      "type": "announcement_bar",
+      "name": "告知エリア",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "header-announcement-text1",
+          "label": "テキスト"
+        },
+        {
+          "type": "url",
+          "id": "header-announcement-link",
           "label": "リンク先"
         }
       ]
