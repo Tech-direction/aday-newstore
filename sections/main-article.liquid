@@ -1,6 +1,10 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 
-{{ request.path }}
+{% if request.path contains '/blogs/information' %}
+  {% assign block.settings.section_heading = 'お知らせ' %}
+  {% assign block.settings.section_sub_heading = blog.handle %}
+{% endif %}
+
 {%- for block in section.blocks -%}
   {%- case block.type -%}
     {%- when 'header' -%}
