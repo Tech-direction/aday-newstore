@@ -1,13 +1,14 @@
 {% assign section_heading = section.settings.section_heading %}
 {% assign section_sub_heading = section.settings.section_sub_heading %}
 
+nnnnn
 {% if page contains '/blogs/information/' %}
   {% assign section_heading = 'お知らせ' %}
-  {% assign section_sub_heading = blog.handle %}
+  {% assign section_sub_heading = blog.handle %}aaaaa
 {% endif %}
 
 
-<div class="section-heading-wrapper section-container content-header page-width{% if section.settings.change_box_layout !=blank %} type-reverse{% endif %}">
+<div class="section-heading-wrapper section-container content-header page-width{% if section.settings.change_box_layout !=blank %} type-reverse{% endif %} test">
   {% if section_heading != blank %}
     <div class="heading__item">
       <h1
