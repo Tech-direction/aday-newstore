@@ -1,7 +1,7 @@
 {% assign section_heading = section.settings.section_heading %}
 {% assign section_sub_heading = section.settings.section_sub_heading %}
 
-{{ request.host }}
+{{ blog.handle }}
 {% if request.path contains '/blogs/information' %}
   {% assign section_heading = 'お知らせ' %}
   {% assign section_sub_heading = blog.handle %}
