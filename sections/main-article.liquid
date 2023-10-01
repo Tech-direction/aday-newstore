@@ -1,6 +1,6 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 
-
+{{ request.path }}
 {%- for block in section.blocks -%}
   {%- case block.type -%}
     {%- when 'header' -%}
