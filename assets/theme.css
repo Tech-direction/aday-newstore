@@ -442,7 +442,7 @@ a,
   min-height: auto;
   margin: var(--margin-s) auto 0 !important ;
   padding: 0;
-  font-size: 1rem;
+  font-size: var(--font-s);
   background-color: transparent !important;
   display: block;
 }
@@ -551,6 +551,7 @@ a,
   max-width: none !important;
   height: 3.5rem;
   min-height: auto !important;
+  color: rgb(var(--color-black));
   font-size: 1rem;
   box-shadow: none;
 }
@@ -578,10 +579,11 @@ a,
   transition: all var(--duration-long) ease;
 }
 
-.contents-wrapper .cf-field  label:has(input[type="checkbox"]):before {
+.contents-wrapper .cf-field label:has(input[type="checkbox"]):before {
   content: '';
   width: 2rem;
   height: 2rem;
+  margin-left: 1px;
   border: 4px solid #fff;
   background-color: #fff;
   box-shadow: 0px 0px 0px 1px rgb(var(--color-border));
@@ -961,6 +963,7 @@ a,
 .contents-wrapper .cf-date-field--inline-inputs {
   width: 100%;
   padding-left: 5em;
+  background-color: #fff;
 }
 
 .contents-wrapper .cf-date-field--inline-inputs .cf-select-wrap,
@@ -1305,16 +1308,32 @@ body,
 .contents-wrapper .header {
   width: 100vw;
   max-width: none;
+  padding: 0 !important;
   margin: 0;
-  padding: var(--margin) var(--margin-l) !important;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contents-wrapper .header > * {
+  padding-left: var(--margin-l) !important;
+  padding-right: var(--margin-l) !important;
+}
+
+.contents-wrapper .header-contents {
+  width: 100vw;
+  margin: 0;
+  padding-top: 0 !important;
+  padding-bottom: var(--margin) !important;
   position: relative;
   display: flex;
   gap: var(--margin);
+  align-items: center;
 }
 
-.contents-wrapper .header.header--has-postage {
+
+/*.contents-wrapper .header.header--has-postage {
   padding-top: var(--margin-l) !important;
-}
+}*/
 
 .contents-wrapper .header a:not(.header__icon) {
   padding: 0;
@@ -1326,11 +1345,18 @@ body,
 }
 
 @media screen and (max-width: 989px) {
-  .contents-wrapper .header {
+  /*.contents-wrapper .header {
     padding: var(--margin) !important;
+  }*/
+  .contents-wrapper .header > * {
+    padding-left: var(--margin) !important;
+    padding-right: var(--margin) !important;
   }
-  .contents-wrapper .header.header--has-postage {
+  /*.contents-wrapper .header.header--has-postage {
     padding-top: var(--margin-xl) !important;
+  }*/
+  .contents-wrapper .header.header--has-postage .header-contents {
+    padding-top: var(--margin-s) !important;
   }
   .contents-wrapper .header .header__heading-link {
     margin-left: auto !important;
@@ -1485,6 +1511,12 @@ body,
 /*  postage
 ---------------------------------------------------------------*/
 
+.contents-wrapper .header-postage-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .contents-wrapper .header-postage {
   padding: var(--margin-s)  1em .5em !important;
   line-height: 1;
@@ -1496,9 +1528,10 @@ body,
   border-bottom-left-radius: calc(var(--border-radius-box)/2);
   border-bottom-right-radius: calc(var(--border-radius-box)/2);
   display: flex;
-  position: absolute;
+  /*position: absolute;
   top: 0;
   right: var(--margin-l);
+  */
   align-items: center;
   gap: var(--margin-xs);
   justify-content: center;
@@ -1525,13 +1558,46 @@ body,
 @media screen and (max-width: 989px) {
   .contents-wrapper .header-postage {
     width: 100%;
-    max-width: calc( 100% - var(--margin)*2);
+    /*max-width: calc( 100% - var(--margin)*2);
     padding-top: var(--margin-s);
     text-align: center;
     right: 50%;
-    transform: translateX(50%);
+    transform: translateX(50%);*/
   }
 }
+
+
+/*  header-announcement_bar
+---------------------------------------------------------------*/
+
+.contents-wrapper .header-announcement_bar-wrapper {
+  width: 100%;
+  padding: 0 !important;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.contents-wrapper .header-announcement_bar {
+  width: 100%;
+  padding: var(--margin-xs) !important;
+  text-align: center;
+  background-size: auto auto;
+  background-color: rgb(var(--color-primary));
+  background-image: repeating-linear-gradient(45deg, #fff, #fff 6px, rgb(var(--color-primary)) 6px, rgb(var(--color-primary)) 12px );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contents-wrapper .header-announcement_bar .header-announcement_bar-text {
+  padding: .5em;
+  color: rgb(var(--color-primary));
+  font-weight: bold;
+  line-height: 1;
+  background-color: #fff;
+}
+
 
 /*  menu drawer
 ---------------------------------------------------------------*/
@@ -2145,6 +2211,10 @@ body,
 .contents-wrapper .page-menu .list-menu a .icon {
   height: 1.5em;
   fill: #fff;
+}
+
+.contents-wrapper .page-menu .list-menu [class$="cf-edit-account-link"] {
+  display: none;
 }
 
 @media screen and (max-width: 989px) {
@@ -4117,16 +4187,18 @@ body,
   background-color: transparent;
 }
 
+.contents-wrapper .customer .account_edit,
 .contents-wrapper .customer .address-list .grid__item .button {
   width: fit-content;
   margin: var(--margin) auto 0;
-  display: block;
+  display: flex;
 }
 
+.contents-wrapper .customer .account_edit,
 .contents-wrapper .customer .address-list .grid__item .address_edit {
   height: 3em;
   margin-top: var(--margin-s);
-  font-size: var(--font-s);
+  font-size: var(--font-s) !important;
 }
 
 .contents-wrapper .customer .address-list .grid__item .address_delete {
@@ -4196,6 +4268,52 @@ body,
   }
 }
 
+
+/*  account
+---------------------------------------------------------------*/
+
+.contents-wrapper .customer .account_edit_form {
+  max-width: var(--width-max-xs);
+  height: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all var(--duration-long) ease;
+  overflow: hidden;
+}
+
+.contents-wrapper .customer .account_edit_form.active {
+  height: auto;
+  padding-top: var(--margin);
+}
+
+.contents-wrapper .customer .account_edit:before {
+  content: '編集する';
+  position: relative;
+  z-index: 1;
+}
+
+.contents-wrapper .customer .account_edit.active {
+  height: auto;
+  border: 0;
+  background-color: transparent;
+}
+
+.contents-wrapper .customer .account_edit.active:before {
+  content: 'キャンセルする';
+}
+
+.contents-wrapper .customer .account_edit.active:hover {
+  opacity: 1;
+}
+
+.contents-wrapper .customer .account_edit_form .cf-submit-form {
+  color: #fff;
+  background-color: rgb(var(--color-gray));
+}
+
+.contents-wrapper .customer .account_edit_form .description {
+  display: none;
+}
 
 /*===============================================================
 

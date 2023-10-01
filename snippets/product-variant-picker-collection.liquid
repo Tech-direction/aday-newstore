@@ -62,11 +62,14 @@
       {%- for option in product.options_with_values -%}
         <div class="product-form__input product-form__input--dropdown">
           <div class="field_select">
-            {% if option.name == 'weight' -%}
-              <span class="select_label">グラム数：</span>
-            {%- elsif option.name == 'grind' -%}
-              <span class="select_label">豆の状態：</span>
-            {%- endif %}
+            <span class="select_label">{{ option.name }}</span>
+            {% comment %}
+              {% if option.name == 'weight' -%}
+                <span class="select_label">グラム数：</span>
+              {%- elsif option.name == 'grind' -%}
+                <span class="select_label">豆の状態：</span>
+              {%- endif %}
+            {% endcomment %}
             <div class="select">
               <select
                 id="Option-{{ section_id }}-{{ forloop.index0 }}"
