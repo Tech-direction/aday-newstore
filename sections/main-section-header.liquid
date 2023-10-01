@@ -12,7 +12,7 @@
     <div class="heading__item">
       <h1
         class="heading type-vertical{% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %}"
-        data-sub_heading="{{ section_sub_heading }}"
+        data-sub_heading="{{ section_sub_heading | capitalize }}"
       >
         {{ section_heading }}
       </h1>
