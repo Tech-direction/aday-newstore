@@ -6,12 +6,12 @@
     {%- when 'header' -%}    
     <div class="section-heading-wrapper section-container content-header page-width{% if block.settings.change_box_layout !=blank %} type-reverse{% endif %}">
       {% if block.settings.section_heading !=blank %}
-      {% if request.path contains '/blogs/information' %}
-        {% assign block.settings.section_heading = 'お知らせ' %}
-        {% assign block.settings.section_sub_heading = blog.handle %}
-      {% endif %}
       <div class="heading__item">
-        <div class="heading type-vertical{% if block.settings.heading_size !="default" %} size-{{ block.settings.heading_size }} {% endif %}" data-sub_heading="{{ block.settings.section_sub_heading }}">{{ block.settings.section_heading }}test</div>
+      {% if request.path contains '/blogs/information' %}
+        <div class="heading type-vertical{% if block.settings.heading_size !="default" %} size-{{ block.settings.heading_size }} {% endif %}" data-sub_heading="Information">お知らせ</div>
+      {% else %}
+        <div class="heading type-vertical{% if block.settings.heading_size !="default" %} size-{{ block.settings.heading_size }} {% endif %}" data-sub_heading="{{ block.settings.section_sub_heading }}">{{ block.settings.section_heading }}</div>
+      {% endif %}
       </div>
       {% endif %}
       {%- if article.image -%}
