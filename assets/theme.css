@@ -2042,6 +2042,10 @@ body,
   text-shadow: rgb(var(--color-black)) 0 0 10px;
 }
 
+.contents-wrapper.top .section-billboard .banner__content .feature__item.type-sale .heading {
+  color: rgb(var(--color-primary));
+}
+
 @media screen and (max-width: 989px) {
   
   .contents-wrapper.top .section-billboard {
