@@ -2506,13 +2506,13 @@ body,
   border-left: 5px solid rgb(var(--color-black));
 }
 
-.contents-wrapper .article-wrapper .article-template__content h1 a,
-.contents-wrapper .article-wrapper .article-template__content h2 a,
-.contents-wrapper .article-wrapper .article-template__content h3 a,
-.contents-wrapper .article-wrapper .article-template__content h4 a,
-.contents-wrapper .article-wrapper .article-template__content h5 a, 
-.contents-wrapper .article-wrapper .article-template__content h6 a {
-  border-bottom: 0 !important;
+.contents-wrapper .article-wrapper .article-template__content a *,
+.contents-wrapper .article-wrapper .article-template__content a *,
+.contents-wrapper .article-wrapper .article-template__content a *,
+.contents-wrapper .article-wrapper .article-template__content a *,
+.contents-wrapper .article-wrapper .article-template__content a *, 
+.contents-wrapper .article-wrapper .article-template__content a {
+  text-decoration: none !important;
 }
 
 .contents-wrapper .article-wrapper .article-template__back:last-child {
