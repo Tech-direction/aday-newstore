@@ -8,7 +8,7 @@
       {% if block.settings.section_heading !=blank %}
       <div class="heading__item">
       {% if request.path contains '/blogs/information' %}
-        <div class="heading type-vertical{% if block.settings.heading_size !="default" %} size-{{ block.settings.heading_size }} {% endif %}" data-sub_heading="Information">お知らせ</div>
+        <div class="heading type-vertical{% if block.settings.heading_size !="default" %} size-{{ block.settings.heading_size }} {% endif %}" data-sub_heading="INFORMATION">お知らせ</div>
       {% else %}
         <div class="heading type-vertical{% if block.settings.heading_size !="default" %} size-{{ block.settings.heading_size }} {% endif %}" data-sub_heading="{{ block.settings.section_sub_heading }}">{{ block.settings.section_heading }}</div>
       {% endif %}
