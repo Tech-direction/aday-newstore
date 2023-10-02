@@ -2541,7 +2541,7 @@ body,
 }
 
 .contents-wrapper .article-wrapper a:not(.button):not(.animate-arrow) {
-  padding-bottom: .25em;
+  padding-bottom: .15em;
   border-bottom: 1px solid rgb(var(--color-black));
 }
 
