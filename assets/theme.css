@@ -1583,6 +1583,7 @@ body,
   width: 100%;
   padding: var(--margin-xs) !important;
   text-align: center;
+  font-size: min(1rem ,3.25vw);
   background-size: auto auto;
   background-color: rgb(var(--color-primary));
   background-image: repeating-linear-gradient(45deg, #fff, #fff 6px, rgb(var(--color-primary)) 6px, rgb(var(--color-primary)) 12px );
