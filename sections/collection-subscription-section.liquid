@@ -48,18 +48,40 @@
             </li>
           {% endif %}
           {%- if settings.grid_item_2_heading != blank -%}
-            <li class="grid__item feature__item">
-              <figure>{{ settings.grid_item_2_img_small | image_url: width: 600 | image_tag:
-                                class: 'subscription-feature-media-2',
-                                widths: widths,
-                                height: logo_height,
-                                width: settings.logo_width,
-                                alt: logo_alt,
-                                sizes: sizes,
-                                preload: true
-                              }}
-              </figure>
-              <div class="heading">{{ settings.grid_item_2_heading }}</div>
+            <li class="grid__item feature__item {% if settings.grid_item_sale == true %}type-sale{% endif %}">
+              {% if settings.grid_item_sale != true %}
+                <figure>
+                  {{
+                    settings.grid_item_2_img_small
+                    | image_url: width: 600
+                    | image_tag:
+                      class: 'subscription-feature-media-2',
+                      widths: widths,
+                      height: logo_height,
+                      width: settings.logo_width,
+                      alt: logo_alt,
+                      sizes: sizes,
+                      preload: true
+                  }}
+                </figure>
+                <div class="heading">{{ settings.grid_item_2_heading }}</div>
+              {% else %}
+                <figure>
+                  {{
+                    settings.grid_item_2_img_small_sale
+                    | image_url: width: 600
+                    | image_tag:
+                      class: 'subscription-feature-media-2',
+                      widths: widths,
+                      height: logo_height,
+                      width: settings.logo_width,
+                      alt: logo_alt,
+                      sizes: sizes,
+                      preload: true
+                  }}
+                </figure>
+                <div class="heading">{{ settings.grid_item_2_heading_sale }}</div>
+              {% endif %}
             </li>
           {% endif %}
           {%- if settings.grid_item_3_heading != blank -%}
