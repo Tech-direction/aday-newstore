@@ -778,6 +778,7 @@ a,
 
 .contents-wrapper variant-radios fieldset .form__label {
   color: rgb(var(--color-border));
+  font-size: var(--font-s) !important;
   position: absolute;
   left: 1em;
   z-index: 1;
