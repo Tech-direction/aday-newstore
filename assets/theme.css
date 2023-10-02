@@ -3473,7 +3473,7 @@ body,
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1em;
+  gap: .75em;
 }
 
 .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item > * {
@@ -3485,11 +3485,11 @@ body,
 }
 
 .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item [class^="subscription-feature-media-"] {
-  height: min(5vw, 32px);
+  height: min(5vw, 28px);
 }
 
 .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item .heading {
-  padding-left: 1em;
+  padding-left: .75em;
   text-align: left !important;
   font-size: min(2vw, 1rem);
   border-left: 1px solid #fff;
