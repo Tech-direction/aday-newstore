@@ -2654,6 +2654,7 @@ body,
 }
 
 .contents-wrapper .blog-articles-news .article__news {
+  width: 100%;
   padding: var(--margin-l);
   border-radius: var(--border-radius-box);
   background-color: rgb(var(--color-gray-light));
