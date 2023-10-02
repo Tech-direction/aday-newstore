@@ -45,6 +45,7 @@
 @media screen and (max-width: 989px) {
   :root {
     /*--margin: 20px;*/
+    --margin-section: calc(var(--margin)*4);
     --border-radius-box: 10px;
     --font-xl: 1.6rem;
     --font-l: 1.4rem;
