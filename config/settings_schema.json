@@ -50,6 +50,31 @@
       },
       {
         "type": "header",
+        "content": "カラム2（セールver）"
+      },
+      {
+        "type": "checkbox",
+        "id": "grid_item_sale",
+        "default": false,
+        "label": "特徴２をセール仕様に変更する（以下の設定が使用されます）"
+      },
+      {
+        "type": "image_picker",
+        "id": "grid_item_2_img_sale",
+        "label": "画像"
+      },
+      {
+        "type": "image_picker",
+        "id": "grid_item_2_img_small_sale",
+        "label": "画像（小）"
+      },
+      {
+        "type": "richtext",
+        "id": "grid_item_2_heading_sale",
+        "label": "見出し"
+      },
+      {
+        "type": "header",
         "content": "カラム3"
       },
       {
