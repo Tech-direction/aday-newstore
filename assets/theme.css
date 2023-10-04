@@ -2123,7 +2123,7 @@ body,
 }
 
 .contents-wrapper .feature__item.type-sale .heading p {
-  padding: .25em
+  padding: .25em;
   color: rgb(var(--color-primary));
   background-color: #fff;
 }
