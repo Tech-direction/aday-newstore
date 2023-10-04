@@ -2122,8 +2122,8 @@ body,
   display: none;
 }
 
-.contents-wrapper .feature__item.type-sale .heading {
-  color: rgb(var(--color-primary)) !important;
+.contents-wrapper .feature__item.type-sale .heading p {
+  color: rgb(var(--color-primary));
   background-color: #fff;
 }
 
