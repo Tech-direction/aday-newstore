@@ -3508,9 +3508,9 @@ body,
   margin-top: var(--margin);
 }
 
-.contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item.type-sale .heading {
+/*.contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item.type-sale .heading {
   border-left-color: rgb(var(--color-primary));
-}
+}*/
 
 
 @media screen and (max-width: 989px) {
