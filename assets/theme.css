@@ -2123,7 +2123,7 @@ body,
 }
 
 .contents-wrapper .feature__item.type-sale .heading {
-  color: rgb(var(--color-primary));
+  color: rgb(var(--color-primary)) !important;
   background-color: #fff;
 }
 
