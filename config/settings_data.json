@@ -6,7 +6,7 @@
     "grid_item_2_img": "shopify:\/\/shop_images\/subscription_img_2.svg",
     "grid_item_2_img_small": "shopify:\/\/shop_images\/grid_item_2_img_small_39e58498-9645-402e-92ef-f885d6390e08.svg",
     "grid_item_2_heading": "<p>ずーっと<br\/>5%オフ<\/p>",
-    "grid_item_sale": true,
+    "grid_item_sale": false,
     "grid_item_2_img_sale": "shopify:\/\/shop_images\/subscription_img_2_sale.svg",
     "grid_item_2_img_small_sale": "shopify:\/\/shop_images\/grid_item_2_img_small_sale.svg",
     "grid_item_2_heading_sale": "<p>今だけ<br\/>20%オフ<\/p>",
