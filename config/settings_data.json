@@ -167,6 +167,12 @@
           "enable_js_api": false,
           "js_api_version": ""
         }
+      },
+      "8857984110089213392": {
+        "type": "shopify:\/\/apps\/hextom-ultimate-sales-boost\/blocks\/usb-embeded-block\/00e81c42-8ae7-4b0b-b43d-99393b885fc4",
+        "disabled": false,
+        "settings": {
+        }
       }
     },
     "color_schemes": {
