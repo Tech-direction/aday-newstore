@@ -1,21 +1,30 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "current": {
-    "grid_item_1_img": "shopify:\/\/shop_images\/subscription_img_1.svg",
-    "grid_item_1_img_small": "shopify:\/\/shop_images\/grid_item_1_img_small_e6dd5fa2-cd64-48f1-a4b1-e1db7c188962.svg",
-    "grid_item_1_heading": "<p>全国<br\/>送料無料<\/p>",
-    "grid_item_2_img": "shopify:\/\/shop_images\/subscription_img_2.svg",
-    "grid_item_2_img_small": "shopify:\/\/shop_images\/grid_item_2_img_small_39e58498-9645-402e-92ef-f885d6390e08.svg",
-    "grid_item_2_heading": "<p>ずーっと<br\/>5%オフ<\/p>",
+    "grid_item_1_img": "shopify://shop_images/subscription_img_1.svg",
+    "grid_item_1_img_small": "shopify://shop_images/grid_item_1_img_small_e6dd5fa2-cd64-48f1-a4b1-e1db7c188962.svg",
+    "grid_item_1_heading": "<p>全国<br/>送料無料</p>",
+    "grid_item_2_img": "shopify://shop_images/subscription_img_2.svg",
+    "grid_item_2_img_small": "shopify://shop_images/grid_item_2_img_small_39e58498-9645-402e-92ef-f885d6390e08.svg",
+    "grid_item_2_heading": "<p>ずーっと<br/>5%オフ</p>",
     "grid_item_sale": true,
-    "grid_item_2_img_sale": "shopify:\/\/shop_images\/subscription_img_2_sale.svg",
-    "grid_item_2_img_small_sale": "shopify:\/\/shop_images\/grid_item_2_img_small_sale.svg",
-    "grid_item_2_heading_sale": "<p>今だけ<br\/>20%オフ<\/p>",
-    "grid_item_3_img": "shopify:\/\/shop_images\/subscription_img_3.svg",
-    "grid_item_3_img_small": "shopify:\/\/shop_images\/grid_item_3_img_small_e7091b7d-6b7c-4275-8afe-4a38b6e4ad8a.svg",
-    "grid_item_3_heading": "<p>いつでも<br\/>解約OK<\/p>",
-    "logo": "shopify:\/\/shop_images\/aday-logo.svg",
+    "grid_item_2_img_sale": "shopify://shop_images/subscription_img_2_sale.svg",
+    "grid_item_2_img_small_sale": "shopify://shop_images/grid_item_2_img_small_sale.svg",
+    "grid_item_2_heading_sale": "<p>今だけ<br/>20%オフ</p>",
+    "grid_item_3_img": "shopify://shop_images/subscription_img_3.svg",
+    "grid_item_3_img_small": "shopify://shop_images/grid_item_3_img_small_e7091b7d-6b7c-4275-8afe-4a38b6e4ad8a.svg",
+    "grid_item_3_heading": "<p>いつでも<br/>解約OK</p>",
+    "logo": "shopify://shop_images/aday-logo.svg",
     "logo_width": 380,
-    "favicon": "shopify:\/\/shop_images\/favicon.png",
+    "favicon": "shopify://shop_images/favicon.png",
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
@@ -112,13 +121,13 @@
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
     "brand_headline": "",
-    "brand_description": "<p><\/p>",
+    "brand_description": "<p></p>",
     "brand_image_width": 100,
-    "social_facebook_link": "https:\/\/www.facebook.com\/adayinthecoffee",
-    "social_instagram_link": "https:\/\/www.instagram.com\/adayinthecoffee\/",
+    "social_facebook_link": "https://www.facebook.com/adayinthecoffee",
+    "social_instagram_link": "https://www.instagram.com/adayinthecoffee/",
     "social_youtube_link": "",
     "social_tiktok_link": "",
-    "social_twitter_link": "https:\/\/twitter.com\/adayinthecoffee",
+    "social_twitter_link": "https://twitter.com/adayinthecoffee",
     "social_snapchat_link": "",
     "social_pinterest_link": "",
     "social_tumblr_link": "",
@@ -131,8 +140,8 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
-    "checkout_header_image": "shopify:\/\/shop_images\/access01.jpg",
-    "checkout_logo_image": "shopify:\/\/shop_images\/aday-logo_8a8b4e6c-187c-4b64-b38d-d296185cc876.svg",
+    "checkout_header_image": "shopify://shop_images/access01.jpg",
+    "checkout_logo_image": "shopify://shop_images/aday-logo_8a8b4e6c-187c-4b64-b38d-d296185cc876.svg",
     "checkout_logo_size": "large",
     "checkout_body_background_color": "#ffffff",
     "checkout_accent_color": "#c64446",
@@ -156,7 +165,7 @@
     ],
     "blocks": {
       "9776720720251544092": {
-        "type": "shopify:\/\/apps\/helium-customer-fields\/blocks\/app-embed\/bab58598-3e6a-4377-aaaa-97189b15f131",
+        "type": "shopify://apps/helium-customer-fields/blocks/app-embed/bab58598-3e6a-4377-aaaa-97189b15f131",
         "disabled": false,
         "settings": {
           "registration_form_id": "X1tOR8",
@@ -164,8 +173,7 @@
           "edit_account_link_text": "Edit account",
           "edit_account_heading": "Edit account",
           "edit_account_back_link_text": "Back to account",
-          "enable_js_api": false,
-          "js_api_version": ""
+          "enable_js_api": false
         }
       }
     },
@@ -383,7 +391,7 @@
       "sale_badge_color_scheme": "accent-2",
       "sold_out_badge_color_scheme": "inverse",
       "brand_headline": "",
-      "brand_description": "<p><\/p>",
+      "brand_description": "<p></p>",
       "brand_image_width": 100,
       "social_twitter_link": "",
       "social_facebook_link": "",
