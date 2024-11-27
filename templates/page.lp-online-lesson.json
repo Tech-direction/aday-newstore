@@ -3,9 +3,45 @@
   "sections": {
     "lp-roasting-lesson-firstview": {
       "type": "lp-roasting-lesson__firstview"
+    },
+    "lp-roasting-lesson-about": {
+      "type": "lp-roasting-lesson__about"
+    },
+    "lp-roasting-lesson-course-content": {
+      "type": "lp-roasting-lesson__course-content"
+    },
+    "lp-roasting-lesson-timetable": {
+      "type": "lp-roasting-lesson__timetable"
+    },
+    "lp-roasting-lesson-instructor": {
+      "type": "lp-roasting-lesson__instructor"
+    },
+    "lp-roasting-lesson-roast-school-form": {
+      "type": "lp-roasting-lesson__roast-school-form"
+    },
+    "lp-roasting-lesson-faq": {
+      "type": "lp-roasting-lesson__faq"
+    },
+    "lp-roasting-lesson-voice": {
+      "type": "lp-roasting-lesson__voice"
+    },
+    "lp-roasting-lesson-cost": {
+      "type": "lp-roasting-lesson__cost"
+    },
+    "lp-roasting-lesson-access": {
+      "type": "lp-roasting-lesson__access"
     }
   },
   "order": [
-    "lp-roasting-lesson-firstview"
+    "lp-roasting-lesson-firstview",
+    "lp-roasting-lesson-about",
+    "lp-roasting-lesson-course-content",
+    "lp-roasting-lesson-timetable",
+    "lp-roasting-lesson-instructor",
+    "lp-roasting-lesson-roast-school-form",
+    "lp-roasting-lesson-faq",
+    "lp-roasting-lesson-voice",
+    "lp-roasting-lesson-cost",
+    "lp-roasting-lesson-access"
   ]
 }
