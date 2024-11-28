@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+/*---------- reset CSS ----------*/
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	vertical-align: baseline;
+	font-weight: normal;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color: #FFFFFF;
+	word-wrap: break-word;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+sup {
+	color: inherit;
+	font-size: 72%;
+	vertical-align: top;
+	position: relative;
+	top: -0.6em;
+}
+img, iframe, video {
+	vertical-align: bottom;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	-webkit-backface-visibility: hidden;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+strong {
+	font-weight: 700;
+	font-size: inherit;
+}
+ins {
+	background-color: #FFFFFF;
+	color: #000000;
+	text-decoration: none;
+}
+mark {
+	background-color: #FFFFFF;
+	color: #000000;
+	font-style: italic;
+	font-weight: 700;
+}
+del {
+	text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #cccccc;
+	margin: 1em 0;
+	padding: 0;
+}
+input, select, textarea {
+	vertical-align: middle;
+	background-color: #FFFFFF;
+	box-shadow: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	cursor: pointer;
+}
+input:focus, select:focus, textarea:focus {
+	outline: none;
+}
+button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	padding: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+address {
+	font-style: initial;
+}

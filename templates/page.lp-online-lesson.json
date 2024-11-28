@@ -1,5 +1,5 @@
 {
-  "layout": false,
+  "layout": "theme-lp-online-lesson",
   "sections": {
     "lp-roasting-lesson-firstview": {
       "type": "lp-roasting-lesson__firstview"

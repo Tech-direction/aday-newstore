@@ -1,0 +1,12 @@
+{
+  "name": "ヘッダー【LP専用】",
+  "type": "header",
+  "sections": {
+    "header-lp-online-lesson": {
+      "type": "header-lp-online-lesson",
+    }
+  },
+  "order": [
+    "header-lp-online-lesson"
+  ]
+}

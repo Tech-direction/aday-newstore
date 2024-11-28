@@ -1,0 +1,12 @@
+{
+  "name": "フッター【LP専用】",
+  "type": "footer",
+  "sections": {
+    "footer-lp-online-lesson": {
+      "type": "footer-lp-online-lesson",
+    }
+  },
+  "order": [
+    "footer-lp-online-lesson"
+  ]
+}
