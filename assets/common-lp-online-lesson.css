@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+:root {
+	/* ------------------------- container幅 -- */
+	--my-custom-theme__container-width: 1200px;
+}
+
+* {
+	word-break: break-word;
+}
+
+html {
+	font-size: 0.625vw;
+}
+@media (max-width: 1400px) {
+	html {
+		font-size: 62.5%;
+	}
+}
+@media (max-width: 480px) {
+	html {
+		font-size: 2.8vw;
+	}
+}
+
+*:not(html) {
+	font-size: 1.4rem;
+	color: #000000;
+	line-height: 1.75;
+	font-family: "Jost", "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", serif, sans-serif;
+}
+
+::-moz-selection {
+	background: #DCDEE3;
+	color: #303338;
+}
+
+::selection {
+	background: #DCDEE3;
+	color: #303338;
+}
+
+::-moz-placeholder {
+	color: #cfcfcf;
+}
+
+::-webkit-input-placeholder {
+	color: #cfcfcf;
+}
+
+:-ms-input-placeholder {
+	color: #cfcfcf;
+}
+
+::-ms-input-placeholder {
+	color: #cfcfcf;
+}
+
+::placeholder {
+	color: #cfcfcf;
+}
+
+a[href^="tel:"] {
+	pointer-events: none;
+}
+
+@media (max-width: 768px) {
+	a[href^="tel:"] {
+		pointer-events: auto;
+	}
+}
+.container {
+	max-width: calc(var(--my-custom-theme__container-width) + 3.2rem);
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 1.6rem;
+}
+
+input,
+textarea,
+select {
+	font-size: 1.6rem;
+	line-height: 1.4;
+	border-radius: 4px;
+	border: 1px solid #000000;
+	background-color: #FFFFFF;
+	padding: 1.6rem;
+	width: 100%;
+}
+input:focus,
+textarea:focus,
+select:focus {
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+input[type=submit],
+button[type=submit] {
+	font-size: 1.6rem;
+	padding: 1.8rem 3rem;
+	min-width: 200px;
+	max-width: 100%;
+	width: 100%;
+	border-radius: 4px;
+	background-color: #000000;
+	color: #FFFFFF;
+	word-break: keep-all;
+	margin: 0 auto !important;
+	display: block;
+	transition: all 0.2s;
+}
+input[type=submit]:disabled,
+button[type=submit]:disabled {
+	pointer-events: none;
+	background-color: rgba(0,0,0, 0.8);
+}
