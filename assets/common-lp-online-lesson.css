@@ -1,7 +1,7 @@
 @charset "UTF-8";
 :root {
   /* ------------------------- container幅 -- */
-  --my-custom-theme__container-width: 1200px;
+  --my-custom-theme__container-width: 120rem;
 }
 
 * {
@@ -117,8 +117,12 @@ button[type=submit]:disabled {
 }
 
 /*　--------------------- 共通見出し -- */
+.common-heading01 {
+  display: table;
+}
+
 .common-heading01 .common-heading01__text01 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: 1.4;
   letter-spacing: 0.2rem;
   display: table;
@@ -141,4 +145,5 @@ button[type=submit]:disabled {
 
 .common-heading01 .common-heading01__text02 {
   font-size: 4rem;
+  line-height: 1.4;
 }

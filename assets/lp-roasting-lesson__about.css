@@ -1,1 +1,44 @@
-/* No CSS */
+.about {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.about-overview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  z-index: 0;
+}
+
+.about-overview .about-overview__image {
+  width: 64rem;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: calc((100wv - var(--my-custom-theme__container-width))/2);
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+}
+
+.about-overview .about-overview__image img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.about-overview .about-overview__text {
+  width: 40%;
+  max-width: 38rem;
+}
