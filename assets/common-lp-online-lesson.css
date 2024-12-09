@@ -1,115 +1,144 @@
-@charset "utf-8";
-
+@charset "UTF-8";
 :root {
-	/* ------------------------- container幅 -- */
-	--my-custom-theme__container-width: 1200px;
+  /* ------------------------- container幅 -- */
+  --my-custom-theme__container-width: 1200px;
 }
 
 * {
-	word-break: break-word;
+  word-break: break-word;
 }
 
 html {
-	font-size: 0.625vw;
+  font-size: 0.625vw;
 }
+
 @media (max-width: 1400px) {
-	html {
-		font-size: 62.5%;
-	}
+  html {
+    font-size: 62.5%;
+  }
 }
+
 @media (max-width: 480px) {
-	html {
-		font-size: 2.8vw;
-	}
+  html {
+    font-size: 2.8vw;
+  }
 }
 
 *:not(html) {
-	font-size: 1.4rem;
-	color: #000000;
-	line-height: 1.75;
-	font-family: "Jost", "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", serif, sans-serif;
+  font-size: 1.4rem;
+  color: #000000;
+  line-height: 1.75;
+  font-family: "Zen Old Mincho", serif;
 }
 
 ::-moz-selection {
-	background: #DCDEE3;
-	color: #303338;
+  background: #DCDEE3;
+  color: #303338;
 }
 
 ::selection {
-	background: #DCDEE3;
-	color: #303338;
-}
-
-::-moz-placeholder {
-	color: #cfcfcf;
+  background: #DCDEE3;
+  color: #303338;
 }
 
 ::-webkit-input-placeholder {
-	color: #cfcfcf;
+  color: #cfcfcf;
 }
 
 :-ms-input-placeholder {
-	color: #cfcfcf;
+  color: #cfcfcf;
 }
 
 ::-ms-input-placeholder {
-	color: #cfcfcf;
+  color: #cfcfcf;
 }
 
 ::placeholder {
-	color: #cfcfcf;
+  color: #cfcfcf;
 }
 
 a[href^="tel:"] {
-	pointer-events: none;
+  pointer-events: none;
 }
 
 @media (max-width: 768px) {
-	a[href^="tel:"] {
-		pointer-events: auto;
-	}
+  a[href^="tel:"] {
+    pointer-events: auto;
+  }
 }
+
 .container {
-	max-width: calc(var(--my-custom-theme__container-width) + 3.2rem);
-	width: 100%;
-	margin: 0 auto;
-	padding: 0 1.6rem;
+  max-width: calc(var(--my-custom-theme__container-width) + 3.2rem);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.6rem;
 }
 
 input,
 textarea,
 select {
-	font-size: 1.6rem;
-	line-height: 1.4;
-	border-radius: 4px;
-	border: 1px solid #000000;
-	background-color: #FFFFFF;
-	padding: 1.6rem;
-	width: 100%;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  border-radius: 4px;
+  border: 1px solid #000000;
+  background-color: #FFFFFF;
+  padding: 1.6rem;
+  width: 100%;
 }
+
 input:focus,
 textarea:focus,
 select:focus {
-	box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
 }
 
 input[type=submit],
 button[type=submit] {
-	font-size: 1.6rem;
-	padding: 1.8rem 3rem;
-	min-width: 200px;
-	max-width: 100%;
-	width: 100%;
-	border-radius: 4px;
-	background-color: #000000;
-	color: #FFFFFF;
-	word-break: keep-all;
-	margin: 0 auto !important;
-	display: block;
-	transition: all 0.2s;
+  font-size: 1.6rem;
+  padding: 1.8rem 3rem;
+  min-width: 200px;
+  max-width: 100%;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #000000;
+  color: #FFFFFF;
+  word-break: keep-all;
+  margin: 0 auto !important;
+  display: block;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
+
 input[type=submit]:disabled,
 button[type=submit]:disabled {
-	pointer-events: none;
-	background-color: rgba(0,0,0, 0.8);
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*　--------------------- 共通見出し -- */
+.common-heading01 .common-heading01__text01 {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  letter-spacing: 0.2rem;
+  display: table;
+  position: relative;
+  z-index: 0;
+}
+
+.common-heading01 .common-heading01__text01::before {
+  content: "";
+  width: 0.1rem;
+  height: calc(100% - 0.2rem);
+  background-color: red;
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  right: -2rem;
+  -webkit-transform: translate(100%, -50%) rotate(45deg);
+          transform: translate(100%, -50%) rotate(45deg);
+}
+
+.common-heading01 .common-heading01__text02 {
+  font-size: 4rem;
 }
