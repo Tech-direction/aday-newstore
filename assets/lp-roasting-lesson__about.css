@@ -15,30 +15,108 @@
           align-items: flex-start;
   position: relative;
   z-index: 0;
+  margin-bottom: 8rem;
 }
 
 .about-overview .about-overview__image {
-  width: 64rem;
+  width: 85rem;
   height: 100%;
   overflow: hidden;
   position: absolute;
   z-index: 0;
   top: 0;
-  left: calc((100wv - var(--my-custom-theme__container-width))/2);
-  -webkit-transform: translate(-100%, 0);
-          transform: translate(-100%, 0);
+  left: calc((100vw - var(--my-custom-theme__container-width))/2);
+  -webkit-transform: translate(-44%, 0);
+          transform: translate(-44%, 0);
+}
+
+@media screen and (max-width: 1200px) {
+  .about-overview .about-overview__image {
+    width: 66%;
+    left: 0;
+    -webkit-transform: translate(-18%);
+            transform: translate(-18%);
+  }
 }
 
 .about-overview .about-overview__image img {
   -o-object-fit: cover;
   object-fit: cover;
-  -o-object-position: center;
-  object-position: center;
+  -o-object-position: right;
+  object-position: right;
   width: 100%;
   height: 100%;
 }
 
 .about-overview .about-overview__text {
-  width: 40%;
-  max-width: 38rem;
+  width: 38%;
+  max-width: 46rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .about-overview .about-overview__text {
+    width: 42%;
+  }
+}
+
+.about-overview-text > li {
+  font-size: 2.4rem;
+  padding: 2rem 0;
+  border-bottom: solid 0.1rem #000000;
+}
+
+.about-overview-text > li:first-child {
+  padding-top: 0;
+}
+
+.about-overview-text > li:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+@media screen and (max-width: 960px) {
+  .about-overview-text > li {
+    font-size: 2rem;
+    padding: 1.6rem 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-overview-text > li {
+    font-size: 1.8rem;
+    padding: 1.4rem 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-overview-text > li {
+    font-size: 1.6rem;
+  }
+}
+
+.about-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 8rem;
+}
+
+.about-detail .about-detail__text {
+  width: 100%;
+}
+
+.about-detail .about-detail__text p {
+  font-size: 2rem;
+}
+
+.about-detail .about-detail__image {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 32%;
 }

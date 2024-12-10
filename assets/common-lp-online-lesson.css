@@ -12,7 +12,7 @@ html {
   font-size: 0.625vw;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
   html {
     font-size: 62.5%;
   }
@@ -119,9 +119,29 @@ button[type=submit]:disabled {
 /*　--------------------- 共通見出し -- */
 .common-heading01 {
   display: table;
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 960px) {
+  .common-heading01 {
+    margin-bottom: 3.6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .common-heading01 {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .common-heading01 {
+    margin-bottom: 2.4rem;
+  }
 }
 
 .common-heading01 .common-heading01__text01 {
+  color: red;
   font-size: 1.4rem;
   line-height: 1.4;
   letter-spacing: 0.2rem;
@@ -146,4 +166,22 @@ button[type=submit]:disabled {
 .common-heading01 .common-heading01__text02 {
   font-size: 4rem;
   line-height: 1.4;
+}
+
+@media screen and (max-width: 960px) {
+  .common-heading01 .common-heading01__text02 {
+    font-size: 3.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .common-heading01 .common-heading01__text02 {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .common-heading01 .common-heading01__text02 {
+    font-size: 2.4rem;
+  }
 }
