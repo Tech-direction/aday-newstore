@@ -12,7 +12,11 @@
   height: 100%;
   background-image: url(../assets/dummy_800x500_gray.png);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .about-overview {
