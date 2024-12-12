@@ -3,10 +3,33 @@
   z-index: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .firstview .firstview__image {
+    height: 100vh;
+    height: 100dvh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .firstview .firstview__image img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .firstview .firstview__cta {
   position: absolute;
   z-index: 0;
   bottom: 0;
   right: 0;
   width: 36rem;
+}
+
+@media screen and (max-width: 768px) {
+  .firstview .firstview__cta {
+    position: static;
+    width: 100%;
+  }
 }
