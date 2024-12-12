@@ -1,1 +1,132 @@
-/* No CSS */
+.course {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-color: #000000;
+}
+
+@media screen and (max-width: 768px) {
+  .course {
+    padding-top: 6.4rem;
+    padding-bottom: 6.4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .course {
+    padding-top: 3.6rem;
+    padding-bottom: 3.6rem;
+  }
+}
+
+.course-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4rem;
+}
+
+.course-content .course-content__image {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 45%;
+}
+
+.course-content .course-content__text {
+  width: 100%;
+}
+
+.course-content .course-content__text .common-heading01 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 4.8rem;
+}
+
+.course-content .course-content__text .common-heading01 .common-heading01__text01 {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.course-content .course-content__text .common-heading01 .common-heading01__text01::before {
+  right: auto;
+  left: -2.4rem;
+  -webkit-transform: translate(-100%, -50%) rotate(45deg);
+          transform: translate(-100%, -50%) rotate(45deg);
+}
+
+.course-content .course-content__text .common-heading01 .common-heading01__text02 {
+  color: #FFFFFF;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.course-content-text .course-content-text__list {
+  margin-bottom: 1.6rem;
+}
+
+.course-content-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: -webkit-min-content;
+  grid-auto-rows: min-content;
+  gap: 1.6rem;
+  counter-reset: number;
+}
+
+.course-content-list > li {
+  font-size: 2.4rem;
+  position: relative;
+  z-index: 0;
+  padding: 1.6rem;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.course-content-list > li::before {
+  content: counter(number, decimal-leading-zero);
+  counter-increment: number;
+  color: red;
+  font-size: 3.2rem;
+  display: block;
+}
+
+.course-content-list > li::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0.4rem;
+  border-color: red transparent transparent red;
+}
