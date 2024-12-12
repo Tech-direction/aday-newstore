@@ -1,4 +1,6 @@
 .about {
+  background-image: url(../assets/dummy_800x500_gray.png);
+  background-repeat: no-repeat;
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
@@ -18,6 +20,35 @@
   margin-bottom: 8rem;
 }
 
+@media screen and (max-width: 1400px) {
+  .about-overview {
+    margin-bottom: 8rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .about-overview {
+    margin-bottom: 6.4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-overview {
+    margin-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-overview {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 4rem;
+    margin-bottom: 2.4rem;
+  }
+}
+
 .about-overview .about-overview__image {
   width: 85rem;
   height: 100%;
@@ -28,6 +59,15 @@
   left: calc((100vw - var(--my-custom-theme__container-width))/2);
   -webkit-transform: translate(-44%, 0);
           transform: translate(-44%, 0);
+}
+
+@media screen and (max-width: 1400px) {
+  .about-overview .about-overview__image {
+    width: 66%;
+    left: 0;
+    -webkit-transform: translate(-18%);
+            transform: translate(-18%);
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -48,6 +88,18 @@
   }
 }
 
+@media screen and (max-width: 480px) {
+  .about-overview .about-overview__image {
+    width: 86%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    position: static;
+    -webkit-transform: translate(-1.6rem, 0);
+            transform: translate(-1.6rem, 0);
+  }
+}
+
 .about-overview .about-overview__image img {
   -o-object-fit: cover;
   object-fit: cover;
@@ -62,6 +114,12 @@
   max-width: 46rem;
 }
 
+@media screen and (max-width: 1400px) {
+  .about-overview .about-overview__text {
+    width: 42%;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .about-overview .about-overview__text {
     width: 42%;
@@ -71,6 +129,13 @@
 @media screen and (max-width: 960px) {
   .about-overview .about-overview__text {
     width: 52%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-overview .about-overview__text {
+    width: calc(86% - 1.6rem);
+    padding-left: 1.6rem;
   }
 }
 
@@ -105,7 +170,7 @@
 
 @media screen and (max-width: 480px) {
   .about-overview-text > li {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -122,16 +187,89 @@
   gap: 8rem;
 }
 
+@media screen and (max-width: 1400px) {
+  .about-detail {
+    gap: 8rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .about-detail {
+    gap: 5.6rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .about-detail {
+    gap: 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-detail {
+    gap: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-detail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0.8rem;
+  }
+}
+
 .about-detail .about-detail__text {
   width: 100%;
 }
 
 .about-detail .about-detail__text p {
   font-size: 2rem;
+  margin-bottom: 2.4rem;
+}
+
+.about-detail .about-detail__text p:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 960px) {
+  .about-detail .about-detail__text p {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-detail .about-detail__text p {
+    font-size: 1.6rem;
+  }
+}
+
+.about-detail .about-detail__text p span {
+  font: inherit;
+  line-height: inherit;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(94%, transparent), color-stop(0%, red));
+  background: linear-gradient(transparent 94%, red 0%);
+  display: inline;
 }
 
 .about-detail .about-detail__image {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   width: 32%;
+}
+
+@media screen and (max-width: 768px) {
+  .about-detail .about-detail__image {
+    width: 24%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-detail .about-detail__image {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    width: 32%;
+  }
 }
