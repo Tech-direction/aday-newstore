@@ -1,1 +1,137 @@
-/* No CSS */
+.timetable {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-color: #f5f5dc;
+}
+
+@media screen and (max-width: 768px) {
+  .timetable {
+    padding-top: 6.4rem;
+    padding-bottom: 6.4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .timetable {
+    padding-top: 3.6rem;
+    padding-bottom: 3.6rem;
+  }
+}
+
+.timetable-content {
+  max-width: 96rem;
+}
+
+.timetable-content .common-heading01 {
+  display: block;
+  padding-bottom: 2.4rem;
+  border-bottom: solid 0.1rem #000000;
+}
+
+.timetable-list {
+  counter-reset: list-counter;
+}
+
+.timetable-list-item .timetable-list-item__heading {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.4rem;
+}
+
+@media screen and (max-width: 960px) {
+  .timetable-list-item .timetable-list-item__heading {
+    font-size: 2.4rem;
+    gap: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .timetable-list-item .timetable-list-item__heading {
+    font-size: 2rem;
+    gap: 1.4rem;
+  }
+}
+
+.timetable-list-item .timetable-list-item__heading::before {
+  content: counter(list-counter, upper-roman);
+  counter-increment: list-counter;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.4rem;
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  background-color: #808080;
+}
+
+@media screen and (max-width: 960px) {
+  .timetable-list-item .timetable-list-item__heading::before {
+    font-size: 2rem;
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .timetable-list-item .timetable-list-item__heading::before {
+    font-size: 1.6rem;
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+}
+
+.timetable-list-item .timetable-list-item__content {
+  padding-left: 20%;
+}
+
+@media screen and (max-width: 960px) {
+  .timetable-list-item .timetable-list-item__content {
+    padding-left: 14%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .timetable-list-item .timetable-list-item__content {
+    padding-left: 5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .timetable-list-item .timetable-list-item__content {
+    padding-left: 5rem;
+  }
+}
+
+.timetable-list-item .timetable-list-item__content p {
+  font-size: 1.8rem;
+  line-height: 2;
+}
+
+@media screen and (max-width: 480px) {
+  .timetable-list-item .timetable-list-item__content p {
+    font-size: 1.6rem;
+    line-height: 1.7;
+  }
+}
+
+.timetable-list-item .timetable-list-item__content ol > li {
+  font-size: 1.8rem;
+  line-height: 2;
+}
