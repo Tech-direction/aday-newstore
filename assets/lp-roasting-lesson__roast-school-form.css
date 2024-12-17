@@ -1,1 +1,61 @@
-/* No CSS */
+.roast-school-form-heading {
+  background-image: url(../assets/dummy_800x500_gray.png);
+  background-image: url(https://placehold.jp/383838/ffffff/1000x1000.png?text=dum);
+  background-size: cover;
+  background-position: center;
+  padding-top: 6.4rem;
+  padding-bottom: 6.4rem;
+}
+
+.roast-school-form-heading .common-heading01 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 4.8rem;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .roast-school-form-heading .common-heading01 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 0.4rem;
+  }
+}
+
+.roast-school-form-heading .common-heading01 .common-heading01__text01 {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.roast-school-form-heading .common-heading01 .common-heading01__text01::before {
+  right: auto;
+  left: -2.4rem;
+  -webkit-transform: translate(-100%, -50%) rotate(45deg);
+          transform: translate(-100%, -50%) rotate(45deg);
+}
+
+@media screen and (max-width: 768px) {
+  .roast-school-form-heading .common-heading01 .common-heading01__text01::before {
+    display: none;
+  }
+}
+
+.roast-school-form-heading .common-heading01 .common-heading01__text02 {
+  color: #FFFFFF;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
