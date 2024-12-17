@@ -18,8 +18,15 @@
   }
 }
 
-.timetable-content {
+.timetable-content.container {
   max-width: 96rem;
+}
+
+@media screen and (max-width: 768px) {
+  .timetable-content.container {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+  }
 }
 
 .timetable-content .common-heading01 {
