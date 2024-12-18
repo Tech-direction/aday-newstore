@@ -106,6 +106,19 @@
   line-height: 2.4;
 }
 
+@media screen and (max-width: 768px) {
+  .roast-school-form-content .roast-school-form-content__description p {
+    font-size: 1.6rem;
+    line-height: 2;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .roast-school-form-content .roast-school-form-content__description p {
+    line-height: 1.7;
+  }
+}
+
 .contact-form .contact-form__item {
   margin-top: 1rem;
 }
@@ -136,4 +149,11 @@
   border: solid 0.1rem #D0D0D0;
   margin-top: 4.2rem !important;
   border-radius: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-form button[type=submit] {
+    font-size: 1.6rem;
+    padding: 1.2rem 1.8rem;
+  }
 }
