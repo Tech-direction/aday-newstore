@@ -10,93 +10,82 @@
     </div>
   </div>
   <div class="roast-school-form__content roast-school-form-content">
-    <form
-      method="post"
-      action="/contact#contact_form"
-      id="contact_form"
-      accept-charset="UTF-8"
-      class="contact-form container"
-    >
-      <input type="hidden" name="form_type" value="contact">
-      <input type="hidden" name="utf8" value="✓">
-
-      <div class="form-group">
-        <label for="ContactFormName">お名前（必須）</label>
-        <input type="text" id="ContactFormName" name="contact[name]" required>
+    <div class="container">
+      <div class="roast-school-form-content__description">
+        <p>
+          焙煎教室へのお申し込みは<br>
+          こちらのフォームにてお願いいたします
+        </p>
       </div>
+      {%- form 'contact', id: 'contact_form', class: 'roast-school-form-content__form contact-form' -%}
+        <div class="contact-form__item">
+          <label for="ContactFormName">お名前（必須）</label>
+          <input type="text" id="ContactFormName" name="contact[name]" required>
+        </div>
 
-      <div class="form-group">
-        <label for="ContactFormEmail">メールアドレス（必須）</label>
-        <input type="email" id="ContactFormEmail" name="contact[email]" required>
-      </div>
+        <div class="contact-form__item">
+          <label for="ContactFormEmail">メールアドレス（必須）</label>
+          <input type="email" id="ContactFormEmail" name="contact[email]" required>
+        </div>
 
-      <div class="form-group">
-        <label for="ContactFormPhone">電話番号（必須）</label>
-        <input type="tel" id="ContactFormPhone" name="contact[phone]" required>
-      </div>
+        <div class="contact-form__item">
+          <label for="ContactFormPhone">電話番号（必須）</label>
+          <input type="tel" id="ContactFormPhone" name="contact[phone]" required>
+        </div>
 
-      <div class="form-group">
-        <label for="ContactFormStoreName">店舗名</label>
-        <input type="text" id="ContactFormStoreName" name="contact[store_name]">
-      </div>
+        <div class="contact-form__item">
+          <label for="ContactFormStoreName">店舗名</label>
+          <input type="text" id="ContactFormStoreName" name="contact[store_name]">
+        </div>
 
-      <div class="form-group">
-        <label for="ContactFormDate">参加希望日（必須）</label>
-        <input type="date" id="ContactFormDate" name="contact[date]" required>
-      </div>
+        <div class="contact-form__item">
+          <label for="ContactFormDate">参加希望日（必須）</label>
+          <input type="date" id="ContactFormDate" name="contact[date]" required>
+        </div>
 
-      <div class="form-group">
-        <label for="ContactFormPayment">支払い方法（必須）</label>
-        <select id="ContactFormPayment" name="contact[payment]" required>
-          <option value="" disabled selected>選択してください</option>
-          <option value="現金">当日現金払い（一括）</option>
-          <option value="クレジットカード">事前クレジットカード払い（一括・分割）</option>
-        </select>
-      </div>
+        <div class="contact-form__item">
+          <label for="ContactFormPayment">支払い方法（必須）</label>
+          <select id="ContactFormPayment" name="contact[payment]" required>
+            <option value="" disabled selected>選択してください</option>
+            <option value="現金">当日現金払い（一括）</option>
+            <option value="クレジットカード">事前クレジットカード払い（一括・分割）</option>
+          </select>
+        </div>
 
-      <div class="form-group">
-        <label for="ContactFormExperience">経験（必須）</label>
-        <select
-          id="ContactFormExperience"
-          name="contact[experience]"
-          required
-          onchange="this.options[0].disabled = true;"
-        >
-          <option value="" disabled selected>選択してください</option>
-          <option value="初心者">初心者</option>
-          <option value="知識あり">焙煎知識あり</option>
-          <option value="経験者">焙煎経験者</option>
-        </select>
-      </div>
+        <div class="contact-form__item">
+          <label for="ContactFormExperience">経験（必須）</label>
+          <select id="ContactFormExperience" name="contact[experience]" required>
+            <option value="" disabled selected>選択してください</option>
+            <option value="初心者">初心者</option>
+            <option value="知識あり">焙煎知識あり</option>
+            <option value="経験者">焙煎経験者</option>
+          </select>
+        </div>
 
-      <div class="form-group">
-        <label for="ContactFormStoreIntent">出店希望（必須）</label>
-        <select
-          id="ContactFormStoreIntent"
-          name="contact[store_intent]"
-          required
-          onchange="this.options[0].disabled = true;"
-        >
-          <option value="" disabled selected>選択してください</option>
-          <option value="1年以内">1年以内に出店したい</option>
-          <option value="すでに出店">すでに出店している</option>
-          <option value="いづれ出店">いづれ出店したい</option>
-          <option value="趣味">趣味として</option>
-        </select>
-      </div>
+        <div class="contact-form__item">
+          <label for="ContactFormStoreIntent">出店希望（必須）</label>
+          <select id="ContactFormStoreIntent" name="contact[store_intent]" required>
+            <option value="" disabled selected>選択してください</option>
+            <option value="1年以内">1年以内に出店したい</option>
+            <option value="すでに出店">すでに出店している</option>
+            <option value="いづれ出店">いづれ出店したい</option>
+            <option value="趣味">趣味として</option>
+          </select>
+        </div>
 
-      <div class="form-group">
-        <label for="ContactFormResidence">お住まい（必須）</label>
-        <input type="text" id="ContactFormResidence" name="contact[residence]" required>
-      </div>
+        <div class="contact-form__item">
+          <label for="ContactFormResidence">お住まい（必須）</label>
+          <input type="text" id="ContactFormResidence" name="contact[residence]" required>
+        </div>
 
-      <div class="form-group">
-        <label for="ContactFormMessage">備考</label>
-        <textarea id="ContactFormMessage" name="contact[message]"></textarea>
-      </div>
+        <div class="contact-form__item">
+          <label for="ContactFormMessage">備考</label>
+          <textarea id="ContactFormMessage" name="contact[message]"></textarea>
+        </div>
 
-      <button type="submit">お申込み</button>
-    </form>
+        <button type="submit">お申込み</button>
+      {%- endform -%}
+    </div>
   </div>
 </section>
 
