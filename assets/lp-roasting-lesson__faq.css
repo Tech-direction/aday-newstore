@@ -21,6 +21,13 @@
   max-width: 96rem;
 }
 
+@media screen and (max-width: 768px) {
+  .faq-content.container {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+  }
+}
+
 .faq-list .faq-list__item {
   margin-bottom: 2rem;
 }

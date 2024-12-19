@@ -36,6 +36,13 @@
   opacity: 0.1;
 }
 
+@media screen and (max-width: 768px) {
+  .voice-content.container {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+  }
+}
+
 .voice-list {
   display: -ms-grid;
   display: grid;
@@ -43,6 +50,37 @@
       grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: -webkit-min-content;
   grid-auto-rows: min-content;
+  gap: 4.8rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .voice-list {
+    gap: 3.2rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .voice-list {
+    gap: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .voice-list {
+    gap: 1.6rem;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .voice-list {
+    gap: 1.6rem;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
 }
 
 .voice-list-item {
@@ -57,13 +95,13 @@
 .voice-list-item::before {
   content: "";
   display: block;
-  width: 20rem;
+  width: 55%;
   height: 0.1rem;
   background-color: #d5d5d5;
   position: absolute;
   z-index: -1;
   top: 0;
-  left: calc(20rem / 1.41421356);
+  left: calc(55% / 1.41421356);
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
   -webkit-transform-origin: left center;
@@ -82,14 +120,36 @@
 
 .voice-list-item .voice-list-item__image > img {
   max-width: 20rem;
+  width: 56%;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  overflow: hidden;
+}
+
+@media screen and (max-width: 960px) {
+  .voice-list-item .voice-list-item__image > img {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .voice-list-item .voice-list-item__image > img {
+    width: 52%;
+  }
+}
+
+.voice-list-item .voice-list-item__content {
+  margin-bottom: 1.6rem;
 }
 
 .voice-list-item .voice-list-item__content * {
   font-size: 1.8rem;
   font-weight: 700;
+}
+
+@media screen and (max-width: 960px) {
+  .voice-list-item .voice-list-item__content * {
+    font-size: 1.6rem;
+  }
 }
 
 .voice-list-item .voice-list-item__metadata {
@@ -103,6 +163,8 @@
       -ms-flex-align: baseline;
           align-items: baseline;
   border-top: solid 0.1rem #d5d5d5;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 .voice-list-item .voice-list-item__metadata > dl dt,
