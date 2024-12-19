@@ -1,1 +1,148 @@
-/* No CSS */
+.cost {
+  background-image: url(../assets/dummy_800x500_gray.png);
+  background-image: url(https://placehold.jp/383838/ffffff/1000x1000.png?text=dummy);
+  background-size: cover;
+  background-position: center;
+  padding-top: 6.4rem;
+  padding-bottom: 6.4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .cost {
+    padding-top: 4.2rem;
+    padding-bottom: 4.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cost {
+    padding-top: 3.6rem;
+    padding-bottom: 3.6rem;
+  }
+}
+
+.cost-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 14rem;
+}
+
+@media screen and (max-width: 768px) {
+  .cost-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3.2rem;
+  }
+}
+
+.cost-content .common-heading01 {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.cost-content .common-heading01 .common-heading01__text01,
+.cost-content .common-heading01 .common-heading01__text02 {
+  color: #FFFFFF;
+}
+
+.cost-content .cost-content__schedule {
+  width: 100%;
+}
+
+.schedule-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 3.2rem;
+  padding: 0.4rem 0;
+  border-bottom: solid 0.1rem #FFFFFF;
+}
+
+.schedule-list:last-child {
+  border-bottom: none;
+}
+
+.schedule-list dt,
+.schedule-list dd * {
+  color: #FFFFFF;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .schedule-list dt,
+  .schedule-list dd * {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .schedule-list dt,
+  .schedule-list dd * {
+    font-size: 1.6rem;
+  }
+}
+
+.schedule-list dt {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 10rem;
+}
+
+.schedule-list dd {
+  width: 100%;
+}
+
+.schedule-list dd .attention * {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .schedule-list dd .attention * {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .schedule-list dd .attention * {
+    font-size: 1.4rem;
+  }
+}
+
+.schedule-list dd ul {
+  list-style-type: disc;
+  padding-left: 2rem;
+}
+
+.schedule-list dd ul li {
+  margin-bottom: 0.5rem;
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .schedule-list dd ul li {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .schedule-list dd ul li {
+    font-size: 1.4rem;
+  }
+}
