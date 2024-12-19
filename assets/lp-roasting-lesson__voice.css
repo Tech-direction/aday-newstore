@@ -1,1 +1,116 @@
-/* No CSS */
+.voice {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  position: relative;
+  z-index: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .voice {
+    padding-top: 6.4rem;
+    padding-bottom: 6.4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .voice {
+    padding-top: 3.6rem;
+    padding-bottom: 3.6rem;
+  }
+}
+
+.voice::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/dummy_800x500_gray.png);
+  background-image: url(https://placehold.jp/383838/ffffff/1000x1000.png?text=dum);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
+}
+
+.voice-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: -webkit-min-content;
+  grid-auto-rows: min-content;
+}
+
+.voice-list-item {
+  border: solid 0.1rem #d5d5d5;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  position: relative;
+  z-index: 0;
+}
+
+.voice-list-item::before {
+  content: "";
+  display: block;
+  width: 20rem;
+  height: 0.1rem;
+  background-color: #d5d5d5;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: calc(20rem / 1.41421356);
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+}
+
+.voice-list-item > * {
+  padding: 0 2rem;
+}
+
+.voice-list-item .voice-list-item__image {
+  padding-top: 2rem;
+  margin-bottom: 1.6rem;
+  text-align: right;
+}
+
+.voice-list-item .voice-list-item__image > img {
+  max-width: 20rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.voice-list-item .voice-list-item__content * {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.voice-list-item .voice-list-item__metadata {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  border-top: solid 0.1rem #d5d5d5;
+}
+
+.voice-list-item .voice-list-item__metadata > dl dt,
+.voice-list-item .voice-list-item__metadata > dl dd {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.voice-list-item .voice-list-item__metadata > dl dt {
+  display: none;
+}
