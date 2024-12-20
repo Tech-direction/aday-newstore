@@ -140,20 +140,5 @@
 }
 
 .contact-form button[type=submit] {
-  color: #000000;
-  font-size: 2rem;
-  display: table;
-  width: auto;
-  background-color: #FFFFFF;
-  padding: 1.6rem 2.4rem;
-  border: solid 0.1rem #D0D0D0;
   margin-top: 4.2rem !important;
-  border-radius: 0;
-}
-
-@media screen and (max-width: 768px) {
-  .contact-form button[type=submit] {
-    font-size: 1.6rem;
-    padding: 1.2rem 1.8rem;
-  }
 }
