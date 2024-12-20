@@ -67,6 +67,10 @@ a[href^="tel:"] {
   }
 }
 
+img {
+  width: 100%;
+}
+
 .container {
   max-width: calc(var(--my-custom-theme__container-width) + 3.2rem);
   width: 100%;
