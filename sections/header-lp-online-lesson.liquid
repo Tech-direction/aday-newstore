@@ -1,24 +1,13 @@
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap"
->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap">
 
-<link
-  rel="stylesheet"
-  href="{{ 'common-lp-online-lesson.css' | asset_url }}"
-  media="print"
-  onload="this.media='all'"
->
+<link rel="stylesheet" href="{{ 'common-lp-online-lesson.css' | asset_url }}" media="print">
 
-<link
-  rel="stylesheet"
-  href="{{ 'section-header-lp-online-lesson.css' | asset_url }}"
-  media="print"
-  onload="this.media='all'"
->
+{{ 'common-lp-online-lesson.css' | asset_url | stylesheet_tag }}
+
+{{ 'section-header-lp-online-lesson.css' | asset_url | stylesheet_tag }}
 
 <script type="application/ld+json">
   {

@@ -1,1 +1,74 @@
-/* No CSS */
+.footer {
+  background-color: #d5d5d5;
+  padding-top: 6.4rem;
+  padding-bottom: 6.4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding-top: 4.2rem;
+    padding-bottom: 4.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    padding-top: 3.6rem;
+    padding-bottom: 3.6rem;
+  }
+}
+
+.footer .footer__logo {
+  max-width: 40rem;
+  display: table;
+  margin: 0 auto 4rem;
+}
+
+.footer .footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto 4rem;
+}
+
+.footer .footer__menu > li {
+  position: relative;
+  z-index: 0;
+}
+
+.footer .footer__menu > li::before {
+  content: "";
+  display: block;
+  width: 0.1rem;
+  height: calc(100% - 0.2rem);
+  background-color: #000000;
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.footer .footer__menu > li:first-child::before {
+  display: none;
+}
+
+.footer .footer__menu > li a {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.4;
+  padding: 0.4rem 2rem;
+}
+
+.footer .footer__copyright {
+  font-size: 1.4rem;
+  display: table;
+  margin: 0 auto;
+}

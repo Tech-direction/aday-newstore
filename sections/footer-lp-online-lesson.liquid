@@ -1,9 +1,47 @@
-<link
-  rel="stylesheet"
-  href="{{ 'section-footer-lp-online-lesson.css' | asset_url }}"
-  media="print"
-  onload="this.media='all'"
->
+{{ 'section-footer-lp-online-lesson.css' | asset_url | stylesheet_tag }}
+
+<section class="footer">
+  <div class="footer-content container">
+    <div class="footer__logo">
+      <img src="https://placehold.jp/383838/ffffff/1000x250.png?text=dummy">
+    </div>
+    <ul class="footer__menu">
+      <li>
+        <a href="">
+          焙煎教室
+        </a>
+      </li>
+      <li>
+        <a href="">
+          講座内容
+        </a>
+      </li>
+      <li>
+        <a href="">
+          お申込み
+        </a>
+      </li>
+      <li>
+        <a href="">
+          費用・開催日
+        </a>
+      </li>
+      <li>
+        <a href="">
+          お客様の声
+        </a>
+      </li>
+      <li>
+        <a href="">
+          店舗情報
+        </a>
+      </li>
+    </ul>
+    <div class="footer__copyright">
+      &copy; 2024 A day in the coffee.
+    </div>
+  </div>
+</section>
 
 {% schema %}
 {
