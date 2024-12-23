@@ -1,20 +1,6 @@
 .instructor {
-  margin-top: 8rem;
-  margin-bottom: 8rem;
-}
-
-@media screen and (max-width: 768px) {
-  .instructor {
-    margin-top: 6.4rem;
-    margin-bottom: 6.4rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .instructor {
-    margin-top: 3.6rem;
-    margin-bottom: 3.6rem;
-  }
+  margin-top: var(--my-custom-theme__section-spacing);
+  margin-bottom: var(--my-custom-theme__section-spacing);
 }
 
 .instructor-content {

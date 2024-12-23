@@ -6,15 +6,8 @@
 
 @media screen and (max-width: 768px) {
   .footer {
-    padding-top: 4.2rem;
-    padding-bottom: 4.2rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .footer {
-    padding-top: 3.6rem;
-    padding-bottom: 3.6rem;
+    padding-top: var(--my-custom-theme__section-spacing);
+    padding-bottom: var(--my-custom-theme__section-spacing);
   }
 }
 

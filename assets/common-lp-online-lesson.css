@@ -2,6 +2,30 @@
 :root {
   /* ------------------------- container幅 -- */
   --my-custom-theme__container-width: 120rem;
+  /* ------------------------- セクションの間隔 -- */
+  --my-custom-theme__section-spacing: 8rem;
+  /* ------------------------- 文字 -- */
+  --my-custom-theme__font-size: 1.4rem;
+  --my-custom-theme__line-height: 1.75;
+  --my-custom-theme__letter-spacing: 0.05em;
+  /* ------------------------- 色 -- */
+  --my-custom-theme__text-color: #000000;
+  --my-custom-theme__base-color: #ffffff;
+  --my-custom-theme__main-color: #d5d5d5;
+  --my-custom-theme__sub-color: #cfcfcf;
+  --my-custom-theme__accent-color: #303338;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --my-custom-theme__section-spacing: 6.4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  :root {
+    --my-custom-theme__section-spacing: 3.6rem;
+  }
 }
 
 * {
