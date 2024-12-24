@@ -36,12 +36,6 @@
   margin-bottom: 8rem;
 }
 
-@media screen and (max-width: 1400px) {
-  .about-overview {
-    margin-bottom: 8rem;
-  }
-}
-
 @media screen and (max-width: 960px) {
   .about-overview {
     margin-bottom: 6.4rem;

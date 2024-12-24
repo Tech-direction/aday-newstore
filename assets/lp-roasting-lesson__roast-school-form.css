@@ -35,8 +35,8 @@
 
 @media screen and (max-width: 480px) {
   .roast-school-form-heading {
-    padding-top: 3.6rem;
-    padding-bottom: 3.6rem;
+    padding-top: var(--my-custom-theme__section-spacing);
+    padding-bottom: var(--my-custom-theme__section-spacing);
   }
 }
 
