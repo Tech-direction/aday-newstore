@@ -24,7 +24,13 @@
   z-index: 0;
   bottom: 0;
   right: 0;
-  width: 81.2rem;
+  width: 66rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .firstview .firstview__cta {
+    width: 42%;
+  }
 }
 
 @media screen and (max-width: 768px) {
