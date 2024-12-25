@@ -217,7 +217,7 @@
   height: 0;
   border-style: solid;
   border-width: 1.6rem;
-  border-color: red transparent transparent red;
+  border-color: rgba(var(--my-custom-theme__accent-color), 1) transparent transparent rgba(var(--my-custom-theme__accent-color), 1);
 }
 
 .course-content-credentials p {

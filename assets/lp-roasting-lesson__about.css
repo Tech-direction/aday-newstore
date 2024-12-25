@@ -271,8 +271,8 @@
 .about-detail .about-detail__text p span {
   font: inherit;
   line-height: inherit;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(94%, transparent), color-stop(0%, red));
-  background: linear-gradient(transparent 94%, red 0%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(94%, transparent), color-stop(0%, rgba(var(--my-custom-theme__accent-color), 1)));
+  background: linear-gradient(transparent 94%, rgba(var(--my-custom-theme__accent-color), 1) 0%);
   display: inline;
 }
 
