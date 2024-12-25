@@ -22,7 +22,6 @@
   content: "";
   display: block;
   background-image: url(../assets/dummy_800x500_gray.png);
-  background-image: url(https://placehold.jp/d5d5d5/ffffff/1000x1000.png?text=dummy);
   background-size: contain;
   background-position: center;
   width: 80rem;
