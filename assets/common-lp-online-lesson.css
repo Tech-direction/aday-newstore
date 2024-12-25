@@ -13,7 +13,7 @@
   --my-custom-theme__base-color: 255, 255, 255;
   --my-custom-theme__main-color: 0, 0, 0;
   --my-custom-theme__sub-color: 245, 222, 179;
-  --my-custom-theme__accent-color: 255, 0, 0;
+  --my-custom-theme__accent-color: 198, 67, 70;
 }
 
 @media screen and (max-width: 768px) {
@@ -146,7 +146,7 @@ select:focus {
 }
 
 .common-heading01 .common-heading01__text01 {
-  color: red;
+  color: rgba(var(--my-custom-theme__accent-color), 1);
   font-size: 1.4rem;
   line-height: 1.4;
   letter-spacing: 0.2rem;
@@ -159,7 +159,7 @@ select:focus {
   content: "";
   width: 0.1rem;
   height: calc(100% - 0.2rem);
-  background-color: red;
+  background-color: rgba(var(--my-custom-theme__accent-color), 1);
   position: absolute;
   z-index: 0;
   top: 50%;

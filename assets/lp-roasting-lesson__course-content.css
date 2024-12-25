@@ -196,7 +196,7 @@
 .course-content-list > li::before {
   content: counter(number, decimal-leading-zero);
   counter-increment: number;
-  color: red;
+  color: rgba(var(--my-custom-theme__accent-color), 1);
   font-size: 3.2rem;
   display: block;
 }

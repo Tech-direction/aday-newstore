@@ -349,5 +349,5 @@
 }
 
 .nearestStation-list ul li::marker {
-  color: red;
+  color: rgba(var(--my-custom-theme__accent-color), 1);
 }

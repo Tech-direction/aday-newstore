@@ -61,7 +61,7 @@
 }
 
 .faq-list .faq-list__item dd p {
-  color: red;
+  color: rgba(var(--my-custom-theme__accent-color), 1);
 }
 
 .faq-list .faq-list__item dt,
