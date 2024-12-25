@@ -9,11 +9,11 @@
   --my-custom-theme__line-height: 1.75;
   --my-custom-theme__letter-spacing: 0.05em;
   /* ------------------------- 色 -- */
-  --my-custom-theme__text-color: #000000;
-  --my-custom-theme__base-color: #ffffff;
-  --my-custom-theme__main-color: #d5d5d5;
-  --my-custom-theme__sub-color: #cfcfcf;
-  --my-custom-theme__accent-color: #303338;
+  --my-custom-theme__text-color: 0, 0, 0;
+  --my-custom-theme__base-color: 255, 255, 255;
+  --my-custom-theme__main-color: 0, 0, 0;
+  --my-custom-theme__sub-color: 245, 222, 179;
+  --my-custom-theme__accent-color: 255, 0, 0;
 }
 
 @media screen and (max-width: 768px) {
