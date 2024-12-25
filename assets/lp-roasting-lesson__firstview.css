@@ -27,7 +27,7 @@
   width: 66rem;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .firstview .firstview__cta {
     width: 42%;
   }
