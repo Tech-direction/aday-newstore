@@ -2,6 +2,7 @@
   padding-top: var(--my-custom-theme__section-spacing);
   padding-bottom: var(--my-custom-theme__section-spacing);
   background-color: #f5f5dc;
+  background-image: url(../assets/lp-roasting-lesson__timetable-bg.png);
 }
 
 .timetable-content.container {
@@ -71,7 +72,7 @@
   width: 4.8rem;
   height: 4.8rem;
   border-radius: 50%;
-  background-color: #808080;
+  background-color: rgba(var(--my-custom-theme__text-color), 0.1);
 }
 
 @media screen and (max-width: 960px) {
