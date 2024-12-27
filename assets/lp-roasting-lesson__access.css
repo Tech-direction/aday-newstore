@@ -21,7 +21,7 @@
 .access::before {
   content: "";
   display: block;
-  background-image: url(../assets/dummy_800x500_gray.png);
+  background-image: url(../assets/lp-roasting-lesson__access-image01.webp);
   background-size: contain;
   background-position: center;
   width: 80rem;
@@ -30,10 +30,6 @@
   z-index: -1;
   top: 0;
   right: 0;
-  -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
-  -webkit-filter: blur(20px);
-  filter: blur(20px);
 }
 
 @media screen and (max-width: 768px) {
