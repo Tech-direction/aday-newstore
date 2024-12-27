@@ -51,6 +51,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .access::before {
+    width: 80%;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .access::before {
     width: 100%;
