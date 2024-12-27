@@ -22,6 +22,7 @@
   content: "";
   display: block;
   background-image: url(../assets/lp-roasting-lesson__access-image01.webp);
+  background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   width: 80rem;
