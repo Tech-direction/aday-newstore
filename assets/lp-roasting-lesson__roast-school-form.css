@@ -18,9 +18,9 @@
 }
 
 .roast-school-form-heading {
-  background-image: url(../assets/dummy_800x500_gray.png);
+  background-image: url(../assets/lp-roasting-lesson__roast-school-form-heading-bg.png);
   background-size: cover;
-  background-position: center;
+  background-position: center right;
   padding-top: 6.4rem;
   padding-bottom: 6.4rem;
 }
