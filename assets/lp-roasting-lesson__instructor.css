@@ -4,6 +4,8 @@
 }
 
 .instructor-content {
+  position: relative;
+  z-index: 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto 1fr;
@@ -26,6 +28,30 @@
     -ms-grid-columns: 1fr auto;
         grid-template-columns: 1fr auto;
   }
+}
+
+.instructor-content::before, .instructor-content::after {
+  content: "";
+  display: block;
+  background-size: contain;
+  position: absolute;
+  z-index: 0;
+}
+
+.instructor-content::before {
+  background-image: url(../assets/lp-roasting-lesson__instructor-decoration01.png);
+  width: 5.4rem;
+  height: 6.7rem;
+  top: 12rem;
+  left: -6rem;
+}
+
+.instructor-content::after {
+  background-image: url(../assets/lp-roasting-lesson__instructor-decoration02.png);
+  width: 6.1rem;
+  height: 6.7rem;
+  bottom: 10rem;
+  left: -3rem;
 }
 
 .instructor-content.container {
