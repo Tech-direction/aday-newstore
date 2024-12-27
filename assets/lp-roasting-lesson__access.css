@@ -14,7 +14,19 @@
 
 @media screen and (max-width: 960px) {
   .access {
-    padding-top: 10.4rem;
+    padding-top: 12rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .access {
+    padding-top: 28%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .access {
+    padding-top: 12rem;
   }
 }
 
@@ -24,13 +36,25 @@
   background-image: url(../assets/lp-roasting-lesson__access-image01.webp);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position: top right;
   width: 80rem;
   height: 80rem;
   position: absolute;
   z-index: -1;
   top: 0;
   right: 0;
+}
+
+@media screen and (max-width: 960px) {
+  .access::before {
+    width: 58%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .access::before {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
