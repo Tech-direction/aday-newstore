@@ -40,7 +40,7 @@
 }
 
 .instructor-content::before {
-  background-image: url(../assets/lp-roasting-lesson__instructor-decoration01.png);
+  background-image: url(../assets/lp-roasting-lesson__instructor-decoration01.webp);
   width: 5.4rem;
   height: 6.7rem;
   top: 4rem;
@@ -48,7 +48,7 @@
 }
 
 .instructor-content::after {
-  background-image: url(../assets/lp-roasting-lesson__instructor-decoration02.png);
+  background-image: url(../assets/lp-roasting-lesson__instructor-decoration02.webp);
   width: 5.1rem;
   height: 6.7rem;
   bottom: 0rem;
