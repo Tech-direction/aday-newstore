@@ -28,6 +28,7 @@
   .firstview-image {
     height: 100vh;
     height: 100dvh;
+    height: auto;
   }
 }
 
