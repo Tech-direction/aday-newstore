@@ -1,7 +1,6 @@
 .timetable {
   padding-top: var(--my-custom-theme__section-spacing);
   padding-bottom: var(--my-custom-theme__section-spacing);
-  background-color: #f5f5dc;
   background-image: url(../assets/lp-roasting-lesson__timetable-bg.webp);
   background-size: cover;
 }
@@ -25,6 +24,39 @@
 
 .timetable-list {
   counter-reset: list-counter;
+  padding-left: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .timetable-list {
+    padding-left: 3.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .timetable-list {
+    padding-left: 0;
+  }
+}
+
+.timetable-list .timetable-list__item {
+  margin-bottom: 5rem;
+}
+
+.timetable-list .timetable-list__item:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .timetable-list .timetable-list__item {
+    margin-bottom: 4.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .timetable-list .timetable-list__item {
+    margin-bottom: 2.4rem;
+  }
 }
 
 .timetable-list-item .timetable-list-item__heading {
@@ -69,7 +101,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 2.4rem;
+  font-size: 2.6rem;
+  letter-spacing: -1px;
   width: 4.8rem;
   height: 4.8rem;
   border-radius: 50%;
