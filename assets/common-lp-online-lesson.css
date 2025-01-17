@@ -55,26 +55,9 @@ html {
   font-family: "Zen Old Mincho", serif;
 }
 
-::-moz-selection {
-  background: #DCDEE3;
-  color: #303338;
-}
-
 ::selection {
   background: #DCDEE3;
   color: #303338;
-}
-
-::-webkit-input-placeholder {
-  color: #cfcfcf;
-}
-
-:-ms-input-placeholder {
-  color: #cfcfcf;
-}
-
-::-ms-input-placeholder {
-  color: #cfcfcf;
 }
 
 ::placeholder {
@@ -117,8 +100,7 @@ select {
 input:focus,
 textarea:focus,
 select:focus {
-  -webkit-box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.4);
-          box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.4);
 }
 
 /*　--------------------- 共通見出し -- */
@@ -164,8 +146,7 @@ select:focus {
   z-index: 0;
   top: 50%;
   right: -2rem;
-  -webkit-transform: translate(100%, -50%) rotate(45deg);
-          transform: translate(100%, -50%) rotate(45deg);
+  transform: translate(100%, -50%) rotate(45deg);
 }
 
 .common-heading01 .common-heading01__text02 {
@@ -189,6 +170,11 @@ select:focus {
   .common-heading01 .common-heading01__text02 {
     font-size: 2.4rem;
   }
+}
+
+.common-heading01 .common-heading01__text02 span.decoration {
+  font: inherit;
+  color: rgba(var(--my-custom-theme__accent-color), 1);
 }
 
 /*　--------------------- 共通ボタン -- */
