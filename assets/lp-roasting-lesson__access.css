@@ -155,12 +155,9 @@
 }
 
 .access-detail {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto 1fr;
-      grid-template-rows: auto 1fr;
-  -ms-grid-columns: auto 1fr;
-      grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 1fr;
   gap: 0 5.2rem;
 }
 
@@ -172,7 +169,6 @@
 
 .access-detail .access-detail__image {
   grid-row: span 2;
-  -ms-grid-column: 1;
   grid-column: 1;
   width: 40rem;
 }
@@ -185,13 +181,10 @@
 
 @media screen and (max-width: 768px) {
   .access-detail .access-detail__image {
-    -ms-grid-row: 1;
     grid-row: 1;
-    -ms-grid-column: 1;
     grid-column: 1;
     width: 36vw;
-    -webkit-transform: translate(-2.4rem, 0);
-            transform: translate(-2.4rem, 0);
+    transform: translate(-2.4rem, 0);
   }
 }
 
@@ -219,9 +212,7 @@
 }
 
 .access-detail .access-detail__address {
-  -ms-grid-row: 1;
   grid-row: 1;
-  -ms-grid-column: 2;
   grid-column: 2;
   padding-bottom: 2rem;
   border-bottom: solid 0.1rem #000000;
@@ -264,15 +255,12 @@
 }
 
 .access-detail .access-detail__description {
-  -ms-grid-row: 2;
   grid-row: 2;
-  -ms-grid-column: 2;
   grid-column: 2;
 }
 
 @media screen and (max-width: 768px) {
   .access-detail .access-detail__description {
-    -ms-grid-row: 2;
     grid-row: 2;
     grid-column: span 2;
     width: 100%;

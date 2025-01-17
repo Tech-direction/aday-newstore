@@ -7,15 +7,9 @@
 }
 
 .cost-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  justify-content: flex-start;
+  align-items: baseline;
   gap: 14rem;
 }
 
@@ -33,10 +27,7 @@
 
 @media screen and (max-width: 768px) {
   .cost-content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 3.2rem;
   }
 }
@@ -49,8 +40,7 @@
 }
 
 .cost-content .common-heading01 {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   margin-bottom: 0;
 }
 
@@ -70,15 +60,9 @@
 }
 
 .schedule-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  justify-content: flex-start;
+  align-items: baseline;
   gap: 3.2rem;
   padding: 0.4rem 0;
   border-bottom: solid 0.1rem #FFFFFF;
@@ -117,8 +101,7 @@
 }
 
 .schedule-list dt {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   width: 10rem;
 }
 

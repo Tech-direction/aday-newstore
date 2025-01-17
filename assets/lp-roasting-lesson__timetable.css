@@ -63,15 +63,9 @@
   font-size: 2.8rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
   gap: 2.4rem;
 }
 
@@ -92,15 +86,9 @@
 .timetable-list-item .timetable-list-item__heading::before {
   content: counter(list-counter, upper-roman);
   counter-increment: list-counter;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-size: 2.6rem;
   letter-spacing: -1px;
   width: 4.8rem;

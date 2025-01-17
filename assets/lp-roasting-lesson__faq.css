@@ -86,9 +86,7 @@
   z-index: 0;
   top: 50%;
   right: 3rem;
-  -webkit-transform: translate(50%, -50%) rotate(180deg);
-          transform: translate(50%, -50%) rotate(180deg);
-  -webkit-transition: all 0.3s;
+  transform: translate(50%, -50%) rotate(180deg);
   transition: all 0.3s;
   width: 3.6rem;
   height: 3.6rem;
@@ -111,8 +109,7 @@
 }
 
 .faq-list-item.active .faq-list-item__arrow {
-  -webkit-transform: translate(50%, -50%) rotate(0deg);
-          transform: translate(50%, -50%) rotate(0deg);
+  transform: translate(50%, -50%) rotate(0deg);
 }
 
 .faq-list-item .faq-list-item__arrow::before, .faq-list-item .faq-list-item__arrow::after {
@@ -125,8 +122,7 @@
   z-index: 0;
   bottom: 50%;
   left: 50%;
-  -webkit-transform-origin: center bottom;
-          transform-origin: center bottom;
+  transform-origin: center bottom;
 }
 
 @media screen and (max-width: 768px) {
@@ -142,11 +138,9 @@
 }
 
 .faq-list-item .faq-list-item__arrow::before {
-  -webkit-transform: translate(-50%, 35%) rotate(-60deg);
-          transform: translate(-50%, 35%) rotate(-60deg);
+  transform: translate(-50%, 35%) rotate(-60deg);
 }
 
 .faq-list-item .faq-list-item__arrow::after {
-  -webkit-transform: translate(-50%, 35%) rotate(60deg);
-          transform: translate(-50%, 35%) rotate(60deg);
+  transform: translate(-50%, 35%) rotate(60deg);
 }
