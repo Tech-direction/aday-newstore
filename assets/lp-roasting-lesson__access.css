@@ -27,6 +27,7 @@
 @media screen and (max-width: 480px) {
   .access {
     padding-top: 12rem;
+    padding-bottom: 6.4rem;
   }
 }
 
@@ -153,13 +154,7 @@
 
 @media screen and (max-width: 768px) {
   .access-content .access-content__nearestStation {
-    margin-bottom: 4.2rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .access-content .access-content__nearestStation {
-    margin-bottom: 3.2rem;
+    margin-bottom: 4.8rem;
   }
 }
 
