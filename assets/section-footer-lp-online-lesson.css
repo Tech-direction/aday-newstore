@@ -24,6 +24,12 @@
   }
 }
 
+@media screen and (max-width: 480px) {
+  .footer .footer__logo {
+    max-width: 15rem;
+  }
+}
+
 .footer .footer__menu {
   display: flex;
   justify-content: center;
