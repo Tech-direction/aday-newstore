@@ -34,14 +34,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto 4rem;
+  margin: 0 auto 2.4rem;
 }
 
 @media screen and (max-width: 768px) {
   .footer .footer__menu {
     flex-direction: column;
     gap: 1rem;
-    margin-bottom: 2.4rem;
   }
 }
 
@@ -54,7 +53,7 @@
   content: "";
   display: block;
   width: 0.1rem;
-  height: calc(100% - 0.2rem);
+  height: calc(100% - 1rem);
   background-color: #000000;
   position: absolute;
   z-index: 0;
@@ -74,9 +73,11 @@
 }
 
 .footer .footer__menu > li a {
+  font-family: "Zen Kaku Gothic New", serif;
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 1.4;
+  letter-spacing: 0.2rem;
   padding: 0.4rem 2rem;
 }
 
@@ -87,6 +88,7 @@
 }
 
 .footer .footer__copyright {
+  font-family: "Zen Kaku Gothic New", serif;
   font-size: 1.4rem;
   display: table;
   margin: 0 auto;
