@@ -39,6 +39,13 @@
   }
 }
 
+@media screen and (max-width: 480px) {
+  .cost-content.container {
+    padding-left: 4.8rem;
+    padding-right: 4.8rem;
+  }
+}
+
 .cost-content .common-heading01 {
   flex-shrink: 0;
   margin-bottom: 0;
