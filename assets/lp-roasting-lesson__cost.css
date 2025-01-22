@@ -68,6 +68,10 @@
   color: #FFFFFF;
 }
 
+.cost-content .common-heading01 .common-heading01__text01::before {
+  background-color: #FFFFFF;
+}
+
 .cost-content .common-heading01 .common-heading01__text02 {
   letter-spacing: 0.8rem;
 }
