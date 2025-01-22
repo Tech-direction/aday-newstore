@@ -273,7 +273,7 @@
 .about-detail .about-detail__text p span {
   font: inherit;
   line-height: inherit;
-  background: linear-gradient(transparent 94%, rgba(var(--my-custom-theme__accent-color), 1) 0%);
+  background: linear-gradient(transparent 94%, var(--my-custom-theme__accent-colorCode) 0%);
   display: inline;
 }
 

@@ -10,10 +10,15 @@
   --my-custom-theme__letter-spacing: 0.05em;
   /* ------------------------- 色 -- */
   --my-custom-theme__text-color: 0, 0, 0;
+  --my-custom-theme__text-colorCode: #000000;
   --my-custom-theme__base-color: 255, 255, 255;
+  --my-custom-theme__base-colorCode: #FFFFFF;
   --my-custom-theme__main-color: 0, 0, 0;
+  --my-custom-theme__main-colorCode: #000000;
   --my-custom-theme__sub-color: 245, 222, 179;
+  --my-custom-theme__sub-colorCode: #F5DEB3;
   --my-custom-theme__accent-color: 198, 67, 70;
+  --my-custom-theme__accent-colorCode: #c64346;
 }
 
 @media screen and (max-width: 768px) {
@@ -128,7 +133,7 @@ select:focus {
 }
 
 .common-heading01 .common-heading01__text01 {
-  color: rgba(var(--my-custom-theme__accent-color), 1);
+  color: var(--my-custom-theme__accent-colorCode);
   font-size: 1.4rem;
   line-height: 1.4;
   letter-spacing: 0.2rem;
@@ -141,7 +146,7 @@ select:focus {
   content: "";
   width: 0.1rem;
   height: calc(100% - 0.2rem);
-  background-color: rgba(var(--my-custom-theme__accent-color), 1);
+  background-color: var(--my-custom-theme__accent-colorCode);
   position: absolute;
   z-index: 0;
   top: 50%;
@@ -174,7 +179,7 @@ select:focus {
 
 .common-heading01 .common-heading01__text02 span.decoration {
   font: inherit;
-  color: rgba(var(--my-custom-theme__accent-color), 1);
+  color: var(--my-custom-theme__accent-colorCode);
 }
 
 /*　--------------------- 共通ボタン -- */
@@ -187,9 +192,9 @@ select:focus {
   margin-right: auto;
   min-width: 20rem;
   width: auto;
-  background-color: #FFFFFF;
+  background-color: #fdfdfd;
   padding: 1.6rem 2.4rem;
-  border: solid 0.1rem #D0D0D0;
+  border: solid 0.1rem #ababab;
   border-radius: 0;
 }
 

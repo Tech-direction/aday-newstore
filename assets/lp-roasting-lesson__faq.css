@@ -59,7 +59,8 @@
   font-weight: 700;
   line-height: 1.4;
   padding-right: 8.8rem;
-  border: solid 0.1rem #e5e5e5;
+  border: solid 0.1rem #ababab;
+  background-color: #fdfdfd;
   cursor: pointer;
   position: relative;
   z-index: 0;
@@ -107,7 +108,7 @@
 }
 
 .faq-list .faq-list__item dd p {
-  color: rgba(var(--my-custom-theme__accent-color), 1);
+  color: var(--my-custom-theme__accent-colorCode);
 }
 
 .faq-list-item {
@@ -124,7 +125,7 @@
   transition: all 0.3s;
   width: 3.6rem;
   height: 3.6rem;
-  background-color: #d5d5d5;
+  background-color: #d1d1d1;
   border-radius: 50%;
 }
 

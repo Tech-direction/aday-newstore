@@ -95,7 +95,7 @@
 }
 
 .roast-school-form-content {
-  background-color: #f5f5f5;
+  background-color: #fafafa;
 }
 
 .roast-school-form-content .container {
@@ -165,7 +165,7 @@
 .contact-form .contact-form__item textarea,
 .contact-form .contact-form__item select {
   border: none;
-  background-color: #F0F0F0;
+  background-color: rgba(209, 209, 209, 0.2);
   border-radius: 0;
 }
 
