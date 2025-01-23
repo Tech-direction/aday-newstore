@@ -73,6 +73,7 @@
 }
 
 .cost-content .common-heading01 .common-heading01__text02 {
+  font-size: var(--common-heading01__text02-font-size--large);
   letter-spacing: 0.8rem;
 }
 

@@ -126,10 +126,10 @@
 }
 
 .instructor-content-heading .instructor-content-heading__label {
-  font-size: 1.4rem;
+  font-size: 2rem;
   line-height: 1.4;
   display: table;
-  padding: 0 1.6rem;
+  padding: 0.2rem 2.6rem;
   border: solid 0.1rem #000000;
   margin-bottom: 0.8rem;
 }

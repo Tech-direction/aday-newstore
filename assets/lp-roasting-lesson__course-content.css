@@ -101,6 +101,7 @@
 
 .course-content-text .common-heading01 .common-heading01__text02 {
   color: #FFFFFF;
+  font-size: var(--common-heading01__text02-font-size--large);
   order: 1;
 }
 

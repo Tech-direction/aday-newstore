@@ -64,6 +64,10 @@
   }
 }
 
+.access .common-heading01 .common-heading01__text02 {
+  font-size: var(--common-heading01__text02-font-size--small);
+}
+
 @media screen and (max-width: 768px) {
   .access-content.container {
     padding-left: 4rem;

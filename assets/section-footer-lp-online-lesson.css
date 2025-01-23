@@ -79,6 +79,7 @@
   line-height: 1.4;
   letter-spacing: 0.2rem;
   padding: 0.4rem 2rem;
+  display: block;
 }
 
 @media screen and (max-width: 768px) {

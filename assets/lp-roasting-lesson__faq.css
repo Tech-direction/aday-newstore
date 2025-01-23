@@ -3,6 +3,10 @@
   margin-bottom: var(--my-custom-theme__section-spacing);
 }
 
+.faq .common-heading01 .common-heading01__text02 {
+  font-size: var(--common-heading01__text02-font-size--small);
+}
+
 .faq-content.container {
   max-width: 96rem;
 }

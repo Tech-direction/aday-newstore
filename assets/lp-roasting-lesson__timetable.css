@@ -18,8 +18,14 @@
 
 .timetable-content .common-heading01 {
   display: block;
-  padding-bottom: 2.4rem;
+  padding-bottom: 1.6rem;
   border-bottom: solid 0.1rem #000000;
+}
+
+@media screen and (max-width: 768px) {
+  .timetable-content .common-heading01 {
+    padding-bottom: 0.8rem;
+  }
 }
 
 .timetable-list {
@@ -89,10 +95,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   letter-spacing: -1px;
-  width: 4.8rem;
-  height: 4.8rem;
+  width: 4.2rem;
+  height: 4.2rem;
   border-radius: 50%;
   background-color: rgba(var(--my-custom-theme__text-color), 0.1);
 }
@@ -145,6 +151,10 @@
     font-size: 1.6rem;
     line-height: 1.7;
   }
+}
+
+.timetable-list-item .timetable-list-item__content ol {
+  margin-top: 1rem;
 }
 
 .timetable-list-item .timetable-list-item__content ol > li {

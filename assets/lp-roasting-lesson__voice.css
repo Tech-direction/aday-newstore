@@ -20,6 +20,10 @@
   left: 0;
 }
 
+.voice .common-heading01 .common-heading01__text02 {
+  font-size: var(--common-heading01__text02-font-size--small);
+}
+
 @media screen and (max-width: 768px) {
   .voice-content.container {
     padding-left: 3.2rem;
@@ -128,7 +132,7 @@
 
 @media screen and (max-width: 768px) {
   .voice-list-item .voice-list-item__image > img {
-    width: 52%;
+    width: 64%;
   }
 }
 
@@ -137,8 +141,9 @@
 }
 
 .voice-list-item .voice-list-item__content * {
+  font-family: "Zen Kaku Gothic New", serif;
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 960px) {
@@ -158,8 +163,9 @@
 
 .voice-list-item .voice-list-item__metadata > dl dt,
 .voice-list-item .voice-list-item__metadata > dl dd {
+  font-family: "Zen Kaku Gothic New", serif;
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .voice-list-item .voice-list-item__metadata > dl dt {
