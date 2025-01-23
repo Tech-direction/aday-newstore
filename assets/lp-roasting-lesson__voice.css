@@ -146,6 +146,12 @@
 
 @media screen and (max-width: 768px) {
   .voice-list-item .voice-list-item__image > img {
+    width: 43%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .voice-list-item .voice-list-item__image > img {
     width: 64%;
   }
 }

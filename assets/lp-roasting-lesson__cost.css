@@ -77,12 +77,6 @@
   letter-spacing: 0.8rem;
 }
 
-@media screen and (max-width: 768px) {
-  .cost-content .common-heading01 .common-heading01__text02 br.pc {
-    display: none;
-  }
-}
-
 .cost-content .cost-content__schedule {
   width: 100%;
 }
@@ -197,13 +191,13 @@
 
 @media screen and (max-width: 960px) {
   .schedule-list dd .attention * {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .schedule-list dd .attention * {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -226,13 +220,13 @@
 
 @media screen and (max-width: 960px) {
   .schedule-list dd ul li {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .schedule-list dd ul li {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 
