@@ -155,25 +155,41 @@ select:focus {
 }
 
 .common-heading01 .common-heading01__text02 {
-  font-size: 4rem;
+  font-size: var(--common-heading01__text02-font-size--medium);
   line-height: 1.4;
 }
 
+:root {
+  --common-heading01__text02-font-size--big: 6.8rem;
+  --common-heading01__text02-font-size--large: 5.2rem;
+  --common-heading01__text02-font-size--medium: 4.6rem;
+  --common-heading01__text02-font-size--small: 3.8rem;
+}
+
 @media screen and (max-width: 960px) {
-  .common-heading01 .common-heading01__text02 {
-    font-size: 3.2rem;
+  :root {
+    --common-heading01__text02-font-size--big: 5.6rem;
+    --common-heading01__text02-font-size--large: 4rem;
+    --common-heading01__text02-font-size--medium: 3.2rem;
+    --common-heading01__text02-font-size--small: 2.8rem;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .common-heading01 .common-heading01__text02 {
-    font-size: 2.8rem;
+  :root {
+    --common-heading01__text02-font-size--big: 2.8rem;
+    --common-heading01__text02-font-size--large: 2.8rem;
+    --common-heading01__text02-font-size--medium: 2.8rem;
+    --common-heading01__text02-font-size--small: 2.4rem;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .common-heading01 .common-heading01__text02 {
-    font-size: 2.4rem;
+  :root {
+    --common-heading01__text02-font-size--big: 2.4rem;
+    --common-heading01__text02-font-size--large: 2.4rem;
+    --common-heading01__text02-font-size--medium: 2.4rem;
+    --common-heading01__text02-font-size--small: 2.4rem;
   }
 }
 
