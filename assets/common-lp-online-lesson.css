@@ -221,3 +221,52 @@ select:focus {
     padding: 1.2rem 1.8rem;
   }
 }
+
+/*　--------------------- 改行 -- */
+@media (max-width: 960px) {
+  br.br-over-laptop {
+    display: none;
+  }
+}
+
+br.br-under-laptop {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  br.br-under-laptop {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  br.br-over-tablet {
+    display: none;
+  }
+}
+
+br.br-under-tablet {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  br.br-under-tablet {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  br.br-over-sp {
+    display: none;
+  }
+}
+
+br.br-under-sp {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  br.br-under-sp {
+    display: block;
+  }
+}

@@ -177,5 +177,23 @@
 }
 
 .instructor-content-text .instructor-content-text__detail p {
-  font-size: 1.8rem;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 960px) {
+  .instructor-content-text .instructor-content-text__detail p {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .instructor-content-text .instructor-content-text__detail p {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .instructor-content-text .instructor-content-text__detail p {
+    font-size: 1.4rem;
+  }
 }
