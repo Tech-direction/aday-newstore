@@ -1,4 +1,9 @@
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
 {{ 'lp-roasting-lesson__roast-school-form.css' | asset_url | stylesheet_tag }}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+{{ 'lp-roasting-lesson__roast-school-form.js' | asset_url | script_tag }}
+
 
 <section id="roast-school-form" class="roast-school-form">
   <div class="roast-school-form__heading roast-school-form-heading">
@@ -40,7 +45,7 @@
 
         <div class="contact-form__item">
           <label for="ContactFormDate">参加希望日（必須）</label>
-          <input type="date" id="ContactFormDate" name="contact[date]" required>
+          <input type="text" id="ContactFormDate" name="contact[date]" required>
         </div>
 
         <div class="contact-form__item">
