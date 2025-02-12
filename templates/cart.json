@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "cart-items": {
@@ -12,18 +21,16 @@
       "blocks": {
         "subtotal": {
           "type": "subtotal",
-          "settings": {
-          }
+          "settings": {}
         },
         "f1405ad3-3c83-4fdc-b8bf-6c016aef950a": {
-          "type": "shopify:\/\/apps\/\/blocks\/checkout-method\/7521bee8-d5e5-4d5c-abcb-07c78b027718",
-          "settings": {
-          }
+          "type": "shopify://apps//blocks/checkout-method/7521bee8-d5e5-4d5c-abcb-07c78b027718",
+          "disabled": true,
+          "settings": {}
         },
         "buttons": {
           "type": "buttons",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -31,8 +38,7 @@
         "f1405ad3-3c83-4fdc-b8bf-6c016aef950a",
         "buttons"
       ],
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [
