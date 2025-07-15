@@ -1,0 +1,44 @@
+{% comment %}
+  coffee lesson　A day in the coffeeのコーヒー講座 セクション
+{% endcomment %}
+{{ 'section-coffee-lesson.css' | asset_url | stylesheet_tag }}
+<section class="section section-coffee-lesson">
+  <h2
+    class="heading type-sub_heading{% if section.settings.heading_size != 'default' %} size-{{ section.settings.heading_size }} {% endif %}"
+    data-sub_heading="{{ section.settings.section_sub_heading }}"
+  >
+    {{ section.settings.section_heading }}
+  </h2>
+</section>
+
+{% schema %}
+{
+  "name": "コーヒー講座",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "セクション見出し",
+      "default": "A day in the coffeeのコーヒー講座"
+    },
+    {
+      "type": "text",
+      "id": "section_sub_heading",
+      "label": "サブ見出し"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        { "value": "default", "label": "t:sections.all.heading_size.options__1.label" },
+        { "value": "m", "label": "t:sections.all.heading_size.options__2.label" },
+        { "value": "l", "label": "t:sections.all.heading_size.options__3.label" },
+        { "value": "xl", "label": "最大" }
+      ],
+      "default": "l",
+      "label": "t:sections.all.heading_size.label"
+    }
+  ],
+  "presets": [{ "name": "コーヒー講座" }]
+}
+{% endschema %}

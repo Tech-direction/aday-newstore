@@ -1,0 +1,122 @@
+{% comment %}
+  今月のおすすめコーヒー セクション
+{% endcomment %}
+{{ 'section-featured-coffee-of-the-month.css' | asset_url | stylesheet_tag }}
+<section class="section section-featured-coffee-of-the-month">
+  <h2
+    class="heading type-sub_heading{% if section.settings.heading_size != 'default' %} size-{{ section.settings.heading_size }} {% endif %}"
+    data-sub_heading="{{ section.settings.section_sub_heading }}"
+  >
+    {{ section.settings.section_heading }}
+  </h2>
+  <div class="featured-coffee-content">
+    {% if section.blocks.size > 0 %}
+      {% for block in section.blocks %}
+        {% assign product = all_products[block.settings.product] %}
+        <div class="featured-coffee-product" {{ block.shopify_attributes }}>
+          {% if block.settings.recommend_title != blank %}
+            <div class="recommend-title">{{ block.settings.recommend_title }}</div>
+          {% endif %}
+          <div class="featured-coffee-image">
+            {% if block.settings.image != blank %}
+              <img
+                src="{{ block.settings.image | image_url: width: 600 }}"
+                alt="{{ product.title }}"
+                loading="lazy"
+                width="600"
+                height="600"
+              >
+            {% elsif product.featured_image %}
+              <img
+                src="{{ product.featured_image | image_url: width: 600 }}"
+                alt="{{ product.title }}"
+                loading="lazy"
+                width="600"
+                height="600"
+              >
+            {% endif %}
+          </div>
+          <div class="featured-coffee-info">
+            <h3 class="product-title">
+              <a href="{{ product.url }}">{{ product.title }}</a>
+            </h3>
+            <div class="product-description">
+              {{ block.settings.summary | escape | newline_to_br }}
+            </div>
+            <div class="product-price">
+              {{ product.price | money }}
+            </div>
+            <a href="{{ product.url }}" class="button type-primary">詳しく見る</a>
+          </div>
+        </div>
+      {% endfor %}
+    {% else %}
+      <p>おすすめコーヒー商品を追加してください。</p>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "今月のおすすめコーヒー",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "セクション見出し",
+      "default": "今月のおすすめコーヒー"
+    },
+    {
+      "type": "text",
+      "id": "section_sub_heading",
+      "label": "サブ見出し"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        { "value": "default", "label": "t:sections.all.heading_size.options__1.label" },
+        { "value": "m", "label": "t:sections.all.heading_size.options__2.label" },
+        { "value": "l", "label": "t:sections.all.heading_size.options__3.label" },
+        { "value": "xl", "label": "最大" }
+      ],
+      "default": "l",
+      "label": "t:sections.all.heading_size.label"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "coffee",
+      "name": "おすすめコーヒー",
+      "settings": [
+        {
+          "type": "text",
+          "id": "recommend_title",
+          "label": "〇〇のおすすめ",
+          "default": "店長のおすすめ"
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "商品を選択"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "画像"
+        },
+        {
+          "type": "textarea",
+          "id": "summary",
+          "label": "概要"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "今月のおすすめコーヒー"
+    }
+  ]
+}
+{% endschema %}

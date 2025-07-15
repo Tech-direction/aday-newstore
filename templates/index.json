@@ -53,6 +53,17 @@
         "show_text_below": true
       }
     },
+    "featured-coffee-of-the-month": {
+      "type": "featured-coffee-of-the-month",
+      "settings": {
+        "subheading": "COFFEE OF THE MONTH",
+        "product": ""
+      }
+    },
+    "coffee-lesson": {
+      "type": "coffee-lesson",
+      "settings": {}
+    },
     "ef1e9a68-7a62-4287-8199-03faca0c8b77": {
       "type": "featured-blog-top",
       "settings": {
@@ -186,6 +197,8 @@
   },
   "order": [
     "d5fac027-1d6c-4527-b96a-703316269413",
+    "featured-coffee-of-the-month",
+    "coffee-lesson",
     "ef1e9a68-7a62-4287-8199-03faca0c8b77",
     "361c01ec-b4ce-4a50-9bc5-26515e1e190d",
     "f86325b7-9ef5-4459-acbc-f77ebaa74e38",
