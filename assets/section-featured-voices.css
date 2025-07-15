@@ -1,0 +1,31 @@
+/* こんな声をいただいています セクション専用CSS */
+.section-featured-voices {
+  padding: 40px 0;
+  background: #f6f8f7;
+}
+
+.section-featured-voices .featured-voices-content {
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.section-featured-voices .voice-item {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 20px 24px;
+  max-width: 340px;
+  width: 100%;
+  font-size: 1em;
+  color: #333;
+}
+
+.section-featured-voices .voice-item .voice-author {
+  margin-top: 12px;
+  font-size: 0.95em;
+  color: #888;
+  text-align: right;
+}
