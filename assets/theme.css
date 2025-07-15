@@ -405,6 +405,9 @@ a,
 .contents-wrapper .button.type-primary {
   /*background-color: rgb(var(--color-primary));*/
 }
+.contents-wrapper .button.type-emphasis {
+  background-color: rgb(var(--color-primary));
+}
 
 .button:disabled,
 .contents-wrapper .button:disabled ,
@@ -2001,6 +2004,7 @@ body,
 
 ===============================================================*/
 
+/*
 .contents-wrapper.top .section-billboard {
   height: 100svh;
   padding: 0 0 15svh !important;
@@ -2064,10 +2068,14 @@ body,
     position: absolute;
   }
 }
+*/
 
-
-.contents-wrapper.top .section-billboard {
-
+.contents-wrapper.top .section-billboard .banner__box {
+  border-radius: var(--border-radius-box);
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  padding: var(--margin-l);
+  min-width: auto;
 }
 
 /*===============================================================
@@ -2078,19 +2086,23 @@ body,
 
 .contents-wrapper .subscription-feature-list {
   background-color: transparent;
+  justify-content: center;
 }
 
 .contents-wrapper .subscription-feature-list .feature__item {
   padding: var(--margin);
-  color: #fff;
+  color: rgb(var(--color-primary));
   border-radius: var(--border-radius-box);
-  background-color: rgb(var(--color-primary));
+  background-color: rgb(var(--color-gray-light));
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: var(--margin-s);
   position: relative;
   z-index: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  aspect-ratio: 1 / 1;
+  width: 160px !important;
 }
 
 .contents-wrapper .subscription-feature-list .feature__item.type-gray {
@@ -2118,6 +2130,7 @@ body,
 .contents-wrapper .subscription-feature-list .feature__item .heading {
   text-align: center !important;
   line-height: 1.4;
+  font-weight: 700;
   mix-blend-mode: normal !important;
   text-shadow: none !important;
 }
@@ -2163,6 +2176,10 @@ body,
   }
 }
 
+.contents-wrapper.top .subscription-feature-list .feature__item {
+  background-color: rgb(255, 255, 255, 1);
+  box-shadow: none;
+}
 
 /*===============================================================
 
