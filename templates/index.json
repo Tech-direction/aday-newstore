@@ -90,7 +90,7 @@
       ],
       "settings": {
         "section_heading": "今月のオススメコーヒー",
-        "section_sub_heading": "",
+        "section_sub_heading": "RECOMMEND COFFEE",
         "heading_size": "l"
       }
     },
@@ -98,7 +98,7 @@
       "type": "coffee-lesson",
       "settings": {
         "section_heading": "A day in the coffeeのコーヒー講座",
-        "section_sub_heading": "",
+        "section_sub_heading": "COFFEE LESSON",
         "heading_size": "l"
       }
     },
@@ -113,7 +113,7 @@
     "ef1e9a68-7a62-4287-8199-03faca0c8b77": {
       "type": "featured-blog-top",
       "settings": {
-        "section_heading": "コーヒー豆知識",
+        "section_heading": "コーヒーをもっと好きになる話",
         "heading_size": "xl",
         "section_sub_heading": "COFFEE JOURNAL",
         "change_box_layout": true,
@@ -132,7 +132,7 @@
       "type": "featured-commitment",
       "settings": {
         "section_heading": "私たちのこだわり",
-        "section_sub_heading": "",
+        "section_sub_heading": "CONCEPT",
         "heading_size": "l"
       }
     },
@@ -141,7 +141,7 @@
       "settings": {
         "section_heading": "お知らせ",
         "heading_size": "l",
-        "section_sub_heading": "",
+        "section_sub_heading": "NEWS",
         "blog": "news",
         "post_limit": 3
       }
