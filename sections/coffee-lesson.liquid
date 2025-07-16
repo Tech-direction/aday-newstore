@@ -3,12 +3,14 @@
 {% endcomment %}
 {{ 'section-coffee-lesson.css' | asset_url | stylesheet_tag }}
 <section class="section section-coffee-lesson">
-  <h2
-    class="heading type-sub_heading{% if section.settings.heading_size != 'default' %} size-{{ section.settings.heading_size }} {% endif %}"
-    data-sub_heading="{{ section.settings.section_sub_heading }}"
-  >
-    {{ section.settings.section_heading }}
-  </h2>
+  <div class="page-width">
+    <h2
+      class="heading type-sub_heading{% if section.settings.heading_size != 'default' %} size-{{ section.settings.heading_size }} {% endif %}"
+      data-sub_heading="{{ section.settings.section_sub_heading }}"
+    >
+      {{ section.settings.section_heading }}
+    </h2>
+  </div>
 </section>
 
 {% schema %}

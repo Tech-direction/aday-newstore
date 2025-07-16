@@ -3,14 +3,16 @@
 {% endcomment %}
 {{ 'section-featured-voices.css' | asset_url | stylesheet_tag }}
 <section class="section section-featured-voices">
-  <h2
-    class="heading type-sub_heading{% if section.settings.heading_size != 'default' %} size-{{ section.settings.heading_size }} {% endif %}"
-    data-sub_heading="{{ section.settings.section_sub_heading }}"
-  >
-    {{ section.settings.section_heading }}
-  </h2>
-  <div class="featured-voices-content">
-    <!-- お客様の声やレビューなどをここに追加してください -->
+  <div class="page-width">
+    <h2
+      class="heading type-sub_heading{% if section.settings.heading_size != 'default' %} size-{{ section.settings.heading_size }} {% endif %}"
+      data-sub_heading="{{ section.settings.section_sub_heading }}"
+    >
+      {{ section.settings.section_heading }}
+    </h2>
+    <div class="featured-voices-content">
+      <!-- お客様の声やレビューなどをここに追加してください -->
+    </div>
   </div>
 </section>
 
