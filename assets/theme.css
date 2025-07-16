@@ -2008,9 +2008,10 @@ body,
 /* TOPページ用 */
 .contents-wrapper.top .section-billboard {
   max-height: 100svh;
-  height: 66rem;
-  /* padding: 0 0 15svh !important; */
+  height: 46rem;
   padding-top: 0 !important;
+  position: relative;
+  z-index: 0;
 }
 
 .contents-wrapper.top .section-billboard .banner--medium:not(.banner--adapt) {
@@ -2034,67 +2035,6 @@ body,
   padding-top: var(--margin);
   border-top: solid 1px rgb(var(--color-primary));
 }
-
-/* .contents-wrapper.top .section-billboard .banner__content {
-  text-align: left;
-  justify-content: flex-end;
-  align-items: flex-end;
-} */
-
-/* .contents-wrapper.top .section-billboard .content-container {
-  max-width: 580px;
-  min-width: auto;
-  margin-bottom: calc( (15svh - var(--margin-s))*-1 );
-  padding: 0;
-  background-color: transparent;
-} */
-
-
-/* .contents-wrapper.top .section-billboard .banner__content .heading,
-.contents-wrapper.top .section-billboard .banner__content .banner__text {
-  color: #fff;
-  text-align: left;
-  mix-blend-mode: difference;
-  text-shadow: rgb(var(--color-black)) 0 0 10px;
-} */
-
-
-
-@media screen and (max-width: 989px) {
-
-  .contents-wrapper.top .section-billboard {
-    height: 44rem;
-    /* padding-bottom: 10rem !important; */
-  }
-  /* .contents-wrapper.top .section-billboard .content-container {
-    margin-bottom: calc( (10rem - var(--margin-s))*-1 );
-  } */
-  /* .contents-wrapper.top .section-billboard .banner__content {
-    padding: 0 var(--margin-l) !important;
-    justify-content: center;
-  } */
-  /* .contents-wrapper.top .section-billboard .heading br {
-    display: block;
-  } */
-  .contents-wrapper.top .section-billboard .banner--medium:not(.banner--adapt) .banner__media {
-    position: absolute;
-    z-index: 0;
-    top: 0;
-    left: 0;
-    height: 100%;
-  }
-  .contents-wrapper.top .section-billboard .banner__heading {
-    margin-top: var(--margin-s);
-  }
-}
-
-
-
-
-.contents-wrapper.top .section-billboard {
-  position: relative;
-  z-index: 0;
-}
 .contents-wrapper.top .section-billboard .banner__box {
   border-radius: var(--border-radius-box);
   background-color: rgba(255, 255, 255, 0.85) !important;
@@ -2110,11 +2050,23 @@ body,
   font-size: var(--font-m);
 }
 
-@media screen and (max-width: 749px) {
-  .contents-wrapper.top .section-billboard .banner__content {
-    /* align-items: flex-end; */
-    /* padding-bottom: 1.6rem !important; */
+@media screen and (max-width: 989px) {
+  .contents-wrapper.top .section-billboard {
+    height: 36rem;
   }
+  .contents-wrapper.top .section-billboard .banner--medium:not(.banner--adapt) .banner__media {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+  .contents-wrapper.top .section-billboard .banner__heading {
+    margin-top: var(--margin-s);
+  }
+}
+
+@media screen and (max-width: 749px) {
   .contents-wrapper.top .section-billboard .banner__box {
     padding: var(--margin) var(--margin-s);
     max-width: 380px;
