@@ -16,7 +16,7 @@
           "type": "text",
           "settings": {
             "text": "<strong>A day in the coffeeの</strong>",
-            "text_style": "caption-with-letter-spacing"
+            "text_style": "body"
           }
         },
         "template--19717718147380__d5fac027-1d6c-4527-b96a-703316269413-16886631200b887bea-0": {
@@ -64,6 +64,30 @@
     },
     "featured-coffee-of-the-month": {
       "type": "featured-coffee-of-the-month",
+      "blocks": {
+        "coffee_aBCzpT": {
+          "type": "coffee",
+          "settings": {
+            "recommend_title": "産地別のおすすめ",
+            "product": "ethiopia",
+            "image": "shopify://shop_images/feature_coffee-image01.webp",
+            "summary": "テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト\n\nテキストテキストテキストテキストテキスト"
+          }
+        },
+        "coffee_ggbmFU": {
+          "type": "coffee",
+          "settings": {
+            "recommend_title": "ブレンドのおすすめ",
+            "product": "mediumblend",
+            "image": "shopify://shop_images/feature_coffee-image02.webp",
+            "summary": "テキストテキストテキストテキストテキスト\n\nテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト"
+          }
+        }
+      },
+      "block_order": [
+        "coffee_aBCzpT",
+        "coffee_ggbmFU"
+      ],
       "settings": {
         "section_heading": "今月のおすすめコーヒー",
         "section_sub_heading": "",
