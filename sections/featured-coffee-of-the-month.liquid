@@ -1,70 +1,106 @@
 {% comment %}
-  今月のおすすめコーヒー セクション
+  今月のオススメコーヒー セクション
 {% endcomment %}
 {{ 'section-featured-coffee-of-the-month.css' | asset_url | stylesheet_tag }}
 <section class="section section-featured-coffee-of-the-month">
-  <h2
-    class="heading type-sub_heading{% if section.settings.heading_size != 'default' %} size-{{ section.settings.heading_size }} {% endif %}"
-    data-sub_heading="{{ section.settings.section_sub_heading }}"
-  >
-    {{ section.settings.section_heading }}
-  </h2>
-  <div class="featured-coffee-content">
-    {% if section.blocks.size > 0 %}
-      {% for block in section.blocks %}
-        {% assign product = all_products[block.settings.product] %}
-        <div class="featured-coffee-product" {{ block.shopify_attributes }}>
-          {% if block.settings.recommend_title != blank %}
-            <div class="recommend-title">{{ block.settings.recommend_title }}</div>
-          {% endif %}
-          <div class="featured-coffee-image">
-            {% if block.settings.image != blank %}
-              <img
-                src="{{ block.settings.image | image_url: width: 600 }}"
-                alt="{{ product.title }}"
-                loading="lazy"
-                width="600"
-                height="600"
-              >
-            {% elsif product.featured_image %}
-              <img
-                src="{{ product.featured_image | image_url: width: 600 }}"
-                alt="{{ product.title }}"
-                loading="lazy"
-                width="600"
-                height="600"
-              >
-            {% endif %}
-          </div>
-          <div class="featured-coffee-info">
-            <h3 class="product-title">
-              <a href="{{ product.url }}">{{ product.title }}</a>
-            </h3>
-            <div class="product-description">
-              {{ block.settings.summary | escape | newline_to_br }}
+  <div class="page-width">
+    <h2
+      class="heading type-sub_heading{% if section.settings.heading_size != 'default' %} size-{{ section.settings.heading_size }} {% endif %}"
+      data-sub_heading="{{ section.settings.section_sub_heading }}"
+    >
+      {{ section.settings.section_heading }}
+    </h2>
+    <div class="featured-coffee-content">
+      {% if section.blocks.size > 0 %}
+        <div class="featured-coffee-products">
+          {% for block in section.blocks %}
+            {% assign product = all_products[block.settings.product] %}
+            <div class="featured-coffee-product" {{ block.shopify_attributes }}>
+              <div class="featured-coffee-image">
+                {% if block.settings.image != blank %}
+                  <img
+                    src="{{ block.settings.image | image_url: width: 600 }}"
+                    alt="{{ product.title }}"
+                    loading="lazy"
+                    width="600"
+                    height="600"
+                  >
+                {% elsif product.featured_image %}
+                  <img
+                    src="{{ product.featured_image | image_url: width: 600 }}"
+                    alt="{{ product.title }}"
+                    loading="lazy"
+                    width="600"
+                    height="600"
+                  >
+                {% endif %}
+              </div>
+
+              <div class="featured-coffee-info">
+                {% if block.settings.recommend_title != blank %}
+                  <div class="recommend-title">
+                    {{ block.settings.recommend_title }}
+                  </div>
+                {% endif %}
+
+                {% assign sub_heading = product.metafields.custom.subtitle %}
+                <h3
+                  class="product-title {% if sub_heading != blank %}type-sub_heading{% endif %}"
+                  {% if sub_heading != blank %}
+                    data-sub_heading="{{ sub_heading }}"
+                  {% endif %}
+                >
+                  {{ product.title | escape }}
+                </h3>
+
+                <div class="product-price">
+                  {{ product.price | money }}
+                </div>
+
+                <div class="product-description">
+                  {{ block.settings.summary | escape | newline_to_br }}
+                </div>
+
+                <a href="{{ product.url }}" class="link product__view-details animate-arrow align-right">
+                  詳しく見る
+                  <span class="icon-wrap">
+                    <svg
+                      viewBox="0 0 14 10"
+                      fill="none"
+                      aria-hidden="true"
+                      focusable="false"
+                      class="icon icon-arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor"></path>
+                    </svg>
+                  </span>
+                </a>
+              </div>
             </div>
-            <div class="product-price">
-              {{ product.price | money }}
-            </div>
-            <a href="{{ product.url }}" class="button type-emphasis">詳しく見る</a>
-          </div>
+          {% endfor %}
         </div>
-      {% endfor %}
-    {% else %}
-      <p>おすすめコーヒー商品を追加してください。</p>
-    {% endif %}
+
+        <div class="featured-coffee-buttons">
+          <a href="/collections/all" class="button type-primary">すべての商品を見る</a>
+        </div>
+        </div>
+      {% else %}
+        <p>おすすめコーヒー商品を追加してください。</p>
+      {% endif %}
+    </div>
   </div>
 </section>
 
 {% schema %}
 {
-  "name": "今月のおすすめコーヒー",
+  "name": "今月のオススメコーヒー",
   "settings": [
     {
       "type": "text",
       "id": "section_heading",
       "label": "セクション見出し",
-      "default": "今月のおすすめコーヒー"
+      "default": "今月のオススメコーヒー"
     },
     {
       "type": "text",
@@ -115,7 +151,7 @@
   ],
   "presets": [
     {
-      "name": "今月のおすすめコーヒー"
+      "name": "今月のオススメコーヒー"
     }
   ]
 }
