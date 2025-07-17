@@ -1,5 +1,34 @@
-/* coffee lesson　A day in the coffeeのコーヒー講座 セクション専用CSS */
+/* 共通要素のカスタマイズ */
+.section-coffee-lesson .heading.type-sub_heading {
+  text-align: center;
+  margin-bottom: var(--margin-xl);
+}
+@media screen and (max-width: 989px) {
+  .section-coffee-lesson .heading.type-sub_heading {
+    margin-bottom: var(--margin-l);
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-coffee-lesson .heading.type-sub_heading {
+    margin-bottom: var(--margin);
+  }
+}
+.section-coffee-lesson .button.type-primary {
+  min-width: 328px;
+}
+@media screen and (max-width: 768px) {
+  .section-coffee-lesson .button.type-primary {
+    min-width: auto;
+  }
+}
+
+/* コーヒー講座 セクション専用CSS */
 .section-coffee-lesson {
-  padding: 40px 0;
-  background: #f8f6f2;
+  background-color: #f8f6f2;
+  padding: var(--margin-section) 0;
+}
+@media screen and (max-width: 768px) {
+  .section-coffee-lesson {
+    padding: var(--margin-xl) 0;
+  }
 }

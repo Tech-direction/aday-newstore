@@ -2,7 +2,7 @@
   coffee lesson　A day in the coffeeのコーヒー講座 セクション
 {% endcomment %}
 {{ 'section-coffee-lesson.css' | asset_url | stylesheet_tag }}
-<section class="section section-coffee-lesson">
+<section class="section-coffee-lesson">
   <div class="page-width">
     <h2
       class="heading type-sub_heading{% if section.settings.heading_size != 'default' %} size-{{ section.settings.heading_size }} {% endif %}"
@@ -24,11 +24,6 @@
       "default": "A day in the coffeeのコーヒー講座"
     },
     {
-      "type": "text",
-      "id": "section_sub_heading",
-      "label": "サブ見出し"
-    },
-    {
       "type": "select",
       "id": "heading_size",
       "options": [
@@ -39,6 +34,11 @@
       ],
       "default": "l",
       "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "text",
+      "id": "section_sub_heading",
+      "label": "サブ見出し"
     }
   ],
   "presets": [{ "name": "コーヒー講座" }]
