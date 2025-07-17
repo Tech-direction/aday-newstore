@@ -7,7 +7,7 @@
 :root {
   --color-black: 52,43,43;
   --color-primary: 198,68,70;
-   --color-gray: 105,105,105;
+  --color-gray: 105,105,105;
   --color-gray-light: 245,245,245;
   --color-border: 175,175,175;
   --font-xl: 2rem;
@@ -1846,7 +1846,7 @@ body,
   font-size: var(--font-m);
   color: rgb(var(--color-primary));
   font-family: 'Poppins', sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   letter-spacing: .1em;
   display: block;
 }
