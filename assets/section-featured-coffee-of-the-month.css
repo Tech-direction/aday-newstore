@@ -1,12 +1,38 @@
+/* 共通要素のカスタマイズ */
+.section-featured-coffee-of-the-month .heading.type-sub_heading {
+  text-align: center;
+  margin-bottom: var(--margin-xl);
+}
+@media screen and (max-width: 989px) {
+  .section-featured-coffee-of-the-month .heading.type-sub_heading {
+    margin-bottom: var(--margin-l);
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-featured-coffee-of-the-month .heading.type-sub_heading {
+    margin-bottom: var(--margin);
+  }
+}
+.section-featured-coffee-of-the-month .button.type-primary {
+  min-width: 328px;
+}
+@media screen and (max-width: 768px) {
+  .section-featured-coffee-of-the-month .button.type-primary {
+    min-width: auto;
+  }
+}
+
 /* 今月のオススメコーヒー セクション専用CSS */
 .section-featured-coffee-of-the-month {
-  padding: 40px 0;
+  background-color: rgba(var(--color-primary), 0.03);
+  padding: var(--margin-section) 0;
 }
-.section-featured-coffee-of-the-month .section-heading-wrapper {
-  margin-bottom: 32px;
+@media screen and (max-width: 768px) {
+  .section-featured-coffee-of-the-month {
+    padding: var(--margin-xl) 0;
+  }
 }
-.section-featured-coffee-of-the-month .featured-coffee-content {
-}
+
 .section-featured-coffee-of-the-month .featured-coffee-products {
   display: flex;
   justify-content: center;
@@ -14,8 +40,12 @@
   flex-direction: column;
   margin-bottom: var(--margin-xl);
 }
+@media screen and (max-width: 768px) {
+  .section-featured-coffee-of-the-month .featured-coffee-products {
+    gap: var(--margin-l);
+  }
+}
 .section-featured-coffee-of-the-month .featured-coffee-product {
-  background: #fff;
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -25,9 +55,32 @@
 .section-featured-coffee-of-the-month .featured-coffee-product:nth-child(2n) {
   flex-direction: row-reverse;
 }
+@media screen and (max-width: 989px) {
+  .section-featured-coffee-of-the-month .featured-coffee-product {
+    gap: var(--margin);
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-featured-coffee-of-the-month .featured-coffee-product,
+  .section-featured-coffee-of-the-month .featured-coffee-product:nth-child(2n) {
+    flex-direction: column;
+    gap: var(--margin-s);
+  }
+}
 .section-featured-coffee-of-the-month .featured-coffee-image {
   flex-shrink: 0;
   width: calc( (946 / 1540) * 100%);
+}
+@media screen and (max-width: 989px) {
+  .section-featured-coffee-of-the-month .featured-coffee-image {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-featured-coffee-of-the-month .featured-coffee-image {
+    width: 100%;
+  }
 }
 .section-featured-coffee-of-the-month .featured-coffee-image img {
   width: 100%;
@@ -35,6 +88,14 @@
 }
 .section-featured-coffee-of-the-month .featured-coffee-info {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--margin);
+}
+@media screen and (max-width: 989px) {
+  .section-featured-coffee-of-the-month .featured-coffee-info {
+    gap: var(--margin-s);
+  }
 }
 .section-featured-coffee-of-the-month .recommend-title {
   color: rgb(var(--color-primary));
@@ -51,15 +112,14 @@
 	display: block;
 }
 .section-featured-coffee-of-the-month .product-description {
-  margin-bottom: 12px;
 }
 .section-featured-coffee-of-the-month .product-price {
   font-size: var(--font-m);
   font-weight: bold;
-  margin-bottom: 12px;
 }
-.section-featured-coffee-of-the-month .link {
+.section-featured-coffee-of-the-month .link.product__view-details {
   font-size: var(--font-xs) !important;
+  margin-top: 0 !important;
 }
 .section-featured-coffee-of-the-month .featured-coffee-buttons {
   display: flex;

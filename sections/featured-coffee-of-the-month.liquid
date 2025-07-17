@@ -2,7 +2,7 @@
   今月のオススメコーヒー セクション
 {% endcomment %}
 {{ 'section-featured-coffee-of-the-month.css' | asset_url | stylesheet_tag }}
-<section class="section section-featured-coffee-of-the-month">
+<section class="section-featured-coffee-of-the-month">
   <div class="page-width">
     <h2
       class="heading type-sub_heading{% if section.settings.heading_size != 'default' %} size-{{ section.settings.heading_size }} {% endif %}"
@@ -103,11 +103,6 @@
       "default": "今月のオススメコーヒー"
     },
     {
-      "type": "text",
-      "id": "section_sub_heading",
-      "label": "サブ見出し"
-    },
-    {
       "type": "select",
       "id": "heading_size",
       "options": [
@@ -118,6 +113,11 @@
       ],
       "default": "l",
       "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "text",
+      "id": "section_sub_heading",
+      "label": "サブ見出し"
     }
   ],
   "blocks": [
