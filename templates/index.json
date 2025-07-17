@@ -129,7 +129,7 @@
       }
     },
     "featured-commitment": {
-      "type": "featured-commitment",
+      "type": "featured-concept",
       "settings": {
         "section_heading": "私たちのこだわり",
         "section_sub_heading": "CONCEPT",
