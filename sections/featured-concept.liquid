@@ -1,8 +1,8 @@
 {% comment %}
   私たちのこだわり セクション
 {% endcomment %}
-{{ 'section-featured-commitment.css' | asset_url | stylesheet_tag }}
-<section class="section section-featured-commitment">
+{{ 'section-featured-concept.css' | asset_url | stylesheet_tag }}
+<section class="section-featured-concept">
   <div class="page-width">
     <h2
       class="heading type-sub_heading{% if section.settings.heading_size != 'default' %} size-{{ section.settings.heading_size }} {% endif %}"
@@ -10,8 +10,8 @@
     >
       {{ section.settings.section_heading }}
     </h2>
-    <div class="featured-commitment-content">
-      <!-- こだわりポイントなどをここに追加してください -->
+    <div class="featured-concept-content">
+      <!-- コンセプトポイントなどをここに追加してください -->
     </div>
   </div>
 </section>
