@@ -91,7 +91,7 @@
       "settings": {
         "section_heading": "今月のオススメコーヒー",
         "section_sub_heading": "RECOMMEND COFFEE",
-        "heading_size": "l"
+        "heading_size": "xl"
       }
     },
     "coffee-lesson": {
@@ -99,7 +99,7 @@
       "settings": {
         "section_heading": "A day in the coffeeのコーヒー講座",
         "section_sub_heading": "COFFEE LESSON",
-        "heading_size": "l"
+        "heading_size": "xl"
       }
     },
     "featured-voices": {
@@ -133,14 +133,14 @@
       "settings": {
         "section_heading": "私たちのこだわり",
         "section_sub_heading": "CONCEPT",
-        "heading_size": "l"
+        "heading_size": "xl"
       }
     },
     "f9e0afc0-e928-45a3-9682-5919df278603": {
       "type": "featured-blog-top-news",
       "settings": {
         "section_heading": "お知らせ",
-        "heading_size": "l",
+        "heading_size": "xl",
         "section_sub_heading": "NEWS",
         "blog": "news",
         "post_limit": 3
