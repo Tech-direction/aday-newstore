@@ -24,11 +24,96 @@
 
 /* コーヒー講座 セクション専用CSS */
 .section-coffee-lesson {
-  background-color: #f8f6f2;
-  padding: var(--margin-section) 0;
+  margin: var(--margin-section) 0;
 }
 @media screen and (max-width: 768px) {
   .section-coffee-lesson {
-    padding: var(--margin-xl) 0;
+    margin: var(--margin-xl) 0;
+  }
+}
+
+.section-coffee-lesson .coffee-lesson-content {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 540px;
+  margin-bottom: var(--margin-section);
+}
+@media screen and (max-width: 768px) {
+  .section-coffee-lesson .coffee-lesson-content {
+    height: 400px;
+  }
+}
+.section-coffee-lesson .coffee-lesson-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: var(--border-radius-box);
+  overflow: hidden;
+}
+.section-coffee-lesson .coffee-lesson-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section-coffee-lesson .coffee-lesson-links {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  transform: translate(0, 30%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: var(--margin-l);
+}
+@media screen and (max-width: 1200px) {
+  .section-coffee-lesson .coffee-lesson-links {
+    padding-left: var(--margin-l);
+    padding-right: var(--margin-l);
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-coffee-lesson .coffee-lesson-links {
+    flex-direction: column;
+    gap: var(--margin-s);
+    transform: translate(0, 0);
+    bottom: var(--margin);
+    padding-left: var(--margin);
+    padding-right: var(--margin);
+  }
+}
+.section-coffee-lesson .coffee-lesson-link {
+  color: #FFFFFF;
+  font-size: var(--font-l);
+  font-weight: 700;
+  text-align: center;
+  background-color: rgb(var(--color-primary));
+  padding: var(--margin) var(--margin-s);
+  width: 600px;
+}
+@media screen and (max-width: 1400px) {
+  .section-coffee-lesson .coffee-lesson-link {
+    width: 480px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .section-coffee-lesson .coffee-lesson-link {
+    width: 100%;
+    padding: var(--margin-s) var(--margin-xs);
+  }
+}
+@media screen and (max-width: 1400px) {
+  .section-coffee-lesson .coffee-lesson-link {
+    font-size: var(--font-m);
+  }
+}
+.section-coffee-lesson .coffee-lesson-link span {
+  font-size: var(--font-xl);
+}
+@media screen and (max-width: 1400px) {
+  .section-coffee-lesson .coffee-lesson-link span {
+    font-size: var(--font-l);
   }
 }
