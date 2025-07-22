@@ -52,6 +52,11 @@
   position: relative;
   z-index: 0;
 }
+@media screen and (max-width: 768px) {
+  .section-featured-voices .featured-voices-slide {
+    gap: var(--margin-xs);
+  }
+}
 .section-featured-voices .featured-voices-slide::before {
   content: '';
   display: block;
