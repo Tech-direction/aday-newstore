@@ -45,7 +45,7 @@
 .section-featured-voices .featured-voices-slide {
   display: flex;
   flex-direction: column;
-  gap: var(--margin-xs);
+  gap: var(--margin-s);
   height: auto;
   border: solid 1px #AFAFAF;
   padding: var(--margin);
