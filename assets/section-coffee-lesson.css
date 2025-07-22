@@ -74,14 +74,18 @@
     padding-right: var(--margin-l);
   }
 }
+@media screen and (max-width: 989px) {
+  .section-coffee-lesson .coffee-lesson-links {
+    padding-left: var(--margin);
+    padding-right: var(--margin);
+  }
+}
 @media screen and (max-width: 768px) {
   .section-coffee-lesson .coffee-lesson-links {
     flex-direction: column;
     gap: var(--margin-s);
     transform: translate(0, 0);
     bottom: var(--margin);
-    padding-left: var(--margin);
-    padding-right: var(--margin);
   }
 }
 .section-coffee-lesson .coffee-lesson-link {
@@ -115,5 +119,10 @@
 @media screen and (max-width: 1400px) {
   .section-coffee-lesson .coffee-lesson-link span {
     font-size: var(--font-l);
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-coffee-lesson .coffee-lesson-link span {
+    font-size: var(--font-m);
   }
 }
