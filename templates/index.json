@@ -90,24 +90,76 @@
       ],
       "settings": {
         "section_heading": "今月のオススメコーヒー",
-        "section_sub_heading": "RECOMMEND COFFEE",
-        "heading_size": "xl"
+        "heading_size": "xl",
+        "section_sub_heading": "RECOMMEND COFFEE"
       }
     },
     "coffee-lesson": {
       "type": "coffee-lesson",
       "settings": {
         "section_heading": "A day in the coffeeのコーヒー講座",
-        "section_sub_heading": "COFFEE LESSON",
-        "heading_size": "xl"
+        "heading_size": "xl",
+        "section_sub_heading": "COFFEE LESSON"
       }
     },
     "featured-voices": {
       "type": "featured-voices",
+      "blocks": {
+        "voice_xMYptD": {
+          "type": "voice",
+          "settings": {
+            "title": "テストタイトル",
+            "text": "テストテキスト"
+          }
+        },
+        "voice_CiwYAy": {
+          "type": "voice",
+          "settings": {
+            "title": "テストタイトル",
+            "text": "テストテキスト"
+          }
+        },
+        "voice_bGtMMt": {
+          "type": "voice",
+          "settings": {
+            "title": "テストタイトル",
+            "text": "テストテキスト"
+          }
+        },
+        "voice_8rk7KE": {
+          "type": "voice",
+          "settings": {
+            "title": "テストタイトル",
+            "text": "テストテキスト\nテストテキスト\nテストテキスト"
+          }
+        },
+        "voice_K89w7K": {
+          "type": "voice",
+          "settings": {
+            "title": "テストタイトルテストタイトル",
+            "text": "テストテキスト"
+          }
+        },
+        "voice_H4XWPf": {
+          "type": "voice",
+          "settings": {
+            "title": "テストタイトルテストタイトルテストタイトルテストタイトルテストタイトル",
+            "text": "テストテキストテストテキストテストテキストテストテキストテストテキスト"
+          }
+        }
+      },
+      "block_order": [
+        "voice_xMYptD",
+        "voice_CiwYAy",
+        "voice_bGtMMt",
+        "voice_8rk7KE",
+        "voice_K89w7K",
+        "voice_H4XWPf"
+      ],
       "settings": {
         "section_heading": "こんな声をいただいています",
-        "section_sub_heading": "",
-        "heading_size": "l"
+        "heading_size": "l",
+        "section_sub_heading": ""
       }
     },
     "ef1e9a68-7a62-4287-8199-03faca0c8b77": {
