@@ -1,7 +1,12 @@
 {% comment %}
   こんな声をいただいています セクション
 {% endcomment %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 {{ 'section-featured-voices.css' | asset_url | stylesheet_tag }}
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+<script src="{{ 'section-featured-voices.js' | asset_url }}" defer></script>
+
 <section class="section-featured-voices">
   <div class="page-width">
     <h2
@@ -11,7 +16,27 @@
       {{ section.settings.section_heading }}
     </h2>
     <div class="featured-voices-content">
-      <!-- お客様の声やレビューなどをここに追加してください -->
+      {% if section.blocks.size > 0 %}
+        <div class="featured-voices-swiper swiper">
+          <div class="swiper-wrapper">
+            {% for block in section.blocks %}
+              <div class="swiper-slide featured-voices-slide" {{ block.shopify_attributes }}>
+                {% if block.settings.title != blank %}
+                  <p class="featured-voices-title">{{ block.settings.title | escape }}</p>
+                {% endif %}
+                {% if block.settings.text %}
+                  <p class="featured-voices-text">
+                    {{ block.settings.text | escape | newline_to_br }}
+                  </p>
+                {% endif %}
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+    </div>
+    <div class="featured-voices-button">
+      <a href="#" class="button type-primary">詳しく見る</a>
     </div>
   </div>
 </section>
@@ -42,6 +67,24 @@
       "type": "text",
       "id": "section_sub_heading",
       "label": "サブ見出し"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "voice",
+      "name": "お客様の声",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "タイトル"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "お客様の声（テキスト）"
+        }
+      ]
     }
   ],
   "presets": [{ "name": "こんな声をいただいています" }]

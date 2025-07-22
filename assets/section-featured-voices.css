@@ -1,16 +1,16 @@
 /* 共通要素のカスタマイズ */
 .section-featured-voices .heading.type-sub_heading {
   text-align: center;
-  margin-bottom: var(--margin-xl);
+  margin-bottom: calc(var(--margin-xl)/2);
 }
 @media screen and (max-width: 989px) {
   .section-featured-voices .heading.type-sub_heading {
-    margin-bottom: var(--margin-l);
+    margin-bottom: var(--margin);
   }
 }
 @media screen and (max-width: 480px) {
   .section-featured-voices .heading.type-sub_heading {
-    margin-bottom: var(--margin);
+    margin-bottom: var(--margin-s);
   }
 }
 .section-featured-voices .button.type-primary {
@@ -24,11 +24,64 @@
 
 /* こんな声をいただいています セクション専用CSS */
 .section-featured-voices {
-  background-color: #f8f6f2;
-  padding: var(--margin-section) 0;
+  margin: var(--margin-section) 0;
+  overflow: hidden;
 }
 @media screen and (max-width: 768px) {
   .section-featured-voices {
-    padding: var(--margin-xl) 0;
+    margin: var(--margin-xl) 0;
+  }
+}
+
+/* swiperの設定 */
+.section-featured-voices .swiper {
+  overflow: visible;
+}
+.section-featured-voices .swiper-wrapper {
+  transition-timing-function: linear;
+	height: auto !important;
+}
+
+.section-featured-voices .featured-voices-slide {
+  display: flex;
+  flex-direction: column;
+  gap: var(--margin-xs);
+  height: auto;
+  border: solid 1px #AFAFAF;
+  padding: var(--margin);
+  position: relative;
+  z-index: 0;
+}
+.section-featured-voices .featured-voices-slide::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px;
+  border-color: #AFAFAF transparent transparent #AFAFAF ;
+}
+.section-featured-voices .featured-voices-title,
+.section-featured-voices .featured-voices-text {
+  margin-top: 0;
+  font-size: var(--font-s);
+}
+.section-featured-voices .featured-voices-title {
+  font-weight: 700;
+}
+.section-featured-voices .featured-voices-text {
+  font-weight: 500;
+}
+.section-featured-voices .featured-voices-button {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--margin-xl);
+}
+@media screen and (max-width: 989px) {
+  .section-featured-voices .featured-voices-button {
+    margin-top: var(--margin-l);
   }
 }
