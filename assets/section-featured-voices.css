@@ -55,6 +55,7 @@
 @media screen and (max-width: 768px) {
   .section-featured-voices .featured-voices-slide {
     gap: var(--margin-xs);
+    padding: var(--margin-xs) var(--margin-s);
   }
 }
 .section-featured-voices .featured-voices-slide::before {
@@ -68,6 +69,11 @@
   border-style: solid;
   border-width: 15px;
   border-color: #AFAFAF transparent transparent #AFAFAF ;
+}
+@media screen and (max-width: 768px) {
+  .section-featured-voices .featured-voices-slide::before {
+    border-width: 8px;
+  }
 }
 .section-featured-voices .featured-voices-title,
 .section-featured-voices .featured-voices-text {
