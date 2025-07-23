@@ -24,11 +24,92 @@
 
 /* コンセプト セクション専用CSS */
 .section-featured-concept {
-  background-color: #f8f6f2;
-  padding: var(--margin-section) 0;
+  margin: var(--margin-section) 0;
 }
 @media screen and (max-width: 768px) {
   .section-featured-concept {
-    padding: var(--margin-xl) 0;
+    margin: var(--margin-xl) 0;
+  }
+}
+.section-featured-concept .featured-concept-content {
+  padding-left: 0 !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: var(--margin-l);
+}
+@media screen and (min-width: 1600px) {
+  .section-featured-concept .featured-concept-content {
+    max-width: none;
+    width: auto;
+    margin-right: calc((100% - var(--width-max))/2);
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-featured-concept .featured-concept-content {
+    flex-direction: column-reverse;
+    padding-left: var(--margin) !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-featured-concept .featured-concept-content {
+    gap: var(--margin);
+  }
+}
+.section-featured-concept .featured-concept-image {
+  width: 50%;
+  border-radius: 0 16px 16px 0;
+  overflow: hidden;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  .section-featured-concept .featured-concept-image {
+    width: 100%;
+    border-radius: var(--border-radius-box);
+    aspect-ratio: 2.4/1;
+    position: relative;
+		left: -6rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-featured-concept .featured-concept-image {
+    aspect-ratio: 1.9/1;
+		left: -3.5rem;
+  }
+}
+.section-featured-concept .featured-concept-image img {
+  vertical-align: middle;
+	object-fit: cover;
+  object-position: center right;
+	height: 100%;
+	width: 100%;
+}
+@media screen and (max-width: 1200px) {
+  .section-featured-concept .featured-concept-image img {
+    object-position: center;
+  }
+}
+.section-featured-concept .featured-concept-text {
+  width: auto;
+  max-width: 618px;
+}
+@media screen and (max-width: 1200px) {
+  .section-featured-concept .featured-concept-text {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-featured-concept .featured-concept-text {
+    max-width: none;
+    width: 100%;
+  }
+}
+.section-featured-concept .featured-concept-text p {
+  font-size: var(--font-l);
+  font-weight: 500;
+}
+@media screen and (max-width: 1200px) {
+  .section-featured-concept .featured-concept-text p {
+    font-size: var(--font-m);
   }
 }
