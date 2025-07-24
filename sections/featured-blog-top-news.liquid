@@ -21,7 +21,9 @@
       {%- for article in section.settings.blog.articles limit: section.settings.post_limit -%}
         <li id="news_{{ forloop.index }}" class="news__item">
           <span class="circle-divider caption-with-letter-spacing" itemprop="dateCreated pubdate datePublished">
-            {{- article.published_at | time_tag: format: 'date' -}}
+            <time datetime="{{ article.published_at | date: '%Y-%m-%dT%H:%M:%SZ' }}">
+              {{ article.published_at | date: '%Y.%m.%d' }}
+            </time>
           </span>
           <h3 class="heading size-l">
             <a href="/blogs/news/#news_{{ forloop.index }}" class="full-unstyled-link">

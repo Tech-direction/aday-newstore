@@ -2770,6 +2770,7 @@ body,
 .contents-wrapper .fuatured-blog-news .news__item .caption-with-letter-spacing {
   font-size: var(--font-l);
   color: rgb(var(--color-border));
+  letter-spacing: 0;
   flex-shrink: 0;
 }
 
