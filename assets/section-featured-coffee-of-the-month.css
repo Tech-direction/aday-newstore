@@ -16,9 +16,9 @@
 .section-featured-coffee-of-the-month .button.type-primary {
   min-width: 328px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 749px) {
   .section-featured-coffee-of-the-month .button.type-primary {
-    min-width: auto;
+    min-width: 250px;
   }
 }
 
@@ -27,7 +27,7 @@
   background-color: rgba(var(--color-primary), 0.03);
   padding: var(--margin-section) 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 749px) {
   .section-featured-coffee-of-the-month {
     padding: var(--margin-xl) 0;
   }
@@ -40,7 +40,7 @@
   flex-direction: column;
   margin-bottom: var(--margin-xl);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 749px) {
   .section-featured-coffee-of-the-month .featured-coffee-products {
     gap: var(--margin-l);
   }
@@ -61,7 +61,7 @@
     align-items: flex-start;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 749px) {
   .section-featured-coffee-of-the-month .featured-coffee-product,
   .section-featured-coffee-of-the-month .featured-coffee-product:nth-child(2n) {
     flex-direction: column;
@@ -77,7 +77,7 @@
     width: 45%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 749px) {
   .section-featured-coffee-of-the-month .featured-coffee-image {
     width: 100%;
   }
