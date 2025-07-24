@@ -93,23 +93,19 @@
   font-weight: 700;
   text-align: center;
   background-color: rgb(var(--color-primary));
-  padding: var(--margin) var(--margin-s);
+  padding: calc(var(--margin)*2) var(--margin-s);
   width: 600px;
 }
 @media screen and (max-width: 1400px) {
   .section-coffee-lesson .coffee-lesson-link {
+    font-size: var(--font-m);
     width: 480px;
   }
 }
 @media screen and (max-width: 1200px) {
   .section-coffee-lesson .coffee-lesson-link {
     width: 100%;
-    padding: var(--margin-s) var(--margin-xs);
-  }
-}
-@media screen and (max-width: 1400px) {
-  .section-coffee-lesson .coffee-lesson-link {
-    font-size: var(--font-m);
+    padding: calc(var(--margin-s)*2) var(--margin-xs);
   }
 }
 .section-coffee-lesson .coffee-lesson-link span {
