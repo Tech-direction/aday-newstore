@@ -61,9 +61,16 @@
   border-radius: 0 16px 16px 0;
   overflow: hidden;
   height: auto;
+  min-height: 930px;
+}
+@media screen and (max-width: 1200px) {
+  .section-featured-concept .featured-concept-image {
+    min-height: 700px;
+  }
 }
 @media screen and (max-width: 749px) {
   .section-featured-concept .featured-concept-image {
+    min-height: auto;
     width: 100%;
     border-radius: var(--border-radius-box);
     aspect-ratio: 2.4/1;
@@ -92,6 +99,7 @@
 .section-featured-concept .featured-concept-text {
   width: auto;
   max-width: 618px;
+  align-self: center;
 }
 @media screen and (max-width: 1200px) {
   .section-featured-concept .featured-concept-text {
