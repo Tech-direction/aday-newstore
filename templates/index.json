@@ -165,7 +165,7 @@
     "ef1e9a68-7a62-4287-8199-03faca0c8b77": {
       "type": "featured-blog-top",
       "settings": {
-        "section_heading": "コーヒーをもっと好きになる話",
+        "section_heading": "コーヒーを<br>もっと好きになる話",
         "heading_size": "xl",
         "section_sub_heading": "COFFEE JOURNAL",
         "change_box_layout": true,
@@ -180,7 +180,7 @@
         "box_gap": "l"
       }
     },
-    "featured-commitment": {
+    "featured-concept": {
       "type": "featured-concept",
       "settings": {
         "section_heading": "私たちのこだわり",
@@ -205,7 +205,7 @@
     "coffee-lesson",
     "featured-voices",
     "ef1e9a68-7a62-4287-8199-03faca0c8b77",
-    "featured-commitment",
+    "featured-concept",
     "f9e0afc0-e928-45a3-9682-5919df278603"
   ]
 }
