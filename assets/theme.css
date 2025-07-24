@@ -2432,6 +2432,7 @@ body,
 .contents-wrapper .section-fuatured-blog .fuatured-blog-wrapper {
   width: calc(100% + var(--page-width-margin));
   /*overflow: hidden;*/
+  max-width: 100vw;
 }
 
 .contents-wrapper .section-fuatured-blog .article-list {
@@ -2444,7 +2445,7 @@ body,
 }
 
 .contents-wrapper .section-fuatured-blog .article-list .grid__item {
-  width: calc((100vw - 328px - ((100vw - var(--width-max))/2) - var(--margin-xl))*0.55) !important;
+  width: calc((100vw - 328px - ((100vw - var(--width-max))/2) - var(--margin-xl))*0.4) !important;
   display: inline-block;
   top: auto;
 }

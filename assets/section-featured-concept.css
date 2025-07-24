@@ -63,6 +63,11 @@
   height: auto;
   min-height: 930px;
 }
+@media screen and (min-width: 1600px) {
+  .section-featured-concept .featured-concept-image {
+    width: 50vw
+  }
+}
 @media screen and (max-width: 1200px) {
   .section-featured-concept .featured-concept-image {
     min-height: 700px;
