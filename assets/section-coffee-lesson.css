@@ -29,8 +29,16 @@
 @media screen and (max-width: 749px) {
   .section-coffee-lesson {
     margin: var(--margin-xl) 0;
+    margin-bottom: calc(var(--margin-section) * 2.5);
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-coffee-lesson {
     margin-bottom: calc(var(--margin-section) * 2.2);
   }
+}
+
+@media screen and (max-width: 749px) {
   .section-coffee-lesson .page-width {
     padding-left: 0 !important;
     padding-right: 0 !important;
