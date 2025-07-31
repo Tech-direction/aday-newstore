@@ -1850,6 +1850,9 @@ body,
   letter-spacing: .1em;
   display: block;
 }
+.contents-wrapper .heading.type-sub_heading:before {
+  margin-top: 0;
+}
 .contents-wrapper .section-heading-wrapper .heading__item .heading[data-sub_heading=""]:before,
 .contents-wrapper .heading.type-sub_heading[data-sub_heading=""]:before {
   display: none;
