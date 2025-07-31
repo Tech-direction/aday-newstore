@@ -24,12 +24,47 @@
 
 /* 今月のオススメコーヒー セクション専用CSS */
 .section-featured-coffee-of-the-month {
-  background-color: rgba(var(--color-primary), 0.03);
-  padding: var(--margin-section) 0;
+  background-color: #F9F6EF;
+  padding: var(--margin-section) calc(var(--margin-l) / 2);
+  position: relative;
+  z-index: 0;
 }
 @media screen and (max-width: 749px) {
   .section-featured-coffee-of-the-month {
-    padding: var(--margin-xl) 0;
+    padding: var(--margin-xl) calc(var(--margin) / 2);
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-featured-coffee-of-the-month {
+    padding: var(--margin-xl) calc(var(--margin-s) / 2);
+  }
+}
+.section-featured-coffee-of-the-month::before {
+  content: "";
+	display: block;
+	position: absolute;
+	top: calc(var(--margin-l) / 2);
+	left: calc(var(--margin-l) / 2);
+	width: calc(100% - var(--margin-l));
+	height: calc(100% - var(--margin-l));
+	border-style: solid;
+	border-width: 1px;
+	border-color: #AFAFAF;
+}
+@media screen and (max-width: 749px) {
+  .section-featured-coffee-of-the-month::before {
+    top: calc(var(--margin) / 2);
+    left: calc(var(--margin) / 2);
+    width: calc(100% - var(--margin));
+    height: calc(100% - var(--margin));
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-featured-coffee-of-the-month::before {
+    top: calc(var(--margin-s) / 2);
+    left: calc(var(--margin-s) / 2);
+    width: calc(100% - var(--margin-s));
+    height: calc(100% - var(--margin-s));
   }
 }
 
