@@ -1,0 +1,98 @@
+{{ 'section-custom-contents-slider.css' | asset_url | stylesheet_tag }}
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+<div class="custom-contents-slider-container">
+  <div class="swiper custom-contents-swiper">
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'custom-contentsgroup' %}
+            <div class="swiper-slide" {{ block.shopify_attributes }}>
+              <div
+                class="custom-blocks-group {{ block.settings.group_id }}"
+                data-group-label="{{ block.settings.group_name }}"
+                data-group-id="{{ block.settings.group_id }}"
+              >
+                {% content_for 'blocks' %}
+              </div>
+            </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+
+    <!-- Navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.custom-contents-swiper', {
+      // 基本設定
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+
+      // レスポンシブ設定
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      },
+
+      // ナビゲーション
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // ページネーション
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
+      // 自動再生（オプション）
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "カスタムコンテンツスライダー",
+  "tag": "section",
+  "settings": [],
+  "class": "section section-custom-contents-slider",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "blocks": [{ "type": "@theme" }, { "type": "@app" }],
+  "presets": [
+    {
+      "name": "カスタムコンテンツスライダー",
+      "blocks": [
+        {
+          "type": "custom-contentsgroup"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

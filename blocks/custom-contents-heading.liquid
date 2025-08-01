@@ -1,0 +1,93 @@
+
+<{{ block.settings.heading_type }} class="title align-{{ block.settings.alignment }} size-{{ block.settings.heading_size }} {{ block.settings.item_class }}">{{ block.settings.heading }}</{{ block.settings.heading_type }}>
+
+{% schema %}
+{
+  "name": "見出し",
+  "class": "blocks__item blocks__item-heading",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "見出し"
+    },
+    {
+      "type": "select",
+      "id": "heading_type",
+      "options": [
+        {
+          "value": "h1",
+          "label": "h1"
+        },
+        {
+          "value": "h2",
+          "label": "h2"
+        },
+        {
+          "value": "h3",
+          "label": "h3"
+        },
+        {
+          "value": "h4",
+          "label": "h4"
+        },
+        {
+          "value": "h5",
+          "label": "h5"
+        },
+        {
+          "value": "p",
+          "label": "指定なし"
+        }
+      ],
+      "default": "h3",
+      "label": "見出しタイプ"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "xs",
+          "label": "最小"
+        },
+        {
+          "value": "s",
+          "label": "小"
+        },
+        {
+          "value": "def",
+          "label": "標準"
+        },
+        {
+          "value": "m",
+          "label": "大"
+        },
+        {
+          "value": "l",
+          "label": "特大"
+        },
+        {
+          "value": "xl",
+          "label": "最大"
+        }
+      ],
+      "default": "m",
+      "label": "見出しサイズ"
+    },
+    {
+      "type": "text_alignment",
+      "id": "alignment",
+      "label": "配置"
+    },
+    {
+      "type": "text",
+      "id": "item_class",
+      "label": "要素の追加クラス"
+    },
+  ],
+  "presets": [
+    { "name": "見出し" },
+  ]
+}
+{% endschema %}
