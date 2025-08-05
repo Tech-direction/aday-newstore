@@ -2280,6 +2280,20 @@ body,
 
 /*===============================================================
 
+	slideshow top
+
+===============================================================*/
+.contents-wrapper .section-slideshow-top {
+}
+@media (prefers-reduced-motion: reduce) {
+  .contents-wrapper .section-slideshow-top .slideshow__slide {
+    transition: opacity 0.5s ease-in-out !important;
+  }
+}
+
+
+/*===============================================================
+
 	page menu
 
 ===============================================================*/
