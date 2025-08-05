@@ -2303,7 +2303,6 @@ body,
 }
 .contents-wrapper.top .section-slideshow-top .banner__box {
   border-radius: var(--border-radius-box);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   padding: var(--margin);
   min-width: auto;
   width: 560px;
