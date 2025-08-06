@@ -1,0 +1,62 @@
+.section-custom-slideshow {
+	padding-top: 0 !important;
+	height: 42rem;
+	max-height: 100vh;
+	max-height: 100dvh;
+	padding-bottom: var(--margin-section);
+}
+.section-custom-slideshow .custom-slideshow {
+	height: 100%;
+}
+.section-custom-slideshow .custom-slideshow__container {
+	height: 100%;
+	overflow: visible;
+}
+.section-custom-slideshow .custom-slideshow__slide {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: auto;
+	position: relative;
+	z-index: 0;
+}
+
+.section-custom-slideshow .custom-slideshow__content {
+	border-radius: var(--border-radius-box);
+  padding: var(--margin);
+  min-width: auto;
+  width: 560px;
+	position: absolute;
+	z-index: 0;
+	right: var(--margin);
+	bottom: calc(var(--margin-section) * 2);
+	transform: translate(0, 100%);
+}
+
+.section-custom-slideshow .custom-slideshow__subheading {
+
+}
+
+.section-custom-slideshow .custom-slideshow__title {
+
+}
+
+.section-custom-slideshow .custom-slideshow__description {
+
+}
+
+.section-custom-slideshow .custom-slideshow__button {
+	position: static;
+}
+.section-custom-slideshow .custom-slideshow__button::before {
+	display: none;
+}
+.section-custom-slideshow .custom-slideshow__button::after {
+	content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1; /* 他の要素より手前にクリック領域を配置 */
+}
