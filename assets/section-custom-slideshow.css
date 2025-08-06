@@ -59,12 +59,11 @@
 }
 @media screen and (max-width: 768px) {
 	.section-custom-slideshow .custom-slideshow__content {
-		width: 100%;
-		top: 0;
-		bottom: 0;
-		transform: translate(0, 0);
-		right: 0;
-		left: 0;
+		bottom: var(--margin-s);
+		right: var(--margin);
+		left: var(--margin);
+		transform: translate(0);
+		width: auto;
 	}
 }
 
@@ -117,4 +116,9 @@
 .section-custom-slideshow .custom-slideshow__button.button--secondary {
 	background-color: #FFFFFF;
 	color: rgb(var(--color-foreground));
+}
+@media screen and (max-width: 768px) {
+	.section-custom-slideshow .custom-slideshow__button {
+		min-width: 245px;
+	}
 }

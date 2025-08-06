@@ -126,7 +126,7 @@
                   {% endif %}
                 </ul>
               {%- endif -%}
-              {% if block.settings.is_link == true %}
+              {% if block.settings.is_link == true and block.settings.link != blank %}
                 <button class="button {% if block.settings.button_style == 'secondary' %}button--secondary{% else %}button--primary{% endif %} custom-slideshow__button">
                   {{ block.settings.button_text }}
                 </button>
