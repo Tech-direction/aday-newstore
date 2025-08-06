@@ -1,0 +1,85 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+{{ 'section-custom-slideshow.css' | asset_url | stylesheet_tag }}
+
+<div class="custom-slideshow {{ section.settings.class_name }}">
+  {% if section.blocks.size > 0 %}
+    <div class="custom-slideshow__container swiper">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          <div class="swiper-slide" style="background-image: url();">
+            <div class="custom-slideshow__content">
+              <div class="custom-slideshow__text">
+                <h2 class="custom-slideshow__title">{{ section.settings.title }}</h2>
+                <p class="custom-slideshow__description">{{ section.settings.description }}</p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+
+{% schema %}
+{
+  "name": "Custom Slideshow",
+  "tag": "section",
+  "class": "section section-custom-slideshow",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "class_name",
+      "label": "クラス名"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "スライド",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "画像"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "subheading",
+          "label": "小見出し"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "label": "見出し"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "description",
+          "label": "説明"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "button_text",
+          "label": "リンクテキスト"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "リンク"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "カスタムスライドショー",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
