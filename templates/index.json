@@ -15,31 +15,43 @@
         "slide_GrYWdp": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/image2575.jpg",
-            "subheading": "A day in the coffeeの",
-            "title": "コーヒー定期便",
+            "image": "shopify://shop_images/section-custom-slideshow-image01.webp",
+            "contents_area_alignment": "right",
+            "line_1": "<h4><strong>A day in the coffeeの</strong></h4>",
+            "content_alignment_1": "center",
+            "line_2": "<h2>コーヒー定期便</h2>",
+            "content_alignment_2": "center",
             "description": "",
+            "content_alignment_3": "center",
+            "text_color": "#342b2b",
             "background_color": "#ffffff",
             "background_opacity": 85,
             "subscription_feature": true,
             "button_text": "【コーヒー定期便】を詳しく見る",
             "link": "shopify://pages/subscription",
-            "is_link": true
+            "is_link": true,
+            "button_style": "primary"
           }
         },
         "slide_7KngWh": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/feature_coffee-image01.webp",
-            "subheading": "",
-            "title": "コーヒーの香りを届けたい",
-            "description": "あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。",
-            "background_color": "rgba(0,0,0,0)",
-            "background_opacity": 85,
+            "image": "shopify://shop_images/section-custom-slideshow-image02.webp",
+            "contents_area_alignment": "left",
+            "line_1": "<h2>コーヒーの香りを届けたい</h2>",
+            "content_alignment_1": "left",
+            "line_2": "",
+            "content_alignment_2": "center",
+            "description": "<p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。<br/><br/></p>",
+            "content_alignment_3": "left",
+            "text_color": "#ffffff",
+            "background_color": "#ffffff",
+            "background_opacity": 0,
             "subscription_feature": false,
             "button_text": "私たちのこだわり",
             "link": "",
-            "is_link": false
+            "is_link": true,
+            "button_style": "secondary"
           }
         }
       },
