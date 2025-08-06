@@ -4,6 +4,7 @@
 	max-height: 100vh;
 	max-height: 100dvh;
 	padding-bottom: var(--margin-section);
+	overflow: hidden;
 }
 .section-custom-slideshow .custom-slideshow {
 	height: 100%;
@@ -20,6 +21,12 @@
 	position: relative;
 	z-index: 0;
 }
+.section-custom-slideshow .custom-slideshow__slide:not([href]) {
+	cursor: default;
+}
+.section-custom-slideshow .custom-slideshow__slide:hover {
+	opacity: 1 !important;
+}
 
 .section-custom-slideshow .custom-slideshow__content {
 	border-radius: var(--border-radius-box);
@@ -29,34 +36,74 @@
 	position: absolute;
 	z-index: 0;
 	right: var(--margin);
-	bottom: calc(var(--margin-section) * 2);
+	bottom: calc(var(--margin-section) * 2.5);
+	transform: translate(0, 100%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: var(--margin);
+}
+.section-custom-slideshow .custom-slideshow__content--left {
+	right: auto;
+	left: var(--margin);
 	transform: translate(0, 100%);
 }
-
-.section-custom-slideshow .custom-slideshow__subheading {
-
+.section-custom-slideshow .custom-slideshow__content--right {
+	right: var(--margin);
+	transform: translate(0, 100%);
+}
+.section-custom-slideshow .custom-slideshow__content--center {
+	right: auto;
+	left: 50%;
+	transform: translate(-50%, 100%);
+}
+.section-custom-slideshow .custom-slideshow__content-block {
+	display: flex;
+	flex-direction: column;
 }
 
-.section-custom-slideshow .custom-slideshow__title {
-
+.section-custom-slideshow .custom-slideshow__line {
+	font-size: var(--font-m);
+	margin-top: 0;
 }
 
-.section-custom-slideshow .custom-slideshow__description {
-
+.section-custom-slideshow .custom-slideshow__line p {
+	font-size: var(--font-s);
+}
+.section-custom-slideshow .custom-slideshow__line h2 {
+	font-size: var(--font-xl);
+}
+.section-custom-slideshow .custom-slideshow__line h3 {
+	font-size: var(--font-l);
+}
+.section-custom-slideshow .custom-slideshow__line h4 {
+	font-size: var(--font-m);
+}
+.section-custom-slideshow .custom-slideshow__line p,
+.section-custom-slideshow .custom-slideshow__line h2,
+.section-custom-slideshow .custom-slideshow__line h3,
+.section-custom-slideshow .custom-slideshow__line h4 {
+	color: inherit;
+	margin-top: 0;
+}
+.section-custom-slideshow .custom-slideshow__line p *,
+.section-custom-slideshow .custom-slideshow__line h2 *,
+.section-custom-slideshow .custom-slideshow__line h3 *,
+.section-custom-slideshow .custom-slideshow__line h4 * {
+	color: inherit;
+	margin-top: 0;
 }
 
 .section-custom-slideshow .custom-slideshow__button {
-	position: static;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 328px;
 }
-.section-custom-slideshow .custom-slideshow__button::before {
-	display: none;
+.section-custom-slideshow .custom-slideshow__button:hover {
+	opacity: 1 !important;
 }
-.section-custom-slideshow .custom-slideshow__button::after {
-	content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1; /* 他の要素より手前にクリック領域を配置 */
+.section-custom-slideshow .custom-slideshow__button.button--secondary {
+	background-color: #FFFFFF;
+	color: rgb(var(--color-foreground));
 }

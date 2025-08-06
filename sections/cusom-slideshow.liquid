@@ -6,26 +6,46 @@
     <div class="custom-slideshow__container swiper">
       <div class="swiper-wrapper">
         {% for block in section.blocks %}
-          <div
+          <a
+            {% if block.settings.link != blank %}
+              href="{{ block.settings.link }}"
+            {% endif %}
             class="custom-slideshow__slide swiper-slide"
             style="background-image: url({{ block.settings.image | image_url: width: 1000 }});"
             {{ block.shopify_attributes }}
           >
             <div
-              class="custom-slideshow__content"
+              class="
+                custom-slideshow__content
+                {% if block.settings.contents_area_alignment == 'left' %}
+                  custom-slideshow__content--left
+                {% elsif block.settings.contents_area_alignment == 'right' %}
+                  custom-slideshow__content--right
+                {% else %}
+                  custom-slideshow__content--center
+                {% endif %}
+              "
               {%- if block.settings.background_color != blank -%}
                 {%- assign alpha_value = block.settings.background_opacity | times: 0.01 -%}
-                style="background-color: {{ block.settings.background_color | color_modify: 'alpha', alpha_value }};"
+                style="background-color: {{ block.settings.background_color | color_modify: 'alpha', alpha_value }}; color: {{ block.settings.text_color }};"
               {%- endif -%}
             >
-              {% if block.settings.subheading != blank %}
-                <p class="custom-slideshow__subheading">{{ block.settings.subheading | escape }}</p>
-              {% endif %}
-              {% if block.settings.title != blank %}
-                <h2 class="custom-slideshow__title">{{ block.settings.title | escape }}</h2>
-              {% endif %}
+              <div class="custom-slideshow__content-block">
+                {% if block.settings.line_1 != blank %}
+                  <div class="custom-slideshow__line" style="text-align: {{ block.settings.content_alignment_1 }};">
+                    {{ block.settings.line_1 }}
+                  </div>
+                {% endif %}
+                {% if block.settings.line_2 != blank %}
+                  <div class="custom-slideshow__line" style="text-align: {{ block.settings.content_alignment_2 }};">
+                    {{ block.settings.line_2 }}
+                  </div>
+                {% endif %}
+              </div>
               {% if block.settings.description != blank %}
-                <p class="custom-slideshow__description">{{ block.settings.description | escape }}</p>
+                <div class="custom-slideshow__line" style="text-align: {{ block.settings.content_alignment_3 }};">
+                  {{ block.settings.description }}
+                </div>
               {% endif %}
               {%- if block.settings.subscription_feature != blank -%}
                 <ul class="grid grid--3-col-desktop grid--3-col-tablet grid--gap-s subscription-feature-list">
@@ -107,12 +127,12 @@
                 </ul>
               {%- endif -%}
               {% if block.settings.is_link == true %}
-                <a href="{{ block.settings.link }}" class="button type-primary custom-slideshow__button">
-                  {{ block.settings.button_text | escape }}
-                </a>
+                <button class="button {% if block.settings.button_style == 'secondary' %}button--secondary{% else %}button--primary{% endif %} custom-slideshow__button">
+                  {{ block.settings.button_text }}
+                </button>
               {% endif %}
             </div>
-          </div>
+          </a>
         {% endfor %}
       </div>
     </div>
@@ -124,14 +144,13 @@
   document.addEventListener('DOMContentLoaded', function () {
     const slider = document.querySelector('.custom-slideshow__container');
     if (!slider) return;
-
     const swiper = new Swiper(slider, {
       loop: true,
       speed: 1000,
-      autoplay: {
+      {% comment %} autoplay: {
         delay: 8000,
         disableOnInteraction: false,
-      },
+      }, {% endcomment %}
     });
   });
 </script>
@@ -162,19 +181,70 @@
           "label": "画像"
         },
         {
-          "type": "inline_richtext",
-          "id": "subheading",
-          "label": "小見出し"
+          "type": "select",
+          "id": "contents_area_alignment",
+          "label": "テキストエリアの配置",
+          "options": [
+            { "value": "left", "label": "左寄せ" },
+            { "value": "center", "label": "中央寄せ" },
+            { "value": "right", "label": "右寄せ" }
+          ],
+          "default": "center"
         },
         {
-          "type": "inline_richtext",
-          "id": "title",
-          "label": "見出し"
+          "type": "richtext",
+          "id": "line_1",
+          "label": "1行目"
         },
         {
-          "type": "inline_richtext",
+          "type": "select",
+          "id": "content_alignment_1",
+          "label": "1行目のテキストの配置",
+          "options": [
+            { "value": "left", "label": "左寄せ" },
+            { "value": "center", "label": "中央寄せ" },
+            { "value": "right", "label": "右寄せ" }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "richtext",
+          "id": "line_2",
+          "label": "2行目"
+        },
+        {
+          "type": "select",
+          "id": "content_alignment_2",
+          "label": "2行目のテキストの配置",
+          "options": [
+            { "value": "left", "label": "左寄せ" },
+            { "value": "center", "label": "中央寄せ" },
+            { "value": "right", "label": "右寄せ" }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "richtext",
           "id": "description",
-          "label": "説明"
+          "label": "説明文"
+        },
+        {
+          "type": "select",
+          "id": "content_alignment_3",
+          "label": "説明文のテキストの配置",
+          "options": [
+            { "value": "left", "label": "左寄せ" },
+            { "value": "center", "label": "中央寄せ" },
+            { "value": "right", "label": "右寄せ" }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "テキスト色",
+          "default": "#342b2b",
+          "info": "テキストの色を設定します"
         },
         {
           "type": "color",
@@ -202,7 +272,7 @@
           "info": "各項目は左メニュー「テーマ設定」>「定期購買の特徴」で編集ができます。"
         },
         {
-          "type": "inline_richtext",
+          "type": "text",
           "id": "button_text",
           "label": "リンクテキスト"
         },
@@ -216,6 +286,23 @@
           "id": "is_link",
           "label": "リンクを表示する",
           "default": false
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "label": "ボタンスタイル",
+          "default": "primary",
+          "options": [
+            {
+              "value": "primary",
+              "label": "デフォルト"
+            },
+            {
+              "value": "secondary",
+              "label": "白地に黒文字"
+            }
+          ],
+          "info": "ボタンの色スタイルを選択してください。"
         }
       ]
     }
