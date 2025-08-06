@@ -9,6 +9,49 @@
  */
 {
   "sections": {
+    "cusom_slideshow_9hdAm9": {
+      "type": "cusom-slideshow",
+      "blocks": {
+        "slide_GrYWdp": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/image2575.jpg",
+            "subheading": "A day in the coffeeの",
+            "title": "コーヒー定期便",
+            "description": "",
+            "background_color": "#ffffff",
+            "background_opacity": 85,
+            "subscription_feature": true,
+            "button_text": "【コーヒー定期便】を詳しく見る",
+            "link": "shopify://pages/subscription",
+            "is_link": true
+          }
+        },
+        "slide_7KngWh": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/feature_coffee-image01.webp",
+            "subheading": "",
+            "title": "コーヒーの香りを届けたい",
+            "description": "あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。",
+            "background_color": "rgba(0,0,0,0)",
+            "background_opacity": 85,
+            "subscription_feature": false,
+            "button_text": "私たちのこだわり",
+            "link": "",
+            "is_link": false
+          }
+        }
+      },
+      "block_order": [
+        "slide_GrYWdp",
+        "slide_7KngWh"
+      ],
+      "name": "カスタムスライドショー",
+      "settings": {
+        "class_name": ""
+      }
+    },
     "slideshow_top_BQTEqB": {
       "type": "slideshow-top",
       "blocks": {
@@ -58,6 +101,7 @@
         "slide_N3ByFA",
         "slide_8NaYa3"
       ],
+      "disabled": true,
       "name": "スライドショー　トップ",
       "settings": {
         "layout": "full_bleed",
@@ -68,48 +112,6 @@
         "image_behavior": "none",
         "show_text_below": false,
         "accessibility_info": "Slideshow about our brand"
-      }
-    },
-    "cusom_slideshow_9hdAm9": {
-      "type": "cusom-slideshow",
-      "blocks": {
-        "slide_GrYWdp": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/image2575.jpg",
-            "subheading": "A day in the coffeeの",
-            "title": "コーヒー定期便",
-            "description": "",
-            "background_color": "#ffffff",
-            "background_opacity": 85,
-            "subscription_feature": true,
-            "button_text": "【コーヒー定期便】を詳しく見る",
-            "link": "shopify://pages/subscription",
-            "is_link": true
-          }
-        },
-        "slide_7KngWh": {
-          "type": "slide",
-          "settings": {
-            "subheading": "",
-            "title": "コーヒーの香りを届けたい",
-            "description": "あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。",
-            "background_color": "rgba(0,0,0,0)",
-            "background_opacity": 85,
-            "subscription_feature": false,
-            "button_text": "私たちのこだわり",
-            "link": "",
-            "is_link": false
-          }
-        }
-      },
-      "block_order": [
-        "slide_GrYWdp",
-        "slide_7KngWh"
-      ],
-      "name": "カスタムスライドショー",
-      "settings": {
-        "class_name": ""
       }
     },
     "d5fac027-1d6c-4527-b96a-703316269413": {
@@ -151,6 +153,7 @@
         "665f5e99-d971-4963-a8bd-ddbe7dafdcd4",
         "template--19717718147380__d5fac027-1d6c-4527-b96a-703316269413-16886631200b887bea-2"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/image2575.jpg",
         "image_overlay_opacity": 0,
@@ -303,8 +306,8 @@
     }
   },
   "order": [
-    "slideshow_top_BQTEqB",
     "cusom_slideshow_9hdAm9",
+    "slideshow_top_BQTEqB",
     "d5fac027-1d6c-4527-b96a-703316269413",
     "featured-coffee-of-the-month",
     "coffee-lesson",
