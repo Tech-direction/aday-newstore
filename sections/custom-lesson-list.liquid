@@ -43,12 +43,16 @@
               <div class="custom-lesson-list__price">
                 {% render 'price', product: block.settings.lesson_product %}
               </div>
-              <div class="custom-lesson-list__date">
-                {{ block.settings.date }}
-              </div>
-              <div class="custom-lesson-list__description">
-                {{ block.settings.description }}
-              </div>
+              {% if block.settings.date != blank %}
+                <div class="custom-lesson-list__date">
+                  {{ block.settings.date }}
+                </div>
+              {% endif %}
+              {% if block.settings.description != blank %}
+                <div class="custom-lesson-list__description">
+                  {{ block.settings.description }}
+                </div>
+              {% endif %}
               <div class="custom-lesson-list__button">
                 <form action="/cart/add" method="post" id="custom-lesson-list-form-{{ block.id }}">
                   <input

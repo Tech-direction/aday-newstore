@@ -39,6 +39,7 @@
 	background-color: rgb(var(--color-gray));
 	padding: var(--margin-s) var(--margin-l);
 	display: inline-block;
+	margin-top: var(--margin);
 }
 .custom-lesson-list__description p {
 	font-size: var(--font-s);
