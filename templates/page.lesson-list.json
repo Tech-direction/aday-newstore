@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "custom-mainvisual": {
+      "type": "custom-mainvisual",
+      "settings": {
+        "image_pc": "shopify://shop_images/access01.jpg",
+        "image_sp": "shopify://shop_images/access01.jpg"
+      }
+    },
+    "custom-lesson-list": {
+      "type": "custom-lesson-list"
+    }
+  },
+  "order": [
+    "custom-mainvisual",
+    "custom-lesson-list"
+  ]
+}

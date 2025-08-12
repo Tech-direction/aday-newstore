@@ -1,0 +1,141 @@
+<link rel="stylesheet" href="{{ 'section-custom-lesson-list.css' | asset_url }}">
+
+<div class="section-container page-width custom-lesson-list">
+  <div class="custom-lesson-list__inner">
+    <ul class="custom-lesson-list__list">
+      {% for block in section.blocks %}
+        <li>
+          {% if block.settings.lesson_product.title != blank %}
+            {% assign sub_heading = block.settings.lesson_product.metafields.custom.subtitle %}
+            <h2
+              class="heading type-sub_heading {% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %}"
+              data-sub_heading="{% if sub_heading != blank %}{{ sub_heading }}{% endif %}"
+            >
+              {{ block.settings.lesson_product.title }}
+            </h2>
+          {% endif %}
+          <div class="custom-lesson-list__image-inner">
+            <div class="custom-lesson-list__image">
+              <img
+                src="{{ block.settings.lesson_product.featured_image | image_url: width: 100 }}"
+                alt="{{ block.settings.lesson_product.title }}"
+                width="100"
+                height="100"
+              >
+              <div class="custom-lesson-list__image-thumbnail">
+                {% for image in block.settings.lesson_product.images %}
+                  <img
+                    src="{{ image | image_url: width: 100 }}"
+                    alt="{{ image.alt }}"
+                    width="100"
+                    height="100"
+                  >
+                {% endfor %}
+              </div>
+            </div>
+            <div class="custom-lesson-list__content">
+              <h3 class="custom-lesson-list__title">
+                <span class="custom-lesson-list__title-text">
+                  {{ block.settings.subtitle }}
+                </span>
+                {{ block.settings.lesson_product.title }}
+              </h3>
+              <div class="custom-lesson-list__price">
+                <span class="custom-lesson-list__price-text">
+                  {% render 'price', product: block.settings.lesson_product %}
+                </span>
+              </div>
+              <div class="custom-lesson-list__date">
+                <span class="custom-lesson-list__date-text">
+                  {{ block.settings.date }}
+                </span>
+              </div>
+              <div class="custom-lesson-list__description">
+                {{ block.settings.description }}
+              </div>
+              <div class="custom-lesson-list__button">
+                <form action="/cart/add" method="post" id="custom-lesson-list-form-{{ block.id }}">
+                  <input
+                    type="hidden"
+                    name="id"
+                    {% if block.settings.lesson_product.has_only_default_variant %}
+                      value="{{ block.settings.lesson_product.variants.first.id }}"
+                    {% else %}
+                      value="{{ block.settings.lesson_product.selected_or_first_available_variant.id }}"
+                    {% endif %}
+                  >
+                  <button type="submit" class="custom-lesson-list__button-text">ご予約はこちら</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="custom-lesson-list__detail">
+            <div class="custom-lesson-list__detail-content">
+              <h4>【セミナーの流れ】</h4>
+              {{ block.settings.flow }}
+            </div>
+            <div class="custom-lesson-list__detail-content">
+              <h4>【セミナーについて】</h4>
+              {{ block.settings.about }}
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "コーヒーレッスン一覧",
+  "tag": "section",
+  "class": "section custom-lesson-list",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "blocks": [
+    {
+      "type": "lesson",
+      "name": "レッスン",
+      "settings": [
+        {
+          "type": "product",
+          "id": "lesson_product",
+          "label": "レッスン商品"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "サブタイトル"
+        },
+        {
+          "type": "text",
+          "id": "date",
+          "label": "日時"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "説明"
+        },
+        {
+          "type": "richtext",
+          "id": "flow",
+          "label": "セミナーの流れ"
+        },
+        {
+          "type": "richtext",
+          "id": "about",
+          "label": "セミナーについて"
+        }
+      ]
+    }
+  ],
+  "settings": [],
+  "presets": [
+    {
+      "name": "コーヒーレッスン一覧"
+    }
+  ]
+}
+{% endschema %}

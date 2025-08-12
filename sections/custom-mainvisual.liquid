@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="{{ 'section-custom-mainvisual.css' | asset_url }}">
+
+<div class="custom-mainvisual">
+  <div class="custom-mainvisual__image">
+    <picture>
+      <source srcset="{{ section.settings.image_pc | image_url: width: 1920 }}" media="(min-width: 768px)">
+      <img
+        src="{{ section.settings.image_sp | image_url: width: 768 }}"
+        alt=""
+        width="100%"
+        height="auto"
+        loading="lazy"
+      >
+    </picture>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "カスタムメインビジュアル",
+  "class": "custom-mainvisual",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_pc",
+      "label": "PC表示用の画像"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_sp",
+      "label": "SP表示用の画像"
+    }
+  ],
+  "presets": [
+    {
+      "name": "カスタムメインビジュアル"
+    }
+  ]
+}
+{% endschema %}
