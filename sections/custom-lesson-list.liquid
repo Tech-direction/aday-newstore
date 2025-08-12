@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="{{ 'section-custom-lesson-list.css' | asset_url }}">
 
-<div class="section-container page-width custom-lesson-list">
+<div class="section-container">
   <div class="custom-lesson-list__inner">
     <ul class="custom-lesson-list__list">
       {% for block in section.blocks %}
@@ -8,13 +8,13 @@
           {% if block.settings.lesson_product.title != blank %}
             {% assign sub_heading = block.settings.lesson_product.metafields.custom.subtitle %}
             <h2
-              class="heading type-sub_heading {% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %}"
+              class="heading type-sub_heading {% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %} {% if section.settings.align != null %} align-{{ section.settings.align }} {% endif %}"
               data-sub_heading="{% if sub_heading != blank %}{{ sub_heading }}{% endif %}"
             >
               {{ block.settings.lesson_product.title }}
             </h2>
           {% endif %}
-          <div class="custom-lesson-list__image-inner">
+          <div class="custom-lesson-list__inner page-width">
             <div class="custom-lesson-list__image">
               <img
                 src="{{ block.settings.lesson_product.featured_image | image_url: width: 100 }}"
@@ -34,21 +34,17 @@
               </div>
             </div>
             <div class="custom-lesson-list__content">
-              <h3 class="custom-lesson-list__title">
-                <span class="custom-lesson-list__title-text">
-                  {{ block.settings.subtitle }}
-                </span>
+              <h3
+                class="custom-lesson-list__title heading type-sub_heading size-{{ section.settings.product_heading_size }}"
+                data-sub_heading="{{ block.settings.subtitle }}"
+              >
                 {{ block.settings.lesson_product.title }}
               </h3>
               <div class="custom-lesson-list__price">
-                <span class="custom-lesson-list__price-text">
-                  {% render 'price', product: block.settings.lesson_product %}
-                </span>
+                {% render 'price', product: block.settings.lesson_product %}
               </div>
               <div class="custom-lesson-list__date">
-                <span class="custom-lesson-list__date-text">
-                  {{ block.settings.date }}
-                </span>
+                {{ block.settings.date }}
               </div>
               <div class="custom-lesson-list__description">
                 {{ block.settings.description }}
@@ -64,19 +60,21 @@
                       value="{{ block.settings.lesson_product.selected_or_first_available_variant.id }}"
                     {% endif %}
                   >
-                  <button type="submit" class="custom-lesson-list__button-text">ご予約はこちら</button>
+                  <button type="submit" class="button button--primary">ご予約はこちら</button>
                 </form>
               </div>
             </div>
           </div>
           <div class="custom-lesson-list__detail">
-            <div class="custom-lesson-list__detail-content">
-              <h4>【セミナーの流れ】</h4>
-              {{ block.settings.flow }}
-            </div>
-            <div class="custom-lesson-list__detail-content">
-              <h4>【セミナーについて】</h4>
-              {{ block.settings.about }}
+            <div class="custom-lesson-list__detail-inner page-width">
+              <div class="custom-lesson-list__detail-content">
+                <h4>【セミナーの流れ】</h4>
+                {{ block.settings.flow }}
+              </div>
+              <div class="custom-lesson-list__detail-content">
+                <h4>【セミナーについて】</h4>
+                {{ block.settings.about }}
+              </div>
             </div>
           </div>
         </li>
@@ -131,7 +129,76 @@
       ]
     }
   ],
-  "settings": [],
+  "settings": [
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "default",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "m",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "l",
+          "label": "t:sections.all.heading_size.options__3.label"
+        },
+        {
+          "value": "xl",
+          "label": "最大"
+        }
+      ],
+      "default": "l",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "select",
+      "id": "align",
+      "label": "見出しの左右中央揃え",
+      "options": [
+        {
+          "value": "left",
+          "label": "左寄せ"
+        },
+        {
+          "value": "center",
+          "label": "中央揃え"
+        },
+        {
+          "value": "right",
+          "label": "右寄せ"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "product_heading_size",
+      "label": "商品見出しサイズ",
+      "options": [
+        {
+          "value": "default",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "m",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "l",
+          "label": "t:sections.all.heading_size.options__3.label"
+        },
+        {
+          "value": "xl",
+          "label": "最大"
+        }
+      ],
+      "default": "l"
+    }
+  ],
   "presets": [
     {
       "name": "コーヒーレッスン一覧"
