@@ -35,7 +35,7 @@
           "settings": {
             "lesson_product": "costarica",
             "subtitle": "",
-            "date": "",
+            "date": "日時",
             "description": "",
             "flow": "",
             "about": ""
@@ -47,9 +47,9 @@
         "lesson_Kz4nzg"
       ],
       "settings": {
-        "heading_size": "l",
+        "heading_size": "xl",
         "align": "center",
-        "product_heading_size": "l"
+        "product_heading_size": "xl"
       }
     },
     "custom_lesson_list_9JAGDy": {
@@ -72,9 +72,9 @@
       ],
       "name": "コーヒーレッスン一覧",
       "settings": {
-        "heading_size": "l",
+        "heading_size": "xl",
         "align": "center",
-        "product_heading_size": "l"
+        "product_heading_size": "xl"
       }
     }
   },
