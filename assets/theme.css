@@ -106,7 +106,7 @@ html.js.wf-poppins-n1-active{
 }
 
 .contents-wrapper .caption-large,
-.contents-wrapper .customer .field input, 
+.contents-wrapper .customer .field input,
 .contents-wrapper .customer select,
 .contents-wrapper .field__input,
 .contents-wrapper .form__label,
@@ -137,7 +137,7 @@ html.js.wf-poppins-n1-active{
 
 .contents-wrapper .note {
   font-size: var(--font-s);
-} 
+}
 
 .contents-wrapper .media {
   background-color: transparent;
@@ -162,7 +162,7 @@ html.js.wf-poppins-n1-active{
 }
 
 @media screen and (max-width: 749px) {
-  .contents-wrapper .customer .field input, 
+  .contents-wrapper .customer .field input,
   .contents-wrapper .customer select,
   .contents-wrapper .field__input,
   .contents-wrapper .form__label,
@@ -196,7 +196,7 @@ html.js.wf-poppins-n1-active{
 .contents-wrapper .h4,
 .contents-wrapper .h5 {
   margin: 0;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1rem;
   font-family: 'zen-kaku-gothic-new', 'Helvetica Neue', 'Lucida Grande', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'Meiryo', 'メイリオ', 'sans-serif' !important;
   line-height: 1.4;
@@ -570,7 +570,7 @@ a,
 
 .contents-wrapper .field_select,
 .contents-wrapper .quantity,
-.contents-wrapper .field, 
+.contents-wrapper .field,
 .huckleberry-subscription-list-color select,
 .huckleberry-subscription-list-color input:not(.ipGBiP),
 [data-theme-name=Dawn] .contents-wrapper .cf-field {
@@ -688,8 +688,8 @@ a,
 [data-theme-name=Dawn] .contents-wrapper .cf-field input:not([type=checkbox]):not([type=radio]):hover,
 [data-theme-name=Dawn] .contents-wrapper .cf-field textarea:hover,
 [data-theme-name=Dawn] .contents-wrapper .cf-field select:hover,
-[data-theme-name=Dawn] .contents-wrapper .cf-field input:not([type=checkbox]):not([type=radio]):focus, 
-[data-theme-name=Dawn] .contents-wrapper .cf-field textarea:focus, 
+[data-theme-name=Dawn] .contents-wrapper .cf-field input:not([type=checkbox]):not([type=radio]):focus,
+[data-theme-name=Dawn] .contents-wrapper .cf-field textarea:focus,
 [data-theme-name=Dawn] .contents-wrapper .cf-field select:focus{
   outline: none;
   outline-offset: 0;
@@ -779,7 +779,7 @@ a,
 
 .contents-wrapper variant-radios fieldset .form__label {
   color: rgb(var(--color-border));
-  font-size: 10px !important; 
+  font-size: 10px !important;
   letter-spacing: 0;
   position: absolute;
   left: 1em;
@@ -997,14 +997,14 @@ a,
 }
 
 
-    
+
 
 
 /*  checkbox
 ---------------------------------------------------------------*/
 
 .contents-wrapper .cf-field  label:has(input[type="checkbox"]) input[type="checkbox"] {
-  display: none !important; 
+  display: none !important;
 }
 
 .contents-wrapper .cf-field  label:has(input[type="checkbox"]:checked):before {
@@ -1084,7 +1084,7 @@ a,
 }
 
 [class="_image-wrapper"] {
-  
+
 }
 
 body,
@@ -2045,7 +2045,7 @@ body,
 
 
 @media screen and (max-width: 989px) {
-  
+
   .contents-wrapper.top .section-billboard {
     height: 44rem;
     padding-bottom: 10rem !important;
@@ -2058,7 +2058,7 @@ body,
     justify-content: center;
   }
   .contents-wrapper.top .section-billboard .heading br {
-    display: block; 
+    display: block;
   }
   .contents-wrapper.top .section-billboard .banner--medium:not(.banner--adapt) .banner__media {
     position: absolute;
@@ -2153,7 +2153,7 @@ body,
   }
   .contents-wrapper .subscription-feature-list .feature__item [class^="subscription-feature-media-"] {
     height: 4vh;
-  } 
+  }
   .contents-wrapper .subscription-feature-list .feature__item .heading br {
     display: block;
   }
@@ -2544,7 +2544,7 @@ body,
 .contents-wrapper .article-wrapper .article-template__content a *,
 .contents-wrapper .article-wrapper .article-template__content a *,
 .contents-wrapper .article-wrapper .article-template__content a *,
-.contents-wrapper .article-wrapper .article-template__content a *, 
+.contents-wrapper .article-wrapper .article-template__content a *,
 .contents-wrapper .article-wrapper .article-template__content a {
   text-decoration: none !important;
 }
@@ -3177,7 +3177,7 @@ body,
 }
 
 
-/*  featured product 
+/*  featured product
 ---------------------------------------------------------------*/
 
 .contents-wrapper .featured-product .product__info-wrapper {
@@ -3357,7 +3357,7 @@ body,
 }
 .contents-wrapper .product-ranking > :first-child:hover {
   background-color: rgb(var(--color-primary));
-} 
+}
 
 .contents-wrapper .product-ranking > :first-child .card__heading a,
 .contents-wrapper .product-ranking > :first-child .card__heading::after,
@@ -3425,7 +3425,7 @@ body,
 
 .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-detail-grid {
   gap: 0;
-} 
+}
 
 .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-detail-grid .subscription_info__item {
   width: fit-content;
@@ -3458,7 +3458,7 @@ body,
   right: var(--margin);
   bottom: var(--margin);
   z-index: 1;
-} 
+}
 
 .contents-wrapper .subscription-block .subscription-detail-wrapper .collection-section-image {
   height: 100%;
@@ -3536,7 +3536,7 @@ body,
     order: 0;
   }
   .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-detail-grid .subscription_info__item {
-    width: auto !important; 
+    width: auto !important;
   }
   .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item {
     width: max(calc((100% - var(--margin-s)*2)/3) , 4em);
@@ -3564,7 +3564,7 @@ body,
     margin-top: 0;
     margin-bottom: var(--margin-l);
   }*/
-  
+
 }
 
 @media screen and (max-width: 520px) {
@@ -3626,7 +3626,7 @@ body,
 }*/
 
 .contents-wrapper #decaf.collection-section-been-wrapper .collection-section-been .collection-list-image img {
-  object-position: right; 
+  object-position: right;
 }
 
 .contents-wrapper .collection-section-been-wrapper .product-list:not(.product-ranking) {
@@ -5449,7 +5449,7 @@ body,
 
 .huckleberry-subscription-list-color #root .form-vertical .grid .grid__item {
   width: 100%;
-  max-width: 100%; 
+  max-width: 100%;
 }
 
 .huckleberry-subscription-list-color #root .form-vertical h2 + .grid .grid__item {
