@@ -12,16 +12,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const mainSwiper = container.querySelector('.custom-lesson-list__main-swiper');
     const thumbnailSwiper = container.querySelector('.custom-lesson-list__thumbnail-swiper');
 
-    // サムネイルスライダーの初期化
+    // サムネイルスライダーの初期化（全画面サイズで）
     const thumbnailSwiperInstance = new Swiper(thumbnailSwiper, {
+      slidesPerView: 3,
+      spaceBetween: 10,
       freeMode: true,
       lazy: true,
       watchSlidesProgress: true,
       breakpoints: {
-        480: {
-          slidesPerView: 3,
-          spaceBetween: 10,
-        },
         768: {
           slidesPerView: 5,
           spaceBetween: 10,
@@ -30,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // メインスライダーの初期化
-    new Swiper(mainSwiper, {
+    const mainSwiperOptions = {
       spaceBetween: 10,
       loop: true,
       lazy: true,
@@ -43,6 +41,45 @@ document.addEventListener('DOMContentLoaded', function() {
       thumbs: {
         swiper: thumbnailSwiperInstance,
       },
+    };
+
+    new Swiper(mainSwiper, mainSwiperOptions);
+    });
+
+  // 直接チェックアウトボタンの処理
+  const checkoutButtons = document.querySelectorAll('.custom-lesson-list__button a[data-variant-id]');
+
+  checkoutButtons.forEach(button => {
+    button.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      const variantId = this.getAttribute('data-variant-id');
+      const quantity = 1;
+
+      // カートに商品を追加してからチェックアウトにリダイレクト
+      fetch('/cart/add.js', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          id: variantId,
+          quantity: quantity
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
+        // 成功したらチェックアウトページにリダイレクト
+        window.location.href = '/checkout';
+      })
+      .catch(error => {
+        console.error('Error adding to cart:', error);
+        // エラーが発生した場合は通常のリンクにフォールバック
+        window.location.href = this.href;
+      });
     });
   });
+
+
+
 });

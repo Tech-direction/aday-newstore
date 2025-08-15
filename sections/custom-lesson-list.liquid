@@ -84,18 +84,14 @@
               </div>
             {% endif %}
             <div class="custom-lesson-list__button">
-              <form action="/cart/add" method="post" id="custom-lesson-list-form-{{ block.id }}">
-                <input
-                  type="hidden"
-                  name="id"
-                  {% if block.settings.lesson_product.has_only_default_variant %}
-                    value="{{ block.settings.lesson_product.variants.first.id }}"
-                  {% else %}
-                    value="{{ block.settings.lesson_product.selected_or_first_available_variant.id }}"
-                  {% endif %}
-                >
-                <button type="submit" class="button button--primary">ご予約はこちら</button>
-              </form>
+              {% assign variant_id = block.settings.lesson_product.selected_or_first_available_variant.id %}
+              <a
+                href="/cart/add?id={{ variant_id }}&quantity=1&return_to=/checkout"
+                class="button button--primary"
+                data-variant-id="{{ variant_id }}"
+              >
+                ご予約はこちら
+              </a>
             </div>
           </div>
         </div>

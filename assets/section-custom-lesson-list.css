@@ -10,7 +10,7 @@
 .custom-lesson-list .custom-lesson-list__list {
 	display: flex;
 	flex-direction: column;
-	gap: var(--margin-section);
+	gap: 0 !important;
 }
 .custom-lesson-list .custom-lesson-list__list li {
 	width: 100%;
@@ -25,17 +25,40 @@
 	gap: var(--margin-xl);
 	margin-top: var(--margin-xl);
 }
+@media screen and (max-width: 960px) {
+	.custom-lesson-list .custom-lesson-list__inner {
+		gap: var(--margin-l);
+	}
+}
+@media screen and (max-width: 768px) {
+	.custom-lesson-list .custom-lesson-list__inner {
+		gap: var(--margin);
+	}
+}
+@media screen and (max-width: 480px) {
+	.custom-lesson-list .custom-lesson-list__inner {
+		flex-direction: column;
+	}
+}
 
 .custom-lesson-list .custom-lesson-list__image {
 	width: 50%;
 }
+@media screen and (max-width: 768px) {
+	.custom-lesson-list .custom-lesson-list__image {
+		width: 40%;
+	}
+}
+@media screen and (max-width: 480px) {
+	.custom-lesson-list .custom-lesson-list__image {
+		width: 100%;
+	}
+}
 
-/* Swiper.js カスタムスタイル */
 .custom-lesson-list .custom-lesson-list__swiper-container {
 	width: 100%;
 }
 
-/* メインスライダー */
 .custom-lesson-list .custom-lesson-list__main-swiper {
 	width: 100%;
 	border-radius: var(--border-radius-box);
@@ -79,7 +102,6 @@
 	background-color: #fff;
 }
 
-/* サムネイルスライダー */
 .custom-lesson-list .custom-lesson-list__thumbnail-swiper {
 	width: 100%;
 }
@@ -113,10 +135,32 @@
 .custom-lesson-list .custom-lesson-list__content {
 	width: 50%;
 }
-.custom-lesson-list .custom-lesson-list__title {
-	font-size: var(--font-m);
+@media screen and (max-width: 768px) {
+	.custom-lesson-list .custom-lesson-list__content {
+		width: 60%;
+	}
 }
-.custom-lesson-list .custom-lesson-list__price {
+@media screen and (max-width: 480px) {
+	.custom-lesson-list .custom-lesson-list__content {
+		width: 100%;
+	}
+}
+.custom-lesson-list .custom-lesson-list__title {
+
+}
+.custom-lesson-list .custom-lesson-list__title::before {
+	color: rgb(var(--color-black)) !important;
+	font-weight: 500 !important;
+	margin-bottom: 0 !important;
+}
+.custom-lesson-list .custom-lesson-list__price .price-item {
+	font-size: var(--font-l);
+	font-weight: 700;
+	gap: calc(var(--margin-s) / 2) !important;
+}
+.custom-lesson-list .custom-lesson-list__price .price-item::after {
+	font-size: var(--font-s);
+	font-weight: 500;
 }
 .custom-lesson-list .custom-lesson-list__date {
 	color: #FFFFFF;
@@ -146,8 +190,29 @@
 	display: flex;
 	gap: var(--margin-xl);
 }
+@media screen and (max-width: 960px) {
+	.custom-lesson-list .custom-lesson-list__detail-inner {
+		gap: var(--margin-l);
+	}
+}
+@media screen and (max-width: 768px) {
+	.custom-lesson-list .custom-lesson-list__detail-inner {
+		gap: var(--margin);
+	}
+}
+@media screen and (max-width: 480px) {
+	.custom-lesson-list .custom-lesson-list__detail-inner {
+		flex-direction: column;
+		gap: var(--margin);
+	}
+}
 .custom-lesson-list .custom-lesson-list__detail-content {
 	width: 50%;
+}
+@media screen and (max-width: 480px) {
+	.custom-lesson-list .custom-lesson-list__detail-content {
+		width: 100%;
+	}
 }
 .custom-lesson-list .custom-lesson-list__detail-content h4 {
 	color: rgb(var(--color-primary));
