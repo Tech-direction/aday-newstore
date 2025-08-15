@@ -1,90 +1,136 @@
+<!-- Swiper.js CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 <link rel="stylesheet" href="{{ 'section-custom-lesson-list.css' | asset_url }}">
 
 <div class="section-container">
-  <div class="custom-lesson-list__inner">
-    <ul class="custom-lesson-list__list">
-      {% for block in section.blocks %}
-        <li>
-          {% if block.settings.lesson_product.title != blank %}
-            {% assign sub_heading = block.settings.lesson_product.metafields.custom.subtitle %}
-            <h2
-              class="heading type-sub_heading {% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %} {% if section.settings.align != null %} align-{{ section.settings.align }} {% endif %}"
-              data-sub_heading="{% if sub_heading != blank %}{{ sub_heading }}{% endif %}"
+  <ul class="custom-lesson-list__list">
+    {% for block in section.blocks %}
+      <li>
+        {% if block.settings.lesson_product.title != blank %}
+          {% assign sub_heading = block.settings.lesson_product.metafields.custom.subtitle %}
+          <h2
+            class="heading type-sub_heading {% if section.settings.heading_size !="default" %} size-{{ section.settings.heading_size }} {% endif %} {% if section.settings.align != null %} align-{{ section.settings.align }} {% endif %}"
+            data-sub_heading="{% if sub_heading != blank %}{{ sub_heading }}{% endif %}"
+          >
+            {{ block.settings.lesson_product.title }}
+          </h2>
+        {% endif %}
+        <div class="custom-lesson-list__inner page-width">
+          <div class="custom-lesson-list__image">
+            <div class="custom-lesson-list__swiper-container">
+              <!-- メインスライダー -->
+              <div class="custom-lesson-list__main-swiper swiper">
+                <div class="swiper-wrapper">
+                  <!-- メイン画像 -->
+                  <div class="swiper-slide">
+                    <img
+                      src="{{ block.settings.lesson_product.featured_image | image_url: width: 400 }}"
+                      alt="{{ block.settings.lesson_product.title }}"
+                      width="400"
+                      height="300"
+                      loading="lazy"
+                    >
+                  </div>
+                  <!-- 追加画像 -->
+                  {% for image in block.settings.lesson_product.images %}
+                    <div class="swiper-slide">
+                      <img
+                        src="{{ image | image_url: width: 400 }}"
+                        alt="{{ image.alt }}"
+                        width="400"
+                        height="300"
+                        loading="lazy"
+                      >
+                    </div>
+                  {% endfor %}
+                </div>
+                <!-- ナビゲーションボタン -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- ページネーション -->
+                <div class="swiper-pagination"></div>
+              </div>
+
+              <!-- サムネイルスライダー -->
+              <div class="custom-lesson-list__thumbnail-swiper swiper">
+                <div class="swiper-wrapper">
+                  <!-- メイン画像のサムネイル -->
+                  <div class="swiper-slide">
+                    <img
+                      src="{{ block.settings.lesson_product.featured_image | image_url: width: 100 }}"
+                      alt="{{ block.settings.lesson_product.title }}"
+                      width="100"
+                      height="75"
+                      loading="lazy"
+                    >
+                  </div>
+                  <!-- 追加画像のサムネイル -->
+                  {% for image in block.settings.lesson_product.images %}
+                    <div class="swiper-slide">
+                      <img
+                        src="{{ image | image_url: width: 100 }}"
+                        alt="{{ image.alt }}"
+                        width="100"
+                        height="75"
+                        loading="lazy"
+                      >
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="custom-lesson-list__content">
+            <h3
+              class="custom-lesson-list__title heading type-sub_heading size-{{ section.settings.product_heading_size }}"
+              data-sub_heading="{{ block.settings.subtitle }}"
             >
               {{ block.settings.lesson_product.title }}
-            </h2>
-          {% endif %}
-          <div class="custom-lesson-list__inner page-width">
-            <div class="custom-lesson-list__image">
-              <img
-                src="{{ block.settings.lesson_product.featured_image | image_url: width: 100 }}"
-                alt="{{ block.settings.lesson_product.title }}"
-                width="100"
-                height="100"
-              >
-              <div class="custom-lesson-list__image-thumbnail">
-                {% for image in block.settings.lesson_product.images %}
-                  <img
-                    src="{{ image | image_url: width: 100 }}"
-                    alt="{{ image.alt }}"
-                    width="100"
-                    height="100"
-                  >
-                {% endfor %}
-              </div>
+            </h3>
+            <div class="custom-lesson-list__price">
+              {% render 'price', product: block.settings.lesson_product %}
             </div>
-            <div class="custom-lesson-list__content">
-              <h3
-                class="custom-lesson-list__title heading type-sub_heading size-{{ section.settings.product_heading_size }}"
-                data-sub_heading="{{ block.settings.subtitle }}"
-              >
-                {{ block.settings.lesson_product.title }}
-              </h3>
-              <div class="custom-lesson-list__price">
-                {% render 'price', product: block.settings.lesson_product %}
+            {% if block.settings.date != blank %}
+              <div class="custom-lesson-list__date">
+                {{ block.settings.date }}
               </div>
-              {% if block.settings.date != blank %}
-                <div class="custom-lesson-list__date">
-                  {{ block.settings.date }}
-                </div>
-              {% endif %}
-              {% if block.settings.description != blank %}
-                <div class="custom-lesson-list__description">
-                  {{ block.settings.description }}
-                </div>
-              {% endif %}
-              <div class="custom-lesson-list__button">
-                <form action="/cart/add" method="post" id="custom-lesson-list-form-{{ block.id }}">
-                  <input
-                    type="hidden"
-                    name="id"
-                    {% if block.settings.lesson_product.has_only_default_variant %}
-                      value="{{ block.settings.lesson_product.variants.first.id }}"
-                    {% else %}
-                      value="{{ block.settings.lesson_product.selected_or_first_available_variant.id }}"
-                    {% endif %}
-                  >
-                  <button type="submit" class="button button--primary">ご予約はこちら</button>
-                </form>
+            {% endif %}
+            {% if block.settings.description != blank %}
+              <div class="custom-lesson-list__description">
+                {{ block.settings.description }}
               </div>
+            {% endif %}
+            <div class="custom-lesson-list__button">
+              <form action="/cart/add" method="post" id="custom-lesson-list-form-{{ block.id }}">
+                <input
+                  type="hidden"
+                  name="id"
+                  {% if block.settings.lesson_product.has_only_default_variant %}
+                    value="{{ block.settings.lesson_product.variants.first.id }}"
+                  {% else %}
+                    value="{{ block.settings.lesson_product.selected_or_first_available_variant.id }}"
+                  {% endif %}
+                >
+                <button type="submit" class="button button--primary">ご予約はこちら</button>
+              </form>
             </div>
           </div>
-          <div class="custom-lesson-list__detail">
-            <div class="custom-lesson-list__detail-inner page-width">
-              <div class="custom-lesson-list__detail-content">
-                <h4>【セミナーの流れ】</h4>
-                {{ block.settings.flow }}
-              </div>
-              <div class="custom-lesson-list__detail-content">
-                <h4>【セミナーについて】</h4>
-                {{ block.settings.about }}
-              </div>
+        </div>
+        <div class="custom-lesson-list__detail">
+          <div class="custom-lesson-list__detail-inner page-width">
+            <div class="custom-lesson-list__detail-content">
+              <h4>【セミナーの流れ】</h4>
+              {{ block.settings.flow }}
+            </div>
+            <div class="custom-lesson-list__detail-content">
+              <h4>【セミナーについて】</h4>
+              {{ block.settings.about }}
             </div>
           </div>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
 </div>
 
 {% schema %}
@@ -210,3 +256,7 @@
   ]
 }
 {% endschema %}
+
+<!-- Swiper.js JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+<script src="{{ 'section-custom-lesson-list.js' | asset_url }}" defer></script>
