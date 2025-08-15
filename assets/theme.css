@@ -1842,9 +1842,13 @@ body,
   font-size: var(--font-m);
   color: rgb(var(--color-primary));
   font-family: 'Poppins', sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   letter-spacing: .1em;
   display: block;
+}
+.contents-wrapper .heading.type-sub_heading:before {
+  margin-top: 0;
+  margin-bottom: .75rem;
 }
 
 /* chrome */
