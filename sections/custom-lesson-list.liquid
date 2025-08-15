@@ -24,31 +24,20 @@
                   <!-- メイン画像 -->
                   <div class="swiper-slide">
                     <img
-                      src="{{ block.settings.lesson_product.featured_image | image_url: width: 400 }}"
+                      src="{{ block.settings.lesson_product.featured_image | image_url: width: 800 }}"
                       alt="{{ block.settings.lesson_product.title }}"
-                      width="400"
-                      height="300"
-                      loading="lazy"
                     >
                   </div>
                   <!-- 追加画像 -->
                   {% for image in block.settings.lesson_product.images %}
                     <div class="swiper-slide">
                       <img
-                        src="{{ image | image_url: width: 400 }}"
+                        src="{{ image | image_url: width: 800 }}"
                         alt="{{ image.alt }}"
-                        width="400"
-                        height="300"
-                        loading="lazy"
                       >
                     </div>
                   {% endfor %}
                 </div>
-                <!-- ナビゲーションボタン -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <!-- ページネーション -->
-                <div class="swiper-pagination"></div>
               </div>
 
               <!-- サムネイルスライダー -->
@@ -59,9 +48,6 @@
                     <img
                       src="{{ block.settings.lesson_product.featured_image | image_url: width: 100 }}"
                       alt="{{ block.settings.lesson_product.title }}"
-                      width="100"
-                      height="75"
-                      loading="lazy"
                     >
                   </div>
                   <!-- 追加画像のサムネイル -->
@@ -70,9 +56,6 @@
                       <img
                         src="{{ image | image_url: width: 100 }}"
                         alt="{{ image.alt }}"
-                        width="100"
-                        height="75"
-                        loading="lazy"
                       >
                     </div>
                   {% endfor %}

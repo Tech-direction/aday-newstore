@@ -1,0 +1,24 @@
+.custom-mainvisual {
+	width: calc(100% - var(--margin-s) * 2);
+	margin-right: auto;
+	margin-left: auto;
+}
+.custom-mainvisual__image-pc {
+	display: none;
+}
+.custom-mainvisual__image-sp {
+	display: block;
+}
+@media (min-width: 768px) {
+	.custom-mainvisual__image-pc {
+		display: block;
+	}
+	.custom-mainvisual__image-sp {
+		display: none;
+	}
+}
+
+.custom-mainvisual__image img {
+	width: 100%;
+	height: auto;
+}

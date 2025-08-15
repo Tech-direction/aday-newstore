@@ -14,34 +14,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // サムネイルスライダーの初期化
     const thumbnailSwiperInstance = new Swiper(thumbnailSwiper, {
-      spaceBetween: 10,
-      slidesPerView: 4,
       freeMode: true,
+      lazy: true,
       watchSlidesProgress: true,
       breakpoints: {
+        480: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
         768: {
           slidesPerView: 5,
-          spaceBetween: 15,
+          spaceBetween: 10,
         }
       }
     });
 
     // メインスライダーの初期化
-    const mainSwiperInstance = new Swiper(mainSwiper, {
+    new Swiper(mainSwiper, {
       spaceBetween: 10,
       loop: true,
+      lazy: true,
       autoplay: {
         delay: 5000,
         disableOnInteraction: false,
       },
-      navigation: {
-        nextEl: mainSwiper.querySelector('.swiper-button-next'),
-        prevEl: mainSwiper.querySelector('.swiper-button-prev'),
-      },
-      pagination: {
-        el: mainSwiper.querySelector('.swiper-pagination'),
-        clickable: true,
-      },
+      navigation: false,
+      pagination: false,
       thumbs: {
         swiper: thumbnailSwiperInstance,
       },

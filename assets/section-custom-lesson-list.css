@@ -19,7 +19,7 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: stretch;
-	gap: 20px;
+	gap: var(--margin-xl);
 }
 
 .custom-lesson-list__image {
@@ -34,7 +34,7 @@
 /* メインスライダー */
 .custom-lesson-list__main-swiper {
 	width: 100%;
-	border-radius: 8px 8px 0 0;
+	border-radius: var(--border-radius-box);
 	overflow: hidden;
 	margin-bottom: 10px;
 }
@@ -78,8 +78,6 @@
 /* サムネイルスライダー */
 .custom-lesson-list__thumbnail-swiper {
 	width: 100%;
-	border-radius: 0 0 8px 8px;
-	overflow: hidden;
 }
 
 .custom-lesson-list__thumbnail-swiper .swiper-slide {
@@ -89,6 +87,8 @@
 	cursor: pointer;
 	opacity: 0.6;
 	transition: opacity 0.3s ease;
+	border-radius: calc(var(--border-radius-box) / 2);
+	overflow: hidden;
 }
 
 .custom-lesson-list__thumbnail-swiper .swiper-slide img {
@@ -125,6 +125,14 @@
 	font-size: var(--font-s);
 }
 
+.custom-lesson-list__button {
+	margin-top: var(--margin-xl);
+}
+.custom-lesson-list__button .button--primary {
+	background-color: rgb(var(--color-primary));
+	width: 100%;
+}
+
 .custom-lesson-list__detail {
 	margin-top: var(--margin-xl);
 	padding: var(--margin-xl) 0;
@@ -145,4 +153,5 @@
 }
 .custom-lesson-list__detail-content p {
 	font-size: var(--font-s);
+	margin-top: 0;
 }
