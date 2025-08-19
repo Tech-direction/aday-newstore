@@ -13,7 +13,7 @@
       "type": "custom-mainvisual",
       "settings": {
         "image_pc": "shopify://shop_images/section-custom-lesson-list-image-pc.webp",
-        "image_sp": "shopify://shop_images/access01.jpg"
+        "image_sp": "shopify://shop_images/section-custom-lesson-list-image-sp.webp"
       }
     },
     "custom-lesson-list": {
