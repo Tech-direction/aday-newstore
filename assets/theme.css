@@ -1105,7 +1105,7 @@ body,
 
 .contents-wrapper #MainContent > :first-child,
 .contents-wrapper .section:has(.section-block) {
-  padding-top: var(--margin-l);
+  padding-top: 0;
 }
 
 
@@ -1334,7 +1334,8 @@ body,
   position: relative;
   display: flex;
   gap: var(--margin);
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 
@@ -1381,29 +1382,67 @@ body,
 }
 
 .contents-wrapper .header__heading-link {
-  width: 30vw;
+  width: 25vw;
   max-width: 380px;
+}
+
+@media screen and (max-width: 1400px) {
+  .contents-wrapper .header__heading-link {
+    width: 21vw;
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 989px) {
+  .contents-wrapper .header__heading-link {
+    max-width: 280px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .contents-wrapper .header__heading-link {
+    width: 34vw;
+    max-width: 240px;
+  }
 }
 
 .contents-wrapper .header__heading-logo {
   width: 100%;
   fill: rgb(var(--color-black));
 }
-
+.contents-wrapper .header__heading {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--margin-s);
+}
+.contents-wrapper .header__heading-logo-wrapper {
+  flex-shrink: 0;
+  max-width: 387px;
+}
+.contents-wrapper .header__heading-logo-text {
+  font-size: var(--font-s);
+  flex-shrink: 0;
+}
 @media screen and (max-width: 989px) {
   .contents-wrapper .header__heading {
     margin-left: auto;
     margin-right: auto;
+    flex-direction: column;
+    gap: 0;
   }
   .contents-wrapper .header__heading-logo {
     max-width: 160px !important;
   }
 }
 
-
 /*  header nav
 ---------------------------------------------------------------*/
 
+.contents-wrapper .header__menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: var(--margin);
+}
 .contents-wrapper .header__active-menu-item {
   padding: 0;
   text-decoration: none;
@@ -1417,6 +1456,7 @@ body,
 
 .contents-wrapper .header__menu-item {
   color: rgb(var(--color-foreground));
+  font-weight: 700;
 }
 
 .contents-wrapper .header__inline-menu {
@@ -1426,7 +1466,7 @@ body,
 .contents-wrapper .header__inline-menu .list-menu {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--margin-s) var(--margin);
+  gap: var(--margin-xs) var(--margin);
 }
 
 .contents-wrapper .header--middle-left .header__heading-link,
