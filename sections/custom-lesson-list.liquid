@@ -5,7 +5,7 @@
 <div class="section-container">
   <ul class="custom-lesson-list__list">
     {% for block in section.blocks %}
-      <li>
+      <li {{ block.shopify_attributes }}>
         {% if block.settings.lesson_product.title != blank %}
           {% assign sub_heading = block.settings.lesson_product.metafields.custom.subtitle %}
           <h2

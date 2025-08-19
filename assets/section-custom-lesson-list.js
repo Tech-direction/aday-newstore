@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // サムネイルスライダーの初期化（全画面サイズで）
     const thumbnailSwiperInstance = new Swiper(thumbnailSwiper, {
-      slidesPerView: 3,
+      slidesPerView: 5,
       spaceBetween: 10,
       freeMode: true,
       lazy: true,
@@ -22,9 +22,11 @@ document.addEventListener('DOMContentLoaded', function() {
       breakpoints: {
         768: {
           slidesPerView: 5,
-          spaceBetween: 10,
-        }
-      }
+        },
+        480: {
+          slidesPerView: 3,
+        },
+      },
     });
 
     // メインスライダーの初期化

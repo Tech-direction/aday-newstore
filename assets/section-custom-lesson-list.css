@@ -16,7 +16,11 @@
 	width: 100%;
 	margin-top: var(--margin-section);
 }
-
+@media screen and (max-width: 768px) {
+	.custom-lesson-list .custom-lesson-list__list li {
+		margin-top: var(--margin-xl);
+	}
+}
 .custom-lesson-list .custom-lesson-list__inner {
 	width: 100%;
 	display: flex;
@@ -28,16 +32,19 @@
 @media screen and (max-width: 960px) {
 	.custom-lesson-list .custom-lesson-list__inner {
 		gap: var(--margin-l);
+		margin-top: var(--margin-l);
 	}
 }
 @media screen and (max-width: 768px) {
 	.custom-lesson-list .custom-lesson-list__inner {
 		gap: var(--margin);
+		/* margin-top: var(--margin); */
 	}
 }
 @media screen and (max-width: 480px) {
 	.custom-lesson-list .custom-lesson-list__inner {
 		flex-direction: column;
+		/* margin-top: var(--margin-s); */
 	}
 }
 
@@ -64,6 +71,14 @@
 	border-radius: var(--border-radius-box);
 	overflow: hidden;
 	margin-bottom: 10px;
+}
+@media screen and (max-width: 480px) {
+	.custom-lesson-list .custom-lesson-list__main-swiper {
+		margin-left: calc(var(--margin) * -1);
+		margin-right: calc(var(--margin) * -1);
+		width: calc(100% + var(--margin) * 2);
+		border-radius: 0;
+	}
 }
 
 .custom-lesson-list .custom-lesson-list__main-swiper .swiper-slide {
@@ -116,6 +131,11 @@
 	border-radius: calc(var(--border-radius-box) / 2);
 	overflow: hidden;
 }
+@media screen and (max-width: 768px) {
+	.custom-lesson-list .custom-lesson-list__thumbnail-swiper .swiper-slide {
+		border-radius: var(--border-radius-box);
+	}
+}
 
 .custom-lesson-list .custom-lesson-list__thumbnail-swiper .swiper-slide img {
 	width: 100%;
@@ -153,14 +173,22 @@
 	font-weight: 500 !important;
 	margin-bottom: 0 !important;
 }
+@media screen and (max-width: 768px) {
+	.custom-lesson-list .custom-lesson-list__title::before {
+		font-size: var(--font-l) !important;
+	}
+}
+.custom-lesson-list .custom-lesson-list__price {
+	line-height: 1.4;
+}
 .custom-lesson-list .custom-lesson-list__price .price-item {
 	font-size: var(--font-l);
 	font-weight: 700;
 	gap: calc(var(--margin-s) / 2) !important;
 }
 .custom-lesson-list .custom-lesson-list__price .price-item::after {
-	font-size: var(--font-s);
-	font-weight: 500;
+	font-size: var(--font-s) !important;
+	font-weight: 500 !important;
 }
 .custom-lesson-list .custom-lesson-list__date {
 	color: #FFFFFF;
@@ -169,12 +197,33 @@
 	display: inline-block;
 	margin-top: var(--margin);
 }
+@media screen and (max-width: 768px) {
+	.custom-lesson-list .custom-lesson-list__date {
+		padding: var(--margin-s) var(--margin);
+	}
+}
+.custom-lesson-list .custom-lesson-list__description {
+	margin-top: var(--margin-xl);
+}
+@media screen and (max-width: 768px) {
+	.custom-lesson-list .custom-lesson-list__description {
+		margin-top: var(--margin-l);
+	}
+}
+.custom-lesson-list .custom-lesson-list__description * {
+	font-weight: 500;
+}
 .custom-lesson-list .custom-lesson-list__description p {
 	font-size: var(--font-s);
 }
 
 .custom-lesson-list .custom-lesson-list__button {
 	margin-top: var(--margin-xl);
+}
+@media screen and (max-width: 768px) {
+	.custom-lesson-list .custom-lesson-list__button {
+		margin-top: var(--margin-l);
+	}
 }
 .custom-lesson-list .custom-lesson-list__button .button--primary {
 	background-color: rgb(var(--color-primary));
@@ -185,6 +234,12 @@
 	margin-top: var(--margin-xl);
 	padding: var(--margin-xl) 0;
 	background-color: #F5F5F5;
+}
+@media screen and (max-width: 768px) {
+	.custom-lesson-list .custom-lesson-list__detail {
+		margin-top: var(--margin-l);
+		padding: var(--margin-l) 0;
+	}
 }
 .custom-lesson-list .custom-lesson-list__detail-inner {
 	display: flex;
@@ -197,11 +252,6 @@
 }
 @media screen and (max-width: 768px) {
 	.custom-lesson-list .custom-lesson-list__detail-inner {
-		gap: var(--margin);
-	}
-}
-@media screen and (max-width: 480px) {
-	.custom-lesson-list .custom-lesson-list__detail-inner {
 		flex-direction: column;
 		gap: var(--margin);
 	}
@@ -209,7 +259,7 @@
 .custom-lesson-list .custom-lesson-list__detail-content {
 	width: 50%;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
 	.custom-lesson-list .custom-lesson-list__detail-content {
 		width: 100%;
 	}
