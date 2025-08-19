@@ -51,36 +51,10 @@
         "align": "center",
         "product_heading_size": "xl"
       }
-    },
-    "custom_lesson_list_9JAGDy": {
-      "type": "custom-lesson-list",
-      "blocks": {
-        "lesson_cnWGUi": {
-          "type": "lesson",
-          "settings": {
-            "lesson_product": "dripbag-10pc",
-            "subtitle": "サブ",
-            "date": "",
-            "description": "<p>説明説明説明説明説明説明説明説明説明説明説明説明</p>",
-            "flow": "<p>ながれながれながれながれながれながれながれながれながれながれながれながれながれながれながれながれ</p>",
-            "about": "<p>ついてついてついてついてついてついてついてついてついてついてついてついてついてついてついてついてついてついてついてついてついて</p>"
-          }
-        }
-      },
-      "block_order": [
-        "lesson_cnWGUi"
-      ],
-      "name": "コーヒーレッスン一覧",
-      "settings": {
-        "heading_size": "xl",
-        "align": "center",
-        "product_heading_size": "xl"
-      }
     }
   },
   "order": [
     "custom-mainvisual",
-    "custom-lesson-list",
-    "custom_lesson_list_9JAGDy"
+    "custom-lesson-list"
   ]
 }
