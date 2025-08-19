@@ -12,12 +12,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const mainSwiper = container.querySelector('.custom-lesson-list__main-swiper');
     const thumbnailSwiper = container.querySelector('.custom-lesson-list__thumbnail-swiper');
 
-    // サムネイルスライダーの初期化（全画面サイズで）
+    // サムネイルスライダーの初期化
     const thumbnailSwiperInstance = new Swiper(thumbnailSwiper, {
       slidesPerView: 5,
       spaceBetween: 10,
       freeMode: true,
       lazy: true,
+      navigation: false,
+      pagination: false,
       watchSlidesProgress: true,
       breakpoints: {
         768: {
@@ -34,10 +36,6 @@ document.addEventListener('DOMContentLoaded', function() {
       spaceBetween: 10,
       loop: true,
       lazy: true,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
       navigation: false,
       pagination: false,
       thumbs: {
