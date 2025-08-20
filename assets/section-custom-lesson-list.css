@@ -38,7 +38,7 @@
 @media screen and (max-width: 768px) {
 	.custom-lesson-list .custom-lesson-list__inner {
 		gap: var(--margin);
-		/* margin-top: var(--margin); */
+		margin-top: var(--margin);
 	}
 }
 @media screen and (max-width: 480px) {
