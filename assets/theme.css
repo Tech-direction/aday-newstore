@@ -2176,6 +2176,7 @@ body,
 .contents-wrapper .subscription-feature-list {
   background-color: transparent;
   justify-content: center;
+  flex-wrap: nowrap;
 }
 
 .contents-wrapper .subscription-feature-list .feature__item {
@@ -2193,6 +2194,12 @@ body,
 @media screen and (min-width: 990px) {
   .contents-wrapper .subscription-feature-list .feature__item {
     width: 160px !important;
+  }
+}
+@media screen and (max-width: 989px) {
+  .contents-wrapper:not(.top) .subscription-feature-list .feature__item {
+    max-width: 112px;
+    width: 100%;
   }
 }
 .contents-wrapper .subscription-feature-list .heading {
@@ -3729,6 +3736,10 @@ body,
 
 .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item figure {
   line-height: 1;
+  height: 50px;
+}
+.contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item figure img {
+  height: 100%;
 }
 
 .contents-wrapper .subscription-block .subscription-detail-wrapper .subscription-feature-list .feature__item [class^="subscription-feature-media-"] {
