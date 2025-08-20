@@ -38,13 +38,12 @@
 @media screen and (max-width: 768px) {
 	.custom-lesson-list .custom-lesson-list__inner {
 		gap: var(--margin);
-		margin-top: var(--margin);
 	}
 }
 @media screen and (max-width: 480px) {
 	.custom-lesson-list .custom-lesson-list__inner {
 		flex-direction: column;
-		/* margin-top: var(--margin-s); */
+		margin-top: var(--margin);
 	}
 }
 
