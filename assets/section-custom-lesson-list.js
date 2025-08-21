@@ -1,18 +1,22 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Swiper.jsが読み込まれているかチェック
+
+  // -------------------------------------
+  // スライダーの初期化
+  // -------------------------------------
+  // Swiper.jsが読み込まれているかチェック -------------------------------------
   if (typeof Swiper === 'undefined') {
     console.warn('Swiper.js is not loaded');
     return;
   }
 
-  // 各レッスンリストのスライダーを初期化
+  // 各レッスンリストのスライダーを初期化 -------------------------------------
   const lessonSliders = document.querySelectorAll('.custom-lesson-list__swiper-container');
 
   lessonSliders.forEach((container, index) => {
     const mainSwiper = container.querySelector('.custom-lesson-list__main-swiper');
     const thumbnailSwiper = container.querySelector('.custom-lesson-list__thumbnail-swiper');
 
-    // サムネイルスライダーの初期化
+    // サムネイルスライダーの初期化 -------------------------------------
     const thumbnailSwiperInstance = new Swiper(thumbnailSwiper, {
       slidesPerView: 5,
       spaceBetween: 10,
@@ -31,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
       },
     });
 
-    // メインスライダーの初期化
+    // メインスライダーの初期化 -------------------------------------
     const mainSwiperOptions = {
       spaceBetween: 10,
       loop: true,
@@ -46,7 +50,9 @@ document.addEventListener('DOMContentLoaded', function() {
     new Swiper(mainSwiper, mainSwiperOptions);
     });
 
+  // -------------------------------------
   // 直接チェックアウトボタンの処理
+  // -------------------------------------
   const checkoutButtons = document.querySelectorAll('.custom-lesson-list__button a[data-variant-id]');
 
   checkoutButtons.forEach(button => {
@@ -80,6 +86,84 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+  // -------------------------------------
+  // 詳しく見るボタンの処理
+  // -------------------------------------
+  const detailButtons = document.querySelectorAll('.custom-lesson-list__detail-content-button');
 
+  // slideToggle相当の関数 -------------------------------------
+  function slideToggle(element, duration = 300) {
+    const isVisible = element.style.display !== 'none';
+
+    if (isVisible) {
+      // 閉じる
+      slideUp(element, duration);
+    } else {
+      // 開く
+      slideDown(element, duration);
+    }
+  }
+
+  // slideDown関数 -------------------------------------
+  function slideDown(element, duration) {
+    element.style.display = 'block';
+    element.style.overflow = 'hidden';
+
+    const height = element.scrollHeight;
+    element.style.height = '0px';
+
+    // 強制的にリフロー
+    element.offsetHeight;
+
+    element.style.transition = `height ${duration}ms ease-in-out`;
+    element.style.height = height + 'px';
+
+    setTimeout(() => {
+      element.style.height = '';
+      element.style.overflow = '';
+      element.style.transition = '';
+    }, duration);
+  }
+
+  // slideUp関数 -------------------------------------
+  function slideUp(element, duration) {
+    element.style.overflow = 'hidden';
+    element.style.height = element.scrollHeight + 'px';
+
+    // 強制的にリフロー
+    element.offsetHeight;
+
+    element.style.transition = `height ${duration}ms ease-in-out`;
+    element.style.height = '0px';
+
+    setTimeout(() => {
+      element.style.display = 'none';
+      element.style.height = '';
+      element.style.overflow = '';
+      element.style.transition = '';
+    }, duration);
+  }
+
+  // 詳しく見るボタンのメイン処理 -------------------------------------
+  detailButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const detailContent = this.closest('.custom-lesson-list__detail-content--about').querySelector('.custom-lesson-list__detail-content-inner');
+      const isOpen = detailContent.classList.contains('is-open');
+
+      if (isOpen) {
+        // 閉じる
+        detailContent.classList.remove('is-open');
+        this.classList.remove('is-open');
+        this.textContent = '詳しく見る';
+        slideUp(detailContent, 300);
+      } else {
+        // 開く
+        detailContent.classList.add('is-open');
+        this.classList.add('is-open');
+        this.textContent = '閉じる';
+        slideDown(detailContent, 300);
+      }
+    });
+  });
 
 });

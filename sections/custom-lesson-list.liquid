@@ -97,13 +97,18 @@
         </div>
         <div class="custom-lesson-list__detail">
           <div class="custom-lesson-list__detail-inner page-width">
-            <div class="custom-lesson-list__detail-content">
+            <div class="custom-lesson-list__detail-content custom-lesson-list__detail-content--flow">
               <h4>【セミナーの流れ】</h4>
-              {{ block.settings.flow }}
+              <div class="custom-lesson-list__detail-content-inner">
+                {{ block.settings.flow }}
+              </div>
             </div>
-            <div class="custom-lesson-list__detail-content">
+            <div class="custom-lesson-list__detail-content custom-lesson-list__detail-content--about">
               <h4>【セミナーについて】</h4>
-              {{ block.settings.about }}
+              <div class="custom-lesson-list__detail-content-inner">
+                {{ block.settings.about }}
+              </div>
+              <button class="custom-lesson-list__detail-content-button button">詳しく見る</button>
             </div>
           </div>
         </div>
@@ -111,6 +116,10 @@
     {% endfor %}
   </ul>
 </div>
+
+<!-- Swiper.js JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+<script src="{{ 'section-custom-lesson-list.js' | asset_url }}" defer></script>
 
 {% schema %}
 {
@@ -235,7 +244,3 @@
   ]
 }
 {% endschema %}
-
-<!-- Swiper.js JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-<script src="{{ 'section-custom-lesson-list.js' | asset_url }}" defer></script>

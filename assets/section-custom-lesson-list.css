@@ -273,3 +273,36 @@
 	font-size: var(--font-s);
 	margin-top: 0;
 }
+@media screen and (max-width: 768px) {
+	.custom-lesson-list .custom-lesson-list__detail-content--about .custom-lesson-list__detail-content-inner {
+		display: none;
+		overflow: hidden;
+	}
+}
+@media screen and (min-width: 769px) {
+	.custom-lesson-list .custom-lesson-list__detail-content--about .custom-lesson-list__detail-content-inner {
+		display: block !important;
+	}
+}
+.custom-lesson-list .custom-lesson-list__detail-content--about .custom-lesson-list__detail-content-inner.is-open {
+	display: block;
+}
+.custom-lesson-list .custom-lesson-list__detail-content-button {
+	display: none;
+	background-color: transparent;
+	border: solid 1px #AFAFAF;
+	color: rgb(var(--color-black));
+}
+.custom-lesson-list .custom-lesson-list__detail-content-button:hover {
+	color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+	.custom-lesson-list .custom-lesson-list__detail-content-button {
+		display: block;
+	}
+}
+@media screen and (max-width: 480px) {
+	.custom-lesson-list .custom-lesson-list__detail-content-button {
+		width: 100%;
+	}
+}
