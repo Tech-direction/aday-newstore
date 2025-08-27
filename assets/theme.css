@@ -1364,8 +1364,8 @@ body,
     padding-top: var(--margin-xl) !important;
   }*/
   .contents-wrapper .header.header--has-postage .header-contents {
-    padding-top: var(--margin-s) !important;
-    padding-bottom: var(--margin-s) !important;
+    padding-top: var(--margin) !important;
+    padding-bottom: var(--margin) !important;
   }
   .contents-wrapper .header .header__heading-link {
     margin-left: auto !important;
@@ -1388,7 +1388,7 @@ body,
 
 @media screen and (max-width: 1400px) {
   .contents-wrapper .header__heading-link {
-    width: 21vw;
+    width: 22vw;
     max-width: 300px;
   }
 }
@@ -1430,6 +1430,10 @@ body,
     margin-right: auto;
     flex-direction: column;
     gap: 0;
+    position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
   }
   .contents-wrapper .header__heading-logo {
     max-width: 160px !important;
@@ -1660,6 +1664,7 @@ body,
 @media screen and (max-width: 989px) {
   .contents-wrapper header-drawer {
     margin-left: 0;
+    margin-right: var(--margin-xl);
   }
   .contents-wrapper .menu-drawer__navigation {
     padding: 0 !important;
@@ -1701,7 +1706,11 @@ body,
     justify-content: center;
   }
 }
-
+@media screen and (max-width: 480px) {
+  .contents-wrapper header-drawer {
+    margin-right: 0;
+  }
+}
 
 /*  toppage design
 ---------------------------------------------------------------*/
