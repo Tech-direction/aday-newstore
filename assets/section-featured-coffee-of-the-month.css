@@ -43,6 +43,7 @@
   content: "";
 	display: block;
 	position: absolute;
+	z-index: -1;
 	top: calc(var(--margin-l) / 2);
 	left: calc(var(--margin-l) / 2);
 	width: calc(100% - var(--margin-l));

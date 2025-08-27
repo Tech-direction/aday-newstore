@@ -1407,6 +1407,7 @@ body,
 .contents-wrapper .header__heading-logo {
   width: 100%;
   fill: rgb(var(--color-black));
+  transition: fill var(--duration-long) ease !important;
 }
 .contents-wrapper .header__heading {
   flex-shrink: 0;
@@ -1421,6 +1422,7 @@ body,
 .contents-wrapper .header__heading-logo-text {
   font-size: var(--font-s);
   flex-shrink: 0;
+  transition: color var(--duration-long) ease;
 }
 @media screen and (max-width: 989px) {
   .contents-wrapper .header__heading {
@@ -1714,6 +1716,9 @@ body,
 }
 
 .contents-wrapper.top .section-header:not(.scrolled-past-header):not(.menu-open) a:not(.header__icon) {
+  color: #fff;
+}
+.contents-wrapper.top .section-header:not(.scrolled-past-header):not(.menu-open) .header__heading-logo-text {
   color: #fff;
 }
 
