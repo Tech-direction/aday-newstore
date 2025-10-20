@@ -51,7 +51,7 @@
             "button_text": "私たちのこだわり",
             "link": "shopify://pages/access",
             "is_link": true,
-            "button_style": "primary"
+            "button_style": "secondary"
           }
         }
       },
