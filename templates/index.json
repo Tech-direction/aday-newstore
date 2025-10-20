@@ -49,7 +49,7 @@
             "background_opacity": 0,
             "subscription_feature": false,
             "button_text": "私たちのこだわり",
-            "link": "",
+            "link": "shopify://pages/access",
             "is_link": true,
             "button_style": "primary"
           }
