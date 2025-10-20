@@ -67,7 +67,7 @@
             "content_alignment_3": "center",
             "text_color": "#342b2b",
             "background_color": "rgba(0,0,0,0)",
-            "background_opacity": 85,
+            "background_opacity": 0,
             "subscription_feature": false,
             "button_text": "",
             "link": "shopify://pages/guide",
