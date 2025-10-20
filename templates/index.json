@@ -37,20 +37,20 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/feature_coffee-image01.webp",
-            "contents_area_alignment": "center",
+            "contents_area_alignment": "left",
             "line_1": "",
             "content_alignment_1": "center",
-            "line_2": "",
-            "content_alignment_2": "center",
+            "line_2": "<p><strong>コーヒーの香りを届けたい</strong></p>",
+            "content_alignment_2": "left",
             "description": "<p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>",
-            "content_alignment_3": "center",
-            "text_color": "#342b2b",
+            "content_alignment_3": "left",
+            "text_color": "#ffffff",
             "background_color": "rgba(0,0,0,0)",
-            "background_opacity": 85,
+            "background_opacity": 0,
             "subscription_feature": false,
             "button_text": "私たちのこだわり",
             "link": "",
-            "is_link": false,
+            "is_link": true,
             "button_style": "primary"
           }
         }
