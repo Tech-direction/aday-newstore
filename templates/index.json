@@ -53,11 +53,33 @@
             "is_link": true,
             "button_style": "secondary"
           }
+        },
+        "slide_ANENFL": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/section-custom-lesson-list-image-pc.webp",
+            "contents_area_alignment": "center",
+            "line_1": "",
+            "content_alignment_1": "center",
+            "line_2": "",
+            "content_alignment_2": "center",
+            "description": "",
+            "content_alignment_3": "center",
+            "text_color": "#342b2b",
+            "background_color": "#ffffff",
+            "background_opacity": 85,
+            "subscription_feature": false,
+            "button_text": "",
+            "link": "shopify://pages/guide",
+            "is_link": false,
+            "button_style": "primary"
+          }
         }
       },
       "block_order": [
         "slide_GrYWdp",
-        "slide_7KngWh"
+        "slide_7KngWh",
+        "slide_ANENFL"
       ],
       "name": "カスタムスライドショー",
       "settings": {
