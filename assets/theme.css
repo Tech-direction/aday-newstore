@@ -263,7 +263,7 @@ a,
   margin-top: var(--margin-l) !important;
   margin-bottom: 0;
   padding-bottom: .5em;
-  font-weight: 500;
+  font-weight: 700;
   text-decoration: none;
   border-bottom: 1px solid rgb(var(--color-black));
   display: flex;
@@ -1903,6 +1903,7 @@ body,
   font-weight: 400;
   letter-spacing: .1em;
   display: block;
+  margin-bottom: 1rem;
 }
 .contents-wrapper .heading.type-sub_heading:before {
   margin-top: 0;
