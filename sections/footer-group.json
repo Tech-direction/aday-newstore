@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.footer.name",
   "type": "footer",
@@ -8,9 +17,15 @@
         "0dbc67c5-7650-49fc-b6a4-e95d044607e3": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/aday-logo.svg",
+            "image": "shopify://shop_images/aday-logo.svg",
             "image_width": 380,
             "alignment": "center"
+          }
+        },
+        "brand_information_dpfbcF": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
           }
         },
         "ea4febf9-7a27-478b-ab90-9e4b0812e3fc": {
@@ -23,6 +38,7 @@
       },
       "block_order": [
         "0dbc67c5-7650-49fc-b6a4-e95d044607e3",
+        "brand_information_dpfbcF",
         "ea4febf9-7a27-478b-ab90-9e4b0812e3fc"
       ],
       "settings": {
@@ -30,7 +46,7 @@
         "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
         "enable_follow_on_shop": false,
-        "show_social": true,
+        "show_social": false,
         "enable_country_selector": false,
         "enable_language_selector": false,
         "payment_enable": false,
