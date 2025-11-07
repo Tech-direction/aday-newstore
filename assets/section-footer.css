@@ -337,7 +337,7 @@
 
 .footer-block__details-content .list-menu__item--link,
 .copyright__content a {
-  color: rgba(var(--color-foreground), 0.75);
+  color: rgba(var(--color-foreground), 1);
 }
 
 .footer-block__details-content .list-menu__item--active {
@@ -435,9 +435,9 @@
 }
 
 .footer-block__brand-info .footer__list-social.list-social {
-  justify-content: flex-start;
-  margin-left: -1.3rem;
-  margin-right: -1.3rem;
+  justify-content: center;
+  /* margin-left: -1.3rem;
+  margin-right: -1.3rem; */
 }
 
 .footer-block__details-content .placeholder-svg {
