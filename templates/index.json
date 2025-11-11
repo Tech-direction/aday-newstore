@@ -286,6 +286,34 @@
             "title": "テストタイトルテストタイトルテストタイトルテストタイトルテストタイトル",
             "text": "テストテキストテストテキストテストテキストテストテキストテストテキスト"
           }
+        },
+        "voice_e6Qer9": {
+          "type": "voice",
+          "settings": {
+            "title": "テストタイトルテストタイトルテストタイトルテストタイトルテストタイトル",
+            "text": "テストテキストテストテキストテストテキストテストテキストテストテキスト"
+          }
+        },
+        "voice_RFPjfq": {
+          "type": "voice",
+          "settings": {
+            "title": "テストタイトルテストタイトルテストタイトルテストタイトルテストタイトル",
+            "text": "テストテキストテストテキストテストテキストテストテキストテストテキスト"
+          }
+        },
+        "voice_atpmgX": {
+          "type": "voice",
+          "settings": {
+            "title": "テストタイトルテストタイトルテストタイトルテストタイトルテストタイトル",
+            "text": "テストテキストテストテキストテストテキストテストテキストテストテキスト"
+          }
+        },
+        "voice_mTkUrN": {
+          "type": "voice",
+          "settings": {
+            "title": "テストタイトルテストタイトルテストタイトルテストタイトルテストタイトル",
+            "text": "テストテキストテストテキストテストテキストテストテキストテストテキスト"
+          }
         }
       },
       "block_order": [
@@ -294,7 +322,11 @@
         "voice_bGtMMt",
         "voice_8rk7KE",
         "voice_K89w7K",
-        "voice_H4XWPf"
+        "voice_H4XWPf",
+        "voice_e6Qer9",
+        "voice_RFPjfq",
+        "voice_atpmgX",
+        "voice_mTkUrN"
       ],
       "settings": {
         "section_heading": "こんな声をいただいています",
