@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const swiper = new Swiper(featuredVoicesSwiper, {
     loop: true,
     allowTouchMove: false,
+    centeredSlides: true,
     speed: 6000,
     autoplay: {
       delay: 0,

@@ -24,12 +24,14 @@
 
 /* こんな声をいただいています セクション専用CSS */
 .section-featured-voices {
-  margin: var(--margin-section) 0;
+  padding: var(--margin-section) 0;
+  padding-top: 0;
+  background-color: #F5F5F5;
   overflow: hidden;
 }
 @media screen and (max-width: 749px) {
   .section-featured-voices {
-    margin: var(--margin-xl) 0;
+    padding: var(--margin-xl) 0;
   }
 }
 
@@ -49,6 +51,7 @@
   height: auto;
   border: solid 1px #AFAFAF;
   padding: var(--margin);
+  background-color: #FFFFFF;
   position: relative;
   z-index: 0;
 }

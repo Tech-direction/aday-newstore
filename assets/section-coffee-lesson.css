@@ -24,17 +24,18 @@
 
 /* コーヒー講座 セクション専用CSS */
 .section-coffee-lesson {
-  margin: var(--margin-section) 0;
+  padding: var(--margin-section) 0;
+  background-color: #F5F5F5;
 }
 @media screen and (max-width: 749px) {
   .section-coffee-lesson {
-    margin: var(--margin-xl) 0;
-    margin-bottom: calc(var(--margin-section) * 2.5);
+    padding: var(--margin-xl) 0;
+    padding-bottom: calc(var(--margin-section) * 2.5);
   }
 }
 @media screen and (max-width: 480px) {
   .section-coffee-lesson {
-    margin-bottom: calc(var(--margin-section) * 2.2);
+    padding-bottom: calc(var(--margin-section) * 2.2);
   }
 }
 
