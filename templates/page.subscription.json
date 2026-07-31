@@ -190,7 +190,7 @@
             "image": "shopify://shop_images/sucscription_01.svg",
             "text": "<p>お好きなタイミングでお好きな豆を100gを3種類定期的にお届けします。<br/>いろんなコーヒー豆を飲みたい！そんな方におすすめプランです。<br/>以下のボタンより商品お選びいただき、ご購入ください。</p>",
             "link_label": "お好きなコーヒー豆100g3種類を購入する",
-            "link": "https://adayinthecoffee.com/apps/subscription/bundler?b=49c10133-a7d9-493f-ba48-bc9a1d2cf7e5"
+            "link": "https://adayinthecoffee.com/apps/subscription/bundlerV2?boxId=f1d0faf2-37a4-45f3-b8f0-3337d22380f9"
           }
         },
         "template--20317784211764__88d80f0e-b70e-4663-b0e3-412f00aa748c-column-2": {
