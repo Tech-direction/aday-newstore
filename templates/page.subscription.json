@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "e1ffcafa-e72c-434d-9a86-db65767e87f1": {
@@ -9,7 +18,7 @@
         "change_box_layout": false,
         "description": "",
         "show_description": false,
-        "image": "shopify:\/\/shop_images\/image2575.jpg"
+        "image": "shopify://shop_images/image2575.jpg"
       }
     },
     "ed6f1661-e298-4db3-902a-f2640892b2db": {
@@ -18,7 +27,7 @@
         "template--20317784211764__ed6f1661-e298-4db3-902a-f2640892b2db-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "<p>コーヒー豆の焙煎屋さんがお届けする、<\/p><p>焼きたてコーヒー豆の定期便<\/p>",
+            "heading": "<p>コーヒー豆の焙煎屋さんがお届けする、</p><p>焼きたてコーヒー豆の定期便</p>",
             "heading_size": "xl",
             "heading_type": "h1",
             "text_align": "center"
@@ -27,14 +36,13 @@
         "template--20317784211764__ed6f1661-e298-4db3-902a-f2640892b2db-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>コーヒーは焙煎鮮度が高い（=焙煎してからの時間が短い）ほど、高い香りをお楽しみいただけます。<br\/>お気に入りの豆があって飲む周期も決まっている、そんな方には定期便がおすすめ。<br\/>焼きたての豆を定期的に焙煎所からお届けいたします。定期便は通常購入よりもずっとお得です。<\/p>",
+            "text": "<p>コーヒーは焙煎鮮度が高い（=焙煎してからの時間が短い）ほど、高い香りをお楽しみいただけます。<br/>お気に入りの豆があって飲む周期も決まっている、そんな方には定期便がおすすめ。<br/>焼きたての豆を定期的に焙煎所からお届けいたします。定期便は通常購入よりもずっとお得です。</p>",
             "text_align": "left"
           }
         },
         "template--20317784211764__ed6f1661-e298-4db3-902a-f2640892b2db-subscription_feature-1": {
           "type": "subscription_feature",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -58,7 +66,7 @@
         "template--20317784211764__a47675f0-a3d8-43a3-a35b-861d21517ad0-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "<p>定期便のご利用について<\/p>",
+            "heading": "<p>定期便のご利用について</p>",
             "heading_size": "xl",
             "heading_type": "h2",
             "text_align": "center"
@@ -67,14 +75,14 @@
         "template--20317784211764__a47675f0-a3d8-43a3-a35b-861d21517ad0-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>以下の手順でご利用ください。<\/p>",
+            "text": "<p>以下の手順でご利用ください。</p>",
             "text_align": "left"
           }
         },
         "888d3087-1c7e-4212-a186-436fa56fd5d2": {
           "type": "heading",
           "settings": {
-            "heading": "<p>①お好みの定期便の種類をお選びください<\/p>",
+            "heading": "<p>①お好みの定期便の種類をお選びください</p>",
             "heading_size": "l",
             "heading_type": "h3",
             "text_align": "left"
@@ -83,14 +91,14 @@
         "e7dfdb81-86fe-499c-a5dd-20360c1ecaf1": {
           "type": "text",
           "settings": {
-            "text": "<p>A day in the coffeeでは以下2種類の定期便をご用意しています。<\/p><ul><li>お好きなコーヒー豆100gを3種類お届け<\/li><li>お好きなコーヒー豆200gを1種類お届け<\/li><\/ul>",
+            "text": "<p>A day in the coffeeでは以下2種類の定期便をご用意しています。</p><ul><li>お好きなコーヒー豆100gを3種類お届け</li><li>お好きなコーヒー豆200gを1種類お届け</li></ul>",
             "text_align": "left"
           }
         },
         "614152cb-6219-4406-b801-dee48eef32a9": {
           "type": "heading",
           "settings": {
-            "heading": "<p>②お送りするコーヒー豆をお選びください<\/p>",
+            "heading": "<p>②お送りするコーヒー豆をお選びください</p>",
             "heading_size": "l",
             "heading_type": "h3",
             "text_align": "left"
@@ -99,20 +107,21 @@
         "15573d12-e64f-42d2-9bf7-64352ecaa062": {
           "type": "text",
           "settings": {
-            "text": "<p>お好きな定期便の種類を選択したあと、画面に表示されているコーヒー豆の一覧からお送りするコーヒー豆をお選びください。<\/p>",
+            "text": "<p>お好きなコーヒー豆の状態（豆・挽き）を選択したあと、画面に表示されているコーヒー豆の一覧からお送りするコーヒー豆をお選びください。そのあと、お届けする周期を選択いただき（2週間に1回 or 月に1回）購入に進みます。</p><p><a href=\"https://adayinthecoffee.com/pages/shopping-guide\" target=\"_blank\">定期購入について詳しくはこちらをご確認ください</a></p>",
             "text_align": "left"
           }
         },
         "b39c6b5d-f375-415b-a0d7-838ca32f7548": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/subscription_page_498448d3-3f41-4e2a-a9e8-4840e6c8bcac.png"
+            "image": "shopify://shop_images/2026-07-31_23.39.42.png"
           }
         },
         "e0680cf9-72a5-4c74-beb6-4512323bd133": {
           "type": "heading",
+          "disabled": true,
           "settings": {
-            "heading": "<p>③お届け周期を選択後ご購入ください<\/p>",
+            "heading": "<p>③お届け周期を選択後ご購入ください</p>",
             "heading_size": "l",
             "heading_type": "h3",
             "text_align": "left"
@@ -120,16 +129,17 @@
         },
         "37688181-5b99-4e55-9b7d-a2743afb7bd4": {
           "type": "text",
+          "disabled": true,
           "settings": {
-            "text": "<p>お届けする周期を選択いただき（2週間に1回 or 月に1回）購入を完了します。<\/p><p><a href=\"https:\/\/aday-new-store.myshopify.com\/pages\/shopping-guide\">定期購入について詳しくはこちらをご確認ください<\/a><\/p>",
+            "text": "<p>お届けする周期を選択いただき（2週間に1回 or 月に1回）購入を完了します。</p><p><a href=\"https://aday-new-store.myshopify.com/pages/shopping-guide\">定期購入について詳しくはこちらをご確認ください</a></p>",
             "text_align": "left"
           }
         },
         "23a46cad-2fe0-4d9e-a49c-9a3d3e97159b": {
           "type": "text",
           "settings": {
-            "text": "<p><em>※定期購入商品のお届けは全て配送でのお届けになります。「店舗受取」での商品の受け取りはできませんのでご了承ください。<\/em><\/p>",
-            "text_align": "left"
+            "text": "<p><em>※定期購入商品のお届けは全て配送でのお届けになります。店舗での商品の受け取りはできませんのでご了承ください。</em></p>",
+            "text_align": "center"
           }
         }
       },
@@ -175,23 +185,23 @@
         "template--20317784211764__88d80f0e-b70e-4663-b0e3-412f00aa748c-column-1": {
           "type": "column",
           "settings": {
-            "title": "<p>お好きなコーヒー豆（100g）を<br\/><strong>3種類<\/strong>お届け<\/p>",
+            "title": "<p>お好きなコーヒー豆（100g）を<br/><strong>3種類</strong>お届け</p>",
             "title_size": "m",
-            "image": "shopify:\/\/shop_images\/sucscription_01.svg",
-            "text": "<p>お好きなタイミングでお好きな豆を100gを3種類定期的にお届けします。<br\/>いろんなコーヒー豆を飲みたい！そんな方におすすめプランです。<br\/>以下のボタンより商品お選びいただき、ご購入ください。<\/p>",
+            "image": "shopify://shop_images/sucscription_01.svg",
+            "text": "<p>お好きなタイミングでお好きな豆を100gを3種類定期的にお届けします。<br/>いろんなコーヒー豆を飲みたい！そんな方におすすめプランです。<br/>以下のボタンより商品お選びいただき、ご購入ください。</p>",
             "link_label": "お好きなコーヒー豆100g3種類を購入する",
-            "link": "https:\/\/adayinthecoffee.com\/apps\/subscription\/bundler?b=49c10133-a7d9-493f-ba48-bc9a1d2cf7e5"
+            "link": "https://adayinthecoffee.com/apps/subscription/bundler?b=49c10133-a7d9-493f-ba48-bc9a1d2cf7e5"
           }
         },
         "template--20317784211764__88d80f0e-b70e-4663-b0e3-412f00aa748c-column-2": {
           "type": "column",
           "settings": {
-            "title": "<p>お好きなコーヒー豆（200g）を<br\/><strong>1種類<\/strong>お届け<\/p>",
+            "title": "<p>お好きなコーヒー豆（200g）を<br/><strong>1種類</strong>お届け</p>",
             "title_size": "m",
-            "image": "shopify:\/\/shop_images\/sucscription_02.svg",
-            "text": "<p>お好きなタイミングでお好きな豆を200g定期的にお届けします。<br\/>好きなコーヒー豆は決まっている。そんな方におすすめプランです。<br\/>以下のボタンより商品お選びいただき、ご購入ください。<\/p>",
+            "image": "shopify://shop_images/sucscription_02.svg",
+            "text": "<p>お好きなタイミングでお好きな豆を200g定期的にお届けします。<br/>好きなコーヒー豆は決まっている。そんな方におすすめプランです。<br/>以下のボタンより商品お選びいただき、ご購入ください。</p>",
             "link_label": "お好きなコーヒー豆200g1種類を購入する",
-            "link": "https:\/\/adayinthecoffee.com\/apps\/subscription\/bundler?b=cb7dc9da-6681-4090-9d8d-0ab3c8f0b691"
+            "link": "https://adayinthecoffee.com/apps/subscription/bundler?b=cb7dc9da-6681-4090-9d8d-0ab3c8f0b691"
           }
         }
       },
@@ -212,7 +222,7 @@
         "column_alignment": "left",
         "background_style": "primary",
         "button_label": "Button label",
-        "button_link": "https:\/\/adayinthecoffee.com\/apps\/subscription\/bundler?b=49c10133-a7d9-493f-ba48-bc9a1d2cf7e5",
+        "button_link": "https://adayinthecoffee.com/apps/subscription/bundler?b=49c10133-a7d9-493f-ba48-bc9a1d2cf7e5",
         "color_scheme": "",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
